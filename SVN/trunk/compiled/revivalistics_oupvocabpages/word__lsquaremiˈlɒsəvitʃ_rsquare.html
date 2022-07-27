@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>[miˈlɒsəvitʃ]</h1>
+
+<p><a href="_main_text_revivalistics_oup_1.html#revivalistics_oup_page_1_segment_61" target="main_frame"><b>&larr;</b></a> <a href="word__apostropheמילושביץ milóshevich.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_61_word_1><span class="sound" onmouseover="playSound('./multimedia/65359_190422083450.mp3');"> 'מילושביץ <i>milóshevich</i></span></span></a><span class="red"><span class="sound" onmouseover="playSound('./multimedia/65267_190422084512.mp3');">[miˈlɒsəvitʃ]</span></span><a href="word__lsquares_rsquare.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_61_word_5><span class="sound" onmouseover="playSound('./multimedia/71933_190610_072616283.mp3');">[s]</span></span></a><a href="word__lsquareʃ_rsquare.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_61_word_7><span class="sound" onmouseover="playSound('./multimedia/65381_190422085247.mp3');">[ʃ]</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

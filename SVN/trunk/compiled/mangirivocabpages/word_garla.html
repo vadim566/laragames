@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>garla</h1>
+
+<p><a href="_main_text_mangiri_10.html#mangiri_page_10_segment_8" target="main_frame"><b>&larr;</b></a> <a href="word_nhoorrali.html" target="aux_frame"><span id=mangiri_page_10_segment_8_word_1><span class="sound" title="you-PL" onmouseover="playSound('./multimedia/71892_190610_083522110.mp3');">Nhoorrali</span></span></a> <span class="red"><span class="sound" title="voice-PL" onmouseover="playSound('./multimedia/1053709_201203_023138281.mp3');">garlarri</span></span> <a href="word_garnga.html" target="aux_frame"><span id=mangiri_page_10_segment_8_word_5><span class="sound" title="lift.up-IMP" onmouseover="playSound('./multimedia/1053711_201203_023157682.mp3');">garngaga</span></span></a> <a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_10_segment_8_word_7><span class="sound" title="Lord-IND" onmouseover="playSound('./multimedia/1053826_201203_023524060.mp3');">Oorndagarranha</span></span></a> <a href="word_yabirdi.html" target="aux_frame"><span id=mangiri_page_10_segment_8_word_9><span class="sound" title="near" onmouseover="playSound('./multimedia/1053879_201203_023651702.mp3');">yabirdi</span></span></a> <span onclick="playSound('./multimedia/1054040_201203_062841546.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_mangiri_10.html#mangiri_page_10_segment_15" target="main_frame"><b>&larr;</b></a> <a href="word_nhoorrali.html" target="aux_frame"><span id=mangiri_page_10_segment_15_word_1><span class="sound" title="you-PL" onmouseover="playSound('./multimedia/71892_190610_083522110.mp3');">Nhoorrali</span></span></a><span class="red"><span class="sound" title="voice-PL" onmouseover="playSound('./multimedia/1053708_201203_023143538.mp3');">garla-rri</span></span><a href="word_garnga.html" target="aux_frame"><span id=mangiri_page_10_segment_15_word_5><span class="sound" title="lift.up-IMP" onmouseover="playSound('./multimedia/1053710_201203_023152770.mp3');">garnga-ga</span></span></a><a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_10_segment_15_word_7><span class="sound" title="Lord-IND" onmouseover="playSound('./multimedia/1053824_201203_023509079.mp3');">Oorndagarra-nha</span></span></a><a href="word_yabirdi.html" target="aux_frame"><span id=mangiri_page_10_segment_15_word_9><span class="sound" title="near" onmouseover="playSound('./multimedia/1053879_201203_023651702.mp3');">yabirdi</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

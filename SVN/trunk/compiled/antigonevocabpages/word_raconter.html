@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>raconter</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_10.html#antigone_nahed_marta_chadi_page_10_segment_6" target="main_frame"><b>&larr;</b></a>  <a href="word_venir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_1><span title=" Come">Viens</span></span></a>, <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_3><span title="little one">petit</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_5><span title="It">Il</span></span></a> <a href="word_falloir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_7><span title="is necessary">faut</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_9><span title="that">que</span></span></a> <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_11><span title="we">nous</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_13><span title="go">allions</span></span></a> <span class="red"><span title="tell">raconter</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_17><span title="all">tout</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_19><span title="this">cela</span></span></a> <a href="word_maintenant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_6_word_21><span title="now">maintenant</span></span></a>... <span title="Come on, kid. Now we'll have to tell everyone...">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_315" target="main_frame"><b>&larr;</b></a>  <a href="word_pourquoi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_315_word_1><span title="Why">Pourquoi</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_315_word_3><span title="me">m'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_315_word_4><span title="have">avez</span></span></a>-<a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_315_word_6><span title="you">vous</span></span></a> <span class="red"><span title="told">raconté</span></span> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_315_word_10><span title="this">cela</span></span></a> ? <span onclick="playSound('./multimedia/1030262_201021_142255873.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Why have you told me all this?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>revoir</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_296" target="main_frame"><b>&larr;</b></a>  <a href="word_rappeler.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_1><span title="Remember">Rappelle</span></span></a>-<a href="word_toi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_3><span title="Remember">toi</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_5><span title="you">tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_7><span title="were">avais</span></span></a> <a href="word_douze.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_9><span title="twelve">douze</span></span></a> <a href="word_an.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_11><span title="years (old)">ans</span></span></a>. <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_13><span title="You">Vous</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_15><span title="not">ne</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_17><span title="him">l'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_18><span title="have">avez</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_20><span title="not">pas</span></span></a> <span class="red"><span title="seen">revu</span></span> <a href="word_pendant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_24><span title="for">pendant</span></span></a> <a href="word_longtemps.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_26><span title="a long tim">longtemps</span></span></a>. <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_28><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_29><span title="is">est</span></span></a> <a href="word_vrai.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_31><span title="true">vrai</span></span></a>, <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_296_word_33><span title="that">cela</span></span></a> ? <span title="Remember, you were twelve. You didn't see him for a long time after that. That's right, no?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

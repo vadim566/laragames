@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>principe</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_46" target="main_frame"><b>&larr;</b></a>  <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_1><span title="In">En</span></span></a> <span class="red"><span title="principle">principe</span></span>, <a href="word_oui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_5><span title="yes">oui</span></span></a>. <a href="word_sergent.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_7><span title="Sergeant">Sergent</span></span></a> <a href="word_ou.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_9><span title="or">ou</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_11><span title="have">avoir</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_13><span title="followed">suivi</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_15><span title="the">le</span></span></a> <a href="word_peloton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_17><span title="detail">peloton</span></span></a> <a href="word_spécial.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_46_word_19><span title="special">spécial</span></span></a>. <span title="In principle, yes. Sergeant or in the special detail.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

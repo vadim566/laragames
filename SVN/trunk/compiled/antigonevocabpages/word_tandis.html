@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>tandis</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_10.html#antigone_nahed_marta_chadi_page_10_segment_30" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_1><span title="The ">Le</span></span></a> <a href="word_choeur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_3><span title="chorus">chœur</span></span></a> <a href="word_disparaître.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_5><span title="disappears">disparaît</span></span></a>, <span class="red"><span title="while">tandis</span></span> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_9><span title="that">que</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_11><span title="the">les</span></span></a> <a href="word_garde.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_13><span title="guards">gardes</span></span></a> <a href="word_pousser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_15><span title="push">poussent</span></span></a> <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_17><span title="Antigone">Antigone</span></span></a> <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_19><span title="onto to">en</span></span></a> <a href="word_scène.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_30_word_21><span title="stage">scène</span></span></a>.  <span title="The chorus disappears, while the guards push Antigone onto the stage.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

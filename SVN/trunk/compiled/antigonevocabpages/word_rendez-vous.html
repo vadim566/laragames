@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>rendez-vous</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_48" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_1><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_3><span title="had">avais</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_5><span title="a">un</span></span></a> <span class="red"><span title="date">rendez-vous</span></span>, <a href="word_hein.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_9><span title="huh">hein</span></span></a> ? <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_11><span title="Say">Dis</span></span></a> <a href="word_non.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_13><span title="no">non</span></span></a>, <a href="word_peut-être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_48_word_15><span title="maybe">peut-être</span></span></a>. <span title="You went out to meet someone, didn't you? Try to say you didn't.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_51" target="main_frame"><b>&larr;</b></a>  <a href="word_oui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_51_word_1><span title="Yes">Oui</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_51_word_3><span title="I">J'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_51_word_4><span title="had">avais</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_51_word_6><span title="a">un</span></span></a> <span class="red"><span title="date">rendez-vous</span></span>. <span onclick="playSound('./multimedia/1029237_201013_211312309.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Yes. I went out to meet someone.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

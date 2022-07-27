@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>jeun</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_4.html#antigone_nahed_marta_chadi_page_4_segment_8" target="main_frame"><b>&larr;</b></a>  <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_1><span title="You">Vous</span></span></a> <a href="word_croire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_3><span title="think">croyez</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_5><span title="that">que</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_7><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_8><span title="is">est</span></span></a> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_10><span title="good">bon</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_12><span title="to">d'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_13><span title="be">être</span></span></a> <a href="word_debout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_15><span title="up">debout</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_17><span title="the">le</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_19><span title="morning">matin</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_21><span title="fasting">à</span></span></a> <span class="red"><span title="fasting">jeun</span></span>, <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_25><span title="that">que</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_27><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_28><span title="is">est</span></span></a> <a href="word_convenable.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_30><span title="appropriate">convenable</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_32><span title="for">pour</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_34><span title="the">des</span></span></a> <a href="word_princesse.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_4_segment_8_word_36><span title="princesses">princesses</span></span></a> ? <span title="You think you should be standing here before you've even had breakfast, that's what princesses should do now?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

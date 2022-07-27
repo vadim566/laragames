@@ -1,0 +1,156 @@
+
+{% extends "base.html" %}
+{% block title %}game4{%endblock%}
+
+{%block content%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel">
+        <div class="result">
+
+        </div>
+        <div class="question-container" id="question">
+            <h3>{{ question }}</h3>
+
+        </div>
+
+        <form action="/game5Submit/" id="formgame5" class="col-md-8 col-sm-12" method="POST">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label name="option1"  id="op1" >option1</label>
+
+                <label name="option2" id="op2" >option2</label>
+
+                    <label name="option3" id="op3">option3</label>
+
+                        <label name="option4" id="op4">option4</label>
+                
+                <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
+                <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
+            </div>
+            <input type="submit" class="btn btn-primary"  autocomplete="off" checked>
+        </form>
+</div>
+        </div>
+    </br>
+    
+    </div>
+    <script>
+
+    
+
+// Iterate
+function iterate(){
+
+    answers= [{ text: '<figure id="op1_s">'+
+    '<figcaption></figcaption>'+
+    '<audio'+
+       ' controls'+
+      '  src="/game5/{{name}}/{{t_answer}}">'+
+            'Your browser does not support the'+
+          '  <code>audio</code> element.'+
+  '  </audio>'+
+'</figure>'+
+'<input type="radio" value=1 class="btn btn-info" name="option"  autocomplete="off" checked >',
+            isCorrect: 1 },
+            { text: '<figure id="op2_s">'+
+    '<figcaption></figcaption>'+
+    '<audio'+
+       ' controls'+
+      '  src="/game5/{{name}}/{{fake_answer_0}}">'+
+            'Your browser does not support the'+
+          '  <code>audio</code> element.'+
+  '  </audio>'+
+'</figure>'+
+'<input type="radio" value=0 class="btn btn-info" name="option"   autocomplete="off" checked>',
+                isCorrect: 0 },
+            { text: '<figure id="op3_s">'+
+    '<figcaption></figcaption>'+
+    '<audio'+
+       ' controls'+
+      '  src="/game5/{{name}}/{{fake_answer_1}}">'+
+            'Your browser does not support the'+
+          '  <code>audio</code> element.'+
+  '  </audio>'+
+'</figure>'+
+'<input type="radio" value=0 class="btn btn-info" name="option"  autocomplete="off" checked>',
+                isCorrect: 0 },
+            { text: '<figure id="op4_s">'+
+    '<figcaption></figcaption>'+
+    '<audio'+
+       ' controls'+
+      '  src="/game5/{{name}}/{{fake_answer_2}}">'+
+            'Your browser does not support the'+
+          '  <code>audio</code> element.'+
+  '  </audio>'+
+'</figure>'+
+'<input type="radio" value=0 class="btn btn-info" name="option"  autocomplete="off" checked>',
+                isCorrect: 0 }
+        ]
+//The Fisher-Yates algorith
+ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const shuffledArray = answers.sort((a, b) => 0.5 - Math.random());
+
+        const Questions = [{
+        id: 0,
+        q: "What is {{question}}",
+        a: answers
+
+    }
+
+]
+
+// Set start
+var start = true;
+    // Getting the result display section
+    var result = document.getElementsByClassName("result");
+    result[0].innerText = "";
+
+    // Getting the question
+    const question = document.getElementById("question");
+
+
+    // Setting the question text
+
+    // Getting the options
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
+
+
+    // Providing option text
+    op1.innerHTML = Questions[0].a[0].text;
+    op2.innerHTML = Questions[0].a[1].text;
+    op3.innerHTML = Questions[0].a[2].text;
+    op4.innerHTML = Questions[0].a[3].text;
+
+    // Providing the true or false value to the options
+    op1.value = Questions[0].a[0].isCorrect;
+    op2.value = Questions[0].a[1].isCorrect;
+    op3.value = Questions[0].a[2].isCorrect;
+    op4.value = Questions[0].a[3].isCorrect;
+
+    var selected = "";
+
+    
+    
+}
+
+iterate();
+
+
+    </script>
+</body>
+</html>
+
+
+{%endblock  %}

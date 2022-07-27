@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>passage</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_61" target="main_frame"><b>&larr;</b></a>  <a href="word_rien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_1><span title="Nothing">Rien</span></span></a>, <a href="word_chef.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_3><span title="boss">chef</span></span></a>. <a href="word_rien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_5><span title="Nothing">Rien</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_7><span title="but">qu'</span></span></a><a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_8><span title="a">un</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_10><span title="footstep">pas</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_12><span title="more">plus</span></span></a> <a href="word_léger.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_14><span title="light">léger</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_16><span title="than">qu'</span></span></a><a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_17><span title="a">un</span></span></a> <span class="red"><span title="passage">passage</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_21><span title="of">d'</span></span></a><a href="word_oiseau.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_61_word_22><span title="bird">oiseau</span></span></a>. <span title="Nothing, boss. Nothing except one footstep lighter than a bird.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

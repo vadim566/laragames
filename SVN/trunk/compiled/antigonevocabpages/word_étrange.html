@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>étrange</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_38" target="main_frame"><b>&larr;</b></a>  <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_38_word_1><span title="has">a</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_38_word_3><span title="a">un</span></span></a> <span class="red"><span title="strange">étrange</span></span> <a href="word_sourire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_38_word_7><span title="smile">sourire</i></span></span></a>. <span title="with a strange smile">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_8.html#antigone_nahed_marta_chadi_page_8_segment_15" target="main_frame"><b>&larr;</b></a>  <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_1><span title="risen">s'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_2><span title="has">est</span></span></a> <a href="word_lever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_4><span title="risen">levée</span></span></a>, <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_6><span title="a">un</span></span></a> <span class="red"><span title="strange">étrange</span></span> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_10><span title="little">petit</span></span></a> <a href="word_sourire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_12><span title="smile">sourire</span></span></a> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_14><span title="on">sur</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_16><span title="her">les</span></span></a> <a href="word_lèvre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_18><span title="lips">lèvres</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_20><span title="she">elle</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_22><span title="goes">va</span></span></a> <a href="word_vers.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_24><span title="towards">vers</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_26><span title="the">la</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_28><span title="door">porte</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_30><span title="and">et</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_32><span title="on the">du</span></span></a> <a href="word_seuil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_34><span title="threshold">seuil</span></span></a>, <a href="word_doucement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_36><span title="softly">doucement</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_38><span title="she">elle</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_8_segment_15_word_40><span title="says">dit</span></span></a>... <span title="has got up, a strange little smile on her lips, she goes towards the door and on the threshold, softly, she says...">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

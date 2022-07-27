@@ -1,0 +1,100 @@
+An#an/Art# tOILEÁNACH#toileánach/Noun#||
+Is#is/Cop# cuimhin#cuimhin/Subst# liom#le/Pron# mé#mé/Pron# a#a/Part# bheith#bheith/Verbal# ar#ar/Prep# bhrollach#brollach/Noun# mo#mo/Det# mháthar#máthair/Noun#.||
+Cheithre#ceathair/Num# bliana#bliain/Noun# do#do/Part# bhíos#bí/Verb# sarar#sarar/Noun# baineadh#bain/Verb# do#do/Prep# dheol#deol/Noun# me#me/Foreigno#.||
+Sin#sin/Cop# é#é/Pron# an#an/Art# réasún#réasún/Noun# gur#gur/Part# fágadh#fág/Verb# comh#chomh/Adv# fada#fada/Adj# ar#ar/Prep# na#na/Art# cíní#í/Noun# me#me/Foreigng#.||
+Bhíos#bí/Verb# im#i/Prep# peata#peata/Noun# ina#i/Prep# theannta#teannta/Noun# san#sin/CM#.||
+Tá#bí/Verb# Máire#Máire/Prop# fós#fós/Adv# beo#beo/Adj# insan#i/Prep# Oileán#oileán/Noun# so#seo/CM#.||
+Tá#bí/Verb# beirt#beirt/Noun# eile#eil/Noun# acu#ag/Pron# beo#beo/Adj# i#i/Prep# Meirice#Meirice/Prop#.||
+Tá#bí/Verb# Pádraig#Pádraig/Prop# beo#beo/Adj#.||
+Cailleadh#caill/Verb# Cáit#Cáit/Prop# agus#agus/Conj# an#an/Art# pinsean#pinsean/Noun# ráithe#ráithe/Noun# aici#ag/Pron#.||
+Sin#sin/Cop# iad#iad/Pron# an#an/Art# t-ál#ál/Noun# do#do/Part# bhí#bí/Verb# againn#ag/Pron# ann#i/Pron#.||
+Ní#ní/Part# raibh#bí/Verb# mórshúil#mórshúil/Noun# chuige#chuige/Adv# liom#le/Pron# san#i/Prep# am#am/Noun# gur#gur/Part# bhuaileas#buail/Verb# chúthu#chúthu/Noun#.||
+Is#is/Cop# dócha#dócha/Adj# gurb#is/Cop# amhlaidh#amhlaidh/Adv# nárbh#is/Cop# fhiú#fiú/Subst# leis#le/Pron# me#me/Foreign# a#a/Det# aistriú#aistriú/Noun#.||
+Bhí#bí/Verb# tigh#teach/Noun# eile#eil/Noun# as#as/Prep# ár#ár/Noun# gcoinne#coinne/Noun# amach#amach/Adv# agus#agus/Conj# a#a/Det# dhoras#doras/Noun# linn#le/Pron#.||
+Bhíodh#bí/Verb# lucht#lucht/Noun# an#an/Art# dá#dó/Num# thí#tí/Noun# ag#ag/Prep# caint#caint/Verbal# lena#le/Prep# chéile#céile/Noun# gach#gach/Det# lá#lá/Noun#.||
+Me#Me/Prop# i#i/Prep# mblianta#bliain/Noun# na#na/Art# tuisceana#tuiscint/Verbal# an#an/Art# uair#uair/Noun# seo#seo/Pron#.||
+'Fágfair#Fágfair/Prop# an#an/Art# cóta#cóta/Noun# glas#glas/Adj# air#ar/Pron# nó#nó/Conj# go#go/Part# mbeir#bí/Verb# ag#ag/Prep# lorg#lorg/Verbal# mná#bean/Noun# dho#do/Prep#.||
+M'#M/Item#athair#athair/Noun#||
+Ó#ó/Prep# Pharóiste#paróiste/Noun# Fionntrá#trá/Noun# treabhchas#treabhchas/Noun# mo#mo/Det# mháthar#máthair/Noun#.||
+Do#do/Part# bhíodar#bí/Verb# araon#araon/Adv# toilteanach#toilteanach/Adj# le#le/Prep# chéile#céile/Noun#.||
+Bhí#bí/Verb# m'#m/Item#athair#athair/Noun# ag#ag/Prep# dul#dul/Verbal# ag#ag/Prep# iascach#iascach/Verbal# an#an/Art# mhaidean#mhaidean/Noun# so#seo/CM#.||
+Bhí#bí/Verb# an#an/Art# chruach#cruach/Noun# mhór#mór/Adj# mhóna#móin/Noun# age#ag/CM# baile#baile/Noun# fé#faoi/Prep# Dhomhnach#Domhnach/Noun# aici#ag/Pron#.||
+Do#do/Part# bhí#bí/Verb# chúig#cúig/Num# mhíle#míle/Num# éisc#iasc/Noun# agem#agem/Noun# athair#athair/Noun# an#an/Art# tseachtain#seachtain/Noun# sin#sin/Det#.||
+Bhíodh#bí/Verb# mo#mo/Det# mháthair#máthair/Noun# ag#ag/Prep# insint#insint/Verbal# na#na/Art# nithe#ní/Noun# seo#seo/Det# don#do/Prep# seanachailligh#seanachailleach/Noun# bhéal#béal/Noun# doiris#iris/Noun#.||
+LONG#long/Verb# NA#na/Art# hÍLE#íle/Noun# BHUÍ#buí/Adj#||
+Ní#ní/Part# raibh#bí/Verb# min#min/Noun# bhuí#buí/Adj# ann#ann/Adv# an#an/Art# uair#uair/Noun# seo#seo/Pron#.||
+B'#B/Item#eo#eo/Noun# amach#amach/Adv# na#na/Art# fir#fear/Noun# ghorma#gorm/Noun#.||
+B'#B/Item#eo#eo/Noun# amach#amach/Adv# na#na/Art# hailpeanna#ailp/Noun# don#do/Prep# íle#íle/Noun# bhuí#buí/Adj# ar#ar/Prep# snámh#snámh/Verbal# arís#arís/Adv#.||
+Do#do/Part# shábháil#sábháil/Verb# na#na/Art# mná#bean/Noun# arís#arís/Adv# iad#iad/Pron#.||
+Do#do/Part# bhog#bog/Noun# é#é/Pron# agus#agus/Conj# do#do/Part# bhain#bain/Verb#.||
+Bhí#bí/Verb# cheithre#ceathair/Num# troithe#troigh/Noun# ar#ar/Prep# faid#fad/Noun# ann#i/Pron#.||
+Ní#ní/Part# raibh#bí/Verb# aon#aon/Det# stad#stad/Noun# agam#ag/Pron# le#le/Prep# déanamh#déanamh/Verbal# ach#ach/Conj# mar#mar/Conj# 'bheadh#bí/Verb# coileán#coileán/Noun# cú#cú/Noun#.||
+Bhíodh#bí/Verb# duine#duine/Noun# éigin#éigin/Adj# ag#ag/Prep# faire#faire/Verbal# im#i/Prep# dhiaidh#diaidh/Subst#.||
+Bheadh#bí/Verb# pingin#pingin/Noun# is#agus/Conj# dhá#dó/Num# phingin#pingin/Noun# le#le/Prep# cur#cur/Verbal# id#id/Noun# phóca#póca/Noun# is#agus/Conj# gach#gach/Det# tigh#teach/Noun#.||
+Na#na/Art# Muca#muc/Noun# Mara#Mara/Prop#||
+Níor#níor/Part# chaitheas#caith/Verb# an#an/Art# méid#méid/Noun# sin#sin/Det# i#i/Prep# gan#gan/Prep# fhios#fios/Noun# don#do/Prep# seanachailligh#seanachailleach/Noun# bhéal#béal/Noun# doiris#iris/Noun#.||
+Do#do/Part# chuir#cuir/Verb# sí#sí/Pron# mise#mé/Pron# ar#ar/Prep# a#a/Det# drom#drom/Noun# gur#is/Cop# bhaineamair#bhaineamair/Noun# an#an/Art# tigh#teach/Noun# amach#amach/Adv#.||
+Bhí#bí/Verb# aghaidh#aghaidh/Noun# m'#m/Item#athar#athair/Noun# dearg#dearg/Adj# lena#le/Prep# chuid#cuid/Noun# fola#fuil/Noun# féin#féin/Pron# agus#agus/Conj# fuil#fuil/Noun# na#na/Art# muc#muc/Noun#.||
+B'#B/Item#éigean#éigean/Noun# do#do/Prep# í#í/Pron# a#a/Part# scaoileadh#scaoil/Verb# fén#faoi/Prep# dTráigh#Tráigh/Prop# Bháin#Báin/Prop#.||
+Níorbh#is/Cop# fhearrdede#fhearrdede/Noun# na#na/Art# hoileánaigh#oileánach/Noun# ó#ó/Prep# shin#sin/Pron# an#an/Art# radharc#radharc/Noun# san#sin/CM#.||
+Trí#trí/Prep# bliana#bliain/Noun# atá#bí/Verb# an#an/Art# pinsean#pinsean/Noun# agena#agen/Noun# comhaois#comhaois/Noun# insa#i/Prep# tír#tír/Noun# seo#seo/Pron#.||
+Fágann#fág/Verb# san#i/Prep# trí#trí/Num# bliana#bliain/Noun# déag#déag/Subst# agus#agus/Conj# trí#trí/Num# fichid#fiche/Noun# í#í/Pron#.||
+Baighreán#Baighreán/Prop# a#a/Part# thugadh#tabhair/Verb# na#na/Art# daoine#duine/Noun# air#ar/Pron#.||
+Bhí#bí/Verb# sé#sé/Pron# ráite#ráite/Verbal# go#go/Part# mbíodh#bí/Verb# sí#sí/Pron# ag#ag/Prep# athchogaint#athchogaint/Verbal# ar#ar/Prep# nós#nós/Noun# na#na/Art# bó#bó/Noun#.||
+Tá#bí/Verb# ana-chosúlacht#cosúlacht/Noun# acu#ag/Pron# so#seo/CM# le#le/Prep# scadáin#scadán/Noun#.||
+D'#D/Item#ardaigh#ardaigh/Verb# an#an/Art# breac#breac/Noun# amach#amach/Adv# 'on#on/Foreign# pholl#poll/Noun# me#me/Foreigno#.||
+D'#D/Item#aithin#aithin/Verb# mo#mo/Det# mham#mam/Noun# go#go/Part# raibh#bí/Verb# rud#rud/Noun# éigin#éigin/Adj# sa#i/Prep# treis#treis/Subst# agam#ag/Pron#.||
+Tháinig#tar/Verb# m'#m/Item#athair#athair/Noun# isteach#isteach/Adv#.||
+Bhí#bí/Verb# an#an/Art# eascú#eascú/Verbal# aige#ag/Pron# á#do/Prep# tharrac#tarrac/Noun# ina#i/Prep# dhiaidh#diaidh/Subst#.||
+An#an/Art# Scoil#scoil/Noun#||
+Tháinig#tar/Verb# lá#lá/Noun# ana-bhreá#breá/Adj#.||
+Lá#lá/Noun# Domhnaigh#Domhnach/Noun# dob#dob/Noun# ea#ea/Pron# é#é/Pron#.||
+Sin#sin/Cop# é#é/Pron# an#an/Art# uair#uair/Noun# do#do/Part# chuir#cuir/Verb# mo#mo/Det# mháthair#máthair/Noun# an#an/Art# scéal#scéal/Noun# im#i/Prep# láthairse#láthair/Noun#.||
+B'#B/Item#eo#eo/Noun# gach#gach/Det# nduine#duine/Noun# ag#ag/Prep# prapáil#prapáil/Verbal# chuin#chuin/Noun# dul#dul/Verbal# a#a/Part# chodladh#codladh/Verbal#.||
+B'#B/Item#éigeant#éigeant/Noun# do#do/Prep# Nóra#Nóra/Prop# breith#breith/Verbal# ar#ar/Prep# láimh#lámh/Noun# ormsa#ar/Pron# sarar#sarar/Noun# bhogas#bog/Verb# don#do/Prep# stól#stól/Noun#.||
+Do#do/Part# bhain#bain/Verb# gach#gach/Det# nduine#duine/Noun# againn#ag/Pron# a#a/Det# thigh#thigh/Foreign# féin#féin/Pron# amach#amach/Adv#.||
+Bhí#bí/Verb# dorn#dorn/Noun# prátaí#práta/Noun# fuarbheirithe#fuarbheirithe/Adj# romhainne#roimh/Pron#.||
+Buaileadh#buail/Verb# cois#cois/Prep# na#na/Art# tine#tine/Noun# iad#iad/Pron#.||
+Ní#ní/Part# rabhas#bí/Verb# baoch#baoch/Adj# do#do/Prep# Nóra#Nóra/Prop# nár#nár/Part# lig#lig/Verb# dom#do/Pron# féin#féin/Pron# í#í/Pron# a#a/Part# fhreagairt#freagairt/Verbal#.||
+Comhaois#comhaois/Noun# dob#dob/Noun# ea#ea/Pron# sinn#sinn/Pron#.||
+Chuaigh#téigh/Verb# cuid#cuid/Noun# acu#ag/Pron# i#i/Prep# ngreim#greim/Noun# sa#i/Prep# doras#doras/Noun# le#le/Prep# feac#feac/Noun# chuin#chuin/Noun# bóthair#bóthar/Noun#.||
+Canta#canta/Verbal# do#do/Prep# chíste#císte/Noun# do#do/Part# bhí#bí/Verb# romhainne#roimh/Pron# agus#agus/Conj# braon#braon/Noun# bainne#bainne/Noun# leis#le/Pron#.||
+Ar#ar/Prep# an#an/Art# dTráigh#Tráigh/Prop# Bháin#Báin/Prop# ansan#ansin/Adv# linn#linn/Noun# an#an/Art# chuid#cuid/Noun# eile#eil/Noun# don#do/Prep# lá#lá/Noun#.||
+Do#do/Part# bhuaileas#buail/Verb# amach#amach/Adv# chuin#chuin/Noun# scoile#scoil/Noun# in#i/Prep# aonacht#acht/Noun# le#le/Prep# Nóra#Nóra/Prop# agus#agus/Conj# Eibhlín#Eibhlín/Prop#.||
+Bhí#bí/Verb# mo#mo/Det# shúil#súil/Noun# ar#ar/Prep# gach#gach/Det# ceann#ceann/Noun# acu#ag/Pron#.||
+Mo#mo/Det# Mháthair#máthair/Noun# ón#ó/Prep# nDaingean#Daingean/Prop#||
+Lá#lá/Noun# Domhnaigh#Domhnach/Noun# do#do/Part# tháinig#tar/Verb# mo#mo/Det# mháthair#máthair/Noun# abhaile#abhaile/Adv# ón#ó/Prep# mbaile#baile/Noun# mór#mór/Adj#.||
+Bhí#bí/Verb# mála#mála/Noun# bán#bán/Adj# agus#agus/Conj# mála#mála/Noun# garbh#garbh/Adj# aici#ag/Pron#.||
+Bád#bád/Noun# Alex#Alex/Prop#||
+Toireasc#toireasc/Noun# do#do/Part# thug#tabhair/Verb# m'#m/Item#athair#athair/Noun# aisti#as/Pron# ní#ní/Verbal# fadó#fadó/Adv# do#do/Part# scar#scar/Verb# sí#sí/Pron# linn#le/Pron#.||
+Pósadh#pós/Verb# Mháire#Máire/Prop#||
+D'#D/Item#fhág#fág/Verb# Máire#Máire/Prop# an#an/Art# leanbh#leanbh/Noun# againne#ag/Pron# agus#agus/Conj# do#do/Part# bhain#bain/Verb# sí#sí/Pron# amach#amach/Adv# Meirice#Meirice/Prop#.||
+Trí#trí/Prep# bliana#bliain/Noun# a#a/Part# thug#tabhair/Verb# sí#sí/Pron# thall#thall/Adv#.||
+Ní#ní/Part# raibh#bí/Verb# so#seo/CM# róchneasta#cneasta/Adj# leis#le/Pron# an#an/Art# ngramaisc#gramaisc/Noun# scoláirí#scoláire/Noun# do#do/Part# bhí#bí/Verb# roimis#roimh/CM#.||
+Bhí#bí/Verb# cuma#cuma/Noun# fhiain#fhiain/Noun# air#ar/Pron#.||
+Deireadh#abair/Verb# an#an/Art# Rí#rí/Noun# liomsa#le/Pron# i#i/Prep# gcogar#cogar/Noun# gurb#is/Cop# ón#ó/Prep# Rúis#Rúis/Prop# do#do/Part# tháinig#tar/Verb# sé#sé/Pron#.||
+An#an/Art# mháistreás#máistreás/Noun# pósta#pósta/Verbal#||
+Do#do/Part# phós#pós/Verb# sí#sí/Pron# i#i/Prep# sráidbhaile#sráidbhaile/Noun# i#i/Prep# bParóiste#paróiste/Noun# an#an/Art# Fheirtéaraigh#feirtéarach/Noun#.||
+Crích#críoch/Noun# leis#le/Pron# an#an/Art# chéad#céad/Num# mhúinteoir#múinteoir/Noun# scoile#scoil/Noun# do#do/Part# tháinig#tar/Verb# go#go/Prep# dtí#tí/Noun# an#an/Art# Blascaod#Blascaod/Prop#.||
+Aoine#Aoine/Noun# an#an/Art# chéasta#céasadh/Noun#||
+Do#do/Prep# bhuaileamair#ar/Noun# amach#amach/Adv# an#an/Art# doras#doras/Noun#.||
+B'#B/Item#éigeant#éigeant/Noun# dóibh#do/Pron# fanúint#fanúint/Noun# mar#mar/Conj# a#a/Part# raibh#bí/Verb# acu#ag/Pron#.||
+Is#is/Cop# air#ar/Pron# ná#nach/CM# bíodh#bí/Verb# an#an/Art# teip#teip/Noun#.||
+Prátaí#práta/Noun# agus#agus/Conj# ní#ní/Verbal# arán#arán/Noun# do#do/Part# bhíodh#bí/Verb# caite#caite/Verbal# age#ag/CM# gach#gach/Det# n-aon#aon/Noun#.||
+Chuaigh#téigh/Verb# don#do/Prep# tsagart#sagart/Noun# máistir#máistir/Noun# d'#d/Item#fháil#fáil/Verbal#.||
+Bhí#bí/Verb# leabhair#leabhar/Noun# bheaga#beag/Adj# nua#nua/Adj# aici#ag/Pron# seo#seo/Pron# á#do/Prep# thabhairt#tabhairt/Verbal# amach#amach/Adv#.||
+'Bead#bí/Verb# in#i/Prep# aonacht#acht/Noun# leatsa#le/Pron#.||
+Coimeádfad#coimeád/Verb# má#má/Conj# bhíonn#bí/Verb# aon#aon/Det# phortán#portán/Noun# agat#ag/Pron#.'||
+Do#do/Part# chuaigh#téigh/Verb# amach#amach/Adv# ar#ar/Prep# oileán#oileán/Noun# do#do/Part# bhí#bí/Verb# ann#i/Pron#.||
+Níonáil#níonáil/Verbal# do#do/Part# bhí#bí/Verb# lena#le/Prep# hata#hata/Noun# do#do/Part# chas#cas/Verb# sé#sé/Pron# ar#ar/Prep# mo#mo/Det# mhéireanna#méir/Noun#.||
+Do#do/Part# bhíos#bí/Verb# ag#ag/Prep# seinm#seinm/Verbal# Dhónaill#Dónaill/Prop# na#na/Art# Gréine#grian/Noun# láithreach#láithreach/Adj#.||
+B'#B/Item#fhéidir#féidir/Subst# go#go/Part# bhfaigheadh#faigh/Verb# sí#sí/Pron# sin#sin/Pron# cámas#cámas/Noun# orainne#ar/Pron# comh#chomh/Adv# maith#maith/Adj#.||
+Beannacht#beannacht/Noun# Dé#dia/Noun# leo#le/Pron# ar#ar/Noun# fad#fad/Conj#.||
+Do#do/Part# bhuail#buail/Verb# chuige#chuige/Adv# i#i/Prep# mála#mála/Noun# iad#iad/Pron# agus#agus/Conj# do#do/Part# bhuail#buail/Verb# an#an/Art# cnoc#cnoc/Noun# amach#amach/Adv#.||
+Iad#iad/Pron# tar#thar/Prep# éis#éis/Subst# bídh#biadh/Noun# do#do/Prep# bheith#bheith/Verbal# caite#caite/Verbal# acu#ag/Pron#.||
+Caithfeadsa#Caithfeadsa/Prop# pósadh#pósadh/Verbal# 'dhéanamh#déanamh/Noun# nó#nó/Conj# dul#dul/Verbal# do#do/Part# léim#léigh/Verb# thar#thar/Prep# muir#muir/Noun#.'||
+Is#is/Cop# caithfeadsa#caithfeads/Noun# pósadh#pósadh/Verbal# 'dhéanamh#déanamh/Noun# nó#nó/Conj# dul#dul/Verbal# do#do/Part# léim#léigh/Verb# 'on#on/Foreign# loing#loing/Noun#.'||
+B'#B/Item#éigeant#éigeant/Noun# don#do/Prep# mháthair#máthair/Noun# slataire#slataire/Noun# fir#fear/Noun# do#do/Part# phiocadh#pioc/Verb# suas#suas/Adv# di#de/Pron# gan#gan/Prep# mhoill#moill/Noun#.||
+Ó#ó/Prep# cheantar#ceantar/Noun# an#an/Art# Daingin#daingean/Noun# dob#dob/Noun# ea#ea/Pron# a#a/Det# muintir#muintir/Noun#.||
+Ar#ar/Prep# chloisint#cloisteáil/Verbal# sin#sin/Pron# dúinn#do/Pron# ní#ní/Verbal# rabhamair#rabhamair/Noun# istigh#istigh/Adv# linn#linn/Noun# féin#féin/Pron#.||
+Stunaire#stunaire/Noun# maith#maith/Adj# cailín#cailín/Noun# do#do/Part# chonaic#feic/Verb# ar#ar/Prep# dtúis#túis/Noun# é#é/Pron#.||

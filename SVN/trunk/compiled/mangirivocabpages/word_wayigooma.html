@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>wayigooma</h1>
+
+<p><a href="_main_text_mangiri_10.html#mangiri_page_10_segment_6" target="main_frame"><b>&larr;</b></a> <a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_10_segment_6_word_1><span class="sound" title="Lord-PURP" onmouseover="playSound('./multimedia/1053827_201203_023536306.mp3');">Oorndagarraru</span></span></a> <a href="word_nhoornoo.html" target="aux_frame"><span id=mangiri_page_10_segment_6_word_3><span class="sound" title="you-SING" onmouseover="playSound('./multimedia/1053817_201203_023452700.mp3');">nhoornoo</span></span></a> <a href="word_nhagoo.html" target="aux_frame"><span id=mangiri_page_10_segment_6_word_5><span class="sound" title="see-IMP" onmouseover="playSound('./multimedia/1053810_201203_023436196.mp3');">nhagooga</span></span></a> <a href="word_gooda.html" target="aux_frame"><span id=mangiri_page_10_segment_6_word_7><span class="sound" title="not" onmouseover="playSound('./multimedia/980025_200916_023716686.mp3');">gooda</span></span></a> <span class="red"><span class="sound" title="fear-IMP" onmouseover="playSound('./multimedia/1053870_201203_023629377.mp3');">wayigoomaga</span></span> <span onclick="playSound('./multimedia/1054038_201203_062905896.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_mangiri_10.html#mangiri_page_10_segment_13" target="main_frame"><b>&larr;</b></a> <a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_10_segment_13_word_1><span class="sound" title="Lord-PURP" onmouseover="playSound('./multimedia/1053825_201203_023516643.mp3');">Oorndagarra-ru</span></span></a><a href="word_nhoornoo.html" target="aux_frame"><span id=mangiri_page_10_segment_13_word_3><span class="sound" title="you-SING" onmouseover="playSound('./multimedia/1053817_201203_023452700.mp3');">nhoornoo</span></span></a><a href="word_nhagoo.html" target="aux_frame"><span id=mangiri_page_10_segment_13_word_5><span class="sound" title="see-IMP" onmouseover="playSound('./multimedia/1053808_201203_023445440.mp3');">nhagoo-ga</span></span></a><a href="word_gooda.html" target="aux_frame"><span id=mangiri_page_10_segment_13_word_7><span class="sound" title="not" onmouseover="playSound('./multimedia/980025_200916_023716686.mp3');">gooda</span></span></a><span class="red"><span class="sound" title="fear-IMP" onmouseover="playSound('./multimedia/1053869_201203_023624941.mp3');">wayigooma-ga</span></span> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

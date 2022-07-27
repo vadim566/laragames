@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>brûler</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_303" target="main_frame"><b>&larr;</b></a>  <a href="word_car.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_1><span title="Since">Car</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_3><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_4><span title="is">est</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_6><span title="that">cela</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_8><span title="that">que</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_10><span title="I">je</span></span></a> <a href="word_vouloir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_12><span title="want">veux</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_14><span title="that">que</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_16><span title="you">tu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_18><span title="know">saches</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_20><span title="the">les</span></span></a> <a href="word_coulisse.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_22><span title="backstage">coulisses</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_24><span title="of">de</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_26><span title="this">ce</span></span></a> <a href="word_drame.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_28><span title="drama">drame</span></span></a> <a href="word_où.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_30><span title="where">où</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_32><span title="you">tu</span></span></a> <span class="red"><span title="burn">brûles</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_36><span title="to">de</span></span></a> <a href="word_jouer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_38><span title=" play">jouer</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_40><span title="a">un</span></span></a> <a href="word_rôle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_42><span title="role">rôle</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_44><span title="the">la</span></span></a> <a href="word_cuisine.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_303_word_46><span title="kitchen">cuisine</span></span></a>. <span title="That's what I wanted you to know., what's happening backstage in this drama where you so want to play a role, what goes on in the kitchen.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

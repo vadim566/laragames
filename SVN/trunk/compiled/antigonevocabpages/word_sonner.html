@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>sonner</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_19.html#antigone_nahed_marta_chadi_page_19_segment_34" target="main_frame"><b>&larr;</b></a>  (<a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_1><span title="The">L'</span></span></a><a href="word_heure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_2><span title="hour">heure</span></span></a> <span class="red"><span title="striked">sonne</span></span> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_6><span title="in the">au</span></span></a> <a href="word_loin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_8><span title="distance">loin</span></span></a>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_10><span title="he">il</span></span></a> <a href="word_murmurer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_34_word_12><span title="murmurs">murmure</span></span></a>.) <span title="(The hour strikes in the distance, he murmurs.)">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

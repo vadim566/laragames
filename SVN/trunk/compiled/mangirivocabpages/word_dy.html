@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>dy</h1>
+
+<p><a href="_main_text_mangiri_5.html#mangiri_page_5_segment_3" target="main_frame"><b>&larr;</b></a>  <a href="word_a.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_1><span class="sound" onmouseover="playSound('./multimedia/979966_200916_023131812.mp3');">a</td></span></span></a> <a href="word_g.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_3><span class="sound" onmouseover="playSound('./multimedia/980005_200916_023528355.mp3');">g</td></span></span></a> <a href="word_ng.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_5><span class="sound" onmouseover="playSound('./multimedia/71481_190606_085318789.mp3');">ng</td></span></span></a> <a href="word_rl.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_7><span class="sound" onmouseover="playSound('./multimedia/71511_190606_090314585.mp3');">rl</td></span></span></a> <a href="word_ai.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_9><span class="sound" onmouseover="playSound('./multimedia/979967_200916_023134237.mp3');">ai</td></span></span></a> <a href="word_i.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_11><span class="sound" onmouseover="playSound('./multimedia/980030_200916_023801624.mp3');">i</td></span></span></a> <a href="word_nh.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_13><span class="sound" onmouseover="playSound('./multimedia/71501_190606_090200527.mp3');">nh</td></span></span></a> <a href="word_rn.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_15><span class="sound" onmouseover="playSound('./multimedia/71512_190606_090319312.mp3');">rn</td></span></span></a> <a href="word_aw.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_17><span class="sound" onmouseover="playSound('./multimedia/979968_200916_023137175.mp3');">aw</td></span></span></a> <a href="word_ii.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_19><span class="sound" onmouseover="playSound('./multimedia/980033_200916_023809835.mp3');">ii</td></span></span></a> <a href="word_ny.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_21><span class="sound" onmouseover="playSound('./multimedia/71506_190606_090245111.mp3');">ny</span></span></a> <a href="word_w.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_23><span class="sound" onmouseover="playSound('./multimedia/71514_190606_090328393.mp3');">w</td></span></span></a> <a href="word_b.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_25><span class="sound" onmouseover="playSound('./multimedia/979969_200916_023139269.mp3');">b</td></span></span></a> <a href="word_l.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_27><span class="sound" onmouseover="playSound('./multimedia/980040_200916_023842276.mp3');">l</td></span></span></a> <a href="word_oo.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_29><span class="sound" onmouseover="playSound('./multimedia/980119_200916_024554725.mp3');">oo</td></span></span></a> <a href="word_y.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_31><span class="sound" onmouseover="playSound('./multimedia/980165_200916_025027632.mp3');">y</td></span></span></a> <a href="word_d.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_33><span class="sound" onmouseover="playSound('./multimedia/979997_200916_023410482.mp3');">d</td></span></span></a> <a href="word_ly.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_35><span class="sound" onmouseover="playSound('./multimedia/980041_200916_023844278.mp3');">ly</td></span></span></a> <a href="word_r.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_37><span class="sound" onmouseover="playSound('./multimedia/71508_190606_090253967.mp3');">r</td></span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/980003_200916_023522230.mp3');">dy</td></span></span> <a href="word_m.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_41><span class="sound" onmouseover="playSound('./multimedia/980042_200916_023846205.mp3');">m</td></span></span></a> <a href="word_rr.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_43><span class="sound" onmouseover="playSound('./multimedia/71513_190606_090324384.mp3');">rr</td></span></span></a> <a href="word_dh.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_45><span class="sound" onmouseover="playSound('./multimedia/979998_200916_023412887.mp3');">dh</td></span></span></a> <a href="word_n.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_47><span class="sound" onmouseover="playSound('./multimedia/980084_200916_024326422.mp3');">n</td></span></span></a> <a href="word_rd.html" target="aux_frame"><span id=mangiri_page_5_segment_3_word_49><span class="sound" onmouseover="playSound('./multimedia/71510_190606_090302433.mp3');">rd</td></span></span></a> </p>
+<p><a href="_main_text_mangiri_6.html#mangiri_page_6_segment_3" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/980003_200916_023522230.mp3');">dy</span></span> </p>
+<p><a href="_main_text_mangiri_6.html#mangiri_page_6_segment_4" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/980003_200916_023522230.mp3');">dy</span></span> </p>
+<p><a href="_main_text_mangiri_6.html#mangiri_page_6_segment_7" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/980003_200916_023522230.mp3');">dy</span></span><a href="word_bidyindni.html" target="aux_frame"><span id=mangiri_page_6_segment_7_word_3><span class="sound" title="soft, smooth" onmouseover="playSound('./multimedia/979989_200916_023344845.mp3');">bi<b>dy</b>indni</span></span></a><a href="word_dyimba.html" target="aux_frame"><span id=mangiri_page_6_segment_7_word_5><span class="sound" title="ashes" onmouseover="playSound('./multimedia/980004_200916_023525718.mp3');"><b>dy</b>imba</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

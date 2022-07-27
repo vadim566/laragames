@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>mignon</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_78" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_1><span title="He">La</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_3><span title="make">faire</span></span></a> <a href="word_tuer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_5><span title="killed">tuer</span></span></a>, <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_7><span title="my">ma</span></span></a> <span class="red"><span title="sweetie">mignonne</span></span> ? <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_11><span title="Make">Faire</span></span></a> <a href="word_tuer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_13><span title="killed">tuer</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_15><span title="your">ta</span></span></a> <a href="word_chien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_17><span title="dog">chienne</span></span></a> ? <a href="word_mais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_19><span title="But">Mais</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_21><span title="you">tu</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_23><span title="are">es</span></span></a> <a href="word_folle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_25><span title="crazy">folle</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_27><span title="this">ce</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_78_word_29><span title="morning">matin</span></span></a> ! <span title="Have her put down, sweetie? Kill your dog? But what's got into you this morning!">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

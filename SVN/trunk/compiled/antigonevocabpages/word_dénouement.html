@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>dénouement</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_62" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_1><span title=" You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_3><span title="have">as</span></span></a> <a href="word_devoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_5><span title="must">dû</span></span></a> <a href="word_penser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_7><span title="thought">penser</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_9><span title="that">que</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_11><span title="I">je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_13><span title="you">te</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_15><span title="would make">ferais</span></span></a> <a href="word_mourir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_17><span title="die">mourir</span></span></a>. <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_19><span title="And">Et</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_21><span title="that">cela</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_23><span title="you">te</span></span></a> <a href="word_paraître.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_25><span title="seemed">paraissait</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_27><span title="an">un</span></span></a> <span class="red"><span title="ending">dénouement</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_31><span title="quite">tout</span></span></a> <a href="word_naturel.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_33><span title="natural">naturel</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_35><span title="for">pour</span></span></a> <a href="word_toi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_37><span title="you">toi</span></span></a>, <a href="word_orgueilleux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_62_word_39><span title=" proud girl">orgueilleuse</span></span></a> ! <span title="Yes, I can understand now that you thought I'd have you killed. And you're so proud it seemed like a perfectly natural ending for you.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

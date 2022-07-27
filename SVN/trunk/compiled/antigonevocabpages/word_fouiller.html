@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>fouiller</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_119" target="main_frame"><b>&larr;</b></a>  <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_1><span title="You">Vous</span></span></a> <a href="word_comprendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_3><span title="understand">comprenez</span></span></a>, <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_5><span title="if">si</span></span></a> <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_7><span title="they">on</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_9><span title="me">me</span></span></a> <span class="red"><span title="frisk">fouille</span></span>, <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_13><span title="me">moi</span></span></a>, <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_15><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_16><span title="is">est</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_18><span title="the">le</span></span></a> <a href="word_conseil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_20><span title="court-martial">conseil</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_22><span title="court-martial">de</span></span></a> <a href="word_guerre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_24><span title="court-martial ">guerre</span></span></a>. <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_26><span title=" That">Cela</span></span></a> <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_28><span title="you">vous</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_30><span title="is">est</span></span></a> <a href="word_égal.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_32><span title="the same">égal</span></span></a>, <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_34><span title="to">à</span></span></a> <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_119_word_36><span title="you">vous</span></span></a> ? <span title="You understand, if they frisk me we're talking court-martial. But I guess you aren't bothered.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

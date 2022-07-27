@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>énorme</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_23" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_1><span title=" I">Je</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_3><span title="made">faisais</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_5><span title="a">un</span></span></a> <a href="word_bruit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_7><span title="noise">bruit</span></span></a> <span class="red"><span title="huge">énorme</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_11><span title="all">toute</span></span></a> <a href="word_seul.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_13><span title="alone">seule</span></span></a> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_15><span title="on">sur</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_17><span title="the">la</span></span></a> <a href="word_route.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_19><span title="road">route</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_21><span title="and">et</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_23><span title="I">j'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_24><span title="was">étais</span></span></a> <a href="word_gêner.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_26><span title="embarrassed">gênée</span></span></a> <a href="word_parce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_28><span title="because">parce</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_30><span title="because">que</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_32><span title="I">je</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_34><span title="knew">savais</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_36><span title="well">bien</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_38><span title="that">que</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_40><span title="it">ce</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_42><span title=" not">n'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_43><span title="was">était</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_45><span title="not">pas</span></span></a> <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_47><span title=",e">moi</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_49><span title="that">qu'</span></span></a><a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_50><span title="one">on</span></span></a> <a href="word_attendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_23_word_52><span title="waited for">attendait</span></span></a>. <span onclick="playSound('./multimedia/1029209_201013_205759277.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="I made a huge noise, walking down the road all on my own, and I was embarrassed because I know they weren't waiting for me.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>bilyilya</h1>
+
+<p><a href="_main_text_mangiri_6.html#mangiri_page_6_segment_9" target="main_frame"><b>&larr;</b></a> <a href="word_ly.html" target="aux_frame"><span id=mangiri_page_6_segment_9_word_1><span class="sound" onmouseover="playSound('./multimedia/980041_200916_023844278.mp3');">ly</span></span></a><a href="word_bardalya.html" target="aux_frame"><span id=mangiri_page_6_segment_9_word_3><span class="sound" title="scar" onmouseover="playSound('./multimedia/979982_200916_023248188.mp3');">barda<b>ly</b>a</span></span></a><span class="red"><span class="sound" title="butterfly" onmouseover="playSound('./multimedia/979991_200916_023351846.mp3');">bi<b>ly</b>i<b>ly</b>a</span></span> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>tartine</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_4" target="main_frame"><b>&larr;</b></a>  <a href="word_tenir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_1><span title=" Here">Tiens</span></span></a>, <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_3><span title="you">te</span></span></a> <a href="word_voilà.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_5><span title="there you are">voilà</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_7><span title="a">un</span></span></a> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_9><span title="nice">bon</span></span></a> <a href="word_café.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_11><span title="coffee">café</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_13><span title="and">et</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_15><span title="some">des</span></span></a> <span class="red"><span title="toast">tartines</span></span>, <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_19><span title="my">mon</span></span></a> <a href="word_pigeon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_21><span title="pigeon">pigeon</span></span></a>. <a href="word_manger.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_4_word_23><span title="Eat">Mange</span></span></a>. <span title="Here you are sweetheart, a nice cup of coffee and some toast. Have something.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

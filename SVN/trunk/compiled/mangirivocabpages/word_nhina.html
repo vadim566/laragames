@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>nhina</h1>
+
+<p><a href="_main_text_mangiri_9.html#mangiri_page_9_segment_4" target="main_frame"><b>&larr;</b></a> <a href="word_ngadhoo.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_1><span class="sound" title="I-ERG" onmouseover="playSound('./multimedia/980088_200916_024335457.mp3');">Ngadhoo</span></span></a> <span class="red"><span class="sound" title="you-ACC" onmouseover="playSound('./multimedia/980112_200916_024516563.mp3');">nhina</span></span> <a href="word_ngoowadha.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_5><span class="sound" title="pray" onmouseover="playSound('./multimedia/980107_200916_024456902.mp3');">ngoowadha</span></span></a> <a href="word_inha.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_7><span class="sound" title="those" onmouseover="playSound('./multimedia/980038_200916_023833561.mp3');">inha</span></span></a> <a href="word_yadna.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_9><span class="sound" title="there" onmouseover="playSound('./multimedia/980168_200916_025046701.mp3');">yadna</span></span></a> <a href="word_gooda.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_11><span class="sound" title="not" onmouseover="playSound('./multimedia/980025_200916_023716686.mp3');">gooda</span></span></a> <a href="word_madlanidhi.html" target="aux_frame"><span id=mangiri_page_9_segment_4_word_13><span class="sound" title="to become no more" onmouseover="playSound('./multimedia/980043_200916_023851350.mp3');">madlanidhi</span></span></a>. <span onclick="playSound('./multimedia/986123_200925_100344704.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_mangiri_9.html#mangiri_page_9_segment_15" target="main_frame"><b>&larr;</b></a> <a href="word_ngadhoo.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_1><span class="sound" title="I-ERG" onmouseover="playSound('./multimedia/980088_200916_024335457.mp3');">ngadhoo</span></span></a><span class="red"><span class="sound" title="you-ACC" onmouseover="playSound('./multimedia/980112_200916_024516563.mp3');">nhina</span></span><a href="word_ngoowadha.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_5><span class="sound" title="pray" onmouseover="playSound('./multimedia/980107_200916_024456902.mp3');">ngoowadha</span></span></a><a href="word_inha.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_7><span class="sound" title="those" onmouseover="playSound('./multimedia/980038_200916_023833561.mp3');">inha</span></span></a> <a href="word_yadna.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_9><span class="sound" title="there" onmouseover="playSound('./multimedia/980168_200916_025046701.mp3');">yadna</span></span></a><a href="word_gooda.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_11><span class="sound" title="not" onmouseover="playSound('./multimedia/980025_200916_023716686.mp3');">gooda</span></span></a><a href="word_madlanidhi.html" target="aux_frame"><span id=mangiri_page_9_segment_15_word_13><span class="sound" title="to become no more" onmouseover="playSound('./multimedia/980043_200916_023851350.mp3');">madlanidhi</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

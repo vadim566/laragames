@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>yabma</h1>
+
+<p><a href="_main_text_mangiri_15.html#mangiri_page_15_segment_11" target="main_frame"><b>&larr;</b></a> <a href="word_manggooroo.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_1><span class="sound" title="strong" onmouseover="playSound('./multimedia/980053_200916_024028468.mp3');">manggooroo</span></span></a><a href="word_banggooroo.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_3><span class="sound" title="weak" onmouseover="playSound('./multimedia/979981_200916_023243838.mp3');">banggooroo</span></span></a><a href="word_wanha.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_5><span class="sound" title="which; what; where" onmouseover="playSound('./multimedia/980143_200916_024824079.mp3');">wanha</span></span></a><a href="word_warda.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_7><span class="sound" title="stump; stem" onmouseover="playSound('./multimedia/980144_200916_024827320.mp3');">warda</span></span></a><a href="word_walha.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_9><span class="sound" title="wild turkey" onmouseover="playSound('./multimedia/980136_200916_024756646.mp3');">walha</span></span></a><a href="word_warna.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_11><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">warna</span></span></a><span class="red"><span class="sound" title="back of a man" onmouseover="playSound('./multimedia/980166_200916_025031081.mp3');">yabma</span></span><a href="word_wabma.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_15><span class="sound" title="wabma" onmouseover="playSound('./multimedia/980131_200916_024732473.mp3');">wabma</span></span></a><a href="word_minawarlboo.html" target="aux_frame"><span id=mangiri_page_15_segment_11_word_17><span class="sound" title="not sleepy, awake" onmouseover="playSound('./multimedia/980064_200916_024106763.mp3');">Minawarlboo</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

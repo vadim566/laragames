@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>Ecris</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_133" target="main_frame"><b>&larr;</b></a>  <span class="red"><span title="Write">Ecris</span></span> : « <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_133_word_3><span title="My">Mon</span></span></a> <a href="word_chéri.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_133_word_5><span title="darling">chéri</span></span></a>... » <span onclick="playSound('./multimedia/1030640_201025_155317976.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Write: &quot;My darling...&quot;">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

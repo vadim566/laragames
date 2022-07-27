@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>maître</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_49" target="main_frame"><b>&larr;</b></a>  <a href="word_père.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_1><span title=" Father">Père</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_3><span title="the">la</span></span></a> <a href="word_foule.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_5><span title=" crowd">foule</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_7><span title="not">n'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_8><span title="is">est</span></span></a> <a href="word_rien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_10><span title="nothing">rien</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_12><span title="You">Tu</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_14><span title="are">es</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_49_word_16><span title="the">le</span></span></a> <span class="red"><span title="master">maître</span></span>. <span title="Father, the crowd is nothing. You are the master.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_51" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_1><span title="I">Je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_3><span title="am">suis</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_5><span title="the">le</span></span></a> <span class="red"><span title="master">maître</span></span> <a href="word_avant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_9><span title="before">avant</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_11><span title="the">la</span></span></a> <a href="word_loi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_13><span title="law">loi</span></span></a>. <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_15><span title="Not">Plus</span></span></a> <a href="word_après.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_51_word_17><span title="after">après</span></span></a>. <span title="I am the master before the law. Not after.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

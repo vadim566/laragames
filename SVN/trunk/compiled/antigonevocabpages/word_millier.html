@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>millier</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_80" target="main_frame"><b>&larr;</b></a>  <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_1><span title="And">Et</span></span></a> <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_3><span title="they">ils</span></span></a> <a href="word_penser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_5><span title="think">pensent</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_7><span title="all">tous</span></span></a> <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_9><span title="like">comme</span></span></a> <a href="word_luire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_11><span title="him">lui</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_13><span title="in">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_15><span title="the">la</span></span></a> <a href="word_ville.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_17><span title="town">ville</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_19><span title="They">Ils</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_21><span title="are">sont</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_23><span title="the">des</span></span></a> <span class="red"><span title="thousands">milliers</span></span> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_27><span title="and">et</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_29><span title="the">des</span></span></a> <span class="red"><span title=" thousands">milliers</span></span> <a href="word_autour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_33><span title="around">autour</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_35><span title="of">de</span></span></a> <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_37><span title="us">nous</span></span></a>, <a href="word_grouiller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_39><span title="crawling">grouillant</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_41><span title="in">dans</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_43><span title="all">toutes</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_45><span title="the">les</span></span></a> <a href="word_rue.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_47><span title="streets">rues</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_49><span title="of">de</span></span></a> <a href="word_capitalised_thèbes.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_80_word_51><span title=" Thebes">Thèbes</span></span></a>. <span onclick="playSound('./multimedia/921603_200829_154440249.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="And they all think like him in the city. There's thousands and thousands of those people all round us, the streets of Thebes are crawling with them.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

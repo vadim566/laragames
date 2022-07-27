@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>rouillé</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_62" target="main_frame"><b>&larr;</b></a>  <a href="word_après.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_1><span title=" After">Après</span></span></a>, <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_3><span title="while">en</span></span></a> <a href="word_chercher.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_5><span title="searching">cherchant</span></span></a> <a href="word_mieux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_7><span title="better">mieux</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_9><span title="the">le</span></span></a> <a href="word_garde.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_11><span title="guard">garde</span></span></a> <a href="word_capitalised_durand.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_13><span title="Durand">Durand</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_15><span title="has">a</span></span></a> <a href="word_trouver.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_17><span title="found">trouvé</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_19><span title="more">plus</span></span></a> <a href="word_loin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_21><span title="distant">loin</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_23><span title="a">une</span></span></a> <a href="word_pelle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_25><span title="spade">pelle</span></span></a>, <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_27><span title="a">une</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_29><span title="little">petite</span></span></a> <a href="word_pelle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_31><span title="spade">pelle</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_33><span title="of">d'</span></span></a><a href="word_enfant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_34><span title="child">enfant</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_36><span title="all">toute</span></span></a> <a href="word_vieux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_38><span title="old">vieille</span></span></a>, <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_62_word_40><span title="all">toute</span></span></a> <span class="red"><span title="rusty">rouillée</span></span>. <span title="Afterwards, when we looked around better, guardsman Durand found a spade further away, a little kid's spade, all old and rusty.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

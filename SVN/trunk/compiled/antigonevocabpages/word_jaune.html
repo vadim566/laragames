@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>jaune</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_10" target="main_frame"><b>&larr;</b></a>  <a href="word_maintenant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_1><span title="Now">Maintenant</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_3><span title="ou">tu</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_5><span title="not">ne</span></span></a> <a href="word_pouvoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_7><span title="can">peux</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_9><span title="not">pas</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_11><span title="know">savoir</span></span></a>, <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_13><span title="everything">tout</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_15><span title="is">est</span></span></a> <a href="word_déjà.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_17><span title="already">déjà</span></span></a> <a href="word_rose.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_19><span title="pink">rose</span></span></a>, <span class="red"><span title="yellow">jaune</span></span>, <a href="word_vert.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_10_word_23><span title="green">vert</span></span></a>. <span title="Now you won't recognise it, it's already all pink, yellow, green.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

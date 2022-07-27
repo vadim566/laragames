@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>Taoutaou</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_31" target="main_frame"><b>&larr;</b></a>  <a href="word_voilà.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_1><span title="There you are">Voilà</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_3><span title="I">je</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_5><span title="not">n'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_6><span title="am">ai</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_8><span title="no longer">plus</span></span></a> <a href="word_peur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_10><span title="scared">peur</span></span></a>. <a href="word_ni.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_12><span title="Not">Ni</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_14><span title="of the ">du</span></span></a> <a href="word_méchant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_16><span title="bad">méchant</span></span></a> <a href="word_ogre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_18><span title="ogre">ogre</span></span></a>, <a href="word_ni.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_20><span title="nor">ni</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_22><span title="of the">du</span></span></a> <a href="word_marchand.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_24><span title="sandman">marchand</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_26><span title="sandman">de</span></span></a> <a href="word_sable.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_28><span title=" sandman">sable</span></span></a>, <a href="word_ni.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_30><span title=" nor">ni</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_32><span title="of">de</span></span></a> <span class="red"><span title=" Taoutaou">Taoutaou</span></span> <a href="word_qui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_36><span title="who">qui</span></span></a> <a href="word_passe.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_38><span title="comes">passe</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_40><span title="and">et</span></span></a> <a href="word_emmener.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_42><span title="takes away">emmène</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_44><span title="the">les</span></span></a> <a href="word_enfant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_31_word_46><span title="children">enfants</span></span></a>... <span onclick="playSound('./multimedia/1029502_201017_204207922.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="There we are, I'm not scared anymore. Not of the sandman, not of the wicked witch, not of the child-catcher...">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

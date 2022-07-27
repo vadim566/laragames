@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>extérieur</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_4" target="main_frame"><b>&larr;</b></a>  <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_1><span title="Antigone">Antigone</span></span></a> <a href="word_entr_apostropheouvrir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_3><span title="opens slightly">entr'ouvre</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_5><span title="the">la</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_7><span title="door">porte</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_9><span title="and">et</span></span></a> <a href="word_rentrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_11><span title="returns">rentre</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_13><span title="from">de</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_15><span title="the">l'</span></span></a><span class="red"><span title="outside">extérieur</span></span> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_18><span title="on">sur</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_20><span title="the">la</span></span></a> <a href="word_pointe.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_22><span title="tips">pointe</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_24><span title="of">de</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_26><span title="her">ses</span></span></a> <a href="word_pied.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_28><span title="feet">pieds</span></span></a> <a href="word_nu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_30><span title="bare">nus</span></span></a>, <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_32><span title="her">ses</span></span></a> <a href="word_soulier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_34><span title="sandals">souliers</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_36><span title="in">à</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_38><span title="her">la</span></span></a> <a href="word_main.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_4_word_40><span title="hand">main</span></span></a>. <span title="Antigone opens the door a crack and steals in bare-footed, on tip-toe, her sandals in her hand.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

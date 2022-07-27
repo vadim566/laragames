@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>imini</h1>
+
+<p><a href="_main_text_mangiri_9.html#mangiri_page_9_segment_2" target="main_frame"><b>&larr;</b></a> <a href="word_wilya.html" target="aux_frame"><span id=mangiri_page_9_segment_2_word_1><span class="sound" title="spirit" onmouseover="playSound('./multimedia/980163_200916_025021645.mp3');">Wilya</span></span></a> <a href="word_galgarridni.html" target="aux_frame"><span id=mangiri_page_9_segment_2_word_3><span class="sound" title="ancient" onmouseover="playSound('./multimedia/980014_200916_023621662.mp3');">galgarridni</span></span></a> <span class="red"><span class="sound" title="sacred" onmouseover="playSound('./multimedia/980036_200916_023825820.mp3');">imini</span></span>, <a href="word_ngaidyi.html" target="aux_frame"><span id=mangiri_page_9_segment_2_word_7><span class="sound" title="my" onmouseover="playSound('./multimedia/980090_200916_024342217.mp3');">ngaidyi</span></span></a> <a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_9_segment_2_word_9><span class="sound" title="Lord" onmouseover="playSound('./multimedia/1053823_201203_023503180.mp3');">Oorndagarra</span></span></a>! <span onclick="playSound('./multimedia/1331976_201204_063419151.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_mangiri_9.html#mangiri_page_9_segment_14" target="main_frame"><b>&larr;</b></a> <a href="word_wilya.html" target="aux_frame"><span id=mangiri_page_9_segment_14_word_1><span class="sound" title="spirit" onmouseover="playSound('./multimedia/980163_200916_025021645.mp3');">wilya</span></span></a><a href="word_galgarridni.html" target="aux_frame"><span id=mangiri_page_9_segment_14_word_3><span class="sound" title="ancient" onmouseover="playSound('./multimedia/980014_200916_023621662.mp3');">galgarridni</span></span></a><span class="red"><span class="sound" title="sacred" onmouseover="playSound('./multimedia/980036_200916_023825820.mp3');">imini</span></span><a href="word_ngaidyi.html" target="aux_frame"><span id=mangiri_page_9_segment_14_word_7><span class="sound" title="my" onmouseover="playSound('./multimedia/980090_200916_024342217.mp3');">ngaidyi</span></span></a><a href="word_oorndagarra.html" target="aux_frame"><span id=mangiri_page_9_segment_14_word_9><span class="sound" title="Lord" onmouseover="playSound('./multimedia/1053823_201203_023503180.mp3');">Oorndagarra</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

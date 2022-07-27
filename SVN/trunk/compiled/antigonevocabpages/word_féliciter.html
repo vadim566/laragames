@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>féliciter</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_11.html#antigone_nahed_marta_chadi_page_11_segment_53" target="main_frame"><b>&larr;</b></a>  <a href="word_mais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_1><span title="But">Mais</span></span></a> <a href="word_notre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_3><span title="our">nos</span></span></a> <a href="word_femme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_5><span title="wives">femmes</span></span></a>, <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_7><span title="if">si</span></span></a> <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_9><span title="we">on</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_11><span title="have">a</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_13><span title="the">le</span></span></a> <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_15><span title="month">mois</span></span></a> <a href="word_double.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_17><span title="double">double</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_19><span title="they">elles</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_21><span title="it">le</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_23><span title="will know">sauront</span></span></a>. <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_25><span title="If">Si</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_27><span title="it">ça</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_29><span title="happens">se</span></span></a> <a href="word_trouver.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_31><span title="happens">trouve</span></span></a>, <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_33><span title="we">on</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_35><span title="will be">sera</span></span></a> <a href="word_peut-être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_37><span title="perhaps">peut-être</span></span></a> <a href="word_publiquement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_53_word_39><span title="publicly">publiquement</span></span></a> <span class="red"><span title="congratulated">félicités</span></span>. <span title="But look, if we get double then the wives will know. They'll give us a public citation or something.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

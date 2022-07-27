@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>écrivant</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_140" target="main_frame"><b>&larr;</b></a>  <a href="word_répéter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_1><span title="repeats">répète</span></span></a> <a href="word_lentement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_3><span title="slowly">lentement</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_5><span title="in">de</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_7><span title="his">sa</span></span></a> <a href="word_gros.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_9><span title="coarse">grosse</span></span></a> <a href="word_voix.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_11><span title="voice">voix</span></span></a> <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_140_word_13><span title="while">en</span></span></a> <span class="red"><span title="writing">écrivant</i></span></span>. <span title="repeats slowly in his coarse voice as he writes.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

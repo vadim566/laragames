@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>bavarder</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_1.html#antigone_nahed_marta_chadi_page_1_segment_17" target="main_frame"><b>&larr;</b></a>  <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_17_word_1><span title="They">Ils</span></span></a> <span class="red"><span title="gossip">bavardent</span></span>, <a href="word_tricoter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_17_word_5><span title="knit">tricotent</span></span></a>, <a href="word_jouer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_17_word_7><span title="play">jouent</span></span></a> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_17_word_9><span title="(-)">aux</span></span></a> <a href="word_carte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_17_word_11><span title="cards">cartes</span></span></a>. <span title="They gossip, knit, play cards.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_2.html#antigone_nahed_marta_chadi_page_2_segment_35" target="main_frame"><b>&larr;</b></a>  <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_1><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_2><span title="is">est</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_4><span title="for">pour</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_6><span title="that">cela</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_8><span title="that">qu'</span></span></a><a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_9><span title="he">il</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_11><span title="not">n'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_12><span title="has">a</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_14><span title="not">pas</span></span></a> <a href="word_envie.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_16><span title="desire">envie</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_18><span title="to">de</span></span></a> <span class="red"><span title="chat">bavarder</span></span> <a href="word_ni.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_22><span title="not">ni</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_24><span title="to">de</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_26><span title="mingle">se</span></span></a> <a href="word_mêler.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_28><span title="mingle">mêler</span></span></a> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_30><span title="with the">aux</span></span></a> <a href="word_autre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_32><span title="others">autres</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_34><span title="He">Il</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_36><span title="knows">sait</span></span></a> <a href="word_déjà.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_35_word_38><span title="already">déjà</span></span></a>... <span onclick="playSound('./multimedia/921390_200828_181337789.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="That's why he doesn't feel like hanging out with the others and chatting. He already knows...">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

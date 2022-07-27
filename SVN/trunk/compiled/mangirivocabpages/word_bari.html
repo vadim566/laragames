@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>bari</h1>
+
+<p><a href="_main_text_mangiri_8.html#mangiri_page_8_segment_4" target="main_frame"><b>&larr;</b></a> <a href="word_widla.html" target="aux_frame"><span id=mangiri_page_8_segment_4_word_1><span class="sound" title="path" onmouseover="playSound('./multimedia/980160_200916_025005409.mp3');">widla</span></span></a> <a href="word_wilgoo.html" target="aux_frame"><span id=mangiri_page_8_segment_4_word_3><span class="sound" title="narrow-EMPH" onmouseover="playSound('./multimedia/980162_200916_025018943.mp3');">wilgoorndoo</span></span></a> <span class="red"><span class="sound" title="river" onmouseover="playSound('./multimedia/979983_200916_023251760.mp3');">bari</span></span> <a href="word_waloo.html" target="aux_frame"><span id=mangiri_page_8_segment_4_word_7><span class="sound" title="interval-LOC" onmouseover="playSound('./multimedia/980137_200916_024800865.mp3');">waloonga</span></span></a> <a href="word_garngara.html" target="aux_frame"><span id=mangiri_page_8_segment_4_word_9><span class="sound" title="above" onmouseover="playSound('./multimedia/980019_200916_023655141.mp3');">garngara</span></span></a> <span onclick="playSound('./multimedia/986109_200925_100203254.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_mangiri_8.html#mangiri_page_8_segment_10" target="main_frame"><b>&larr;</b></a> “<span class="red"><span class="sound" title="river" onmouseover="playSound('./multimedia/979983_200916_023251760.mp3');"><i>bari</i></span></span>”“<span class="red"><span class="sound" title="river" onmouseover="playSound('./multimedia/979983_200916_023251760.mp3');">bari</span></span> <a href="word_widla.html" target="aux_frame"><span id=mangiri_page_8_segment_10_word_5><span class="sound" title="path" onmouseover="playSound('./multimedia/980160_200916_025005409.mp3');">widla</i></span></span></a>” </p>
+<p><a href="_main_text_mangiri_8.html#mangiri_page_8_segment_17" target="main_frame"><b>&larr;</b></a> <a href="word_widla.html" target="aux_frame"><span id=mangiri_page_8_segment_17_word_1><span class="sound" title="path" onmouseover="playSound('./multimedia/980160_200916_025005409.mp3');">widla</span></span></a><a href="word_wilgoo.html" target="aux_frame"><span id=mangiri_page_8_segment_17_word_3><span class="sound" title="narrow-EMPH" onmouseover="playSound('./multimedia/1053874_201203_023637546.mp3');">wilgoo-rndoo</span></span></a><span class="red"><span class="sound" title="river" onmouseover="playSound('./multimedia/979983_200916_023251760.mp3');">bari</span></span><a href="word_waloo.html" target="aux_frame"><span id=mangiri_page_8_segment_17_word_7><span class="sound" title="interval-LOC" onmouseover="playSound('./multimedia/1053845_201203_023603009.mp3');">waloo-nga</span></span></a><a href="word_garngara.html" target="aux_frame"><span id=mangiri_page_8_segment_17_word_9><span class="sound" title="above" onmouseover="playSound('./multimedia/980019_200916_023655141.mp3');">garngara</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

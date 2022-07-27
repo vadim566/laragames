@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>traiter</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_71" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_1><span title="I">Je</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_3><span title="not">ne</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_5><span title="am">suis</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_7><span title="but">que</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_9><span title="your">ta</span></span></a> <a href="word_nourrice.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_11><span title="nurse">nourrice</span></span></a>, <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_13><span title="and">et</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_15><span title="you">tu</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_17><span title="me">me</span></span></a> <span class="red"><span title="treat">traites</span></span> <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_21><span title="like">comme</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_23><span title="an">une</span></span></a> <a href="word_vieux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_25><span title="old">vieille</span></span></a> <a href="word_bête.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_27><span title="stupid person">bête</span></span></a> ; <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_29><span title="well">bon</span></span></a> ! <a href="word_mais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_31><span title="but">mais</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_33><span title="your">ton</span></span></a> <a href="word_oncle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_35><span title="uncle">oncle</span></span></a>, <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_37><span title="your">ton</span></span></a> <a href="word_oncle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_39><span title="uncle">oncle</span></span></a> <a href="word_capitalised_créon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_41><span title="Creon">Créon</span></span></a> <a href="word_saurer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_43><span title="will know">saura</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_45><span title="I">je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_47><span title="you">te</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_49><span title="it">le</span></span></a> <a href="word_promettre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_71_word_51><span title="promise">promets</span></span></a> ! <span title="I'm just your nurse, and you can treat me how you like. Fine. But let me tell you now, your uncle Creon is going to know about it.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

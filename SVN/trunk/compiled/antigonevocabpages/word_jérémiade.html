@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>jérémiade</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_14.html#antigone_nahed_marta_chadi_page_14_segment_18" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_1><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_3><span title="have">as</span></span></a> <a href="word_choisir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_5><span title="chosen">choisi</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_7><span title="(-)">la</span></span></a> <a href="word_vie.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_9><span title="life">vie</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_11><span title="and">et</span></span></a> <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_13><span title="me">moi</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_15><span title="(-)">la</span></span></a> <a href="word_mort.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_17><span title="death">mort</span></span></a>. <a href="word_laisser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_19><span title="Leave">Laisse</span></span></a>-<a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_21><span title="me">moi</span></span></a> <a href="word_maintenant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_23><span title="now">maintenant</span></span></a> <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_25><span title="with">avec</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_18_word_27><span title="your">tes</span></span></a> <span class="red"><span title="jeremiades">jérémiades</span></span>. <span onclick="playSound('./multimedia/1030371_201021_142638713.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="You've chosen life and I've chosen death. So leave me alone and stop moaning.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

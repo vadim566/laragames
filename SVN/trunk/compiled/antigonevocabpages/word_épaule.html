@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>épaule</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_354" target="main_frame"><b>&larr;</b></a>  <a href="word_hausser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_354_word_1><span title=" shrugs">hausse</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_354_word_3><span title="his">les</span></span></a> <span class="red"><span title="shoulders">épaules</span></span>. <span title="shrugging shoulders.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_10.html#antigone_nahed_marta_chadi_page_10_segment_5" target="main_frame"><b>&larr;</b></a>  (<a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_1><span title="He">Il</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_3><span title="has">a</span></span></a> <a href="word_prendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_5><span title="taken">pris</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_7><span title="the">le</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_9><span title="little">petit</span></span></a> <a href="word_page.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_11><span title="page">page</span></span></a> <a href="word_par.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_13><span title="by">par</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_5_word_15><span title="the">l'</span></span></a><span class="red"><span title="shoulder">épaule</span></span>.) <span title="(He takes the little page by the shoulder.)">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_19.html#antigone_nahed_marta_chadi_page_19_segment_20" target="main_frame"><b>&larr;</b></a>  (<a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_1><span title="A">Un</span></span></a> <a href="word_silence.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_3><span title="silence">silence</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_5><span title="He">Il</span></span></a> <a href="word_poser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_7><span title="puts">pose</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_9><span title="his">sa</span></span></a> <a href="word_main.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_11><span title="hand">main</span></span></a> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_13><span title="on">sur</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_15><span title="the">l'</span></span></a><span class="red"><span title="shoulder">épaule</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_18><span title="of">de</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_20><span title="his">son</span></span></a> <a href="word_page.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_19_segment_20_word_22><span title="page">page</span></span></a>.) <span title="(A silence. He put his hand on the page's shoulder.)">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

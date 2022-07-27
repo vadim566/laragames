@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>ouvrer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_400" target="main_frame"><b>&larr;</b></a>  <a href="word_eh.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_1><span title=" Well">Eh</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_3><span title="Well">bien</span></span></a>, <span class="red"><span title="open">ouvre</span></span> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_7><span title="the">les</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_9><span title="doors">portes</span></span></a>. <a href="word_justement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_11><span title="Exactly">Justement</span></span></a>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_13><span title="they">ils</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_15><span title="will">vont</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_17><span title="me">m'</span></span></a><a href="word_entendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_400_word_18><span title="hear">entendre</span></span></a> ! <span title="Good, open the doors! That's right, they'll hear me!">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_407" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_407_word_1><span title="The">La</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_407_word_3><span title="door">porte</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_407_word_5><span title="opens">s'</span></span></a><span class="red"><span title="opens">ouvre</span></span>. <span title="The door opens.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_181" target="main_frame"><b>&larr;</b></a>  <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_1><span title="At">A</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_3><span title="this">ce</span></span></a> <a href="word_moment.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_5><span title="moment">moment</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_7><span title="the">la</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_9><span title="door">porte</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_181_word_11><span title="opens">s'</span></span></a><span class="red"><span title="opens">ouvre</span></span>. <span title="At this moment, the door opens.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

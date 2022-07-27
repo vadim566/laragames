@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>dérouler</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_10.html#antigone_nahed_marta_chadi_page_10_segment_15" target="main_frame"><b>&larr;</b></a>  <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_1><span title="And">Et</span></span></a> <a href="word_voilà.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_3><span title="here we are">voilà</span></span></a>. <a href="word_maintenant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_5><span title="Now">Maintenant</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_7><span title="the">le</span></span></a> <a href="word_ressort.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_9><span title="spring">ressort</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_11><span title="is">est</span></span></a> <a href="word_bander.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_13><span title="wound up">bandé</span></span></a>. <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_15><span title="It">Cela</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_17><span title="not">n'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_18><span title="has">a</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_20><span title="more">plus</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_22><span title="than">qu'</span></span></a><a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_23><span title="to">à</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_25><span title="unwind">se</span></span></a> <span class="red"><span title="unwind">dérouler</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_29><span title="all">tout</span></span></a> <a href="word_seul.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_31><span title="by itself">seul</span></span></a>. <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_33><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_34><span title="is">est</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_36><span title="that">cela</span></span></a> <a href="word_qui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_38><span title="which">qui</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_40><span title="is">est</span></span></a> <a href="word_commode.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_42><span title="convenient">commode</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_44><span title="with">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_46><span title="(-)">la</span></span></a> <a href="word_tragédie.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_10_segment_15_word_48><span title="tragedy">tragédie</span></span></a>. <span onclick="playSound('./multimedia/922022_200829_125916706.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="So here we are. Now the spring is wound tight. It just has to unwind all by itself. That's what's so easy with tragedy.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

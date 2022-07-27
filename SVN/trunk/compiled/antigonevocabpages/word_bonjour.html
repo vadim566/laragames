@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>bonjour</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_89" target="main_frame"><b>&larr;</b></a>  <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_1><span title="And">Et</span></span></a> <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_3><span title="she">elle</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_5><span title="you">te</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_7><span title="will say">dira</span></span></a> : « <span class="red"><span title="Hello ">Bonjour</span></span>, <a href="word_nounou.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_11><span title="nurse">nounou</span></span></a>, <a href="word_merci.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_13><span title="thank you">merci</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_15><span title="for">pour</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_17><span title="the">la</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_19><span title="little">petite</span></span></a> <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_21><span title="Antigone">Antigone</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_23><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_25><span title="have">as</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_27><span title="well">bien</span></span></a> <a href="word_prendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_29><span title="taken">pris</span></span></a> <a href="word_soin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_31><span title="care">soin</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_33><span title="of">d'</span></span></a><a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_89_word_34><span title="her">elle</span></span></a>. » <span onclick="playSound('./multimedia/1029275_201017_182140669.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="And she'll say &quot;Welcome, nurse, thank you for what you did for little Antigone. You took good care of her.&quot;">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

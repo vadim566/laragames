@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>huer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_84" target="main_frame"><b>&larr;</b></a>  <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_1><span title="They">Ils</span></span></a> <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_3><span title="us">nous</span></span></a> <span class="red"><span title="will shout at">hueront</span></span>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_7><span title="They">Ils</span></span></a> <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_9><span title="us">nous</span></span></a> <a href="word_prendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_11><span title="will take">prendront</span></span></a> <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_13><span title="and">avec</span></span></a> <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_15><span title="their">leurs</span></span></a> <a href="word_mille.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_17><span title="thousand">mille</span></span></a> <a href="word_bras.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_19><span title="arms">bras</span></span></a>, <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_21><span title="their">leurs</span></span></a> <a href="word_mille.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_23><span title="thousand">mille</span></span></a> <a href="word_visage.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_25><span title="faces">visages</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_27><span title="and">et</span></span></a> <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_29><span title="their">leur</span></span></a> <a href="word_unique.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_31><span title="single">unique</span></span></a> <a href="word_regard.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_33><span title="gaze">regard</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_35><span title="They">Ils</span></span></a> <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_37><span title="us">nous</span></span></a> <a href="word_cracher.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_39><span title="will spit">cracheront</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_41><span title="in">à</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_43><span title="the">la</span></span></a> <a href="word_figure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_84_word_45><span title="face">figure</span></span></a>. <span onclick="playSound('./multimedia/933827_200913_213742630.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="They'll shout at us. They'll catch hold of us with their thousand arms and their thousand pairs of eyes like they belonged to one person. They'll spit us in the face.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

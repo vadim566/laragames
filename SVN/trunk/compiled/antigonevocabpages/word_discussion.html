@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>discussion</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_336" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_1><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_3><span title="have">as</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_5><span title="all">toute</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_7><span title="your">ta</span></span></a> <a href="word_vie.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_9><span title="life">vie</span></span></a> <a href="word_devant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_11><span title="in front of">devant</span></span></a> <a href="word_toi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_13><span title="you">toi</span></span></a>. <a href="word_notre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_15><span title="Our">Notre</span></span></a> <span class="red"><span title="discussion">discussion</span></span> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_19><span title="was">était</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_21><span title="quite">bien</span></span></a> <a href="word_oiseux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_23><span title="pointless">oiseuse</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_25><span title="I">je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_27><span title="you">t'</span></span></a><a href="word_assurer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_28><span title="assure">assure</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_30><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_32><span title="have">as</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_34><span title="that">ce</span></span></a> <a href="word_trésor.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_36><span title="treasure">trésor</span></span></a>, <a href="word_toi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_38><span title="you">toi</span></span></a>, <a href="word_encore.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_336_word_40><span title="still">encore</span></span></a>. <span title="You have all your life in front of you. Don't think too much about our discussion. You still have that treasure, it's yours.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

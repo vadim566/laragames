@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>interdire</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_12.html#antigone_nahed_marta_chadi_page_12_segment_25" target="main_frame"><b>&larr;</b></a>  <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_1><span title="What">Qu'</span></span></a><a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_2><span title="were">allais</span></span></a>-<a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_4><span title="you">tu</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_6><span title="doing">faire</span></span></a> <a href="word_près.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_8><span title="next">près</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_10><span title="to the">du</span></span></a> <a href="word_cadavre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_12><span title="body">cadavre</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_14><span title="of">de</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_16><span title="your">ton</span></span></a> <a href="word_frère.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_18><span title="brother">frère</span></span></a>? <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_20><span title="You">Tu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_22><span title="know">savais</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_24><span title="that">que</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_26><span title="I">j'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_27><span title="have">avais</span></span></a> <span class="red"><span title="forbidden">interdit</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_31><span title="to">de</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_33><span title="it">l'</span></span></a><a href="word_approcher.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_25_word_34><span title="approach">approcher</span></span></a>. <span title="What were you doing next to the body of your brother? You know I have forbidden anyone to approach it.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_26" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_26_word_1><span title="I">Je</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_26_word_3><span title="it">l'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_26_word_4><span title="have">avais</span></span></a> <span class="red"><span title="forbidden">interdit</span></span>. <span title="I have forbidden it.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

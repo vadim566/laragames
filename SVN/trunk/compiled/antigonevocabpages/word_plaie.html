@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>plaie</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_9" target="main_frame"><b>&larr;</b></a>  <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_1><span title=" No">Ne</span></span></a> <a href="word_laisser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_3><span title="let">laisse</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_5><span title="not">pas</span></span></a> <a href="word_mourir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_7><span title="die">mourir</span></span></a> <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_9><span title="Antigone">Antigone</span></span></a>, <a href="word_capitalised_créon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_11><span title="Creon">Créon</span></span></a> ! <a href="word_nous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_13><span title="We">Nous</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_15><span title="will">allons</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_17><span title="all">tous</span></span></a> <a href="word_porter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_19><span title="carry">porter</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_21><span title="this">cette</span></span></a> <span class="red"><span title="wound">plaie</span></span> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_25><span title="in the">au</span></span></a> <a href="word_côté.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_27><span title="side">côté</span></span></a>, <a href="word_pendant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_29><span title="through">pendant</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_31><span title="the">des</span></span></a> <a href="word_siècle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_9_word_33><span title="centuries">siècles</span></span></a>. <span onclick="playSound('./multimedia/922613_200829_171142492.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Don't let Antigone die, Creon! We will all feel this wound in us, through the centuries to come.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

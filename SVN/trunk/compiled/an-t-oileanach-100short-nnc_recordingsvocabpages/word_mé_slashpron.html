@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>mé</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_2" target="main_frame"><b>&larr;</b></a>  <a href="word_is_slashcop.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_1>Is</span></a> <a href="word_cuimhin_slashsubst.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_3>cuimhin</span></a> <a href="word_le_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_5>liom</span></a> <span class="red">mé</span> <a href="word_a_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_9>a</span></a> <a href="word_bheith_slashverbal.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_11>bheith</span></a> <a href="word_ar_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_13>ar</span></a> <a href="word_brollach_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_15>bhrollach</span></a> <a href="word_mo_slashdet.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_17>mo</span></a> <a href="word_máthair_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_2_word_19>mháthar</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0002.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_36" target="main_frame"><b>&larr;</b></a>  <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_1>Do</span></a> <a href="word_cuir_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_3>chuir</span></a> <a href="word_sí_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_5>sí</span></a> <span class="red">mise</span> <a href="word_ar_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_9>ar</span></a> <a href="word_a_slashdet.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_11>a</span></a> <a href="word_drom_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_13>drom</span></a> <a href="word_is_slashcop.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_15>gur</span></a> <a href="word_bhaineamair_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_17>bhaineamair</span></a> <a href="word_an_slashart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_19>an</span></a> <a href="word_teach_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_21>tigh</span></a> <a href="word_amach_slashadv.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_36_word_23>amach</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0144.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

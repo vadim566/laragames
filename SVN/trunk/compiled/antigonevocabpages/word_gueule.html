@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>gueule</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_69" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_1><span title="I">Je</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_3><span title="him">le</span></span></a> <a href="word_voir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_5><span title="see">vois</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_7><span title="from">d'</span></span></a><a href="word_ici.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_8><span title="here">ici</span></span></a>, <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_10><span title="their">leur</span></span></a> <a href="word_enfant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_12><span title="child">enfant</span></span></a>, <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_14><span title="with">avec</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_16><span title="his">sa</span></span></a> <span class="red"><span title="face">gueule</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_20><span title="of">de</span></span></a> <a href="word_tueur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_22><span title="killer">tueur</span></span></a> <a href="word_appointer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_24><span title=" appointed">appointé</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_26><span title="and">et</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_28><span title="the">la</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_30><span title="little">petite</span></span></a> <a href="word_pelle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_32><span title="spade">pelle</span></span></a> <a href="word_soigneusement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_34><span title="carefully">soigneusement</span></span></a> <a href="word_envelopper.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_36><span title="wrapped">enveloppée</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_38><span title="in">dans</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_40><span title="(-)">du</span></span></a> <a href="word_papier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_42><span title="paper">papier</span></span></a> <a href="word_sous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_44><span title="under">sous</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_46><span title="his">sa</span></span></a> <a href="word_veste.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_69_word_48><span title="jacket">veste</span></span></a>. <span title="I can see him, their child, with his killer's face and the little spade neatly wrapped in paper under his coat.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

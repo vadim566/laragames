@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>grade</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_17.html#antigone_nahed_marta_chadi_page_17_segment_47" target="main_frame"><b>&larr;</b></a>  <a href="word_devenir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_1><span title=" Become">Devenu</span></span></a> <a href="word_garde.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_3><span title="guard">garde</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_5><span title="the">le</span></span></a> <a href="word_sergent.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_7><span title="sergeant">sergent</span></span></a> <a href="word_perdre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_9><span title="loses">perd</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_11><span title="his">son</span></span></a> <span class="red"><span title="rank">grade</span></span>. <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_15><span title="An">Un</span></span></a> <a href="word_exemple.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_17><span title="example">exemple</span></span></a> : <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_19><span title="I">je</span></span></a> <a href="word_rencontrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_21><span title="meet">rencontre</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_23><span title="a">une</span></span></a> <a href="word_recrue.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_25><span title="recruit">recrue</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_27><span title="of">de</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_29><span title="the">l'</span></span></a><a href="word_armée.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_30><span title="army">armée</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_32><span title="he">elle</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_34><span title="not">ne</span></span></a> <a href="word_pouvoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_36><span title="can">peut</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_38><span title="not">pas</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_40><span title="me">me</span></span></a> <a href="word_saluer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_17_segment_47_word_42><span title="salute">saluer</span></span></a>. <span title="Once a sergeant becomes a guard, he loses his stripes. Like, if I meet an army recruit, he doesn't have to salute me.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

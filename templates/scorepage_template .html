@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}scorepage{%endblock%}
+{%block style%}
+{%endblock%}
+{%block js%}
+<script>
+ var delayInMilliseconds = 3000; //1 second
+
+        $(document).ready(function () {
+
+            if (localStorage.getItem("current_user") == "guest")
+                $("#score").html(JSON.parse(localStorage.getItem("new_grade")));
+            else {
+                let newGrade = {
+                    game_id: JSON.parse(localStorage.getItem("game_id")),
+                    grade1: JSON.parse(localStorage.getItem("new_grade")),
+                    letter_id: JSON.parse(localStorage.getItem("current_letter_id")),
+                    childuser_id: JSON.parse(localStorage.getItem("current_user"))
+                }
+                if (newGrade.childuser_id != null && newGrade.game_id != null && newGrade.letter_id != null) {
+                    $("#score").html(newGrade.grade1);
+                    var serverPath = "";
+                    var url = new URL(window.location.href);
+                    if (window.location.href.includes("/plesk-site-preview/www.newlomda.learnheb.com")) {
+                        serverPath = "/plesk-site-preview/www.newlomda.learnheb.com";
+                    }
+                    $.ajax({
+                        dataType: "json",
+                        url: serverPath + "/api/grade/",
+                        contentType: "application/json; charset=utf-8",
+                        type: "POST",
+                        data: JSON.stringify(newGrade),
+                        success: function () {
+                            console.log("SUCCESS: Uploading score");
+                            setTimeout(function () {
+                                window.location.href = "/index.html"
+                            }, delayInMilliseconds);
+                        },
+                        error: function () {
+                            console.log("FAILED: Uploading score");
+                        }
+                    })
+                }
+                else {
+                    $("#score").html(JSON.parse(localStorage.getItem("new_grade")));
+                    setTimeout(function () {
+                        window.location.href = "PlayGround.html"
+                    }, delayInMilliseconds);
+                }
+            }
+        })
+</script>
+{%endblock%}
+
+{% block content %}
+<div id="containerLogin" class="w3-center">
+        <div id="container">
+                   <h2>הניקוד שלך הוא:</h2>
+                   <h2 class="text-center" id="score" style="font-size:5em"></h2>
+                <a href="/index.html">
+                    <div class="w3-container w3-bottom">
+                        <h3>חזרה לאותיות</h3>
+                    </div>
+                </a>
+        </div>
+    </div>
+{%endblock  %}

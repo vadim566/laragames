@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>gardindya</h1>
+
+<p><a href="_main_text_mangiri_16.html#mangiri_page_16_segment_10" target="main_frame"><b>&larr;</b></a>  <a href="word_warna.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_1><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">Warna</span></span></a> <span class="red"><span class="sound" title="blood" onmouseover="playSound('./multimedia/980018_200916_023650247.mp3');">gardindya</span></span> <a href="word_warna.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_5><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">Warna</span></span></a> <a href="word_moondalya.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_7><span class="sound" title="sweet" onmouseover="playSound('./multimedia/980069_200916_024131266.mp3');">moondalya</span></span></a> <a href="word_warna.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_9><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">Warna</span></span></a> <a href="word_moondalyidhi.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_11><span class="sound" onmouseover="playSound('./multimedia/980071_200916_024145190.mp3');">moondalyidhi</span></span></a> <a href="word_warna.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_13><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">Warna</span></span></a> <a href="word_waiiri.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_15><span class="sound" title="healthy" onmouseover="playSound('./multimedia/980133_200916_024741080.mp3');">waiiri</span></span></a> <a href="word_warna.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_17><span class="sound" title="belly" onmouseover="playSound('./multimedia/980151_200916_024922957.mp3');">Warna</span></span></a> <a href="word_waiirridhi.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_19><span class="sound" title="be in good healh" onmouseover="playSound('./multimedia/980134_200916_024750637.mp3');">waiirridhi</span></span></a> <a href="word_yoori.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_21><span class="sound" title="ear" onmouseover="playSound('./multimedia/71930_190610_083914935.mp3');">Yoori</span></span></a> <a href="word_mandyari.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_23><span class="sound" title="nice" onmouseover="playSound('./multimedia/980049_200916_023914643.mp3');">mandyari</span></span></a> <a href="word_yoori.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_25><span class="sound" title="ear" onmouseover="playSound('./multimedia/71930_190610_083914935.mp3');">Yoori</span></span></a> <a href="word_marnidhi.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_27><span class="sound" title="good-to be" onmouseover="playSound('./multimedia/980061_200916_024056441.mp3');">marnidhi</span></span></a><a href="word_ngaldi.html" target="aux_frame"><span id=mangiri_page_16_segment_10_word_29><span class="sound" title="liver" onmouseover="playSound('./multimedia/980091_200916_024344911.mp3');">ngaldi</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

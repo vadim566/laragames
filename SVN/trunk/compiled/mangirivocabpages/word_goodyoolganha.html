@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>goodyoolganha</h1>
+
+<p><a href="_main_text_mangiri_4.html#mangiri_page_4_segment_17" target="main_frame"><b>&larr;</b></a> <a href="word_ngarrinyarlboo.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_1><span class="sound" title="we" onmouseover="playSound('./multimedia/980100_200916_024426234.mp3');">Ngarrinyarlboo</span></span></a> <a href="word_inha.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_3><span class="sound" title="this/that-PL" onmouseover="playSound('./multimedia/980039_200916_023838513.mp3');">inhamadha</span></span></a> <a href="word_nganya.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_5><span class="sound" title="praise/commend-PRES" onmouseover="playSound('./multimedia/980096_200916_024358596.mp3');">nganyadha</span></span></a>, <a href="word_inha.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_7><span class="sound" title="this/that-PL" onmouseover="playSound('./multimedia/980039_200916_023838513.mp3');">inhamadha</span></span></a> <a href="word_moondooldoo.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_9><span class="sound" title="non-Indigenous" onmouseover="playSound('./multimedia/985899_200925_071817209.mp3');">moondooldoo</span></span></a> <a href="word_yoora.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_11><span class="sound" title="person-PL-COM" onmouseover="playSound('./multimedia/980178_200916_025128250.mp3');">yoorarringi</span></span></a> <a href="word_warirri.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_13><span class="sound" title="live-PRES" onmouseover="playSound('./multimedia/980148_200916_024910897.mp3');">warirridhi</span></span></a>, <a href="word_mirinya.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_15><span class="sound" title="similar ('aboriginal')" onmouseover="playSound('./multimedia/980065_200916_024113068.mp3');">mirinya</span></span></a> <a href="word_yoora.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_17><span class="sound" title="person-PL" onmouseover="playSound('./multimedia/980177_200916_025125039.mp3');">yoorarri</span></span></a> <span class="red"><span class="sound" title="others-COM" onmouseover="playSound('./multimedia/980026_200916_023746650.mp3');">goodyoolganhadningi</span></span> <a href="word_warirri.html" target="aux_frame"><span id=mangiri_page_4_segment_17_word_21><span class="sound" title="live-PRES" onmouseover="playSound('./multimedia/980148_200916_024910897.mp3');">warirridhi</span></span></a>. <span onclick="playSound('./multimedia/986033_200925_095903375.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

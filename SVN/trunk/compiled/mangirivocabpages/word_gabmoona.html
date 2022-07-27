@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>gabmoona</h1>
+
+<p><a href="_main_text_mangiri_4.html#mangiri_page_4_segment_13" target="main_frame"><b>&larr;</b></a> <a href="word_ngarrinyarlboo.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_1><span class="sound" title="we" onmouseover="playSound('./multimedia/980100_200916_024426234.mp3');">Ngarrinyarlboo</span></span></a> <a href="word_nhagoo.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_3><span class="sound" title="know-PRES" onmouseover="playSound('./multimedia/980110_200916_024510534.mp3');">nhagoodhoo</span></span></a> <a href="word_mirinya.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_5><span class="sound" title="similar ('aboriginal')" onmouseover="playSound('./multimedia/980065_200916_024113068.mp3');">mirinya</span></span></a> <a href="word_yoora.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_7><span class="sound" title="person-PL" onmouseover="playSound('./multimedia/980177_200916_025125039.mp3');">yoorarri</span></span></a> <a href="word_idna.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_9><span class="sound" title="footprint" onmouseover="playSound('./multimedia/980031_200916_023804221.mp3');">idna</span></span></a> <a href="word_galgarridni.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_11><span class="sound" title="ancient-LOC" onmouseover="playSound('./multimedia/980015_200916_023632545.mp3');">galgarridningi</span></span></a> <a href="word_ngooga.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_13><span class="sound" title="walk-PRES" onmouseover="playSound('./multimedia/71886_190610_083439373.mp3');">ngoogadha</span></span></a>, <a href="word_idna.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_15><span class="sound" title="footprint" onmouseover="playSound('./multimedia/980031_200916_023804221.mp3');">idna</span></span></a> <a href="word_gadnyi.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_17><span class="sound" title="mother’s mother-PL" onmouseover="playSound('./multimedia/980012_200916_023609914.mp3');">gadnyinirri</span></span></a>, <span class="red"><span class="sound" title="mother’s father-PL" onmouseover="playSound('./multimedia/980010_200916_023558475.mp3');">gabmoonarri</span></span>, <a href="word_mangardi.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_21><span class="sound" title="father’s mother-PL" onmouseover="playSound('./multimedia/985877_200925_071806219.mp3');">mangardirri</span></span></a>, <a href="word_dhabmoordi.html" target="aux_frame"><span id=mangiri_page_4_segment_13_word_23><span class="sound" title="father’s father-PL" onmouseover="playSound('./multimedia/985827_200925_071720773.mp3');">dhabmoordirri</span></span></a>. <span onclick="playSound('./multimedia/986029_200925_095354490.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

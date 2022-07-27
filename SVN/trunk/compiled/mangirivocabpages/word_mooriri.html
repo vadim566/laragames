@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>mooriri</h1>
+
+<p><a href="_main_text_mangiri_13.html#mangiri_page_13_segment_5" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" title="well, healthy" onmouseover="playSound('./multimedia/980076_200916_024214843.mp3');">Mooriri</span></span> <a href="word_waiirridhi.html" target="aux_frame"><span id=mangiri_page_13_segment_5_word_3><span class="sound" title="be in good healh" onmouseover="playSound('./multimedia/980134_200916_024750637.mp3');">Waiirridhi</span></span></a> <a href="word_nhoonyaridhi.html" target="aux_frame"><span id=mangiri_page_13_segment_5_word_5><span class="sound" title="restored to health; surviving" onmouseover="playSound('./multimedia/980116_200916_024541234.mp3');">Nhoonyaridhi</span></span></a> </p>
+<p><a href="_main_text_mangiri_14.html#mangiri_page_14_segment_6" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" title="well, healthy" onmouseover="playSound('./multimedia/980076_200916_024214843.mp3');">mooriri</span></span><a href="word_mooriridhi.html" target="aux_frame"><span id=mangiri_page_14_segment_6_word_3><span class="sound" title="to be well" onmouseover="playSound('./multimedia/980077_200916_024218828.mp3');">mooriri<b>dhi</b></span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

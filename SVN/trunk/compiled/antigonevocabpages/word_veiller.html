@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>veiller</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_39" target="main_frame"><b>&larr;</b></a>  <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_1><span title="We">On</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_3><span title="have">a</span></span></a> <span class="red"><span title="watched">veillé</span></span>, <a href="word_pourtant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_7><span title="all the same">pourtant</span></span></a> ! <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_9><span title="We">On</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_11><span title="had">avait</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_13><span title="the">la</span></span></a> <a href="word_relève.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_15><span title="watch">relève</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_17><span title="of">de</span></span></a> <a href="word_deux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_19><span title="two">deux</span></span></a> <a href="word_heure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_21><span title="o'clock">heures</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_23><span title="the">la</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_25><span title="most">plus</span></span></a> <a href="word_dur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_27><span title="hard">dure</span></span></a>. <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_29><span title="You">Vous</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_31><span title="know">savez</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_33><span title="that">ce</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_35><span title="which">que</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_37><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_38><span title="is">est</span></span></a>, <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_40><span title="at the">au</span></span></a> <a href="word_moment.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_42><span title="moment">moment</span></span></a> <a href="word_où.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_44><span title="when">où</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_46><span title="the">la</span></span></a> <a href="word_nuit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_48><span title="night">nuit</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_50><span title="will">va</span></span></a> <a href="word_finir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_39_word_52><span title="end">finir</span></span></a>. <span title="So we were on watch. We had the two a.m. shift, the worst one. You know what it's like, just when the night's almost up.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

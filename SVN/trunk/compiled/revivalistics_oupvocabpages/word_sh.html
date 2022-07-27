@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>sh</h1>
+
+<p><a href="_main_text_revivalistics_oup_1.html#revivalistics_oup_page_1_segment_25" target="main_frame"><b>&larr;</b></a> <a href="word_s.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_25_word_1><span class="sound" onmouseover="playSound('./multimedia/65269_190422070358.mp3');"><i>s</i></span></span></a><span class="red"><span class="sound" onmouseover="playSound('./multimedia/65272_190422070459.mp3');"><i>sh</i></span></span><a href="word_שדרה shidrá.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_25_word_5><span class="sound" onmouseover="playSound('./multimedia/65382_190422085136.mp3');"> שדרה shidrá</span></span></a> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

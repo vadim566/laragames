@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>jure-le-moi</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_99" target="main_frame"><b>&larr;</b></a>  <a href="word_jurer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_1><span title="Swear">Jure</span></span></a>-<a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_3><span title="to me">moi</span></span></a> <a href="word_d_apostropheabord.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_5><span title="first">d'abord</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_7><span title="that">que</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_9><span title="you">tu</span></span></a> <a href="word_sortir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_11><span title="will leave">sortiras</span></span></a> <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_13><span title="without">sans</span></span></a> <a href="word_rien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_15><span title="anything">rien</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_17><span title="to me">me</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_19><span title="saying">dire</span></span></a>. <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_21><span title="Without">Sans</span></span></a> <a href="word_même.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_23><span title="even">même</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_25><span title="me">me</span></span></a> <a href="word_regarder.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_27><span title="looking at">regarder</span></span></a>. <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_29><span title="If">Si</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_31><span title="you">tu</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_33><span title="me">m'</span></span></a><a href="word_aimer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_99_word_34><span title="love">aimes</span></span></a>, <span class="red"><span title="swear it to me">jure-le-moi</span></span>. <span onclick="playSound('./multimedia/1029653_201018_170308087.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Swear to me first that you'll leave without saying anything. Without even looking at me. If you love me, you'll swear you will.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>surprendre</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_17" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_1><span title="The">Le</span></span></a> <a href="word_jardin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_3><span title="garden">jardin</span></span></a> <a href="word_dormir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_5><span title="was sleeping">dormait</span></span></a> <a href="word_encore.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_7><span title="still">encore</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_9><span title="I">Je</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_11><span title="it">l'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_12><span title="have">ai</span></span></a> <span class="red"><span title="surprised">surpris</span></span>, <a href="word_nourrice.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_16><span title="nurse">nourrice</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_18><span title="I">Je</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_20><span title="it">l'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_21><span title="have">ai</span></span></a> <a href="word_voir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_23><span title="seen">vu</span></span></a> <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_25><span title="without">sans</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_27><span title="that">qu'</span></span></a><a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_28><span title="it">il</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_30><span title="suspected">s'</span></span></a><a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_31><span title="of it">en</span></span></a> <a href="word_doute.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_17_word_33><span title="suspected">doute</span></span></a>. <span title="The garden was still asleep. I surprised it, nurse. I saw it before it realised I was there.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_12.html#antigone_nahed_marta_chadi_page_12_segment_5" target="main_frame"><b>&larr;</b></a>  <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_5_word_1><span title="stopped">s'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_5_word_2><span title="has">est</span></span></a> <a href="word_arrêter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_12_segment_5_word_4><span title="stopped">arrêté</span></span></a>, <span class="red"><span title="surprised">surpris</span></span>. <span title="stops, surprised.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

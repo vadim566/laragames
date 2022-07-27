@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>agen</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_40" target="main_frame"><b>&larr;</b></a>  <a href="word_trí_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_1>Trí</span></a> <a href="word_bliain_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_3>bliana</span></a> <a href="word_bí_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_5>atá</span></a> <a href="word_an_slashart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_7>an</span></a> <a href="word_pinsean_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_9>pinsean</span></a> <span class="red">agena</span> <a href="word_comhaois_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_13>comhaois</span></a> <a href="word_i_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_15>insa</span></a> <a href="word_tír_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_17>tír</span></a> <a href="word_seo_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_40_word_19>seo</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0184.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

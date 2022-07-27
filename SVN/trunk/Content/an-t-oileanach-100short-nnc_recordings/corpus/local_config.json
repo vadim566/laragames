@@ -1,0 +1,17 @@
+{
+    "id": "an-t-oileanach-100short-nnc_recordings",
+    "language": "irish",
+    "untagged_corpus": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/corpus/an-t-oileanach-100short.txt",
+    "corpus": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/corpus/an-t-oileanach-100short_tagged.txt",
+    "translation_spreadsheet": "$LARA/Content/irish/translations/irish_english.csv",
+    "translation_mouseover": "yes",
+    "segment_translation_spreadsheet": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/translations/irish_english.csv",
+    "segment_translation_mouseover": "yes",
+    "segment_audio_directory": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/audio/nnc_recordings",
+    "word_audio_directory": "$LARA/Content/irish/audio/nnc_recordings",
+    "image_directory": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/images",
+    "audio_mouseover": "yes",
+    "max_examples_per_word_page": 100,
+    "toggle_translation_button": "no",
+    "coloured_words": "no"
+}

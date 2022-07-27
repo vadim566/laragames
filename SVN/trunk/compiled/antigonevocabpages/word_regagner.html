@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>regagner</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_83" target="main_frame"><b>&larr;</b></a>  <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_1><span title="Antigone">Antigone</span></span></a> ! <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_3><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_4><span title="is">est</span></span></a> <a href="word_par.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_6><span title="by">par</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_8><span title="that">cette</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_10><span title="door">porte</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_12><span title="that">qu'</span></span></a><a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_13><span title="you">on</span></span></a> <span class="red"><span title="go back to">regagne</span></span> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_17><span title="your">ta</span></span></a> <a href="word_chambre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_83_word_19><span title="room">chambre</span></span></a>. <span title="Antigone! That's the way to your room.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

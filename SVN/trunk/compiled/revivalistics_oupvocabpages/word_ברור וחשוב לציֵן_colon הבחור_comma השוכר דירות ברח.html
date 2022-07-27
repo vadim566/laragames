@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>ברור וחשוב לציֵן: הבחור, השוכר דירות ברחוב פִּינֵס, זכר סוֹד רמאים והלך לדוּג בְּים הזּרמים הרמים</h1>
+
+<p><a href="_main_text_revivalistics_oup_1.html#revivalistics_oup_page_1_segment_72" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" title="It is clear and important to mention that the fellow, who rents flats in Pínes Street, remembered a liars’ secret and went to fish in the sea of great currents." onmouseover="playSound('./multimedia/503670_200417_060257338.mp3');">ברור וחשוב לציֵן:  הבחור, השוכר דירות ברחוב פִּינֵס,  זכר סוֹד רמאים והלך לדוּג בְּים הזּרמים הרמים</span></span> <span title="It is clear and important to mention that the fellow, who rents flats in Pínes Street, remembered a liars’ secret and went to fish in the sea of great currents.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

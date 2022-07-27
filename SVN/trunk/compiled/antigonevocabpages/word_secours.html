@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>secours</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_2.html#antigone_nahed_marta_chadi_page_2_segment_31" target="main_frame"><b>&larr;</b></a>  <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_1><span title="She">Elle</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_3><span title="not">ne</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_5><span title="to him">lui</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_7><span title="is">est</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_9><span title="of">d'</span></span></a><a href="word_aucun.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_31_word_10><span title="any">aucun</span></span></a> <span class="red"><span title="help">secours</span></span>. <span onclick="playSound('./multimedia/921386_200828_181035356.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="She is of no help to him whatsoever.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_87" target="main_frame"><b>&larr;</b></a>  <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_87_word_1><span title="Antigone">Antigone</span></span></a> ! <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_87_word_3><span title="Antigone">Antigone</span></span></a> ! <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_87_word_5><span title="Help">Au</span></span></a> <span class="red"><span title="Help">secours</span></span> ! <span title="Antigone! Antigone! Help!">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

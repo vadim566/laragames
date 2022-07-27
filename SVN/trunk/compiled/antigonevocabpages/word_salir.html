@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>salir</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_39" target="main_frame"><b>&larr;</b></a>  <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_1><span title="An">Une</span></span></a> <a href="word_bête.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_3><span title="animal">bête</span></span></a> <a href="word_qui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_5><span title="that">qui</span></span></a> <span class="red"><span title="gets dirty">salit</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_9><span title="everything">tout</span></span></a> <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_11><span title="with">avec</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_13><span title="her">ses</span></span></a> <a href="word_patte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_15><span title="paws">pattes</span></span></a>! <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_17><span title="It">Ça</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_19><span title="not">ne</span></span></a> <a href="word_devoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_21><span title="should">devrait</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_23><span title="not">pas</span></span></a> <a href="word_entrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_25><span title="enter">entrer</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_27><span title="in">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_29><span title="the">les</span></span></a> <a href="word_maison.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_39_word_31><span title="houses">maisons</span></span></a> ! <span title="That thing that tracks in dirt everywhere with its stupid paws! You shouldn't even have it in the house!">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_41" target="main_frame"><b>&larr;</b></a>  <a href="word_même.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_1><span title="Even">Même</span></span></a> <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_3><span title="if">si</span></span></a> <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_5><span title="she">elle</span></span></a> <span class="red"><span title="gets dirty">salit</span></span> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_9><span title="everything">tout</span></span></a>. <a href="word_promettre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_11><span title="Promise">Promets</span></span></a>, <a href="word_nourrice.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_41_word_13><span title="nurse">nourrice</span></span></a>. <span onclick="playSound('./multimedia/1029512_201017_205228290.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Even if she gets everything dirty. Promise, nurse.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

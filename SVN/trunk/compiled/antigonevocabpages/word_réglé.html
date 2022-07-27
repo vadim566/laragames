@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>réglé</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_142" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_1><span title=" I">Je</span></span></a> <a href="word_parler.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_3><span title="will talk">parlerai</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_5><span title="shortly">tout</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_7><span title="shortly">à</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_9><span title="shortly">l'</span></span></a><a href="word_heure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_10><span title=" shortly">heure</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_12><span title="to">à</span></span></a> <a href="word_capitalised_hémon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_14><span title="Haemon">Hémon</span></span></a>: <a href="word_capitalised_hémon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_16><span title="Haemon">Hémon</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_18><span title="will be">sera</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_20><span title="shortly">tout</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_22><span title="shortly">à</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_24><span title="shortly">l'</span></span></a><a href="word_heure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_25><span title="shortly">heure</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_27><span title="a">une</span></span></a> <a href="word_affaire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_142_word_29><span title="business">affaire</span></span></a> <span class="red"><span title="sorted out">réglée</span></span>. <span onclick="playSound('./multimedia/1029451_201017_202855350.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="I'll talk to Haemon soon: he's next on my list.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

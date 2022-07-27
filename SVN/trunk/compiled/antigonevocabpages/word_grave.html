@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>grave</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_2.html#antigone_nahed_marta_chadi_page_2_segment_16" target="main_frame"><b>&larr;</b></a>  <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_1><span title="Antigone">Antigone</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_3><span title="had">a</span></span></a> <a href="word_lever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_5><span title="raised">levé</span></span></a> <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_7><span title="without">sans</span></span></a> <a href="word_étonnement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_9><span title="surprise">étonnement</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_11><span title="her">ses</span></span></a> <a href="word_oeil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_13><span title="eyes">yeux</span></span></a> <span class="red"><span title="serious">graves</span></span> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_17><span title="to">sur</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_19><span title="him">lui</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_21><span title="and">et</span></span></a> <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_23><span title="she">elle</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_25><span title="to him">lui</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_27><span title="had">a</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_29><span title="said">dit</span></span></a> « <a href="word_oui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_31><span title="yes">oui</span></span></a> » <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_33><span title="with">avec</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_35><span title="a">un</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_37><span title="little">petit</span></span></a> <a href="word_sourire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_39><span title="smile">sourire</span></span></a> <a href="word_triste.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_16_word_41><span title="sad">triste</span></span></a>... <span onclick="playSound('./multimedia/897617_200827_162129529.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Antigone raised her serious eyes towards him without surprise and said &quot;yes&quot;, with a poor, sad little smile.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_45" target="main_frame"><b>&larr;</b></a>  <a href="word_soudain.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_45_word_1><span title="suddenly">soudain</span></span></a> <span class="red"><span title="serious">grave</i></span></span>. <span title="suddenly serious.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_32" target="main_frame"><b>&larr;</b></a>  <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_1><span title="Not">Ne</span></span></a> <a href="word_rire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_3><span title="laugh">ris</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_5><span title="not">pas</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_7><span title="this">ce</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_9><span title="morning">matin</span></span></a>. <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_32_word_11><span title="Be">Sois</span></span></a> <span class="red"><span title="serious">grave</span></span>. <span onclick="playSound('./multimedia/1029586_201018_164511295.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Don't smile this morning. Be serious.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_34" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_34_word_1><span title="I">Je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_34_word_3><span title="am">suis</span></span></a> <span class="red"><span title="serious">grave</span></span>. <span title="I am serious.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_165" target="main_frame"><b>&larr;</b></a>  (<a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_1><span title="He">Il</span></span></a> <a href="word_la.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_3><span title="her">la</span></span></a> <a href="word_regarder.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_5><span title="looks at">regarde</span></span></a> <a href="word_encore.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_7><span title="again">encore</span></span></a>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_9><span title="He">Il</span></span></a> <a href="word_redevenir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_11><span title="becomes again">redevient</span></span></a> <span class="red"><span title="serious">grave</span></span>. <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_15><span title="He">Il</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_17><span title="to her">lui</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_19><span title="says">dit</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_21><span title="very">tout</span></span></a> <a href="word_près.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_165_word_23><span title="close">près</span></span></a>.) <span title="(He is still looking at her. He becomes serious again. Moving very close to her, he says:)">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

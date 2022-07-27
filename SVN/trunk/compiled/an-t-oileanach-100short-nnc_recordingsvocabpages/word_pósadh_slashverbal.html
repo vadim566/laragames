@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>pósadh</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_95" target="main_frame"><b>&larr;</b></a>  <a href="word_capitalised_caithfeadsa_slashprop.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_1>Caithfeadsa</span></a> <span class="red">pósadh</span> '<a href="word_déanamh_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_5>dhéanamh</span></a> <a href="word_nó_slashconj.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_7>nó</span></a> <a href="word_dul_slashverbal.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_9>dul</span></a> <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_11>do</span></a> <a href="word_léigh_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_13>léim</span></a> <a href="word_thar_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_15>thar</span></a> <a href="word_muir_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_95_word_17>muir</span></a>.' <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0591.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_96" target="main_frame"><b>&larr;</b></a>  <a href="word_is_slashcop.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_1>Is</span></a> <a href="word_caithfeads_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_3>caithfeadsa</span></a> <span class="red">pósadh</span> '<a href="word_déanamh_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_7>dhéanamh</span></a> <a href="word_nó_slashconj.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_9>nó</span></a> <a href="word_dul_slashverbal.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_11>dul</span></a> <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_13>do</span></a> <a href="word_léigh_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_15>léim</span></a> '<a href="word_on_slashforeign.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_17>on</span></a> <a href="word_loing_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_96_word_19>loing</span></a>.' <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0596.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

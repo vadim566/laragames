@@ -1,0 +1,110 @@
+
+{% extends "base.html" %}
+{% block title %}game4{%endblock%}
+
+{%block content%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel">
+        <div id="result">
+
+        </div>
+        <div class="question-container" id="question">
+<figure>
+    <figcaption>What the missing word that missing in the phrase:</figcaption>
+    <t1>{{ question0 }}</t1>
+</br>
+    <audio
+        controls
+        src="/game11/{{name}}/{{question1}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+        </div>
+        <div class="option-container">
+            <form action = "/game11Submit/"  class="col-md-8 col-sm-12" method="POST">
+                <p>The missing 1st word:<input id="answer0" name="option0" type:="text"></p>
+				<p>The missing 2nd word:<input id="answer1" name="option1" type:="text"></p>
+                
+            
+        </br>
+            <input type="hidden" id="ans0" name="answer0" value="{{ t_answer0 }}">
+            <input type="hidden" id="ans1" name="answer1" value="{{ t_answer1 }}">
+            <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
+            <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
+        </div>
+        <input type="submit" class="btn btn-primary" name="option" id="radop4"   autocomplete="off" checked>
+            </form>
+
+        
+    </div>
+</form>
+
+<script >
+    
+   function changetext(){
+        answers= [{ text: "{{ t_answer }}", isCorrect: true },
+                { text: "{{fake_answer_0}}", isCorrect: false },
+                { text: "{{fake_answer_1}}", isCorrect: false },
+                { text: "{{fake_answer_2}}", isCorrect: false }
+            ]
+        // Getting the result display section
+        var result = document.getElementsByClassName("result");
+        result[0].innerText = "";
+    
+        // Getting the question
+        const question = document.getElementById("question");
+    //The Fisher-Yates algorith
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const shuffledArray = answers.sort((a, b) => 0.5 - Math.random());
+    
+            const Questions = [{
+            id: 0,
+            q: "What is {{question}}",
+            a: answers
+    
+        }]
+    
+        // Setting the question text
+    
+        // Getting the options
+         op1 = document.getElementById('radop1');
+         op2 = document.getElementById('radop2');
+         op3 = document.getElementById('radop3');
+         op4 = document.getElementById('radop4');
+     
+    
+    
+    
+        // Providing option text
+        op1.textContent = Questions[0].a[0].text;
+        op1.value = Questions[0].a[0].text;
+        op1.name = Questions[0].a[0].text;
+        op1.value = Questions[0].a[0].text;
+        op2.innerText = Questions[0].a[1].text;
+        op2.value = Questions[0].a[1].text;
+        op3.innerText = Questions[0].a[2].text;
+        op3.value = Questions[0].a[2].text;
+        op4.innerText = Questions[0].a[3].text;
+        op4.value = Questions[0].a[3].text;
+    
+       
+   }
+  
+        changetext()
+    
+  
+    </script>  
+
+{%endblock  %}

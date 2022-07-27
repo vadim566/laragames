@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>fadó</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_69" target="main_frame"><b>&larr;</b></a>  <a href="word_toireasc_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_1>Toireasc</span></a> <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_3>do</span></a> <a href="word_tabhair_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_5>thug</span></a> <a href="word_m_slashitem.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_7>m'</span></a><a href="word_athair_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_8>athair</span></a> <a href="word_as_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_10>aisti</span></a> <a href="word_ní_slashverbal.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_12>ní</span></a> <span class="red">fadó</span> <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_16>do</span></a> <a href="word_scar_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_18>scar</span></a> <a href="word_sí_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_20>sí</span></a> <a href="word_le_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_69_word_22>linn</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0390.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

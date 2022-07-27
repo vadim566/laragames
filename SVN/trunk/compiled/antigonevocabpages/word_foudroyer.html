@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>foudroyer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_76" target="main_frame"><b>&larr;</b></a>  <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_1><span title="Come on">Allez</span></span></a>, <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_3><span title="go">va</span></span></a> ! <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_5><span title="And">Et</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_7><span title="not">ne</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_9><span title="me ">me</span></span></a> <span class="red"><span title="strike with lightning">foudroie</span></span> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_13><span title="not">pas</span></span></a> <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_15><span title="like">comme</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_17><span title="that">cela</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_19><span title="with the">du</span></span></a> <a href="word_regard.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_76_word_21><span title="look">regard</span></span></a>. <span title="Come on, move! And stop looking at me like that.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

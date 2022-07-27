@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>frais</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_71" target="main_frame"><b>&larr;</b></a>  <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_1><span title="An">Une</span></span></a> <a href="word_innocence.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_3><span title="innocence">innocence</span></span></a> <a href="word_inestimable.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_5><span title="inestimable">inestimable</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_7><span title="for">pour</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_9><span title="the">le</span></span></a> <a href="word_parti.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_11><span title=" party">parti</span></span></a>. <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_13><span title="A">Un</span></span></a> <a href="word_vrai.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_15><span title="real">vrai</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_17><span title="little">petit</span></span></a> <a href="word_garçon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_19><span title="boy">garçon</span></span></a> <a href="word_pâle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_21><span title="pale">pâle</span></span></a> <a href="word_qui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_23><span title="who">qui</span></span></a> <a href="word_cracher.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_25><span title="will spit">crachera</span></span></a> <a href="word_devant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_27><span title="in front of">devant</span></span></a> <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_29><span title="my">mes</span></span></a> <a href="word_fusil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_31><span title="rifles">fusils</span></span></a>. <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_33><span title="A">Un</span></span></a> <a href="word_précieux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_35><span title="precious">précieux</span></span></a> <a href="word_sang.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_37><span title="blood">sang</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_39><span title="all">bien</span></span></a> <span class="red"><span title="fresh">frais</span></span> <a href="word_sur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_43><span title="on">sur</span></span></a> <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_45><span title="my">mes</span></span></a> <a href="word_main.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_47><span title="hands">mains</span></span></a>, <a href="word_double.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_49><span title="double">double</span></span></a> <a href="word_aubain.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_71_word_51><span title="payout">aubaine</span></span></a>. <span title="A convenient piece of innocence to help the party. A pale little boy who will spit at the firing squad. How useful to smear that innocent blood on my hands, a double win.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

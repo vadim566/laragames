@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>marngarli</h1>
+
+<p><a href="_main_text_mangiri_19.html#mangiri_page_19_segment_4" target="main_frame"><b>&larr;</b></a> <a href="word_babarngoo.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_1><span class="sound" title="old acquaintance; friend" onmouseover="playSound('./multimedia/979970_200916_023144294.mp3');">Babarngoo</span></span></a><a href="word_goonyala.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_3><span class="sound" title="friend; relation" onmouseover="playSound('./multimedia/980028_200916_023755738.mp3');">Goonyala</span></span></a><a href="word_maliri.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_5><span class="sound" title="peaceful; friendly" onmouseover="playSound('./multimedia/980048_200916_023912265.mp3');">Maliri</span></span></a><a href="word_mangarlidhi.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_7><span class="sound" title="be peaceable; be friendly" onmouseover="playSound('./multimedia/980050_200916_023920207.mp3');">Mangarlidhi</span></span></a><span class="red"><span class="sound" title="peaceable" onmouseover="playSound('./multimedia/980060_200916_024049708.mp3');">Marngarli</span></span><a href="word_dhi.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_11><span class="sound" title="to be" onmouseover="playSound('./multimedia/980002_200916_023519091.mp3');">dhi</span></span></a><a href="word_mardana.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_13><span class="sound" title="acquaintance; friend; person seen before" onmouseover="playSound('./multimedia/980058_200916_024043106.mp3');">Mardana</span></span></a><a href="word_marda.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_15><span class="sound" title="old place" onmouseover="playSound('./multimedia/980057_200916_024039591.mp3');">Marda</span></span></a><a href="word_na.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_17><span class="sound" onmouseover="playSound('./multimedia/980085_200916_024329816.mp3');">na</span></span></a><a href="word_marngarla.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_19><span class="sound" title="peace, friend, friendly" onmouseover="playSound('./multimedia/980059_200916_024046759.mp3');">Marngarla</span></span></a><a href="word_mooyoonara.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_21><span class="sound" title="safe" onmouseover="playSound('./multimedia/980082_200916_024251851.mp3');">Mooyoonara</span></span></a><a href="word_ngalira.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_23><span class="sound" title="friend; confidant" onmouseover="playSound('./multimedia/71491_190606_085515478.mp3');">Ngalira</span></span></a><a href="word_ngananda.html" target="aux_frame"><span id=mangiri_page_19_segment_4_word_25><span class="sound" title="friendly; hospitable" onmouseover="playSound('./multimedia/980095_200916_024352691.mp3');">Ngananda</span></span></a>*/ </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

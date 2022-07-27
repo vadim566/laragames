@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>moordidhi</h1>
+
+<p><a href="_main_text_mangiri_16.html#mangiri_page_16_segment_3" target="main_frame"><b>&larr;</b></a> <a href="word_moordi.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_1><span class="sound" title="salmon" onmouseover="playSound('./multimedia/980073_200916_024205992.mp3');">Moordi</span></span></a><a href="word_dhi.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_3><span class="sound" title="to be" onmouseover="playSound('./multimedia/980002_200916_023519091.mp3');">dhi</span></span></a><span class="red"><span class="sound" title="rejoice; exult; shout" onmouseover="playSound('./multimedia/980074_200916_024209653.mp3');">Moordidhi</span></span><a href="word_walara.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_7><span class="sound" title="joyous; funny; droll; witty; intelligent" onmouseover="playSound('./multimedia/980135_200916_024754619.mp3');">Walara</span></span></a><a href="word_maiwarna.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_9><span class="sound" title="full; satisfied with food" onmouseover="playSound('./multimedia/980044_200916_023855975.mp3');">Maiwarna</span></span></a><a href="word_ngoorrgoonidhi.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_11><span class="sound" title="to be happy; to rejoice" onmouseover="playSound('./multimedia/71889_190610_083504013.mp3');">Ngoorrgoonidhi</span></span></a><a href="word_wiyidhi.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_13><span class="sound" title="to laugh; to rejoice" onmouseover="playSound('./multimedia/980164_200916_025025249.mp3');">Wiyidhi</span></span></a><a href="word_moongaldidhi.html" target="aux_frame"><span id=mangiri_page_16_segment_3_word_15><span class="sound" title="to be satisfied (with food)" onmouseover="playSound('./multimedia/980072_200916_024202179.mp3');">Moongaldidhi</span></span></a>   Seat of emotions*/ </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

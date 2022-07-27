@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>apporter</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_154" target="main_frame"><b>&larr;</b></a>  <a href="word_nourrice.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_1><span title="Nurse">Nourrice</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_3><span title="will">va</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_5><span title="me">m'</span></span></a><span class="red"><span title="fetch">apporter</span></span> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_8><span title="to">à</span></span></a> <a href="word_manger.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_10><span title="eat">manger</span></span></a>. <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_12><span title="Go">Va</span></span></a> <a href="word_dormir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_14><span title="sleep">dormir</span></span></a> <a href="word_encore.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_16><span title="again">encore</span></span></a>. <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_18><span title="The">Le</span></span></a> <a href="word_soleil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_20><span title="sun">soleil</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_22><span title="rises">se</span></span></a> <a href="word_lever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_24><span title="rises">lève</span></span></a> <a href="word_seulement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_26><span title="just">seulement</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_28><span title="You">Tu</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_30><span title="have">as</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_32><span title="the">les</span></span></a> <a href="word_oeil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_34><span title="eyes">yeux</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_36><span title="all">tout</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_38><span title="little">petits</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_40><span title="from">de</span></span></a> <a href="word_sommeil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_42><span title="sleep">sommeil</span></span></a>. <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_154_word_44><span title="Go">Va</span></span></a>... <span onclick="playSound('./multimedia/1029463_201017_203134233.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Nurse will bring me something to eat. Get some sleep. The sun's only just risen. Your eyes are all scrunched up, you're so tired. Go now.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

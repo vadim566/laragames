@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>harasser</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_31" target="main_frame"><b>&larr;</b></a>  <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_1><span title="If">Si</span></span></a> <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_3><span title="my">mon</span></span></a> <a href="word_frère.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_5><span title="brother">frère</span></span></a> <a href="word_vivant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_7><span title="alive">vivant</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_9><span title="had">était</span></span></a> <a href="word_rentrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_11><span title="returned">rentré</span></span></a> <span class="red"><span title="exhausted">harassé</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_15><span title="from">d'</span></span></a><a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_16><span title="a">une</span></span></a> <a href="word_longue.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_18><span title="long">longue</span></span></a> <a href="word_chasse.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_20><span title="hunt">chasse</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_22><span title="I">je</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_24><span title="him">lui</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_26><span title="would have">aurais</span></span></a> <a href="word_enlever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_28><span title="removed">enlevé</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_30><span title="his">ses</span></span></a> <a href="word_chaussure.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_32><span title="boots">chaussures</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_34><span title="I">je</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_36><span title="him">lui</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_38><span title="would have">aurais</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_40><span title="made">fait</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_42><span title="to">à</span></span></a> <a href="word_manger.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_44><span title="eat">manger</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_46><span title="I">je</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_48><span title="him">lui</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_50><span title="would have">aurais</span></span></a> <a href="word_préparer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_52><span title="got ready">préparé</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_54><span title="his">son</span></span></a> <a href="word_lit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_31_word_56><span title="bed">lit</span></span></a>... <span onclick="playSound('./multimedia/1029978_201018_173057137.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="If my brother had returned, exhausted after a long hunt, I would have taken off his boots, I would have got him something to eat, I would have made his bed...">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

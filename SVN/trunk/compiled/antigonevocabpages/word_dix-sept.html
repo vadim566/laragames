@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>dix-sept</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_9.html#antigone_nahed_marta_chadi_page_9_segment_29" target="main_frame"><b>&larr;</b></a>  <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_1><span title="I">J'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_2><span title="have">ai</span></span></a> <span class="red"><span title="seveneen">dix-sept</span></span> <a href="word_an.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_6><span title="years">ans</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_8><span title="of">de</span></span></a> <a href="word_service.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_10><span title="service">service</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_12><span title="I">Je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_14><span title="am">suis</span></span></a> <a href="word_engager.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_16><span title="signed up">engagé</span></span></a> <a href="word_volontaire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_18><span title="voluntary">volontaire</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_20><span title="the">la</span></span></a> <a href="word_médaille.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_22><span title="medal">médaille</span></span></a>, <a href="word_deux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_24><span title="two">deux</span></span></a> <a href="word_citation.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_26><span title="citations">citations</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_28><span title="I">Je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_30><span title="am">suis</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_32><span title="well">bien</span></span></a> <a href="word_noter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_34><span title="regarded">noté</span></span></a>, <a href="word_chef.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_36><span title="boss">chef</span></span></a>. <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_38><span title="Me">Moi</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_40><span title="I">je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_42><span title="am">suis</span></span></a> « <a href="word_service.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_9_segment_29_word_44><span title="service">service</span></span></a> ». <span title="I got seventeen years of service. I volunteered, medal, two citations. Never been in any trouble. &quot;Army service&quot;, that's me.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

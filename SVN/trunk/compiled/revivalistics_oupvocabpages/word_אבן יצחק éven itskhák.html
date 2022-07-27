@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>אבן יצחק éven itskhák</h1>
+
+<p><a href="_main_text_revivalistics_oup_1.html#revivalistics_oup_page_1_segment_56" target="main_frame"><b>&larr;</b></a> <a href="word_אבן-שושן even-shoshan.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_1><span class="sound" onmouseover="playSound('./multimedia/65336_190422082902.mp3');"> אבן-שושן <i>Even-Shoshan</i></span></span></a><a href="word_milón even-shoshan.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_3><span class="sound" onmouseover="playSound('./multimedia/65305_190422074511.mp3');"><i>Milón Even-Shoshan</i></span></span></a><a href="word_אבן יהודה éven yehúda.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_5><span class="sound" onmouseover="playSound('./multimedia/65332_190422082822.mp3');"> אבן יהודה <i>éven yehúda</i></span></span></a><a href="word_eliezer ben-yehuda.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_7><span class="sound" onmouseover="playSound('./multimedia/65293_190422074133.mp3');">Eliezer Ben-Yehuda</span></span></a><a href="word_אבן ספיר éven sapír.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_9><span class="sound" onmouseover="playSound('./multimedia/65335_190422082852.mp3');"> אבן ספיר <i>éven sapír</i></span></span></a><a href="word_אבן מנחם éven menakhém.html" target="aux_frame"><span id=revivalistics_oup_page_1_segment_56_word_11><span class="sound" onmouseover="playSound('./multimedia/65334_190422082840.mp3');"> אבן מנחם <i>éven menakhém</i></span></span></a><span class="red"><span class="sound" onmouseover="playSound('./multimedia/65333_190422082830.mp3');"> אבן יצחק <i>éven itskhák</i></span></span> </p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

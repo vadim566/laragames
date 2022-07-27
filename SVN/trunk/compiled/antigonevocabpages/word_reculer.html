@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>reculer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_113" target="main_frame"><b>&larr;</b></a>  (<a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_1><span title="He">Il</span></span></a> <span class="red"><span title="moves back">recule</span></span>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_5><span title="he">il</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_7><span title="is about to">va</span></span></a> <a href="word_parler.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_9><span title="speak">parler</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_11><span title="she">elle</span></span></a> <a href="word_crier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_113_word_13><span title="cries">crie</span></span></a>.) <span title="(He moves back, he is about to say something, she cries.)">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_63" target="main_frame"><b>&larr;</b></a>  <span class="red"><span title="moves back">recule</span></span> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_63_word_3><span title="a">un</span></span></a> <a href="word_peu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_63_word_5><span title="little">peu</span></span></a>, <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_63_word_7><span title="and">et</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_63_word_9><span title="said">dit</span></span></a> <a href="word_doucement.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_63_word_11><span title="softly">doucement</i></span></span></a>. <span title="moves back a little, says softly.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_86" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_86_word_1><span title="him">le</span></span></a> <a href="word_regarder.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_86_word_3><span title="looks at">regarde</span></span></a>, <a href="word_puis.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_86_word_5><span title="then">puis</span></span></a> <span class="red"><span title="moves back">recule</span></span> <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_86_word_9><span title="while">en</span></span></a> <a href="word_crier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_86_word_11><span title="crying">criant</span></span></a>. <span title="looks at him, then backs away crying.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

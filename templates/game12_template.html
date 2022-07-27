@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+{% block title %}game4{%endblock%}
+
+{%block content%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel">
+        <div id="result">
+
+        </div>
+        <div class="question-container" id="question">
+<figure>
+    <figcaption>What the missing word that missing in the phrase:</figcaption>
+    <t1>{{ question0 }}</t1>
+</br>
+    <audio
+        controls
+        src="/game12/{{name}}/{{question1}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+</div>
+<div class="option-container">
+    <form action = "/game12Submit/"  class="col-md-8 col-sm-12" method="POST">
+        <p>The missing word:<input id="answer" name="option" type:="text"></p>
+        <input type="submit" class="btn btn-primary" name="option" id="radop4"   autocomplete="off" checked>
+    
+</br>
+    <input type="hidden" id="ans" name="answer" value="{{ t_answer }}">
+    <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
+    <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
+</div>
+    </form>
+
+
+</div>
+
+</body>
+</html>
+
+
+{%endblock  %}

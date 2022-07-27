@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>sandale</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_24" target="main_frame"><b>&larr;</b></a>  <a href="word_alors.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_1><span title="So">Alors</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_3><span title="I">j'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_4><span title="have">ai</span></span></a> <a href="word_enlever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_6><span title="removed">enlevé</span></span></a> <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_8><span title="my">mes</span></span></a> <span class="red"><span title="sandals">sandales</span></span> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_12><span title="and">et</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_14><span title="I">je</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_16><span title="slipped">me</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_18><span title="have">suis</span></span></a> <a href="word_glisser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_20><span title="slipped">glissée</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_22><span title="in">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_24><span title="the">la</span></span></a> <a href="word_campagne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_26><span title="countryside">campagne</span></span></a> <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_28><span title="without">sans</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_30><span title="that">qu'</span></span></a><a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_31><span title="it">elle</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_33><span title="noticed">s'</span></span></a><a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_34><span title="it">en</span></span></a> <a href="word_apercevoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_24_word_36><span title="noticed">aperçoive</span></span></a>...  <span onclick="playSound('./multimedia/1029210_201013_205845640.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="So I took off my sandals and slipped into a field without it noticing.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

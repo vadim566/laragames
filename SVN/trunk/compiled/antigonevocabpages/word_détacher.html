@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>détacher</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_1.html#antigone_nahed_marta_chadi_page_1_segment_18" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_1><span title="The">Le</span></span></a> <a href="word_prologue.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_3><span title=" Prolog">Prologue</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_5><span title="himself">se</span></span></a> <span class="red"><span title=" separates">détache</span></span> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_9><span title="and">et</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_11><span title=" moves forward">s'</span></span></a><a href="word_avancer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_1_segment_18_word_12><span title=" moves forward">avance</span></span></a>. <span title="The Prologue separates himself from the group and moves forward.">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_93" target="main_frame"><b>&larr;</b></a>  (<a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_1><span title="She">Elle</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_3><span title="moved away">s'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_4><span title="has">est</span></span></a> <span class="red"><span title="moved away">détachée</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_8><span title="from">de</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_10><span title="him">lui</span></span></a>, <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_12><span title="she">elle</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_14><span title="has">a</span></span></a> <a href="word_prendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_16><span title="taken">pris</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_18><span title="an">un</span></span></a> <a href="word_autre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_20><span title="other">autre</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_93_word_22><span title="tone">ton</span></span></a>.) <span title="(She has moved away from him, now she speaks in a different tone of voice.)">&#9998;</span></p>
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_83" target="main_frame"><b>&larr;</b></a>  <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_83_word_1><span title="him">le</span></span></a> <span class="red"><span title="pulls loose">détache</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_83_word_5><span title="from">de</span></span></a> <a href="word_lui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_83_word_7><span title="him">lui</i></span></span></a>. <span title="pulls loose from him.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>moordoo</h1>
+
+<p><a href="_main_text_mangiri_4.html#mangiri_page_4_segment_14" target="main_frame"><b>&larr;</b></a> <a href="word_idna.html" target="aux_frame"><span id=mangiri_page_4_segment_14_word_1><span class="sound" title="footprint" onmouseover="playSound('./multimedia/980031_200916_023804221.mp3');">Idna</span></span></a> <a href="word_widla.html" target="aux_frame"><span id=mangiri_page_4_segment_14_word_3><span class="sound" title="path" onmouseover="playSound('./multimedia/980160_200916_025005409.mp3');">widla</span></span></a> <span class="red"><span class="sound" title="different/separate" onmouseover="playSound('./multimedia/980075_200916_024212119.mp3');">moordoo</span></span> <a href="word_ngarla.html" target="aux_frame"><span id=mangiri_page_4_segment_14_word_7><span class="sound" title="many" onmouseover="playSound('./multimedia/980097_200916_024402700.mp3');">ngarlarri</span></span></a> <a href="word_wardanda.html" target="aux_frame"><span id=mangiri_page_4_segment_14_word_9><span class="sound" title="continent-LOC" onmouseover="playSound('./multimedia/980145_200916_024847593.mp3');">wardandanga</span></span></a> <a href="word_yarnbala.html" target="aux_frame"><span id=mangiri_page_4_segment_14_word_11><span class="sound" title="together-INCH" onmouseover="playSound('./multimedia/980175_200916_025117374.mp3');">yarnbalanidhi</span></span></a>. <span onclick="playSound('./multimedia/986030_200925_095600117.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

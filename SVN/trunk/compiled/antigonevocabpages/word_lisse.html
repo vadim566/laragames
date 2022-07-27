@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>lisse</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_20" target="main_frame"><b>&larr;</b></a>  <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_1><span title=" How">Comme</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_3><span title="it">cela</span></span></a> <a href="word_devoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_5><span title="must">doit</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_7><span title="be">être</span></span></a> <a href="word_facile.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_9><span title="easy">facile</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_11><span title="to">de</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_13><span title="not">ne</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_15><span title="not">pas</span></span></a> <a href="word_penser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_17><span title="think">penser</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_19><span title="of">de</span></span></a> <a href="word_bêtise.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_21><span title="bad things">bêtises</span></span></a> <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_23><span title="with">avec</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_25><span title="all">toutes</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_27><span title="those">ces</span></span></a> <a href="word_beau.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_29><span title="beautiful">belles</span></span></a> <a href="word_mèche.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_31><span title="locks">mèches</span></span></a> <span class="red"><span title="smooth">lisses</span></span> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_35><span title="and">et</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_37><span title="well">bien</span></span></a> <a href="word_ordonner.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_39><span title="ordered">ordonnées</span></span></a> <a href="word_autour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_41><span title="around">autour</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_43><span title="of">de</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_45><span title="your">la</span></span></a> <a href="word_tête.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_20_word_47><span title="head">tête</span></span></a> ! <span onclick="playSound('./multimedia/1029329_201017_183247916.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="It must be so easy not to think bad thoughts when you have all that beautiful silky hair just lying there around your head.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>mésange</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_22" target="main_frame"><b>&larr;</b></a>  <a href="word_trop.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_22_word_1><span title="Too">Trop</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_22_word_3><span title="little">petite</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_22_word_5><span title="for">pour</span></span></a> <a href="word_quoi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_22_word_7><span title="what">quoi</span></span></a>, <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_22_word_9><span title="my">ma</span></span></a> <span class="red"><span title="little bird">mésange</span></span> ? <span title="Too little for what, darling?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

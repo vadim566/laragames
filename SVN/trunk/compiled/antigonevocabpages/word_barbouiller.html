@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>barbouiller</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_17" target="main_frame"><b>&larr;</b></a>  <a href="word_quand.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_1><span title="When">Quand</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_3><span title="I">j'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_4><span title="was">étais</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_6><span title="little">petite</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_8><span title="I">j'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_9><span title="was">étais</span></span></a> <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_11><span title="so">si</span></span></a> <a href="word_malheureux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_13><span title="unhappy">malheureuse</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_15><span title="you">tu</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_17><span title="remember">te</span></span></a> <a href="word_souvenir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_19><span title="remember">souviens</span></span></a> ? <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_21><span title="I">Je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_23><span title="you">te</span></span></a> <span class="red"><span title="smeared">barbouillais</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_27><span title="with">de</span></span></a> <a href="word_terre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_29><span title="earth">terre</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_31><span title="I">je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_33><span title="you">te</span></span></a> <a href="word_mettre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_35><span title="put">mettais</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_37><span title="(-)">des</span></span></a> <a href="word_ver.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_39><span title="worms">vers</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_41><span title="in">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_43><span title="the">le</span></span></a> <a href="word_cou.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_17_word_45><span title="neck">cou</span></span></a>. <span onclick="playSound('./multimedia/1029326_201017_183057401.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Do you remember how unhappy I was about it when I was little? I smeared you with mud, I put worms down your neck.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

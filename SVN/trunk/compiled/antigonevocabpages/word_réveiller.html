@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>réveiller</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_187" target="main_frame"><b>&larr;</b></a>  <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_1><span title="One">Un</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_3><span title="morning">matin</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_5><span title="I">je</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_7><span title="woken up">me</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_9><span title="have">suis</span></span></a> <span class="red"><span title="woken up">réveillé</span></span> <a href="word_roi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_13><span title="king">roi</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_15><span title="of">de</span></span></a> <a href="word_capitalised_thèbes.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_17><span title="Thebes">Thèbes</span></span></a>. <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_19><span title="And">Et</span></span></a> <a href="word_capitalised_dieu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_21><span title="God">Dieu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_23><span title="knows">sait</span></span></a> <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_25><span title="is">si</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_27><span title="I">j'</span></span></a><a href="word_aimer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_28><span title="would have liked">aimais</span></span></a> <a href="word_autre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_30><span title="other">autre</span></span></a> <a href="word_chose.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_32><span title="thing">chose</span></span></a> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_34><span title="in">dans</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_36><span title="the">la</span></span></a> <a href="word_vie.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_38><span title="life">vie</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_40><span title="than">que</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_42><span title="to">d'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_43><span title="be">être</span></span></a> <a href="word_puissant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_187_word_45><span title="powerful">puissant</span></span></a>... <span title="One morning, I woke up and I was king of Thebes. And God knows there were things in life I wanted more than power...">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

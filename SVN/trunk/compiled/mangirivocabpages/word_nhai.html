@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>nhai</h1>
+
+<p><a href="_main_text_mangiri_4.html#mangiri_page_4_segment_2" target="main_frame"><b>&larr;</b></a> <a href="word_ngarrinyarlboo.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_1><span class="sound" title="we" onmouseover="playSound('./multimedia/980100_200916_024426234.mp3');">Ngarrinyarlboo</span></span></a> <a href="word_capitalised_barngarla.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_3><span class="sound" title="Barngarla people" onmouseover="playSound('./multimedia/979985_200916_023259012.mp3');">Barngarlamadha</span></span></a> <span class="red"><span class="sound" title="first" onmouseover="playSound('./multimedia/980111_200916_024513311.mp3');">nhai</span></span> <a href="word_yoora.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_7><span class="sound" title="person-PL" onmouseover="playSound('./multimedia/980177_200916_025125039.mp3');">yoorarri</span></span></a> <a href="word_yarda.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_9><span class="sound" title="land-ASSOC" onmouseover="playSound('./multimedia/980174_200916_025107470.mp3');">yardalyga</span></span></a>, <a href="word_warda.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_11><span class="sound" title="sea-ASSOC" onmouseover="playSound('./multimedia/980147_200916_024904707.mp3');">wardarnalyga</span></span></a>, <a href="word_gawoo.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_13><span class="sound" title="water-ASSOC" onmouseover="playSound('./multimedia/980021_200916_023702736.mp3');">gawoolyga</span></span></a> <a href="word_indoo.html" target="aux_frame"><span id=mangiri_page_4_segment_2_word_15><span class="sound" title="as well" onmouseover="playSound('./multimedia/980037_200916_023828706.mp3');">indoo</span></span></a>. <span onclick="playSound('./multimedia/980188_200916_012118864.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

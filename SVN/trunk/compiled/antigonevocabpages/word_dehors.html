@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>dehors</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_33" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_1><span title="You">Tu</span></span></a> <a href="word_croire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_3><span title="think">crois</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_5><span title="that">que</span></span></a> <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_7><span title="if">si</span></span></a> <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_9><span title="one">on</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_11><span title="got up">se</span></span></a> <a href="word_lever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_13><span title="got up">levait</span></span></a> <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_15><span title="like">comme</span></span></a> <a href="word_cela.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_17><span title="that">ça</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_19><span title="all">tous</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_21><span title="the">les</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_23><span title="mornings">matins</span></span></a>, <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_25><span title="it">ce</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_27><span title="would be">serait</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_29><span title="all">tous</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_31><span title="the">les</span></span></a> <a href="word_matin.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_33><span title="mornings">matins</span></span></a> <a href="word_aussi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_35><span title="as">aussi</span></span></a> <a href="word_beau.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_37><span title="beautiful">beau</span></span></a>, <a href="word_nourrice.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_39><span title="nurse">nourrice</span></span></a>, <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_41><span title="to">d'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_42><span title="be">être</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_44><span title="the">la</span></span></a> <a href="word_premier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_46><span title="first">première</span></span></a> <a href="word_fille.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_33_word_48><span title="girl">fille</span></span></a> <span class="red"><span title="outside">dehors</span></span> ? <span onclick="playSound('./multimedia/1029219_201013_210811635.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Do you think if you got up like that every morning, nurse, it would be as lovely to be the first girl outdoors?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

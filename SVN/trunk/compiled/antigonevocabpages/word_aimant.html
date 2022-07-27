@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>aimant</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_2.html#antigone_nahed_marta_chadi_page_2_segment_30" target="main_frame"><b>&larr;</b></a>  <a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_30_word_1><span title="She">Elle</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_30_word_3><span title="is">est</span></span></a> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_30_word_5><span title="kind">bonne</span></span></a>, <a href="word_digne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_30_word_7><span title="worthy">digne</span></span></a>, <span class="red"><span title="loving">aimante</span></span>. <span onclick="playSound('./multimedia/921385_200828_181018984.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="She is kind, worthy, loving.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

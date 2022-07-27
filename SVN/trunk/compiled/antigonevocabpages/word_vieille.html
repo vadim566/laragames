@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>vieille</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_102" target="main_frame"><b>&larr;</b></a>  <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_1><span title="Come on">Allons</span></span></a>, <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_3><span title="my">ma</span></span></a> <span class="red"><span title="old">vieille</span></span> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_7><span title="good">bonne</span></span></a> <a href="word_pommer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_9><span title="apple">pomme</span></span></a> <a href="word_rouge.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_11><span title="red">rouge</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_13><span title="You">Tu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_15><span title="know">sais</span></span></a> <a href="word_quand.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_17><span title="when">quand</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_19><span title="I">je</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_21><span title="you">te</span></span></a> <a href="word_frotter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_23><span title="polished">frottais</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_25><span title="so">pour</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_27><span title="that">que</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_29><span title="you">tu</span></span></a> <a href="word_briller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_31><span title="shine">brilles</span></span></a> ? <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_33><span title="My">Ma</span></span></a> <a href="word_vieux.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_35><span title="old">vieille</span></span></a> <a href="word_pomme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_37><span title="apple">pomme</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_39><span title="all">toute</span></span></a> <a href="word_ridée.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_102_word_41><span title="wrinkled">ridée</span></span></a>. <span onclick="playSound('./multimedia/1029288_201017_182449828.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Come on, my old red apple. You know when I used to polish you to make you shine? My wrinkled old red apple.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

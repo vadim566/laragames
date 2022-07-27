@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>Mademoiselle</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_11.html#antigone_nahed_marta_chadi_page_11_segment_10" target="main_frame"><b>&larr;</b></a>  <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_1><span title="Their">Leurs</span></span></a> <a href="word_sale.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_3><span title="dirty">sales</span></span></a> <a href="word_main.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_5><span title="hands">mains</span></span></a> ? <a href="word_vous.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_7><span title="You">Vous</span></span></a> <a href="word_pouvoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_9><span title="could">pourriez</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_11><span title="be">être</span></span></a> <a href="word_polir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_13><span title="polite">polie</span></span></a>, <span class="red"><span title="miss">Mademoiselle</span></span>... <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_17><span title="Me">Moi</span></span></a>, <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_19><span title="I">je</span></span></a> <a href="word_suivre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_21><span title="am">suis</span></span></a> <a href="word_polir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_10_word_23><span title="polite">poli</span></span></a>. <span onclick="playSound('./multimedia/1029833_201021_133458935.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Their dirty hands? You could try being polite, miss. Me, I'm polite.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

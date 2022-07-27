@@ -1,0 +1,197 @@
+
+{% extends "base.html" %}
+{% block title %}game4{%endblock%}
+{%block style%}
+
+
+{%endblock%}
+{%block content%}
+
+
+
+<body>
+
+
+    <div class="container1">
+       <div class="question-container" id="question">
+<figure>
+    <figcaption>Reorder the phrase to correct order:</figcaption>
+    <t1>{{ question0 }}</t1>
+</br>
+    <audio
+        controls
+        src="/game8/{{name}}/{{question1}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+<form action="/game8Submit/" id="formgame8"  method="POST">
+    <input type="hidden" id="ans" name="answer" value="{{ t_answer }}">
+    <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
+    <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
+    <input type="hidden" id="option" name="option" value="">
+    <input type="submit" class="btn btn-primary" name="option" id="radop4"   autocomplete="off" checked>
+</form>
+ 
+
+        </div>
+        </div>
+        <div class="dragNdrop">
+		<div class="sandbox">
+			 
+		
+		<div items>
+		<div class="item" id="item1" draggable="true" {{split_a0}}="{{split_a0}}">
+		{{split_a0}}
+                </div>
+		<div class="item" id="item2" draggable="true" name="{{split_a1}}">
+                {{split_a1}}
+				</div>
+<div class="item" id="item3" draggable="true" name="{{split_a2}}">
+                
+				{{split_a2}}
+				
+				</div>
+				
+<div class="item" id="item4" draggable="true" name="{{split_a3}}">
+                
+				{{split_a3}}
+				
+				</div>	
+<div class="item" id="item5" draggable="true" name="{{split_a4}}" >
+                
+				{{split_a4}}
+				
+				</div>	
+</div>				
+</br>
+						
+		
+        <div class="drop-targets">
+         
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+			<div class="box" id="box3"></div>
+			<div class="box" id="box4"></div>
+			<div class="box" id="box5"></div>
+			</div>
+        </div>
+	</div>
+</div>
+	
+	</div>
+    <script>
+const item = document.querySelector('#item1');
+const item1 = document.querySelector('#item2');
+const item2 = document.querySelector('#item3');
+const item3 = document.querySelector('#item4');
+const item4 = document.querySelector('#item5');
+
+item.addEventListener('dragstart', dragStart);
+item1.addEventListener('dragstart', dragStart);
+
+item2.addEventListener('dragstart', dragStart);
+item3.addEventListener('dragstart', dragStart);
+item4.addEventListener('dragstart', dragStart);
+
+function dragStart(e) {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setTimeout(() => {
+        e.target.classList.add('hide');
+    }, 0);
+}
+
+
+/* drop targets */
+const boxes = document.querySelectorAll('.box' && '.sandbox' && 'html');
+
+boxes.forEach(box => {
+    box.addEventListener('dragenter', dragEnter)
+    box.addEventListener('dragover', dragOver);
+    box.addEventListener('dragleave', dragLeave);
+    box.addEventListener('drop', drop);
+});
+
+
+function dragEnter(e) {
+    e.preventDefault();
+    e.target.classList.add('drag-over');
+}
+
+function dragOver(e) {
+    e.preventDefault();
+    e.target.classList.add('drag-over');
+}
+
+function dragLeave(e) {
+    e.target.classList.remove('drag-over');
+}
+
+function drop(e) {
+    e.target.classList.remove('drag-over');
+
+    // get the draggable element
+    const id = e.dataTransfer.getData('text/plain');
+    const draggable = document.getElementById(id);
+
+    
+    // add it to the drop target
+    e.target.appendChild(draggable);
+
+    // display the draggable element
+    draggable.classList.remove('hide');
+    Evaluate();
+}
+
+	
+	  
+// Set start
+var start = true;
+
+// Iterate
+function Evaluate(){
+    // Getting the result display section
+ 
+
+
+
+    // Grabbing the evaluate button
+
+		//set boxes as number of split text
+		box1=document.getElementById("box1")
+		box2=document.getElementById("box2")
+		box3=document.getElementById("box3")
+		box4=document.getElementById("box4")
+		box5=document.getElementById("box5")
+		
+		//attributes[3] is the name at the div that hold the info about the text
+		part1=box1.firstChild.attributes[3].value
+		part2=box2.firstChild.attributes[3].value
+		part3=box3.firstChild.attributes[3].value
+		part4=box4.firstChild.attributes[3].value
+		part5=box5.firstChild.attributes[3].value
+		space=" "
+		//the whole phrase is
+		phrase=part1+space+part2+space+part3+space+part4+space+part5;
+
+        sendx=document.getElementById('option')
+        sendx.value=phrase;
+		t_answer="{{ t_answer }}"
+		status=phrase.localeCompare(t_answer);
+		
+		
+      
+    
+}
+
+
+
+	
+
+	</script>
+</body>
+
+
+
+
+{%endblock  %}

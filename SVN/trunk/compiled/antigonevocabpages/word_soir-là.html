@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>soir-là</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_67" target="main_frame"><b>&larr;</b></a>  <a href="word_oh.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_1><span title="Oh">Oh</span></span></a> ! <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_3><span title="you">tu</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_5><span title="me">m'</span></span></a><a href="word_aimer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_6><span title="loved">aimais</span></span></a>, <a href="word_capitalised_hémon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_8><span title="Haemon">Hémon</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_10><span title="you">tu</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_12><span title="me">m'</span></span></a><a href="word_aimer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_13><span title="loved">aimais</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_15><span title="you">tu</span></span></a> <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_17><span title="of it">en</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_19><span title="are">es</span></span></a> <a href="word_bien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_21><span title="quite">bien</span></span></a> <a href="word_sûr.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_23><span title="sure">sûr</span></span></a>, <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_67_word_25><span title="that">ce</span></span></a> <span class="red"><span title="evening">soir-là</span></span>? <span onclick="playSound('./multimedia/1029621_201018_165201980.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Oh! Haemon, you did love me, you're quite sure you did love me, that evening?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

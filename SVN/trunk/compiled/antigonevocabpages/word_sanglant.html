@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>sanglant</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_254" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_1><span title="You">Tu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_3><span title="know">sais</span></span></a> <a href="word_pourquoi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_5><span title="why">pourquoi</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_7><span title="you">tu</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_9><span title="will">vas</span></span></a> <a href="word_mourir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_11><span title="die">mourir</span></span></a>, <a href="word_antigone.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_13><span title="Antigone">Antigone</span></span></a> ? <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_15><span title="You">Tu</span></span></a> <a href="word_savoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_17><span title="know">sais</span></span></a> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_19><span title="at the">au</span></span></a> <a href="word_bas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_21><span title="bottom">bas</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_23><span title="of">de</span></span></a> <a href="word_quel.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_25><span title="which">quelle</span></span></a> <a href="word_histoire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_27><span title="story">histoire</span></span></a> <a href="word_sordide.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_29><span title="disgusting">sordide</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_31><span title="you">tu</span></span></a> <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_33><span title="will">vas</span></span></a> <a href="word_signer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_35><span title="sign">signer</span></span></a> <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_37><span title="for">pour</span></span></a> <a href="word_toujours.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_39><span title="ever">toujours</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_41><span title="your">ton</span></span></a> <a href="word_petit.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_43><span title="little">petit</span></span></a> <a href="word_nom.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_254_word_45><span title="name">nom</span></span></a> <span class="red"><span title="bloody">sanglant</span></span> ? <span title="Do you know why you're dying, Antigone? Do you know what disgusting little story you're going to undersign in your blood?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

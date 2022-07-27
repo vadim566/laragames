@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>allons</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_14.html#antigone_nahed_marta_chadi_page_14_segment_24" target="main_frame"><b>&larr;</b></a>  <span class="red"><span title="Come on">Allons</span></span>, <a href="word_capitalised_créon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_3><span title="Creon">Créon</span></span></a>, <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_5><span title="a">un</span></span></a> <a href="word_peu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_7><span title="little">peu</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_9><span title="(-)">de</span></span></a> <a href="word_courage.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_11><span title="courage">courage</span></span></a>, <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_13><span title="it">ce</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_15><span title="not">n'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_16><span title="is">est</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_18><span title="but">qu'</span></span></a><a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_19><span title="a">un</span></span></a> <a href="word_mauvais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_21><span title="bad">mauvais</span></span></a> <a href="word_moment.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_23><span title="moment">moment</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_25><span title="to">à</span></span></a> <a href="word_passer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_27><span title="get by">passer</span></span></a>. <span class="red"><span title="Come on">Allons</span></span>, <a href="word_cuisinier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_31><span title="cook">cuisinier</span></span></a>, <a href="word_puisqu_apostropheil.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_33><span title="since it">puisqu'il</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_35><span title="(-)">le</span></span></a> <a href="word_falloir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_14_segment_24_word_37><span title="is necessary">faut</span></span></a> ! <span onclick="playSound('./multimedia/1030377_201021_142923539.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Come on Creon, a bit of courage, you know you can do it. Come on cook, since it's necessary!">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

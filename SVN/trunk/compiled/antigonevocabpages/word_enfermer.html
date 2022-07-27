@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>enfermer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_15.html#antigone_nahed_marta_chadi_page_15_segment_41" target="main_frame"><b>&larr;</b></a>  <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_1><span title="Is">Est</span></span></a>-<a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_3><span title="it">ce</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_5><span title="that">qu'</span></span></a><a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_6><span title="you">on</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_8><span title="not">ne</span></span></a> <a href="word_pouvoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_10><span title="can">peut</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_12><span title="not">pas</span></span></a> <a href="word_imaginer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_14><span title="think of">imaginer</span></span></a> <a href="word_quelque.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_16><span title="some">quelque</span></span></a> <a href="word_chose.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_18><span title="thing">chose</span></span></a>, <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_20><span title="say">dire</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_22><span title="that">qu'</span></span></a><a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_23><span title="she">elle</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_25><span title="is">est</span></span></a> <a href="word_folle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_27><span title="mad">folle</span></span></a>, <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_15_segment_41_word_29><span title="her">l'</span></span></a><span class="red"><span title="lock up">enfermer</span></span> ? <span onclick="playSound('./multimedia/922645_200829_171224353.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="Can't you think of something, say she's mad, lock her up?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

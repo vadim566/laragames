@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>exactement</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_5.html#antigone_nahed_marta_chadi_page_5_segment_149" target="main_frame"><b>&larr;</b></a>  <a href="word_mon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_1><span title="My">Mon</span></span></a> <a href="word_frère.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_3><span title="brother">frère</span></span></a> <a href="word_mort.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_5><span title="dead">mort</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_7><span title="is">est</span></span></a> <a href="word_maintenant.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_9><span title="now">maintenant</span></span></a> <a href="word_entourer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_11><span title="surrounded">entouré</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_13><span title="by">d'</span></span></a><a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_14><span title="a">une</span></span></a> <a href="word_garde.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_16><span title="guard">garde</span></span></a> <span class="red"><span title="just">exactement</span></span> <a href="word_comme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_20><span title="as">comme</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_22><span title="if">s'</span></span></a><a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_23><span title="he">il</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_25><span title="had">avait</span></span></a> <a href="word_réussir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_27><span title="succeeded">réussi</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_29><span title="to">à</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_31><span title="himself">se</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_33><span title="make">faire</span></span></a> <a href="word_roi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_35><span title="king">roi</span></span></a>. <a href="word_aller.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_37><span title=" Go">Va</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_39><span title="go back to bed">te</span></span></a> <a href="word_recoucher.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_41><span title="go back to bed">recoucher</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_43><span title="You">Tu</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_45><span title="are">es</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_47><span title="all">toute</span></span></a> <a href="word_pâle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_49><span title="pale">pâle</span></span></a> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_51><span title="from">de</span></span></a> <a href="word_fatigue.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_5_segment_149_word_53><span title="tiredness">fatigue</span></span></a>. <span onclick="playSound('./multimedia/1029458_201017_203009219.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="My dead brother is surrounded by an armed guard just as though he'd managed to make himself king. Go back to bed. You're absolutely pale.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

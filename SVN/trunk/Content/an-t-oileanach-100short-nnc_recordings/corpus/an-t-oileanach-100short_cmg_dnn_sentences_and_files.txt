@@ -1,0 +1,100 @@
+CI0001CDAn_tOileanach_0001	AN tOILEÁNACH
+CI0001CDAn_tOileanach_0002	Is cuimhin liom mé a bheith ar bhrollach mo mháthar.
+CI0001CDAn_tOileanach_0003	Cheithre bliana do bhíos sarar baineadh do dheol me.
+CI0001CDAn_tOileanach_0005	Sin é an réasún gur fágadh comh fada ar na cíní me.
+CI0001CDAn_tOileanach_0006	Bhíos im peata ina theannta san.
+CI0001CDAn_tOileanach_0010	Tá Máire fós beo insan Oileán so.
+CI0001CDAn_tOileanach_0011	Tá beirt eile acu beo i Meirice.
+CI0001CDAn_tOileanach_0012	Tá Pádraig beo.
+CI0001CDAn_tOileanach_0013	Cailleadh Cáit agus an pinsean ráithe aici.
+CI0001CDAn_tOileanach_0014	Sin iad an t-ál do bhí againn ann.
+CI0001CDAn_tOileanach_0016	Ní raibh mórshúil chuige liom san am gur bhuaileas chúthu.
+CI0001CDAn_tOileanach_0021	Is dócha gurb amhlaidh nárbh fhiú leis me a aistriú.
+CI0001CDAn_tOileanach_0031	Bhí tigh eile as ár gcoinne amach agus a dhoras linn.
+CI0001CDAn_tOileanach_0032	Bhíodh lucht an dá thí ag caint lena chéile gach lá.
+CI0001CDAn_tOileanach_0037	Me i mblianta na tuisceana an uair seo.
+CI0001CDAn_tOileanach_0041	'Fágfair an cóta glas air nó go mbeir ag lorg mná dho.
+CI0001CDAn_tOileanach_0043	M'ATHAIR
+CI0001CDAn_tOileanach_0045	Ó Pharóiste Fionntrá treabhchas mo mháthar.
+CI0001CDAn_tOileanach_0046	Do bhíodar araon toilteanach le chéile.
+CI0001CDAn_tOileanach_0055	Bhí m'athair ag dul ag iascach an mhaidean so.
+CI0001CDAn_tOileanach_0070	Bhí an chruach mhór mhóna age baile fé Dhomhnach aici.
+CI0001CDAn_tOileanach_0071	Do bhí chúig mhíle éisc agem athair an tseachtain sin.
+CI0001CDAn_tOileanach_0072	Bhíodh mo mháthair ag insint na nithe seo don seanachailligh bhéal doiris.
+CI0001CDAn_tOileanach_0073	LONG NA hÍLE BHUÍ
+CI0001CDAn_tOileanach_0077	Ní raibh min bhuí ann an uair seo.
+CI0001CDAn_tOileanach_0089	B'eo amach na fir ghorma.
+CI0001CDAn_tOileanach_0090	B'eo amach na hailpeanna don íle bhuí ar snámh arís.
+CI0001CDAn_tOileanach_0091	Do shábháil na mná arís iad.
+CI0001CDAn_tOileanach_0096	Do bhog é agus do bhain.
+CI0001CDAn_tOileanach_0097	Bhí cheithre troithe ar faid ann.
+CI0001CDAn_tOileanach_0107	Ní raibh aon stad agam le déanamh ach mar 'bheadh coileán cú.
+CI0001CDAn_tOileanach_0109	Bhíodh duine éigin ag faire im dhiaidh.
+CI0001CDAn_tOileanach_0120	Bheadh pingin is dhá phingin le cur id phóca is gach tigh.
+CI0001CDAn_tOileanach_0124	NA MUCA MARA
+CI0001CDAn_tOileanach_0129	Níor chaitheas an méid sin i gan fhios don seanachailligh bhéal doiris.
+CI0001CDAn_tOileanach_0144	Do chuir sí mise ar a drom gur bhaineamair an tigh amach.
+CI0001CDAn_tOileanach_0157	Bhí aghaidh m'athar dearg lena chuid fola féin agus fuil na muc.
+CI0001CDAn_tOileanach_0173	B'éigean do í a scaoileadh fén dTráigh Bháin.
+CI0001CDAn_tOileanach_0179	Níorbh fhearrdede na hoileánaigh ó shin an radharc san.
+CI0001CDAn_tOileanach_0184	Trí bliana atá an pinsean agena comhaois insa tír seo.
+CI0001CDAn_tOileanach_0185	Fágann san trí bliana déag agus trí fichid í.
+CI0001CDAn_tOileanach_0195	Baighreán a thugadh na daoine air.
+CI0001CDAn_tOileanach_0199	Bhí sé ráite go mbíodh sí ag athchogaint ar nós na bó.
+CI0001CDAn_tOileanach_0202	Tá ana-chosúlacht acu so le scadáin.
+CI0001CDAn_tOileanach_0209	D'ardaigh an breac amach 'on pholl me.
+CI0001CDAn_tOileanach_0227	D'aithin mo mham go raibh rud éigin sa treis agam.
+CI0001CDAn_tOileanach_0229	Tháinig m'athair isteach.
+CI0001CDAn_tOileanach_0231	Bhí an eascú aige á tharrac ina dhiaidh.
+CI0001CDAn_tOileanach_0240	AN SCOIL
+CI0001CDAn_tOileanach_0241	Tháinig lá ana-bhreá.
+CI0001CDAn_tOileanach_0242	Lá Domhnaigh dob ea é.
+CI0001CDAn_tOileanach_0258	Sin é an uair do chuir mo mháthair an scéal im láthairse.
+CI0001CDAn_tOileanach_0269	B'eo gach nduine ag prapáil chuin dul a chodladh.
+CI0001CDAn_tOileanach_0298	B'éigeant do Nóra breith ar láimh ormsa sarar bhogas don stól.
+CI0001CDAn_tOileanach_0299	Do bhain gach nduine againn a thigh féin amach.
+CI0001CDAn_tOileanach_0300	Bhí dorn prátaí fuarbheirithe romhainne.
+CI0001CDAn_tOileanach_0301	Buaileadh cois na tine iad.
+CI0001CDAn_tOileanach_0310	Ní rabhas baoch do Nóra nár lig dom féin í a fhreagairt.
+CI0001CDAn_tOileanach_0316	Comhaois dob ea sinn.
+CI0001CDAn_tOileanach_0324	Chuaigh cuid acu i ngreim sa doras le feac chuin bóthair.
+CI0001CDAn_tOileanach_0325	Canta do chíste do bhí romhainne agus braon bainne leis.
+CI0001CDAn_tOileanach_0328	Ar an dTráigh Bháin ansan linn an chuid eile don lá.
+CI0001CDAn_tOileanach_0335	Do bhuaileas amach chuin scoile in aonacht le Nóra agus Eibhlín.
+CI0001CDAn_tOileanach_0339	Bhí mo shúil ar gach ceann acu.
+CI0001CDAn_tOileanach_0358	MO MHÁTHAIR ÓN NDAINGEAN
+CI0001CDAn_tOileanach_0359	Lá Domhnaigh do tháinig mo mháthair abhaile ón mbaile mór.
+CI0001CDAn_tOileanach_0360	Bhí mála bán agus mála garbh aici.
+CI0001CDAn_tOileanach_0374	BÁD ALEX
+CI0001CDAn_tOileanach_0390	Toireasc do thug m'athair aisti ní fadó do scar sí linn.
+CI0001CDAn_tOileanach_0391	Pósadh Mháire
+CI0001CDAn_tOileanach_0402	D'fhág Máire an leanbh againne agus do bhain sí amach Meirice.
+CI0001CDAn_tOileanach_0403	Trí bliana a thug sí thall.
+CI0001CDAn_tOileanach_0407	Ní raibh so róchneasta leis an ngramaisc scoláirí do bhí roimis.
+CI0001CDAn_tOileanach_0409	Bhí cuma fhiain air.
+CI0001CDAn_tOileanach_0410	Deireadh an Rí liomsa i gcogar gurb ón Rúis do tháinig sé.
+CI0001CDAn_tOileanach_0413	AN MHÁISTREÁS PÓSTA
+CI0001CDAn_tOileanach_0414	Do phós sí i sráidbhaile i bParóiste an Fheirtéaraigh.
+CI0001CDAn_tOileanach_0418	Crích leis an chéad mhúinteoir scoile do tháinig go dtí an Blascaod.
+CI0001CDAn_tOileanach_0421	AOINE AN CHÉASTA
+CI0001CDAn_tOileanach_0435	Do bhuaileamair amach an doras.
+CI0001CDAn_tOileanach_0458	B'éigeant dóibh fanúint mar a raibh acu.
+CI0001CDAn_tOileanach_0491	Is air ná bíodh an teip.
+CI0001CDAn_tOileanach_0497	Prátaí agus ní arán do bhíodh caite age gach n-aon.
+CI0001CDAn_tOileanach_0506	Chuaigh don tsagart máistir d'fháil.
+CI0001CDAn_tOileanach_0511	Bhí leabhair bheaga nua aici seo á thabhairt amach.
+CI0001CDAn_tOileanach_0532	'Bead in aonacht leatsa.
+CI0001CDAn_tOileanach_0533	Coimeádfad má bhíonn aon phortán agat.'
+CI0001CDAn_tOileanach_0535	Do chuaigh amach ar oileán do bhí ann.
+CI0001CDAn_tOileanach_0545	Níonáil do bhí lena hata do chas sé ar mo mhéireanna.
+CI0001CDAn_tOileanach_0550	Do bhíos ag seinm Dhónaill na Gréine láithreach.
+CI0001CDAn_tOileanach_0556	B'fhéidir go bhfaigheadh sí sin cámas orainne comh maith.
+CI0001CDAn_tOileanach_0557	Beannacht Dé leo ar fad.
+CI0001CDAn_tOileanach_0559	Do bhuail chuige i mála iad agus do bhuail an cnoc amach.
+CI0001CDAn_tOileanach_0572	Iad tar éis bídh do bheith caite acu.
+CI0001CDAn_tOileanach_0591	Caithfeadsa pósadh 'dhéanamh nó dul do léim thar muir.'
+CI0001CDAn_tOileanach_0596	Is caithfeadsa pósadh 'dhéanamh nó dul do léim 'on loing.'
+CI0001CDAn_tOileanach_0597	B'éigeant don mháthair slataire fir do phiocadh suas di gan mhoill.
+CI0001CDAn_tOileanach_0599	Ó cheantar an Daingin dob ea a muintir.
+CI0001CDAn_tOileanach_0606	Ar chloisint sin dúinn ní rabhamair istigh linn féin.
+CI0001CDAn_tOileanach_0608	Stunaire maith cailín do chonaic ar dtúis é.

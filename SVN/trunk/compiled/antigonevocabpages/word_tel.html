@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>tel</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_124" target="main_frame"><b>&larr;</b></a>  (<a href="word_elle.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_1><span title="She">Elle</span></span></a> <a href="word_achever.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_3><span title="finished">achève</span></span></a> <a href="word_avec.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_5><span title="with">avec</span></span></a> <a href="word_un.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_7><span title="a">un</span></span></a> <span class="red"><span title="such">tel</span></span> <a href="word_désespoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_11><span title="desperation">désespoir</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_13><span title="that">qu'</span></span></a><a href="word_capitalised_hémon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_14><span title="Haemon">Hémon</span></span></a> <a href="word_obéir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_16><span title="obeys">obéit</span></span></a> <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_18><span title="and">et</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_20><span title="moves away">s'</span></span></a><a href="word_éloigner.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_124_word_21><span title="moves away">éloigne</span></span></a>.) <span title="(She ends in such a tone of despair that Haemon obeys her and moves away.)">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

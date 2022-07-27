@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>bourrique</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_6.html#antigone_nahed_marta_chadi_page_6_segment_58" target="main_frame"><b>&larr;</b></a>  <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_1><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_2><span title="is">est</span></span></a> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_4><span title="okay">bon</span></span></a>. <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_6><span title="It">C'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_7><span title="is">est</span></span></a> <a href="word_bon.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_9><span title="okay">bon</span></span></a>. <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_11><span title="I">On</span></span></a> <a href="word_essuyer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_13><span title="will clean up">essuiera</span></span></a> <a href="word_sans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_15><span title="without">sans</span></span></a> <a href="word_rien.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_17><span title="anything">rien</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_19><span title="say">dire</span></span></a>. <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_21><span title="You">Tu</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_23><span title="me">me</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_25><span title="make">fais</span></span></a> <a href="word_tourner.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_27><span title="turn">tourner</span></span></a> <a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_6_segment_58_word_29><span title="in">en</span></span></a> <span class="red"><span title="stupid person">bourrique</span></span>. <span title="Okay. Okay. I'll clean up and I won't say anything. You can twist me round your little finger.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>cadeau</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_78" target="main_frame"><b>&larr;</b></a>  <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_1><span title="Not">N'</span></span></a><a href="word_oublier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_2><span title="forget">oublie</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_4><span title="not">pas</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_6><span title="that">que</span></span></a> <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_8><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_9><span title="was">est</span></span></a> <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_11><span title="me">moi</span></span></a> <a href="word_qui.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_13><span title="who">qui</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_15><span title="you">t'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_16><span title="have">ai</span></span></a> <a href="word_faire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_18><span title="made">fait</span></span></a> <span class="red"><span title="present">cadeau</span></span> <a href="word_de.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_22><span title="of">de</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_24><span title="your">ta</span></span></a> <a href="word_premier.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_26><span title="first">première</span></span></a> <a href="word_poupée.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_28><span title="doll">poupée</span></span></a>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_30><span title="ago">il</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_32><span title="not">n'</span></span></a><a href="word_y.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_33><span title="ago">y</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_35><span title="ago">a</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_37><span title="not">pas</span></span></a> <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_39><span title="so">si</span></span></a> <a href="word_longtemps.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_78_word_41><span title="long time">longtemps</span></span></a>. <span title="Remember who gave you your first doll, only a few years ago.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

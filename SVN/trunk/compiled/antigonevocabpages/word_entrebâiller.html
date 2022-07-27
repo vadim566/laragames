@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>entrebâiller</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_3.html#antigone_nahed_marta_chadi_page_3_segment_20" target="main_frame"><b>&larr;</b></a>  <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_1><span title="You">Tu</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_3><span title="(-)">es</span></span></a> <a href="word_sortir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_5><span title="went out">sortie</span></span></a>. <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_7><span title="I">J'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_8><span title="have">ai</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_10><span title="been">été</span></span></a> <a href="word_à.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_12><span title="at">à</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_14><span title="the">la</span></span></a> <a href="word_porte.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_16><span title="door">porte</span></span></a> <a href="word_du.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_18><span title="of the">du</span></span></a> <a href="word_fond.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_20><span title="back">fond</span></span></a>, <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_22><span title="you">tu</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_24><span title="it">l'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_25><span title="have">avais</span></span></a> <a href="word_laisser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_3_segment_20_word_27><span title="left">laissée</span></span></a> <span class="red"><span title="ajar">entrebâillée</span></span>. <span title="You went out. I was at the back door, you left it ajar.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

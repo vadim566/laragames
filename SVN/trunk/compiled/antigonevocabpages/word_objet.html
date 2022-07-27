@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>objet</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_2.html#antigone_nahed_marta_chadi_page_2_segment_24" target="main_frame"><b>&larr;</b></a>  <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_1><span title="He">Il</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_3><span title="has">a</span></span></a> <a href="word_laisser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_5><span title="left">laissé</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_7><span title="his">ses</span></span></a> <a href="word_livre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_9><span title="books">livres</span></span></a>, <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_11><span title="his">ses</span></span></a> <span class="red"><span title="objects (of art)">objets</span></span>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_15><span title="he">il</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_17><span title="has">a</span></span></a> <a href="word_retrousser.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_19><span title="rolled up">retroussé</span></span></a> <a href="word_son.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_21><span title="his">ses</span></span></a> <a href="word_manche.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_23><span title="sleeves">manches</span></span></a>, <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_25><span title="and">et</span></span></a> <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_27><span title="he">il</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_29><span title="has">a</span></span></a> <a href="word_prendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_31><span title="taken">pris</span></span></a> <a href="word_leur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_33><span title="their">leur</span></span></a> <a href="word_place.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_2_segment_24_word_35><span title="place">place</span></span></a>. <span onclick="playSound('./multimedia/897625_200827_163856017.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="He had left his books, his works of art, he has rolled up his sleeves and taken their place.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

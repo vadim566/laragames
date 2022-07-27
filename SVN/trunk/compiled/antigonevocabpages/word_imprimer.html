@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>imprimer</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_7.html#antigone_nahed_marta_chadi_page_7_segment_36" target="main_frame"><b>&larr;</b></a>  <a href="word_et.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_1><span title="And">Et</span></span></a> <a href="word_serrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_3><span title="hold">serre</span></span></a>-<a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_5><span title=" me">moi</span></span></a>. <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_7><span title="More">Plus</span></span></a> <a href="word_fort.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_9><span title="hard">fort</span></span></a> <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_11><span title="that">que</span></span></a> <a href="word_tu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_13><span title="you">tu</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_15><span title="not">ne</span></span></a> <a href="word_me.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_17><span title="me">m'</span></span></a><a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_18><span title="have">as</span></span></a> <a href="word_jamais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_20><span title="ever">jamais</span></span></a> <a href="word_serrer.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_22><span title="held">serrée</span></span></a>. <a href="word_que.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_24><span title="That">Que</span></span></a> <a href="word_tout.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_26><span title="all">toute</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_28><span title="your">ta</span></span></a> <a href="word_force.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_30><span title="strength">force</span></span></a> <a href="word_se.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_32><span title="is pressed">s'</span></span></a><span class="red"><span title="is pressed">imprime</span></span> <a href="word_dans.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_35><span title="into">dans</span></span></a> <a href="word_moi.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_7_segment_36_word_37><span title="me">moi</span></span></a>. <span onclick="playSound('./multimedia/1029590_201018_164552112.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span><span title="And hold me. Hold me tighter than you've ever held me before. So that all your strength goes into me.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

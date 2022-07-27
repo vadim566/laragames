@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>pós</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_70" target="main_frame"><b>&larr;</b></a>  <span class="red">Pósadh</span> <a href="word_capitalised_máire_slashprop.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_70_word_3>Mháire</span></a> <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0391.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_77" target="main_frame"><b>&larr;</b></a>  <a href="word_do_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_1>Do</span></a> <span class="red">phós</span> <a href="word_sí_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_5>sí</span></a> <a href="word_i_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_7>i</span></a> <a href="word_sráidbhaile_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_9>sráidbhaile</span></a> <a href="word_i_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_11>i</span></a> <a href="word_paróiste_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_13>bParóiste</span></a> <a href="word_an_slashart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_15>an</span></a> <a href="word_feirtéarach_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_77_word_17>Fheirtéaraigh</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0414.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

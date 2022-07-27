@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>nhoonyara</h1>
+
+<p><a href="_main_text_mangiri_13.html#mangiri_page_13_segment_4" target="main_frame"><b>&larr;</b></a> <a href="word_mangiri.html" target="aux_frame"><span id=mangiri_page_13_segment_4_word_1><span class="sound" title="well, healthy" onmouseover="playSound('./multimedia/980054_200916_024030973.mp3');">Mangiri</span></span></a><span class="red"><span class="sound" title="restored to health" onmouseover="playSound('./multimedia/980115_200916_024537081.mp3');">Nhoonyara</span></span> </p>
+<p><a href="_main_text_mangiri_14.html#mangiri_page_14_segment_2" target="main_frame"><b>&larr;</b></a> <span class="red"><span class="sound" title="restored to health" onmouseover="playSound('./multimedia/980115_200916_024537081.mp3');">Nhoonyara</span></span> <a href="word_igadha.html" target="aux_frame"><span id=mangiri_page_14_segment_2_word_3><span class="sound" title="live" onmouseover="playSound('./multimedia/980032_200916_023806566.mp3');">igadha</span></span></a>; <a href="word_gaya.html" target="aux_frame"><span id=mangiri_page_14_segment_2_word_5><span class="sound" title="spear-FROM" onmouseover="playSound('./multimedia/980023_200916_023709503.mp3');">gayabidni</span></span></a> <a href="word_gooda.html" target="aux_frame"><span id=mangiri_page_14_segment_2_word_7><span class="sound" title="not" onmouseover="playSound('./multimedia/980025_200916_023716686.mp3');">gooda</span></span></a> <a href="word_badloodhoo.html" target="aux_frame"><span id=mangiri_page_14_segment_2_word_9><span class="sound" title="die" onmouseover="playSound('./multimedia/979973_200916_023156886.mp3');">badloodhoo</span></span></a> <span onclick="playSound('./multimedia/986147_200925_100532607.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>d'accord</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_11.html#antigone_nahed_marta_chadi_page_11_segment_48" target="main_frame"><b>&larr;</b></a>  <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_1><span title="To">Pour</span></span></a> <a href="word_boire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_3><span title="drink">boire</span></span></a> ? <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_5><span title="You">T'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_6><span title="are">es</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_8><span title="not">pas</span></span></a> <a href="word_fou.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_10><span title="crazy">fou</span></span></a> ? <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_12><span title="They">Ils</span></span></a> <a href="word_te.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_14><span title="you">te</span></span></a> <a href="word_vendre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_16><span title="sell">vendent</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_18><span title="the">la</span></span></a> <a href="word_bouteille.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_20><span title="bottle">bouteille</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_22><span title="the">le</span></span></a> <a href="word_double.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_24><span title="double">double</span></span></a> <a href="word_au.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_26><span title="at the">au</span></span></a> <a href="word_palais.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_28><span title="Palace">Palais</span></span></a>. <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_30><span title="To">Pour</span></span></a> <a href="word_monter.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_48_word_32><span title="go up">monter</span></span></a>, <span class="red"><span title="sure">d'accord</span></span>. <span title="To drink? You fucking crazy? They charge fucking double for a bottle at the Palace. But if we're going in the back, sure.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

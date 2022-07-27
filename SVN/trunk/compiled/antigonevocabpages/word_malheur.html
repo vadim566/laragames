@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>malheur</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_13.html#antigone_nahed_marta_chadi_page_13_segment_63" target="main_frame"><b>&larr;</b></a>  <a href="word_pour.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_1><span title="For">Pour</span></span></a> <a href="word_ton.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_3><span title="your">ton</span></span></a> <a href="word_père.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_5><span title="father">père</span></span></a> <a href="word_non.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_7><span title=" no">non</span></span></a> <a href="word_plus.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_9><span title="more">plus</span></span></a> <a href="word_je.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_11><span title="I">je</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_13><span title="not">ne</span></span></a> <a href="word_dire.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_15><span title="say">dis</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_17><span title="not">pas</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_19><span title="the">le</span></span></a> <a href="word_bonheur.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_21><span title="happiness">bonheur</span></span></a>, <a href="word_il.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_23><span title="it">il</span></span></a> <a href="word_ne.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_25><span title="not">n'</span></span></a><a href="word_en.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_26><span title="of it">en</span></span></a> <a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_28><span title="was">était</span></span></a> <a href="word_pas.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_30><span title="not">pas</span></span></a> <a href="word_question.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_32><span title="question">question</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_34><span title="the">le</span></span></a> <span class="red"><span title=" unhappiness">malheur</span></span> <a href="word_humain.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_38><span title="human">humain</span></span></a>, <a href="word_ce.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_40><span title="it">c'</span></span></a><a href="word_être.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_41><span title="was">était</span></span></a> <a href="word_trop.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_43><span title="too">trop</span></span></a> <a href="word_peu.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_13_segment_63_word_45><span title="little">peu</span></span></a>. <span title="For your father too, happiness could never be enough, normal human unhappiness was too little.">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

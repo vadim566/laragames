@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>aon</h1>
+
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_31" target="main_frame"><b>&larr;</b></a>  <a href="word_ní_slashpart.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_1>Ní</span></a> <a href="word_bí_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_3>raibh</span></a> <span class="red">aon</span> <a href="word_stad_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_7>stad</span></a> <a href="word_ag_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_9>agam</span></a> <a href="word_le_slashprep.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_11>le</span></a> <a href="word_déanamh_slashverbal.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_13>déanamh</span></a> <a href="word_ach_slashconj.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_15>ach</span></a> <a href="word_mar_slashconj.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_17>mar</span></a> '<a href="word_bí_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_19>bheadh</span></a> <a href="word_coileán_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_21>coileán</span></a> <a href="word_cú_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_31_word_23>cú</span></a>. <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0107.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+<p><a href="_main_text_an-t-oileanach-100short-nnc_recordings_1.html#an-t-oileanach-100short-nnc_recordings_page_1_segment_87" target="main_frame"><b>&larr;</b></a>  <a href="word_coimeád_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_87_word_1>Coimeádfad</span></a> <a href="word_má_slashconj.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_87_word_3>má</span></a> <a href="word_bí_slashverb.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_87_word_5>bhíonn</span></a> <span class="red">aon</span> <a href="word_portán_slashnoun.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_87_word_9>phortán</span></a> <a href="word_ag_slashpron.html" target="aux_frame"><span id=an-t-oileanach-100short-nnc_recordings_page_1_segment_87_word_11>agat</span></a>.' <span onclick="playSound('./multimedia/CI0001CDAn_tOileanach_0533.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

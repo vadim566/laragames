@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>quartier</h1>
+
+<p><a href="_main_text_antigone_nahed_marta_chadi_11.html#antigone_nahed_marta_chadi_page_11_segment_35" target="main_frame"><b>&larr;</b></a>  <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_1><span title="We">On</span></span></a> <a href="word_avoir.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_3><span title="have">a</span></span></a> <span class="red"><span title="quarter">quartier</span></span> <a href="word_libre.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_7><span title="free">libre</span></span></a>, <a href="word_dimanche.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_9><span title="Sunday">dimanche</span></span></a>. <a href="word_si.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_11><span title="If">Si</span></span></a> <a href="word_on.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_13><span title="we">on</span></span></a> <a href="word_emmener.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_15><span title="brought along">emmenait</span></span></a> <a href="word_le.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_17><span title="the">les</span></span></a> <a href="word_femme.html" target="aux_frame"><span id=antigone_nahed_marta_chadi_page_11_segment_35_word_19><span title="wives">femmes</span></span></a> ? <span title="We're due for some R&R on Sunday. What you say we bring the wives along?">&#9998;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>
