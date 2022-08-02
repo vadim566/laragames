@@ -4,7 +4,9 @@
 <t1>Welcome to Lara games and stories platform</t1>
 <p> in this Web u will read stories in many languages and also  you can exercise them with games from each stories!</p>
 <button class='btn btn-outline-primary' onclick="showGamesDifficults()">Show Stories and Games</button>
+<div class="language">
 
+</div>
 <div class='difficulties'>
 <button class='btn btn-outline-primary' onclick="showGamesEasy()">Beginner</button>
 <button class='btn btn-outline-primary' onclick="showGamesMed()">Intermidate</button>
@@ -13,76 +15,78 @@
 <div class='stories-container'>
 {% for line in content %}
 <br>
-<div class="container-fluid">
+<button class='btn btn-outline-primary' onclick="showlan('{{ line[1]|safe }}')">learn {{ line[1] }}</button>
+
+<div class="{{ line[1] }}">
 <div class="card col-md-12 col-sm-12">
 <div class="row">
     <td><div class="card col-md-4 col-sm-12" >
   <img class="card-img-top" src="\static\logoPSDtransferd.png" alt="image">
   <div class="card-body">
-    <h5 class="card-title">{{line}}</h5>
-    <p class="card-text">read the story.</p>
-     <form action="/index/{{line}}" method="post">
-         <button class="btn btn-warning" name="{{line}}" type="submit">Read the story {{line}}</button>
+    <h5 class="card-title">{{line[0]}}</h5>
+    <h5 class="card-text">read the story in language {{line[1]}}.</h5>
+     <form action="/index/{{line[0]}}" method="post">
+         <button class="btn btn-warning" name="{{line[0]}}" type="submit">Read the story {{line[0]}}</button>
      </form>
      </div>
      </div>
 
-		
+
 
 		<div class=" card col-md-8 col-sm-12"	 >
 
-             
-    
+
+
          <div class='easy'>
-     <form action="/game4/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 4 new" type="submit">Match the annunciator to phrase </button>
-		 
-	 </form>
-    
-   
-     <form action="/game5/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 5 new" type="submit">Match the phrase to annunciator</button>
+     <form action="/game4/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 4 new" type="submit">Match the annunciator to phrase </button>
 
 	 </form>
 
-    <form action="/game6/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 6 new" type="submit">Select the missing Word</button>
+
+     <form action="/game5/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciator</button>
 
 	 </form>
-	
+
+    <form action="/game6/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 6 new" type="submit">Select the missing Word</button>
+
+	 </form>
+
 	 </div>
-	
-	 
+
+
 <div class='medium'>
-      <form action="/game7/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 7 new" type="submit">Fill the missing Word</button>
+      <form action="/game7/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 7 new" type="submit">Fill the missing Word</button>
 
 	 </form>
-	 
-	       <form action="/game8/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 8 new" type="submit">Drag the words in the right order</button>
+
+	       <form action="/game8/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 8 new" type="submit">Drag the words in the right order</button>
 
 	 </form>
-  
-	      <form action="/game9/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 9 new" type="submit">Select the missing words 1</button>
+
+	      <form action="/game9/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 9 new" type="submit">Select the missing words 1</button>
 
 	 </form>
 	 </div>
-	 
-	 
+
+
 	 <div class='high'>
-	    <form action="/game10/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 10 new" type="submit">Select the missing words 2</button>
+	    <form action="/game10/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 10 new" type="submit">Select the missing words 2</button>
 
 	 </form>
-	 
-	     <form action="/game11/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 11 new" type="submit">Fill the missing Words</button>
+
+	     <form action="/game11/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 11 new" type="submit">Fill the missing Words</button>
 
 	 </form>
-          <form action="/game12/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 12 new" type="submit">Fill the missing Phrase</button>
+          <form action="/game12/{{line[0]}}" method="get">
+         <button class="btn btn-outline-primary" name="{{line[0]}}game 12 new" type="submit">Fill the missing Phrase</button>
 
 	 </form>
     </div> 
@@ -101,6 +105,7 @@
 </div>
 
 <script>
+var languages={{ lang|safe}};
 var storygames=document.getElementsByClassName('storyGames-container')
 var easy=document.getElementsByClassName('easy')
 var medium=document.getElementsByClassName('medium')
@@ -113,7 +118,12 @@ hideClass(medium);
 hideClass(high);
 hideClass(stories);
 
-
+function showlan(language){
+    for (l of languages){
+        hideClass(l);
+    }
+    showClass(language);
+}
 
 function showGamesDifficults(){
 
@@ -124,6 +134,8 @@ showClass(difficulties);
 
 
 }
+
+
 
 function showGamesEasy(){
 showClass(stories);

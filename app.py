@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 from os import listdir
 from os.path import join, isdir, isfile
-from flask import Flask, render_template, send_from_directory, redirect, Response, url_for, flash, request
+from flask import Flask, render_template, send_from_directory, redirect, Response, url_for, flash, request,jsonify
 import SVN.trunk.Code.Python.lara_utils as lara_utils
 #db
 from flask_sqlalchemy import SQLAlchemy
@@ -33,6 +33,7 @@ LARA= './SVN/trunk/'
 mypath = LARA + 'Content'
 compiled_path = LARA + 'Content'
 onlydir = [f for f in listdir(mypath) if isdir(join(mypath, f))]
+global language
 
 html_path = './SVN/trunk/compiled/'
 content_loc = './SVN/trunk/Content/'
@@ -68,6 +69,15 @@ alphaBet="'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s
 
 
 '''functions'''
+
+#get the language of each story
+def get_language():
+    global language
+    language= []
+    for s in onlydir:
+        conf_file = compiled_path + slash + str(s) + str(corpus_suffix)
+        language.append(lara_utils.read_json_file(conf_file)['language'])
+
 # returning a list with files in dir_path
 def filesinDir(dir_path):
     try:
@@ -131,6 +141,36 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('That email is taken. Please choose a different one.')
 
 
+def game_lists(game):
+    date_list = ['']
+    game_ct = ['']
+    wins_ct = ['']
+    for g in game:
+
+        if (date_list[-1] == str(g.date_created.date())):
+            game_ct[-1] = game_ct[-1] + 1
+            wins_ct[-1] = wins_ct[-1] + g.score
+        else:
+            date_list.append(str(g.date_created.date()))
+            game_ct.append(1)
+            wins_ct.append(g.score)
+    return date_list, game_ct, wins_ct
+
+def analayzeGame(game,wr):
+    if (len(game) > 0):
+        wr[0] = calculate_rate(game)
+        dates, games_perDay, wins_perDay = game_lists(game)
+        wr.append(dates)
+        wr.append(games_perDay)
+        wr.append(wins_perDay)
+    else:
+        wr.append(str(datetime.now().date()))
+        wr.append([0])
+        wr.append([0])
+
+    return wr
+
+
 class LoginForm(FlaskForm):
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
@@ -171,6 +211,8 @@ class tbl_game4(db.Model):
     counter=db.Column(db.Integer,default=1)
     date_created = db.Column(db.DateTime,nullable=False, default=datetime.utcnow)
 
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
     def __repr__(self):
         return f"game 4('{self.score}', '{self.date_created}')"
@@ -265,6 +307,10 @@ class tbl_game12(db.Model):
 
     def __repr__(self):
         return f"game 11('{self.score}', '{self.date_created}')"
+
+
+#load the language before any request to the site
+get_language()
 '''routing'''
 # routing
 
@@ -272,7 +318,7 @@ class tbl_game12(db.Model):
 @app.route('/home')
 @app.route('/')
 def home():
-    return render_template('index.html', content=onlydir, link_html=main_page_hyper)
+    return render_template('index.html', content=zip(onlydir,language),lang=language, link_html=main_page_hyper)
 
 
 #registration and login
@@ -316,52 +362,26 @@ def logout():
 def account():
     user=User.query.filter_by(id=current_user.id).first()
 
-    game4=user.game4Rel
-    wr4=[]
-    wr4.append(-1)
-    if(len(game4)>0):
-        wr4[0]=calculate_rate(game4)
-        wr4.append(game4[-1].date_created)
-    wr5 = -1
-    game5 = user.game5Rel
-    if (len(game5) > 0):
-        wr5 = calculate_rate(game5)
+    games=[]
+    games.append(user.game4Rel)
+    games.append(user.game5Rel)
+    games.append(user.game6Rel)
+    games.append(user.game7Rel)
+    games.append(user.game8Rel)
+    games.append(user.game9Rel)
+    games.append(user.game10Rel)
+    games.append(user.game11Rel)
+    games.append(user.game12Rel)
 
-    wr6 = -1
-    game6 = user.game6Rel
-    if (len(game6) > 0):
-        wr6 = calculate_rate(game6)
+    game_sets = []
+    for i in range(len(games)):
+        game_sets.append([0])
+        game_sets[i]=analayzeGame(games[i],game_sets[i])
+        game_sets[i].append(str(i))
 
-    wr7 = -1
-    game7 = user.game7Rel
-    if (len(game7) > 0):
-        wr7 = calculate_rate(game7)
+    return render_template('account.html', title='Account',games=game_sets)
 
-    wr8 = -1
-    game8 = user.game8Rel
-    if (len(game8) > 0):
-        wr8 = calculate_rate(game8)
 
-    wr9 = -1
-    game9 = user.game9Rel
-    if (len(game9) > 0):
-        wr9 = calculate_rate(game9)
-
-    wr10 = -1
-    game10 = user.game10Rel
-    if (len(game10) > 0):
-        wr10 = calculate_rate(game10)
-
-    wr11 = -1
-    game11 = user.game11Rel
-    if (len(game11) > 0):
-        wr11 = calculate_rate(game11)
-
-    wr12 = -1
-    game12 = user.game12Rel
-    if (len(game12) > 0):
-        wr12 = calculate_rate(game12)
-    return render_template('account.html', title='Account',game4wr=wr4,tg4=len(game4),game5wr=wr5,tg5=len(game5),game6wr=wr6,tg6=len(game6),game7wr=wr7,tg7=len(game7),game8wr=wr8,tg8=len(game8),game9wr=wr9,tg9=len(game9),game10wr=wr10,tg10=len(game10),game11wr=wr11,tg11=len(game11),game12wr=wr12,tg12=len(game12))
 
 @app.route('/index/<name>', methods=['GET','POST'])
 def index(name):

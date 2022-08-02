@@ -6,80 +6,67 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
 
     <h1>{{ current_user.username }}</h1>
-    <t2>game 4 statics</h1>
+
+    {% for line in games %}
+
+         <t2>game {{ line[4] }} statics</t2>
     <ul>
-        <li>total games {{tg4}}</li>
-        <li>win rate {{game4wr}}</li>
-		<canvas id="myChart" style="width:100%;max-width:300px"></canvas>
+        <li>total games {{line[2][1]}}</li>
+        <li>win rate {{line[0]}}</li>
+
     </ul>
 
-    <t2>game 5 statics</h1>
-    <ul>
-        <li>total games {{tg5}}</li>
-        <li>win rate {{game5wr}}</li>
-    </ul>
+<canvas id="myChart{{ line[4] }}" style="width:100%;max-width:300px"></canvas>
 
-    <t2>game 6 statics</h1>
-        <ul>
-            <li>total games {{tg6}}</li>
-            <li>win rate {{game6wr}}</li>
-        </ul>
 
-    <t2>game 7 statics</h1>
-        <ul>
-            <li>total games {{tg7}}</li>
-            <li>win rate {{game7wr}}</li>
-        </ul>
-    <t2>game 8 statics</h1>
-        <ul>
-            <li>total games {{tg8}}</li>
-            <li>win rate {{game8wr}}</li>
-        </ul>
-    <t2>game 9 statics</h1>
-        <ul>
-            <li>total games {{tg9}}</li>
-            <li>win rate {{game9wr}}</li>
-        </ul> 
-    <t2>game 10 statics</h1>
-        <ul>
-            <li>total games {{tg10}}</li>
-            <li>win rate {{game10wr}}</li>
-        </ul>      
-    <t2>game 11 statics</h1>
-        <ul>
-            <li>total games {{tg11}}</li>
-            <li>win rate {{game11wr}}</li>
-        </ul>   
-    <t2>game 12 statics</h1>
-        <ul>
-            <li>total games {{tg12}}</li>
-            <li>win rate {{game12wr}}</li>
-        </ul>     
 
 <script>
 
-var xValues = [50,60,70,80,90,100,110,120,130,140,150];
-var yValues = [7,8,8,9,9,9,10,11,14,14,15];
 
 
-new Chart("myChart", {
+
+
+var dates = {{line[1]|safe}};
+var number_of_games = {{line[2]|safe}};
+var number_of_wins= {{line[3]|safe}};
+
+new Chart("myChart{{ line[4] }}", {
   type: "line",
   data: {
-    labels: xValues,
+    labels: dates,
     datasets: [{
+        label: 'number of games',
       fill: false,
       lineTension: 0,
       backgroundColor: "rgba(0,0,255,1.0)",
-      borderColor: "rgba(0,0,255,0.1)",
-      data: yValues
-    }]
+      borderColor: "red",
+      data: number_of_games,
+      name: 'games',
+      legendText:'number of games',
+      showInLegend: true
+
+    },
+        {
+            label: 'number of wins',
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "green",
+      data: number_of_wins,
+      name:'wins',
+      legendText:'number of wins',
+      showInLegend: true
+    }
+    ]
   },
   options: {
-    legend: {display: false},
+
+
     scales: {
-      yAxes: [{ticks: {min: 6, max:16}}],
+      yAxes: [{ticks: {min: 0, max:100}}],
     }
   }
 });
-</script>		
+</script>
+    {% endfor %}
 {% endblock content %}
