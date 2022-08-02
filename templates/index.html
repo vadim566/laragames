@@ -117,19 +117,24 @@ hideClass(easy);
 hideClass(medium);
 hideClass(high);
 hideClass(stories);
-
-function showlan(language){
-    for (l of languages){
-        hideClass(l);
+function hideLan()
+{
+      for (l of languages){
+        tmp_class=document.getElementsByClassName(l)
+        hideClass(tmp_class);
     }
-    showClass(language);
+}
+function showlan(language){
+  hideLan();
+    tmp_class=document.getElementsByClassName(language);
+    showClass(tmp_class);
 }
 
 function showGamesDifficults(){
 
 
 showClass(difficulties);
-
+ hideLan();
 
 
 
