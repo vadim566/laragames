@@ -6,7 +6,14 @@ LARA is a platform of studying L1 and L2 community resource
 
 Just enter laragamesruppin.herukoapp.com
 
-
+## Create database
+1.open bash or console in the git folder and run python
+2.run the next code to create new clean db
+```python
+import app
+db.createall()
+```
+3.after that a new file will apear in the dir named "site"
 
 ## Adding games
 1.Create tbl_db in sql_aclhemy for tracking stats of each user,

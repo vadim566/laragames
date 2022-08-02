@@ -317,10 +317,11 @@ def account():
     user=User.query.filter_by(id=current_user.id).first()
 
     game4=user.game4Rel
-    wr4=-1
+    wr4=[]
+    wr4.append(-1)
     if(len(game4)>0):
-        wr4=calculate_rate(game4)
-
+        wr4[0]=calculate_rate(game4)
+        wr4.append(game4[-1].date_created)
     wr5 = -1
     game5 = user.game5Rel
     if (len(game5) > 0):
