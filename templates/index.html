@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Index{%endblock%}
 {% block content %}
+<t1>Welcome to Lara games and stories platform</t1>
+<p> in this Web u will read stories in many languages and also  you can exercise them with games from each stories!</p>
+<button class='btn btn-outline-primary' onclick="showGamesDifficults()">Show Stories and Games</button>
+
+<div class='difficulties'>
+<button class='btn btn-outline-primary' onclick="showGamesEasy()">Beginner</button>
+<button class='btn btn-outline-primary' onclick="showGamesMed()">Intermidate</button>
+<button class='btn btn-outline-primary' onclick="showGamesHigh()">Expert</button>
+</div>
+<div class='stories-container'>
 {% for line in content %}
 <br>
 <div class="container-fluid">
@@ -17,78 +27,150 @@
      </div>
      </div>
 
- 
+		
 
-		<div class=" card col-md-8 col-sm-12"	>
+		<div class=" card col-md-8 col-sm-12"	 >
 
-            <div class=" col-md-4">   
-     <form action="/game1/{{line}}" method="get">
-         <button class="btn btn-outline-primary " name="{{line}}game 1 new" type="submit">Game 1</button>
-		 
-     </form>
-	
-     <form action="/game2/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 2 new" type="submit">Game 2</button>
-		 
-     </form>
-	
-     <form action="/game3/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 3 new" type="submit">Game 3</button>
-         </form>
-         
+             
+    
+         <div class='easy'>
      <form action="/game4/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 4 new" type="submit">Game 4</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 4 new" type="submit">Match the annunciator to phrase </button>
 		 
 	 </form>
-    </div> 
-    <div class="col-md-4">   
+    
+   
      <form action="/game5/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 5 new" type="submit">Game 5</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 5 new" type="submit">Match the phrase to annunciator</button>
 
 	 </form>
 
     <form action="/game6/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 6 new" type="submit">Game 6</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 6 new" type="submit">Select the missing Word</button>
 
 	 </form>
-
+	
+	 </div>
+	
+	 
+<div class='medium'>
       <form action="/game7/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 7 new" type="submit">Game 7</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 7 new" type="submit">Fill the missing Word</button>
 
 	 </form>
 	 
 	       <form action="/game8/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 8 new" type="submit">Game 8</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 8 new" type="submit">Drag the words in the right order</button>
 
 	 </form>
-    </div> 
-     <div class="col-md-4">   
+  
 	      <form action="/game9/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 9 new" type="submit">Game 9</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 9 new" type="submit">Select the missing words 1</button>
 
 	 </form>
+	 </div>
 	 
+	 
+	 <div class='high'>
 	    <form action="/game10/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 10 new" type="submit">Game 10</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 10 new" type="submit">Select the missing words 2</button>
 
 	 </form>
 	 
 	     <form action="/game11/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 11 new" type="submit">Game 11</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 11 new" type="submit">Fill the missing Words</button>
 
 	 </form>
           <form action="/game12/{{line}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line}}game 12 new" type="submit">Game 12</button>
+         <button class="btn btn-outline-primary" name="{{line}}game 12 new" type="submit">Fill the missing Phrase</button>
 
 	 </form>
     </div> 
+	
+	
     </div>
     </div>
 </div>
 </div>
+
     
      
 
 
 {% endfor %}
+</div>
+
+<script>
+var storygames=document.getElementsByClassName('storyGames-container')
+var easy=document.getElementsByClassName('easy')
+var medium=document.getElementsByClassName('medium')
+var high=document.getElementsByClassName('high')
+var difficulties=document.getElementsByClassName('difficulties')
+var stories=document.getElementsByClassName('stories-container')
+hideClass(difficulties);
+hideClass(easy);
+hideClass(medium);
+hideClass(high);
+hideClass(stories);
+
+
+
+function showGamesDifficults(){
+
+
+showClass(difficulties);
+
+
+
+
+}
+
+function showGamesEasy(){
+showClass(stories);
+hideClass(difficulties);
+hideClass(medium);
+hideClass(high);
+showClass(easy);
+
+
+
+}
+
+function showGamesMed(){
+showClass(stories);
+hideClass(difficulties);
+hideClass(easy);
+hideClass(high);
+showClass(medium);
+
+
+
+
+}
+
+
+function showGamesHigh(){
+showClass(stories);
+hideClass(difficulties);
+hideClass(medium);
+hideClass(easy);
+showClass(high);
+
+
+
+
+}
+function hideClass(className){
+
+for (c of className)
+c.style.display='none'
+}
+
+function showClass(className){
+
+for (c of className)
+c.style.display='block'
+}
+
+</script>
 {%endblock  %}
