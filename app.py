@@ -1,12 +1,17 @@
 #from GoogleImageScrapper import *
 import random
 
+from queue import Queue
+import random
+from threading import Thread
+import time
 
 import os
 from datetime import datetime
 from os import listdir
 from os.path import join, isdir, isfile
 from flask import Flask, render_template, send_from_directory, redirect, Response, url_for, flash, request,jsonify
+
 import SVN.trunk.Code.Python.lara_utils as lara_utils
 #db
 from flask_sqlalchemy import SQLAlchemy
@@ -578,15 +583,17 @@ def loading_file_pic_g4(filename,story_name):
     return send_from_directory(metaDataAudioDir+slash_clean+audioVersions[0], filename)
 
 
+
+
 @app.route('/game4Submit/', methods=['GET','POST'])
-def submit_g4():
-
-    default_value=0
-    name=request.form.get('storyname',default_value)
-    option=request.form.get('option',default_value)
-    answer=request.form.get('answer',default_value)
-    uid=request.form.get('uid',default_value)
-
+async def submit_g4():
+    option = request.form.get('option')
+    while option is None:
+        option = request.form.get('option')
+    default_value = 0
+    name = request.form.get('storyname', default_value)
+    answer = request.form.get('answer', default_value)
+    uid = request.form.get('uid', default_value)
     print("name: ",name)
     print("option: " ,option)
     print("answer: ",answer)
@@ -1501,4 +1508,4 @@ def submit_g12():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+    app.run(threaded=True)
