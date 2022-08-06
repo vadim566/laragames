@@ -1,0 +1,16 @@
+{
+    "id": "alice_in_wonderland_pos_full",
+    "language": "english",
+	"add_postags_to_lemma": "yes",
+    "corpus": "$LARA/Content/alice_in_wonderland/corpus/alice_in_wonderland_with_POS_full.txt",
+	"mwe_file": "$LARA/Content/english/corpus/mwe_defs.txt",
+	"mwe_annotations_file": "$LARA/Content/alice_in_wonderland/corpus/alice_in_wonderland_mwe_annotations.json",
+    "image_directory": "$LARA/Content/alice_in_wonderland/images",
+    "segment_audio_directory": "$LARA/Content/alice_in_wonderland/audio/cathyc",
+    "word_audio_directory": "$LARA/Content/english/audio/cathyc",
+    "audio_mouseover": "yes",
+    "translation_spreadsheet": "$LARA/Content/english/translations/english_french.csv",
+    "max_examples_per_word_page": 10,
+    "allow_bookmark": "yes",
+    "allow_table_of_contents": "yes"
+}

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>louder</h1>
+
+<p><a href="_main_text_alice_in_wonderland_66.html#alice_in_wonderland_page_66_segment_11" target="main_frame"><b>&larr;</b></a>  ‘<a href="word_how.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_1><span class="sound" onmouseover="playSound('./multimedia/60064_190825_170825918.mp3');">How</span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_3><span class="sound" onmouseover="playSound('./multimedia/52109_190126210551.mp3');">am</span></span></a> <a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_5><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_to.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_7><span class="sound" onmouseover="playSound('./multimedia/52431_190309123055.mp3');">to</span></span></a> <a href="word_get in.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_9><span class="sound" onmouseover="playSound('./multimedia/52230_190309120934.mp3');">get</span></span></a> <a href="word_get in.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_11><span class="sound" onmouseover="playSound('./multimedia/52260_190309121249.mp3');">in</span></span></a>?’ <a href="word_ask.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_13><span class="sound" onmouseover="playSound('./multimedia/52116_190126210712.mp3');">asked</span></span></a> <a href="word_alice.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_15><span class="sound" onmouseover="playSound('./multimedia/59140_200117_123049210.mp3');">Alice</span></span></a> <a href="word_again.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_17><span class="sound" onmouseover="playSound('./multimedia/59127_200117_122946296.mp3');">again</span></span></a>, <a href="word_in.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_19><span class="sound" onmouseover="playSound('./multimedia/52260_190309121249.mp3');">in</span></span></a> <a href="word_a.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_21><span class="sound" onmouseover="playSound('./multimedia/52099_190126210241.mp3');">a</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60286_190830_100408256.mp3');">louder</span></span> <a href="word_tone.html" target="aux_frame"><span id=alice_in_wonderland_page_66_segment_11_word_25><span class="sound" onmouseover="playSound('./multimedia/61169_190906_094033797.mp3');">tone</span></span></a>. <span onclick="playSound('./multimedia/58221_190401094152.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

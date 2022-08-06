@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>whoever</h1>
+
+<p><a href="_main_text_alice_in_wonderland_63.html#alice_in_wonderland_page_63_segment_9" target="main_frame"><b>&larr;</b></a>  ‘<span class="red"><span class="sound" onmouseover="playSound('./multimedia/61357_190905_081814559.mp3');">Whoever</span></span> <a href="word_live.html" target="aux_frame"><span id=alice_in_wonderland_page_63_segment_9_word_3><span class="sound" onmouseover="playSound('./multimedia/60264_190826_173128417.mp3');">lives</span></span></a> <a href="word_there.html" target="aux_frame"><span id=alice_in_wonderland_page_63_segment_9_word_5><span class="sound" onmouseover="playSound('./multimedia/52419_190309122750.mp3');">there</span></span></a>,’ <a href="word_think.html" target="aux_frame"><span id=alice_in_wonderland_page_63_segment_9_word_7><span class="sound" onmouseover="playSound('./multimedia/52424_190309122805.mp3');">thought</span></span></a> <a href="word_alice.html" target="aux_frame"><span id=alice_in_wonderland_page_63_segment_9_word_9><span class="sound" onmouseover="playSound('./multimedia/59140_200117_123049210.mp3');">Alice</span></span></a>, <span onclick="playSound('./multimedia/58189_190401045828.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

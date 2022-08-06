@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>to death</h1>
+
+<p><a href="_main_text_alice_in_wonderland_33.html#alice_in_wonderland_page_33_segment_4" target="main_frame"><b>&larr;</b></a>  “<a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_1><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a>’<a href="word_will.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_3><span class="sound" onmouseover="playSound('./multimedia/60267_200121_130548753.mp3');">ll</span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_5><span class="sound" onmouseover="playSound('./multimedia/52124_190126210854.mp3');">be</span></span></a> <a href="word_judge.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_7><span class="sound" onmouseover="playSound('./multimedia/60145_190826_170513905.mp3');">judge</span></span></a>, <a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_9><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a>’<a href="word_will.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_11><span class="sound" onmouseover="playSound('./multimedia/60267_200121_130548753.mp3');">ll</span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_13><span class="sound" onmouseover="playSound('./multimedia/52124_190126210854.mp3');">be</span></span></a> <a href="word_jury.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_15><span class="sound" onmouseover="playSound('./multimedia/60151_190826_170611338.mp3');">jury</span></span></a>,” <a href="word_say.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_17><span class="sound" onmouseover="playSound('./multimedia/52363_190309122110.mp3');">Said</span></span></a> <a href="word_cunning.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_19><span class="sound" onmouseover="playSound('./multimedia/59528_200118_132732206.mp3');">cunning</span></span></a> <a href="word_old.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_21><span class="sound" onmouseover="playSound('./multimedia/52317_190309121732.mp3');">old</span></span></a> <a href="word_fury.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_23><span class="sound" onmouseover="playSound('./multimedia/59899_190825_094134073.mp3');">Fury</span></span></a>: “<a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_25><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a>’<a href="word_will.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_27><span class="sound" onmouseover="playSound('./multimedia/60267_200121_130548753.mp3');">ll</span></span></a> <a href="word_try.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_29><span class="sound" onmouseover="playSound('./multimedia/61205_190906_094400460.mp3');">try</span></span></a> <a href="word_the.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_31><span class="sound" onmouseover="playSound('./multimedia/57600_190309225031.mp3');">the</span></span></a> <a href="word_whole.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_33><span class="sound" onmouseover="playSound('./multimedia/61358_190905_081811485.mp3');">whole</span></span></a> <a href="word_cause.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_35><span class="sound" onmouseover="playSound('./multimedia/59375_200118_130755182.mp3');">cause</span></span></a>, <a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_37><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <a href="word_condemn.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_39><span class="sound" onmouseover="playSound('./multimedia/59464_200118_131813983.mp3');">condemn</span></span></a> <a href="word_you.html" target="aux_frame"><span id=alice_in_wonderland_page_33_segment_4_word_41><span class="sound" onmouseover="playSound('./multimedia/52476_190309123709.mp3');">you</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/52431_190309123055.mp3');">to</span></span> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/59565_190817_112816915.mp3');">death</span></span>.”’ <span onclick="playSound('./multimedia/57868_190327003728.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>draw up</h1>
+
+<p><a href="_main_text_alice_in_wonderland_52.html#alice_in_wonderland_page_52_segment_10" target="main_frame"><b>&larr;</b></a>  <a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_1><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <a href="word_she.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_3><span class="sound" onmouseover="playSound('./multimedia/52374_190309122252.mp3');">she</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/59655_190817_113711786.mp3');">drew</span></span> <a href="word_herself.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_7><span class="sound" onmouseover="playSound('./multimedia/60031_190825_170309045.mp3');">herself</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/52447_190309123430.mp3');">up</span></span> <a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_11><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <a href="word_say.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_13><span class="sound" onmouseover="playSound('./multimedia/52363_190309122110.mp3');">said</span></span></a>, <a href="word_very.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_15><span class="sound" onmouseover="playSound('./multimedia/52450_190309123459.mp3');">very</span></span></a> <a href="word_gravely.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_17><span class="sound" onmouseover="playSound('./multimedia/59947_190825_094947522.mp3');">gravely</span></span></a>, ‘<a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_19><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_think.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_21><span class="sound" onmouseover="playSound('./multimedia/52423_190309123317.mp3');">think</span></span></a>, <a href="word_you.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_23><span class="sound" onmouseover="playSound('./multimedia/52476_190309123709.mp3');">you</span></span></a> <a href="word_ought.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_25><span class="sound" onmouseover="playSound('./multimedia/60485_190904_191721077.mp3');">ought</span></span></a> <a href="word_to.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_27><span class="sound" onmouseover="playSound('./multimedia/52431_190309123055.mp3');">to</span></span></a> <a href="word_tell.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_29><span class="sound" onmouseover="playSound('./multimedia/61104_190906_084738156.mp3');">tell</span></span></a> <a href="word_me.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_31><span class="sound" onmouseover="playSound('./multimedia/60331_190830_102334250.mp3');">me</span></span></a> <a href="word_who.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_33><span class="sound" onmouseover="playSound('./multimedia/52466_190309123624.mp3');">who</span></span></a> <a href="word_you.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_35><span class="sound" onmouseover="playSound('./multimedia/52476_190309123709.mp3');"><i>you</i></span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_37><span class="sound" onmouseover="playSound('./multimedia/59180_200117_123659256.mp3');">are</span></span></a>, <a href="word_first.html" target="aux_frame"><span id=alice_in_wonderland_page_52_segment_10_word_39><span class="sound" onmouseover="playSound('./multimedia/52206_190309120727.mp3');">first</span></span></a>.’ <span onclick="playSound('./multimedia/58072_190329100856.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

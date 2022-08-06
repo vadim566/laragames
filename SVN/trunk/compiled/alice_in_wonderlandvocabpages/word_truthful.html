@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>truthful</h1>
+
+<p><a href="_main_text_alice_in_wonderland_61.html#alice_in_wonderland_page_61_segment_12" target="main_frame"><b>&larr;</b></a>  ‘<a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_1><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_have.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_3><span class="sound" onmouseover="playSound('./multimedia/52241_190309121036.mp3');"><i>have</i></span></span></a> <a href="word_taste.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_5><span class="sound" onmouseover="playSound('./multimedia/61093_190906_084617402.mp3');">tasted</span></span></a> <a href="word_egg.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_7><span class="sound" onmouseover="playSound('./multimedia/59696_190824_130003291.mp3');">eggs</span></span></a>, <a href="word_certainly.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_9><span class="sound" onmouseover="playSound('./multimedia/59381_200118_130827628.mp3');">certainly</span></span></a>,’ <a href="word_say.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_11><span class="sound" onmouseover="playSound('./multimedia/52363_190309122110.mp3');">said</span></span></a> <a href="word_alice.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_13><span class="sound" onmouseover="playSound('./multimedia/59140_200117_123049210.mp3');">Alice</span></span></a>, <a href="word_who.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_15><span class="sound" onmouseover="playSound('./multimedia/52466_190309123624.mp3');">who</span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_17><span class="sound" onmouseover="playSound('./multimedia/52454_190309123516.mp3');">was</span></span></a> <a href="word_a.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_19><span class="sound" onmouseover="playSound('./multimedia/52099_190126210241.mp3');">a</span></span></a> <a href="word_very.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_21><span class="sound" onmouseover="playSound('./multimedia/52450_190309123459.mp3');">very</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/61204_190906_094357957.mp3');">truthful</span></span> <a href="word_child.html" target="aux_frame"><span id=alice_in_wonderland_page_61_segment_12_word_25><span class="sound" onmouseover="playSound('./multimedia/59403_200118_131107520.mp3');">child</span></span></a>; <span onclick="playSound('./multimedia/58169_190401044946.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

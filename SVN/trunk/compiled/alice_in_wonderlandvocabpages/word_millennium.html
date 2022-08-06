@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>millennium</h1>
+
+<p><a href="_main_text_alice_in_wonderland_1.html#alice_in_wonderland_page_1_segment_2" target="main_frame"><b>&larr;</b></a>  <a href="word_lewis.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_1><span class="sound" onmouseover="playSound('./multimedia/60242_190826_171937637.mp3');">Lewis</span></span></a> <a href="word_carroll.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_3><span class="sound" onmouseover="playSound('./multimedia/59364_200118_130656003.mp3');">Carroll</h2></span></span></a> <a href="word_the.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_5><span class="sound" onmouseover="playSound('./multimedia/57600_190309225031.mp3');">THE</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60356_190904_143108325.mp3');">MILLENNIUM</span></span> <a href="word_fulcrum.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_9><span class="sound" onmouseover="playSound('./multimedia/59888_190825_094039898.mp3');">FULCRUM</span></span></a> <a href="word_edition.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_11><span class="sound" onmouseover="playSound('./multimedia/59689_190824_125728232.mp3');">EDITION</span></span></a> <a href="word_3.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_13><span class="sound" onmouseover="playSound('./multimedia/59089_190402131839.mp3');">3</span></span></a>.<a href="word_0.html" target="aux_frame"><span id=alice_in_wonderland_page_1_segment_2_word_15><span class="sound" onmouseover="playSound('./multimedia/59088_190402131908.mp3');">0</span></span></a> <span onclick="playSound('./multimedia/152730_190815_094820722.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

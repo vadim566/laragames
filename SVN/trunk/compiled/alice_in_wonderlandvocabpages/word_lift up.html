@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>lift up</h1>
+
+<p><a href="_main_text_alice_in_wonderland_119.html#alice_in_wonderland_page_119_segment_13" target="main_frame"><b>&larr;</b></a>  <a href="word_the.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_1><span class="sound" onmouseover="playSound('./multimedia/57600_190309225031.mp3');">The</span></span></a> <a href="word_gryphon.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_3><span class="sound" onmouseover="playSound('./multimedia/59971_190825_095407406.mp3');">Gryphon</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60246_190826_172709984.mp3');">lifted</span></span> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/52447_190309123430.mp3');">up</span></span> <a href="word_both.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_9><span class="sound" onmouseover="playSound('./multimedia/59302_200117_124753536.mp3');">both</span></span></a> <a href="word_its.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_11><span class="sound" onmouseover="playSound('./multimedia/60129_190825_171637203.mp3');">its</span></span></a> <a href="word_paw.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_13><span class="sound" onmouseover="playSound('./multimedia/60534_190904_192643058.mp3');">paws</span></span></a> <a href="word_in.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_15><span class="sound" onmouseover="playSound('./multimedia/52260_190309121249.mp3');">in</span></span></a> <a href="word_surprise.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_13_word_17><span class="sound" onmouseover="playSound('./multimedia/61071_190906_084318459.mp3');">surprise</span></span></a>. <span onclick="playSound('./multimedia/58731_190813_165551904.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

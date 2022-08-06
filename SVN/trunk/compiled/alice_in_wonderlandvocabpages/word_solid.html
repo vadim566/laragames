@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>solid</h1>
+
+<p><a href="_main_text_alice_in_wonderland_8.html#alice_in_wonderland_page_8_segment_3" target="main_frame"><b>&larr;</b></a>  <a href="word_suddenly.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_1><span class="sound" onmouseover="playSound('./multimedia/52406_190309122633.mp3');">Suddenly</span></span></a> <a href="word_she.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_3><span class="sound" onmouseover="playSound('./multimedia/52374_190309122252.mp3');">she</span></span></a> <a href="word_come upon.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_5><span class="sound" onmouseover="playSound('./multimedia/52156_190309120206.mp3');">came</span></span></a> <a href="word_come upon.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_7><span class="sound" onmouseover="playSound('./multimedia/52448_190309123432.mp3');">upon</span></span></a> <a href="word_a.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_9><span class="sound" onmouseover="playSound('./multimedia/52099_190126210241.mp3');">a</span></span></a> <a href="word_little.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_11><span class="sound" onmouseover="playSound('./multimedia/52277_190309121431.mp3');">little</span></span></a> <a href="word_three-legged.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_13><span class="sound" onmouseover="playSound('./multimedia/61136_190906_085205946.mp3');">three-legged</span></span></a> <a href="word_table.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_15><span class="sound" onmouseover="playSound('./multimedia/61081_190906_084503204.mp3');">table</span></span></a>, <a href="word_all.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_17><span class="sound" onmouseover="playSound('./multimedia/52105_190126210442.mp3');">all</span></span></a> <a href="word_make of.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_19><span class="sound" onmouseover="playSound('./multimedia/52286_190309121507.mp3');">made</span></span></a> <a href="word_make of.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_21><span class="sound" onmouseover="playSound('./multimedia/52315_190309121728.mp3');">of</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60970_190905_194502647.mp3');">solid</span></span> <a href="word_glass.html" target="aux_frame"><span id=alice_in_wonderland_page_8_segment_3_word_25><span class="sound" onmouseover="playSound('./multimedia/59927_190825_094627371.mp3');">glass</span></span></a>; <span onclick="playSound('./multimedia/57659_190318100634.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

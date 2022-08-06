@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>send for</h1>
+
+<p><a href="_main_text_alice_in_wonderland_139.html#alice_in_wonderland_page_139_segment_10" target="main_frame"><b>&larr;</b></a>  ‘<a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_1><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_beg.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_3><span class="sound" onmouseover="playSound('./multimedia/59253_200117_124340907.mp3');">beg</span></span></a> <a href="word_pardon.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_5><span class="sound" onmouseover="playSound('./multimedia/60508_190904_192203597.mp3');">pardon</span></span></a>, <a href="word_your.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_7><span class="sound" onmouseover="playSound('./multimedia/52478_190309123719.mp3');">your</span></span></a> <a href="word_majesty.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_9><span class="sound" onmouseover="playSound('./multimedia/60306_190830_101043431.mp3');">Majesty</span></span></a>,’ <a href="word_he.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_11><span class="sound" onmouseover="playSound('./multimedia/52242_190309121036.mp3');">he</span></span></a> <a href="word_begin.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_13><span class="sound" onmouseover="playSound('./multimedia/52131_190126211026.mp3');">began</span></span></a>, ‘<a href="word_for.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_15><span class="sound" onmouseover="playSound('./multimedia/52214_190309120758.mp3');">for</span></span></a> <a href="word_bring in.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_17><span class="sound" onmouseover="playSound('./multimedia/59324_200117_124946147.mp3');">bringing</span></span></a> <a href="word_these.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_19><span class="sound" onmouseover="playSound('./multimedia/61120_190906_084916501.mp3');">these</span></span></a> <a href="word_bring in.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_21><span class="sound" onmouseover="playSound('./multimedia/52260_190309121249.mp3');">in</span></span></a>: <a href="word_but.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_23><span class="sound" onmouseover="playSound('./multimedia/52151_190309120136.mp3');">but</span></span></a> <a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_25><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_hadn_apostrophet.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_27><span class="sound" onmouseover="playSound('./multimedia/59979_190825_165732031.mp3');">hadn’t</span></span></a> <a href="word_quite.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_29><span class="sound" onmouseover="playSound('./multimedia/52347_190309121938.mp3');">quite</span></span></a> <a href="word_finish.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_31><span class="sound" onmouseover="playSound('./multimedia/59825_190825_093217179.mp3');">finished</span></span></a> <a href="word_my.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_33><span class="sound" onmouseover="playSound('./multimedia/52303_190309121647.mp3');">my</span></span></a> <a href="word_tea.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_35><span class="sound" onmouseover="playSound('./multimedia/52412_190309122711.mp3');">tea</span></span></a> <a href="word_when.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_37><span class="sound" onmouseover="playSound('./multimedia/61343_190905_082009254.mp3');">when</span></span></a> <a href="word_i.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_39><span class="sound" onmouseover="playSound('./multimedia/52256_190309121238.mp3');">I</span></span></a> <a href="word_be.html" target="aux_frame"><span id=alice_in_wonderland_page_139_segment_10_word_41><span class="sound" onmouseover="playSound('./multimedia/52454_190309123516.mp3');">was</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60838_190905_190952807.mp3');">sent</span></span> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/52214_190309120758.mp3');">for</span></span>.’ <span onclick="playSound('./multimedia/58907_190814_111329154.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

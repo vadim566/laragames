@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>derision</h1>
+
+<p><a href="_main_text_alice_in_wonderland_119.html#alice_in_wonderland_page_119_segment_11" target="main_frame"><b>&larr;</b></a>  ‘<a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_1><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <a href="word_then.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_3><span class="sound" onmouseover="playSound('./multimedia/52418_190309122729.mp3');">then</span></span></a> <a href="word_the.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_5><span class="sound" onmouseover="playSound('./multimedia/57600_190309225031.mp3');">the</span></span></a> <a href="word_different.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_7><span class="sound" onmouseover="playSound('./multimedia/59594_190817_113046270.mp3');">different</span></span></a> <a href="word_branch.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_9><span class="sound" onmouseover="playSound('./multimedia/59315_200117_124902589.mp3');">branches</span></span></a> <a href="word_of.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_11><span class="sound" onmouseover="playSound('./multimedia/52315_190309121728.mp3');">of</span></span></a> <a href="word_arithmetic.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_13><span class="sound" onmouseover="playSound('./multimedia/59185_200117_123722048.mp3');">Arithmetic</span></span></a>--<a href="word_ambition.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_15><span class="sound" onmouseover="playSound('./multimedia/59151_200117_123410386.mp3');">Ambition</span></span></a>, <a href="word_distraction.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_17><span class="sound" onmouseover="playSound('./multimedia/59620_190817_113306674.mp3');">Distraction</span></span></a>, <a href="word_uglification.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_19><span class="sound" onmouseover="playSound('./multimedia/61235_190906_094708820.mp3');">Uglification</span></span></a>, <a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_119_segment_11_word_21><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/59583_190817_112940089.mp3');">Derision</span></span>.’ <span onclick="playSound('./multimedia/58729_190813_165440903.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>precious</h1>
+
+<p><a href="_main_text_alice_in_wonderland_70.html#alice_in_wonderland_page_70_segment_6" target="main_frame"><b>&larr;</b></a>  ‘<a href="word_oh.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_1><span class="sound" onmouseover="playSound('./multimedia/60463_190904_191253193.mp3');">Oh</span></span></a>, <a href="word_there.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_3><span class="sound" onmouseover="playSound('./multimedia/52419_190309122750.mp3');">there</span></span></a> <a href="word_go.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_5><span class="sound" onmouseover="playSound('./multimedia/59931_190825_094701474.mp3');">goes</span></span></a> <a href="word_his.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_7><span class="sound" onmouseover="playSound('./multimedia/52250_190309121111.mp3');">his</span></span></a> <span class="red"><span class="sound" onmouseover="playSound('./multimedia/60611_190904_200657584.mp3');"><i>precious</i></span></span> <a href="word_nose.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_11><span class="sound" onmouseover="playSound('./multimedia/60437_190904_190739244.mp3');">nose</span></span></a>’; <a href="word_as.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_13><span class="sound" onmouseover="playSound('./multimedia/52115_190126210706.mp3');">as</span></span></a> <a href="word_an.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_15><span class="sound" onmouseover="playSound('./multimedia/52112_190126210637.mp3');">an</span></span></a> <a href="word_unusually.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_17><span class="sound" onmouseover="playSound('./multimedia/61264_190906_095057357.mp3');">unusually</span></span></a> <a href="word_large.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_19><span class="sound" onmouseover="playSound('./multimedia/52270_190309121405.mp3');">large</span></span></a> <a href="word_saucepan.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_21><span class="sound" onmouseover="playSound('./multimedia/60797_190905_081112714.mp3');">saucepan</span></span></a> <a href="word_fly.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_23><span class="sound" onmouseover="playSound('./multimedia/52208_190309120734.mp3');">flew</span></span></a> <a href="word_close.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_25><span class="sound" onmouseover="playSound('./multimedia/52167_190309120316.mp3');">close</span></span></a> <a href="word_by.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_27><span class="sound" onmouseover="playSound('./multimedia/52153_190309120156.mp3');">by</span></span></a> <a href="word_it.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_29><span class="sound" onmouseover="playSound('./multimedia/52263_190309121320.mp3');">it</span></span></a>, <a href="word_and.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_31><span class="sound" onmouseover="playSound('./multimedia/52113_190126210645.mp3');">and</span></span></a> <a href="word_very.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_33><span class="sound" onmouseover="playSound('./multimedia/52450_190309123459.mp3');">very</span></span></a> <a href="word_nearly.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_35><span class="sound" onmouseover="playSound('./multimedia/60407_190904_190323322.mp3');">nearly</span></span></a> <a href="word_carry off.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_37><span class="sound" onmouseover="playSound('./multimedia/59362_200118_130648752.mp3');">carried</span></span></a> <a href="word_it.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_39><span class="sound" onmouseover="playSound('./multimedia/52263_190309121320.mp3');">it</span></span></a> <a href="word_carry off.html" target="aux_frame"><span id=alice_in_wonderland_page_70_segment_6_word_41><span class="sound" onmouseover="playSound('./multimedia/52316_190309121728.mp3');">off</span></span></a>. <span onclick="playSound('./multimedia/58253_190401095849.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>
