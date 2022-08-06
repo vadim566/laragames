@@ -1506,4 +1506,4 @@ def submit_g12():
 
 
 if __name__ == '__main__':
-    app.run(threaded=False)
+    app.run(threaded=True)
