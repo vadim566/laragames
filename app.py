@@ -586,10 +586,8 @@ def loading_file_pic_g4(filename,story_name):
 
 
 @app.route('/game4Submit/', methods=['GET','POST'])
-async def submit_g4():
+def submit_g4():
     option = request.form.get('option')
-    while option is None:
-        option = request.form.get('option')
     default_value = 0
     name = request.form.get('storyname', default_value)
     answer = request.form.get('answer', default_value)
