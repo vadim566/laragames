@@ -398,13 +398,14 @@ def account():
         total_wins=total_wins+game_sets[i][3][1]
 
     levels=[0,10,20,50,100,200,400,800,1000,1500,2000]
-    total_exprience=(total_games-total_wins)+total_wins
+    total_exprience=(total_games-total_wins)*0.3+total_wins
     exprience_next_level=0
-    level=int(total_exprience/10)
+    level=int(total_exprience)
     for i in range(len(levels)):
-        if level < levels[i] and level >= levels[i-1]:
+        if level < levels[i] :
             level=i
             exprience_next_level=levels[i]-total_exprience
+            break;
 
     print(total_wins)
     return render_template('account.html', title='Account', games=game_sets, wins=total_wins ,gametotal=total_games,p_level=level,exp_level=exprience_next_level)
