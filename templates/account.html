@@ -6,7 +6,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
 
     <h1>{{ current_user.username }}</h1>
-
+    <h3>Player level {{ p_level }}</h3>
+    <h6>next level exprience needed {{ exp_level }}</h6>
+     <img class="col-md-4" src="\static\levels\{{ p_level }}.jpg" alt="logo" >
+    <h3>Achivments</h3>
+    <h5>Total games Played {{ gametotal }}</h5>
+    <h5>Total wins {{ wins }}</h5>
     {% for line in games %}
 
          <t2>game {{ line[4] }} statics</t2>
