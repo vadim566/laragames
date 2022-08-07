@@ -212,7 +212,7 @@ class tbl_game4(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question=db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -227,7 +227,7 @@ class tbl_game5(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String, nullable=False)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -239,7 +239,7 @@ class tbl_game6(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -251,7 +251,7 @@ class tbl_game7(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -263,7 +263,7 @@ class tbl_game8(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -275,7 +275,7 @@ class tbl_game9(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -287,7 +287,7 @@ class tbl_game10(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -299,7 +299,7 @@ class tbl_game11(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -311,7 +311,7 @@ class tbl_game12(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
+    question = db.Column(db.String)
     counter = db.Column(db.Integer, default=1)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -618,10 +618,10 @@ def submit_g4():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game4(score=1, user_id=uid)
+        item = tbl_game4(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game4(score=0, user_id=uid)
+        item = tbl_game4(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -704,10 +704,10 @@ def submit_g5():
     print("option: ", option)
 
     if option == '1':
-        item = tbl_game5(score=1, user_id=uid)
+        item = tbl_game5(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game5(score=0, user_id=uid)
+        item = tbl_game5(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -799,10 +799,10 @@ def submit_g6():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game6(score=1, user_id=uid)
+        item = tbl_game6(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game6(score=0, user_id=uid)
+        item = tbl_game6(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -893,10 +893,10 @@ def submit_g7():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game7(score=1, user_id=uid)
+        item = tbl_game7(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game7(score=0, user_id=uid)
+        item = tbl_game7(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -969,10 +969,10 @@ def submit_g8():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game8(score=1, user_id=uid)
+        item = tbl_game8(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game8(score=0, user_id=uid)
+        item = tbl_game8(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -1076,10 +1076,10 @@ def submit_g9():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game9(score=1, user_id=uid)
+        item = tbl_game9(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game9(score=0, user_id=uid)
+        item = tbl_game9(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -1189,10 +1189,10 @@ def submit_g10():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game10(score=1, user_id=uid)
+        item = tbl_game10(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game10(score=0, user_id=uid)
+        item = tbl_game10(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -1308,10 +1308,10 @@ def submit_g11():
     print("answer1: ", answer1)
 
     if option0 == answer0 and option1 == answer1:
-        item = tbl_game11(score=1, user_id=uid)
+        item = tbl_game11(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game11(score=0, user_id=uid)
+        item = tbl_game11(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
@@ -1415,10 +1415,10 @@ def submit_g12():
     print("answer: ", answer)
 
     if option == answer:
-        item = tbl_game12(score=1, user_id=uid)
+        item = tbl_game12(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
-        item = tbl_game12(score=0, user_id=uid)
+        item = tbl_game12(score=0, user_id=uid,question=name)
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
