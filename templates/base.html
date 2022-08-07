@@ -40,19 +40,28 @@ th, td, tr {
 	
 	{%block js%}{%endblock%}
 
-  <header class="site-header">
+  <header class="site-header col-sm-12">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
       <div class="container">
         <a class="navbar-brand mr-4" href="/">LARA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="True" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+                 {% if current_user.is_authenticated %}
+              <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+              <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+              <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+          </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarToggle">
-          <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="/">Home</a>
-            
-          </div>
-        
+    <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/">Home</a>
+
+            </div>
+
+
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
             {% if current_user.is_authenticated %}
@@ -66,10 +75,16 @@ th, td, tr {
         </div>
       </div>
     </nav>
-  </header>  
-  <main role="main" class="container">
+  </header>
+
+
+
+
+  <main role="main" class="container col-sm-12 col-md-12">
+
+
     <div class="row">
-      <div class="col-md-8">
+      <div class="mid-block col-md-8 col-sm-12">
         {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           {% for category, message in messages %}
@@ -81,12 +96,12 @@ th, td, tr {
       {% endwith %}
         {%block content%}{%endblock%}
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-12">
         <div class="content-section">
           <h3>Lara Games by ruppin</h3>
-            
-           <img class="col-md-4" src="\static\logoPSDtransferd.png" alt="logo" >
-          
+
+           <img class="col-md-4 col-sm-12" src="\static\logoPSDtransferd.png" alt="logo" >
+
         </div>
       </div>
     </div>

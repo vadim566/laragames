@@ -1,9 +1,15 @@
+*{
+     text-transform: capitalize;
+    list-style-type: none;
+}
+
 body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
     overflow-y:scroll;
     overflow-x:scroll;
+
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -157,7 +163,103 @@ h1 {
     resize: none;
 
 }
+.mid-block{
 
+
+    box-shadow: 10px 10px 10px lightslategray;
+    align-items: center;
+    text-align-all: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    border-radius: 40px;
+    padding: 10px;
+
+
+}
+.easy ,.medium,.high,.game-box{
+
+    box-shadow: 10px 10px 10px lightslategray;
+    background: rgb(232,200,237);
+background: radial-gradient(circle, rgba(232,200,237,1) 0%, rgba(223,236,235,1) 100%);
+    color: black;
+     border-radius: 30px;
+}
+.easy ,.medium,.high:hover{
+    transform: scale(1.02);
+}
+
+.btn-outline-primary, .btn btn-info
+{
+background: rgb(100,162,158);
+background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 100%);
+  color:white ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn-outline-primary-easy
+{
+      background-color: darkgreen; /* Green */
+  border: solid 1px white;
+  color:white ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-outline-primary-med
+{
+      background-color: darkorange; /* Green */
+  border: solid 1px white;
+  color:black ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn-outline-primary-high
+{
+      background-color: darkmagenta; /* Green */
+  border: solid 1px white;
+  color:orange ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    text-transform: capitalize;
+}
+
+.game-box:hover{
+    transform: scale(1.02);
+}
+.game-box-body{
+
+background: rgb(217,238,255);
+background: radial-gradient(circle, rgba(217,238,255,1) 0%, rgba(255,255,255,1) 89%);
+    color: black;
+    border-radius: 30px;
+
+}
 
 
 

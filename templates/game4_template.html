@@ -6,24 +6,16 @@
 {%block content%}
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
 
     <t1>Hello {{ current_user.username }}  <t1>
 
-    <div class="panel">
+    <div class="panel game-box">
         <div class="result">
 
         </div>
        
-        <div class="question-container" id="question">
+        <div class="question-container game-box-body" id="question">
 <figure>
     <figcaption>What the right Phrase that matched:</figcaption>
     <audio
@@ -36,30 +28,31 @@
 
         </div>
         <form action="/game4Submit/" id="formgame4" class="col-md-8 col-sm-12" method="POST">
-            <ul>
-        <div class="d-grid gap-2 col-md-8 col-sm-12" data-toggle="buttons" >
+           <div class="col-md-8 col-sm-12 " data-toggle="buttons" >
+               <ul>
+
         </br>
-            <li> <label class="btn btn-info" id="op1">
+            <li> <label class="btn-outline-primary-easy" id="op1">
                 <input type="submit" class="btn btn-primary" name="option" id="radop1"  value="1" autocomplete="off"  checked>
             </label></li>
         </br>  
-            <li><label class="btn btn-info" id="op2">
+            <li><label class="btn-outline-primary-easy" id="op2">
                 <input type="submit" class="btn btn-primary" name="option"  id="radop2"  value="2" autocomplete="off" checked>
             </label></li>
         </br>
-            <li><label class="btn btn-info" id="op3" >
+            <li><label class="btn-outline-primary-easy" id="op3" >
                 <input type="submit" class="btn btn-primary" name="option"  id="radop3" value="3" autocomplete="off" checked>
             </label></li>
         </br>
-            <li><label class="btn btn-info" id="op4" >
+            <li><label class="btn-outline-primary-easy" id="op4" >
                 <input type="submit" class="btn btn-primary" name="option" id="radop4"  value="4" autocomplete="off" checked>
             </label></li>
         </br>
             <input type="hidden" id="ans" name="answer" value="{{ t_answer }}">
             <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
             <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
-        </div>
-    </ul>
+      </ul>
+      </div>
         </form>
 
         

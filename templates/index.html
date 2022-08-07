@@ -8,9 +8,9 @@
 
 </div>
 <div class='difficulties'>
-<button class='btn btn-outline-primary' onclick="showGamesEasy()">Beginner</button>
-<button class='btn btn-outline-primary' onclick="showGamesMed()">Intermidate</button>
-<button class='btn btn-outline-primary' onclick="showGamesHigh()">Expert</button>
+<button class='btn btn-outline-primary-easy' onclick="showGamesEasy()">Beginner</button>
+<button class='btn btn-outline-primary-med' onclick="showGamesMed()">Intermidate</button>
+<button class='btn btn-outline-primary-high' onclick="showGamesHigh()">Expert</button>
 </div>
 <div class='stories-container'>
 {% for line in content %}
@@ -20,8 +20,8 @@
 <div class="{{ line[1] }}">
 <div class="card col-md-12 col-sm-12">
 <div class="row">
-    <td><div class="card col-md-4 col-sm-12" >
-  <img class="card-img-top" src="\static\logoPSDtransferd.png" alt="image">
+    <div class=" col-md-12 col-sm-12" >
+  <img class="card-img-top" src="\static\logoPSDtransferd.png"  style="max-width: 30%;" alt="image">
   <div class="card-body">
     <h5 class="card-title">{{line[0]}}</h5>
     <h5 class="card-text">read the story in language {{line[1]}}.</h5>
@@ -33,24 +33,24 @@
 
 
 
-		<div class=" card col-md-8 col-sm-12"	 >
+
 
 
 
          <div class='easy'>
      <form action="/game4/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 4 new" type="submit">Match the annunciator to phrase </button>
+         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 4 new" type="submit">Match the annunciator to phrase </button>
 
 	 </form>
 
 
      <form action="/game5/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciator</button>
+         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciator</button>
 
 	 </form>
 
     <form action="/game6/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 6 new" type="submit">Select the missing Word</button>
+         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 6 new" type="submit">Select the missing Word</button>
 
 	 </form>
 
@@ -59,17 +59,17 @@
 
 <div class='medium'>
       <form action="/game7/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 7 new" type="submit">Fill the missing Word</button>
+         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 7 new" type="submit">Fill the missing Word</button>
 
 	 </form>
 
 	       <form action="/game8/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 8 new" type="submit">Drag the words in the right order</button>
+         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 8 new" type="submit">Drag the words in the right order</button>
 
 	 </form>
 
 	      <form action="/game9/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 9 new" type="submit">Select the missing words 1</button>
+         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 9 new" type="submit">Select the missing words 1</button>
 
 	 </form>
 	 </div>
@@ -77,23 +77,23 @@
 
 	 <div class='high'>
 	    <form action="/game10/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 10 new" type="submit">Select the missing words 2</button>
+         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 10 new" type="submit">Select the missing words 2</button>
 
 	 </form>
 
 	     <form action="/game11/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 11 new" type="submit">Fill the missing Words</button>
+         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 11 new" type="submit">Fill the missing Words</button>
 
 	 </form>
           <form action="/game12/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary" name="{{line[0]}}game 12 new" type="submit">Fill the missing Phrase</button>
+         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 12 new" type="submit">Fill the missing Phrase</button>
 
 	 </form>
     </div> 
 	
 	
     </div>
-    </div>
+
 </div>
 </div>
 
