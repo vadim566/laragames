@@ -1,19 +1,120 @@
+
+![Logo](https://i.ibb.co/br8Ztt8/logo-PSDtransferd.png)
+
+
 # LARAGAME
 
 LARA is a platform of studying L1 and L2 community resource
 
-## Main Page
+## Toplogy
+The main content is imported from main LARA SVN , that store each story.
+* Because of our system using all content created by LARA original users we will need to semi/auto importsome of these stories into our rep.
+* In back end each game will accses file dirs where each story is built and will be generated from the files inside the file dir
+* The score of each registrated player will be stored inside the SQL DB
+* The front end will be created from JINJA templates based on js,html ,css
+![App Screenshot](https://i.ibb.co/V30fPjh/lara-toplogy.png)
 
-Just enter laragamesruppin.herukoapp.com
+## Use case/Sequence diagram
+each player can accses into the system whenever he is registrated or not.
+* The 3 difficulties  levels  for each language to play game
+* Each story can be read as it was on original lara
+* In each level there's 3 games of selected language training
+* If the user is registrated so his score will be stored in the db and it will show in dashboard and will have also badges and level progress
 
-## Create database
-1.open bash or console in the git folder and run python
-2.run the next code to create new clean db
-```python
-import app
-db.createall()
+![App Screenshot](https://i.ibb.co/RTk680Z/LARAGAMES.png)
+
+
+## DB ERD
+Each game will have its own  db when all the games tables connected to user tables,
+all queries based on selecting the PK of the user and taking the matching rows from each game table.
+![App Screenshot](https://i.ibb.co/Sw8sRTJ/erdlaragames.png)
+## Roadmap
+## Done 
+- Learn importing LARA files
+- Learn creating abstract html from LARA
+- routing to lara story with flask
+- Building games
+- Building backend
+- Building frontend
+- creating register/login system
+- creating progression dashboard 
+- creating level badges
+
+## Future Features
+- Improving UI/UX
+- creating more Games based on pictures
+- working as distrbuted system
+- maintaing the full list of working games in LARA
+- phrase failed summoning for re training
+- bug fixing inside game to handles only words without symbols
+
+
+
+
+## Features
+
+- Learn language in a fun way
+- Progression in learning
+- Many diffuclties for range of users
+- Supporting language that LARA Supporting
+- Generating games for each language
+
+
+
+## Local Installation
+1. clone this rep from git , make sure that requirements.txt inside the folder
+
+2. Create venv Install all python modules into venv with cmd/bash
+
+```bash
+cd [folder that you cloned the project to]
+
+python -m venv venv
+
+.\venv\Scripts\activate.bat
+
+pip install -r requirements.txt
 ```
-3.after that a new file will apear in the dir named "site"
+
+## Run Locally
+
+Run app.py with python After installation
+```bash
+Python .\app.py
+```
+## Deployment into heroku
+
+1. create inside the main folder file named Procfile,
+and save inside it
+
+```bash
+  web: gunicorn app:app
+```
+
+2. make sure u installed heroku extention, open bash/cmd and login into heroku
+
+```bash
+  heroku login
+```
+
+3. After that create a new project in heroku
+
+```bash
+  heroku create projectName
+```
+4. Push the rep into heroku with git
+
+```bash
+   git heroku push master
+```
+
+## Contributing and adding more games
+
+Contributions are always welcome!
+
+If u want to add more games , you should follow the next steps 
+
+
 
 ## Adding games
 1.Create tbl_db in sql_aclhemy for tracking stats of each user,
@@ -25,7 +126,7 @@ class User(db.Model, UserMixin):
 .
 game#X#Rel = db.relationship('tbl_game#X#', backref='author', lazy=True)
 ```
-after it create new tbl:
+* after it create new tbl:
 ```python
 class tbl_game#X#(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -80,10 +181,49 @@ def submit_g#X#():
 
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+## Environment Variables
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+To run this project, you will need to install the requirement file as it describe in install section
+
+
+## Screenshots
+
+* Story Selecting Page
+
+![App Screenshot](https://i.ibb.co/sFdyKJQ/1.jpg)
+
+* Matching word to voice game
+
+![App Screenshot](https://i.ibb.co/fxghDxJ/2.jpg)
+
+
+* Filling 2 word to voice game
+
+![App Screenshot](https://i.ibb.co/7VQMxS0/3.jpg)
+
+* login page
+
+![App Screenshot](https://i.ibb.co/wSYjwHy/4.jpg)
+
+* Registeration
+
+![App Screenshot](https://i.ibb.co/xJJ84J3/5.jpg)
+
+* Bad answer reaction inside games
+![App Screenshot](https://i.ibb.co/zPkzsdm/6.jpg)
+
+* Right answer reaction inside games
+![App Screenshot](https://i.ibb.co/tJfnRnV/7.jpg)
+
+* Dashboard and level progression with badges
+![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
+
+
+## Appendix
+
+#### Original LARA
+https://www.issco.unige.ch/en/research/projects/callector/LARADoc/build/html/reader_portal.html
+
+#### LARA SVN
+https://sourceforge.net/projects/callector-lara/
