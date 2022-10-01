@@ -190,34 +190,29 @@ To run this project, you will need to install the requirement file as it describ
 ## Screenshots
 
 * Story Selecting Page
-
-![App Screenshot](https://i.ibb.co/sFdyKJQ/1.jpg)
+* ![App Screenshot](https://i.ibb.co/sFdyKJQ/1.jpg)
 
 * Matching word to voice game
-
-![App Screenshot](https://i.ibb.co/fxghDxJ/2.jpg)
+* ![App Screenshot](https://i.ibb.co/fxghDxJ/2.jpg)
 
 
 * Filling 2 word to voice game
-
-![App Screenshot](https://i.ibb.co/7VQMxS0/3.jpg)
+* ![App Screenshot](https://i.ibb.co/7VQMxS0/3.jpg)
 
 * login page
-
-![App Screenshot](https://i.ibb.co/wSYjwHy/4.jpg)
+* ![App Screenshot](https://i.ibb.co/wSYjwHy/4.jpg)
 
 * Registeration
-
-![App Screenshot](https://i.ibb.co/xJJ84J3/5.jpg)
+* ![App Screenshot](https://i.ibb.co/xJJ84J3/5.jpg)
 
 * Bad answer reaction inside games
-![App Screenshot](https://i.ibb.co/zPkzsdm/6.jpg)
+* ![App Screenshot](https://i.ibb.co/zPkzsdm/6.jpg)
 
 * Right answer reaction inside games
-![App Screenshot](https://i.ibb.co/tJfnRnV/7.jpg)
+* ![App Screenshot](https://i.ibb.co/tJfnRnV/7.jpg)
 
 * Dashboard and level progression with badges
-![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
+* ![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
 
 
 ## Appendix
