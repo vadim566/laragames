@@ -611,9 +611,9 @@ def loading_file_pic_g4(filename, story_name):
 
 
 @app.route('/game4Submit/', methods=['GET', 'POST'])
-def submit_g4():
+def submit_g4(option=0,answer=0,default_value=0):
     option = request.form.get('option')
-    default_value = 0
+
     name = request.form.get('storyname', default_value)
     answer = request.form.get('answer', default_value)
     uid = request.form.get('uid', default_value)
@@ -637,10 +637,7 @@ def submit_g4():
 
 @app.route('/game5/<story_name>', methods=['GET'])
 def generate_game5(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -697,8 +694,8 @@ def g5_back_home():
 
 
 @app.route('/game5Submit/', methods=['GET', 'POST'])
-def submit_g5():
-    default_value = 0
+def submit_g5(option=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
 
@@ -724,14 +721,11 @@ def submit_g5():
 
 @app.route('/game6/<story_name>', methods=['GET'])
 def generate_game6(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -791,8 +785,8 @@ def loading_file_pic_g6(filename, story_name):
 
 
 @app.route('/game6Submit/', methods=['GET', 'POST'])
-def submit_g6():
-    default_value = 0
+def submit_g6(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -818,14 +812,11 @@ def submit_g6():
 
 @app.route('/game7/<story_name>', methods=['GET'])
 def generate_game7(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -877,8 +868,8 @@ def loading_file_pic_g7(filename, story_name):
 
 
 @app.route('/game7Submit/', methods=['GET', 'POST'])
-def submit_g7():
-    default_value = 0
+def submit_g7(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -904,14 +895,11 @@ def submit_g7():
 
 @app.route('/game8/<story_name>', methods=['GET'])
 def generate_game8(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -953,8 +941,8 @@ def loading_file_pic_g8(filename, story_name):
 
 
 @app.route('/game8Submit/', methods=['GET', 'POST'])
-def submit_g8():
-    default_value = 0
+def submit_g8(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -980,14 +968,11 @@ def submit_g8():
 
 @app.route('/game9/<story_name>', methods=['GET'])
 def generate_game9(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -1060,8 +1045,8 @@ def loading_file_pic_g9(filename, story_name):
 
 
 @app.route('/game9Submit/', methods=['GET', 'POST'])
-def submit_g9():
-    default_value = 0
+def submit_g9(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -1087,10 +1072,7 @@ def submit_g9():
 
 @app.route('/game10/<story_name>', methods=['GET'])
 def generate_game10(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -1173,8 +1155,8 @@ def loading_file_pic_g10(filename, story_name):
 
 
 @app.route('/game10Submit/', methods=['GET', 'POST'])
-def submit_g10():
-    default_value = 0
+def submit_g10(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -1200,10 +1182,7 @@ def submit_g10():
 
 @app.route('/game11/<story_name>', methods=['GET'])
 def generate_game11(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -1279,8 +1258,8 @@ def loading_file_pic_g11(filename, story_name):
 
 
 @app.route('/game11Submit/', methods=['GET', 'POST'])
-def submit_g11():
-    default_value = 0
+def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option0 = request.form.get('option0', default_value)
     option1 = request.form.get('option1', default_value)
@@ -1380,7 +1359,7 @@ def loading_file_pic_g12(filename, story_name):
 
 
 @app.route('/game12Submit/', methods=['GET', 'POST'])
-def submit_g12():
+def submit_g12(option=0,answer=0):
     default_value = 0
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
@@ -1401,6 +1380,12 @@ def submit_g12():
     db.session.commit()
     return redirect(url_for('generate_game12', story_name=name))
 
+def create_app():
+    app.run(host='0.0.0.0', threaded=True)
+
+
+def create_app_tests():
+    app.run(host='127.0.0.1')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',threaded=True)
+    create_app()
