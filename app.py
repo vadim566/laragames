@@ -621,7 +621,7 @@ def submit_g4(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game4(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -796,7 +796,7 @@ def submit_g6(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game6(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -879,7 +879,7 @@ def submit_g7(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game7(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -952,7 +952,7 @@ def submit_g8(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game8(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -1056,7 +1056,7 @@ def submit_g9(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game9(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -1166,7 +1166,7 @@ def submit_g10(option=0,answer=0,default_value=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game10(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -1273,7 +1273,10 @@ def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
     print("answer0: ", answer0)
     print("answer1: ", answer1)
 
-    if option0 == answer0 and option1 == answer1:
+    if option0.lower() == answer0.lower() and option1.lower() == answer1.lower() :
+        item = tbl_game11(score=1, user_id=uid,question=name)
+        flash('Right answer', 'success')
+    elif option1.lower() == answer0.lower() and option0.lower() == answer1.lower() :
         item = tbl_game11(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
@@ -1315,8 +1318,9 @@ def generate_game12(story_name, file=None):
     """gather 4 random index for 4 wrong answers """
     rand_i = random.sample(range(0, size_of_story), 4)
 
-    true_match = [sentance[rand_index], sounds[rand_index]]
-    bad_match = [sentance[rand_i[0]], sentance[rand_i[1]], sentance[rand_i[2]], sentance[rand_i[3]]]
+    true_match=['tmp','tmp']
+    while len(true_match[0].split()) <5 :
+        true_match = [sentance[rand_index], sounds[rand_index]]
 
     true_word = ['', '']
     # count the words in the sentance
@@ -1370,7 +1374,7 @@ def submit_g12(option=0,answer=0):
     print("option: ", option)
     print("answer: ", answer)
 
-    if option == answer:
+    if option.lower() == answer.lower():
         item = tbl_game12(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
     else:
