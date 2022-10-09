@@ -63,6 +63,10 @@ alphaBet = "'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r',
 
 '''functions'''
 
+def clean_word(word :str) ->str:
+    clean_word = "".join(c for c in word if c.isalpha())
+    return clean_word
+
 
 # get the language of each story
 def get_language():
@@ -1133,7 +1137,7 @@ def generate_game10(story_name, file=None):
         words_ct = true_match[0].count(" ")
 
         if (tries > max_tries):
-            generate_game7(story_name, file)
+            generate_game10(story_name, file)
 
     # pick random word between word set
     rand_ct = random.sample(range(1, words_ct), 2)
@@ -1246,7 +1250,7 @@ def generate_game11(story_name, file=None):
         words_ct = true_match[0].count(" ")
 
         if (tries > max_tries):
-            generate_game7(story_name, file)
+            generate_game11(story_name, file)
 
     # pick random word between word set
     rand_ct = random.sample(range(1, words_ct), 2)
@@ -1261,25 +1265,16 @@ def generate_game11(story_name, file=None):
     words_arr[rand_ct[1]] = "[--------]"
 
     missing_sent = " ".join(words_arr)  # missing sentance to question
-    # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 2)
-
-        bad_words.append(bad_words_arr[bad_rand_ct[0]] + ',' + bad_words_arr[bad_rand_ct[1]])
-
+    # clean the words from special signs
+    true_word[0] = clean_word(true_word[0])
+    true_word[1] = clean_word(true_word[1])
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word[0] + ' ' + true_word[1])
-    print(bad_words)
 
-    return render_template('game11_template.html', t_answer0=true_word[0], t_answer1=true_word[1],
-                           question0=missing_sent, question1=true_match[1], fake_answer_0=bad_words[0],
-                           fake_answer_1=bad_words[1], fake_answer_2=bad_words[2], fake_answer_3=bad_words[3],
-                           name=story_name)
+
+    return render_template('game11_template.html', t_answer0=true_word[0], t_answer1=true_word[1], question0=missing_sent, question1=true_match[1], name=story_name)
 
 
 @app.route('/game11/<story_name>/<path:filename>', methods=['GET', 'POST'])

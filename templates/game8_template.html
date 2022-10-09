@@ -15,6 +15,7 @@
     <div class="container1">
        <div class="question-container" id="question">
 <figure>
+    <h4> If you are using mobile ROTATE your mobile to horizontal mode and press at least 2 seconds to drug each item</h4>
     <figcaption>Reorder the phrase to correct order:</figcaption>
     <t1>{{ question0 }}</t1>
 </br>
@@ -80,9 +81,8 @@
 	</div>
 </div>
 	
-	</div>
-     </div>
-        </div>
+
+
     <script>
 const item = document.querySelector('#item1');
 const item1 = document.querySelector('#item2');
@@ -149,7 +149,7 @@ function drop(e) {
 	
 	  
 // Set start
-var start = true;
+const start = true;
 
 // Iterate
 function Evaluate(){
@@ -161,26 +161,26 @@ function Evaluate(){
     // Grabbing the evaluate button
 
 		//set boxes as number of split text
-		box1=document.getElementById("box1")
-		box2=document.getElementById("box2")
-		box3=document.getElementById("box3")
-		box4=document.getElementById("box4")
-		box5=document.getElementById("box5")
+		const box1=document.getElementById("box1")
+		const box2=document.getElementById("box2")
+		const box3=document.getElementById("box3")
+		const box4=document.getElementById("box4")
+		const box5=document.getElementById("box5")
 		
 		//attributes[3] is the name at the div that hold the info about the text
-		part1=box1.firstChild.attributes[3].value
-		part2=box2.firstChild.attributes[3].value
-		part3=box3.firstChild.attributes[3].value
-		part4=box4.firstChild.attributes[3].value
-		part5=box5.firstChild.attributes[3].value
-		space=" "
+		const part1=box1.firstChild.attributes[3].value
+		const part2=box2.firstChild.attributes[3].value
+		const part3=box3.firstChild.attributes[3].value
+		const part4=box4.firstChild.attributes[3].value
+		const part5=box5.firstChild.attributes[3].value
+		const space=" "
 		//the whole phrase is
-		phrase=part1+space+part2+space+part3+space+part4+space+part5;
+		const phrase=part1+space+part2+space+part3+space+part4+space+part5;
 
-        sendx=document.getElementById('option')
+        const sendx=document.getElementById('option')
         sendx.value=phrase;
-		t_answer="{{ t_answer }}"
-		status=phrase.localeCompare(t_answer);
+		const t_answer="{{ t_answer }}"
+		const status=phrase.localeCompare(t_answer);
 		
 		
       
