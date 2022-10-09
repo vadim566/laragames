@@ -845,7 +845,7 @@ def generate_game7(story_name, file=None):
     rand_i = random.sample(range(0, size_of_story), 4)
 
     true_match = [sentance[rand_index], sounds[rand_index]]
-    bad_match = [sentance[rand_i[0]], sentance[rand_i[1]], sentance[rand_i[2]], sentance[rand_i[3]]]
+
 
     # count the words in the sentance
     words_ct = true_match[0].count(" ")
@@ -853,26 +853,18 @@ def generate_game7(story_name, file=None):
     rand_ct = random.sample(range(1, words_ct), 1)
     # swap the word into [-------]
     words_arr = true_match[0].split(' ')
-    true_word = words_arr[rand_ct[0]]  # right anwser
+    true_word = clean_word(words_arr[rand_ct[0]])  # right anwser
     words_arr[rand_ct[0]] = "[--------]"
     missing_sent = " ".join(words_arr)  # missing sentance to question
     # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 1)
-        bad_words.append(bad_words_arr[bad_rand_ct[0]])  # bad answer
+
 
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word)
-    print(bad_words)
 
-    return render_template('game7_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],
-                           fake_answer_0=bad_words[0], fake_answer_1=bad_words[1], fake_answer_2=bad_words[2],
-                           fake_answer_3=bad_words[3], name=story_name)
+    return render_template('game7_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1], name=story_name)
 
 
 @app.route('/game7/<story_name>/<path:filename>', methods=['GET', 'POST'])
