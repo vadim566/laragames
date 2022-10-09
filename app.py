@@ -1357,35 +1357,25 @@ def generate_game12(story_name, file=None):
     # true_word=words_arr[rand_ct[0]]#right answer
 
     if rand_ct[0] + 1 >= words_ct and rand_ct[0] - 1 >= 0:
-        true_word = words_arr[rand_ct[0] - 1] + ' ' + words_arr[rand_ct[0]]
+        true_word = clean_word(words_arr[rand_ct[0] - 1]) + ' ' + clean_word(words_arr[rand_ct[0]])
         words_arr[rand_ct[0]] = "[--------]"
         words_arr[rand_ct[0] - 1] = "[--------]"
     else:
-        true_word = words_arr[rand_ct[0]] + ' ' + words_arr[rand_ct[0] + 1]
+        true_word = clean_word(words_arr[rand_ct[0]]) + ' ' + clean_word(words_arr[rand_ct[0] + 1])
         words_arr[rand_ct[0]] = "[--------]"
         words_arr[rand_ct[0] + 1] = "[--------]"
 
     missing_sent = " ".join(words_arr)  # missing sentance to question
     # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 1)
-        if bad_rand_ct[0] + 1 >= words_ct and bad_rand_ct[0] - 1 >= 0:
-            bad_words.append(bad_words_arr[bad_rand_ct[0] - 1] + ' ' + bad_words_arr[bad_rand_ct[0]])
-        else:
-            bad_words.append(bad_words_arr[bad_rand_ct[0]] + ' ' + bad_words_arr[bad_rand_ct[0] + 1])
+
 
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word)
-    print(bad_words)
 
-    return render_template('game12_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],
-                           fake_answer_0=bad_words[0], fake_answer_1=bad_words[1], fake_answer_2=bad_words[2],
-                           fake_answer_3=bad_words[3], name=story_name)
+
+    return render_template('game12_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],  name=story_name)
 
 
 @app.route('/game12/<story_name>/<path:filename>', methods=['GET', 'POST'])
