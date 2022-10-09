@@ -63,6 +63,10 @@ alphaBet = "'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r',
 
 '''functions'''
 
+def clean_word(word :str) ->str:
+    clean_word = "".join(c for c in word if c.isalpha())
+    return clean_word
+
 
 # get the language of each story
 def get_language():
@@ -607,9 +611,9 @@ def loading_file_pic_g4(filename, story_name):
 
 
 @app.route('/game4Submit/', methods=['GET', 'POST'])
-def submit_g4():
+def submit_g4(option=0,answer=0,default_value=0):
     option = request.form.get('option')
-    default_value = 0
+
     name = request.form.get('storyname', default_value)
     answer = request.form.get('answer', default_value)
     uid = request.form.get('uid', default_value)
@@ -633,10 +637,7 @@ def submit_g4():
 
 @app.route('/game5/<story_name>', methods=['GET'])
 def generate_game5(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -693,8 +694,8 @@ def g5_back_home():
 
 
 @app.route('/game5Submit/', methods=['GET', 'POST'])
-def submit_g5():
-    default_value = 0
+def submit_g5(option=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
 
@@ -720,14 +721,11 @@ def submit_g5():
 
 @app.route('/game6/<story_name>', methods=['GET'])
 def generate_game6(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -787,8 +785,8 @@ def loading_file_pic_g6(filename, story_name):
 
 
 @app.route('/game6Submit/', methods=['GET', 'POST'])
-def submit_g6():
-    default_value = 0
+def submit_g6(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -814,14 +812,11 @@ def submit_g6():
 
 @app.route('/game7/<story_name>', methods=['GET'])
 def generate_game7(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -841,7 +836,7 @@ def generate_game7(story_name, file=None):
     rand_i = random.sample(range(0, size_of_story), 4)
 
     true_match = [sentance[rand_index], sounds[rand_index]]
-    bad_match = [sentance[rand_i[0]], sentance[rand_i[1]], sentance[rand_i[2]], sentance[rand_i[3]]]
+
 
     # count the words in the sentance
     words_ct = true_match[0].count(" ")
@@ -849,26 +844,18 @@ def generate_game7(story_name, file=None):
     rand_ct = random.sample(range(1, words_ct), 1)
     # swap the word into [-------]
     words_arr = true_match[0].split(' ')
-    true_word = words_arr[rand_ct[0]]  # right anwser
+    true_word = clean_word(words_arr[rand_ct[0]])  # right anwser
     words_arr[rand_ct[0]] = "[--------]"
     missing_sent = " ".join(words_arr)  # missing sentance to question
     # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 1)
-        bad_words.append(bad_words_arr[bad_rand_ct[0]])  # bad answer
+
 
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word)
-    print(bad_words)
 
-    return render_template('game7_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],
-                           fake_answer_0=bad_words[0], fake_answer_1=bad_words[1], fake_answer_2=bad_words[2],
-                           fake_answer_3=bad_words[3], name=story_name)
+    return render_template('game7_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1], name=story_name)
 
 
 @app.route('/game7/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -881,8 +868,8 @@ def loading_file_pic_g7(filename, story_name):
 
 
 @app.route('/game7Submit/', methods=['GET', 'POST'])
-def submit_g7():
-    default_value = 0
+def submit_g7(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -908,14 +895,11 @@ def submit_g7():
 
 @app.route('/game8/<story_name>', methods=['GET'])
 def generate_game8(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -957,8 +941,8 @@ def loading_file_pic_g8(filename, story_name):
 
 
 @app.route('/game8Submit/', methods=['GET', 'POST'])
-def submit_g8():
-    default_value = 0
+def submit_g8(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -984,14 +968,11 @@ def submit_g8():
 
 @app.route('/game9/<story_name>', methods=['GET'])
 def generate_game9(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
+
     File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
     Metadata = lara_utils.read_json_file(File)
     meta_dic = [{}]
@@ -1064,8 +1045,8 @@ def loading_file_pic_g9(filename, story_name):
 
 
 @app.route('/game9Submit/', methods=['GET', 'POST'])
-def submit_g9():
-    default_value = 0
+def submit_g9(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -1091,10 +1072,7 @@ def submit_g9():
 
 @app.route('/game10/<story_name>', methods=['GET'])
 def generate_game10(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -1133,7 +1111,7 @@ def generate_game10(story_name, file=None):
         words_ct = true_match[0].count(" ")
 
         if (tries > max_tries):
-            generate_game7(story_name, file)
+            generate_game10(story_name, file)
 
     # pick random word between word set
     rand_ct = random.sample(range(1, words_ct), 2)
@@ -1177,8 +1155,8 @@ def loading_file_pic_g10(filename, story_name):
 
 
 @app.route('/game10Submit/', methods=['GET', 'POST'])
-def submit_g10():
-    default_value = 0
+def submit_g10(option=0,answer=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
@@ -1204,10 +1182,7 @@ def submit_g10():
 
 @app.route('/game11/<story_name>', methods=['GET'])
 def generate_game11(story_name, file=None):
-    # TODO add template game 4
-    # TODO add redirecter to game4
-    # TODO print build dic from metadata file
-    # TODO get the metadata folder, random of all of these that inside the folder
+
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
     audioVersions = dirinDir(metaDataAudioDir)
@@ -1246,7 +1221,7 @@ def generate_game11(story_name, file=None):
         words_ct = true_match[0].count(" ")
 
         if (tries > max_tries):
-            generate_game7(story_name, file)
+            generate_game11(story_name, file)
 
     # pick random word between word set
     rand_ct = random.sample(range(1, words_ct), 2)
@@ -1261,25 +1236,16 @@ def generate_game11(story_name, file=None):
     words_arr[rand_ct[1]] = "[--------]"
 
     missing_sent = " ".join(words_arr)  # missing sentance to question
-    # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 2)
-
-        bad_words.append(bad_words_arr[bad_rand_ct[0]] + ',' + bad_words_arr[bad_rand_ct[1]])
-
+    # clean the words from special signs
+    true_word[0] = clean_word(true_word[0])
+    true_word[1] = clean_word(true_word[1])
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word[0] + ' ' + true_word[1])
-    print(bad_words)
 
-    return render_template('game11_template.html', t_answer0=true_word[0], t_answer1=true_word[1],
-                           question0=missing_sent, question1=true_match[1], fake_answer_0=bad_words[0],
-                           fake_answer_1=bad_words[1], fake_answer_2=bad_words[2], fake_answer_3=bad_words[3],
-                           name=story_name)
+
+    return render_template('game11_template.html', t_answer0=true_word[0], t_answer1=true_word[1], question0=missing_sent, question1=true_match[1], name=story_name)
 
 
 @app.route('/game11/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -1292,8 +1258,8 @@ def loading_file_pic_g11(filename, story_name):
 
 
 @app.route('/game11Submit/', methods=['GET', 'POST'])
-def submit_g11():
-    default_value = 0
+def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
+
     name = request.form.get('storyname', default_value)
     option0 = request.form.get('option0', default_value)
     option1 = request.form.get('option1', default_value)
@@ -1362,35 +1328,25 @@ def generate_game12(story_name, file=None):
     # true_word=words_arr[rand_ct[0]]#right answer
 
     if rand_ct[0] + 1 >= words_ct and rand_ct[0] - 1 >= 0:
-        true_word = words_arr[rand_ct[0] - 1] + ' ' + words_arr[rand_ct[0]]
+        true_word = clean_word(words_arr[rand_ct[0] - 1]) + ' ' + clean_word(words_arr[rand_ct[0]])
         words_arr[rand_ct[0]] = "[--------]"
         words_arr[rand_ct[0] - 1] = "[--------]"
     else:
-        true_word = words_arr[rand_ct[0]] + ' ' + words_arr[rand_ct[0] + 1]
+        true_word = clean_word(words_arr[rand_ct[0]]) + ' ' + clean_word(words_arr[rand_ct[0] + 1])
         words_arr[rand_ct[0]] = "[--------]"
         words_arr[rand_ct[0] + 1] = "[--------]"
 
     missing_sent = " ".join(words_arr)  # missing sentance to question
     # pick random words from  the wrong sentance
-    bad_words = []
-    for i in range(len(bad_match)):
-        bad_words_arr = bad_match[i].split(' ')
-        words_ct = bad_match[i].count(" ")
-        bad_rand_ct = random.sample(range(0, words_ct), 1)
-        if bad_rand_ct[0] + 1 >= words_ct and bad_rand_ct[0] - 1 >= 0:
-            bad_words.append(bad_words_arr[bad_rand_ct[0] - 1] + ' ' + bad_words_arr[bad_rand_ct[0]])
-        else:
-            bad_words.append(bad_words_arr[bad_rand_ct[0]] + ' ' + bad_words_arr[bad_rand_ct[0] + 1])
+
 
     # send the right missing word and wrong words
 
     print("q:" + missing_sent)
     print("t_a:" + true_word)
-    print(bad_words)
 
-    return render_template('game12_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],
-                           fake_answer_0=bad_words[0], fake_answer_1=bad_words[1], fake_answer_2=bad_words[2],
-                           fake_answer_3=bad_words[3], name=story_name)
+
+    return render_template('game12_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],  name=story_name)
 
 
 @app.route('/game12/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -1403,7 +1359,7 @@ def loading_file_pic_g12(filename, story_name):
 
 
 @app.route('/game12Submit/', methods=['GET', 'POST'])
-def submit_g12():
+def submit_g12(option=0,answer=0):
     default_value = 0
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
@@ -1424,6 +1380,12 @@ def submit_g12():
     db.session.commit()
     return redirect(url_for('generate_game12', story_name=name))
 
+def create_app():
+    app.run(host='0.0.0.0', threaded=True)
+
+
+def create_app_tests():
+    app.run(host='127.0.0.1')
 
 if __name__ == '__main__':
-    app.run(threaded=True)
+    create_app()

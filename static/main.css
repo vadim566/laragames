@@ -20,6 +20,10 @@ body {
     background-color: #5f788a;
   }
   
+  .navbar-brand {
+	   font-size: 36px;
+ 
+ }
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
@@ -84,10 +88,14 @@ body {
   }
   
   .account-heading {
-    font-size: 2.5rem;
+    font-size: 36px;
   }
 
-  
+    .items {
+		 flex-grow: 2;
+	   display: block;
+	  
+  }
 
 
   .dragNdrop {
@@ -98,12 +106,9 @@ body {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-size: 36px;
     background-color: #fff;
-    overflow: hidden;
-    padding-bottom:58px;
-    overflow-y:scroll;
-    overflow-x:scroll;
+  
    
 }
 .fixed-content {
@@ -199,7 +204,7 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 36px;
   margin: 4px 2px;
   cursor: pointer;
     text-transform: capitalize;
@@ -214,7 +219,7 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 36px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -228,7 +233,7 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 36px;
   margin: 4px 2px;
   cursor: pointer;
     text-transform: capitalize;
@@ -243,7 +248,7 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 36px;
   margin: 4px 2px;
   cursor: pointer;
     text-transform: capitalize;
@@ -271,10 +276,14 @@ background: radial-gradient(circle, rgba(217,238,255,1) 0%, rgba(255,255,255,1) 
 
 .item {
  
+	border: 20px solid #d9dbda;
+	font-size: 12px;
+	color: #000000
     height: 100px;
     width: 100px;
-    background-color: #1fb3ab;
-	flex-direction: column;
+    background-color:#F0F8FF;
+	border-width: thin;
+	flex-direction: row;
     border-color: black;
     text-align: center;
 
