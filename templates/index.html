@@ -2,14 +2,14 @@
 {% block title %}Index{%endblock%}
 {% block content %}
 <t1>Welcome to Lara games and stories platform</t1>
-<p> in this Web u will read stories in many languages and also  you can exercise them with games from each stories!</p>
+<p> in this Web you will read stories in many languages and also  you can exercise them with games from each story!</p>
 <button class='btn btn-outline-primary' onclick="showGamesDifficults()">Show Stories and Games</button>
 <div class="language">
 
 </div>
 <div class='difficulties'>
 <button class='btn btn-outline-primary-easy' onclick="showGamesEasy()">Beginner</button>
-<button class='btn btn-outline-primary-med' onclick="showGamesMed()">Intermidate</button>
+<button class='btn btn-outline-primary-med' onclick="showGamesMed()">Intermediate</button>
 <button class='btn btn-outline-primary-high' onclick="showGamesHigh()">Expert</button>
 </div>
 <div class='stories-container'>
@@ -39,13 +39,13 @@
 
          <div class='easy'>
      <form action="/game4/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 4 new" type="submit">Match the annunciator to phrase </button>
+         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 4 new" type="submit">Match the annunciation to phrase </button>
 
 	 </form>
 
 
      <form action="/game5/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciator</button>
+         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciation</button>
 
 	 </form>
 

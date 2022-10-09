@@ -32,54 +32,57 @@
     <input type="hidden" id="option" name="option" value="">
     <input type="submit" class="btn btn-primary" name="option" id="radop4"   autocomplete="off" checked>
 </form>
- 
 
-        </div>
-        </div>
-        <div class="dragNdrop">
-		<div class="sandbox">
-			 
-		
-		<div items>
-		<div class="item" id="item1" draggable="true" {{split_a0}}="{{split_a0}}">
+
+
+
+
+
+
+           <span items>
+		<div class="item col-sm" id="item1" draggable="true" name="{{split_a0}}">
 		{{split_a0}}
                 </div>
-		<div class="item" id="item2" draggable="true" name="{{split_a1}}">
+		<div class="item col-sm" id="item2" draggable="true" name="{{split_a1}}">
                 {{split_a1}}
 				</div>
-<div class="item" id="item3" draggable="true" name="{{split_a2}}">
+<div class="item col-sm" id="item3" draggable="true" name="{{split_a2}}">
                 
 				{{split_a2}}
 				
 				</div>
 				
-<div class="item" id="item4" draggable="true" name="{{split_a3}}">
+<div class="item col-sm" id="item4" draggable="true" name="{{split_a3}}">
                 
 				{{split_a3}}
 				
 				</div>	
-<div class="item" id="item5" draggable="true" name="{{split_a4}}" >
+<div class="item col-sm" id="item5" draggable="true" name="{{split_a4}}" >
                 
 				{{split_a4}}
 				
 				</div>	
-</div>				
+</span>
+
 </br>
 						
-		
+		<div class="d-flex p-3 bg-secondary text-black">
         <div class="drop-targets">
-         
+
             <div class="box" id="box1"></div>
             <div class="box" id="box2"></div>
 			<div class="box" id="box3"></div>
 			<div class="box" id="box4"></div>
-			<div class="box" id="box5"></div>
+            <div class="box" id="box5"></div>
+  </div>
 			</div>
         </div>
 	</div>
 </div>
 	
 	</div>
+     </div>
+        </div>
     <script>
 const item = document.querySelector('#item1');
 const item1 = document.querySelector('#item2');
