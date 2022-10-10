@@ -74,7 +74,8 @@ def get_language():
     language = []
     for s in onlydir:
         conf_file = compiled_path + slash + str(s) + str(corpus_suffix)
-        language.append(lara_utils.read_json_file(conf_file)['language'])
+        language_tmp=lara_utils.read_json_file(conf_file)['language']
+        language.append(language_tmp)
 
 
 # returning a list with files in dir_path
@@ -334,7 +335,17 @@ get_language()
 @app.route('/home')
 @app.route('/')
 def home():
-    return render_template('index.html', content=zip(onlydir, language), lang=language, link_html=main_page_hyper)
+    lg=[]
+    dic_lang=dict(zip(onlydir,language))
+    for lan in set(language):
+        lg.append([])
+        for key, val in dic_lang.items():
+            if val == lan:
+                lg[-1].append(key)
+    tmp_lg=list(set(language))
+    stories_per_lang=zip(lg,tmp_lg)
+    stories_per_lang=list(stories_per_lang)
+    return render_template('index.html', content=stories_per_lang, lang=tmp_lg, link_html=main_page_hyper)
 
 
 # registration and login
