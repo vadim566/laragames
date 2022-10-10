@@ -1,0 +1,1028 @@
+[
+    [
+        {
+            "corpus": "local_files",
+            "css_file": "normal_page.css",
+            "page": 1
+        },
+        [
+            [
+                "/*<h2>WELCOME TO COUNTRY*/",
+                "WELCOME TO COUNTRY",
+                [
+                    [
+                        "/*<h2>WELCOME TO COUNTRY*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</h2> \n<table>\n<tr><td>*/Ngarrinyarlboo Barngarlamadha#Barngarlamadha# nhai yoorarri#yoora# yardalyga#yarda#, wardarnalyga#wardarna#, gawoolyga#gawoo# indoo./**/",
+                "Ngarrinyarlboo Barngarlamadha nhai yoorarri yardalyga, wardarnalyga, gawoolyga indoo.",
+                [
+                    [
+                        "/*</h2> \n<table>\n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Barngarlamadha",
+                        "Barngarlamadha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhai",
+                        "nhai"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yardalyga",
+                        "yarda"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "wardarnalyga",
+                        "wardarna"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "gawoolyga",
+                        "gawoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "indoo",
+                        "indoo"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td> <td> We are the Barngarla people, the first people of this country and of the sea and the water.*/",
+                "We are the Barngarla people, the first people of this country and of the sea and the water.",
+                [
+                    [
+                        "/*</td> <td> We are the Barngarla people, the first people of this country and of the sea and the water.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td></tr> \n<tr><td>*/Ngarrinyarlboo nhagoodhoo#nhagoo# wilya ngamirri#ngami# babirri#babi# galgarridni barnmalyga#barnma#./**/",
+                "Ngarrinyarlboo nhagoodhoo wilya ngamirri babirri galgarridni barnmalyga.",
+                [
+                    [
+                        "/*</td></tr> \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhagoodhoo",
+                        "nhagoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wilya",
+                        "wilya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "ngamirri",
+                        "ngami"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "babirri",
+                        "babi"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "galgarridni",
+                        "galgarridni"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "barnmalyga",
+                        "barnma"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We honour the spirits of our mothers and fathers gone before us.*/",
+                "We honour the spirits of our mothers and fathers gone before us.",
+                [
+                    [
+                        "/* </td> <td> We honour the spirits of our mothers and fathers gone before us.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td></tr>  \n<tr><td>*/Ngarrinyarlboo Barngarlamadha#Barngarlamadha#, yarda, wardarna, gawoo galgarridhi malboorri#malboo#, Badharra Wambirri yoorarriroo#yoora#./**/",
+                "Ngarrinyarlboo Barngarlamadha, yarda, wardarna, gawoo galgarridhi malboorri, Badharra Wambirri yoorarriroo.",
+                [
+                    [
+                        "/* </td></tr>  \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Barngarlamadha",
+                        "Barngarlamadha"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "yarda",
+                        "yarda"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "wardarna",
+                        "wardarna"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "gawoo",
+                        "gawoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "galgarridhi",
+                        "galgarridhi"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "malboorri",
+                        "malboo"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "Badharra",
+                        "badharra"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Wambirri",
+                        "wambirri"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarriroo",
+                        "yoora"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We are the Barngarla People, the traditional custodians of the ancestral lands, seas and waters of the Lower Eyre Peninsula.*/",
+                "We are the Barngarla People, the traditional custodians of the ancestral lands, seas and waters of the Lower Eyre Peninsula.",
+                [
+                    [
+                        "/* </td> <td> We are the Barngarla People, the traditional custodians of the ancestral lands, seas and waters of the Lower Eyre Peninsula.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td></tr>  \n<tr><td>*/Ngarrinyarlboo Barngarlamadhanga#Barngarlamadha# yarda wardarna gawoo moondalyabmidhi#moondalyabmi#, yarda wardarna gawoo Badharra Wambirri yoorarriroo#yoora#./**/",
+                "Ngarrinyarlboo Barngarlamadhanga yarda wardarna gawoo moondalyabmidhi, yarda wardarna gawoo Badharra Wambirri yoorarriroo.",
+                [
+                    [
+                        "/*</td></tr>  \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Barngarlamadhanga",
+                        "Barngarlamadha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yarda",
+                        "yarda"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wardarna",
+                        "wardarna"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "gawoo",
+                        "gawoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "moondalyabmidhi",
+                        "moondalyabmi"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "yarda",
+                        "yarda"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wardarna",
+                        "wardarna"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "gawoo",
+                        "gawoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Badharra",
+                        "badharra"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "Wambirri",
+                        "wambirri"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarriroo",
+                        "yoora"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We the Barngarla People have deep feelings of attachment and connection to the country, seas and waters of the Lower Eyre Peninsula.*/",
+                "We the Barngarla People have deep feelings of attachment and connection to the country, seas and waters of the Lower Eyre Peninsula.",
+                [
+                    [
+                        "/* </td> <td> We the Barngarla People have deep feelings of attachment and connection to the country, seas and waters of the Lower Eyre Peninsula.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td></tr>  \n<tr><td>*/Ngarrinyarlboo nhagoodhoo#nhagoo# wilya yoorarri#yoora# boogininya, ngarrinyarlbooroo#ngarrinyarlboo# ngamirri#ngami# babirri#babi# - yardalyga#yarda# ngamirri#ngami# babirri#babi# boogininya, yadhanyaroodni#yadhanyaroo#, wildyalidni#wildyali#./**/",
+                "Ngarrinyarlboo nhagoodhoo wilya yoorarri boogininya, ngarrinyarlbooroo ngamirri babirri - yardalyga ngamirri babirri boogininya, yadhanyaroodni, wildyalidni.",
+                [
+                    [
+                        "/*</td></tr>  \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhagoodhoo",
+                        "nhagoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wilya",
+                        "wilya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "boogininya",
+                        "boogininya"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "ngarrinyarlbooroo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "ngamirri",
+                        "ngami"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "babirri",
+                        "babi"
+                    ],
+                    [
+                        " - ",
+                        ""
+                    ],
+                    [
+                        "yardalyga",
+                        "yarda"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "ngamirri",
+                        "ngami"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "babirri",
+                        "babi"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "boogininya",
+                        "boogininya"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "yadhanyaroodni",
+                        "yadhanyaroo"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "wildyalidni",
+                        "wildyali"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We pay our respects and honour the spirits of our Elders, our mothers and fathers of this land - past, present and future.*/",
+                "We pay our respects and honour the spirits of our Elders, our mothers and fathers of this land - past, present and future.",
+                [
+                    [
+                        "/* </td> <td> We pay our respects and honour the spirits of our Elders, our mothers and fathers of this land - past, present and future.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td></tr>  \n<tr><td>*/Ngarrinyarlboo nhagoodhoo#nhagoo# mirinya yoorarri#yoora# wardandanga#wardanda#, mirinya yoorarri#yoora# yagalarri#yagala# gayalanga#gayala#, inhamadha#inha# yarda malboorri#malboo#./**/",
+                "Ngarrinyarlboo nhagoodhoo mirinya yoorarri wardandanga, mirinya yoorarri yagalarri gayalanga, inhamadha yarda malboorri.",
+                [
+                    [
+                        "/*</td></tr>  \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhagoodhoo",
+                        "nhagoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wardandanga",
+                        "wardanda"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yagalarri",
+                        "yagala"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "gayalanga",
+                        "gayala"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "inhamadha",
+                        "inha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yarda",
+                        "yarda"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "malboorri",
+                        "malboo"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* */Ngarrinyarlboo nhagoodhoo#nhagoo# mirinya yoorarri#yoora# idna galgarridningi#galgarridni# ngoogadha#ngooga#, idna gadnyinirri#gadnyi#, gabmoonarri#gabmoona#, mangardirri#mangardi#, dhabmoordirri#dhabmoordi#./**/",
+                "Ngarrinyarlboo nhagoodhoo mirinya yoorarri idna galgarridningi ngoogadha, idna gadnyinirri, gabmoonarri, mangardirri, dhabmoordirri.",
+                [
+                    [
+                        "/* */",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhagoodhoo",
+                        "nhagoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "idna",
+                        "idna"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "galgarridningi",
+                        "galgarridni"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "ngoogadha",
+                        "ngooga"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "idna",
+                        "idna"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "gadnyinirri",
+                        "gadnyi"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "gabmoonarri",
+                        "gabmoona"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "mangardirri",
+                        "mangardi"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "dhabmoordirri",
+                        "dhabmoordi"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* */Idna widla moordoo ngarlarri#ngarla# wardandanga#wardanda# yarnbalanidhi#yarnbala#./**/",
+                "Idna widla moordoo ngarlarri wardandanga yarnbalanidhi.",
+                [
+                    [
+                        "/* */",
+                        ""
+                    ],
+                    [
+                        "Idna",
+                        "idna"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "widla",
+                        "widla"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "moordoo",
+                        "moordoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "ngarlarri",
+                        "ngarla"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wardandanga",
+                        "wardanda"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yarnbalanidhi",
+                        "yarnbala"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We acknowledge Aboriginal and Torres Strait Islander People as the original inhabitants of Australia and recognise these unique cultures as part of the rich cultural heritage of all Australians.*/",
+                "We acknowledge Aboriginal and Torres Strait Islander People as the original inhabitants of Australia and recognise these unique cultures as part of the rich cultural heritage of all Australians.",
+                [
+                    [
+                        "/* </td> <td> We acknowledge Aboriginal and Torres Strait Islander People as the original inhabitants of Australia and recognise these unique cultures as part of the rich cultural heritage of all Australians.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/*</td></tr>    \n<tr><td>*/Ngarrinyarlboo nhagoodhoo#nhagoo# mirinya yoorarri#yoora# wardandanga#wardanda#, mirinya yoorarri#yoora# yagalarri#yagala# gayalanga#gayala#./**/",
+                "Ngarrinyarlboo nhagoodhoo mirinya yoorarri wardandanga, mirinya yoorarri yagalarri gayalanga.",
+                [
+                    [
+                        "/*</td></tr>    \n<tr><td>*/",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nhagoodhoo",
+                        "nhagoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "wardandanga",
+                        "wardanda"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yagalarri",
+                        "yagala"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "gayalanga",
+                        "gayala"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* */Ngarrinyarlboo inhamadha#inha# nganyadha#nganya#, inhamadha#inha# moondooldoo yoorarringi#yoora# warirridhi#warirri#, mirinya yoorarri#yoora# goodyoolganhadningi#goodyoolganha# warirridhi#warirri#./**/",
+                "Ngarrinyarlboo inhamadha nganyadha, inhamadha moondooldoo yoorarringi warirridhi, mirinya yoorarri goodyoolganhadningi warirridhi.",
+                [
+                    [
+                        "/* */",
+                        ""
+                    ],
+                    [
+                        "Ngarrinyarlboo",
+                        "ngarrinyarlboo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "inhamadha",
+                        "inha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "nganyadha",
+                        "nganya"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "inhamadha",
+                        "inha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "moondooldoo",
+                        "moondooldoo"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarringi",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "warirridhi",
+                        "warirri"
+                    ],
+                    [
+                        ", ",
+                        ""
+                    ],
+                    [
+                        "mirinya",
+                        "mirinya"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "yoorarri",
+                        "yoora"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "goodyoolganhadningi",
+                        "goodyoolganha"
+                    ],
+                    [
+                        " ",
+                        ""
+                    ],
+                    [
+                        "warirridhi",
+                        "warirri"
+                    ],
+                    [
+                        "./**/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td> <td> We recognise the important role that Aboriginal and Torres Strait Islander People have within community and country.*/",
+                "We recognise the important role that Aboriginal and Torres Strait Islander People have within community and country.",
+                [
+                    [
+                        "/* </td> <td> We recognise the important role that Aboriginal and Torres Strait Islander People have within community and country.*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ],
+            [
+                "/* </td></tr>\n</table>\n \n*/",
+                "",
+                [
+                    [
+                        "/* </td></tr>\n</table>\n \n*/",
+                        ""
+                    ]
+                ],
+                "local_files"
+            ]
+        ]
+    ]
+]
