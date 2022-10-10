@@ -109,8 +109,10 @@ and save inside it
 ```
 ## Deployment into AWS
 1.create EC2 instance using centos7
+
 2.configure EC2 machine 
-2.Use the next script as USER DATA in EC2
+
+3.Use the next script as USER DATA in EC2
 ```bash
   #!/bin/bash
 
