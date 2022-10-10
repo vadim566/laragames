@@ -19,14 +19,17 @@
 
 <div class="{{ line[1] }}">
 <div class="card col-md-12 col-sm-12">
+    {% for story_name in  line[0] %}
 <div class="row">
+
     <div class=" col-md-12 col-sm-12" >
   <img class="card-img-top" src="\static\logoPSDtransferd.png"  style="max-width: 30%;" alt="image">
+
   <div class="card-body">
-    <h5 class="card-title">{{line[0]}}</h5>
+    <h5 class="card-title">{{story_name}}</h5>
     <h5 class="card-text">read the story in language {{line[1]}}.</h5>
-     <form action="/index/{{line[0]}}" method="post">
-         <button class="btn btn-warning" name="{{line[0]}}" type="submit">Read the story {{line[0]}}</button>
+     <form action="/index/{{story_name}}" method="post">
+         <button class="btn btn-warning" name="{{story_name}}" type="submit">Read the story {{story_name}}</button>
      </form>
      </div>
      </div>
@@ -38,19 +41,19 @@
 
 
          <div class='easy'>
-     <form action="/game4/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 4 new" type="submit">Match the annunciation to phrase </button>
+     <form action="/game4/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-easy" name="{{story_name}}game 4 new" type="submit">Match the annunciation to phrase </button>
 
 	 </form>
 
 
-     <form action="/game5/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 5 new" type="submit">Match the phrase to annunciation</button>
+     <form action="/game5/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-easy" name="{{story_name}}game 5 new" type="submit">Match the phrase to annunciation</button>
 
 	 </form>
 
-    <form action="/game6/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{line[0]}}game 6 new" type="submit">Select the missing Word</button>
+    <form action="/game6/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-easy" name="{{story_name}}game 6 new" type="submit">Select the missing Word</button>
 
 	 </form>
 
@@ -58,42 +61,42 @@
 
 
 <div class='medium'>
-      <form action="/game7/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 7 new" type="submit">Fill the missing Word</button>
+      <form action="/game7/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-med" name="{{story_name}}game 7 new" type="submit">Fill the missing Word</button>
 
 	 </form>
 
-	       <form action="/game8/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 8 new" type="submit">Drag the words in the right order</button>
+	       <form action="/game8/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-med" name="{{story_name}}game 8 new" type="submit">Drag the words in the right order</button>
 
 	 </form>
 
-	      <form action="/game9/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-med" name="{{line[0]}}game 9 new" type="submit">Select the missing words 1</button>
+	      <form action="/game9/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-med" name="{{story_name}}game 9 new" type="submit">Select the missing words 1</button>
 
 	 </form>
 	 </div>
 
 
 	 <div class='high'>
-	    <form action="/game10/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 10 new" type="submit">Select the missing words 2</button>
+	    <form action="/game10/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-high" name="{{story_name}}game 10 new" type="submit">Select the missing words 2</button>
 
 	 </form>
 
-	     <form action="/game11/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 11 new" type="submit">Fill the missing Words</button>
+	     <form action="/game11/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-high" name="{{story_name}}game 11 new" type="submit">Fill the missing Words</button>
 
 	 </form>
-          <form action="/game12/{{line[0]}}" method="get">
-         <button class="btn btn-outline-primary-high" name="{{line[0]}}game 12 new" type="submit">Fill the missing Phrase</button>
+          <form action="/game12/{{story_name}}" method="get">
+         <button class="btn btn-outline-primary-high" name="{{story_name}}game 12 new" type="submit">Fill the missing Phrase</button>
 
 	 </form>
     </div> 
 	
 	
     </div>
-
+    {% endfor %}
 </div>
 </div>
 
