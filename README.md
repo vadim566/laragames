@@ -128,8 +128,9 @@ yum --help #check if centos
 if [ $? -eq 0 ]
 then
 	#general centos updates
+	sudo yum update -y
 	
-	#sudo yum update -y
+	#install git
 	sudo yum install git -y
 	
 	##get git latest version
