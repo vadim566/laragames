@@ -5,6 +5,34 @@
 # LARAGAME
 
 LARA is a platform of studying L1 and L2 community resource
+## Roadmap
+## Done 
+- Learn importing LARA files
+- Learn creating abstract html from LARA
+- routing to lara story with flask
+- Building games
+- Building backend
+- Building frontend
+- creating register/login system
+- creating progression dashboard 
+- creating level badges
+
+## Future Features
+- Improving UI/UX
+- creating more Games based on pictures
+- working as distrbuted system
+- maintaing the full list of working games in LARA
+- phrase failed summoning for re training
+- bug fixing inside game to handles only words without symbols
+
+## Features
+
+- Learn language in a fun way
+- Progression in learning
+- Many diffuclties for range of users
+- Supporting language that LARA Supporting
+- Generating games for each language
+
 
 ## Toplogy
 The main content is imported from main LARA SVN , that store each story.
@@ -28,37 +56,6 @@ each player can accses into the system whenever he is registrated or not.
 Each game will have its own  db when all the games tables connected to user tables,
 all queries based on selecting the PK of the user and taking the matching rows from each game table.
 ![App Screenshot](https://i.ibb.co/Sw8sRTJ/erdlaragames.png)
-## Roadmap
-## Done 
-- Learn importing LARA files
-- Learn creating abstract html from LARA
-- routing to lara story with flask
-- Building games
-- Building backend
-- Building frontend
-- creating register/login system
-- creating progression dashboard 
-- creating level badges
-
-## Future Features
-- Improving UI/UX
-- creating more Games based on pictures
-- working as distrbuted system
-- maintaing the full list of working games in LARA
-- phrase failed summoning for re training
-- bug fixing inside game to handles only words without symbols
-
-
-
-
-## Features
-
-- Learn language in a fun way
-- Progression in learning
-- Many diffuclties for range of users
-- Supporting language that LARA Supporting
-- Generating games for each language
-
 
 
 ## Local Installation
@@ -156,7 +153,38 @@ else
 	
 fi
 ```
+4. Add Availability script inside laragames dir
+```bash
+vi HA_python3.sh
+```
+```bash
+   #!/bin/bash
+##get the app.py from process ps aux
+pid_info=` ps aux|grep python3|grep app.py|awk '{print $12}'`
+#python_expected="/laragames/app.py"
+pid_name="app.py"
 
+##if there is process name running 
+if [[ $pid_info = $pid_name ]]
+then
+        echo 'works'
+else##if not runing then start ve env and start app
+        echo 'not works'
+        echo 'starting virtual env'
+        source /laragames/venv/bin/activate
+        cd /laragames/
+        python3 app.py
+
+fi
+```
+5.Go into root user and schedule the health check every 15 min
+```bash
+crontab -e
+```
+```bash
+#MM HH DOM mm DOW
+30 * * * * /laragames/HA_python3.sh &>> /var/log/monit_apppy.log
+```
 
 ## Contributing and adding more games
 
