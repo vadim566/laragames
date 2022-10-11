@@ -158,7 +158,7 @@ fi
 vi HA_python3.sh
 ```
 ```bash
-   #!/bin/bash
+#!/bin/bash
 ##get the app.py from process ps aux
 pid_info=` ps aux|grep python3|grep app.py|awk '{print $12}'`
 #python_expected="/laragames/app.py"
