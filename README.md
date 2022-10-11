@@ -111,7 +111,7 @@ and save inside it
 
 3.Use the next script as USER DATA in EC2
 ```bash
-  #!/bin/bash
+#!/bin/bash
 
 #deployment of LARA_GAMES as Virtual machine
 
