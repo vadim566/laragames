@@ -773,10 +773,10 @@ def generate_game6(story_name, file=None):
         bad_words_arr = bad_match[i].split(' ')  # split where is white space
         words_ct = bad_match[i].count(" ")
         bad_rand_ct = random.sample(range(0, words_ct), 1)
-        bad_words.append(bad_words_arr[bad_rand_ct[0]])  # bad answer
+        bad_words.append(clean_word(bad_words_arr[bad_rand_ct[0]]))  # bad answer
 
     # send the right missing word and wrong words
-
+    true_word=clean_word(true_word)
     print("q:" + missing_sent)
     print("t_a:" + true_word)
     print(bad_words)
@@ -1031,12 +1031,12 @@ def generate_game9(story_name, file=None):
         words_ct = bad_match[i].count(" ")
         bad_rand_ct = random.sample(range(0, words_ct), 1)
         if bad_rand_ct[0] + 1 >= words_ct and bad_rand_ct[0] - 1 >= 0:
-            bad_words.append(bad_words_arr[bad_rand_ct[0] - 1] + ' ' + bad_words_arr[bad_rand_ct[0]])
+            bad_words.append(clean_word(bad_words_arr[bad_rand_ct[0] - 1]) + ' ' + clean_word(bad_words_arr[bad_rand_ct[0]]))
         else:
-            bad_words.append(bad_words_arr[bad_rand_ct[0]] + ' ' + bad_words_arr[bad_rand_ct[0] + 1])
+            bad_words.append(clean_word(bad_words_arr[bad_rand_ct[0]]) + ' ' + clean_word(bad_words_arr[bad_rand_ct[0] + 1]))
 
     # send the right missing word and wrong words
-
+    true_word=clean_word(true_word)
     print("q:" + missing_sent)
     print("t_a:" + true_word)
     print(bad_words)
@@ -1130,7 +1130,7 @@ def generate_game10(story_name, file=None):
     words_arr = true_match[0].split(' ')
     # true_word=words_arr[rand_ct[0]]#right answer
 
-    true_word = words_arr[rand_ct[0]] + ',' + words_arr[rand_ct[1]]
+    true_word = clean_word(words_arr[rand_ct[0]]) + ',' + clean_word(words_arr[rand_ct[1]])
 
     words_arr[rand_ct[0]] = "[--------]"
     words_arr[rand_ct[1]] = "[--------]"
@@ -1143,7 +1143,7 @@ def generate_game10(story_name, file=None):
         words_ct = bad_match[i].count(" ")
         bad_rand_ct = random.sample(range(0, words_ct), 2)
 
-        bad_words.append(bad_words_arr[bad_rand_ct[0]] + ',' + bad_words_arr[bad_rand_ct[1]])
+        bad_words.append(clean_word(bad_words_arr[bad_rand_ct[0]]) + ',' + clean_word(bad_words_arr[bad_rand_ct[1]]))
 
     # send the right missing word and wrong words
 
@@ -1166,7 +1166,7 @@ def loading_file_pic_g10(filename, story_name):
 
 
 @app.route('/game10Submit/', methods=['GET', 'POST'])
-def submit_g10(option=0,answer=0,default_value=0):
+def submit_g10(default_value=0):
 
     name = request.form.get('storyname', default_value)
     option = request.form.get('option', default_value)
