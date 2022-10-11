@@ -177,7 +177,7 @@ else##if not runing then start ve env and start app
 
 fi
 ```
-5.Go into root user and schedule the health check every 15 min
+5.Go into root user and schedule the health check every 30 min
 ```bash
 crontab -e
 ```
