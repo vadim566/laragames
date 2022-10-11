@@ -238,6 +238,16 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
   cursor: pointer;
     text-transform: capitalize;
 }
+ul{
+    align-items: center;
+}
+form{
+align-items: center;
+}
+.btn-primary{
+    text-align: center;
+    font-size: 36px;
+}
 
 .btn-outline-primary-high
 {
