@@ -177,13 +177,13 @@ else##if not runing then start ve env and start app
 
 fi
 ```
-5.Go into root user and schedule the health check every 30 min
+5.Go into root user and schedule the health check every 1 min
 ```bash
 crontab -e
 ```
 ```bash
 #MM HH DOM mm DOW
-30 * * * * /laragames/HA_python3.sh &>> /var/log/monit_apppy.log
+* * * * * /laragames/HA_python3.sh &>> /var/log/monit_apppy.log
 ```
 
 ## Contributing and adding more games
