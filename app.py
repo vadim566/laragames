@@ -1396,11 +1396,8 @@ def submit_g12(option=0,answer=0):
     return redirect(url_for('generate_game12', story_name=name))
 
 def create_app():
-    app.run(host='0.0.0.0',port=80, threaded=True)
+    app.run(host='0.0.0.0', threaded=True)
 
-
-def create_app_tests():
-    app.run(host='127.0.0.1')
-
+run=create_app()
 if __name__ == '__main__':
     create_app()
