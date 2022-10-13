@@ -4,6 +4,10 @@
 
 # LARAGAME
 
+### heroko deployment not working because of exceeding the 500mb, 
+### Who ever want to see a demo should visit (tempory dns)  
+#### http://health-elb-2092252127.us-east-1.elb.amazonaws.com/
+
 LARA is a platform of studying L1 and L2 community resource
 ## Roadmap
 ## Done 
