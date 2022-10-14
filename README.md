@@ -201,7 +201,7 @@ If u want to add more games , you should follow the next steps
 
 
 ## Adding games
-1.Create tbl_db in sql_aclhemy for tracking stats of each user,
+1.Create tbl_db in sql_aclhemy for tracking stats of each user,(./db/db.py)
 first append CLASS user and add the next line:(swap #X# in game name)
 ```python
 class User(db.Model, UserMixin):
@@ -227,41 +227,55 @@ change the #X# below
 @app.route('/game#X#/<story_name>', methods=['GET'])
 def generate_game#X#(story_name, file=None):
 #logics
-return render_template('game#X#_template.html' )
+   from games_logic.game#X# import generate_game#X# as game#X#
+   return game#X#(story_name, file)
 
 
 #let you browse the story and etc
 @app.route('/game#X#/<story_name>/<path:filename>', methods=['GET','POST'])
 def loading_file_pic_g#X#(filename,story_name):
- metaDataAudioDir = mypath + slash_clean + story_name + slash_clean+'audio'+slash_clean
-    audioVersions = dirinDir(metaDataAudioDir)
-return send_from_directory(metaDataAudioDir+slash_clean+audioVersions[0], filename)
+    return loading_file_pic(filename, story_name)
 
 #make sure you creating submit route
+@app.route('/game#X#Submit/', methods=['GET', 'POST'])
+def submit_g#X#(option=0,answer=0):
+    from games_logic.game#X# import submit_g#X# as submit#X#
+    return submit#X#(option,answer)
 
-@app.route('/game#X#Submit/', methods=['GET','POST'])
-def submit_g#X#():
+```
+3.add under ./games_logic/ new folder name by your game number
 
-    default_value=0
-    name=request.form.get('storyname',default_value)
-    option=request.form.get('option',default_value)
-    answer=request.form.get('answer',default_value)
-    uid=request.form.get('uid',default_value)
+4.create __init__.py file 
 
-    print("name: ",name)
-    print("option: " ,option)
-    print("answer: ",answer)
+5.inside the __init__.py file put all the game logic function and the submit function, both function must render html as a return value
+for example(swap #x# the game number
+```python
+from flask import render_template
 
+def generate_game#X#(story_name, file=None):
+#games logics ....
+ret_value="hello world"
+    return render_template('game#X#_template.html',value_to_front=ret_value)
 
-    if option == answer:
-        item=tbl_game#X#(score=1,user_id=uid)
-        flash('Right answer','success')
+def submit_g4(option=0, answer=0, default_value=0):
+
+#get data from front optional
+   option = request.form.get('option')
+    name = request.form.get('storyname', default_value)
+    answer = request.form.get('answer', default_value)
+    uid = request.form.get('uid', default_value)
+    
+ #if its the right option
+    if option.lower() == answer.lower():
+        item = tbl_game4(score=1, user_id=uid, question=name)
+        flash('Right answer', 'success')#blink it as it good
     else:
-        item=tbl_game#X#(score=0, user_id=uid)
-        flash('bad answer', 'danger')
+        item = tbl_game4(score=0, user_id=uid, question=name)
+        flash('bad answer', 'danger')#blink it as it bad
+    #commit to db
     db.session.add(item)
     db.session.commit()
-    return redirect(url_for('generate_game#X#',story_name=name))
+    return redirect(url_for('app.generate_game#X#', story_name=name))#load the next story
 
 ```
 
