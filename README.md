@@ -312,7 +312,7 @@ To run this project, you will need to install the requirement file as it describ
 * Dashboard and level progression with badges
 * ![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
 
-##Lara Game tree files project
+## Lara Game tree files project
 ```bash
 .
 ├── app.py
