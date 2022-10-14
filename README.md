@@ -153,7 +153,7 @@ then
 	
 	##run app
 	source venv/bin/activate
-	python3 lara_games_app.py
+	python3 app.py
 else
 	echo "The script built for centos7"
 	
@@ -165,9 +165,9 @@ vi HA_python3.sh
 ```
 ```bash
 #!/bin/bash
-##get the lara_games_app.py from process ps aux
-pid_info=` ps aux|grep python3|grep lara_games_app.py|awk '{print $12}'`
-#python_expected="/laragames/lara_games_app.py"
+##get the app.py from process ps aux
+pid_info=` ps aux|grep python3|grep app.py|awk '{print $12}'`
+#python_expected="/laragames/app.py"
 pid_name="app.py"
 
 ##if there is process name running 
@@ -179,7 +179,7 @@ else##if not runing then start ve env and start app
         echo 'starting virtual env'
         source /laragames/venv/bin/activate
         cd /laragames/
-        python3 lara_games_app.py
+        python3 app.py
 
 fi
 ```

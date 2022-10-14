@@ -1,7 +1,7 @@
 #!/bin/bash
-##get the lara_games_app.py from process ps aux
+##get the app.py from process ps aux
 pid_info=` ps aux|grep python3|grep lara_games_app.py|awk '{print $12}'`
-#python_expected="/laragames/lara_games_app.py"
+#python_expected="/laragames/app.py"
 pid_name="app.py"
 
 ##if there is process name running 
