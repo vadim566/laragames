@@ -257,7 +257,7 @@ def generate_game#X#(story_name, file=None):
 ret_value="hello world"
     return render_template('game#X#_template.html',value_to_front=ret_value)
 
-def submit_g4(option=0, answer=0, default_value=0):
+def submit_g#X#(option=0, answer=0, default_value=0):
 
 #get data from front optional
    option = request.form.get('option')
