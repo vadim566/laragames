@@ -312,6 +312,103 @@ To run this project, you will need to install the requirement file as it describ
 * Dashboard and level progression with badges
 * ![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
 
+##Lara Game tree files project
+.
+├── app.py
+├── config
+│   ├── config.py
+│   ├── __init__.py
+├── dashboard
+│   ├── __init__.py
+├── db
+│   ├── db.py
+│   ├── __init__.py
+├── Dockerfile
+├── forms
+│   ├── forms.py
+│   ├── __init__.py
+│   
+├── functions
+│   ├── functions.py
+│   ├── __init__.py
+│  
+├── games_logic
+│   ├── game10
+│   │   ├── __init__.py
+│   ├── game11
+│   │   ├── __init__.py
+│   ├── game12
+│   │   ├── __init__.py
+│   │   
+│   ├── game4
+│   │   ├── __init__.py
+│   │  
+│   ├── game5
+│   │   ├── __init__.py
+│   ├── game6
+│   │   ├── __init__.py
+│   ├── game7
+│   │   ├── __init__.py
+│   ├── game8
+│   │   ├── __init__.py
+│   ├── game9
+│   │   ├── __init__.py
+│   ├── __init__.py
+│
+├── HA_python3.sh
+├── __init__.py
+├── lara_games_routes
+│   ├── __init__.py
+│   ├── lara_games_routes.py
+│
+├── lara_init.sh
+├── README.md
+├── requirements.txt
+│
+├── secret
+│   ├── __init__.py
+│   └── secret.py
+│
+├── site.db
+├── static
+│   ├── levels
+│   │   ├── 10.jpg
+│   │   ├── 1.gif
+│   │   ├── 1.jpg
+│   │   ├── 2.jpg
+│   │   ├── 3.jpg
+│   │   ├── 4.jpg
+│   │   ├── 5.jpg
+│   │   ├── 6.jpg
+│   │   ├── 7.jpg
+│   │   ├── 8.jpg
+│   │   └── 9.jpg
+│   ├── logoPSDtransferd.png
+│   └── main.css
+├── SVN
+│   └── trunk
+│       ├── compiled
+│		├── content
+│
+├── templates
+│   ├── account.html
+│   ├── base.html
+│   ├── game10_template.html
+│   ├── game11_template.html
+│   ├── game12_template.html
+│   ├── game4_template.html
+│   ├── game5_template.html
+│   ├── game6_template.html
+│   ├── game7_template.html
+│   ├── game8_template.html
+│   ├── game9_template.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   └── scorepage_template.html
+├
+
+2743 directories, 31823 files
 
 ## Appendix
 
