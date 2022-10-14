@@ -5,7 +5,7 @@ def create_app():
     app =init_app()
     app.register_blueprint(routes.app)
 
-    app.run(threaded=True)
+    app.run(host='0.0.0.0',threaded=True)
 
 
 if __name__=='__main__':
