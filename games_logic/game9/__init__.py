@@ -6,7 +6,7 @@ from db.db import tbl_game9
 from functions.functions import dirinDir, clean_word
 import random
 
-from lara_games_app import db
+from app import db
 
 
 def generate_game9(story_name, file=None):

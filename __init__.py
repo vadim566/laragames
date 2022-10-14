@@ -1,4 +1,4 @@
-from lara_games_app import init_app
+from app import init_app
 import lara_games_routes.lara_games_routes as routes
 
 def create_app():

@@ -6,7 +6,7 @@ from datetime import datetime
 from flask_login import UserMixin
 
 from functions.functions import get_language
-from lara_games_app import login_manager, db
+from app import login_manager, db
 
 
 @login_manager.user_loader

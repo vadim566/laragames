@@ -6,6 +6,6 @@ from db.db import tbl_game4
 from functions.functions import dirinDir
 import random
 
-from lara_games_app import db
+from app import db
 
 

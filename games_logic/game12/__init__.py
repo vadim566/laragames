@@ -6,7 +6,7 @@ from db.db import tbl_game12
 from functions.functions import dirinDir, clean_word
 import random
 
-from lara_games_app import db
+from app import db
 
 
 

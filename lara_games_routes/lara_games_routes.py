@@ -6,7 +6,7 @@ from flask import Flask, render_template, send_from_directory, redirect, url_for
 from flask_login import LoginManager, login_user, current_user, logout_user, login_required, UserMixin
 from flask import render_template, request, Blueprint
 
-from lara_games_app import db ,bcrypt
+from app import db ,bcrypt
 from db.db import User, tbl_game4, tbl_game5, tbl_game6, tbl_game7, tbl_game8, tbl_game9, tbl_game10, tbl_game11, \
     tbl_game12
 from forms.forms import RegistrationForm, LoginForm
