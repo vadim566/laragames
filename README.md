@@ -313,6 +313,7 @@ To run this project, you will need to install the requirement file as it describ
 * ![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
 
 ##Lara Game tree files project
+```bash
 .
 ├── app.py
 ├── config
@@ -407,7 +408,7 @@ To run this project, you will need to install the requirement file as it describ
 │   ├── register.html
 │   └── scorepage_template.html
 ├
-
+```
 2743 directories, 31823 files
 
 ## Appendix
