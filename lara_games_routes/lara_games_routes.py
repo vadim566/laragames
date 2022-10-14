@@ -286,52 +286,17 @@ def loading_file_pic_g4(filename, story_name):
     # File = metaDataAudioDir + audioVersions[0] + '/'+filename
     return send_from_directory(metaDataAudioDir + slash_clean + audioVersions[0], filename)
 
-from games_logic.game4 import submit_g4 as submit
+from games_logic.game4 import submit_g4 as submit4
 @app.route('/game4Submit/', methods=['GET', 'POST'])
 def submit_g4(option=0,answer=0,default_value=0):
-   return submit(option, answer, default_value)
+   return submit4(option, answer, default_value)
 
 
 """GAME 5"""
-
-
+from games_logic.game5 import generate_game5 as game5
 @app.route('/game5/<story_name>', methods=['GET'])
-def generate_game5(story_name, file=None):
-
-
-    metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
-    audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
-    File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
-    Metadata = lara_utils.read_json_file(File)
-    meta_dic = [{}]
-    for m in Metadata:
-        meta_dic[0].update({m['text']: m['file']})
-    sentance = []
-    sounds = []
-    for key, value in meta_dic[0].items():
-        sentance.append(key)
-        sounds.append(value)
-
-    """get random sentance"""
-    size_of_story = len(sentance)
-    rand_index = random.randint(0, size_of_story)
-
-    """gather 4 random index for 4 wrong answers """
-    rand_i = rand_index
-    fake_answer = []
-    for i in range(4):
-        rand_i = random.sample(range(0, size_of_story), 4)
-
-    true_match = [sentance[rand_index], sounds[rand_index]]
-    bad_match = [sounds[rand_i[0]], sounds[rand_i[1]], sounds[rand_i[2]], sounds[rand_i[3]]]
-
-    print(true_match)
-    print(bad_match)
-
-    return render_template('game5_template.html', t_answer=true_match[1], question=true_match[0],
-                           fake_answer_0=bad_match[0], fake_answer_1=bad_match[1], fake_answer_2=bad_match[2],
-                           fake_answer_3=bad_match[3], name=story_name)
+def generate_game5(story_name):
+    return game5(story_name)
 
 
 @app.route('/game4/index.html', methods=['GET'])
@@ -352,28 +317,10 @@ def loading_file_pic_g5(filename, story_name):
 def g5_back_home():
     return redirect(url_for('app.home'))
 
-
+from games_logic.game5 import submit_g5 as submit5
 @app.route('/game5Submit/', methods=['GET', 'POST'])
 def submit_g5(option=0,default_value=0):
-
-    name = request.form.get('storyname', default_value)
-    option = request.form.get('option', default_value)
-
-    uid = request.form.get('uid', default_value)
-
-    print("name: ", name)
-    print("option: ", option)
-
-    if option == '1':
-        item = tbl_game5(score=1, user_id=uid,question=name)
-        flash('Right answer', 'success')
-    else:
-        item = tbl_game5(score=0, user_id=uid,question=name)
-        flash('bad answer', 'danger')
-    db.session.add(item)
-    db.session.commit()
-
-    return redirect(url_for('app.generate_game5', story_name=name))
+    return submit5(option,default_value)
 
 
 """GAME 6"""
