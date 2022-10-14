@@ -1,8 +1,14 @@
 
 ![Logo](https://i.ibb.co/br8Ztt8/logo-PSDtransferd.png)
 
+#### heroko deployment not working because of exceeding the 500mb, 
+#### Who ever want to see a demo should visit  
+#### http://www.project-lara.online/
+
 
 # LARAGAME
+
+
 
 LARA is a platform of studying L1 and L2 community resource
 ## Roadmap

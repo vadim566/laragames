@@ -1,15 +1,12 @@
 
-import random
-from datetime import datetime
-from os import listdir
-from os.path import join, isdir, isfile
 
-from flask import Flask, render_template, send_from_directory, redirect, url_for, flash, request
+from flask import Flask
 # crypt passwords
 from flask_bcrypt import bcrypt, Bcrypt
-from flask_login import LoginManager, login_user, current_user, logout_user, login_required, UserMixin
+from flask_login import LoginManager
 # db
 from flask_sqlalchemy import SQLAlchemy
+
 
 from secret.secret import secret_db_key
 db=SQLAlchemy()
@@ -28,4 +25,5 @@ def init_app():
     login_manager.init_app(app)
 
     return app
+
 
