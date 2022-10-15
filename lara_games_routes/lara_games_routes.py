@@ -147,10 +147,11 @@ def fetch_g4(values):
 
 """GAME 5"""
 
-@app.route('/game5/<story_name>', methods=['GET'])
-def generate_game5(story_name):
+@app.route('/game5/<values>', methods=['GET'])
+def generate_game5(values):
+    values = split_values(values)
     from games_logic.game5 import generate_game5 as game5
-    return game5(story_name)
+    return game5(values[0],values[1],values[2])
 
 
 @app.route('/game5/index.html', methods=['GET'])
@@ -168,11 +169,15 @@ def g5_back_home():
     return redirect(url_for('app.home'))
 
 
-@app.route('/game5Submit/', methods=['GET', 'POST'])
-def submit_g5(option=0,default_value=0):
-    from games_logic.game5 import submit_g5 as submit5
-    return submit5(option,default_value)
+@app.route('/game5Submit/<values>', methods=['GET', 'POST'])
+def submit_g5(values):
 
+    option = 0
+    answer = 0
+    default_value = 0
+    values=split_values(values)
+    from games_logic.game5 import submit_g5 as submit5
+    return submit5(option, answer, default_value,values[1],values[2])
 
 """GAME 6"""
 @app.route('/game6/<story_name>', methods=['GET'])

@@ -1,11 +1,15 @@
 
 {% extends "base.html" %}
-{% block title %}game4{%endblock%}
+{% block title %}game5{%endblock%}
 
 {%block content%}
 
 
-   <t1>Hello {{ current_user.username }}  </t1>
+   <t1>Hello {{ current_user.username }}</t1>
+    <p>game number:</p>
+    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
+    <p>and right answer  of total games of 10 is :</p>
+    <div id="wins" value="{{ wins }}">{{ wins }}</div>
     <div class="panel">
         <div class="result">
 
@@ -15,7 +19,7 @@
 
         </div>
 
-        <form action="/game5Submit/" id="formgame5" class="col-md-8 col-sm-12" method="POST">
+        <form action="/game5Submit/['{{name}}',{{ g_number }},{{ wins }}]" id="formgame5" class="col-md-8 col-sm-12" method="POST">
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <ol>
              <li>   <label name="option1"  id="op1" >option1</label>
