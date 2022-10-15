@@ -255,10 +255,11 @@ def submit_g8(values):
 """GAME 9"""
 
 
-@app.route('/game9/<story_name>', methods=['GET'])
-def generate_game9(story_name, file=None):
+@app.route('/game9/<values>', methods=['GET'])
+def generate_game9(values, file=None):
+    values = split_values(values)
     from games_logic.game9 import generate_game9 as game9
-    return game9(story_name, file)
+    return game9(values[0], values[1], values[2])
 
 
 @app.route('/game9/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -266,57 +267,73 @@ def loading_file_pic_g9(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game9Submit/', methods=['GET', 'POST'])
-def submit_g9(option=0,answer=0,default_value=0):
+@app.route('/game9Submit//<values>', methods=['GET', 'POST'])
+def submit_g9(values):
+    option = 0
+    answer = 0
+    default_value = 0
     from games_logic.game9 import submit_g9 as submit9
-    return submit9(option, answer, default_value)
+    values = split_values(values)
+    return submit9(option, answer, default_value, values[1], values[2])
 
 
 
 """GAME 10"""
 
 
-@app.route('/game10/<story_name>', methods=['GET'])
-def generate_game10(story_name, file=None):
+@app.route('/game10/<values>', methods=['GET'])
+def generate_game10(values, file=None):
+    values = split_values(values)
     from games_logic.game10 import generate_game10 as game10
-    return game10(story_name, file)
+    return game10(values[0], values[1], values[2])
 
 @app.route('/game10/<story_name>/<path:filename>', methods=['GET', 'POST'])
 def loading_file_pic_g10(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game10Submit/', methods=['GET', 'POST'])
-def submit_g10(default_value=0):
+@app.route('/game10Submit/<values>', methods=['GET', 'POST'])
+def submit_g10(values):
+    option = 0
+    answer = 0
+    default_value = 0
     from games_logic.game10 import submit_g10 as submit10
-    return submit10( default_value)
+    values = split_values(values)
+    return submit10(option, answer, default_value, values[1], values[2])
 
 
 """GAME 11"""
 
 
-@app.route('/game11/<story_name>', methods=['GET'])
-def generate_game11(story_name, file=None):
+@app.route('/game11/<values>', methods=['GET'])
+def generate_game11(values):
     from games_logic.game11 import generate_game11 as game11
-    return game11(story_name, file)
+    values = split_values(values)
+    return game11(values[0], values[1], values[2])
 
 @app.route('/game11/<story_name>/<path:filename>', methods=['GET', 'POST'])
 def loading_file_pic_g11(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game11Submit/', methods=['GET', 'POST'])
-def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
+@app.route('/game11Submit/<values>', methods=['GET', 'POST'])
+def submit_g11(values):
+    option = 0
+    answer = 0
+    default_value = 0
     from games_logic.game11 import submit_g11 as submit11
-    return submit11(default_value)
+    values = split_values(values)
+    return submit11(option, answer, default_value, values[1], values[2])
 
 """GAME 12"""
 
 
-@app.route('/game12/<story_name>', methods=['GET'])
-def generate_game12(story_name, file=None):
+@app.route('/game12/<values>', methods=['GET'])
+def generate_game12(values):
     from games_logic.game12 import generate_game12 as game12
-    return game12(story_name, file)
+    values = split_values(values)
+
+    return game12(values[0], values[1], values[2])
 
 
 @app.route('/game12/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -324,7 +341,11 @@ def loading_file_pic_g12(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game12Submit/', methods=['GET', 'POST'])
-def submit_g12(option=0,answer=0):
+@app.route('/game12Submit/<values>', methods=['GET', 'POST'])
+def submit_g12(values):
+    option = 0
+    answer = 0
+    default_value = 0
     from games_logic.game12 import submit_g12 as submit12
-    return submit12(option,answer)
+    values = split_values(values)
+    return submit12(option, answer, values[1], values[2])

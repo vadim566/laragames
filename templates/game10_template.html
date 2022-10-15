@@ -5,7 +5,11 @@
 {%block content%}
 
 
-   <t1>Hello {{ current_user.username }}  </t1>
+      <t1>Hello {{ current_user.username }}</t1>
+    <p>game number:</p>
+    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
+    <p>and right answer  of total games of 10 is :</p>
+    <div id="wins" value="{{ wins }}">{{ wins }}</div>
     <div class="panel">
         <div class="result">
 
@@ -23,7 +27,7 @@
     </audio>
 </figure>
 </div>
-<form action="/game10Submit/" id="formgame10" class="col-md-8 col-sm-12" method="POST">
+<form action="/game10Submit/['{{name}}',{{ g_number }},{{ wins }}]"  id="formgame10" class="col-md-8 col-sm-12" method="POST">
     <ul>
 <div class="d-grid gap-2 col-md-8 col-sm-12" data-toggle="buttons" >
 </br>
@@ -91,9 +95,8 @@ const shuffledArray = answers.sort((a, b) => 0.5 - Math.random());
 
 
 // Providing option text
-op1.textContent = Questions[0].a[0].text;
+op1.innerText = Questions[0].a[0].text;
 op1.value = Questions[0].a[0].text;
-op1.name = Questions[0].a[0].text;
 op2.innerText = Questions[0].a[1].text;
 op2.value = Questions[0].a[1].text;
 op3.innerText = Questions[0].a[2].text;

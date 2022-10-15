@@ -4,7 +4,11 @@
 
 {%block content%}
 
-
+     <t1>Hello {{ current_user.username }}</t1>
+    <p>game number:</p>
+    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
+    <p>and right answer  of total games of 10 is :</p>
+    <div id="wins" value="{{ wins }}">{{ wins }}</div>
     <div class="panel">
         <div id="result">
 
@@ -24,7 +28,7 @@
 
         </div>
         <div class="option-container">
-            <form action = "/game11Submit/"  class="col-md-8 col-sm-12" method="POST">
+            <form action = "/game11Submit/['{{name}}',{{ g_number }},{{ wins }}]"   class="col-md-8 col-sm-12" method="POST">
                 <p>The missing 1st word:<input id="answer0" name="option0" type="text"></p>
 				<p>The missing 2nd word:<input id="answer1" name="option1" type="text"></p>
                 

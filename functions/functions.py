@@ -60,7 +60,7 @@ def story_folder_data(name):
         #  except:
         #  subprocess.call(py_ver+ lara_builder + lara_builder_creator + ful_loc)
         # finally:
-        return redirect(url_for('surf', story_name=name, name=name))
+        return redirect(url_for('app.surf', story_name=name, name=name))
 
 # get the language of each story
 def get_language():
