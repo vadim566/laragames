@@ -26,11 +26,12 @@
   <img class="card-img-top" src="\static\logoPSDtransferd.png"  style="max-width: 30%;" alt="image">
 
   <div class="card-body">
-    <h5 class="card-title">{{story_name}}</h5>
-    <h5 class="card-text">read the story in language {{line[1]}}.</h5>
-     <form action="/index/{{story_name}}" method="post">
-         <button class="btn btn-warning" name="{{story_name}}" type="submit">Read the story {{story_name}}</button>
-     </form>
+      <h5 class="card-title article-title" style="text-transform:capitalize "> {{line[1]}}</h5>
+      <h5 class="card-text" style="text-transform:capitalize ">{{story_name}}</h5>
+
+
+      <button class="btn btn-warning" name="{{story_name}}" onclick="window.open('/index/{{story_name}}')" type="submit">Read the story {{story_name}}</button>
+
      </div>
      </div>
 
@@ -41,18 +42,18 @@
 
 
          <div class='easy'>
-     <form action="/game4/{{story_name}}" method="get">
+     <form action="/game4/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-easy" name="{{story_name}}game 4 new" type="submit">Match the annunciation to phrase </button>
 
 	 </form>
 
 
-     <form action="/game5/{{story_name}}" method="get">
+     <form action="/game5/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-easy" name="{{story_name}}game 5 new" type="submit">Match the phrase to annunciation</button>
 
 	 </form>
 
-    <form action="/game6/{{story_name}}" method="get">
+    <form action="/game6/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-easy" name="{{story_name}}game 6 new" type="submit">Select the missing Word</button>
 
 	 </form>
@@ -61,17 +62,17 @@
 
 
 <div class='medium'>
-      <form action="/game7/{{story_name}}" method="get">
+      <form action="/game7/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-med" name="{{story_name}}game 7 new" type="submit">Fill the missing Word</button>
 
 	 </form>
 
-	       <form action="/game8/{{story_name}}" method="get">
+	       <form action="/game8/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-med" name="{{story_name}}game 8 new" type="submit">Drag the words in the right order</button>
 
 	 </form>
 
-	      <form action="/game9/{{story_name}}" method="get">
+	      <form action="/game9/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-med" name="{{story_name}}game 9 new" type="submit">Select the missing words 1</button>
 
 	 </form>
@@ -79,16 +80,16 @@
 
 
 	 <div class='high'>
-	    <form action="/game10/{{story_name}}" method="get">
+	    <form action="/game10/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-high" name="{{story_name}}game 10 new" type="submit">Select the missing words 2</button>
 
 	 </form>
 
-	     <form action="/game11/{{story_name}}" method="get">
-         <button class="btn btn-outline-primary-high" name="{{story_name}}game 11 new" type="submit">Fill the missing Words</button>
+	     <form action="/game11/['{{story_name}}',0,0]" method="get">
+         <button class="btn btn-outline-primary-high" name="{{story_name}}game 11 new" type="submit">Fill the missing words</button>
 
 	 </form>
-          <form action="/game12/{{story_name}}" method="get">
+          <form action="/game12/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-high" name="{{story_name}}game 12 new" type="submit">Fill the missing Phrase</button>
 
 	 </form>

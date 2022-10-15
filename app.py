@@ -1,14 +1,15 @@
 
 
+
 from flask import Flask
+
 # crypt passwords
 from flask_bcrypt import bcrypt, Bcrypt
 from flask_login import LoginManager
 # db
 from flask_sqlalchemy import SQLAlchemy
-
-
 from secret.secret import secret_db_key
+
 db=SQLAlchemy()
 bcrypt = Bcrypt()
 

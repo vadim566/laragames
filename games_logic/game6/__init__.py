@@ -3,13 +3,14 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game6
-from functions.functions import dirinDir, clean_word
+from functions.functions import dirinDir, clean_word, check_if_finished
 import random
 
 from app import db
 
 
-def generate_game6(story_name, file=None):
+
+def game6(story_name, file=None):
 
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
@@ -59,30 +60,46 @@ def generate_game6(story_name, file=None):
     print("t_a:" + true_word)
     print(bad_words)
 
-    return render_template('game6_template.html', t_answer=true_word, question0=missing_sent, question1=true_match[1],
-                           fake_answer_0=bad_words[0], fake_answer_1=bad_words[1], fake_answer_2=bad_words[2],
-                           fake_answer_3=bad_words[3], name=story_name)
+    return  true_word,  missing_sent,  true_match[1],bad_words[0],  bad_words[1], bad_words[2], bad_words[3], story_name
 
 
 
-def submit_g6(option=0,answer=0,default_value=0):
+
+
+def generate_game6(story_name ,g_number=0,g_wins=0):
+    g_number = int(g_number)
+    g_wins = int(g_wins)
+    t_w, t_q,t_m, f_a0, f_a1, f_a2, f_a3, s_name = game6(story_name)
+
+    if g_number > 9:
+        return check_if_finished(g_wins, g_number)
+    else:
+        return render_template('game6_template.html', t_answer=t_w, question0=t_q, question1=t_m,fake_answer_0=f_a0, fake_answer_1= f_a1, fake_answer_2= f_a2,fake_answer_3= f_a3, name=s_name \
+                               ,g_number=g_number,wins=g_wins)
+
+
+
+def submit_g6(option=0, answer=0, default_value=0,g_number=0,wins=0):
+    option = request.form.get('option')
+
 
     name = request.form.get('storyname', default_value)
-    option = request.form.get('option', default_value)
     answer = request.form.get('answer', default_value)
     uid = request.form.get('uid', default_value)
-
     print("name: ", name)
     print("option: ", option)
     print("answer: ", answer)
-
+    wins=int(wins)
+    g_number=int(g_number)
     if option.lower() == answer.lower():
-        item = tbl_game6(score=1, user_id=uid,question=name)
-        flash('Right answer', 'success')
+        item = tbl_game6(score=1, user_id=uid, question=name)
+        flash('Right answer you got 1 point', 'success')
+        wins+=1
     else:
-        item = tbl_game6(score=0, user_id=uid,question=name)
-        flash('bad answer', 'danger')
+        item = tbl_game6(score=0, user_id=uid, question=name)
+        flash('bad answer you got 0 point', 'danger')
     db.session.add(item)
     db.session.commit()
-    return redirect(url_for('app.generate_game6', story_name=name))
-
+    g_number+=1
+    values_s=[name,g_number,wins]
+    return redirect(url_for('app.generate_game6', values=values_s))

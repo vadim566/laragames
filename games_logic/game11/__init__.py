@@ -3,15 +3,13 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game11
-from functions.functions import dirinDir, clean_word
+from functions.functions import dirinDir, clean_word, check_if_finished
 import random
 
 from app import db
 
 
-
-
-def generate_game11(story_name, file=None):
+def game11(story_name, file=None):
 
 
     metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
@@ -75,10 +73,22 @@ def generate_game11(story_name, file=None):
     print("t_a:" + true_word[0] + ' ' + true_word[1])
 
 
-    return render_template('game11_template.html', t_answer0=true_word[0], t_answer1=true_word[1], question0=missing_sent, question1=true_match[1], name=story_name)
+    return true_word[0],true_word[1],missing_sent,true_match[1],story_name
 
 
-def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
+def generate_game11(story_name,g_number=0,g_wins=0):
+    g_number = int(g_number)
+    g_wins = int(g_wins)
+    t_w0,t_w1,m_w,m_s,s_name=game11(story_name)
+    if g_number > 9:
+        return check_if_finished(g_wins, g_number)
+    else:
+        return render_template('game11_template.html', t_answer0=t_w0, t_answer1=t_w1, question0=m_w, question1=m_s, name=s_name, g_number=g_number, wins=g_wins)
+
+
+def submit_g11(option=0,answer=0,default_value=0,g_number=0,wins=0):
+    wins = int(wins)
+    g_number = int(g_number)
 
     name = request.form.get('storyname', default_value)
     option0 = request.form.get('option0', default_value)
@@ -96,6 +106,7 @@ def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
     if option0.lower() == answer0.lower() and option1.lower() == answer1.lower() :
         item = tbl_game11(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
+        wins += 1
     elif option1.lower() == answer0.lower() and option0.lower() == answer1.lower() :
         item = tbl_game11(score=1, user_id=uid,question=name)
         flash('Right answer', 'success')
@@ -104,4 +115,6 @@ def submit_g11(option0=0,answer0=0,option1=0,answer1=0,default_value=0):
         flash('bad answer', 'danger')
     db.session.add(item)
     db.session.commit()
-    return redirect(url_for('app.generate_game11', story_name=name))
+    g_number += 1
+    values_s = [name, g_number, wins]
+    return redirect(url_for('app.generate_game11', values=values_s))

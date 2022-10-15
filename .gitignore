@@ -2,3 +2,5 @@
 #SVN/*
 #dont upload db
 site.db
+#secret file
+secret/*
