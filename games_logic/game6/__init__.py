@@ -3,7 +3,7 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game6
-from functions.functions import dirinDir, clean_word
+from functions.functions import dirinDir, clean_word, check_if_finished
 import random
 
 from app import db
@@ -71,20 +71,8 @@ def generate_game6(story_name ,g_number=0,g_wins=0):
     g_wins = int(g_wins)
     t_w, t_q,t_m, f_a0, f_a1, f_a2, f_a3, s_name = game6(story_name)
 
-    if g_number > 0:
-        score = (g_wins / g_number) * 100
-
-    if g_number >= 10 and g_wins < 6:
-        flash('Game Over! You could better!Try better next time! Your Score is:' + str(score), 'danger')
-        return redirect(url_for('app.home'))
-
-    elif g_number >= 10 and g_wins > 5 and g_wins < 8:
-        flash('Game Over! Your doing good job! proceed training !Your Score is:' + str(score), 'success')
-        return redirect(url_for('app.home'))
-
-    elif g_number >= 10 and g_wins > 7:
-        flash('Game Over! Your are Excellent! Try advanced level!' + str(score), 'success')
-        return redirect(url_for('app.home'))
+    if g_number > 9:
+        return check_if_finished(g_wins, g_number)
     else:
         return render_template('game6_template.html', t_answer=t_w, question0=t_q, question1=t_m,fake_answer_0=f_a0, fake_answer_1= f_a1, fake_answer_2= f_a2,fake_answer_3= f_a3, name=s_name \
                                ,g_number=g_number,wins=g_wins)

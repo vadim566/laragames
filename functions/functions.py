@@ -2,13 +2,29 @@ from datetime import datetime
 from os import listdir
 from os.path import isfile ,join,isdir
 
-from flask import send_from_directory, redirect, url_for
+from flask import send_from_directory, redirect, url_for, flash
 
 from SVN.trunk.Code.Python import lara_utils
 from config.config import language, onlydir, compiled_path, slash, corpus_suffix, slash_clean, mypath, content_loc
 
 '''functions'''
+def check_if_finished(g_wins,g_number):
+    if g_number > 0:
+        score = (g_wins / g_number) * 100
 
+    if g_number >= 10 and g_wins < 6:
+        flash('Game Over! You could better!Try better next time! Your Score is:' + str(score), 'danger')
+        return redirect(url_for('app.home'))
+
+    elif g_number >= 10 and g_wins > 5 and g_wins < 8:
+        flash('Game Over! Your doing good job! proceed training !Your Score is:' + str(score), 'success')
+        return redirect(url_for('app.home'))
+
+    elif g_number >= 10 and g_wins > 7:
+        flash('Game Over! Your are Excellent! Try advanced level!' + str(score), 'success')
+        return redirect(url_for('app.home'))
+    else:
+        return
 
 def split_values(values):
     values=values.split("[")

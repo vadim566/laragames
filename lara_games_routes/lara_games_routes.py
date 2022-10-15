@@ -230,10 +230,11 @@ def submit_g7(values):
 """GAME 8"""
 
 
-@app.route('/game8/<story_name>', methods=['GET'])
-def generate_game8(story_name, file=None):
+@app.route('/game8/<values>', methods=['GET'])
+def generate_game8 (values, file=None):
+    values = split_values(values)
     from games_logic.game8 import generate_game8 as game8
-    return game8(story_name, file)
+    return game8(values[0], values[1], values[2])
 
 
 @app.route('/game8/<story_name>/<path:filename>', methods=['GET', 'POST'])
@@ -241,11 +242,14 @@ def loading_file_pic_g8(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game8Submit/', methods=['GET', 'POST'])
-def submit_g8(option=0,answer=0,default_value=0):
+@app.route('/game8Submit/<values>', methods=['GET', 'POST'])
+def submit_g8(values):
+    option = 0
+    answer = 0
+    default_value = 0
     from games_logic.game8 import submit_g8 as submit8
-    return submit8(option, answer, default_value)
-
+    values = split_values(values)
+    return submit8(option, answer, default_value, values[1], values[2])
 
 
 """GAME 9"""
