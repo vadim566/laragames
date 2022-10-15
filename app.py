@@ -1,9 +1,6 @@
 
-import random
-from datetime import datetime
-from os import listdir
-from os.path import join, isdir, isfile
 
+from flask_cors import CORS
 from flask import Flask, render_template, send_from_directory, redirect, url_for, flash, request
 # crypt passwords
 from flask_bcrypt import bcrypt, Bcrypt

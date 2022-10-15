@@ -17,18 +17,24 @@
 
         <form action="/game5Submit/" id="formgame5" class="col-md-8 col-sm-12" method="POST">
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label name="option1"  id="op1" >option1</label>
-
-                <label name="option2" id="op2" >option2</label>
-
-                    <label name="option3" id="op3">option3</label>
-
-                        <label name="option4" id="op4">option4</label>
-                
-                <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
+            <ol>
+             <li>   <label name="option1"  id="op1" >option1</label>
+            </li>
+                <li><label name="option2" id="op2" >option2</label>
+            </li>
+                 <li>   <label name="option3" id="op3">option3</label>
+            </li>
+                     <li>   <label name="option4" id="op4">option4</label>
+            </li>
+                  <input type="submit" class="btn btn-primary"  autocomplete="off" checked>
+                     <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
                 <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
+            </ol>
+
+
+
             </div>
-            <input type="submit" class="btn btn-primary"  autocomplete="off" checked>
+
         </form>
 </div>
         </div>
@@ -120,10 +126,10 @@ var start = true;
 
 
     // Providing option text
-    op1.innerHTML = Questions[0].a[0].text;
-    op2.innerHTML = Questions[0].a[1].text;
-    op3.innerHTML = Questions[0].a[2].text;
-    op4.innerHTML = Questions[0].a[3].text;
+    op1.innerHTML = Questions[0].a[0].text ;
+    op2.innerHTML = Questions[0].a[1].text ;
+    op3.innerHTML = Questions[0].a[2].text ;
+    op4.innerHTML = Questions[0].a[3].text ;
 
     // Providing the true or false value to the options
     op1.value = Questions[0].a[0].isCorrect;

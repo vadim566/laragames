@@ -30,9 +30,9 @@ def generate_game5(story_name, file=None):
     rand_index = random.randint(0, size_of_story)
 
     """gather 4 random index for 4 wrong answers """
-    rand_i = rand_index
-    fake_answer = []
-    for i in range(4):
+    rand_i = [rand_index, rand_index, rand_index, rand_index]
+
+    while rand_index in rand_i:#make sure there is no duplicate words
         rand_i = random.sample(range(0, size_of_story), 4)
 
     true_match = [sentance[rand_index], sounds[rand_index]]

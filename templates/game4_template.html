@@ -8,7 +8,11 @@
 
 
 
-    <t1>Hello {{ current_user.username }}  </t1>
+    <t1>Hello {{ current_user.username }}</t1>
+    <p>game number:</p>
+    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
+    <p>and right answer  of total games of 10 is :</p>
+    <div id="wins" value="{{ wins }}">{{ wins }}</div>
 
     <div class="panel game-box">
         <div class="result">
@@ -17,7 +21,7 @@
        
         <div class="question-container game-box-body" id="question">
 <figure>
-    <figcaption>What the right Phrase that matched:</figcaption>
+    <figcaption>What is the right phrase that matches:</figcaption>
     <audio
         controls
         src="/game4/{{name}}/{{question}}">
@@ -27,31 +31,30 @@
 </figure>
 
         </div>
-        <form action="/game4Submit/" id="formgame4" class="col-md-8 col-sm-12" method="POST">
+        <form action="/game4Submit/['{{name}}',{{ g_number }},{{ wins }}]" id="formgame4" class="col-sm-12 col-md-8" method="POST">
            <div class="col-md-8 col-sm-12 " data-toggle="buttons" >
-               <ul>
-
-        </br>
-            <li> <label class="btn-outline-primary-easy" id="op1">
+             <ol>
+            <li> <label class="btn btn-outline-primary-easy-choice" id="op1">
                 <input type="submit" class="btn btn-primary" name="option" id="radop1"  value="1" autocomplete="off"  checked>
             </label></li>
-        </br>  
-            <li><label class="btn-outline-primary-easy" id="op2">
+
+            <li><label class="btn btn-outline-primary-easy-choice" id="op2">
                 <input type="submit" class="btn btn-primary" name="option"  id="radop2"  value="2" autocomplete="off" checked>
             </label></li>
-        </br>
-            <li><label class="btn-outline-primary-easy" id="op3" >
+
+            <li><label class="btn btn-outline-primary-easy-choice" id="op3" >
                 <input type="submit" class="btn btn-primary" name="option"  id="radop3" value="3" autocomplete="off" checked>
             </label></li>
-        </br>
-            <li><label class="btn-outline-primary-easy" id="op4" >
-                <input type="submit" class="btn btn-primary" name="option" id="radop4"  value="4" autocomplete="off" checked>
+
+            <li><label class="btn btn-outline-primary-easy-choice" id="op4" >
+                <input type="submit" class="btn btn-primary" name="option" id="radop4" onclick="fetch_game()"  value="4" autocomplete="off" checked>
             </label></li>
-        </br>
+
             <input type="hidden" id="ans" name="answer" value="{{ t_answer }}">
             <input type="hidden" id="uid" name="uid" value="{{ current_user.id }}">
             <input type="hidden" id="storyname" name="storyname" value="{{ name }}">
-      </ul>
+                 </ol>
+
       </div>
         </form>
 
@@ -60,9 +63,28 @@
 
 
 <script >
+    const server="0.0.0.0"
+
+
+
+    async function fetch_game(){
+        body_obj=await fetch("http"+server+"/fetch_game4/['{{name|safe}}',"+games+","+wins+"]").then(res=>res.json())
+
+        t_answer=body_obj[0];
+        question=body_obj[1];
+        fake_answer_0=body_obj[2];
+        fake_answer_1=body_obj[3];
+        fake_answer_2=body_obj[4];
+        games=body_obj[7];
+        wins=body_obj[8];
+
+        changetext()
+
+
+    }
     
    function changetext(){
-        answers= [{ text: "{{ t_answer }}", isCorrect: true },
+          answers= [{ text: "{{ t_answer }}", isCorrect: true },
                 { text: "{{fake_answer_0}}", isCorrect: false },
                 { text: "{{fake_answer_1}}", isCorrect: false },
                 { text: "{{fake_answer_2}}", isCorrect: false }
@@ -79,7 +101,7 @@
     
             const Questions = [{
             id: 0,
-            q: "What is {{question}}",
+            q: "What is " + question,
             a: answers
     
         }]
@@ -108,7 +130,7 @@
     
        
    }
-  
+
         changetext()
     
   

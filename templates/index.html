@@ -26,8 +26,9 @@
   <img class="card-img-top" src="\static\logoPSDtransferd.png"  style="max-width: 30%;" alt="image">
 
   <div class="card-body">
-    <h5 class="card-title">{{story_name}}</h5>
-    <h5 class="card-text">read the story in language {{line[1]}}.</h5>
+      <h5 class="card-title article-title" style="text-transform:capitalize "> {{line[1]}}</h5>
+      <h5 class="card-text" style="text-transform:capitalize ">{{story_name}}</h5>
+
      <form action="/index/{{story_name}}" method="post">
          <button class="btn btn-warning" name="{{story_name}}" type="submit">Read the story {{story_name}}</button>
      </form>
@@ -41,7 +42,7 @@
 
 
          <div class='easy'>
-     <form action="/game4/{{story_name}}" method="get">
+     <form action="/game4/['{{story_name}}',0,0]" method="get">
          <button class="btn btn-outline-primary-easy" name="{{story_name}}game 4 new" type="submit">Match the annunciation to phrase </button>
 
 	 </form>

@@ -7,11 +7,10 @@ from flask_login import LoginManager, login_user, current_user, logout_user, log
 from flask import render_template, request, Blueprint
 
 from app import db ,bcrypt
-from db.db import User, tbl_game4, tbl_game5, tbl_game6, tbl_game7, tbl_game8, tbl_game9, tbl_game10, tbl_game11, \
-    tbl_game12
+from db.db import User
 from forms.forms import RegistrationForm, LoginForm
 from functions.functions import get_language, analayzeGame, dirinDir, filesinDir, getWords, clean_word, \
-    loading_file_pic, story_folder_data
+    loading_file_pic, story_folder_data, split_values
 from config.config import language, onlydir, main_page_hyper, content_loc, slash, corpus_suffix, html_path, \
     index_folder_sufix, folder_sufix, hyper_page_html, multimedia_folder, compiled_loc, alphaBet, mypath, slash_clean
 import functions
@@ -27,7 +26,7 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationE
 
 import SVN.trunk.Code.Python.lara_utils as lara_utils
 
-# load the language before any request to the site
+# load the languages thats availble in file systems before any request to the site
 get_language()
 
 
@@ -116,10 +115,11 @@ def loading_file(filename, story_name):
 
 
 
-@app.route('/game4/<story_name>', methods=['GET'])
-def generate_game4(story_name):
+@app.route('/game4/<values>', methods=['GET'])
+def generate_game4(values):
+    values=split_values(values)
     from games_logic.game4 import generate_game4 as game4
-    return game4(story_name)
+    return game4(values[0],values[1],values[2])
     # return render_template('game4_template.html',meta_dic=meta_dic,alphabet=alphaBet,name=story_name)
 
 
@@ -128,10 +128,21 @@ def loading_file_pic_g4(filename, story_name):
     return loading_file_pic(filename, story_name)
 
 
-@app.route('/game4Submit/', methods=['GET', 'POST'])
-def submit_g4(option=0,answer=0,default_value=0):
+@app.route('/game4Submit/<values>', methods=['GET', 'POST'])
+def submit_g4(values):
+    option = 0
+    answer = 0
+    default_value = 0
+    values=split_values(values)
     from games_logic.game4 import submit_g4 as submit4
-    return submit4(option, answer, default_value)
+    return submit4(option, answer, default_value,values[1],values[2])
+
+@app.route('/fetch_game4/<values>', methods=['GET', 'POST'])
+def fetch_g4(values):
+    print(values)
+    values=split_values(values)
+    from games_logic.game4 import fetch_game4 as f_game4
+    return f_game4(values[0],values[1],values[2])
 
 
 """GAME 5"""

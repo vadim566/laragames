@@ -1,15 +1,25 @@
 *{
      text-transform: none;
     list-style-type: none;
+
+}
+
+li{
+    align-items: stretch;
+    display: flex;
+
 }
 
 body {
+    align-items: stretch;
+
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
     overflow-y:scroll;
     overflow-x:scroll;
      text-transform: none;
+
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -46,6 +56,7 @@ body {
   
   .article-title {
     color: #444444;
+
   }
   
   a.article-title:hover {
@@ -197,10 +208,13 @@ background: radial-gradient(circle, rgba(232,200,237,1) 0%, rgba(223,236,235,1) 
 
 .btn-outline-primary, .btn btn-info
 {
+           word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
 background: rgb(100,162,158);
 background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 100%);
   color:white ;
-  padding: 15px 32px;
+  /*padding: 15px 32px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -210,12 +224,39 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
     text-transform: capitalize;
 }
 
+
+.btn-outline-primary-easy-choice
+{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+           word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+  /*    background-color: darkgreen; /* Green */
+ /* border: solid 1px white;
+  color:white ;
+  /*padding: 15px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
 .btn-outline-primary-easy
 {
+           word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
       background-color: darkgreen; /* Green */
   border: solid 1px white;
   color:white ;
-  padding: 15px 32px;
+  /*padding: 15px 32px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -226,10 +267,13 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
 
 .btn-outline-primary-med
 {
+           word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
       background-color: darkorange; /* Green */
   border: solid 1px white;
   color:black ;
-  padding: 15px 32px;
+  /*padding: 15px 32px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -241,10 +285,18 @@ background: radial-gradient(circle, rgba(100,162,158,1) 0%, rgba(120,172,155,1) 
 ul{
     align-items: center;
 }
+ol{
+    align-items: center;
+    justify-content: center;
+
+}
 form{
 align-items: center;
 }
 .btn-primary{
+           word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
     text-align: center;
     font-size: 36px;
 }
@@ -254,19 +306,16 @@ align-items: center;
       background-color: darkmagenta; /* Green */
   border: solid 1px white;
   color:orange ;
-  padding: 15px 32px;
+  /*padding: 15px 32px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+    font-size: 36px;
   margin: 4px 2px;
   cursor: pointer;
     text-transform: capitalize;
 }
 
-.game-box:hover{
-    transform: scale(1.02);
-}
 .game-box-body{
 
 background: rgb(217,238,255);

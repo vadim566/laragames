@@ -9,6 +9,18 @@ from config.config import language, onlydir, compiled_path, slash, corpus_suffix
 
 '''functions'''
 
+
+def split_values(values):
+    values=values.split("[")
+    values=values[1].split("]")
+    values=values[0].split(",")
+    name=values[0].split("'")[1]
+    games=str(int(values[1]))
+    wins=str(int(values[2]))
+    values=[name,games,wins]
+    return values
+
+
 def clean_word(word :str) ->str:
     clean_word = "".join(c for c in word if c.isalpha())
     return clean_word
@@ -68,7 +80,7 @@ def dirinDir(dir_path):
     except:
         "something wrong with the directory, put in the full path"
     finally:
-        return dir_in_dir
+         return dir_in_dir
 
 
 def getWords(dir_path, prefix_word):
