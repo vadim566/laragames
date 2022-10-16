@@ -278,7 +278,7 @@ def submit_g#X#(option=0, answer=0, default_value=0):
     return redirect(url_for('app.generate_game#X#', story_name=name))#load the next story
 
 ```
-## Adding game with routing 
+## Adding Siries of games (10 games in a row) 
 * Lets say we want to create a game as routine of 10 games , and we already has game logic under function gameX(storyname) (under games_logic\gameX\__init__.py)
 * we will add the following code to create a routine(for example game 4)
 ```python
@@ -287,8 +287,9 @@ def generate_game4(story_name,g_number=0,g_wins=0):
     g_number=int(g_number)
     g_wins=int(g_wins)
     t_a ,t_q,f_a0,f_a1,f_a2,f_a3,s_name =game4(story_name)
-    if g_number > 9:
-        return check_if_finished(g_wins, g_number)
+    if g_number > 9: #costumize how many games you want the player to play until the end
+        return check_if_finished(g_wins, g_number)#invoke into check_if_finished and costumize the messages the player will get after win/loosing the game
+	#optional -> write to db the score of the game
     else:
         return render_template('game4_template.html', t_answer=t_a, question=t_q,fake_answer_0=f_a0, fake_answer_1=f_a1, fake_answer_2=f_a2,fake_answer_3=f_a3, name=s_name,g_number=g_number,wins=g_wins)
 
