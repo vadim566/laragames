@@ -278,8 +278,69 @@ def submit_g#X#(option=0, answer=0, default_value=0):
     return redirect(url_for('app.generate_game#X#', story_name=name))#load the next story
 
 ```
+## Adding game with routing 
+* Lets say we want to create a game as routine of 10 games , and we already has game logic under function gameX(storyname) (under games_logic\gameX\__init__.py)
+* we will add the following code to create a routine(for example game 4)
+```python
+def generate_game4(story_name,g_number=0,g_wins=0):
+
+    g_number=int(g_number)
+    g_wins=int(g_wins)
+    t_a ,t_q,f_a0,f_a1,f_a2,f_a3,s_name =game4(story_name)
+    if g_number > 9:
+        return check_if_finished(g_wins, g_number)
+    else:
+        return render_template('game4_template.html', t_answer=t_a, question=t_q,fake_answer_0=f_a0, fake_answer_1=f_a1, fake_answer_2=f_a2,fake_answer_3=f_a3, name=s_name,g_number=g_number,wins=g_wins)
+
+```
+* now we also need to update the routes to the following(now we will get only values that will break down to name,games,wins):
+```python
+
+@app.route('/game4/<values>', methods=['GET'])
+def generate_game4(values):
+    values=split_values(values)
+    from games_logic.game4 import generate_game4 as game4
+    return game4(values[0],values[1],values[2])
+```
+
+* now after we finished each game we need to validate it under the submit route
+```python
+@app.route('/fetch_game4/<values>', methods=['GET', 'POST'])
+def fetch_g4(values):
+    print(values)
+    values=split_values(values)
+    from games_logic.game4 import fetch_game4 as f_game4
+    return f_game4(values[0],values[1],values[2])
+```
+
+* and we must update the logic of the submit function (again pay attention to increasing the games value and the win values if there were right answer inside the game)
+```python
+def submit_g4(option=0, answer=0, default_value=0,g_number=0,wins=0):
+    option = request.form.get('option')
 
 
+    name = request.form.get('storyname', default_value)
+    answer = request.form.get('answer', default_value)
+    uid = request.form.get('uid', default_value)
+    print("name: ", name)
+    print("option: ", option)
+    print("answer: ", answer)
+    wins=int(wins)
+    g_number=int(g_number)
+    if option.lower() == answer.lower():
+        item = tbl_game4(score=1, user_id=uid, question=name)
+        flash('Right answer you got 1 point', 'success')
+        wins+=1
+    else:
+        item = tbl_game4(score=0, user_id=uid, question=name)
+        flash('bad answer you got 0 point', 'danger')
+    db.session.add(item)
+    db.session.commit()
+    g_number+=1
+    values_s=[name,g_number,wins]
+    return redirect(url_for('app.generate_game4', values=values_s))
+
+```
 ## Environment Variables
 
 To run this project, you will need to install the requirement file as it describe in install section
