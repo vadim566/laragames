@@ -3,27 +3,13 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game5
-from functions.functions import dirinDir, check_if_finished, user_message
+from functions.functions import dirinDir, check_if_finished, user_message, get_story_sounds_sentance
 import random
 
 from app import db
 
 def game5(story_name, file=None):
-
-
-    metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
-    audioVersions = dirinDir(metaDataAudioDir)
-    # TODO add expectaion
-    File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
-    Metadata = lara_utils.read_json_file(File)
-    meta_dic = [{}]
-    for m in Metadata:
-        meta_dic[0].update({m['text']: m['file']})
-    sentance = []
-    sounds = []
-    for key, value in meta_dic[0].items():
-        sentance.append(key)
-        sounds.append(value)
+    sentance, sounds = get_story_sounds_sentance(story_name)
 
     """get random sentance"""
     size_of_story = len(sentance)

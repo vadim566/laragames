@@ -171,3 +171,19 @@ def user_message(msg_type:str):
         get_better_messages = ['Dont Panic, just focus! You can do it!', 'Its ok to make mistakes', 'Mistakes pave the road to excellence!']
         index_mesg = random.randint(0, len(get_better_messages)-1 )
         flash(get_better_messages[index_mesg], 'info')
+
+def get_story_sounds_sentance(story_name):
+    metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
+    audioVersions = dirinDir(metaDataAudioDir)
+    # TODO add expectaion
+    File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
+    Metadata = lara_utils.read_json_file(File)
+    meta_dic = [{}]
+    for m in Metadata:
+        meta_dic[0].update({m['text']: m['file']})
+    sentance = []
+    sounds = []
+    for key, value in meta_dic[0].items():
+        sentance.append(key)
+        sounds.append(value)
+    return sentance ,sounds
