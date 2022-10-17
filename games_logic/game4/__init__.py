@@ -17,7 +17,7 @@ def game4(story_name,file=None):
     sentance, sounds = get_story_sounds_sentance(story_name)
 
     """get random sentance"""
-    size_of_story = len(sentance)
+    size_of_story =  len(sentance)-1
     rand_index = random.randint(0, size_of_story)
 
     """gather 4 random index for 4 wrong answers """

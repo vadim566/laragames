@@ -4,3 +4,4 @@
 site.db
 #secret file
 secret/*
+HA_python3.sh

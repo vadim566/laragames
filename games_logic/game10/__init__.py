@@ -11,7 +11,7 @@ from app import db
 def game10(story_name, file=None):
     sentance, sounds= get_story_sounds_sentance(story_name)
     """get random sentance"""
-    size_of_story = len(sentance)
+    size_of_story = len(sentance)-1
     rand_index = random.randint(0, size_of_story)
 
     """gather 4 random index for 4 wrong answers """
@@ -36,7 +36,7 @@ def game10(story_name, file=None):
             generate_game10(story_name, file)
 
     # pick random word between word set
-    rand_ct = random.sample(range(1, words_ct), 2)
+    rand_ct = random.sample(range(0, words_ct), 2)
     # swap the word into [-------]
     words_arr = true_match[0].split(' ')
     # true_word=words_arr[rand_ct[0]]#right answer
@@ -51,6 +51,15 @@ def game10(story_name, file=None):
     bad_words = []
     for i in range(len(bad_match)):
         bad_words_arr = bad_match[i].split(' ')
+       #if sentance is lower then 4 pick another random number for this sentance
+        while len(bad_words_arr) < 4:
+            rand_index= rand_i[i]
+            while rand_index in rand_i:
+                rand_index=random.randint(0,size_of_story)
+            rand_i[i]=rand_index
+            bad_match[i]=sentance[rand_i[i]]
+            bad_words_arr = bad_match[i].split(' ')
+
         words_ct = bad_match[i].count(" ")
         bad_rand_ct = random.sample(range(0, words_ct), 2)
 

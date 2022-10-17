@@ -5,7 +5,7 @@ from db.db import User
 from functions.functions import analayzeGame
 
 
-def account_dashboard():
+def games_dashboard():
     user = User.query.filter_by(id=current_user.id).first()
 
     games = []
@@ -40,4 +40,11 @@ def account_dashboard():
             break;
 
     print(total_wins)
+    title='Account'
+    return title,game_sets, total_wins ,total_games,level,exprience_next_level
+
+
+def account_dashboard():
+    title, game_sets, total_wins, total_games, level, exprience_next_level=games_dashboard()
+
     return render_template('account.html', title='Account', games=game_sets, wins=total_wins ,gametotal=total_games,p_level=level,exp_level=exprience_next_level)
