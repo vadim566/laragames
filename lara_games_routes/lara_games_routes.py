@@ -2,7 +2,7 @@ import random
 
 from flask import Flask, render_template, send_from_directory, redirect, url_for, flash, request, Blueprint
 # crypt passwords
-
+import operator
 from flask_login import LoginManager, login_user, current_user, logout_user, login_required, UserMixin
 from flask import render_template, request, Blueprint
 
@@ -46,6 +46,7 @@ def home():
     tmp_lg=list(set(language))
     stories_per_lang=zip(lg,tmp_lg)
     stories_per_lang=list(stories_per_lang)
+    stories_per_lang= sorted(stories_per_lang, key=operator.itemgetter(-1))
     return render_template('index.html', content=stories_per_lang, lang=tmp_lg, link_html=main_page_hyper)
 
 
