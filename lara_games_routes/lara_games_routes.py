@@ -43,7 +43,7 @@ def home():
         for key, val in dic_lang.items():
             if val == lan:
                 lg[-1].append(key)
-    tmp_lg=list(set(language))
+    tmp_lg=list(set(language)).sort()
     stories_per_lang=zip(lg,tmp_lg)
     stories_per_lang=list(stories_per_lang)
     return render_template('index.html', content=stories_per_lang, lang=tmp_lg, link_html=main_page_hyper)
