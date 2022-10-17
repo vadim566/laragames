@@ -5,11 +5,11 @@
 {%block content%}
 
 
-    <t1>Hello {{ current_user.username }}</t1>
-    <p>game number:</p>
-    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
-    <p>and right answer  of total games of 10 is :</p>
-    <div id="wins" value="{{ wins }}">{{ wins }}</div>
+<div class="score-board">
+  <t1>Hello {{ current_user.username }}</t1>
+    <div id="score" value="{{ g_number }}">Game number: {{ g_number }}</div></p>
+    <div id="wins" value="{{ wins }}">Number of right answers  of total 10 games is:  {{ wins }}</div>
+    </div>
     <div class="panel">
         <div class="result">
 
@@ -31,19 +31,19 @@
     <ul>
 <div class="d-grid gap-2 col-md-8 col-sm-12" data-toggle="buttons" >
 </br>
-    <li> <label class="btn btn-info" id="op1">
+    <li> <label  id="op1">
         <input type="submit" class="btn btn-primary" name="option" id="radop1"  value="1" autocomplete="off"  checked>
     </label></li>
 </br>  
-    <li><label class="btn btn-info" id="op2">
+    <li><label  id="op2">
         <input type="submit" class="btn btn-primary" name="option"  id="radop2"  value="2" autocomplete="off" checked>
     </label></li>
 </br>
-    <li><label class="btn btn-info" id="op3" >
+    <li><label id="op3" >
         <input type="submit" class="btn btn-primary" name="option"  id="radop3" value="3" autocomplete="off" checked>
     </label></li>
 </br>
-    <li><label class="btn btn-info" id="op4" >
+    <li><label  id="op4" >
         <input type="submit" class="btn btn-primary" name="option" id="radop4"  value="4" autocomplete="off" checked>
     </label></li>
 </br>

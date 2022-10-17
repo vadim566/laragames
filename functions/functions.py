@@ -1,3 +1,4 @@
+import random
 from datetime import datetime
 from os import listdir
 from os.path import isfile ,join,isdir
@@ -17,11 +18,11 @@ def check_if_finished(g_wins,g_number):
         return redirect(url_for('app.home'))
 
     elif g_number >= 10 and g_wins > 5 and g_wins < 8:
-        flash('Game Over! Your doing good job! proceed training !Your Score is:' + str(score), 'success')
+        flash('Game Over! Your doing good job! Proceed training !Your Score is:' + str(score), 'success')
         return redirect(url_for('app.home'))
 
     elif g_number >= 10 and g_wins > 7:
-        flash('Game Over! Your are Excellent! Try advanced level!' + str(score), 'success')
+        flash('Game Over! Your are Excellent! Try advanced level!Your Score is:' + str(score), 'success')
         return redirect(url_for('app.home'))
     else:
         return
@@ -157,3 +158,32 @@ def analayzeGame(game, wr):
         wr.append(['',0])
 
     return wr
+
+def user_message(msg_type:str):
+    if  msg_type=='right_answer':
+        flash('Right answer you got 1 point', 'success')
+        good_messages=['Your are Great!','Nice Job!','Excellent!']
+        index_mesg=random.randint(0,len(good_messages)-1)
+        flash(good_messages[index_mesg], 'info')
+
+    elif msg_type=='bad_answer':
+        flash('Bad answer you got 0 point', 'danger')
+        get_better_messages = ['Dont Panic, just focus! You can do it!', 'Its ok to make mistakes', 'Mistakes pave the road to excellence!']
+        index_mesg = random.randint(0, len(get_better_messages)-1 )
+        flash(get_better_messages[index_mesg], 'info')
+
+def get_story_sounds_sentance(story_name):
+    metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
+    audioVersions = dirinDir(metaDataAudioDir)
+    # TODO add expectaion
+    File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
+    Metadata = lara_utils.read_json_file(File)
+    meta_dic = [{}]
+    for m in Metadata:
+        meta_dic[0].update({m['text']: m['file']})
+    sentance = []
+    sounds = []
+    for key, value in meta_dic[0].items():
+        sentance.append(key)
+        sounds.append(value)
+    return sentance ,sounds

@@ -4,28 +4,13 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game8
-from functions.functions import dirinDir, clean_word, check_if_finished
+from functions.functions import dirinDir, clean_word, check_if_finished, user_message, get_story_sounds_sentance
 import random
 
 from app import db
 
 def game8(story_name, file=None):
-
-
-    metaDataAudioDir = mypath + slash_clean + story_name + slash_clean + 'audio' + slash_clean
-    audioVersions = dirinDir(metaDataAudioDir)
-
-    File = metaDataAudioDir + audioVersions[0] + slash_clean + 'metadata_help.json'
-    Metadata = lara_utils.read_json_file(File)
-    meta_dic = [{}]
-    for m in Metadata:
-        meta_dic[0].update({m['text']: m['file']})
-    sentance = []
-    sounds = []
-    for key, value in meta_dic[0].items():
-        sentance.append(key)
-        sounds.append(value)
-
+    sentance, sounds = get_story_sounds_sentance(story_name)
     """get random sentance"""
     size_of_story = len(sentance)
     rand_index = random.randint(0, size_of_story)
@@ -73,11 +58,13 @@ def submit_g8(option=0, answer=0, default_value=0,g_number=0,wins=0):
     g_number = int(g_number)
     if option.lower() == answer.lower():
         item = tbl_game8(score=1, user_id=uid, question=name)
-        flash('Right answer you got 1 point', 'success')
+        user_message('right_answer')
+
         wins += 1
     else:
         item = tbl_game8(score=0, user_id=uid, question=name)
-        flash('bad answer you got 0 point', 'danger')
+
+        user_message('bad_answer')
     db.session.add(item)
     db.session.commit()
     g_number += 1
