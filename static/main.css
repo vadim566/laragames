@@ -300,7 +300,14 @@ align-items: center;
     text-align: center;
     font-size: 36px;
 }
+.score-board{
+    border: solid 1px dimgray;
 
+    background-color: honeydew;
+
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
 .btn-outline-primary-high
 {
       background-color: darkmagenta; /* Green */

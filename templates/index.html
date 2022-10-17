@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Index{%endblock%}
 {% block content %}
-<t1>Welcome to Lara games and stories platform</t1>
-<p> in this Web you will read stories in many languages and also  you can exercise them with games from each story!</p>
+<t1>Welcome to LARA games and stories platform</t1>
+<p> in this Web application you will read stories in many languages and also you can exercise them with games from each story!</p>
 <button class='btn btn-outline-primary' onclick="showGamesDifficults()">Show Stories and Games</button>
 <div class="language">
 
@@ -54,7 +54,7 @@
 	 </form>
 
     <form action="/game6/['{{story_name}}',0,0]" method="get">
-         <button class="btn btn-outline-primary-easy" name="{{story_name}}game 6 new" type="submit">Select the missing Word</button>
+         <button class="btn btn-outline-primary-easy" name="{{story_name}}game 6 new" type="submit">Select the missing word</button>
 
 	 </form>
 
@@ -63,12 +63,12 @@
 
 <div class='medium'>
       <form action="/game7/['{{story_name}}',0,0]" method="get">
-         <button class="btn btn-outline-primary-med" name="{{story_name}}game 7 new" type="submit">Fill the missing Word</button>
+         <button class="btn btn-outline-primary-med" name="{{story_name}}game 7 new" type="submit">Fill the missing word</button>
 
 	 </form>
 
 	       <form action="/game8/['{{story_name}}',0,0]" method="get">
-         <button class="btn btn-outline-primary-med" name="{{story_name}}game 8 new" type="submit">Drag the words in the right order</button>
+         <button class="btn btn-outline-primary-med" name="{{story_name}}game 8 new" type="submit">Drag the word in the right order</button>
 
 	 </form>
 

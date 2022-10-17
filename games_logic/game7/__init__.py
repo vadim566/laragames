@@ -3,7 +3,7 @@ from flask import render_template, request, flash, redirect, url_for
 from SVN.trunk.Code.Python import lara_utils
 from config.config import mypath, slash_clean
 from db.db import tbl_game7
-from functions.functions import dirinDir, clean_word, check_if_finished
+from functions.functions import dirinDir, clean_word, check_if_finished, user_message
 import random
 
 from app import db
@@ -81,11 +81,13 @@ def submit_g7(option=0, answer=0, default_value=0,g_number=0,wins=0):
     g_number=int(g_number)
     if option.lower() == answer.lower():
         item = tbl_game7(score=1, user_id=uid, question=name)
-        flash('Right answer you got 1 point', 'success')
+        user_message('right_answer')
+
         wins+=1
     else:
         item = tbl_game7(score=0, user_id=uid, question=name)
-        flash('bad answer you got 0 point', 'danger')
+
+        user_message('bad_answer')
     db.session.add(item)
     db.session.commit()
     g_number+=1

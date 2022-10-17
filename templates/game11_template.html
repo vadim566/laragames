@@ -4,11 +4,12 @@
 
 {%block content%}
 
-     <t1>Hello {{ current_user.username }}</t1>
-    <p>game number:</p>
-    <div id="score" value="{{ g_number }}">{{ g_number }}</div>
-    <p>and right answer  of total games of 10 is :</p>
-    <div id="wins" value="{{ wins }}">{{ wins }}</div>
+
+<div class="score-board">
+  <t1>Hello {{ current_user.username }}</t1>
+    <div id="score" value="{{ g_number }}">Game number: {{ g_number }}</div></p>
+    <div id="wins" value="{{ wins }}">Number of right answers  of total 10 games is:  {{ wins }}</div>
+    </div>
     <div class="panel">
         <div id="result">
 
