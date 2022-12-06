@@ -81,9 +81,9 @@ pip install -r requirements.txt
 
 ## Run Locally
 
-Run app.py with python After installation
+Run __init__.py with python After installation
 ```bash
-Python .\app.py
+Python .\__init__.py
 ```
 ## Deployment into heroku
 
