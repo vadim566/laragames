@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.wrapper-main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  width: calc(100% - 30px);
+  height: 60px;
+  padding: 0 15px;
+  background-color: #b2d8d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header-main {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-logo {
+  width: 48px;
+  padding-right: 20px;
+}
+
+.nav-header-main img {
+  height: 100%;
+}
+
+.nav-header-main ul {
+  height: 100%;
+}
+
+.nav-header-main ul li {
+  list-style: none;
+  float: left;
+  height: 100%;
+}
+
+.nav-header-main ul li a {
+  display: block;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 6px;
+  line-height: 48px;
+  font-family: arial;
+  font-size: 16px;
+  color: #1c4a7c;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.header-login {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-login form {
+  height: 100%;
+}
+
+.header-login form input {
+  height: 100%;
+  width: 160px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFF;
+  float: left;
+  margin-left: 8px;
+  font-family: arial;
+}
+
+.header-login form button {
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c4a7c;
+  margin-left: 8px;
+  font-family: arial;
+  font-size: 13px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-forgetpass {
+  height: 100%;
+  width: 150px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #1c4a7c;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-signup {
+  height: 100%;
+  width: 70px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #1c4a7c;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 20px;
+}
+
+.section-default {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #b2d8d8;
+}
+
+.login-status {
+  text-align: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bolder;
+  color: #1c4a7c;
+}
+
+.loginerror {
+  padding-top: 10px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+  color: #a30404;
+  text-align: center;
+}
+
+/* sign-up.html */
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-family: arial;
+  color: #1c4a7c;
+}
+
+.form-signup {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 250px;
+}
+
+.form-resetPass, .form-newPass {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 350px;
+}
+
+
+.form-signup input, .form-resetPass input, .form-newPass input{
+  width: calc(100% - 30px);
+  height: 30px;
+  padding: 0 15px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFF;
+  float: left;
+  font-family: arial;
+}
+
+.form-signup button, .form-resetPass button, .form-newPass button {
+  display: block;
+  height: 40px;
+  padding: 0 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c4a7c;
+  font-family: arial;
+  font-size: 13px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+.signuperror {
+  padding-top: 14px;
+  font-family: arial;
+  font-size: 12px;
+  color: #a30404;
+  text-align: center;
+}
+
+.form-signup div {
+  padding-top: 14px;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #a30404;
+  text-align: center;
+}
+
+.resetPassInstruction{
+  padding-top: 14px;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1c4a7c;
+  text-align: center;
+}
+
+.termOfUse{
+  text-align: center;
+  font-size: 12px;
+  font-family: arial;
+  color: black;
+
+}
+
+select
+{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #f5fafa no-repeat 90% 50%;
+}

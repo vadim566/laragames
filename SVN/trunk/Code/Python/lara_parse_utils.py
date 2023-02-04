@@ -2,6 +2,7 @@
 import lara_utils
 import lara_replace_chars
 import unicodedata
+import re
 
 ## Simple utility functions for parsing LARA strings.
 
@@ -768,10 +769,11 @@ def remove_final_punctuation_marks_but_not_final_hyphen_or_apostrophe(Str):
 #def remove_final_punctuation_marks_but_not_final_hyphen(Str):
     I = 0
     N = len(Str)
-    # If it ends with a hyphen or apostrophe, don't remove anything
+    # If it ends with a hyphen, slash or apostrophe, don't remove anything
     Lastchar = Str[-1]
-    if Lastchar == '-' or is_apostrophe_char(Lastchar):
     #if Lastchar == '-':
+    #if Lastchar == '-' or is_apostrophe_char(Lastchar):
+    if Lastchar in '-/' or is_apostrophe_char(Lastchar):
         return Str
     while True:
         if I >= N:
@@ -810,9 +812,21 @@ def is_punctuation_char(Char):
 def is_apostrophe_char(X):
     return X in "'’"
 
+# Removes a sequence of the form "(spaces)[[(anything)]]" from a string
+def remove_disambiguation_annotation_from_word(Str):
+    return re.sub('\s*\[\[.+?\]\]', '', Str)
 
+# -------------------------------------------
 
-
+def remove_segment_markings_and_html_from_file(FileIn, FileOut):
+    TextIn = lara_utils.read_lara_text_file(FileIn)
+    if TextIn == False:
+        return
+    SegmentsIn = TextIn.split('||')
+    SegmentsOut = [ remove_html_annotations_from_string(Segment)[0] for Segment in SegmentsIn ]
+    TextOut = ''.join(SegmentsOut)
+    lara_utils.write_lara_text_file(TextOut, FileOut)
+    
 
 
 

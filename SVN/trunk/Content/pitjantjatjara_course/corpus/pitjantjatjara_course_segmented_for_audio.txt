@@ -1,0 +1,4429 @@
+|1| 
+
+|2|
+nyangatja|3|
+palatja|4|
+nyaratja|5|
+wati|6|
+minyma|7|
+tjitji|8|
+puḻka|9|
+tjukutjuku|10|
+palya|11|
+pikatjara|12|
+
+|13|
+nyangatja|14| |15|
+palatja|16| |17|
+nyaratja|18| |19|
+wati|20| |21|
+minyma|22| |23|
+tjitji|24| |25|
+puḻka|26| |27|
+tjukutjuku|28| |29|
+palya|30| |31|
+pikatjara|32| |33|
+
+|34|
+nyangatja palya|35|
+palatja palya|36|
+nyaratja palya|37|
+wati palya|38|
+minyma palya|39|
+tjitji palya|40|
+
+|41|
+nyangatja palya|42| |43|
+palatja palya|44| |45|
+nyaratja palya|46| |47|
+wati palya|48| |49|
+minyma palya|50| |51|
+tjitji palya|52| |53|
+
+|54|
+|55|
+
+|56| nyangatja palya/palatja|57|
+|58| palatja palya.|59|
+
+|60|
+
+|61| nyangatja palya/palatja|62|
+|63| palatja palya|64|
+|65| palatja palya|66|
+|67| palatja palya|68|
+
+|69|
+
+|70|
+nyangatja palya/palatja|71|
+palatja palya/nyaratja|72|
+nyaratja palya/wati|73|
+wati palya/minyma|74|
+minyma palya/tjitji|75|
+tjitji palya|76|
+
+|77|
+nyangatja pikatjara|78| |79|
+nyangatja pikatjara/nyaratja|80|
+nyaratja pikatjara/palatja|81|
+palatja pikatjara/tjitji|82|
+tjitji pikatjara/wati|83|
+wati pikatjara/minyma|84|
+minyma pikatjara|85|
+
+|86|
+nyangatja tjukutjuku|87| |88|
+nyangatja tjukutjuku/palatja|89|
+palatja tjukutjuku/nyaratja|90|
+nyaratja tjukutjuku/tjitji|91|
+tjitji tjukutjuku/minyma|92|
+minyma tjukutjuku/wati|93|
+wati tjukutjuku|94|
+
+|95|
+nyangatja puḻka|96| |97|
+nyangatja puḻka/palatja|98|
+palatja puḻka/wati|99|
+wati puḻka/minyma|100|
+minyma puḻka/tjitji|101|
+tjitji puḻka/nyaratja|102|
+nyaratja puḻka|103|
+
+|104|
+|105|
+
+|106| wati pikatjara.|107|
+|108| tjitji pikatjara.|109|
+|110| tjitji palya.|111|
+|112| minyma palya.|113|
+|114| minyma tjukutjuku.|115|
+|116| nyangatja tjukutjuku.|117|
+|118| nyangatja puḻka.|119|
+|120| palatja puḻka.|121|
+|122| nyaratja pikatjara.|123|
+|124| nyaratja palya.|125|
+
+|126|
+
+|127||128|
+
+|129|
+wati nyanga|130|
+wati pala|131|
+wati nyara|132|
+minyma nyanga|133|
+minyma pala|134|
+minyma nyara|135|
+tjitji nyanga|136|
+tjitji pala|137|
+tjitji nyara|138|
+
+|139|
+wati nyanga|140| |141|
+wati pala|142| |143|
+wati nyara|144| |145|
+minyma nyanga|146| |147|
+minyma pala|148| |149|
+minyma nyara|150| |151|
+tjitji nyanga|152| |153|
+tjitji pala|154| |155|
+tjitji nyara|156| |157|
+
+|158|
+wati nyanga pikatjara|159|
+wati pala pikatjara|160|
+wati nyara pikatjara|161|
+minyma nyanga palya|162|
+minyma pala palya|163|
+minyma nyara palya|164|
+tjitji nyanga tjukutjuku|165|
+tjitji pala tjukutjuku|166|
+tjitji nyara tjukutjuku|167|
+
+|168|
+wati nyanga pikatjara|169| |170|
+wati pala pikatjara|171| |172|
+wati nyara pikatjara|173| |174|
+minyma nyanga palya|175| |176|
+minyma pala palya|177| |178|
+minyma nyara palya|179| |180|
+tjitji nyanga tjukutjuku|181| |182|
+tjitji pala tjukutjuku|183| |184|
+tjitji nyara tjukutjuku|185| |186|
+
+|187|
+|188|
+wati nyanga pikatjara/wati pala|189|
+wati pala pikatjara/wati nyara|190|
+wati nyara pikatjara/minyma nyanga|191|
+minyma nyanga pikatjara/minyma pala|192|
+minyma pala pikatjara/tjitji nyanga|193|
+tjitji nyanga pikatjara/tjitji pala|194|
+tjitji pala pikatjara/tjitji nyara|195|
+tjitji nyara pikatjara|196|
+
+|197|
+wati nyanga puḻka/wati pala|198|
+wati pala puḻka/wati nyara|199|
+wati nyara puḻka/minyma nyanga|200|
+minyma nyanga puḻka/minyma pala|201|
+minyma pala puḻka/tjitji nyanga|202|
+tjitji nyanga puḻka/tjitji pala|203|
+tjitji pala puḻka/tjitji nyara|204|
+tjitji nyara puḻka|205|
+
+|206|
+
+|207| wati nyanga pikatjara/puḻka|208|
+|209| wati nyanga puḻka|210|
+
+|211|
+
+|212| 
+wati nyanga pikatjara/puḻka|213|
+wati nyanga puḻka/palya|214|
+wati nyanga palya/tjukutjuku|215|
+wati nyanga tjukutjuku|216|
+
+|217|
+minyma pala puḻka/pikatjara|218|
+minyma pala pikatjara/palya|219|
+minyma pala palya/tjukutjuku|220|
+minyma pala tjukutjuku|221|
+
+|222|
+tjitji nyara tjukutjuku/pikatjara|223|
+tjitji nyara pikatjara/palya|224|
+tjitji nyara palya/puḻka|225|
+tjitji nyara puḻka|226|
+
+|227|
+|228|
+wati puḻka/minyma:|229|
+minyma puḻka/pikatjara|230|
+minyma pikatjara/tjitji pala|231|
+tjitji pala pikatjara/tjitji nyanga|232|
+tjitji nyanga pikatjara/wati|233|
+wati pikatjara/wati nyanga|234|
+wati nyanga pikatjara/palya|235|
+wati nyanga palya/minyma nyanga|236|
+minyma nyanga palya/tjukutjuku|237|
+minyma nyanga tjukutjuku/tjitji|238|
+tjitji tjukutjuku/palya|239|
+tjitji palya/tjitji nyanga|240|
+tjitji nyanga palya/puḻka|241|
+tjitji nyanga puḻka|242|
+
+
+|243|
+|244|  wati pikatjara|245|
+|246| wati nyanga pikatjara|247|
+|248| minyma nyanga pikatjara|249|
+|250| minyma nyanga palya|251|
+|252| tjitji palya|253|
+|254| tjitji tjukutjuku|255|
+|256| tjitji nyanga tjukutjuku|257|
+|258| tjitji nyanga puḻka|259|
+|260| wati nyara puḻka|261|
+|262| minyma nyara puḻka|263|
+
+|264| 
+
+|265||266|
+
+|267|
+ngayulu|268|
+nyuntu|269| 
+paluṟu|270| 
+ngali|271| 
+nyupali|272| 
+pula|273| 
+nganaṉa|274| 
+nyura|275| 
+tjana|276| 
+
+|277|
+ngayulu|278||279|
+nyuntu|280||281|
+paluṟu|282||283|
+ngali|284||285|
+nyupali|286||287|
+pula|288||289|
+nganaṉa|290||291|
+nyura|292||293|
+tjana|294||295|
+
+|296|
+ngayulu palya|297|
+nyuntu palya|298|
+paluṟu palya|299|
+ngali palya|300|
+nyupali palya|301|
+pula palya|302|
+nganaṉa palya|303|
+nyura palya|304|
+tjana palya|305|
+ngayulu pikatjara|306|
+nyuntu pikatjara|307|
+paluṟu pikatjara|308|
+ngali pikatjara|309|
+nyupali pikatjara|310|
+pula pikatjara|311|
+nganaṉa pikatjara|312|
+nyura pikatjara|313|
+tjana pikatjara|314|
+ngayulu puḻka|315|
+nyuntu puḻka|316|
+paluṟu puḻka|317|
+ngali puḻka|318|
+pula puḻka|319|
+nganaṉa puḻka|320|
+nyura puḻka|321|
+tjana puḻka|322|
+ngayulu tjukutjuku|323|
+nyuntu tjukutjuku|324|
+paluṟu tjukutjuku|325|
+ngali tjukutjuku|326|
+nyupali tjukutjuku|327|
+pula tjukutjuku|328|
+nganaṉa tjukutjuku|329|
+nyura tjukutjuku|330|
+tjana tjukutjuku|331|
+
+|332|
+ngayulu palya|333||334|
+nyuntu pikatjara|335||336|
+paluṟu pikatjara|337||338|
+ngali palya|339||340|
+nyupali pikatjara|341||342|
+pula puḻka|343||344|
+nganaṉa puḻka|345||346|
+nyura tjukutjuku|347||348|
+tjana tjukutjuku|349||350|
+
+|351|
+|352| ngayulu palya/pikatjara|353|
+|354| ngayulu pikatjara|355|
+|356|
+ngayulu palya/pikatjara|357|
+ngayulu pikatjara/puḻka|358|
+ngayulu puḻka/tjukutjuku|359|
+ngayulu tjukutjuku/nyuntu|360|
+nyuntu tjukutjuku/paluṟu|361|
+paluṟu tjukutjuku/ngali|362|
+ngali tjukutjuku/nyupali|363|
+nyupali tjukutjuku/puḻka|364|
+nyupali puḻka/pikatjara|365|
+nyupali pikatjara/palya|366|
+nyupali palya/pula|367|
+pula palya/nganaṉa|368|
+nganaṉa palya/nyura|369|
+nyura palya/tjana|370|
+tjana palya|371|
+
+|372| (ngayulu).|373|
+|374| (nyuntu);|375||376|
+
+|377|
+ngayulu palya/nyuntu palya|378|
+ngayulu pikatjara/nyuntu pikatjara|379|
+ngayulu puḻka/nyuntu puḻka|380|
+ngayulu tjukutjuku/nyuntu tjukutjuku|381|
+
+|382|
+|383| paluṟu|384||385|
+ngayulu puḻka/paluṟu puḻka|386|
+ngayulu pikatjara/paluṟu pikatjara|387|
+ngayulu palya/paluṟu palya|388|
+ngayulu tjukutjuku/paluṟu tjukutjuku|389|
+
+|390|
+/|391| (paluṟu)|392||393| ngali|394||395||396|
+paluṟu puḻka/ngali puḻka|397|
+paluṟu tjukutjuku/ngali tjukutjuku|398|
+paluṟu palya/ngali palya|399|
+paluṟu pikatjara/ngali pikatjara|400|
+
+|401| ngali|402||403| (nyupali).|404||405|
+ngali puḻka/nyupali puḻka|406|
+ngali palya/nyupali palya|407|
+ngali tjukutjuku/nyupali tjukutjuku|408|
+ngali pikatjara/nyupali pikatjara|409|
+
+|410| ngayulu)|411||412| (nganaṉa).|413||414|
+ngayulu tjukutjuku/nganaṉa tjukutjuku|415|
+ngayulu palya/nganaṉa palya|416|
+ngayulu pikatjara/nganaṉa pikatjara|417|
+ngayulu puḻka/nganaṉa puḻka|418|
+
+|419|
+|420| ngayulu palya|421|
+|422| paluṟu palya|423|
+|424| wati palya|425|
+|426| tjitji palya|427|
+|428| tjitji pikatjara|429|
+|430| paluṟu pikatjara|431|
+|432| nyuntu pikatjara|433|
+|434| nyura pikatjara|435|
+|436| nyura puḻka|437|
+|438| ngayulu puḻka|439|
+|440| nyangatja puḻka|441|
+|442| ngali puḻka|443|
+|444| ngali tjukutjuku|445|
+|446| pula tjukutjuku|447|
+|448| nganaṉa tjukutjuku|449|
+|450| nyupali tjukutjuku|451|
+|452| tjana tjukutjuku|453|
+|454|
+
+|455||456|
+|457|
+nyanganpa|458|
+palanpa|459|
+nyaranpa|460|
+paku|461|
+pukuḻpa|462|
+waṟa|463|
+muṯumuṯu|464|
+aṉangu|465|
+papa|466|
+maḻu|467|
+
+|468|
+nyanganpa|469||470|
+palanpa|471||472|
+nyaranpa|473||474|
+paku|475||476|
+pukuḻpa|477||478|
+waṟa|479||480|
+muṯumuṯu|481||482|
+aṉangu|483||484|
+papa|485||486|
+maḻu|487||488|
+
+|489|
+wati nyanganpa|490|
+minyma nyanganpa|491|
+tjitji nyanganpa|492|
+aṉangu nyanganpa|493|
+papa nyanganpa|494|
+maḻu nyanganpa|495|
+tjitji palanpa|496|
+wati palanpa|497|
+minyma nyaranpa|498|
+aṉangu nyaranpa|499|
+wati paku|500|
+tjitji pukuḻpa|501|
+aṉangu waṟa|502|
+minyma muṯumuṯu|503|
+minyma paku|504|
+wati pukuḻpa|505|
+papa tjukutjuku|506|
+maḻu puḻka|507|
+wati nyanga pukuḻpa|508|
+wati nyanganpa pukuḻpa|509|
+maḻu pala puḻka|510|
+maḻu palanpa puḻka|511|
+minyma nyara pikatjara|512|
+minyma nyaranpa pikatjara|513|
+ngayulu paku|514|
+nyuntu paku|515|
+paluṟu paku|516|
+ngayulu pukuḻpa|517|
+nyuntu pukuḻpa|518|
+paluṟu pukuḻpa|519|
+ngali waṟa|520|
+nyupali waṟa|521|
+pula waṟa|522|
+nganaṉa paku|523|
+nyura paku|524|
+tjana paku|525|
+ngayulu muṯumuṯu|526|
+nyuntu muṯumuṯu|527|
+paluṟu muṯumuṯu|528|
+nyangatja paku|529|
+nyanganpa paku|530|
+palatja waṟa|531|
+palanpa waṟa|532|
+nyaratja pukuḻpa|533|
+nyaranpa pukuḻpa|534|
+
+|535|
+wati nyanganpa|536||537|
+minyma nyanganpa|538||539|
+tjitji nyanganpa|540||541|
+aṉangu nyanganpa|542||543|
+papa nyanganpa|544||545|
+maḻu nyanganpa|546||547|
+tjitji palanpa|548||549|
+wati palanpa|550||551|
+minyma nyaranpa|552||553|
+aṉangu nyaranpa|554||555|
+wati paku|556||557|
+tjitji pukuḻpa|558||559|
+aṉangu waṟa|560||561|
+minyma muṯumuṯu|562||563|
+minyma paku|564||565|
+wati pukuḻpa|566||567|
+papa tjukutjuku|568||569|
+maḻu puḻka|570||571|
+wati nyanga pukuḻpa|572||573|
+maḻu pala puḻka|574||575|
+maḻu palanpa puḻka|576||577|
+minyma nyara pikatjara|578||579|
+minyma nyaranpa pikatjara|580||581|
+ngayulu paku|582||583|
+nyuntu paku|584||585|
+paluṟu paku|586||587|
+ngayulu pukuḻpa|588||589|
+nyuntu pukuḻpa|590||591|
+paluṟu pukuḻpa|592||593|
+ngali waṟa|594||595|
+nyupali waṟa|596||597|
+pula waṟa|598||599|
+nganaṉa paku|600||601|
+nyura paku|602||603|
+tjana paku|604||605|
+ngayulu muṯumuṯu|606||607|
+nyuntu muṯumuṯu|608||609|
+paluṟu muṯumuṯu|610||611|
+nyangatja paku|612||613|
+nyanganpa paku|614||615|
+palatja waṟa|616||617|
+palanpa waṟa|618||619|
+nyaratja pukuḻpa|620||621|
+nyaranpa pukuḻpa|622||623|
+
+|624|
+|625|
+wati puḻka/paku|626|
+wati paku/pukuḻpa|627|
+wati pukuḻpa/waṟa|628|
+wati waṟa/muṯumuṯu|629|
+wati muṯumuṯu/minyma|630|
+minyma muṯumuṯu/tjitji|631|
+tjitji muṯumuṯu/aṉangu|632|
+aṉangu muṯumuṯu/puḻka|633|
+aṉangu puḻka/papa|634|
+papa puḻka/maḻu|635|
+maḻu puḻka/paku|636|
+maḻu paku/papa|637|
+papa paku|638|
+
+|639|
+|640|
+|641| nyangatja puḻka/nyanganpa|642| 
+|643| nyanganpa puḻka|644|
+|645|
+
+nyangatja puḻka/nyanganpa|646|
+nyanganpa puḻka|647|
+palatja puḻka/palanpa|648|
+palanpa puḻka|649|
+nyaratja puḻka/nyaranpa|650|
+nyaranpa puḻka|651|
+wati nyanga puḻka/wati nyanganpa|652|
+wati nyanganpa puḻka|653|
+tjitji pala tjukutjuku/tjitji palanpa|654|
+
+tjitji palanpa tjukutjuku|655|
+maḻu nyara puḻka/maḻu nyaranpa|656|
+maḻu nyaranpa puḻka|657|
+minyma nyanga pikatjara/minyma nyanganpa|658|
+minyma nyanganpa pikatjara|659|
+aṉangu pala pukuḻpa/aṉangu palanpa|660|
+aṉangu palanpa pukuḻpa|661|
+papa nyara paku/papa nyaranpa|662|
+papa nyaranpa paku|663|
+
+|664|
+|665|
+wati puḻka/ngayulu|666|
+ngayulu puḻka/pikatjara|667|
+ngayulu pikatjara/minyma pala|668|
+minyma pala pikatjara/minyma palanpa|669|
+minyma palanpa pikatjara/paku|670|
+minyma palanpa paku/maḻu|671|
+maḻu paku/papa|672|
+papa paku/tjukutjuku|673|
+papa tjukutjuku/aṉangu|674|
+aṉangu tjukutjuku/muṯumuṯu|675|
+aṉangu muṯumuṯu/aṉangu nyara|676|
+aṉangu nyara muṯumuṯu/nyuntu|677|
+nyuntu muṯumuṯu/waṟa|678|
+nyuntu waṟa/nganaṉa|679|
+nganaṉa waṟa/pukuḻpa|680|
+nganaṉa pukuḻpa|681|
+
+|682|
+|683|  wati pikatjara|684|
+|685|  tjitji pukuḻpa|686|
+|687|  aṉangu waṟa|688|
+|689|  minyma muṯumuṯu|690|
+|691|  papa tjukutjuku|692|
+|693|  maḻu puḻka|694|
+|695|  aṉangu nyanga paku|696|
+|697|  minyma nyanganpa pukuḻpa|698|
+|699|  ngayulu paku|700|
+|701|  nganaṉa pukuḻpa|702|
+|703|  papa pala puḻka|704|
+|705|  maḻu nyara paku|706|
+|707|  tjitji nyaranpa tjukutjuku|708|
+|709|  nyupali pukuḻpa|710|
+|711|  ngali palya|712|
+|713|
+
+|714||715|
+|716|
+uwa|717|
+wiya|718|
+
+|719|
+uwa|720| |721|
+wiya|722| |723|
+
+|724|
+nyuntu palya?|725| uwa, ngayulu palya.|726|
+nyuntu paku?|727| uwa, ngayulu paku.|728|
+nyuntu pukuḻpa?|729| uwa, ngayulu pukuḻpa.|730|
+nyupali palya?|731| uwa, ngali palya.|732|
+nyupali paku?|733| uwa, ngali paku.|734|
+nyupali pukuḻpa?|735| uwa, ngali pukuḻpa.|736|
+nyura palya?|737| uwa, nganaṉa palya.|738|
+nyura paku?|739| uwa, nganaṉa paku.|740|
+nyura pukuḻpa?|741| uwa, nganaṉa pukuḻpa.|742|
+tjitji nyanga palya?|743| uwa, paluṟu palya.|744|
+tjitji nyanga paku?|745| uwa, paluṟu paku.|746|
+tjitji nyanga pukuḻpa?|747| uwa, paluṟu pukuḻpa.|748|
+nyuntu pikatjara?|749| wiya, ngayulu palya.|750|
+nyuntu pikatjara?|751| wiya, ngayulu pikatjarawiya.|752|
+nyuntu paku?|753| wiya, ngayulu pakuwiya.|754|
+nyuntu pukuḻpa?|755| wiya, ngayulu pukuḻpawiya.|756|
+nyupali pikatjara?|757| wiya, ngali palya.|758|
+nyupali pikatjara?|759| wiya, ngali pikatjarawiya.|760|
+nyupali paku?|761| wiya, ngali pakuwiya.|762|
+nyupali pukuḻpa?|763| wiya, ngali pukuḻpawiya.|764|
+tjitji pikatjara?|765| wiya, tjitji palya.|766|
+tjitji pikatjara?|767| wiya, tjitji pikatjarawiya.|768|
+wati paku?|769| wiya, wati pakuwiya.|770|
+minyma pukuḻpa?|771| wiya, minyma pukuḻpawiya.|772|
+wati nyanga pikatjara?|773| wiya, paluṟu palya.|774|
+wati nyanga pikatjara?|775| wiya, paluṟu pikatjarawiya.|776|
+tjitji pala paku?|777| wiya, paluṟu pakuwiya.|778|
+minyma nyara pukuḻpa?|779| wiya, paluṟu pukuḻpawiya.|780|
+
+|781|
+nyuntu palya?|782| uwa, ngayulu palya.|783| |784|
+nyuntu paku?|785| uwa, ngayulu paku.|786| |787|
+nyuntu pukuḻpa?|788| uwa, ngayulu pukuḻpa.|789| |790|
+nyupali palya?|791| uwa, ngali palya.|792| |793|
+nyupali paku?|794| uwa, ngali paku.|795| |796|
+nyupali pukuḻpa?|797| uwa, ngali pukuḻpa.|798| |799|
+nyura palya?|800| uwa, nganaṉa palya.|801| |802|
+nyura paku?|803| uwa, nganaṉa paku.|804| |805|
+nyura pukuḻpa?|806| uwa, nganaṉa pukuḻpa.|807| |808|
+tjitji nyanga palya?|809| uwa, paluṟu palya.|810| |811|
+tjitji nyanga paku?|812| uwa, paluṟu paku.|813| |814|
+tjitji nyanga pukuḻpa?|815| uwa, paluṟu pukuḻpa.|816| |817|
+nyuntu pikatjara?|818| wiya, ngayulu palya.|819| |820|
+nyuntu pikatjara?|821| wiya, ngayulu pikatjarawiya.|822| |823|
+nyuntu paku?|824| wiya, ngayulu pakuwiya.|825| |826|
+nyuntu pukuḻpa?|827| wiya, ngayulu pukuḻpawiya.|828| |829|
+nyupali pikatjara?|830| wiya, ngali palya.|831| |832|
+nyupali pikatjara?|833| wiya, ngali pikatjarawiya.|834| |835|
+nyupali paku?|836| wiya, ngali pakuwiya.|837| |838|
+nyupali pukuḻpa?|839| wiya, ngali pukuḻpawiya.|840| |841|
+tjitji pikatjara?|842| wiya, tjitji palya.|843| |844|
+tjitji pikatjara?|845| wiya, tjitji pikatjarawiya.|846| |847|
+wati paku?|848| wiya, wati pakuwiya.|849| |850|
+minyma pukuḻpa?|851| wiya, minyma pukuḻpawiya.|852| |853|
+wati nyanga pikatjara?|854| wiya, paluṟu palya.|855| |856|
+wati nyanga pikatjara?|857| wiya, paluṟu pikatjarawiya.|858| |859|
+tjitji pala paku?|860| wiya, paluṟu pakuwiya.|861| |862|
+minyma nyara pukuḻpa?|863| wiya, paluṟu pukuḻpawiya.|864| |865| 
+
+|866|
+|867| nyuntu palya?|868|
+|869| uwa, ngayulu palya|870|
+|871|
+nyuntu palya?|872| uwa, ngayulu palya.|873|
+nyuntu pikatjara?|874| uwa, ngayulu pikatjara.|875|
+nyuntu pukuḻpa?|876| uwa, ngayulu pukuḻpa.|877|
+nyuntu paku?|878| uwa, ngayulu paku.|879|
+nyupali pikatjara?|880| uwa, ngali pikatjara.|881|
+nyupali pukuḻpa?|882| uwa, ngali pukuḻpa.|883|
+nyura palya?|884| uwa, nganaṉa palya.|885|
+nyura pikatjara?|886| uwa, nganaṉa pikatjara.|887|
+tjitji nyanga pikatjara?|888| uwa, paluṟu pikatjara.|889|
+wati nyanga paku?|890| uwa, paluṟu paku.|891|
+
+|892|
+nyuntu pikatjara?|893| wiya, ngayulu pikatjarawiya|894|  |895|wiya, ngayulu palya.|896|
+nyupali pikatjara?|897| wiya, ngali pikatjarawiya|898| |899| wiya, ngali palya.|900|
+nyupali paku?|901| wiya, ngali pakuwiya.|902|
+nyura paku?|903| wiya, nganaṉa pakuwiya.|904|
+tjitji nyara paku?|905| wiya, paluṟu pakuwiya.|906|
+minyma nyara paku?|907| wiya, paluṟu pakuwiya.|908|
+maḻu nyara puḻka?|909| wiya, paluṟu tjukutjuku.|910|
+tjitji nyara waṟa?|911| wiya, paluṟu muṯumuṯu.|912|
+
+|913|
+|914| nyuntu palya?|915|
+|916| uwa, ngayulu palya.|917|
+|918| nyupali paku?|919|
+|920| wiya, ngali pakuwiya.|921|
+|922| tjitji waṟa?|923|
+|924| wiya, tjitji muṯumuṯu.|925|
+|926| tjana pikatjara?|927|
+|928| uwa, tjana pikatjara.|929|
+|930| maḻu pikatjara?|931|
+|932| wiya, maḻu palya.|933|
+|934| nyura paku?|935|
+|936| uwa, nganaṉa paku.|937|
+|938|
+
+|939||940|
+|941|
+palyaṉa|942|
+palyan|943|
+palya|944|
+palyali|945|
+palyala|946|
+palyaya|947|
+pakuṉa|948|
+pakun|949|
+paku|950|
+pakuli|951|
+pakula|952|
+pakuya|953|
+
+|954|
+palyaṉa|955| |956|
+palyan|957| |958|
+palya|959| |960|
+palyali|961| |962|
+palyala|963| |964|
+palyaya|965| |966|
+pakuṉa|967| |968|
+pakun|969| |970|
+paku|971| |972|
+pakuli|973| |974|
+pakula|975| |976|
+pakuya|977| |978|
+
+|979|
+ngayulu palya|980| |981|
+ngayulu paku|982| |983|
+|984|
+nyupali palya|985| |986|
+pula palya|987| |988|
+nyura palya|989| |990|
+|991|
+ngayulu|992| |993|
+nyuntu|994| |995|
+paluṟu|996| |997|
+ngali|998| |999|
+nganaṉa|1000| |1001|
+tjana|1002| |1003|
+|1004|
+nyupali|1005| |1006|
+pula|1007| |1008|
+nyura|1009| |1010|
+
+|1011| paluṟu|1012| |1013| paluṟu palya|1014| |1015| palya.|1016|
+|1017|
+palyaṉa|1018|
+pakuṉa|1019|
+pukuḻpaṉa|1020|
+pikatjaraṉa|1021|
+waṟaṉa|1022|
+muṯumuṯuṉa|1023|
+tjukutjukuṉa|1024|
+puḻkaṉa|1025|
+palyan|1026|
+pikatjaran|1027|
+paku|1028|
+pukuḻpa|1029|
+pikatjarali|1030|
+pakuli|1031|
+pikatjarala|1032|
+pakula|1033|
+pikatjaraya|1034|
+pukuḻpaya|1035|
+
+|1036|
+palyaṉa|1037| |1038|
+pakuṉa|1039| |1040|
+pukuḻpaṉa|1041| |1042|
+pikatjaraṉa|1043| |1044|
+waṟaṉa|1045| |1046|
+muṯumuṯuṉa|1047| |1048|
+tjukutjukuṉa|1049| |1050|
+puḻkaṉa|1051| |1052|
+palyan|1053| |1054|
+pikatjaran|1055| |1056|
+paku|1057| |1058|
+pukuḻpa|1059| |1060|
+pikatjarali |1061||1062|
+pakuli|1063| |1064|
+pikatjarala|1065| |1066|
+pakula|1067| |1068|
+pikatjaraya|1069| |1070|
+pukuḻpaya|1071| |1072|
+
+|1073|
+|1074|
+|1075| ngayulu palya|1076|
+|1077| palyaṉa|1078|
+|1079|
+ngayulu palya|1080| palyaṉa|1081|
+ngayulu pukuḻpa|1082|  pukuḻpaṉa|1083|
+ngayulu paku|1084| pakuṉa|1085|
+nyuntu pikatjara|1086| pikatjaran|1087|
+nyuntu pukuḻpa|1088| pukuḻpan|1089|
+paluṟu paku|1090| paku|1091|
+paluṟu muṯumuṯu|1092| muṯumuṯu|1093|
+paluṟu waṟa|1094| waṟa|1095|
+ngali pikatjara|1096| pikatjarali|1097|
+ngali tjukutjuku|1098| tjukutjukuli|1099|
+nganaṉa paku|1100| pakula|1101|
+nganaṉa palya|1102| palyala|1103|
+tjana paku|1104| pakuya|1105|
+tjana pikatjara|1106| pikatjaraya|1107|
+|1108|
+|1109| nyuntu palya?|1110|
+|1111| uwa, palyaṉa.|1112|
+|1113|
+nyuntu palya?|1114| uwa, palyaṉa|1115|
+nyuntu paku?|1116| uwa, pakuṉa|1117|
+nyuntu pikatjara?|1118| uwa, pikatjaraṉa|1119|
+nyupali pikatjara?|1120|  uwa, pikatjarali|1121|
+nyupali paku?|1122| uwa, pakuli|1123|
+nyupali pukuḻpa?|1124| uwa, pukuḻpali|1125|
+nyura pukuḻpa?|1126|  uwa, pukuḻpala|1127|
+nyura paku?|1128| uwa, pakula|1129|
+nyura pikatjara?|1130| uwa, pikatjarala|1131|
+paluṟu pikatjara?|1132| uwa, pikatjara|1133|
+paluṟu paku?|1134| uwa, paku|1135|
+paluṟu muṯumuṯu?|1136| uwa, muṯumuṯu|1137|
+paluṟu pukuḻpa?|1138| uwa, pukuḻpa|1139|
+tjana pukuḻpa?|1140|  uwa, pukuḻpaya|1141|
+tjana paku?|1142| uwa, pakuya|1143|
+tjana tjukutjuku|1144| uwa, tjukutjukuya|1145|
+
+|1146|
+|1147| palyaṉa|1148|
+|1149| pikatjaran|1150|
+|1151| nyupali paku|1152|
+|1153| nyura puḻka|1154|
+|1155| tjukutjuku|1156|
+|1157| muṯumuṯuya|1158|
+|1159| tjukutjukuli|1160|
+|1161| pakuya|1162|
+|1163| pukuḻpala|1164|
+|1165| puḻkaṉa|1166|
+|1167| pikatjara|1168|
+|1169| pukuḻpaṉa|1170|
+
+|1171| 
+
+|1172||1173|
+|1174|
+nguḻu|1175|
+rapa|1176|
+ngananya|1177|
+nyaa|1178|
+
+|1179|
+nguḻu|1180|  |1181|
+rapa|1182|  |1183|
+ngananya|1184|  |1185|
+nyaa|1186|  |1187|
+
+|1188|
+ngananya paku?|1189|   ngayuluṉa paku|1190|
+ngananya pikatjara?|1191|  ngayuluṉa pikatjara|1192|
+ngananya nguḻu?|1193|  ngayuluṉa nguḻu|1194|
+ngananya rapa?|1195|  ngayuluṉa rapa|1196|
+ngananya paku?|1197|  tjitji nyanga paku|1198|
+ngananya pikatjara?|1199|  tjitji nyara pikatjara|1200|
+ngananya nguḻu?|1201|  ngalili nguḻu|1202|
+ngananya paku?|1203|  nganaṉala paku|1204|
+nyuntun paku?|1205|  uwa, pakuṉa|1206|
+nyuntun pikatjara?|1207|  uwa, pikatjaraṉa|1208|
+nyuntun nguḻu?|1209|  uwa, nguḻuṉa|1210|
+nyaa puḻka?|1211|  maḻu puḻka|1212|
+nyaa tjukutjuku?|1213|  papa tjukutjuku|1214|
+nyaa nyangatja?|1215|  nyangatja maḻu|1216|
+nyaa palatja?|1217|  palatja papa|1218|
+
+|1219|
+|1220|
+
+ngananya paku?|1221|   |1222|
+ngayuluṉa paku|1223|   |1224|
+ngananya pikatjara?|1225|   |1226|
+ngayuluṉa pikatjara|1227|    |1228|
+ngananya nguḻu?|1229|   |1230|
+ngayuluṉa nguḻu|1231|  |1232|
+ngananya rapa?|1233|   |1234|
+ngayuluṉa rapa|1235|   |1236|
+ngananya paku?|1237|   |1238|
+tjitji nyanga paku|1239|   |1240|
+ngananya pikatjara?|1241|   |1242|
+tjitji nyara pikatjara|1243|   |1244|
+ngananya nguḻu?|1245|   |1246|
+ngalili nguḻu|1247|  |1248|
+ngananya paku?|1249|  |1250|
+nganaṉala paku|1251|   |1252|
+nyuntun paku?|1253|   |1254|
+uwa, pakuṉa|1255|   |1256|
+nyuntun pikatjara?|1257|   |1258|
+uwa, pikatjaraṉa|1259|   |1260|
+nyuntun nguḻu?|1261|   |1262|
+uwa, nguḻuṉa|1263|   |1264|
+nyaa puḻka?|1265|   |1266|
+maḻu puḻka|1267|   |1268|
+nyaa tjukutjuku?|1269|  |1270|
+papa tjukutjuku|1271|   |1272|
+nyaa nyangatja?|1273|  |1274|
+nyangatja maḻu|1275|   |1276|
+nyaa palatja?|1277|  |1278|
+palatja papa|1279|   |1280|
+
+|1281|
+
+|1282|
+|1283|
+
+wati puḻka|1284|  nguḻu|1285|
+wati nguḻu|1286|  paku|1287|
+wati paku|1288|  rapa|1289|
+wati rapa|1290|  tjitji|1291|
+tjitji rapa|1292|  minyma|1293|
+minyma rapa|1294|  pikatjara|1295|
+minyma pikatjara|1296|  nguḻu|1297|
+minyma nguḻu|1298|  maḻu|1299|
+maḻu nguḻu|1300|  ngayulu|1301|
+ngayulu nguḻu|1302| rapa|1303|
+ngayulu rapa|1304|  nyuntu|1305|
+nyuntu rapa|1306|  paluṟu|1307|
+paluṟu rapa|1308|  paku|1309|
+paluṟu paku|1310|  ngali|1311|
+ngali paku|1312|  tjana|1313|
+tjana paku|1314|  puḻka|1315|
+tjana puḻka|1316|  nganaṉa|1317|
+nganaṉa puḻka|1318|
+
+|1319|
+
+|1320|
+|1321|
+|1322|
+
+|1323| ngayulu palya|1324|
+|1325| ngayuluṉa palya|1326|
+
+|1327|
+|1328| nyuntu paku|1329|
+|1330| nyuntun paku|1331|
+|1332|
+
+ngayulu palya|1333|  ngayuluṉa palya|1334|
+nyuntu paku|1335|  nyuntun paku|1336|
+paluṟu paku|1337|  paluṟu paku|1338|
+ngali pikatjara|1339|  ngalili pikatjara|1340|
+nganaṉa tjukutjuku|1341|  nganaṉala tjukutjuku|1342|
+tjana puḻka|1343|  tjanaya puḻka|1344|
+ngayulu pukuḻpa|1345|  ngayuluṉa pukuḻpa|1346|
+paluṟu muṯumuṯu|1347|  paluṟu muṯumuṯu|1348|
+nganaṉa waṟa|1349|  nganaṉala waṟa|1350|
+nyuntu rapa|1351|  nyuntun rapa|1352|
+ngali nguḻu|1353|  ngalili nguḻu|1354|
+nyuntu pikatjara|1355|  nyuntun pikatjara|1356|
+
+|1357|
+
+|1358|  ngayulu paku|1359|
+|1360|  pakuṉa|1361|
+|1362|  ngayuluṉa paku|1363|
+
+|1364|
+
+|1365|  tjitji nguḻu|1366|
+|1367|  maḻu puḻka|1368|
+|1369|  wati rapa|1370|
+|1371|   minyma waṟa|1372|
+|1373|   ngananya pikatjara|1374|
+|1375|  ngayulu pikatjara|1376|
+|1377|  pikatjaraṉa|1378|
+|1379|  ngayuluṉa pikatjara|1380|
+|1381|  ngananya pukuḻpa|1382|
+|1383|  tjitji nyanga pukuḻpa|1384|
+|1385|  pakula|1386|
+|1387|  maḻu nyanga puḻka|1388|
+|1389|  pula pukuḻpa|1390|
+|1391|  tjanaya palya|1392|
+|1393|   palyaya|1394|
+|1395|  tjitji nyara muṯumuṯu|1396|
+|1397|  papa nyanganpa nguḻu|1398|
+|1399|  aṉangu nyanga pikatjara|1400|
+|1401|  aṉangu nyanganpa palya|1402|
+|1403|  pakuṉa|1404|
+
+|1405|
+
+|1406||1407|
+|1408| 
+wangkanyi|1409| 
+nyinanyi|1410| 
+ngaṟanyi|1411| 
+ngarinyi|1412| 
+pitjanyi|1413| 
+wangkangu|1414| 
+nyinangu|1415| 
+ngaṟangu|1416| 
+ngaringu|1417| 
+pitjangu|1418| 
+Ingkatjinya|1419|
+Tinimayinya|1420|
+Wintjinnga|1421|
+Waṯulyanya|1422|
+
+|1423|  
+wangkanyi|1424|  |1425|  
+nyinanyi|1426|  |1427|  
+ngaṟanyi|1428|  |1429|  
+ngarinyi|1430|  |1431|  
+pitjanyi|1432|  |1433|  
+wangkangu|1434|  |1435|  
+nyinangu|1436|  |1437|  
+ngaṟangu|1438|  |1439|  
+ngaringu|1440|  |1441|  
+pitjangu|1442|  |1443|  
+Ingkatjinya|1444|  |1445|  
+Tinimayinya|1446|  |1447|  
+Wintjinnga|1448|  |1449|  
+Waṯulyanya|1450|  |1451|
+
+|1452| 
+wati wangkanyi|1453|  
+minyma wangkanyi|1454|  
+tjitji wangkanyi|1455|  
+aṉangu wangkanyi|1456|  
+ngayulu wangkanyi|1457|  
+ngali wangkanyi|1458|  
+nganaṉa wangkanyi|1459|  
+maḻu nyinanyi|1460|  
+papa nyinanyi|1461|  
+tjitji nyinanyi|1462|  
+ngayulu nyinanyi|1463|  
+paluṟu nyinanyi|1464|  
+tjana nyinanyi|1465|  
+ngali nyinanyi|1466|  
+minyma ngaṟanyi|1467|  
+wati ngaṟanyi|1468|  
+Ingkatjinya ngaṟanyi|1469|  
+Wintjinnga ngaṟanyi|1470|  
+nyuntu ngaṟanyi|1471|  
+nyupali ngaṟanyi|1472|  
+ngayulu ngaṟanyi|1473|  
+tjitji ngarinyi|1474|  
+maḻu ngarinyi|1475|  
+papa ngarinyi|1476|  
+aṉangu ngarinyi|1477|  
+ngali ngarinyi|1478|  
+wati pitjanyi|1479|  
+Waṯulyanya pitjanyi|1480|  
+nyuntu pitjanyi|1481|  
+ngananya pitjanyi?|1482|  
+Tinimayinya pitjanyi|1483|  
+wati wangkangu|1484|  
+ngayulu wangkangu|1485|  
+ngananya wangkangu?|1486|  
+Ingkatjinya wangkangu|1487|  
+tjitji pitjangu|1488|  
+ngayulu pitjangu|1489|  
+nyuntu pitjangu|1490|  
+paluṟu ngaṟangu|1491|  
+tjana ngaṟangu|1492|
+
+|1493|  
+wati wangkanyi|1494|    |1495|  
+minyma wangkanyi|1496|  |1497|  
+tjitji wangkanyi|1498|    |1499|  
+aṉangu wangkanyi|1500|  |1501|  
+ngayulu wangkanyi|1502|  |1503|  
+ngali wangkanyi|1504|    |1505|  
+nganaṉa wangkanyi|1506|  |1507|  
+maḻu nyinanyi|1508|    |1509|  
+papa nyinanyi|1510|    |1511|  
+tjitji nyinanyi|1512|    |1513|  
+ngayulu nyinanyi|1514|  |1515|  
+paluṟu nyinanyi|1516|    |1517|  
+tjana nyinanyi|1518|    |1519|  
+ngali nyinanyi|1520|    |1521|  
+minyma ngaṟanyi|1522|    |1523|  
+wati ngaṟanyi|1524|    |1525|  
+Ingkatjinya ngaṟanyi|1526|  |1527|  
+Wintjinnga ngaṟanyi|1528|  |1529|  
+nyuntu ngaṟanyi|1530|    |1531|  
+nyupali ngaṟanyi|1532|  |1533|  
+ngayulu ngaṟanyi|1534|  |1535|  
+tjitji ngarinyi|1536|    |1537|  
+maḻu ngarinyi|1538|    |1539|  
+papa ngarinyi|1540|    |1541|  
+aṉangu ngarinyi|1542|    |1543|  
+ngali ngarinyi|1544|    |1545|  
+wati pitjanyi|1546|    |1547|  
+Waṯulyanya pitjanyi|1548|  |1549|  
+nyuntu pitjanyi|1550|    |1551|  
+ngananya pitjanyi?|1552|  |1553|  
+Tinimayinya pitjanyi|1554|  |1555|  
+wati wangkangu|1556|    |1557|  
+ngayulu wangkangu|1558|  |1559|  
+ngananya wangkangu?|1560|  |1561|  
+Ingkatjinya wangkangu|1562|  |1563|  
+tjitji pitjangu|1564|    |1565|  
+ngayulu pitjangu|1566|  |1567|  
+nyuntu pitjangu|1568|    |1569|  
+paluṟu ngaṟangu|1570|    |1571|  
+tjana ngaṟangu|1572|    |1573|
+
+|1574|
+|1575|  
+|1576|
+wati wangkanyi|1577|  tjitji|1578|  
+tjitji wangkanyi|1579|  minyma|1580|  
+minyma wangkanyi|1581|  ngayulu|1582|  
+ngayulu wangkanyi|1583|  nyuntu|1584|  
+nyuntu wangkanyi|1585| Ingkatjinya|1586|  
+Ingkatjinya wangkanyi|1587| paluṟu|1588|  
+paluṟu wangkanyi|1589|  
+|1590|
+wati nyinanyi|1591|  paluṟu|1592|  
+paluṟu nyinanyi|1593|  ngayulu|1594|  
+ngayulu nyinanyi|1595|  minyma|1596|  
+minyma nyinanyi|1597|  pitjanyi|1598|  
+minyma pitjanyi|1599|  aṉangu|1600|  
+aṉangu pitjanyi|1601|  wangkanyi|1602|  
+aṉangu wangkanyi|1603|  ngananya|1604|  
+ngananya wangkanyi|1605|  Ingkatjinya|1606|  
+Ingkatjinya wangkanyi|1607|  
+|1608|
+wati wangkangu|1609|  tjitji|1610|  
+tjitji wangkangu|1611|  minyma|1612|  
+minyma wangkangu|1613|  nyinangu|1614|  
+minyma nyinangu|1615|  aṉangu|1616|  
+aṉangu nyinangu|1617|  ngayulu|1618|  
+ngayulu nyinangu|1619|  pitjangu|1620|  
+ngayulu pitjangu|1621|  paluṟu|1622|  
+paluṟu pitjangu|1623|  ngananya|1624|  
+ngananya pitjangu|1625|  Wintjinnga|1626|  
+Wintjinnga pitjangu|1627|  
+|1628|
+|1629|  
+wati wangkanyi|1630|  wati wangkangu|1631|  
+minyma wangkanyi|1632|  minyma wangkangu|1633|  
+minyma ngarinyi|1634|  minyma ngaringu|1635|  
+tjitji ngarinyi|1636|  tjitji ngaringu|1637|  
+wati pitjanyi|1638|  wati pitjangu|1639|  
+papa pitjanyi|1640|  papa pitjangu|1641|  
+aṉangu pitjanyi|1642|  aṉangu pitjangu|1643|  
+aṉangu ngaṟanyi|1644|  aṉangu ngaṟangu|1645|  
+ngananya ngaṟanyi?|1646|  ngananya ngaṟangu?|1647|  
+ngananya wangkanyi?|1648|  ngananya wangkangu?|1649|  
+ngayulu wangkanyi|1650|  ngayulu wangkangu|1651|  
+Waṯulyanya wangkanyi|1652|  Waṯulyanya wangkangu|1653|  
+Waṯulyanya pitjanyi|1654|  Waṯulyanya pitjangu|1655|  
+nyuntu pitjanyi|1656|  nyuntu pitjangu|1657|  
+|1658|
+|1659|  
+|1660| ngayulu wangkanyi|1661|  
+|1662| wangkanyiṉa|1663|
+|1664|  
+ngayulu wangkanyi|1665|  wangkanyiṉa|1666|  
+ngayulu nyinanyi|1667|  nyinanyiṉa|1668|  
+ngayulu pitjanyi|1669|  pitjanyiṉa|1670|  
+ngayulu wangkangu|1671|  wangkanguṉa|1672|  
+ngayulu nyinangu|1673|  nyinanguṉa|1674|  
+ngayulu pitjangu|1675|  pitjanguṉa|1676|  
+nyuntu wangkanyi|1677|  wangkanyin|1678|  
+nyuntu nyinanyi|1679|  nyinanyin|1680|  
+ngayulu pitjangu|1681|  pitjanguṉa|1682|  
+paluṟu wangkanyi|1683|  wangkanyi|1684|  
+paluṟu wangkangu|1685|  wangkangu|1686|  
+paluṟu ngaṟanyi|1687|  ngaṟanyi|1688|  
+paluṟu pitjangu|1689|  pitjangu|1690|  
+ngali wangkanyi|1691|  wangkanyili|1692|  
+ngali pitjanyi|1693|  pitjanyili|1694|  
+nganaṉa wangkanyi|1695|  wangkanyila|1696|  
+nganaṉa pitjangu|1697|  pitjangula|1698|  
+tjana wangkanyi|1699|  wangkanyiya|1700|  
+tjana pitjangu|1701|  pitjanguya|1702|
+
+|1703|
+|1704|  
+|1705|  wati wangkanyi|1706|  
+|1707|    ngayulu wangkanyi|1708|  
+|1709|  nganaṉa wangkanyi|1710|  
+|1711|  minyma nyinanyi|1712|  
+|1713|  maḻu nyinanyi|1714|  
+|1715|  nyuntu ngaṟanyi|1716|  
+|1717|  tjitji pitjanyi|1718|  
+|1719|    tjitji pitjangu|1720|  
+|1721|    papa pitjangu|1722|  
+|1723|  aṉangu wangkangu|1724|  
+|1725|    wati ngaṟangu|1726|  
+|1727|    paluṟu ngaṟangu|1728|  
+|1729|  aṉangu pitjangu|1730|  
+|1731|    paluṟu pitjanyi|1732|  
+|1733|  wati nyara pitjanyi|1734|  
+|1735|    ngananya pitjanyi?|1736|  
+|1737|  Ingkatjinya pitjanyi.|1738|  
+|1739|  nyangatja wangkanyi.|1740|  
+|1741|  
+
+|1742||1743| 
+|1744| 
+wangkaku|1745| 
+nyinaku|1746| 
+ngaṟaku|1747| 
+ngariku|1748| 
+pitjaku|1749| 
+|1750| 
+wangkaku|1751| |1752| 
+nyinaku|1753|  |1754|  
+ngaṟaku|1755|  |1756|  
+ngariku|1757|  |1758|  
+pitjaku|1759|  |1760|  
+|1761|  
+wati wangkanyi|1762|  
+wati nyanga wangkanyi|1763|  
+wati pala wangkanyi|1764|  
+nyangatja wangkanyi|1765|  
+minyma pitjanyi|1766|  
+minyma nyara pitjanyi|1767|  
+nyaratja pitjanyi|1768|  
+palanpa pitjanyi|1769|  
+nyanganpa ngarinyi|1770|  
+tjitji nyanganpa wangkanyi|1771|  
+wati wangkangu|1772|  
+wati pala wangkangu|1773|  
+wati nyanga pitjangu|1774|  
+minyma nyanganpa pitjangu|1775|  
+nyangatja pitjangu|1776|  
+pitjanguṉa|1777|  
+pitjanguya|1778|  
+pitjangula|1779|  
+wati wangkaku|1780|  
+ngayulu wangkaku|1781|  
+wangkakuṉa|1782|  
+minyma pitjaku|1783|  
+paluṟu pitjaku|1784|  
+tjana pitjaku|1785|  
+ngananya pitjaku?|1786|  
+Ingkatjinya pitjaku|1787|  
+nyangatja wangkaku|1788|  
+tjitji nyanga ngariku|1789|  
+|1790|
+wati wangkanyi|1791|  |1792|
+wati nyanga wangkanyi|1793|  |1794|
+wati pala wangkanyi|1795|  |1796|
+nyangatja wangkanyi|1797|  |1798|
+minyma pitjanyi|1799|  |1800|
+minyma nyara pitjanyi|1801|  |1802|
+nyaratja pitjanyi|1803|  |1804|
+palanpa pitjanyi|1805|  |1806|
+tjitji nyanganpa wangkanyi|1807|  |1808|
+wati wangkangu|1809| |1810|
+wati pala wangkangu|1811|  |1812|
+wati nyanga pitjangu|1813|  |1814|
+minyma nyanganpa pitjangu|1815|  |1816|
+nyangatja pitjangu|1817|  |1818|
+pitjanguṉa|1819|  |1820|
+pitjanguya|1821|  |1822|
+pitjangula|1823|  |1824|
+wati wangkaku|1825|  |1826|
+ngayulu wangkaku|1827|  |1828|
+wangkakuṉa|1829|  |1830|
+minyma pitjaku|1831|  |1832|
+paluṟu pitjaku|1833|  |1834|
+tjana pitjaku|1835|  |1836|
+ngananya pitjaku?|1837|  |1838|
+Ingkatjinya pitjaku|1839|  |1840|
+nyangatja wangkaku|1841|  |1842|
+tjitji nyanga ngariku|1843|  |1844|
+
+|1845|
+|1846|
+pitjanyi|1847||1848| pitjaku.|1849||1850|
+|1851|
+wati wangkanyi|1852| wati wangkaku|1853|
+minyma wangkanyi|1854| minyma wangkaku|1855|
+minyma nyinanyi|1856| minyma nyinaku|1857|
+maḻu nyinanyi|1858| maḻu nyinaku|1859|
+maḻu pitjanyi|1860| maḻu pitjaku|1861|
+ngayulu pitjanyi|1862| ngayulu pitjaku|1863|
+ngayulu ngaṟanyi|1864| ngayulu ngaṟaku|1865|
+tjitji ngaṟanyi|1866| tjitji ngaṟaku|1867|
+tjitji ngarinyi|1868| tjitji ngariku|1869|
+nyuntu ngarinyi|1870| nyuntu ngariku|1871|
+paluṟu wangkanyi|1872| paluṟu wangkaku|1873|
+|1874|
+|1875|
+wangkanyiṉa|1876| wangkakuṉa|1877|
+pitjanyiṉa|1878| pitjakuṉa|1879|
+ngarinyiṉa|1880| ngarikuṉa|1881|
+wangkanyin|1882| wangkakun|1883|
+pitjanyin|1884| pitjakun|1885|
+nyinanyin|1886| nyinakun|1887|
+pitjanyi|1888| pitjaku|1889|
+wangkanyi|1890| wangkaku|1891|
+wangkanyili|1892| wangkakuli|1893|
+wangkanyila|1894| wangkakula|1895|
+wangkanyiya|1896| wangkakuya|1897|
+|1898|
+|1899|
+|1900| wati wangkaku|1901| tjitji|1902|
+|1903| tjitji wangkaku|1904|
+|1905|
+wati wangkaku|1906| tjitji|1907|
+tjitji wangkaku|1908| ngayulu|1909|
+ngayulu wangkaku|1910| minyma|1911|
+minyma wangkaku|1912| nyangatja|1913|
+nyangatja wangkaku|1914| aṉangu nyanga|1915|
+aṉangu nyanga wangkaku|1916|
+|1917|
+wati pitjaku|1918| tjitji|1919|
+tjitji pitjaku|1920| ngayulu|1921|
+ngayulu pitjaku|1922| nganaṉa|1923|
+nganaṉa pitjaku|1924| papa nyara|1925|
+papa nyara pitjaku|1926| minyma nyaranpa|1927|
+minyma nyaranpa pitjaku|1928|
+|1929|
+|1930|
+|1931| wati puḻka|1932||1933|
+wati wangkanyi|1934||1935|
+|1936| wati puḻka wangkanyi|1937|
+|1938|
+|1939|
+wati puḻka|1940| wati wangkanyi|1941|
+wati puḻka wangkanyi|1942|
+tjitji tjukutjuku|1943| tjitji pitjanyi|1944|
+tjitji tjukutjuku pitjanyi|1945|
+maḻu puḻka|1946| maḻu ngarinyi|1947|
+maḻu puḻka ngarinyi|1948|
+minyma waṟa|1949| minyma wangkanyi|1950|
+minyma waṟa wangkanyi|1951|
+wati muṯumuṯu|1952| wati pitjanyi|1953|
+wati muṯumuṯu pitjanyi|1954|
+aṉangu pukuḻpa|1955| aṉangu wangkanyi|1956|
+aṉangu pukuḻpa wangkanyi|1957|
+wati waṟa|1958| wati pitjaku|1959|
+wati waṟa pitjaku|1960|
+papa tjukutjuku|1961| papa ngariku|1962|
+papa tjukutjuku ngariku|1963|
+minyma palya|1964| minyma pitjaku|1965|
+minyma palya pitjaku|1966|
+wati pikatjara|1967| wati ngariku|1968|
+wati pikatjara ngariku|1969|
+
+|1970|
+|1971|
+|1972| wati nyanga puḻka|1973||1974|
+|1975| wati nyanga wangkanyi|1976|
+|1977| wati nyanga puḻka wangkanyi|1978|
+|1979|
+|1980|
+wati nyanga puḻka|1981| wati nyanga wangkanyi|1982|
+wati nyanga puḻka wangkanyi|1983|
+tjitji pala tjukutjuku|1984| tjitji pala wangkanyi|1985|
+tjitji pala tjukutjuku wangkanyi|1986|
+minyma nyara waṟa|1987| minyma nyara pitjaku|1988|
+minyma nyara waṟa pitjaku|1989|
+maḻu nyara puḻka|1990| maḻu nyara pitjaku|1991|
+maḻu nyara puḻka pitjaku|1992|
+wati nyanganpa pikatjara|1993| wati nyanganpa wangkanyi|1994|
+wati nyanganpa pikatjara wangkanyi|1995|
+
+|1996|
+|1997|
+|1998|  wati pitjaku|1999|
+|2000|  tjitji wangkaku|2001|
+|2002|  minyma nyinaku|2003|
+|2004|  maḻu pitjaku|2005|
+|2006|  papa ngariku|2007|
+|2008|  ngayulu wangkaku|2009|
+|2010|  nganaṉa pitjaku|2011|
+|2012|  Ingkatjinya pitjaku|2013|
+|2014|  Wintjinnga wangkaku|2015|
+|2016|  ngananya pitjaku?|2017|
+|2018|  Waṯulyanya pitjaku|2019|
+|2020|  nyaa ngarinyi?|2021|
+|2022|  maḻu ngarinyi|2023|
+|2024|  nyaa ngaṟanyi?|2025|
+|2026|  papa ngaṟanyi|2027|
+|2028|  nyangatja wangkaku|2029|
+|2030|  nyaratja pitjaku|2031|
+|2032|  wati nyanga puḻka wangkaku|2033|
+|2034|  tjitji tjukutjuku wangkaku|2035|
+|2036|  maḻu nyara puḻka pitjaku|2037|
+|2038|
+
+|2039||2040| 
+|2041|
+|2042|  
+|2043| 
+|2044| 
+|2045| 
+|2046| 
+|2047| 
+|2048| 
+|2049| 
+|2050| 
+|2051| 
+|2052| 
+ nyuntu ini ngananya? |2053| 
+ ngayulu ini Ingkatjinya|2054| 
+ nyuntu Pitjantjatjara wangkanyi?|2055| 
+ uwa, Pitjantjatjaraṉa wangkanyi|2056| palu nyuntu?|2057| 
+ uwa, ngayulu tjukutjuku wangkanyi|2058| ngulaṉa puḻka wangkaku|2059| 
+ nyuntu palya?|2060| 
+ uwa, ngayulu palya|2061| palu nyuntu?|2062| 
+ ngayulu pikatjara,|2063| munuṉa paku|2064| 
+ munta |2065| 
+|2066|
+ nyuntu ini ngananya? |2067| 
+ ngayulu ini Ingkatjinya|2068| 
+ nyuntu Pitjantjatjara wangkanyi?|2069| 
+ uwa, Pitjantjatjaraṉa wangkanyi|2070| palu nyuntu?|2071| 
+ uwa, ngayulu tjukutjuku wangkanyi|2072| ngulaṉa puḻka wangkaku|2073| 
+ nyuntu palya?|2074| 
+ uwa, ngayulu palya|2075| palu nyuntu?|2076| 
+ ngayulu pikatjara,|2077| munuṉa paku|2078| 
+ munta |2079|
+|2080|
+ nyuntu ini ngananya? |2081| 
+ ngayulu ini Ingkatjinya|2082| 
+ nyuntu Pitjantjatjara wangkanyi?|2083| 
+ uwa, Pitjantjatjaraṉa wangkanyi|2084| palu nyuntu?|2085| 
+ uwa, ngayulu tjukutjuku wangkanyi|2086| ngulaṉa puḻka wangkaku|2087| 
+ nyuntu palya?|2088| 
+ uwa, ngayulu palya|2089| palu nyuntu?|2090| 
+ ngayulu pikatjara,|2091| munuṉa paku|2092| 
+ munta |2093| 
+|2094||2095| 
+
+|2096| nyuntu ini ngananya?|2097| |2098|
+|2099| paluṟu|2100| |2101| 
+|2102| paluṟu ini ngananya?|2103| |2104| 
+|2105| 
+nyuntu ini ngananya?|2106| paluṟu|2107|
+paluṟu ini ngananya?|2108| nyangatja|2109| 
+nyangatja ini ngananya?|2110| wati nyanga|2111| 
+wati nyanga ini ngananya?|2112| minyma pala|2113| 
+minyma pala ini ngananya|2114| tjitji nyara|2115| 
+tjitji nyara ini ngananya?|2116| 
+|2117|
+ngayulu ini Ingkatjinya|2118| paluṟu|2119| 
+paluṟu ini Ingkatjinya|2120| wati|2121| 
+wati ini Ingkatjinya|2122| tjitji pala|2123| 
+tjitji pala ini Ingkatjinya|2124| nyangatja|2125| 
+nyangatja ini Ingkatjinya|2126| 
+|2127|
+nyuntu Pitjantjatjara wangkanyi?|2128| paluṟu|2129| 
+paluṟu Pitjantjatjara wangkanyi?|2130| nyupali|2131| 
+nyupali Pitjantjatjara wangkanyi?|2132| nyura|2133| 
+nyura Pitjantjatjara wangkanyi?|2134| tjana|2135| 
+tjana Pitjantjatjara wangkanyi?|2136| pula|2137| 
+pula Pitjantjatjara wangkanyi?|2138| wati nyanga|2139| 
+wati nyanga Pitjantjatjara wangkanyi?|2140| 
+|2141|
+palu nyuntu|2142| paluṟu|2143|  
+palu paluṟu?|2144| tjana|2145| 
+palu tjana?|2146| nyura|2147| 
+palu nyura?|2148| ngali|2149| 
+palu ngali?|2150| nyangatja|2151| 
+palu nyangatja?|2152| wati pala|2153| 
+palu wati pala?|2154| 
+|2155|
+ngulaṉa wangkaku|2156| pitjaku|2157| 
+ngulaṉa pitjaku|2158| nyinaku|2159| 
+ngulaṉa nyinaku|2160| ngaṟaku|2161| 
+ngulaṉa ngaṟaku|2162| pitjaku|2163| 
+ngulaṉa pitjaku|2164| ngulan|2165| 
+ngulan pitjaku|2166| wangkaku|2167| 
+ngulan wangkaku|2168| ngulali|2169| 
+ngulali wangkaku|2170| ngulala|2171| 
+ngulala wangkaku|2172| ngulaya|2173| 
+ngulaya wangkaku|2174| pitjaku|2175| 
+ngulaya pitjaku|2176| ngulaṉa|2177| 
+ngulaṉa pitjaku|2178| 
+|2179|
+|2180| ngayulu pikatjara|2181| |2182| 
+ngayulu paku|2183| |2184| ngayulu pikatjara munuṉa paku|2185|
+|2186| 
+|2187| 
+ngayulu pikatjara|2188| ngayulu paku|2189| 
+ngayulu pikatjara munuṉa paku|2190| 
+ngayulu palya|2191| ngayulu pukuḻpa|2192| 
+ngayulu palya munuṉa pukuḻpa|2193| 
+ngayulu waṟa|2194| ngayulu puḻka|2195|
+ngayulu waṟa munuṉa puḻka|2196| 
+ngayulu nyinanyi|2197| ngayulu wangkanyi|2198| 
+ngayulu nyinanyi|2199| munuṉa wangkanyi|2200| 
+ngayulu pitjaku|2201| ngayulu wangkaku|2202| 
+ngayulu pitjaku munuṉa wangkaku|2203| 
+|2204|
+ngayulu pikatjara munuṉa paku.|2205| |2206| nyuntu pikatjara munun paku|2207| 
+|2208| 
+ngayulu pikatjara munuṉa paku|2209| nyuntu|2210| 
+nyuntu pikatjara munun paku|2211| paluṟu|2212| 
+paluṟu pikatjara munu paku|2213| ngali|2214| 
+ngali pikatjara munuli paku|2215| nganaṉa|2216| 
+nganaṉa pikatjara munula paku|2217| tjana|2218| 
+tjana pikatjara munuya paku|2219| 
+|2220|
+ngayulu nyinanyi munuṉa wangkanyi|2221| nyuntu|2222| 
+nyuntu nyinanyi munun wangkanyi|2223| paluṟu|2224| 
+paluṟu nyinanyi munu wangkanyi|2225| ngali|2226| 
+ngali nyinanyi munuli wangkanyi|2227| nganaṉa|2228| 
+nganaṉa nyinanyi munula wangkanyi|2229| tjana|2230| 
+tjana nyinanyi munuya wangkanyi|2231| 
+|2232|
+ngayulu pitjaku munuṉa nyinaku|2233| nyuntu|2234| 
+nyuntu pitjaku munun nyinaku|2235| paluṟu|2236| 
+paluṟu pitjaku munu nyinaku|2237| ngali|2238| 
+ngali pitjaku munuli nyinaku|2239| nganaṉa|2240| 
+nganaṉa pitjaku munula nyinaku|2241| tjana|2242| 
+tjana pitjaku munuya nyinaku|2243| 
+|2244|
+wati nyanga pikatjara munu paku|2245| minyma pala|2246| 
+minyma pala pikatjara munu paku|2247| wati nyanganpa|2248| 
+wati nyanganpa pikatjara munuya paku|2249| tjitji palanpa|2250| 
+tjitji palanpa pikatjara munuya paku|2251| maḻu|2252| 
+maḻu pikatjara munu paku|2253| papa nyaranpa|2254| 
+papa nyaranpa pikatjara munuya paku|2255| ngayulu|2256| 
+ngayulu pikatjara munuṉa paku|2257| 
+|2258|
+|2259| tjitji nyanga pikatjara|2260| 
+|2261| ngayulu ini Ingkatjinya|2262| 
+|2263| nyuntu Pitjantjatjara wangkanyi?|2264| 
+|2265| papa nyanga pikatjara munu paku|2266| 
+|2267| nyuntu ini ngananya?|2268| 
+|2269| paluṟu ini ngananya?|2270| 
+|2271| tjitji nyanga ini ngananya?|2272| 
+|2273| 
+|2274| ngayulu ngula puḻka wangkaku|2275| 
+|2276| palu nyuntu?|2277| 
+|2278| palu paluṟu?|2279|
+|2280| wiya, ngayulu pikatjara munuṉa paku|2281| 
+|2282| wati nyanganpa palya munuya pukuḻpa.|2283| 
+|2284| nganaṉa pitjaku munula wangkaku|2285| 
+|2286| tjana munuya tjukutjuku|2287| 
+|2288| nyura paku? uwa!!|2289|  
+|2290| 
+
+|2291||2292| 
+|2293|
+wirtjapakaṉi|2294| 
+wirtjapakaṉu|2295| 
+wirtjapakalku|2296| 
+punkaṉi|2297| 
+punkaṉu|2298| 
+punkalku|2299| 
+wangka|2300| 
+pitja|2301| 
+wirtjapakala|2302| 
+punkala|2303| 
+|2304| 
+wirtjapakaṉi|2305| |2306| 
+wirtjapakaṉu|2307| |2308| 
+wirtjapakalku|2309| |2310| 
+punkaṉi|2311|   |2312| 
+punkaṉu|2313|   |2314| 
+punkalku|2315|   |2316| 
+wangka|2317|   |2318| 
+pitja|2319|   |2320| 
+wirtjapakala|2321|   |2322| 
+punkala|2323|   |2324| 
+|2325| 
+nyuntu wangka!|2326| 
+nyupali wangka!|2327| 
+nyuntu pitja!|2328| 
+nyupali pitja!|2329| 
+nyura pitja!|2330|
+nyuntu wirtjapakala!|2331| 
+nyupali wirtjapakala!|2332| 
+nyura wirtjapakala!|2333| 
+nyuntu punkala!|2334|
+nyupali punkala!|2335|
+nyura punkala!|2336| 
+wangka!|2337| 
+wangkapula!|2338| 
+wangkaya!|2339| 
+pitja!|2340| 
+pitjapula!|2341| 
+pitjaya!|2342| 
+wirtjapakala!|2343| 
+wirtjapakalapula!|2344| 
+wirtjapakalaya!|2345| 
+maḻu wirtjapakaṉi!|2346| 
+ngayulu wirtjapakaṉi!|2347| 
+paluṟu wirtjapakaṉi!|2348| 
+wirtjapakaṉiya|2349|
+maḻu wirtjapakaṉu|2350| 
+maḻu wirtjapakalku|2351| 
+tjitji punkaṉi|2352| 
+tjitji punkaṉu|2353| 
+tjitji nyara punkalku|2354| 
+punkaṉuli|2355| 
+tjitji wirtjapakaṉu munu punkaṉu|2356| 
+tjitji punkaṉu munu ulangu|2357| 
+|2358| 
+nyuntu wangka!|2359| |2360| 
+nyupali wangka!|2361| |2362| 
+nyura wangka!|2363| |2364| 
+nyuntu pitja!|2365| |2366| 
+nyupali pitja!|2367| |2368| 
+nyura pitja!|2369| |2370| 
+nyuntu wirtjapakala!|2371|  |2372| 
+nyupali wirtjapakala!|2373|  |2374| 
+nyura wirtjapakala!|2375|  |2376| 
+nyuntu punkala!|2377|  |2378| 
+nyupali punkala!|2379|  |2380| 
+nyura punkala!|2381| |2382| 
+wangka!|2383|  |2384| 
+|2385| 
+wangkapula!|2386| |2387| 
+wangkaya!|2388| |2389| 
+pitja!|2390| |2391| 
+pitjapula!|2392| |2393| 
+pitjaya!|2394| |2395| 
+wirtjapakala!|2396| |2397| 
+wirtjapakalapula!|2398| |2399| 
+wirtjapakalaya!|2400| |2401|
+|2402|
+maḻu wirtjapakaṉi|2403| |2404| 
+ngayulu wirtjapakaṉi|2405| |2406| 
+paluṟu wirtjapakaṉi|2407| |2408| 
+wirtjapakaṉiya|2409| |2410| 
+maḻu wirtjapakaṉu|2411| |2412| 
+maḻu wirtjapakalku|2413| |2414| 
+tjitji punkaṉi|2415| |2416| 
+tjitji punkaṉu|2417| |2418|
+tjitji nyara punkalku|2419| |2420| 
+punkaṉuli|2421| |2422| 
+tjitji wirtjapakaṉu munu punkaṉu|2423| |2424| 
+tjitji punkaṉu munu ulangu|2425| |2426|
+
+|2427|
+|2428| 
+|2429| nyuntu wangkanyi|2430| |2431| 
+|2432| nyuntu wangka|2433| |2434|
+|2435|
+nyuntu wangkanyi|2436|   nyuntu wangka!|2437| 
+nyuntu pitjanyi|2438|    nyuntu pitja!|2439| 
+nyuntu wirtjapakaṉi|2440|   nyuntu wirtjapakala!|2441| 
+nyuntu punkaṉi|2442|   nyuntu punkala!|2443| 
+nyuntu nyinanyi|2444|   nyuntu nyina!|2445| 
+|2446|
+nyupali wangkanyi|2447|   nyupali wangka!|2448| 
+nyupali pitjanyi|2449|   nyupali pitja!|2450| 
+nyura wangkanyi|2451|   nyura wangka!|2452|
+nyupali wirtjapakaṉi|2453|   nyupali wirtjapakala!|2454| 
+nyura punkaṉi|2455|   nyura punkala!|2456| 
+|2457|
+|2458| 
+|2459| nyuntu wangka|2460| 
+|2461| wangka!|2462|
+|2463| 
+nyuntu wangka!|2464|  wangka!|2465| 
+nyuntu pitja!|2466|  pitja!|2467|
+nyuntu wirtjapakala!|2468|   wirtjapakala!|2469| 
+nyupali wangka|2470|  wangkapula!|2471| 
+nyupali wirtjapakala!|2472|   wirtjapakalapula!|2473| 
+nyura pitja|2474|   pitjaya!|2475| 
+nyura wirtjapakala!|2476|   wirtjapakalaya!|2477|
+nyura nyina!|2478|   nyinaya!|2479|
+|2480|
+|2481| 
+wati wangkanyi|2482|   wangkangu|2483| 
+wati wangkangu|2484|   minyma|2485| 
+minyma wangkangu|2486|   tjitji pala|2487| 
+tjitji pala wangkangu|2488|   wangkaku|2489| 
+tjitji pala wangkaku|2490|   pitjaku|2491| 
+tjitji pala pitjaku|2492|   pitjangu|2493| 
+tjitji pala pitjangu|2494|  maḻu|2495| 
+maḻu pitjangu|2496|   nyinanyi|2497| 
+maḻu nyinanyi|2498|   wirtjapakaṉi|2499| 
+maḻu wirtjapakaṉi|2500|   wirtjapakaṉu|2501| 
+maḻu wirtjapakaṉu|2502|   tjitji|2503| 
+tjitji wirtjapakaṉu|2504|   punkaṉu|2505| 
+tjitji punkaṉu|2506|   punkalku|2507| 
+tjitji punkalku|2508|   wangkaku|2509| 
+tjitji wangkaku|2510|   ulaku|2511| 
+tjitji ulaku|2512|   minyma|2513| 
+minyma ulaku|2514|   pitjaku|2515| 
+minyma pitjaku|2516|   pitjanyi|2517| 
+minyma pitjanyi|2518|   wangkanyi|2519| 
+minyma wangkanyi|2520|   wati|2521| 
+wati wangkanyi|2522| 
+|2523|.
+|2524| 
+ngayulu pitjanyi|2525|   ngayulu pitjangu|2526| 
+pitjanyiṉa|2527|   pitjanguṉa|2528| 
+ngayulu wangkanyi|2529|   ngayulu wangkangu|2530| 
+wangkanyiṉa|2531|   wangkanguṉa|2532| 
+ngayulu wirtjapakaṉi|2533|   ngayulu wirtjapakaṉu|2534| 
+wirtjapakaṉiṉa|2535|    wirtjapakaṉuṉa|2536|
+ngayulu punkaṉi|2537|   ngayulu punkaṉu|2538| 
+punkaṉiṉa|2539|   punkaṉuṉa|2540| 
+|2541| 
+nyuntu pitjanyi|2542|   nyuntu pitjangu|2543| 
+pitjanyin|2544|   pitjangun|2545| 
+nyuntu wirtjapakaṉi|2546|   nyuntu wirtjapakaṉu|2547| 
+wirtjapakaṉin|2548|   wirtjapakaṉun|2549| 
+paluṟu wangkanyi|2550|   paluṟu wangkangu|2551| 
+wangkanyi|2552|   wangkangu|2553| 
+paluṟu  punkaṉi|2554|   paluṟu punkaṉu|2555| 
+punkaṉi|2556|   punkaṉu|2557|
+
+|2558|
+|2559| wati wirtjapakaṉi|2560| 
+|2561| maḻu wirtjapakaṉu|2562| 
+|2563|  tjitji nyanga wirtjapakaṉu|2564| 
+|2565| tjitji tjukutjuku punkaṉu|2566| 
+|2567| nyuntu wangka!|2568| 
+|2569| nyupali pitja!|2570| 
+|2571|   nyura wirtjapakala!|2572| 
+|2573|  pitja!|2574| 
+|2575|  wangkapula!|2576| 
+|2577|   wirtjapakalaya!|2578| 
+|2579|   wirtjapakaṉi|2580| 
+|2581|   tjitji wirtjapakaṉu munu punkaṉu|2582| 
+|2583| ngayulu wirtjapakalku|2584| 
+|2585|   wirtjapakalkuṉa|2586| 
+|2587| nganaṉa wangkaku|2588| 
+|2589|  wangkakula|2590| 
+|2591| nyura pitja!|2592| 
+|2593|   pitjaya!|2594| 
+|2595| nyupali wirtjapakala!|2596| 
+|2597| wirtjapakalapula!|2598| 
+
+
+|2599||2600| 
+|2601|
+kaḻaya|2602| 
+kanyaḻa|2603|
+kanyaḻa|2604| 
+wakaṉi|2605| 
+wakaṉu|2606| 
+wakalku|2607| 
+wakala!|2608| 
+nyanganyi|2609| 
+nyangu|2610|
+nyakuku|2611| 
+nyawa!|2612| 
+|2613|
+|2614| 
+kaḻaya|2615|   |2616|
+kanyaḻa|2617|   |2618|
+wakaṉi|2619|   |2620| 
+wakaṉu|2621|   |2622| 
+wakalku|2623|   |2624| 
+wakala!|2625|   |2626| 
+nyanganyi|2627|   |2628| 
+nyangu|2629|   |2630| 
+nyakuku|2631|   |2632| 
+nyawa|2633|!   |2634| 
+|2635| 
+watingku maḻu wakaṉi|2636| 
+watingku maḻu nyanganyi|2637| 
+aṉangungku maḻu wakaṉi|2638|
+aṉangungku maḻu nyanganyi|2639|
+watingku maḻu wakaṉu|2640|
+watingku maḻu nyangu|2641|
+tjitjingku maḻu nyangu|2642|
+minymangku maḻu nyangu|2643|
+Ingkatjilu maḻu wakaṉu|2644|
+Ingkatjilu kaḻaya nyangu|2645|
+Waṯulyalu kaḻaya nyangu|2646|
+Waṯulyalu kanyaḻa nyangu|2647|
+ngayulu kaḻaya wakaṉu|2648|
+ngayulu maḻu nyangu|2649|
+kaḻayaṉa wakaṉu|2650|
+maḻuṉa nyangu|2651|
+nyuntu maḻu wakaṉu|2652|
+maḻun wakaṉu|2653|
+paluṟu maḻu wakaṉu|2654|
+maḻu wakaṉu|2655|
+ngali maḻu wakaṉu|2656|
+maḻuli wakaṉu|2657|
+nganaṉa maḻu wakaṉu|2658|
+maḻula wakaṉu|2659|
+tjana maḻu wakaṉu|2660|
+maḻuya wakaṉu|2661|
+nyupali maḻu wakaṉu|2662|
+nyura maḻu wakaṉu|2663|
+pula maḻu wakaṉu|2664|
+|2665| 
+watingku maḻu wakaṉi|2666|   |2667|
+watingku maḻu nyanganyi|2668|   |2669|
+aṉangungku maḻu wakaṉi|2670|   |2671|
+aṉangungku maḻu nyanganyi|2672|   |2673|
+watingku maḻu wakaṉu|2674|   |2675|
+watingku maḻu nyangu|2676|  |2677|
+tjitjingku maḻu nyangu|2678|   |2679|
+minymangku maḻu nyangu|2680|   |2681|
+Ingkatjilu maḻu wakaṉu|2682|   |2683|
+Ingkatjilu kaḻaya nyangu|2684|   |2685|
+Waṯulyalu kaḻaya nyangu|2686|   |2687|
+Waṯulyalu kanyaḻa nyangu|2688|   |2689|
+ngayulu kaḻaya wakaṉu|2690|   |2691|
+ngayulu maḻu nyangu|2692|   |2693|
+kaḻayaṉa wakaṉu|2694|   |2695|
+maḻuṉa nyangu|2696|   |2697|
+nyuntu maḻu wakaṉu|2698|   |2699|
+maḻun wakaṉu|2700|   |2701|
+paluṟu maḻu wakaṉu|2702|   |2703|
+maḻu wakaṉu|2704|   |2705|
+ngali maḻu wakaṉu|2706|   |2707|
+maḻuli wakaṉu|2708|   |2709|
+nganaṉa maḻu wakaṉu|2710|   |2711|
+maḻula wakaṉu|2712|   |2713|
+tjana maḻu wakaṉu|2714|   |2715|
+maḻuya wakaṉu|2716|   |2717|
+nyupali maḻu wakaṉu|2718|   |2719|
+nyura maḻu wakaṉu|2720|   |2721|
+pula maḻu wakaṉu|2722|   |2723|
+|2724|
+|2725|
+|2726| 
+|2727| watingku maḻu nyanganyi|2728| |2729| tjitji|2730| 
+|2731| tjitjingku maḻu nyanganyi|2732|  |2733| 
+|2734| 
+|2735|
+watingku maḻu nyanganyi|2736|    tjitji|2737| 
+tjitjingku maḻu nyanganyi|2738|   minyma|2739| 
+minymangku maḻu nyanganyi|2740|   aṉangu|2741| 
+aṉangungku maḻu nyanganyi|2742|   papa|2743| 
+papangku maḻu nyanganyi|2744|
+|2745|
+watingku minyma nyanganyi|2746|   tjitji|2747| 
+tjitjingku minyma nyanganyi|2748|   maḻu|2749| 
+maḻungku minyma nyanganyi|2750|   papa|2751| 
+papangku minyma nyanganyi|2752|   kaḻaya|2753| 
+kaḻayangku minyma nyanganyi|2754|   kanyaḻa|2755| 
+kanyaḻangku minyma nyanganyi|2756| 
+|2757|
+|2758| 
+Ingkatjilu maḻu nyanganyi|2759|   Tinimayi|2760| 
+Tinimayilu maḻu nyanganyi|2761|   Waṯulyalu|2762| 
+Waṯulyalu maḻu nyanganyi|2763|   Wangilyi|2764| 
+Wangilyilu maḻu nyanganyi|2765| 
+|2766|
+|2767| 
+watingku Ingkatjinya nyanganyi|2768|   tjitji|2769| 
+tjitjingku Ingkatjinya nyanganyi|2770|   minyma|2771| 
+minymangku Ingkatjinya nyanganyi|2772|   maḻu|2773| 
+maḻungku Ingkatjinya nyanganyi|2774| 
+|2775|
+|2776| 
+|2777| ngayulu maḻu wakalku|2778| |2779|   nyuntu|2780|  
+|2781| nyuntu maḻu wakalku|2782| |2783|
+|2784| 
+ngayulu maḻu wakalku|2785|   nyuntu|2786|
+nyuntu maḻu wakalku|2787|   paluṟu|2788| 
+paluṟu maḻu wakalku|2789|   ngali|2790| 
+ngali maḻu wakalku|2791|   tjana|2792| 
+tjana maḻu wakalku|2793| 
+|2794|
+|2795| 
+ngayulu papa nyanganyi|2796|   nyuntu|2797| 
+nyuntu papa nyanganyi|2798|   paluṟu|2799| 
+paluṟu papa nyanganyi|2800|   nganaṉa|2801| 
+nganaṉa papa nyanganyi|2802|   nyura|2803| 
+nyura papa nyanganyi|2804| 
+|2805|
+|2806| 
+ngayulu Ingkatjinya nyanganyi|2807|   paluṟu|2808|
+paluṟu Ingkatjinya nyanganyi|2809|   ngali|2810| 
+ngali Ingkatjinya nyanganyi|2811|   nyuntu|2812| 
+nyuntu Ingkatjinya nyanganyi|2813|   tjana|2814| 
+tjana Ingkatjinya nyanganyi|2815| 
+|2816|
+|2817| 
+|2818| ngayulu maḻu nyanganyi|2819| |2820| 
+|2821| maḻuṉa nyanganyi|2822| |2823|
+|2824| 
+ngayulu maḻu nyanganyi|2825|   maḻuṉa nyanganyi|2826| 
+nyuntu maḻu nyanganyi|2827|   maḻun nyanganyi|2828| 
+paluṟu maḻu nyanganyi|2829|   maḻu nyanganyi|2830| 
+ngali maḻu nyanganyi|2831|   maḻuli nyanganyi|2832| 
+tjana maḻu nyanganyi|2833|   maḻuya nyanganyi|2834| 
+|2835| 
+ngayulu papa nyanganyi|2836|   papaṉa nyanganyi|2837| 
+nyuntu papa nyanganyi|2838|   papan nyanganyi|2839| 
+paluṟu papa nyanganyi|2840|   papa nyanganyi|2841| 
+nganaṉa papa nyanganyi|2842|   papala nyanganyi|2843| 
+ngali papa nyanganyi|2844|   papali nyanganyi|2845| 
+tjana papa nyanganyi|2846|   papaya nyanganyi|2847| 
+|2848| 
+ngayulu Ingkatjinya nyanganyi|2849|  Ingkatjinyaṉa nyanganyi|2850| 
+nyuntu Ingkatjinya nyanganyi|2851|   Ingkatjinyan nyanganyi|2852| 
+paluṟu Ingkatjinya nyanganyi|2853|   Ingkatjinya nyanganyi|2854| 
+ngali Ingkatjinya nyanganyi|2855|   Ingkatjinyali nyanganyi|2856| 
+nganaṉa Ingkatjinya nyanganyi|2857|   Ingkatjinyala nyanganyi|2858| 
+tjana Ingkatjinya nyanganyi|2859|   Ingkatjinyaya nyanganyi|2860| 
+|2861| 
+|2862|   watingku maḻu nyanganyi|2863| 
+|2864|   tjitjingku maḻu nyanganyi|2865| 
+|2866|   ngayulu maḻu nyanganyi|2867| 
+|2868|   nganaṉa maḻu nyanganyi|2869| 
+|2870| Ingkatjilu kaḻaya nyanganyi|2871| 
+|2872| Waṯulyalu kaḻaya nyangu|2873| 
+|2874|   watingku kaḻaya nyangu|2875| 
+|2876|   watingku maḻu wakaṉu|2877| 
+|2878|  ngayulu kaḻaya nyangu|2879| 
+|2880|  ngayulu kaḻaya nyangu munuṉa wakaṉu|2881| 
+|2882| 
+|2883|   minymaṉa nyanganyi|2884| 
+|2885|   minymali nyangu|2886| 
+|2887|   kaḻayala wakalku|2888| 
+|2889|   tjitjiya nyangu|2890| 
+|2891|   maḻun wakaṉu?|2892| 
+|2893|   nyuntu maḻu wakala!|2894| 
+|2895|   nyuntu kaḻaya wakala!|2896| 
+|2897|   nyuntu minyma nyara nyawa|2898| 
+|2899|   nyuntu wati puḻka nyawa|2900| 
+|2901|   nyuntu Pitjantjatjara wangka!|2902| 
+|2903|
+
+
+|2904||2905|
+|2906|
+kuka|2907| 
+mai|2908| 
+mina|2909| 
+unganyi|2910| 
+ungu|2911| 
+ungkuku|2912| 
+uwa!|2913| 
+punganyi|2914| 
+pungu|2915|
+pungkuku|2916| 
+puwa!|2917| 
+ngayunya|2918| 
+nyuntunya|2919| 
+palunya|2920| 
+ngalinya|2921| 
+nyupalinya|2922| 
+pulanya|2923| 
+nganaṉanya|2924| 
+nyuranya|2925| 
+tjananya|2926| 
+|2927|
+|2928| 
+kuka|2929| |2930| 
+mai|2931| |2932| 
+mina|2933| |2934| 
+unganyi|2935| |2936| 
+ungu|2937| |2938| 
+ungkuku|2939| |2940| 
+uwa!|2941| |2942| 
+punganyi|2943| |2944| 
+pungu|2945| |2946| 
+pungkuku|2947| |2948| 
+puwa!|2949| |2950| 
+ngayunya|2951| |2952| 
+nyuntunya|2953| |2954| 
+palunya|2955| |2956| 
+ngalinya|2957| |2958| 
+nyupalinya|2959| |2960| 
+pulanya|2961| |2962| 
+nganaṉanya|2963| |2964| 
+nyuranya|2965| |2966| 
+tjananya|2967| |2968| 
+
+|2969| 
+|2970| 
+watingku ngayunya nyanganyi|2971| 
+watingku nyuntunya nyanganyi|2972| 
+watingku palunya nyanganyi|2973| 
+watingku ngalinya nyanganyi|2974| 
+watingku nyupalinya nyanganyi|2975| 
+watingku pulanya nyanganyi|2976| 
+watingku nganaṉanya nyanganyi|2977| 
+watingku nyuranya nyanganyi|2978| 
+watingku tjananya nyanganyi|2979| 
+watingkuṉi nyanganyi|2980| 
+watingkunta nyanganyi|2981| 
+watingku nyanganyi|2982| 
+watingkulinya nyanganyi|2983| 
+watingkulanya nyanganyi|2984| 
+nganalu maḻu wakaṉu?|2985| 
+Ingkatjilu maḻu wakaṉu|2986| 
+ngayulu nyuntunya pungu?|2987| 
+Waṯulyalu ngayunya pungu|2988| 
+minymangku tjitji mai unganyi|2989| 
+minymangku tjitji kuka unganyi|2990| 
+minymangku tjitji mina unganyi|2991| 
+minymangku wati mina unganyi|2992| 
+minymangku wati mai unganyi|2993| 
+minymangku wati kuka unganyi|2994| 
+minymangku ngayunya kuka unganyi|2995| 
+minymangku ngayunya mina unganyi|2996| 
+minymangku ngayunya mai unganyi|2997|
+minymangku ngalinya mai unganyi|2998| 
+minymangku ngalinya kuka unganyi|2999| 
+minymangku nganaṉanya kuka unganyi|3000| 
+minymangku tjananya kuka unganyi|3001| 
+|3002| 
+watingkuṉi kuka ungu|3003| 
+tjitjingkunta kuka ungu|3004| 
+minymangkuṉi mai ungu|3005| 
+minymangkunta mai ungu|3006| 
+minymangku mai ungu|3007| 
+minymangkulinya mai ungu|3008| 
+minymangkulanya mai ungu|3009| 
+|3010| 
+nganalu nyuntunya mai ungu?|3011| 
+minymangkuṉi ungu|3012| 
+nganalu nyupalinya mai ungu?|3013| 
+minymangkulinya ungu|3014| 
+nganalu ngayunya mai ungkuku?|3015| 
+tjitjingkunta ungkuku|3016| 
+nganalu nyuntunya mina ungkuku?|3017| 
+Ingkatjiluṉi ungkuku|3018| 
+|3019| 
+nyuntu ngayunya mina uwa!|3020| 
+minaṉi uwa!|3021| 
+nyuntu ngayunya kuka uwa!|3022| 
+kukaṉi uwa!|3023| 
+nyuntu ngayunya mai uwa!|3024| 
+maiṉi uwa!|3025| 
+nyuntu ngayunya uwa!|3026| 
+uwaṉi|3027|! 
+|3028| 
+watingku ngayunya nyanganyi|3029| |3030| 
+watingku nyuntunya nyanganyi|3031| |3032| 
+watingku palunya nyanganyi|3033| |3034| 
+watingku ngalinya nyanganyi|3035| |3036| 
+watingku nyupalinya nyanganyi|3037| |3038| 
+watingku pulanya nyanganyi|3039| |3040| 
+watingku nganaṉanya nyanganyi|3041| |3042| 
+watingku nyuranya nyanganyi|3043| |3044| 
+watingku tjananya nyanganyi|3045| |3046| 
+|3047| 
+watingkuṉi nyanganyi|3048| |3049| 
+watingkunta nyanganyi|3050| |3051| 
+watingku nyanganyi|3052| |3053| 
+watingkulinya nyanganyi|3054| |3055| 
+watingkulanya nyanganyi|3056| |3057| 
+nganalu maḻu wakaṉu?|3058| |3059| 
+Ingkatjilu maḻu wakaṉu|3060| |3061| 
+nganalu nyuntunya pungu?|3062| |3063| 
+Waṯulyalu ngayunya pungu|3064| |3065| 
+minymangku tjitji mai unganyi|3066| |3067| 
+minymangku tjitji kuka unganyi|3068| |3069| 
+minymangku tjitji mina unganyi|3070| |3071| 
+minymangku wati mina unganyi|3072| |3073| 
+minymangku wati mai unganyi|3074| |3075| 
+minymangku ngayunya kuka unganyi|3076| |3077| 
+minymangku ngayunya mina unganyi|3078| |3079| 
+minymangku ngayunya mai unganyi|3080| |3081| 
+minymangku ngalinya mai unganyi|3082| |3083| 
+minymangku ngalinya kuka unganyi|3084| |3085| 
+minymangku nganaṉanya kuka unganyi|3086| |3087| 
+minymangku tjananya kuka unganyi|3088| |3089| 
+|3090| 
+watingkuṉi kuka ungu|3091| |3092| 
+tjitjingkunta kuka ungu|3093|    |3094| 
+minymangkuṉi mai ungu|3095| |3096| 
+minymangku mai ungu|3097| |3098| 
+minymangkulinya mai ungu|3099| |3100| 
+minymangkulanya mai ungu|3101| |3102| 
+|3103| 
+nganalu nyuntunya mai ungu?|3104| |3105| 
+minymangkuṉi ungu|3106| |3107| 
+nganalu nyupalinya mai ungu?|3108| |3109| 
+minymangkulinya ungu|3110| |3111| 
+nganalu ngayunya mai ungkuku?|3112| |3113| 
+tjitjingkunta ungkuku|3114| |3115| 
+nganalu nyuntunya mina ungkuku?|3116| |3117| 
+Ingkatjiluṉi ungkuku|3118| |3119| 
+|3120| 
+nyuntu ngayunya mina uwa!|3121| |3122| 
+minaṉi uwa!|3123| |3124| 
+nyuntu ngayunya kuka uwa|3125|  |3126| 
+kukaṉi uwa!|3127| |3128| 
+nyuntu ngayunya mai uwa|3129|  |3130| 
+maiṉi uwa|3131|  |3132|  
+nyuntu ngayunya uwa|3133|  |3134| 
+uwaṉi|3135| |3136|  
+|3137|
+|3138| watingku ngayunya pungkuku|3139|  |3140|   nyuntunya|3141| |3142| 
+|3143|: watingku nyuntunya pungkuku|3144| 
+|3145| 
+watingku ngayunya pungkuku|3146|   nyuntunya|3147| 
+watingku nyuntunya pungkuku|3148| palunya|3149| 
+watingku palunya pungkuku|3150| ngalinya|3151| 
+watingku ngalinya pungkuku|3152| nyupalinya|3153| 
+watingku nyupalinya pungkuku|3154| pulanya|3155| 
+watingku pulanya pungkuku|3156| nganaṉanya|3157| 
+watingku nganaṉanya pungkuku|3158| nyuranya|3159| 
+watingku nyuranya pungkuku|3160| tjananya|3161| 
+watingku tjananya pungkuku|3162| 
+|3163| watingku ngayunya pungkuku|3164| 
+|3165| watingkuṉi pungkuku|3166|
+|3167| 
+watingku ngayunya pungkuku|3168| watingkuṉi pungkuku|3169| 
+watingku nyuntunya pungkuku|3170| watingkunta pungkuku|3171| 
+watingku palunya pungkuku|3172| watingku pungkuku|3173| 
+watingku ngalinya pungkuku|3174| watingkulinya pungkuku|3175| 
+watingku nganaṉanya pungkuku|3176| watingkulanya pungkuku|3177| 
+
+|3178| 
+|3179| minymangkuṉi mai ungu|3180| 
+|3181| watingkuṉi mai ungu|3182| 
+|3183|  watingkuṉi mai ungkuku|3184| 
+|3185|  watingkuṉi mina ungkuku|3186| 
+|3187| minymangkunta mina unganyi|3188| 
+|3189| minymangkunta mina ungu|3190| 
+|3191| tjitjingkunta mina ungkuku|3192| 
+|3193| minymangku Ingkatjinya nyakuku|3194| 
+|3195| minymangku maḻu nyangu|3196| 
+|3197|  watingkuṉi nyangu munuṉi pungu|3198| 
+
+|3199||3200|
+|3201| 
+ngura|3202| 
+wiltja|3203| 
+paṉa|3204|
+apu|3205|
+yaaltjingka|3206| 
+yaaltjikutu|3207|
+yaaltjinguṟu|3208|
+Aṉapala|3209| 
+Amaṯa|3210| 
+ananyi|3211| 
+anu|3212| 
+ankuku|3213|
+ara!|3214|
+|3215| 
+ngura|3216| |3217| 
+wiltja|3218| |3219| 
+paṉa|3220| |3221| 
+apu|3222| |3223| 
+yaaltjingka|3224|    |3225| 
+yaaltjikutu|3226|     |3227| 
+yaaltjinguṟu|3228|    |3229| 
+Aṉapala|3230| |3231| 
+Amaṯa|3232| |3233| 
+ananyi|3234| |3235| 
+anu|3236| |3237| 
+ankuku|3238| |3239| 
+ara!|3240| |3241| 
+|3242| 
+wati paṉangka nyinanyi|3243| 
+wati wiltjangka nyinanyi|3244| 
+wati ngurangka nyinanyi|3245| 
+wati apungka nyinanyi|3246| 
+minyma ngurangka nyinanyi|3247| 
+minyma wiltjangka nyinanyi|3248| 
+ngayulu ngurangka nyinanyi|3249| 
+ngayulu paṉangka nyinanyi|3250| 
+nyuntu yaaltjingka nyinanyi?|3251| 
+ngayulu Aṉapalala nyinanyi|3252| 
+nyupali yaaltjingka nyinanyi|3253| 
+ngali Amaṯala nyinanyi|3254| 
+wati ngurakutu ananyi|3255| 
+wati apukutu ananyi|3256| 
+wati wiltjakutu ananyi|3257| 
+tjitji ngurakutu ananyi|3258| 
+tjitji ngurakutu anu|3259| 
+tjitji ngurakutu ankuku|3260| 
+nyuntu yaaltjikutu ananyi?|3261| 
+ngayulu ngurakutu ananyi|3262| 
+nyupali yaaltjikutu ananyi?|3263| 
+ngali Aṉapalalakutu ananyi|3264| 
+wati nguranguṟu pitjanyi|3265| 
+wati apunguṟu pitjanyi|3266| 
+minyma wiltjanguṟu pitjanyi|3267| 
+Ingkatjinya Aṉapalalanguṟu pitjanyi|3268| 
+Ingkatjinya Aṉapalalanguṟu pitjangu|3269| 
+Ingkatjinya Aṉapalalanguṟu pitjaku|3270| 
+nyuntu yaaltjinguṟu pitjangu?|3271| 
+ngayulu Amaṯalanguṟu pitjangu|3272| 
+nyura yaaltjinguṟu pitjangu?|3273| 
+nganaṉa Amaṯalanguṟu pitjangu|3274| 
+|3275|
+|3276| 
+wati paṉangka nyinanyi|3277| |3278| 
+wati wiltjangka nyinanyi|3279| |3280| 
+wati ngurangka nyinanyi|3281| |3282| 
+wati apungka nyinanyi|3283| |3284| 
+minyma ngurangka nyinanyi|3285| |3286| 
+minyma wiltjangka nyinanyi|3287| |3288| 
+ngayulu ngurangka nyinanyi|3289| |3290| 
+ngayulu paṉangka nyinanyi|3291| |3292| 
+nyuntu yaaltjingka nyinanyi?|3293| |3294| 
+ngayulu Aṉapalala nyinanyi|3295| |3296| 
+nyupali yaaltjingka nyinanyi|3297| |3298| 
+ngali Amaṯala nyinanyi|3299| |3300| 
+wati ngurakutu ananyi|3301| |3302| 
+wati apukutu ananyi|3303| |3304| 
+wati wiltjakutu ananyi|3305| |3306| 
+tjitji ngurakutu ananyi|3307| |3308| 
+tjitji ngurakutu anu|3309| |3310| 
+tjitji ngurakutu ankuku|3311| |3312| 
+nyuntu yaaltjikutu ananyi?|3313| |3314| 
+ngayulu ngurakutu ananyi|3315| |3316| 
+nyupali yaaltjikutu ananyi?|3317| |3318| 
+ngali Aṉapalalakutu ananyi|3319| |3320|
+wati nguranguṟu pitjanyi|3321| |3322| 
+wati apunguṟu pitjanyi|3323| |3324| 
+minyma wiltjanguṟu pitjanyi|3325| |3326| 
+Ingkatjinya Aṉapalalanguṟu pitjanyi|3327| |3328| 
+Ingkatjinya Aṉapalalanguṟu pitjangu|3329| |3330| 
+Ingkatjinya Aṉapalalanguṟu pitjaku|3331| |3332| 
+nyuntu yaaltjinguṟu pitjangu?|3333| |3334| 
+ngayulu Amaṯalanguṟu pitjangu|3335| |3336| 
+nyura yaaltjinguṟu pitjangu?|3337| |3338| 
+nganaṉa Amaṯalanguṟu pitjangu|3339| |3340| 
+
+|3341|
+|3342| 
+|3343| wati yaaltjingka nyinanyi?|3344| |3345| ngurangka|3346| |3347| wati ngurangka nyinanyi|3348| |3349| 
+|3350| 
+wati yaaltjingka nyinanyi?|3351|   ngurangka|3352| 
+wati ngurangka nyinanyi|3353| 
+wati yaaltjingka nyinanyi?|3354|  wiltjangka|3355| 
+wati wiltjangka nyinanyi|3356| 
+wati yaaltjingka nyinanyi?|3357|  apungka|3358| 
+wati apungka nyinanyi|3359| 
+wati yaaltjikutu ananyi?|3360|   ngurakutu|3361|
+wati ngurakutu ananyi|3362| 
+wati yaaltjikutu ananyi?|3363|   wiltjakutu|3364| 
+wati wiltjakutu ananyi|3365| 
+wati yaaltjikutu ananyi?|3366|   apukutu|3367| 
+wati apukutu ananyi|3368| 
+wati yaaltjinguṟu pitjanyi?|3369|   nguranguṟu|3370| 
+wati nguranguṟu pitjanyi|3371| 
+wati yaaltjinguṟu pitjanyi|3372|   wiltjanguṟu|3373| 
+wati wiltjanguṟu pitjanyi|3374| 
+wati yaaltjinguṟu pitjanyi|3375|   apunguṟu|3376| 
+wati apunguṟu pitjanyi|3377| 
+.|3378|
+|3379|
+|3380| nyuntu yaaltjingka nyinanyi?|3381|  |3382|  Aṉapalala|3383| |3384|
+|3385| ngayulu Aṉapalala nyinanyi|3386| |3387|
+|3388| 
+nyuntu yaaltjingka nyinanyi?|3389|   Aṉapalala|3390| 
+ngayulu Aṉapalala nyinanyi|3391| 
+nyuntu yaaltjingka nyinanyi?|3392|  Amaṯala|3393| 
+ngayulu Amaṯala nyinanyi|3394| 
+nyupali yaaltjingka nyinanyi?|3395|   Aṉapalala|3396|
+ngali Aṉapalala nyinanyi|3397| 
+nyupali yaaltjingka nyinanyi?|3398|  Amaṯala|3399| 
+ngali Amaṯala nyinanyi|3400| 
+nyura yaaltjingka nyinanyi?|3401|   Aṉapalala|3402| 
+nganaṉa Aṉapalala nyinanyi|3403| 
+nyura yaaltjingka nyinanyi?|3404|   Amaṯala|3405|  
+nganaṉa Amaṯala nyinanyi|3406|   
+nyuntu yaaltjikutu ananyi?|3407|   Aṉapalalakutu|3408|
+ngayulu Aṉapalalakutu ananyi|3409| 
+nyupali yaaltjikutu ananyi?|3410|  Aṉapalalakutu|3411| 
+ngali Aṉapalalakutu ananyi|3412| 
+nyura yaaltjikutu ananyi|3413|   Aṉapalalakutu|3414| 
+nganaṉa Aṉapalalakutu ananyi|3415| 
+nyuntu yaaltjinguṟu pitjanyi?|3416|   Amaṯalanguṟu|3417|
+ngayulu Amaṯalanguṟu pitjanyi|3418|  
+nyupali yaaltjinguṟu pitjanyi?|3419|   Amaṯalanguṟu|3420|  
+ngali Amaṯalanguṟu pitjanyi|3421| 
+nyura yaaltjinguṟu pitjanyi?|3422|   Amaṯalanguṟu|3423|   
+nganaṉa Amaṯalanguṟu pitjanyi|3424| 
+|3425|
+|3426|
+|3427| ngayulu ngurangka nyinanyi|3428| 
+|3429| ngurangkaṉa nyinanyi|3430| 
+|3431| 
+ngayulu ngurangka nyinanyi|3432| 
+ngurangkaṉa nyinanyi|3433|
+nyuntu ngurangka nyinanyi|3434| 
+ngurangkan nyinanyi|3435| 
+paluṟu ngurangka nyinanyi|3436| 
+ngurangka nyinanyi|3437| 
+ngali ngurangka nyinanyi|3438| 
+ngurangkali nyinanyi|3439| 
+nganaṉa ngurangka nyinanyi|3440| 
+ngurangkala nyinanyi|3441| 
+tjana ngurangka nyinanyi|3442| 
+ngurangkaya nyinanyi|3443| 
+ngayulu ngurakutu ananyi|3444| 
+ngurakutuṉa ananyi|3445| 
+nyuntu ngurakutu ananyi|3446| 
+ngurakutun ananyi|3447| 
+paluṟu ngurakutu ananyi|3448| 
+ngurakutu ananyi|3449| 
+ngali ngurakutu ananyi|3450|
+ngurakutuli ananyi|3451| 
+nganaṉa ngurakutu ananyi|3452| 
+ngurakutula ananyi|3453| 
+tjana ngurakutu ananyi|3454| 
+ngurakutuya ananyi|3455| 
+ngayulu Aṉapalalanguṟu pitjanyi|3456| 
+Aṉapalalanguṟuṉa pitjanyi|3457| 
+nyuntu Aṉapalalanguṟu pitjanyi|3458| 
+Aṉapalalanguṟun pitjanyi|3459|
+paluṟu Aṉapalalanguṟu pitjanyi|3460| 
+Aṉapalalanguṟu pitjanyi|3461|
+ngali Aṉapalalanguṟu pitjanyi|3462|
+Aṉapalalanguṟuli pitjanyi|3463| 
+nganaṉa Aṉapalalanguṟu pitjanyi|3464| 
+Aṉapalalanguṟula pitjanyi|3465| 
+tjana Aṉapalalanguṟu pitjanyi|3466| 
+Aṉapalalanguṟuya pitjanyi|3467| 
+|3468| 
+|3469| wati ngurakutu ananyi|3470| 
+|3471| wati wiltjakutu anu|3472| 
+|3473|  minyma apukutu ankuku|3474| 
+|3475| wati ngurakutu pitjanyi|3476| 
+|3477| tjitji wiltjakutu pitjangu|3478| 
+|3479| minyma Aṉapalalakutu ankuku|3480| 
+|3481| wati yaaltjinguṟu pitjanyi?|3482| 
+|3483| minyma yaaltjinguṟu pitjaku?|3484| 
+|3485| maḻu yaaltjinguṟu pitjangu?|3486| 
+|3487| 
+|3488| yaaltjikutun ananyi|3489| 
+|3490| yaaltjinguṟu pitjangu?|3491| 
+|3492| yaaltjikutuli ankuku?|3493| 
+|3494| 
+
+|3495||3496|	
+|3497| 	
+kuri|3498|	
+mama|3499|	
+ngunytju|3500|	
+kuṯa|3501|	
+kangkuṟu|3502|	
+maḻanypa|3503|	
+katja|3504|	
+uṉṯalpa|3505|	
+kamuṟu|3506|	
+kaḻi|3507|	
+kuḻaṯa|3508|	
+piti|3509|	
+wana|3510|	
+palyaṉi|3511|	
+palyaṉu|3512|	
+palyalku|3513|	
+palyala!|3514|	
+rungkaṉi|3515|	
+rungkaṉu|3516|	
+rungkalku|3517|	
+rungkala!|3518|	
+ngayuku|3519|	
+nyuntumpa|3520|	
+palumpa|3521|	
+ngalimpa|3522|	
+nyupalimpa|3523|	
+pulampa|3524|	
+nganampa|3525|	
+nyurampa|3526|	
+tjanampa|3527| 
+|3528|
+kuri|3529| |3530| 
+mama|3531| |3532| 
+ngunytju|3533| |3534| 
+kuṯa|3535| |3536| 
+kangkuṟu|3537| |3538| 
+maḻanypa|3539| |3540| 
+katja|3541| |3542| 
+uṉṯalpa|3543| |3544| 
+kamuṟu|3545| |3546| 
+kaḻi|3547| |3548| 
+kuḻaṯa|3549| |3550| 
+piti|3551| |3552| 
+wana|3553| |3554| 
+palyaṉi|3555| |3556| 
+palyaṉu|3557| |3558| 
+palyalku|3559| |3560| 
+palyala!|3561| |3562| 
+rungkaṉi|3563| |3564| 
+rungkaṉu|3565| |3566| 
+rungkalku|3567| |3568| 
+rungkala!|3569| |3570| 
+ngayuku|3571| |3572| 
+nyuntumpa|3573| |3574| 
+palumpa|3575| |3576|
+ngalimpa|3577| |3578| 
+nyupalimpa|3579| |3580| 
+pulampa|3581| |3582| 
+nganampa|3583| |3584| 
+nyurampa|3585| |3586| 
+tjanampa|3587| |3588|	
+|3589| 	
+watiku katja pikatjara|3590|	
+tjitjiku mama pitjanyi|3591|	
+minymaku ngunytju ngurangka nyinanyi|3592|	
+ngayuku kuṯa pikatjara|3593|	
+nyuntumpa maḻanypa palya|3594|	
+nganampa mama pukuḻpa|3595|	
+watingku kaḻi palyaṉi|3596|	
+nyuntu kaḻi palyaṉi?|3597|	
+wiya, ngayulu kuḻaṯa palyaṉi|3598|	
+ngayulu kuḻaṯa palyaṉu|3599|	
+paluṟu kaḻi palyalku|3600|	
+ngayulu maḻu rungkaṉu|3601|	
+nyuntu kanyaḻa rungkala!|3602|	
+wati palangku kaḻaya rungkalku|3603|	
+watingku minymaku piti palyaṉi|3604|	
+ngayuku maḻanytju tjitjiku kaḻi palyaṉi|3605|
+ngayulu nyuntumpa kuḻaṯa palyalku|3606|
+|3607| 
+|3608| 
+watiku katja pikatjara|3609| |3610| 
+tjitjiku mama pitjanyi|3611| |3612| 
+minymaku ngunytju ngurangka nyinanyi|3613| |3614| 
+ngayuku kuṯa pikatjara|3615| |3616| 
+nyuntumpa maḻanypa palya|3617| |3618| 
+nganampa mama pukuḻpa|3619| |3620| 
+watingku kaḻi palyaṉi|3621| |3622| 
+nyuntu kaḻi palyaṉi?|3623| |3624| 
+wiya, ngayulu kuḻaṯa palyaṉi|3625| |3626|
+ngayulu kuḻaṯa palyaṉu|3627| |3628| 
+paluṟu kaḻi palyalku|3629| |3630| 
+nyuntu kanyaḻa rungkala!|3631| |3632| 
+wati palangku kaḻaya rungkalku|3633| |3634| 
+watingku minymaku piti palyaṉi|3635| |3636| 
+ngayuku maḻanytju tjitjiku kaḻi palyaṉi|3637| |3638| 
+ngayulu nyuntumpa kuḻaṯa palyalku|3639| |3640| 
+
+|3641|	
+watingku ngayuku kaḻi palyaṉu|3642|	
+watingkutju kaḻi palyaṉu|3643|
+watingku nyuntumpa kaḻi palyaṉu|3644|	
+watingkunku kaḻi palyaṉu|3645|	
+watingku palumpa kaḻi palyaṉu|3646|	
+watingkura kaḻi palyaṉu|3647|	
+watingku ngalimpa kaḻi palyaṉu|3648|	
+watingkulimpa kaḻi palyaṉu|3649|	
+watingku nganampa kaḻi palyaṉu|3650|	
+watingkulampa kaḻi palyaṉu|3651|	
+watingku maḻu kuḻaṯangka wakaṉu|3652|
+watingku kaḻaya kaḻingka rungkaṉu|3653|	
+nyuntu maḻu nyaangka wakaṉu?|3654|	
+kuḻaṯangkaṉa wakaṉu|3655|	
+|3656|	
+watingku ngayuku kaḻi palyaṉu|3657| |3658|	
+watingkutju kaḻi palyaṉu|3659|
+|3660|	
+watingku nyuntumpa kaḻi palyaṉu|3661| |3662|	
+watingkunku kaḻi palyaṉu|3663|
+|3664|
+watingku palumpa kaḻi palyaṉu|3665| |3666|	
+watingkura kaḻi palyaṉu|3667|
+|3668|
+watingku ngalimpa kaḻi palyaṉu|3669| |3670| 
+watingkulimpa kaḻi palyaṉu|3671|
+|3672|
+watingku nganampa kaḻi palyaṉu|3673| |3674| 
+watingkulampa kaḻi palyaṉu|3675|
+|3676|
+watingku maḻu kuḻaṯangka wakaṉu|3677| |3678| 
+watingku kaḻaya kaḻingka rungkaṉu|3679| |3680| 
+nyuntu maḻu nyaangka wakaṉu?|3681| |3682|	
+kuḻaṯangkaṉa wakaṉu|3683| |3684|	
+|3685|
+|3686|	
+watiku katja pikatjara|3687|  palya|3688|
+watiku katja palya|3689|  uṉṯalpa|3690|	
+watiku uṉṯalpa palya|3691|  minymaku|3692|	
+minymaku uṉṯalpa palya|3693| ngayuku|3694|	
+ngayuku uṉṯalpa palya|3695| pikatjara|3696|	
+ngayuku uṉṯalpa pikatjara|3697| kuṯa|3698|	
+ngayuku kuṯa pikatjara|3699| nyuntumpa|3700|
+nyuntumpa kuṯa pikatjara|3701| pukuḻpa|3702|
+nyuntumpa kuṯa pukuḻpa|3703| mama|3704|	
+nyuntumpa mama pukuḻpa|3705| pakuwiya|3706|	
+nyuntumpa mama pakuwiya|3707| palumpa|3708|	
+palumpa mama pakuwiya|3709| kamuṟu|3710|	
+palumpa kamuṟu pakuwiya|3711| kangkuṟu|3712|	
+palumpa kangkuṟu pakuwiya|3713| waṟa|3714|	
+palumpa kangkuṟu waṟa|3715| ngalimpa|3716|	
+ngalimpa kangkuṟu waṟa|3717| maḻanypa|3718|	
+ngalimpa maḻanypa waṟa|3719| pikatjara|3720|	
+ngalimpa maḻanypa pikatjara|3721| ngurangka nyinanyi|3722|	
+ngalimpa maḻanypa ngurangka nyinanyi|3723| ngayuku|3724|	
+ngayuku maḻanypa ngurangka nyinanyi|3725| nyuntumpa|3726|	
+nyuntumpa maḻanypa ngurangka nyinanyi|3727| palumpa|3728|	
+palumpa maḻanypa ngurangka nyinanyi|3729| ngurakutu ananyi|3730|	
+palumpa maḻanypa ngurakutu ananyi|3731| kuri|3732|	
+palumpa kuri ngurakutu ananyi|3733| nyuntumpa|3734|	
+nyuntumpa kuri ngurakutu ananyi|3735| palumpa|3736|	
+palumpa kuri ngurakutu ananyi|3737| watiku|3738|	
+watiku kuri ngurakutu ananyi|3739| pikatjara|3740|	
+watiku kuri pikatjara|3741| katja|3742|	
+watiku katja pikatjara|3743|	
+|3744|
+|3745|	
+watingku maḻu wakaṉu|3746| wati nyangangku|3747|	
+wati nyangangku maḻu wakaṉu|3748| wati palangku|3749|
+wati palangku maḻu wakaṉu|3750| wati nyarangku|3751|	
+wati nyarangku maḻu wakaṉu|3752| wati puḻkangku|3753|	
+wati puḻkangku maḻu wakaṉu|3754| wati waṟangku|3755|	
+wati waṟangku maḻu wakaṉu|3756| wati muṯumuṯungku|3757|
+wati muṯumuṯungku maḻu wakaṉu|3758| wati nyanga puḻkangku|3759|	
+wati nyanga puḻkangku maḻu wakaṉu|3760| wati pala puḻkangku|3761|	
+wati pala puḻkangku maḻu wakaṉu|3762| wati nyara puḻkangku|3763|	
+wati nyara puḻkangku maḻu wakaṉu|3764|	
+|3765|
+|3766|	
+watingku kaḻi palyaṉi|3767| ngayuku kuṯangku|3768|	
+ngayuku kuṯangku kaḻi palyaṉi|3769| nyuntumpa kuṯangku|3770|	
+nyuntumpa kuṯangku kaḻi palyaṉi|3771| palumpa kuṯangku|3772|	
+palumpa kuṯangku kaḻi palyaṉi|3773| palumpa mamangku|3774|	
+palumpa mamangku kaḻi palyaṉi|3775| ngalimpa mamangku|3776|	
+ngalimpa mamangku kaḻi palyaṉi|3777| tjanampa mamangku|3778|	
+tjanampa mamangku kaḻi palyaṉi|3779| nyurampa mamangku|3780|	
+nyurampa mamangku kaḻi palyaṉi|3781| nyurampa katjangku|3782|	
+nyurampa katjangku kaḻi palyaṉi|3783| ngayuku katjangku|3784|	
+ngayuku katjangku kaḻi palyaṉi|3785| nyuntumpa katjangku|3786|	
+nyuntumpa katjangku kaḻi palyaṉi|3787|	
+|3788|
+|3789|	
+wati ngurangka nyinanyi|3790| |3791|	
+|3792| "ngurangka nyinanyi"|3793| |3794|	
+maḻu nyanganyi|3795| |3796|	
+"watingku maḻu nyanganyi."|3797|
+|3798|	
+wati ngurangka nyinanyi|3799| watingku maḻu nyanganyi|3800|	
+minyma ngurangka nyinanyi|3801| minymangku maḻu nyanganyi|3802|	
+tjitji ngurangka nyinanyi|3803| tjitjingku maḻu nyanganyi|3804|	
+aṉangu ngurangka nyinanyi|3805| aṉangungku maḻu nyanganyi|3806|
+papa ngurangka nyinanyi|3807| papangku maḻu nyanganyi|3808|	
+Ingkatjinya ngurangka nyinanyi|3809| Ingkatjilu maḻu nyanganyi|3810|	
+ngayuku kuṯa ngurangka nyinanyi|3811| ngayuku kuṯangku maḻu nyanganyi|3812|	
+wati nyanga ngurangka nyinanyi|3813| wati nyangangku maḻu nyanganyi|3814|	
+|3815|	
+Wintjinnga ngurangka nyinanyi|3816|	
+Wintjintu maḻu nyanganyi|3817|	
+ngayuku uṉṯalpa ngurangka nyinanyi|3818|	
+ngayuku uṉṯaltu maḻu nyanganyi|3819|	
+ngayuku maḻanypa ngurangka nyinanyi|3820|	
+ngayuku maḻanytju maḻu nyanganyi|3821|	
+tjitji nyanganpa ngurangka nyinanyi|3822| 
+tjitji nyangantu maḻu nyanganyi|3823| 
+|3824|
+|3825| ngayuku kuri pukuḻpa|3826| 
+|3827| ngayuku mamangku maḻu nyangu|3828| 
+|3829| ngayuku kuṯangku kaḻaya nyangu|3830| 
+|3831| ngayuku ngunytju ngurangka nyinaku|3832| 
+|3833| ngayuku kamuṟungku kaḻaya kaḻingka rungkaṉu|3834| 
+|3835| ngayuku mama waṟa|3836| 
+|3837| nyuntumpa ngunytju pikatjara?|3838| 
+|3839| tjanampa papa tjukutjuku|3840| 
+|3841| watingku ngayuku kaḻi palyaṉu|3842| 
+|3843| ngayulu tjitji nyangaku kaḻi palyaṉu|3844| 
+|3845| tjitjiku mama pitjanyi|3846| 
+|3847| ngayuku kuṯa pikatjara|3848| 
+|3849| nyuntu kanyaḻa kaḻingka rungkala!|3850| 
+|3851| watingku maḻu kuḻaṯangka wakaṉu|3852|
+|3853| 
+|3854| kuḻaṯangkaṉa wakaṉu|3855| 
+|3856| 
+|3857| watingkutju kaḻi palyaṉu|3858| 
+|3859| watingku minymaku piti palyalku|3860| 
+|3861| 
+|3862| watingkura piti palyalku|3863| 
+|3864|
+
+
+|3865||3866|
+|3867| 
+|3868|	
+|3869| |3870|	
+|3871| |3872| |3873|	
+|3874| |3875|	
+|3876| |3877|	
+|3878| |3879|	
+|3880|	
+|3881| nyupali nyaa palyaṉi?|3882|	
+|3883| ngayulu kaḻi palyaṉi|3884| ka ngayuku kuṯangku kuḻaṯa palyaṉi|3885|	
+palu nyupali yaaltjikutu ananyi?|3886|	
+|3887| ngayulu apukutu ananyi kukaku|3888| ka ngayuku kuri karukutu ananyi maiku.|3889|
+|3890| nyupali yaalaṟa ngalya pitjaku?|3891|
+|3892| kuwarili pitjanyi.|3893|	
+|3894|
+|3895| nyupali nyaa palyaṉi?|3896|	
+|3897| ngayulu kaḻi palyaṉi|3898| ka ngayuku kuṯangku kuḻaṯa palyaṉi|3899|	
+palu nyupali yaaltjikutu ananyi?|3900|	
+|3901| ngayulu apukutu ananyi kukaku|3902| ka ngayuku kuri karukutu ananyi maiku.|3903|
+|3904| nyupali yaalaṟa ngalya pitjaku?|3905|
+|3906| kuwarili pitjanyi.|3907|
+|3908|
+|3909| nyupali nyaa palyaṉi?|3910|	
+|3911| ngayulu kaḻi palyaṉi|3912| ka ngayuku kuṯangku kuḻaṯa palyaṉi|3913|	
+palu nyupali yaaltjikutu ananyi?|3914|	
+|3915| ngayulu apukutu ananyi kukaku|3916| ka ngayuku kuri karukutu ananyi maiku.|3917|
+|3918| nyupali yaalaṟa ngalya pitjaku?|3919|
+|3920| kuwarili pitjanyi.|3921|
+|3922| 	
+|3923|
+|3924|	
+|3925| wati nyinanyi|3926| |3927| wati wangkanyi|3928|	
+|3929| wati nyinanyi munta wangkanyi.|3930| |3931|	
+wati nyinanyi|3932| wati wangkanyi|3933|	
+wati nyinanyi munu wangkanyi|3934|	
+tjitji pitjanyi|3935| tjitji ulanyi|3936|	
+tjitji pitjanyi munu ulanyi.|3937|	
+tjitji wirtjapakaṉu|3938| tjitji punkaṉu|3939|	
+tjitji wirtjapakaṉu munu punkaṉu.|3940|	
+ngayulu kuḻaṯa palyaṉu|3941| ngayulu maḻu wakaṉu|3942|	
+ngayulu kuḻaṯa palyaṉu munuṉa maḻu wakaṉu|3943|
+wati Aṉapalalakutu anu|3944| watingku Ingkatjinya nyangu|3945|	
+wati Aṉapalalakutu anu munu Ingkatjinya nyangu|3946|
+ngali Aṉapalalakutu anu|3947| ngali Pitjantjatjara wangkangu|3948|	
+ngali Aṉapalalakutu anu munuli Pitjantjatjara wangkangu.|3949|	
+|3950|
+|3951|	
+|3952| wati nyinanyi|3953| |3954| minyma ngaṟanyi|3955|	
+|3956| wati nyinanyi ka minyma ngaṟanyi.|3957|	
+|3958|	
+wati nyinanyi|3959| minyma ngaṟanyi|3960|	
+wati nyinanyi ka minyma ngaṟanyi.|3961|	
+minyma wangkanyi|3962| tjitji ulanyi|3963|	
+minyma wangkanyi ka tjitji ulanyi|3964|	
+wati kukaku anu|3965| minyma maiku anu|3966|	
+wati kukaku anu ka minyma maiku anu.|3967|	
+ngayulu maḻu wakaṉu|3968| ngayuku maḻanytju kanyaḻa	wakaṉu|3969|	
+ngayulu maḻu wakaṉu ka ngayuku maḻanytju kanyaḻa wakaṉu.|3970|	
+ngayulu ngurangka nyinaku|3971| ngayuku kuri maiku ankuku|3972|
+ngayulu ngurangka nyinaku ka ngayuku kuri maiku ankuku|3973|	
+|3974|
+|3975|	
+|3976| watingku ngayunya pungu|3977| |3978| |3979| ngayulu punkaṉu|3980| |3981|
+|3982| watingku ngayunya pungu kaṉa punkaṉu|3983| |3984|	
+|3985|	
+watingku ngayunya pungu|3986| ngayulu punkaṉu|3987|	
+watingku ngayunya pungu kaṉa punkaṉu|3988|
+watingku nyuntunya pungu|3989| nyuntu ulangu|3990|	
+watingku nyuntunya pungu kan ulangu.|3991|	
+watingku tjitji pungu|3992| tjitji ulangu|3993|
+watingku tjitji pungu ka ulangu.|3994|	
+ngayulu maḻu nyangu|3995| maḻu wirtjapakaṉu|3996|
+ngayulu maḻu nyangu ka wirtjapakaṉu.|3997|	
+tjana ngalinya pungu|3998| ngali punkaṉu|3999|	
+tjana ngalinya pungu kali punkaṉu.|4000|	
+tjana nganaṉanya pungu|4001| nganaṉa punkaṉu|4002|	
+tjana nganaṉanya pungu kala punkaṉu.|4003|	
+|4004|
+|4005|	
+|4006| nyuntu yaalaṟa pitjangu?|4007|	
+|4008|	
+|4009| kuwariṉa pitjangu.|4010| |4011|	
+|4012|	
+nyuntu yaalaṟa pitjangu?|4013|	
+kuwariṉa pitjangu|4014|	
+nyupali yaalaṟa pitjangu?|4015|	
+kuwarili pitjangu.|4016|	
+nyura yaalaṟa pitjangu?|4017|	
+kuwarila pitjangu.|4018|	
+tjana yaalaṟa pitjangu?|4019|	
+kuwariya pitjangu.|4020|	
+paluṟu yaalaṟa pitjangu?|4021|	
+kuwari pitjangu.|4022|	
+|4023|
+|4024|	
+ngayulu kaḻi palyaṉi|4025| kuḻaṯa|4026|	
+ngayulu kuḻaṯa palyaṉi|4027| piti|4028|	
+ngayulu piti palyaṉi|4029| watingku|4030|	
+watingku piti palyaṉi|4031| ngayuku maḻanytju|4032|	
+ngayuku maḻanytju piti palyaṉi|4033| nyuntumpa kuṯangku|4034|	
+nyuntumpa kuṯangku piti palyaṉi|4035| nganampa mamangku|4036|	
+nganampa mamangku piti palyaṉi|4037| wiltja|4038|	
+nganampa mamangku wiltja palyaṉi|4039| ngayulu|4040|	
+ngayulu wiltja palyaṉi|4041| nyanganyi|4042|	
+ngayulu wiltja nyanganyi|4043| maḻu|4044|	
+ngayulu maḻu nyanganyi|4045| kanyaḻa|4046|	
+ngayulu kanyaḻa nyanganyi|4047| watingku|4048|	
+watingku kanyaḻa nyanganyi|4049| nyangu|4050|	
+watingku kanyaḻa nyangu|4051| wakaṉu|4052|	
+watingku kanyaḻa wakaṉu|4053| aṉangungku|4054|	
+aṉangungku kanyaḻa wakaṉu|4055| paluṟu|4056|	
+paluṟu kanyaḻa wakaṉu|4057| tjana|4058|	
+tjana kanyaḻa wakaṉu|4059| pula|4060|	
+pula kanyaḻa wakaṉu|4061| nyangu|4062|	
+pula kanyaḻa nyangu|4063| watingku|4064|
+watingku kanyaḻa nyangu|4065| Ingkatjilu|4066|	
+Ingkatjilu kanyaḻa nyangu|4067| Wintjinnga|4068|	
+Ingkatjilu Wintjinnga nyangu|4069| tjitjingku|4070|	
+tjitjingku Wintjinnga nyangu|4071| Ingkatjinya|4072|	
+tjitjingku Ingkatjinya nyangu|4073|
+|4074|
+|4075|	
+|4076| ngayulu maḻu nyangu|4077|	
+|4078| maḻuṉa nyangu|4079|
+|4080|	
+ngayulu maḻu nyangu|4081|	
+maḻuṉa nyangu.|4082|
+nyuntu kaḻi palyaṉu|4083|
+kaḻin palyaṉu.|4084|	
+paluṟu kanyaḻa wakaṉu|4085|
+kanyaḻa wakaṉu.|4086|	
+ngali kukaku ananyi|4087|	
+kukakuli ananyi|4088|	
+nganaṉa kukaku ananyi|4089|
+kukakula ananyi.|4090|	
+tjana ngurakutu ananyi|4091|	
+ngurakutuya ananyi.|4092|
+|4093|
+|4094|	
+|4095| watingku ngayunya pungu|4096|	
+|4097| watingkuṉi pungu|4098|	
+|4099|	
+watingku ngayunya pungu|4100|	
+watingkuṉi pungu|4101|	
+watingku nyuntunya nyanganyi|4102|
+watingkunta nyanganyi|4103|	
+watingku palunya wakaṉu|4104|	
+watingku wakaṉu|4105|	
+minymangku ngalinya nyanganyi|4106|
+minymangkulinya nyanganyi|4107|	
+minymangku nganaṉanya nyanganyi|4108|	
+minymangkulanya nyanganyi|4109|
+|4110|
+|4111|	
+|4112| watingku ngayuku kaḻi palyaṉu|4113|	
+|4114| watingkutju kaḻi palyaṉu|4115|	
+|4116|	
+watingku ngayuku kaḻi palyaṉu|4117|	
+watingkutju kaḻi palyaṉu|4118|	
+watingku nyuntumpa kaḻi palyaṉu|4119|	
+watingkunku kaḻi palyaṉu|4120|	
+watingku palumpa kaḻi palyaṉu|4121|	
+watingkura kaḻi palyaṉu|4122|	
+watingku ngalimpa kaḻi palyaṉu|4123|	
+watingkulimpa kaḻi palyaṉu|4124|	
+watingku nganampa kaḻi palyaṉu|4125|	
+watingkulampa kaḻi palyaṉu|4126|
+
+|4127| 	
+|4128| watingku tjitjiku kaḻi palyaṉi|4129|
+|4130| Wintjintu ngayuku maḻanyku kuḻaṯa palyaṉi|4131|
+|4132| ngayuku maḻanypa pikatjara munu paku.|4133|	
+|4134| ngayuku maḻanypa pikatjara ka ngayuku kuṯa palya|4135|	
+|4136| ngayuku mamangku kuḻaṯa palyaṉu munu maḻu wakaṉu|4137|	
+|4138| ngayuku mamangku maḻu wakaṉu ka ngayuku katjangku kaḻaya wakaṉu|4139|	
+|4140|	
+|4141| ngurakutuli ananyi|4142|	
+|4143| ngayuku maḻanytjuṉi pungu|4144|	
+|4145| maḻungkunta nyanganyi|4146|	
+|4147| ngayuku mamangkutju kuḻaṯa palyaṉu|4148|	
+|4149|
+
+|4150||4151|
+|4152| 
+wangkangi|4153|
+nyinangi|4154|
+ngaringi|4155|	
+pitjangi|4156|	
+wirtjapakaṉingi|4157|
+punkaṉingi|4158|
+wakaṉingi|4159|
+nyangangi|4160|	
+ungangi|4161|	
+pungangi|4162|
+anangi|4163|
+wangkapai|4164|
+nyinapai|4165|
+ngaripai|4166|
+pitjapai|4167|	
+wirtjapakalpai|4168|	
+punkalpai|4169|
+wakalpai|4170|
+nyakupai|4171|
+ungkupai|4172|	
+pungkupai|4173|	
+ankupai|4174|	
+papatjara|4175|	
+tjitji|4176|	
+mai|4177|	
+tjuṯa|4178|
+wati|4179|
+minyma|4180|
+ngurakutu|4181|
+apunguṟu|4182|
+|4183|	
+wangkangi|4184|   |4185|
+nyinangi|4186|   |4187|
+ngaringi|4188|   |4189|	
+pitjangi|4190|   |4191|	
+wirtjapakaṉingi|4192|   |4193|
+punkaṉingi|4194|   |4195|
+wakaṉingi|4196|   |4197|
+nyangangi|4198|   |4199|	
+ungangi|4200|   |4201|	
+pungangi|4202|   |4203|
+anangi|4204|   |4205|
+wangkapai|4206|   |4207|
+nyinapai|4208|   |4209|
+ngaripai|4210|   |4211|
+pitjapai|4212|   |4213|
+wirtjapakalpai|4214|	|4215|	
+punkalpai|4216|   |4217|
+wakalpai|4218|   |4219|
+nyakupai|4220|   |4221|
+ungkupai|4222|   |4223|	
+pungkupai|4224|  |4225|	
+ankupai|4226|   |4227|	
+papatjara|4228|   |4229|	
+tjitji|4230|   |4231|	
+mai|4232|   |4233|	
+tjuṯa|4234|   |4235|
+wati|4236|   |4237|
+minyma|4238|   |4239|
+ngurakutu|4240|   |4241|
+apunguṟu|4242|   |4243|
+|4244| 
+Tjitji tjuṯa wangkangu|4245|
+Tjitji tjuṯa wangkangi|4246|	
+Wati papatjara nyinangu|4247|
+Wati papatjara nyinangi|4248|	
+Tjitji mai tjuṯatjara wirtjapakaṉu|4249|
+Tjitji mai tjuṯatjara wirtjapakaṉingi|4250|	
+Wati tjuṯangku papa mai ungu|4251|	
+Wati tjuṯangku papa mai ungangi|4252|	
+Papa tjuṯa ngurakutu ananyi|4253|	
+Papa tjuṯa ngurakutu ankupai|4254|	
+Minyma tjuṯa maitjara pitjanyi|4255|	
+Minyma tjuṯa maitjara pitjapai|4256|	
+Papa tjuṯa apunguṟu wirtjapakaṉi|4257|	
+Papa tjuṯa apunguṟu wirtjapakalpai|4258|	
+Tjitjingku papa punganyi|4259|	
+Tjitjingku papa pungkupai|4260|
+|4261| 
+Tjitji tjuṯa wangkangu|4262|   |4263|
+Tjitji tjuṯa wangkangi|4264|   |4265|	
+Wati papatjara nyinangu|4266|   |4267|
+Wati papatjara nyinangi|4268|   |4269|   
+Tjitji mai tjuṯatjara wirtjapakaṉu|4270|   |4271|
+Tjitji mai tjuṯatjara wirtjapakaṉingi|4272|   |4273|	
+Wati tjuṯangku papa mai ungu|4274|   |4275|	
+Wati tjuṯangku papa mai ungangi|4276|   |4277|	
+Papa tjuṯa ngurakutu ananyi|4278|   |4279|	
+Papa tjuṯa ngurakutu ankupai|4280|   |4281|   
+Minyma tjuṯa maitjara pitjanyi|4282|   |4283|	   
+Minyma tjuṯa maitjara pitjapai|4284|	 |4285|	
+Papa tjuṯa apunguṟu wirtjapakaṉi|4286|   |4287|	
+Papa tjuṯa apunguṟu wirtjapakalpai|4288|   |4289|   
+Tjitjingku papa punganyi|4290|   |4291|		
+Tjitjingku papa pungkupai|4292|   |4293|
+
+|4294| 
+|4295|	
+Tjitji tjuṯa punkaṉingi|4296|     wati|4297|	
+Wati tjuṯa punkaṉingi|4298|   minyma|4299|
+Minyma tjuṯa punkaṉingi|4300|   mai|4301|	
+Mai tjuṯa punkaṉingi|4302|   papa|4303|	
+Papa tjuṯa punkaṉingi|4304|   wirtjapakalpai|4305|	
+Papa tjuṯa wirtjapakalpai|4306|   tjitji|4307|	
+Tjitji tjuṯa wirtjapakalpai|4308|   minyma|4309|	
+Minyma tjuṯa wirtjapakalpai|4310|   ngaripai|4311|
+Minyma tjuṯa ngaripai|4312|   papa|4313|
+Papa tjuṯa ngaripai|4314|   wati|4315|	
+Wati tjuṯa ngaripai|4316|   anangi|4317|	
+Wati tjuṯa anangi|4318|   wati tjuṯa papatjara|4319|	
+Wati tjuṯa papatjara anangi|4320|   minymatjara|4321|	
+Wati tjuṯa minymatjara anangi|4322|    tjitjitjara|4323|	
+Wati tjuṯa tjitjitjara anangi|4324|   maitjara|4325|	
+Wati tjuṯa maitjara anangi|4326|   minyma|4327|	
+Minyma tjuṯa maitjara anangi|4328|  pitjapai|4329|
+Minyma tjuṯa maitjara pitjapai|4330|   tjitji|4331|	
+Tjitji tjuṯa maitjara pitjapai|4332|   wati|4333|	
+Wati tjuṯa maitjara pitjapai|4334|   papa|4335|	
+Papa tjuṯa maitjara pitjapai|4336|	
+|4337|	
+|4338|
+Wati maitjarangku papa wakalpai|4339|   minyma|4340|	
+Minyma maitjarangku papa wakalpai|4341|   tjitji|4342|	
+Tjitji maitjarangku papa wakalpai|4343|   nyangangi|4344|	
+Tjitji maitjarangku papa nyangangi|4345|   minyma|4346|	
+Minyma maitjarangku papa nyangangi|4347|   wati|4348|	
+Wati maitjarangku papa nyangangi|4349|   pungkupai|4350|	
+Wati maitjarangku papa pungkupai|4351|   minyma|4352|	
+Minyma maitjarangku papa pungkupai|4353|   tjitji|4354|	
+Tjitji maitjarangku papa pungkupai|4355|   mai tjuṯatjarangku|4356|	
+Tjitji mai tjuṯatjarangku papa pungkupai|4357|   wati|4358|	
+Wati mai tjuṯatjarangku papa pungkupai|4359|   minyma|4360|	
+Minyma mai tjuṯatjarangku papa pungkupai|4361|   ungangi|4362|	
+Minyma mai tjuṯatjarangku papa ungangi|4363|   wati|4364|	
+Wati mai tjuṯatjarangku papa ungangi|4365|   tjitji|4366|	
+Tjitji mai tjuṯatjarangku papa ungangi|4367|
+|4368|
+Tjitji tjuṯangku papa nyanganyi|4369|   nyangangi|4370|	
+Tjitji tjuṯangku papa nyangangi|4371|   nyangu|4372|	
+Tjitji tjuṯangku papa nyangu|4373|   nyakupai|4374|	
+Tjitji tjuṯangku papa nyakupai|4375|   pungu|4376|	
+Tjitji tjuṯangku papa pungu|4377|   pungangi|4378|	
+Tjitji tjuṯangku papa pungangi|4379|   pungkupai|4380|	
+Tjitji tjuṯangku papa pungkupai|4381|   punganyi|4382|	
+Tjitji tjuṯangku papa punganyi|4383|   wakalpai|4384|	
+Tjitji tjuṯangku papa wakalpai|4385|   wakaṉu|4386|	
+Tjitji tjuṯangku papa wakaṉu|4387|   wakaṉingi|4388|
+Tjitji tjuṯangku papa wakaṉingi|4389|
+|4390|	
+Minyma papa tjuṯatjara nyinangi|4391|   nyinanyi|4392|	
+Minyma papa tjuṯatjara nyinanyi|4393|   nyinapai|4394|	
+Minyma papa tjuṯatjara nyinapai|4395|   nyinangu|4396|
+Minyma papa tjuṯatjara nyinangu|4397|   wirtjapakaṉi|4398|
+Minyma papa tjuṯatjara wirtjapakaṉi|4399|   wirtjapakalpai|4400|
+Minyma papa tjuṯatjara wirtjapakalpai|4401|   wirtjapakaṉu|4402|	
+Minyma papa tjuṯatjara wirtjapakaṉu|4403|   wirtjapakaṉingi|4404|
+Minyma papa tjuṯatjara wirtjapakaṉingi|4405|   anangi|4406|	
+Minyma papa tjuṯatjara anangi|4407|   anu|4408|	
+Minyma papa tjuṯatjara anu|4409|   ankupai|4410|	
+Minyma papa tjuṯatjara ankupai|4411|   wangkanyi|4412|	
+Minyma papa tjuṯatjara wangkanyi|4413|   wangkapai|4414|	
+Minyma papa tjuṯatjara wangkapai|4415|   wangkangi|4416|	
+Minyma papa tjuṯatjara wangkangi|4417|   wangkangu|4418|	
+Minyma papa tjuṯatjara wangkangu|4419|
+|4420|
+|4421|	
+Papa tjuṯa ngurakutu pitjangi|4422|
+
+|4423|
+Minyma mai tjuṯatjara nyinangi|4424|
+
+|4425|
+Tjitji tjuṯa apunguṟu wirtjapakalpai|4426|
+
+|4427|	
+Wati maitjarangku papa pungangi|4428|
+
+|4429|	
+Tjitji tjuṯa papatjara ankupai|4430|
+
+|4431|	
+Minyma papa tjuṯatjara wangkapai|4432|
+
+|4433|	
+Papa maitjara ngurakutu wirtjapakalpai|4434|
+
+|4435|	
+Minymangku papa maitjara punganyi|4436|	
+
+|4437|
+Wati tjitjitjara punkaṉingi|4438|	
+
+|4439|
+Tjitji tjuṯa nyinangi|4440|	
+
+|4441|
+
+|4442||4443|	
+|4444| 
+nyitayira|4445|  |4446|	
+uṟu|4447|   |4448|
+tjiṟirpi|4449|   |4450|	
+wiṟu|4451|   |4452|	
+mungaṯu|4453|   |4454|	
+panya|4455|	|4456|	
+katu|4457|   |4458|	
+piṟuku|4459|   |4460|	
+maḻaku|4461|   |4462|	
+tjarpangu|4463|   |4464|	
+mukuringkupai|4465|   |4466|	
+tjawaṉu|4467|   |4468|	
+inkangi|4469|   |4470|
+tatiṉu|4471|   |4472|	
+pakaṉu|4473|   |4474|
+|4475|	
+nyara|4476|   |4477|	
+ngula|4478|   |4479|	
+anu|4480|	|4481|	
+pitjangu|4482|   |4483|	
+munu|4484|   |4485|	
+ka|4486|   |4487|	
+tjana|4488|	|4489|	
+-ya|4490|   |4491|	
+ngananya|4492|   |4493|	
+nyaa|4494|   |4495|	
+nyaaṉu|4496|	|4497|	
+
+|4498|
+Nyitayira Tjuṯa Uṟuku Ankuntja|4499|	
+|4500|
+Mungaṯuya nyitayira tjuṯa tangkiyitjara anu Itjinpirilakutu munuya uṟungka tjarpangu.|4501| Panya nyara tjana uṟuku mukuringkupai, munuya inkangi uṟu wiṟungka munuya wararakatingi apu katunguṟu, munuya ikaringangi.|4502|
+Munuya ngula pakaṉu munuya tangkiyingka piṟuku tatiṉu munuya anu ngura Tjalyiritjalakutu munuya rapita tjawaṉu.|4503| Ka tjiṟirpi tjarpangu kaya maḻaku pitjangu ngurakutu, rapita tjuṯatjara.|4504|	
+
+|4505|
+
+
+|4506|
+
+|4507|
+
+
+|4508|
+
+|4509|
+|4510|
+
+|4511| Ngananya tjana anu?|4512|	
+Nyitayira tjuṯaya anu.|4513|
+Ngananya tjana anu?|4514|
+
+|4515| Nyaatjaraya anu?|4516|	
+Tangkiyitjaraya anu.|4517|
+Nyaatjaraya anu?|4518|	
+
+|4519| Ngura nganalakutuya anu?|4520|	
+Ngura Itjinpirilakutuya anu.|4521|
+Ngura nganalakutuya anu?|4522|
+
+|4523| Munuya nyaaṉu Itjinpirila?|4524|	
+Uṟungkaya tjarpangu.|4525|
+Munuya nyaaṉu Itjinpirila?|4526|
+
+|4527| Nyitayira tjuṯangku nyaaṉu ngura Tjalyiritjala?|4528|
+Rapitaya tjawaṉu ngura Tjalyiritjala.|4529|
+Nyitayira tjuṯangku nyaaṉu ngura Tjalyiritjala?|4530|
+
+|4531| Munuya nyaatjara maḻaku pitjangu ngurakutu?|4532|	
+Rapita tjuṯatjaraya maḻaku pitjangu.|4533|
+Munuya nyaatjara maḻaku pitjangu ngurakutu?|4534|
+
+|4535|	
+
+
+
+|4536||4537|	
+|4538| 	
+ankula|4539|
+pitjala|4540|
+nyinara|4541|
+ngarira|4542|
+pungkula|4543|
+ungkula|4544|
+tjawaṟa|4545|
+ngaṟala|4546|
+pakaṟa|4547|
+tatiṟa|4548|
+tjarpara|4549|
+nyakula|4550|
+ngaṟanyangka|4551|
+nyinanyangka|4552|
+nyakunyangka|4553|
+pakanyangka|4554|
+ankunyangka|4555|
+mukuringkunyangka|4556|
+inkanyangka|4557|
+pungkunyangka|4558|
+wirtjapakanyangka|4559|
+wakanyangka|4560|
+puṉu|4561|	
+wiltja|4562|	
+maḻu|4563|
+paṉa|4564|
+kuḻaṯa|4565|
+pukuḻpa|4566|
+paluṟu|4567|
+ma-|4568|
+wati-|4569|	
+para-|4570|	
+ngalya-|4571|	
+|4572|
+ankula|4573|   |4574|
+pitjala|4575|   |4576|
+nyinara|4577|   |4578|
+ngarira|4579|   |4580|
+pungkula|4581|   |4582|
+ungkula|4583|   |4584|
+tjawaṟa|4585|   |4586|
+ngaṟala|4587|   |4588|
+pakaṟa|4589|   |4590|
+tatiṟa|4591|   |4592|
+tjarpara|4593|   |4594|
+nyakula|4595|   |4596|
+ngaṟanyangka|4597|   |4598|
+nyinanyangka|4599|   |4600|
+nyakunyangka|4601|   |4602|
+pakanyangka|4603|   |4604|
+ankunyangka|4605|   |4606|
+mukuringkunyangka|4607|   |4608|
+inkanyangka|4609|    |4610|
+pungkunyangka|4611|   |4612|
+wirtjapakanyangka|4613|   |4614|
+wakanyangka|4615|   |4616|
+puṉu|4617|   |4618|	
+wiltja|4619|   |4620|	
+maḻu|4621|   |4622|
+paṉa|4623|   |4624|
+kuḻaṯa|4625|   |4626|
+pukuḻpa|4627|   |4628|
+paluṟu|4629|   |4630|
+ma-|4631|   |4632|
+wati-|4633|   |4634|	
+para-|4635|   |4636|	
+ngalya-|4637|   |4638|
+
+|4639| 	
+Wati kuḻaṯatjarangku maḻu wakaṉu|4640|	
+Wati kuḻaṯatjarangku ankula maḻu wakaṉu|4641|
+
+Ngula paluṟu wiltjangka ma-tjarpaku|4642|	
+Ngula paluṟu pitjala wiltjangka ma-tjarpaku|4643|
+
+Mungaṯu minyma maitjara ngalya-pitjangi|4644|
+Mungaṯu minyma tjawaṟa tjawaṟa maitjara ngalya-pitjangi|4645|	
+
+Nyitayira tjuṯa pukuḻpa nyinangi|4646|
+Mai ungkunyanka nyitayira tjuṯa pukuḻpa nyinangi|4647|
+
+Paluṟu paṉangka ngaringi|4648|	
+Puṉunguṟu punkara paluṟu paṉangka ngaringi|4649|
+
+Maḻu punkalpai|4650|	
+Maḻu punkalpai kuḻaṯangka wakanyangka|4651|	
+
+Tjitjingku maḻu wiṟu piṟuku nyangu|4652|	
+Tjitjingku maḻu wiṟu piṟuku nyangu wati-pakanyangka|4653|
+
+Tjana ma-nyangu tjitji wiṟu tjuṯa|4654|	
+Tjana ma-nyangu tjitji wiṟu tjuṯa para-inkanyangka|4655|	
+|4656| 	
+
+Wati kuḻaṯatjarangku maḻu wakaṉu|4657|	
+|4658|	
+Wati kuḻaṯatjarangku ankula maḻu wakaṉu|4659|
+|4660|
+
+Ngula paluṟu wiltjangka ma-tjarpaku|4661|
+|4662|	
+Ngula paluṟu pitjala wiltjangka ma-tjarpaku|4663|
+|4664|
+
+Mungaṯu minyma maitjara ngalya-pitjangi|4665|	
+|4666|	
+Mungaṯu minyma tjawaṟa tjawaṟa maitjara ngalya-pitjangi|4667|	
+|4668|
+
+Nyitayira tjuṯa pukuḻpa nyinangi|4669|
+|4670|	
+Mai ungkunyanka nyitayira tjuṯa pukuḻpa nyinangi|4671|
+|4672|	
+
+Paluṟu paṉangka ngaringi|4673|	
+|4674|	
+Puṉunguṟu punkara paluṟu paṉangka ngaringi|4675|
+|4676|
+
+Maḻu punkalpai|4677|	
+|4678|	
+Maḻu punkalpai kuḻaṯangka wakanyangka|4679|	
+|4680|	
+
+Tjitjingku maḻu wiṟu piṟuku nyangu|4681|
+|4682|	
+Tjitjingku maḻu wiṟu piṟuku nyangu wati-pakanyangka|4683|
+|4684|	
+
+Tjana ma-nyangu tjitji wiṟu tjuṯa|4685|
+|4686|	
+Tjana ma-nyangu tjitji wiṟu tjuṯa para-inkanyangka|4687|
+|4688|	
+|4689|	
+|4690|	
+Tjitjingku pakaṟa papa pungu|4691|    wati|4692|	
+Tjitjingku pakaṟa wati pungu|4693|    minyma|4694|	
+Tjitjingku pakaṟa minyma pungu|4695|   maḻu|4696|	
+Tjitjingku pakaṟa maḻu pungu|4697|   tjarpara|4698|	
+Tjitjingku tjarpara maḻu pungu|4699|   wati|4700|	
+Tjitjingku tjarpara wati pungu|4701|   nyitayira|4702|	
+Tjitjingku tjarpara nyitayira pungu|4703|   papa|4704|	
+Tjitjingku tjarpara papa pungu|4705|   ankula|4706|	
+Tjitjingku ankula papa pungu|4707|   maḻu|4708|	
+Tjitjingku ankula maḻu pungu|4709|   minyma|4710|	
+Tjitjingku ankula minyma pungu|4711|   papa|4712|	
+Tjitjingku ankula papa pungu|4713|   nyangangi|4714|	
+Tjitjingku ankula papa nyangangi|4715|   kuḻaṯa|4716|	
+Tjitjingku ankula kuḻaṯa nyangangi|4717|   puṉu|4718|	
+Tjitjingku ankula puṉu nyangangi|4719|   wiltja|4720|	
+Tjitjingku ankula wiltja nyangangi|4721|   ngaṟala|4722|	
+Tjitjingku ngaṟala wiltja nyangangi|4723|   mai|4724|	
+Tjitjingku ngaṟala mai nyangangi|4725|   puṉu|4726|	
+Tjitjingku ngaṟala puṉu nyangangi|4727|   wati|4728|	
+Tjitjingku ngaṟala wati nyangangi|4729|   nyakula|4730|	
+Tjitjingku nyakula wati nyangangi|4731|   maḻu|4732|	
+Tjitjingku nyakula maḻu nyangangi|4733|   papa|4734|	
+Tjitjingku nyakula papa nyangangi|4735|   	
+|4736|	
+|4737|	
+Tjitji maitjarangku piṟuku ungkupai pitjala|4738|   ankula|4739|	
+Tjitji maitjarangku piṟuku ungkupai ankula|4740|   mukuringkula|4741|	
+Tjitji maitjarangku piṟuku ungkupai mukuringkula|4742|   nyakula|4743|
+Tjitji maitjarangku piṟuku ungkupai nyakula|4744|   tjarpara|4745|	
+Tjitji maitjarangku piṟuku ungkupai tjarpara|4746|   tjawaṟa|4747|	
+Tjitji maitjarangku piṟuku ungkupai tjawaṟa|4748|
+|4749|
+Mungaṯu minyma panya wiltjangka ma-nyinangi pungkunyangka|4750| nyakunyangka|4751|
+Mungaṯu minyma panya wiltjangka ma-nyinangi nyakunyangka|4752| pakanyangka|4753|
+Mungaṯu minyma panya wiltjangka ma-nyinangi pakanyangka|4754|   pitjanyangka|4755|
+Mungaṯu minyma panya wiltjangka ma-nyinangi pitjanyangka|4756|   wakanyangka|4757|
+Mungaṯu minyma panya wiltjangka ma-nyinangi wakanyangka|4758|   inkanyangka|4759|
+Mungaṯu minyma panya wiltjangka ma-nyinangi inkanyangka|4760|
+|4761|
+Maḻu ma-wirtjapakaṉu watingku wakanyangka|4762|   nyakunyangka|4763|	
+Maḻu ma-wirtjapakaṉu watingku nyakunyangka|4764|   pungkunyangka|4765|	
+Maḻu ma-wirtjapakaṉu watingku pungkunyangka|4766|	
+Wati paluṟu ungkula pukuḻpa nyinangu ngurangka|4767|   tjarpara|4768|	
+Wati paluṟu tjarpara pukuḻpa nyinangu ngurangka|4769|   pitjalapitjala|4770|	
+Wati paluṟu pitjala pukuḻpa nyinangu ngurangka|4771|   wakara|4772|	
+Wati paluṟu wakara pukuḻpa nyinangu ngurangka|4773|   tjawaṟa|4774|	
+Wati paluṟu tjawaṟa pukuḻpa nyinangu ngurangka|4775|   ankula|4776|	
+Wati paluṟu ankula pukuḻpa nyinangu ngurangka|4777|   inkara|4778|	
+Wati paluṟu inkara pukuḻpa nyinangu ngurangka|4779|
+|4780|
+Minyma tjuṯa maḻaku tjarpanyangka tjuṯa pakaṉu|4781|   pitjanyangka|4782|	
+Minyma tjuṯa maḻaku pitjanyangka tjuṯa pakaṉu|4783|   ankunyangka|4784|	
+Minyma tjuṯa maḻaku ankunyangka tjuṯa pakaṉu|4785|   wirtjapakanyangka|4786|
+Minyma tjuṯa maḻaku wirtjapakanyangka tjuṯa pakaṉu|4787|
+|4788|
+Nyitayira tjuṯa mukuringkula uṟungka tjarpangu|4789|   pitjala pitjala|4790|
+Nyitayira tjuṯa pitjala pitjala uṟungka tjarpangu|4791|   ankula ankula|4792|	
+Nyitayira tjuṯa ankula ankula uṟungka tjarpangu|4793|   nyinara nyinara|4794|	
+Nyitayira tjuṯa nyinara nyinara uṟungka tjarpangu|4795|   inkara inkara|4796|	
+Nyitayira tjuṯa inkara inkara uṟungka tjarpangu|4797|   	
+|4798|	
+Watingku maḻu wakaṉu ma-ngaṟanyangka|4799|   papa|4800|	
+Watingku papa wakaṉu ma-ngaṟanyangka|4801|   minyma|4802|	
+Watingku minyma wakaṉu ma-ngaṟanyangka|4803|   nyangu|4804|
+Watingku minyma nyangu ma-ngaṟanyangka|4805|   tjitji|4806|
+Watingku tjitji nyangu ma-ngaṟanyangka|4807|   puṉu|4808|	
+Watingku puṉu nyangu ma-ngaṟanyangka|4809|   nyitayira|4810|	
+Watingku nyitayira nyangu ma-ngaṟanyangka|4811|   ngalya-wirtjapakanyangka|4812|	
+Watingku nyitayira nyangu ngalya-wirtjapakanyangka|4813|   maḻu|4814|	
+Watingku maḻu nyangu ngalya-wirtjapakanyangka|4815|   minyma|4816|
+Watingku minyma nyangu ngalya-wirtjapakanyangka|4817|   papa|4818|	
+Watingku papa nyangu ngalya-wirtjapakanyangka|4819|   ungangi|4820|	
+Watingku papa ungangi ngalya-wirtjapakanyangka|4821|   tjitji|4822|	
+Watingku tjitji ungangi ngalya-wirtjapakanyangka|4823|   nyitayira|4824|	
+Watingku nyitayira ungangi ngalya-wirtjapakanyangka|4825|   minyma|4826|	
+Watingku minyma ungangi ngalya-wirtjapakanyangka|4827|   mukuringkunyangka|4828|
+Watingku minyma ungangi mukuringkunyangka|4829|   tjitji|4830|
+Watingku tjitji ungangi mukuringkunyangka|4831|   papa|4832|	
+Watingku papa ungangi mukuringkunyangka|4833|   minyma|4834|
+Watingku minyma ungangi mukuringkunyangka|4835|   nyitayira|4836|	
+Watingku nyitayira ungangi mukuringkunyangka|4837|   inkanyangka|4838|
+Watingku nyitayira ungangi inkanyangka|4839|   tjitji|4840|	
+Watingku tjitji ungangi inkanyangka|4841|   nyakupai|4842|	
+Watingku tjitji nyakupai inkanyangka|4843|   minyma|4844|	
+Watingku minyma nyakupai inkanyangka|4845|   nyitayira|4846|	
+Watingku nyitayira nyakupai inkanyangka|4847|   papa|4848|	
+Watingku papa nyakupai inkanyangka|4849|   	
+|4850|
+|4851|	
+Nguranguṟu pitjala wati tjuṯangku maḻu nyangu|4852|
+
+|4853|	
+Tjitjingku papa wakaṉu pakanyangka|4854|
+
+|4855|	
+Mungaṯu minyma tjuṯa wangkangi wiltjangka nyinara|4856|
+
+|4857|	
+Wati tjuṯa anu tjitji tjuṯa para-inkanyangka|4858|
+
+|4859|	
+Nyitayira ma-wirtjapakaṉu watingku pungkunyangka|4860|
+
+|4861|
+Wiltjangka tjarpara paluṟu minyma mai ungu|4862|
+
+|4863|	
+Minyma wiltjangka tjarpanyangka paluṟu mai ungu|4864|
+
+|4865|	
+Apu katu tatiṟa nyitayira tjuṯa maḻaku pitjangu ngurakutu|4866|
+
+
+
+|4867||4868|	
+|4869| 	
+tjaa|4870|   |4871|	
+ili|4872|   |4873|	
+mina|4874|   |4875|	
+waṟu|4876|	|4877|	
+wari|4878|   |4879|	
+kutjupa|4880|   |4881|	
+unngu|4882|   |4883|	
+uṟilpa|4884|   |4885|	
+wala|4886|   |4887|	
+puyinyangka|4888|   |4889|	
+ngalkula|4890|   |4891|	
+watjaṉu|4892|   |4893|	
+pakala|4894|   |4895|	
+puyiṉu|4896|   |4897|	
+mantjila|4898|   |4899|	
+ilungu|4900|   |4901|	
+kunyu|4902|   |4903|	
+awari|4904|   |4905|	
+wanyu|4906|   |4907|
+alatjiṯu|4908|   |4909|	
+yaaltji|4910|   |4911|	
+palu|4912|	|4913|	
+|4914|
+Puṉu Tjaatjarangku Ili Ngurintja|4915|
+Ngura kutjupangka kunyu tjitji tjuṯa anu minangku puyinyangka.|4916| Tjitji nyara paluṟu tjana waṟu tjaatjara anu munuya ankula ilikutu pukuḻpa wirtjapakaṉu mai ngaṟanyangka.|4917| Palu ili nyara paluṟu apu kulpikulpingka unngu ngaṟangi kaya tjitji panya tjuṯangku waṟu tjaa uṟilta wantikatira ma-tjarpangu mai panya iliku munuya ngalkula ngalkula paltjaringkula watjaṉu "Walala pakala uṟilkutu, puyiṉulanya."|4918| Munuya pakaṉu, waringku puḻkaṟa puyinyangka, munuya pakaṟa uṟilta nyangu "Awari waṟu panya yaaltji?|4919| Mantjilaya wanyu munu puula. Awari puḻkaṟaṉi puyiṉi."|4920| Palu waṟu ilungu alatjiṯu kaya kaṯiṯi tirkiltjingaṉu alatjiṯu waringku puḻkaṟa puyinyangka munuya wirtjapakaṉu nguraku waṟukutu.|4921|	
+|4922|
+
+
+|4923|
+
+|4924|
+
+
+|4925|
+
+|4926|
+|4927|	
+|4928| Tjitji tjuṯa nyaangka anu?|4929|	
+Tjitji tjuṯa minangka anu.|4930|
+Tjitji tjuṯa nyaangka anu?|4931|
+
+|4932| Nyaakuya anu?|4933|	
+Ilikuya anu|4934|
+Nyaakuya anu?|4935|
+
+|4936| Nyaatjara anu, tjitji tjuṯa?|4937|	
+Puṉu tjaatjaraya anu.|4938|
+Nyaatjara anu, tjitji tjuṯa?|4939|
+
+|4940| Ka ili tjuṯa yaaltji ngaṟangi?|4941|	
+Ili tjuṯa apu kulpikulpingka kunyu ngaṟangi.|4942|
+Ka ili tjuṯa yaaltji ngaṟangi?|4943|
+
+|4944| Tjitji panya tjuṯangku yaaltjingka wantikatingu waṟu tjaa?|4945|
+Uṟiltaya waṟu tjaa wantikatingu.|4946|
+Tjitji panya tjuṯangku yaaltjingka wantikatingu waṟu tjaa?|4947|
+
+|4948| Munuya tjarpara nyaaṉu?|4949|	
+Tjarparaya mai panya ili ngalkuṉu.|4950|
+Munuya tjarpara nyaaṉu?|4951|	
+
+|4952| Nyaaṉuya paltjaringkula?|4953|	
+Uṟilkutuya pakaṉu, paltjaringkula.|4954|
+Nyaaṉuya paltjaringkula?|4955|	
+
+|4956| Waṟu nyaaringu uṟilta ngarira?|4957|	
+Waṟu ilungu kunyu uṟilta ngarira.|4958|
+Waṟu nyaaringu uṟilta ngarira?|4959|
+
+|4960| Nyaakuya tjitji tjuṯa kaṯiṯi tirkiltjingaṉu?|4961|	
+Waringku puyinyangkaya kaṯiṯi tirkiltjingaṉu.|4962|
+Nyaakuya tjitji tjuṯa kaṯiṯi tirkiltjingaṉu?|4963|
+
+|4964| Kaya nyaaṉu waringku puḻkaṟa puyinyangka?|4965|	
+Tjitji tjuṯaya ngurakutu wirtjapakaṉu waringku puḻkaṟa puyinyangka.|4966|
+Kaya nyaaṉu waringku puḻkaṟa puyinyangka?|4967|	
+
+|4968|	
+
+	
+
+|4969||4970|
+|4971| 	
+ankuntjaku|4972|	
+puyintjaku|4973|	
+ngarintjaku|4974|	
+pungkuntjaku|4975|	
+nyakuntjaku|4976|	
+wakantjikitjangku|4977|	
+ngalkuntjikitjangku|4978|	
+ungkuntjikitjangku|4979|	
+pitjantjikitjangku|4980|	
+ankuntjikitjangku|4981|	
+mantjintjikitja|4982|	
+iluntjikitja|4983|	
+nyakuntjikitja|4984|	
+tatintjikitja|4985|	
+ankuntjikitja|4986|	
+puḻka|4987|	
+tjukutjuku|4988|
+nguḻu|4989|
+wiya|4990|
+piti|4991|	
+ngayula|4992|	
+ngalila|4993|	
+nganaṉala|4994|	
+nyuntula|4995|	
+nyupalila|4996|
+nyurala|4997|
+palula|4998|
+pulala|4999|
+tjanala|5000|	
+|5001| 
+|5002|	
+ankuntjaku|5003|   |5004|	
+puyintjaku|5005|   |5006|	
+ngarintjaku|5007|   |5008|	
+pungkuntjaku|5009|   |5010|	
+nyakuntjaku|5011|   |5012|	
+wakantjikitjangku|5013|   |5014|	
+ngalkuntjikitjangku|5015|   |5016|	
+ungkuntjikitjangku|5017|   |5018|	
+pitjantjikitjangku|5019|   |5020|	
+ankuntjikitjangku|5021|   |5022|	
+mantjintjikitja|5023|   |5024|	
+iluntjikitja|5025|   |5026|	
+nyakuntjikitja|5027|	|5028|	
+tatintjikitja|5029|	|5030|	
+ankuntjikitja|5031|   |5032|	
+puḻka|5033|   |5034|	
+tjukutjuku|5035|   |5036|	
+nguḻu|5037|   |5038|
+wiya|5039|   |5040|	
+piti|5041|   |5042|	
+ngayula|5043|   |5044|	
+ngalila|5045|   |5046|	
+nganaṉala|5047|   |5048|	
+nyuntula|5049|   |5050|	
+nyupalila|5051|   |5052|	
+nyurala|5053|   |5054|		
+palula|5055|   |5056|
+pulala|5057|	 |5058|
+tjanala|5059|   |5060|	
+|5061| 
+|5062|
+
+Puṉuṉi uwa, kaṉa papa puḻka pungkuku.|5063|	
+Puṉuṉi uwa papa puḻka pungkuntjaku|5064|
+
+Pakaṉiṉa pulala, uṟilkutu, kalanya minangku puyilku|5065|
+Pakaṉiṉa pulala, uṟilkutu, minangkulanya puyintjaku|5066|
+
+Tjiṟirpi pakanyangkaya pitja, munu nganaṉala maḻuku ara|5067|	
+Tjiṟirpi pakanyangkaya pitja, nganaṉala maḻuku ankuntjikitja|5068|
+
+Minyma tjuṯa pititjarangku ili mantjiningi|5069|	
+Minyma tjuṯa pititjarangku ili mantjiningi ngalkuntjikitjangku|5070|
+
+Kuḻaṯa tjukutjuku tjuṯaya mantjiṉu|5071|	
+Kuḻaṯa tjukutjuku tjuṯaya mantjiṉu mai wakantjikitjangku|5072|
+
+Tjitji tjuṯangku mai tjawalpai, munuya minyma tjuṯa ungkupai|5073|	
+Tjitji tjuṯangku mai tjawalpai minyma tjuṯa ungkuntjikitjangku|5074|
+
+Maḻu pikatjara ma-wirtjapakaṉi|5075|	
+Maḻu pikatjara ma-wirtjapakaṉi iluntjikitja|5076|
+
+Nyitayira tjuṯa tangkiyitjara anu|5077|	
+Nyitayira tjuṯa tangkiyitjara anu, palula apu katu tatintjikitja|5078|	
+
+|5079|
+Puṉuṉi uwa, kaṉa papa puḻka pungkuku.|5080|
+|5081|	
+Puṉuṉi uwa papa puḻka pungkuntjaku|5082|
+|5083|
+
+Pakaṉiṉa pulala, uṟilkutu, kalanya minangku puyilku|5084|	
+|5085|	
+Pakaṉiṉa pulala, uṟilkutu minangku puyintjaku|5086|
+|5087|
+
+Tjiṟirpi pakanyangkaya pitja, munu nganaṉala maḻuku ara|5088|	
+|5089|	
+Tjiṟirpi pakanyangkaya pitja, nganaṉala maḻuku ankuntjikitja|5090|
+|5091|
+
+Minyma tjuṯa pititjarangku ili mantjiningi|5092|	
+|5093|	
+Minyma tjuṯa pititjarangku ili mantjiningi ngalkuntjikitjangku|5094|
+|5095|
+
+Kuḻaṯa tjukutjuku tjuṯaya mantjiṉu|5096|	
+|5097|
+Kuḻaṯa tjukutjuku tjuṯaya mantjiṉu mai wakantjikitjangku|5098|
+|5099|
+
+Tjitji tjuṯangku mai tjawalpai, munuya minyma tjuṯa ungkupai|5100|	
+|5101|	
+Tjitji tjuṯangku mai tjawalpai minyma tjuṯa ungkuntjikitjangku|5102|
+|5103|
+
+Maḻu pikatjara ma-wirtjapakaṉi|5104|	
+|5105|	
+Maḻu pikatjara ma-wirtjapakaṉi iluntjikitja|5106|
+|5107|
+
+Nyitayira tjuṯa tangkiyitjara anu|5108|	
+|5109|	
+Nyitayira tjuṯa tangkiyitjara anu, palula apu katu tatintjikitja|5110|	
+|5111|	
+|5112| 	
+|5113|	
+Paluṟu wati tjuṯa mai ungu nyupalila ankuntjaku|5114|  ngayula|5115|	
+Paluṟu wati tjuṯa mai ungu ngayula ankuntjaku|5116|   nyurala|5117|	
+Paluṟu wati tjuṯa mai ungu nyurala ankuntjaku|5118|   tjanala|5119|	
+Paluṟu wati tjuṯa mai ungu tjanala ankuntjaku|5120|   pulala|5121|	
+Paluṟu wati tjuṯa mai ungu pulala ankuntjaku|5122|   ngalila|5123|	
+Paluṟu wati tjuṯa mai ungu ngalila ankuntjaku|5124|
+|5125|
+Minyma tjuṯa wiltjangka tjarpangu nganaṉala wangkantjikitja|5126|   tjitji|5127|	
+Tjitji tjuṯa wiltjangka tjarpangu nganaṉala wangkantjikitja|5128|   wati|5129|	
+Wati tjuṯa wiltjangka tjarpangu nganaṉala wangkantjikitja|5130|   nyitayira|5131|	
+Nyitayira tjuṯa wiltjangka tjarpangu nganaṉala wangkantjikitja|5132|   nyinantjikitja|5133|	
+Nyitayira tjuṯa wiltjangka tjarpangu nganaṉala nyinantjikitja|5134|   wati|5135|
+Wati tjuṯa wiltjangka tjarpangu nganaṉala nyinantjikitja|5136|   minyma|5137|	
+Minyma tjuṯa wiltjangka tjarpangu nganaṉala nyinantjikitja|5138|   tjitji|5139|	
+Tjitji tjuṯa wiltjangka tjarpangu nganaṉala nyinantjikitja|5140|  ngalkuntjikitja|5141|
+Tjitji tjuṯa wiltjangka tjarpangu nganaṉala ngalkuntjikitja|5142|   nyurala|5143|	
+Tjitji tjuṯa wiltjangka tjarpangu nyurala ngalkuntjikitja|5144|   tjanala|5145|	
+Tjitji tjuṯa wiltjangka tjarpangu tjanala ngalkuntjikitja|5146|   ngayula|5147|	
+Tjitji tjuṯa wiltjangka tjarpangu ngayula ngalkuntjikitja|5148|   palula|5149|	
+Tjitji tjuṯa wiltjangka tjarpangu palula ngalkuntjikitja|5150|   nyupalila|5151|
+Tjitji tjuṯa wiltjangka tjarpangu nyupalila ngalkuntjikitja|5152|
+|5153|
+Nyitayira tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5154|   wati|5155|	
+Wati tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5156|   minyma|5157|	
+Minyma tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5158|   tjitji|5159|	
+Tjitji tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5160|   puḻka|5161|	
+Puḻka tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5162|   tjukutjuku|5163|
+Tjukutjuku tjuṯangku papa pungangi nguḻu wirtjapakantjaku|5164|
+|5165|
+Watingku kuḻaṯa mantjiṉi maḻu wakantjikitjangku|5166|   papa|5167|	
+Watingku kuḻaṯa mantjiṉi papa wakantjikitjangku|5168|   kutjupa|5169|	
+Watingku kuḻaṯa mantjiṉi kutjupa wakantjikitjangku|5170|   minyma|5171|
+Watingku kuḻaṯa mantjiṉi minyma wakantjikitjangku|5172|   ngayunya|5173|	
+Watingku kuḻaṯa mantjiṉi ngayunya wakantjikitjangku|5174|
+
+|5175|	
+Wati kutjupa tjuṯa ngalya-pitjanyi nyakuntjikitja|5176|   ungkuntjikitja|5177|
+Wati kutjupa tjuṯa ngalya-pitjanyi ungkuntjikitja|5178|   wangkantjikitja|5179|	
+Wati kutjupa tjuṯa ngalya-pitjanyi wangkantjikitja|5180|   nyinantjikitja|5181|	
+Wati kutjupa tjuṯa ngalya-pitjanyi nyinantjikitja|5182|   ngalkuntjikitja|5183|	
+Wati kutjupa tjuṯa ngalya-pitjanyi ngalkuntjikitja|5184|   mantjintjikitja|5185|
+Wati kutjupa tjuṯa ngalya-pitjanyi mantjintjikitja|5186|   tatintjikitja|5187|
+Wati kutjupa tjuṯa ngalya-pitjanyi tatintjikitja|5188|   ngarintjikitja|5189|	
+Wati kutjupa tjuṯa ngalya-pitjanyi ngarintjikitja|5190|   pungkuntjikitja|5191|	
+Wati kutjupa tjuṯa ngalya-pitjanyi pungkuntjikitja|5192|
+|5193|
+Nyitayirangku maḻu wakaṉu|5194|   ngalkuntjikitjangku|5195|
+Nyitayirangku maḻu wakaṉu ngalkuntjikitjangku|5196|   ungkuntjikitjangku|5197|
+Nyitayirangku maḻu wakaṉu ungkuntjikitjangku|5198|   mantjintjikitjangku|5199|
+Nyitayirangku maḻu wakaṉu mantjintjikitjangku|5200|   nyakuntjikitjangku|5201|	
+Nyitayirangku maḻu wakaṉu nyakuntjikitjangku|5202|   pungkantjaku|5203|
+Nyitayirangku maḻu wakaṉu pungkantjaku|5204|   wirtjapakantjaku|5205|
+Nyitayirangku maḻu wakaṉu wirtjapakantjaku|5206|   pakantjaku|5207|	
+Nyitayirangku maḻu wakaṉu pakantjaku|5208|   nyakuntjaku|5209|	
+Nyitayirangku maḻu wakaṉu nyakuntjaku|5210|   pungkuntjaku|5211|	
+Nyitayirangku maḻu wakaṉu pungkuntjaku|5212|
+|5213|
+|5214| |5215|
+Wiltjangka ngalya-tjarpa, nganaṉala ngalkuntjikitja|5216|
+
+|5217| |5218|
+Paluṟu puṉu puḻka mantjiṉu papa pungkuntjikitjangku|5219|
+
+|5220| |5221|
+Minyma tjuṯangkulanya mai wiṟu ungu ngalkuntjaku|5222|
+
+|5223| |5224|
+Mungaṯu nyitayira tjuṯa tjanala anu maḻu wakantjikitja|5225|
+
+|5226| |5227|
+Wati puṉutjara wirtjapakaṉingi tjitji nyara pungkuntjikitja|5228|
+
+|5229| |5230|
+Tjitji tjuṯa ngurakutu maḻaku pitjangu nganaṉanya mai ungkuntjikitja|5231|
+
+|5232| |5233|
+Tjitji tjuṯangku puṉu puḻka mantjiṉi inkantjikitjangku|5234|
+
+|5235| |5236|
+Ngula wati tjuṯa apu katu tatilku nyakuntjikitja|5237|
+
+|5238| |5239|
+Tjitji piṟuku pitjanyi ngayulu mai ungkuntjaku|5240|
+
+|5241| |5242|
+Watjaṉuṉa papatjara ankuntjaku|5243|	
+
+|5244||5245|
+|5246|
+uwankara|5247|   |5248|	
+kungka|5249|   |5250|	
+munga|5251|   |5252|	
+waḻi|5253|   |5254|	
+ngangkaḻi|5255|   |5256|
+ulpuru|5257|   |5258|	
+mulapa|5259|   |5260|	
+titutjara|5261|   |5262|	
+nguwanpa|5263|   |5264|	
+puṯu|5265|   |5266|
+wanaṉu|5267|   |5268|	
+witiṉu|5269|   |5270|	
+wirkanu|5271|   |5272|	
+pukularingu|5273|   |5274|	
+kulini|5275|   |5276|	
+wiyaringu|5277|   |5278|	
+mungaringu|5279|   |5280|	
+langka|5281|   |5282|	
+kuḻu|5283|	|5284|	
+tjutura|5285|   |5286|	
+patiṉu|5287|   |5288|	
+urinyangka|5289|   |5290|	
+uraṟa|5291|	|5292|	
+tjinguṟu|5293|   |5294|
+nyaaringu|5295|   |5296|	
+|5297|	
+Ulpuru Puḻka Pakantja|5298|	
+|5299|	
+Mungaṯula kungka tjuṯa iliku anu tangkiyitjarala tjaṟu anu iliku, munula ma-pitjala nyangu apungka urinyangka, ka tjitji panya, Mutjawanilu, wati-wirtjapakara langka tjina nyangu, munu ma-wanaṉu.|5300| Ka Watjutjanya kuḻu wati-wirtjapakaṉu, ka pula apungka nyangu, langka puḻka, ka witiṉu Watjutjalu, munu pungu.|5301| Kala piṟuku ma-pitjangi munula ankula ankula ilingka ma-wirkanu munula pukularingu mai wiṟu ngaṟanyangka, munula uraṟa uraṟa ngalkuṉingi.|5302| Ka ngangkaḻi ngalya pakaṉingi kala piṟuku tatiṟa maḻaku pitjangi ka mantul awari pika ulpuruṟara ngangkaḻiṟara tjaṉaḻkira alatjiṯu ngalya pakaṉingi kala wala puḻka wirtjapakaṉingi tangkiyitjara panya, munula nguḻu mulapa wirkanu ngurangka.|5303| Awari, panya ulpuru tjuku wiya, tjinguṟu nyura tjuku palku kulini, palu nguwanpalanya iluntanu, munulanya tjutura patiṉu, kalanku kurunpa ulkaṟurira utjuringu palu puṯumpalal ala mirantjikitja ngaṟangu, ka apu, puṉu, waḻi kuḻu tjutura patiṉu kala wiltjangka tjarpara wiyaringu, ka kutjupa tjuṯa waḻingka, ka uwankara mungaringu.|5304| Kalanya tjutura pitjala anu.|5305| Ka piṟuku mungangka mina puḻka punkaṉu munulanya puyiṉu, kala pukularingu, mina wiṟuku, panya titutjarala ngura piḻtingka nyinara minaku tjitularingi.|5306|	
+
+|5307|
+
+
+|5308|
+
+|5309|
+
+
+|5310|
+|5311|
+|5312|	
+
+|5313| Ngananya tjana anu iliku?|5314|	
+Kungka tjuṯa iliku anu.|5315|
+Ngananya tjana anu iliku?|5316|	
+
+|5317| Nyaaya nyangu apungka urinyangka?|5318|
+Langkaya nyangu apungka urinyangka.|5319|
+Nyaaya nyangu apungka urinyangka?|5320|
+
+|5321| Tjitji nganalu palunya witiṉu?|5322|	
+Tjitji Watjutjalu palunya witiṉu, wanaṟa.|5323|
+Tjitji nganalu palunya witiṉu?|5324|	
+
+|5325| Kaya nyaaringu ili wiṟungka wirkankula?|5326|	
+Puḻkaṟaya pukularingu wirkankula.|5327|
+Kaya nyaaringu ili wiṟungka wirkankula?|5328|	
+
+|5329| Ka nyaaringu tjitji tjuṯa maḻaku ankunyangka?|5330|
+Ngangkaḻi ulpuru kuḻu puḻka mulapa pakaṉingi.|5331|
+Ka nyaaringu tjitji tjuṯa maḻaku ankunyangka?|5332|
+
+|5333| Ka ulpurungku nyaaṉu tjananya?|5334|	
+Ulpurungku tjananya tjutura patiṉu alatjiṯu.|5335|
+Ka ulpurungku nyaaṉu tjananya?|5336|	
+
+|5337| Kaya kungka tjuṯa nyaangka tjarpangu?|5338|	
+Wiltjangkaya tjarpangu.|5339|
+Kaya kungka tjuṯa nyaangka tjarpangu?|5340|	
+
+|5341| Ka mungangka nyaaringu?|5342|	
+Mungangka minangku tjananya puyiṉu, kaya pukularingu.|5343|
+Ka mungangka nyaaringu?|5344|	
+
+|5345|
+
+|5346||5347|	
+|5348| 	
+ngarima|5349|	
+ngaṟama|5350|
+nyinama|5351|
+pitjama|5352|	
+patinma|5353|	
+mantjinma|5354|
+kulinma|5355|
+pungama|5356|	
+nyangama|5357|
+anama|5358|
+wirkanama|5359|	
+wangkanguṉi|5360|	
+wangkangulinya|5361|
+wangkangulanya|5362|	
+wangkangunta|5363|	
+wangkangulta|5364|	
+|5365| 	
+ngarima|5366|   |5367|	
+ngaṟama|5368|   |5369|	
+nyinama|5370|   |5371|	
+pitjama|5372|   |5373|	
+patinma|5374|   |5375|	
+mantjinma|5376|   |5377|	
+kulinma|5378|   |5379|	
+pungama|5380|   |5381|	
+nyangama|5382|   |5383|	
+anama|5384|   |5385|	
+wirkanama|5386|   |5387|	
+wangkanguṉi|5388|   |5389|	
+wangkangulinya|5390|   |5391|	
+wangkangulanya|5392|   |5393|	
+wangkangunta|5394|	|5395|	
+wangkangulta|5396|   |5397|	
+|5398| 
+|5399|	
+|5400| Kungka uwankaraya waḻikutu pitja, maiku|5401|	
+Kungka uwankaraya waḻikutu pitjama maiku|5402|	
+|5403| Tjiṟirpi pakanyangka pula pitjala kuḻaṯa panya mantjila|5404|	
+Tjiṟirpi pakanyangka pula pitjala kuḻaṯa panyanpa mantjinma|5405|	
+|5406| Tjitji langka nyara witila urinyangka|5407|	
+Tjitji langka nyara witinma urinyangka|5408|	
+|5409| Uwankaraya ngalya-kulila kalanya wangkaku|5410|
+Uwankaraya ngalya-kulinma kalanya wangkaku|5411|
+|5412| Minyma, waḻingka nyinara ngangkaḻi nyawa ulpuru kuḻu|5413|	
+Minyma, waḻingka nyinara ngangkaḻi nyangama ulpuru kuḻu|5414|	
+|5415| Wati tjitji nyuntumpa mai uwa ngalkuntjaku|5416|	
+Wati tjitji nyuntumpa mai titutjarangku ungama ngalkuntjaku|5417|	
+|5418| Mungartjirinyangka ngurangkalinya inka|5419|	
+Mungartjirinyangka ngurangkalinya inkama|5420|	
+|5421| Ma-nyawaya, tatiṉulta waṟutjara|5422|	
+Ma-nyangamaya, tatiṉulta waṟutjara|5423|	
+|5424|	
+Kungka uwankaraya waḻikutu pitja, maiku|5425|
+|5426|	
+Kungka uwankaraya waḻikutu pitjama maiku|5427|	
+|5428|
+
+Tjiṟirpi pakanyangka pula pitjala kuḻaṯa panyanpa mantjila|5429|	
+|5430|	
+Tjiṟirpi pakanyangka pula pitjala kuḻaṯa panyanpa mantjinma|5431|	
+|5432|
+
+Tjitji langka nyara witila urinyangka|5433|	
+|5434|	
+Tjitji langka nyara witinma urinyangka|5435|	
+|5436|
+
+Uwankaraya ngalya-kulila kalanya wangkaku|5437|
+|5438|	
+Uwankaraya ngalya-kulinma kalanya wangkaku|5439|
+|5440|
+
+Minyma, waḻingka nyinara ngangkaḻi nyawa ulpuru kuḻu|5441|
+|5442|
+Minyma, waḻingka nyinara ngangkaḻi nyangama ulpuru kuḻu|5443|
+|5444|
+
+Wati tjitji nyuntumpa mai uwa ngalkuntjaku|5445|		
+|5446|	
+Wati tjitji nyuntumpa mai titutjarangku ungama ngalkuntjaku|5447|		
+|5448|
+
+Mungartjirinyangka ngurangkalinya inka|5449|	
+|5450|	
+Mungartjirinyangka ngurangkalinya inkama|5451|
+|5452|
+
+Ma-nyawaya, tatiṉulta waṟutjara|5453|	
+|5454|	
+Ma-nyangamaya, tatiṉulta waṟutjara|5455|	
+|5456|	
+|5457|	
+|5458|	
+Wati, papa nyara mungilyi pungama|5459|   minyma|5460|	
+Minyma, papa nyara mungilyi pungama|5461|   tjitji|5462|	
+Tjitji papa nyara mungilyi pungama|5463|   tjitji kungka|5464|	
+Tjitji kungka papa nyara mungilyi pungama|5465|    tjitji nyitayira|5466|	
+Tjitji nyitayira papa nyara mungilyi pungama|5467|   wati puṉutjara|5468|	
+Wati puṉutjara papa nyara mungilyi pungama|5469|   uwankaraya|5470|	
+uwankaraya papa nyara mungilyi pungama|5471|
+|5472|
+Ili wiṟu tjuṯala uranma|5473|   mai|5474|	
+Mai wiṟu tjuṯala uranma|5475|   waṟu|5476|	
+Waṟu wiṟu tjuṯala uranma|5477|   piti|5478|	
+Piti wiṟu tjuṯala uranma|5479|   kuḻaṯa|5480|	
+Kuḻaṯa wiṟu tjuṯala uranma|5481|   puṉu|5482|	
+Puṉu wiṟu tjuṯala uranma|5483|
+|5484|
+Tjitji tjukutjuku tjuṯa, maikuya pukularima|5485|   uṟukuya|5486|	
+Tjitji tjukutjuku tjuṯa uṟukuya pukularima|5487|   ilikuya|5488|	
+Tjitji tjukutjuku tjuṯa ilikuya pukularima|5489|   minakuya|5490|
+Tjitji tjukutjuku tjuṯa minakuya pukularima|5491|   ulpurukuya|5492|	
+Tjitji tjukutjuku tjuṯa ulpurukuya pukularima|5493|   ngangkaḻikuya|5494|	
+Tjitji tjukutjuku tjuṯa ngangkaḻikuya pukularima|5495|   waḻikuya|5496|	
+Tjitji tjukutjuku tjuṯa waḻikuya pukularima|5497|   warikuya|5498|	
+Tjitji tjukutjuku tjuṯa warikuya pukularima|5499|   maḻukuya|5500|	
+Tjitji tjukutjuku tjuṯa maḻukuya pukularima|5501|
+|5502|
+Wanyuṉi anama maḻuku|5503|   wanyulinya|5504|	
+Wanyulinya anama maḻuku|5505|   wanyulta|5506|	
+Wanyulta anama maḻuku|5507|   wanyulanya|5508|	
+Wanyulanya anama maḻuku|5509|	
+|5510|
+Wati tjuṯa nguwanpa pitjanyangka wiltjangkaya nyinama|5511|   tjarpanyangka|5512|	
+Wati tjuṯa nguwanpa tjarpanyangka wiltjangkaya nyinama|5513|   ankunyangka|5514|	
+Wati tjuṯa nguwanpa ankunyangka wiltjangkaya nyinama|5515|   wangkanyangka|5516|	
+Wati tjuṯa nguwanpa wangkanyangka wiltjangkaya nyinama|5517|   inkanyangka|5518|	
+Wati tjuṯa nguwanpa inkanyangka wiltjangkaya nyinama|5519|    wirkankuyangka|5520|	
+Wati tjuṯa nguwanpa wirkankuyangka wiltjangkaya nyinama|5521|   tatinyangka|5522|	
+Wati tjuṯa nguwanpa tatinyangka wiltjangkaya nyinama|5523|   pakanyangka|5524|	
+Wati tjuṯa nguwanpa pakanyangka wiltjangkaya nyinama|5525|	
+|5526|
+|5527|	
+Tjitji tjuṯa titutjara ngurakutu maḻaku pitjama mungangka|5528|
+
+|5529|	
+Minyma langkalinya mantjila|5530|
+
+|5531|	
+Tjitji tjuṯa ili ngalkunma, uraṟa|5532|
+
+|5533|
+Minangku puyinyangka ngurakuya uwankara wirtjapakanma ka ngayulu nyangangka nyinaku palula|5534|
+
+|5535|	
+Ulpuru pakanyangkaya nguḻuwiya nyinama|5536|
+
+|5537|	
+Maḻu wakanma iluntjaku|5538|
+
+|5539|	
+Awari, wala puḻka mulapala wirtjapakanma, waringkulanya puyiṉi|5540|
+
+|5541|	
+Ngayulu nguḻu, wanyula wiltjangka piṟuku tjarpa|5542|
+
+|5543|	
+Apungkaya tatiṟa ngangkaḻi puḻka nyangama|5544|	
+
+|5545||5546|
+|5547|
+iili|5548|   |5549|	
+tjamu|5550|   |5551|	
+tjilpi|5552|   |5553|	
+ngaltutjara|5554|   |5555|	
+kunkunpa|5556|   |5557|	
+kutju|5558|	|5559|	
+maṉkurpa|5560|   |5561|
+rawa|5562|   |5563|	
+itingka|5564|   |5565|	
+watarku|5566|   |5567|		
+wiltjaṉu|5568|   |5569|	
+wiltjantjikitjangku|5570|   |5571|
+wiltjaṉingi|5572|   |5573|	
+wiltjara|5574|   |5575|	
+tjunangi|5576|   |5577|	
+tjunu|5578|   |5579|	
+kunkunaringu|5580|   |5581|	
+pilukatingu|5582|   |5583|	
+waṉingu|5584|   |5585|	
+pupangi|5586|   |5587|	
+nyaaku|5588|   |5589|	
+|5590|	
+Tjamuku Wiltjantja|5591|	
+Ngura kutjupangkaya kunyu tjitji kungka maṉkurpa nyinangi ka tjiṟirpi kutjupa ngangkaḻi puḻka ngaṟangi ilkaringka minatjara munu puyiningilta iilingku.|5592| Kaya kunyu tjitji panya kungka maṉkurtu wiltjantjikitjangku kulinu iilingka tawara, munuya tjiṟirpi nyara palula wiltjaṉingi iili unngu-unngu wiltja tjanampa warara.|5593| Munuya nyangu wati tjilpi tjanampa tjamu nyinanyangka munuya wiltjaṉu palumpa, wiltja puḻka munuya untjuntju tjunangi wiltjangka katu ka wiltja wiṟu ngaṟangi wati panya tjilpiku.|5594| Kaya wiltjara wiyaringkula mungaringkunyangka ankula kunkunaringu.|5595|
+Palu mungangka iilingku rawangku puyiningi kaya tjitji panya kungka maṉkurpa kunkunaringu tjamuku ngurangka itingka munuya watarku ngaringi.|5596| Ka ngula, munga kultungka wati panya tjilpiku wiltja pilukatingu ka tjilpi panya ngaltutjarangku kunkunpa puḻkatjanungku	urulyarara pakaṟa puṯu pakaṉu palu wiltja pilukatingu alatjiṯu ka tjamungku watjaṉu "Puḻiri pitjalaya katula, wiltja nyanga pilukatingu."|5597| Kaya kunyu puḻiri maṉkurpa pakaṟa wirtjapakaṉu munuya kunyu manyirka	ankula kutju puḻkaṟa urinyangka nyangu munuya puṉu mantjira waṉi-waṉingu ka wankaṯu pupangi.|5598| Kaya mantjira wiltja tjanamangka tjunu ka ngaringi tjamu panya tjanampa.|5599|	
+|5600|
+
+
+|5601|
+
+|5602|	
+|5603| Kungka maṉkurtu nyaantjikitjangku kulinu, iilingku puyinyangka?|5604|	
+Wiltjantjikitjangkuya kulinu, iilingka tawara.|5605|
+
+|5606| Munuya wiltjara ngananya nyangu, nyinanyangka?|5607|	
+Tjanampa tjamu nyangu, kungka maṉkurtu.|5608|
+
+|5609| Munuya nyakula nyaaṉu palumpa?|5610|	
+Wiltjaṉuya piṟuku, palumpa.|5611|
+
+|5612| Wiltja wiṟu wanyu?|5613|
+Uwa, wiltja wiṟu, puḻka mulapa, untjuntju tjuṯatjara.|5614|
+
+|5615| Kaya wiltjara wiyaringkula nyaaringu?|5616|
+Ankulaya kunkunaringu tjanamangka.|5617|
+
+|5618| Ka mungangka, tjamungku nyaaku watjaṉu pitjantjaku?|5619|	
+Palumpa wiltja pilukatinyangka.|5620|
+
+|5621| Munu paluṟu, tjamu panya, yaaltji ngaringi?|5622|	
+Paluṟu unngu ngaringi ka wiltja pilukatingu alatjiṯu.|5623|
+
+|5624| Awari kungka maṉkurtu nyaaṉu?|5625|	
+Pakaṟaya, wirtjapakara waṉi-waṉingu untjuntju munuya tjilpi mantjiṉu.|5626|
+
+|5627| Munuya yaaltjingka palunya tjunu kunkunarintjaku?|5628|	
+Wiltja tjanamangkaya tjunu, paluṟu ngaltutjara kunkunarintjaku.|5629|
+
+|5630| Nyuntu wanyu mukuringu story nyangaku?|5631|	
+Uwa ngayulu mukuringu. Story wiṟu nyangatja.|5632|
+
+|5633|
+
+|5634||5635|
+|5636| 
+|5637|	
+pitjawiya|5638|	
+wangkawiya|5639|
+wakalwiya|5640|
+wirtjapakalwiya|5641|	
+ungkuwiya|5642|
+nyakuwiya|5643|
+ankuwiya|5644|
+wirkankuwiya|5645|
+pitjawiyangku|5646|	
+wangkawiyangku|5647|	
+wakalwiyangku|5648|
+wirtjapakalwiyangku|5649|
+ungkuwiyangku|5650|	
+nyakuwiyangku|5651|	
+ankuwiyangku|5652|	
+wirkankuwiyangku|5653|	
+wanti|5654|
+wantima|5655|
+wantinyi|5656|	
+wantipai|5657|	
+wantingu|5658|	
+wantingi|5659|	
+wantiku|5660|
+nyinantja|5661|	
+nyinantjitja|5662|	
+punkantja|5663|	
+punkantjitja|5664|
+pungkuntja|5665|	
+pungkuntjitja|5666|	
+tjunkuntja|5667|	
+tjunkuntjitja|5668|	
+|5669|	
+|5670|	
+pitjawiya|5671|   |5672|	
+wangkawiya|5673|   |5674|	
+wakalwiyangku|5675|   |5676|
+wirtjapakalwiya|5677|   |5678|	
+ungkuwiya|5679|   |5680|
+nyakuwiya|5681|   |5682|
+ankuwiya|5683|   |5684|
+wirkankuwiya|5685|   |5686|
+pitjawiyangku|5687|   |5688|	
+wangkawiyangku|5689|   |5690|
+wakalwiyangku|5691|   |5692|
+wirtjapakalwiyangku|5693|   |5694|
+ungkuwiyangku|5695|   |5696|	
+nyakuwiyangku|5697|   |5698|	
+ankuwiyangku|5699|   |5700|	
+wirkankuwiyangku|5701|   |5702|	
+wanti|5703|   |5704|
+wantima|5705|   |5706|
+wantinyi|5707|   |5708|	
+wantipai|5709|   |5710|	
+wantingu|5711|   |5712|	
+wantingi|5713|   |5714|	
+wantiku|5715|   |5716|
+nyinantja|5717|   |5718|	
+nyinantjitja|5719|   |5720|	
+punkantja|5721|   |5722|	
+punkantjitja|5723|   |5724|
+pungkuntja|5725|   |5726|	
+pungkuntjitja|5727|   |5728|	
+tjunkuntja|5729|   |5730|	
+tjunkuntjitja|5731|   |5732|	
+|5733| 
+|5734|	
+Tjilpi tjuṯa watarku nyinanyi|5735|	
+Tjilpi tjuṯa pitjawiya watarku nyinanyi|5736|
+
+Ngayuku tjamungku maḻu wakaṉu|5737|	
+Ngayuku tjamungku maḻu wakalwiyangku wantingu|5738|
+
+Kungka tjuṯa ngalya-kulinmaya|5739|	
+Kungka tjuṯa, paranyakuwiyangkuya ngalya-kulinma|5740|
+
+Tjitji nyarangku mai wiṟu waṉipai|5741|	
+Tjitji nyarangku mai wiṟu waṉipai ngalkuwiyangku|5742|
+
+Tjitji punkantja pitjanyi|5743|	
+Tjitji punkantja wirtjapakalwiya pitjanyi|5744|
+
+Wati pungkuntjalu kuḻaṯa mantjiṉi wakantjikitjangu|5745|	
+Wati pungkuntjalu kuḻaṯa waṉinyi wakalwiyangku|5746|
+
+Wanyu, mai pitingka tjunkuntja mantjila|5747|	
+Wanyu, mai pitingka tjunkuntjitja mantjilwiyangku wantima|5748|	
+
+Tjilpi panya wakantja ngarinyi|5749|	
+Tjilpi panya wakantja ngalkuwiya ngarinyi|5750|
+
+Minyma pungkuntjitjangku palunya ungkuku|5751|	
+Minyma pungkuntjitjangku palunya ungkuwiyangku wantiku|5752|	
+|5753| 
+Tjilpi tjuṯa watarku nyinanyi|5754|
+|5755|
+Tjilpi tjuṯa pitjawiya watarku nyinanyi|5756|
+|5757|
+
+Ngayuku tjamungku maḻu wakaṉu|5758|	
+|5759|
+Ngayuku tjamungku maḻu wakalwiyangku wantingu|5760|
+|5761|
+
+Kungka tjuṯa ngalya-kulinmaya|5762|	
+|5763|
+Kungka tjuṯa, paranyakuwiyangkuya ngalya-kulinma|5764|
+|5765|
+
+Tjitji nyarangku mai wiṟu waṉipai|5766|	
+|5767|
+Tjitji nyarangku mai wiṟu waṉipai ngalkuwiyangku|5768|
+|5769|	
+
+Tjitji punkantja pitjanyi|5770|	
+|5771|
+Tjitji punkantja wirtjapakalwiya pitjanyi|5772|
+|5773|	
+
+Wati pungkuntjalu kuḻaṯa waṉinyi wakalwiyangku|5774|
+|5775|
+Wati pungkuntjalu kuḻaṯa waṉinyi wakalwiyangku|5776|
+|5777|	
+
+Wanyu, mai pitingka tjunkuntjitja mantjila|5778|	
+|5779|
+Wanyu, mai pitingka tjunkuntjitja mantjilwiyangku wantima|5780|	
+|5781|	
+
+Tjilpi panya wakantja ngarinyi|5782|	
+|5783|
+Tjilpi panya wakantja ngalkuwiya ngarinyi|5784|
+|5785|
+
+Minyma pungkuntjitjangku palunya ungkuku|5786|	
+|5787|
+Minyma pungkuntjitjangku palunya ungkuwiyangku wantiku|5788|	
+|5789|	
+
+|5790| 
+|5791|	
+Minyma pungkuntjala wiltjalwiyangku wantinyi|5792|   wati|5793|	
+Wati pungkuntjala wiltjalwiyangku wantinyi|5794|   tjitji|5795|	
+Tjitji pungkuntjala wiltjalwiyangku wantinyi|5796|   nyitayira|5797|	
+Nyitayira pungkuntjala wiltjalwiyangku wantinyi|5798|   tjilpi|5799|	
+Tjilpi pungkuntjala wiltjalwiyangku wantinyi|5800|   kungka|5801|	
+Kungka pungkuntjala wiltjalwiyangku wantinyi|5802|   tatintjalu|5803|	
+Kungka tatintjalu wiltjalwiyangku wantinyi|5804|   wati|5805|	
+Wati tatintjalu wiltjalwiyangku wantinyi|5806|   minyma|5807|	
+Minyma tatintjalu wiltjalwiyangku wantinyi|5808|   nyitayira|5809|	
+Nyitayira tatintjalu wiltjalwiyangku wantinyi|5810|   tjilpi|5811|	
+Tjilpi tatintjalu wiltjalwiyangku wantinyi|5812|   tjitji|5813|	
+Tjitji tatintjalu wiltjalwiyangku wantinyi|5814|
+
+|5815|
+Wati punkantjitja wangkawiya ngaringi|5816|  tjitji|5817|	
+Tjitji punkantjitja wangkawiya ngaringi|5818|  tjilpi|5819|	
+Tjilpi punkantjitja wangkawiya ngaringi|5820|  minyma|5821|
+Minyma punkantjitja wangkawiya ngaringi|5822|   kungka|5823|	
+Kungka punkantjitja wangkawiya ngaringi|5824|   nyitayira|5825|	
+Nyitayira punkantjitja wangkawiya ngaringi|5826|   wakantjitja|5827|	
+Nyitayira wakantjitja wangkawiya ngaringi|5828|   wati|5829|	
+Wati wakantjitja wangkawiya ngaringi|5830|   nyitayira|5831|	
+Nyitayira wakantjitja wangkawiya ngaringi|5832|   kungka|5833|	
+Kungka wakantjitja wangkawiya ngaringi|5834|   minyma|5835|
+Minyma wakantjitja wangkawiya ngaringi|5836|   tjilpi|5837|	
+Tjilpi wakantjitja wangkawiya ngaringi|5838|
+
+|5839|
+
+Tjitji uṟu nyarangka tjarpawiyangku wantima|5840|   wiltja|5841|	
+Tjitji wiltja nyarangka tjarpawiyangku wantima|5842|   ngura|5843|	
+Tjitji ngura nyarangka tjarpawiyangku wantima|5844|   waḻi|5845|	
+Tjitji waḻi nyarangka tjarpawiyangku wantima|5846|   uwankarangka|5847|	
+Tjitji waḻi uwankarangka tjarpawiyangku wantima|5848|   ngura|5849|	
+Tjitji ngura uwankarangka tjarpawiyangku wantima|5850|   uṟu|5851|	
+Tjitji uṟu uwankarangka tjarpawiyangku wantima|5852|   wiltja|5853|
+Tjitji wiltja uwankarangka tjarpawiyangku wantima|5854|   pilukatintjala|5855|
+Tjitji wiltja pilukatintjala tjarpawiyangku wantima|5856|   maṉkurta|5857|	
+Tjitji wiltja maṉkurta tjarpawiyangku wantima|5858|   kutjungku|5859|	
+Tjitji wiltja kutjungku tjarpawiyangku wantima|5860|   papatjarangka|5861|  
+Tjitji wiltja papatjarangka tjarpawiyangku wantima|5862|   wiltja tjuṯangka|5863|	
+Tjitji wiltja tjuṯangka tjarpawiyangku wantima|5864|   tjanamangka|5865|	
+Tjitji wiltja tjanamangka tjarpawiyangku wantima|5866|   tjukutjukungka|5867|	
+Tjitji wiltja tjukutjukungka tjarpawiyangku wantima|5868|   mulata|5869|	
+Tjitji wiltja mulata tjarpawiyangku wantima|5870|
+
+|5871|
+
+Tjitji nyaaku nyuntu kuliwiyangku wantinyi?|5872|    ngalkulwiyangku|5873|	
+Tjitji nyaaku nyuntu ngalkulwiyangku wantinyi?|5874|    nyakuwiyangku|5875|	
+Tjitji nyaaku nyuntu nyakuwiyangku wantinyi?|5876|    wangkawiyangku|5877|	
+Tjitji nyaaku nyuntu wangkawiyangku wantinyi?|5878|   pitjawiyangku|5879| 
+Tjitji nyaaku nyuntu pitjawiyangku wantinyi?|5880|   tatiliyangku|5881|
+Tjitji nyaaku nyuntu tatiliyangku wantinyi?|5882|   ungkuwiyangku|5883|
+Tjitji nyaaku nyuntu ungkuwiyangku wantinyi?|5884|   ankuwiyangku|5885|
+Tjitji nyaaku nyuntu ankuwiyangku wantinyi?|5886|   tjarpawiyangku|5887|
+Tjitji nyaaku nyuntu tjarpawiyangku wantinyi?|5888|   inkawiyangku|5889|
+Tjitji nyaaku nyuntu inkawiyangku wantinyi?|5890|   mukuringkuwiyangku|5891|
+Tjitji nyaaku nyuntu mukuringkuwiyangku wantinyi?|5892|
+|5893| 	
+|5894| |5895|	
+Tjamu, maḻuku ankuwiya nyinama|5896|
+
+|5897| |5898|	
+Paluṟu mai mukuringkuwiyangku wantingu|5899|	
+
+|5900| |5901|	
+Maḻu wakantja iluwiya ma-wirtjapakaṉu|5902|
+
+|5903| |5904|	
+Minyma pungkuntjalu ngalkuwiyangku wantinyi|5905|	
+
+|5906| |5907|	
+Wati papa tjuṯatjarangku palumpa tjitji mai ungkuwiyangku wantipai|5908|
+
+|5909| |5910|	
+Wati mungaṯu wirkankuntjitja tjuṯa inkanwiya nyinanyi|5911|
+
+|5912| |5913|	
+Nyitayira tjuṯa, apu uṟungka waniwiyangkuya wantima|5914|
+
+|5915| |5916|	
+Nyaaku nyura nganaṉala apungka tatintjikitjangku pitjawiyangku wantingu?|5917|
+
+|5918| |5919|	
+Kungka maṉkurtu mai tjawaliyangku wantingu|5920|
+
+|5921| |5922|	
+Nganaṉa ili mantjiliyangku wantinyi, minangku puyinyangka|5923|
+
+|5924|
+
+|5925||5926|
+|5927|
+kami|5928|   |5929|	
+nyiiṉka|5930|   |5931|	
+pakaḻi|5932|   |5933|	
+uṉa|5934|   |5935|	
+pampa|5936|   |5937|	
+kura|5938|   |5939|	
+mungawinki|5940|   |5941|	
+kuwari|5942|   |5943|	
+wiyangka|5944|   |5945|	
+katingu|5946|   |5947|	
+uṉaringu|5948|   |5949|	
+pauntjaku|5950|   |5951|	
+kanyiningi|5952|   |5953|
+wiyaringangi|5954|   |5955|	
+tjapiningi|5956|   |5957|	
+|5958|
+Kamiṟara Pula Iilingka Nyinantja|5959|	
+|5960|	
+Minyma pampa kunyu nyinangi kami, ka tjitji nyiiṉka patu nyinangi, palumpa pakaḻi.|5961| Palu pakaḻi kunyu maḻuku anu munu ankula iili puḻkangka, mina puḻkangku puyinyangka maḻu pungu munu ngurakutu katingu munu kamingka watjaṉu, "Kami waṟutju waṉi maḻu pauntjaku."|5962| Ka kunyu kamingku waṟu waṉingu uṟungka ka waṟu ilura wiyaringu.|5963| Ka pakaḻi panya paluṟu iili puḻkangka waṟu wiya mungangka maḻu tjunkula ngaringi, palu kami waṟu puḻka tjunkula wiltja puḻkangka ngaringi.|5964| Ka kunyu pakaḻi mungawinki ngarira tjiṟirpirira piṟuku maḻu kutjupaku anu munu kunyu maḻu watarkurira tulykungka pungu munu pungkula maḻakungku katingu ngurakutu.|5965| Palu piṟuku kunyu watjaṉu, "Kami, waṟutju waṉi maḻu pauntjaku, maḻu kuwari nyanga kutjupa, panya nganmanytju pungkuntja uṉaringu palu kuwariṉa piṟuku pungu, ka palumpa waṟu waṉi."|5966| Ka waṟu waṉingu palu piṟuku ilungu uṟungka.|5967|
+Uwankara kunyu paṉa tulykuringu munu mina puḻkaringu paṉangka ka paluṟu wiltja kurakurangka nyinangi, nyiiṉka panya, ka kami wiltja wiṟungka nyinangi waṟutjara.|5968| Palu rawangku kunyu maḻu pungangi munu kuwari wiltja panya palumpangka maḻu uṉaringu pauntja wiyangka, ngalkuntja wiyangka, ka nyiiṉka panya paluṟu puḻkaṟa paṉṯiningi uṉa munu kutjupa tjuṯa katira waṉingi panya nganmanyitja tjuṯa munu kuwaritja tjuṯa kanyiningi panya pulangkita wiyangku palunya untjunmankuntjaku, waṟu wiyangka.|5969| Palu kamingku kunyu palunya ungkuwiyangku wantingu, puṯu kunyu helpamilaningi waṟu ungkula.|5970| Waṟu kunyu waṉingi ka kunyu minangku wiyaṉingi, iili puḻkangku.|5971| Munu kunyu piṟuku mungawinki kutjupa anu munu maḻu rawangku pungangi munu katira ngurangka tjunangi palu pauṟa ngalkuwiya kunyu waṟu wiya munu kamingka rawangku tjapiningi, "Kami waṟu waṉi maḻu pauntjaku."|5972| Ka kunyu waṟu tjukutjuku rawangku ungangi kamingku panya, pakaḻi, ka wiyaringangi.|5973|	
+|5974|
+
+
+|5975|
+
+|5976|
+
+
+|5977|
+|5978|	
+|5979| Ngananya pula nyinangi?|5980|	
+Minyma pampa kunyu, palumpa pakaḻi kuḻu nyinangi.|5981|
+Ngananya pula nyinangi?|5982|	
+
+|5983| Ka nyiiṉkangku nyaaningi rawangku?|5984|	
+Paluṟu maḻuku anangi.|5985|
+Ka nyiiṉkangku nyaaningi rawangku?|5986|	
+
+|5987| Ka waṟu tjaatjara nyaaku ilungi kamingku waṉinyangka?|5988|	
+Uṟungka punkara waṟu ilungi.|5989|
+Ka waṟu tjaatjara nyaaku ilungi kamingku waṉinyangka?|5990|	
+
+|5991| Ka ngananya wari mulapa ngaringi mungangka?|5992|	
+Nyiiṉka panya wari mulapa ngaringi mungangka, waṟu wiya, pulangkitawiya.|5993|
+Ka ngananya wari mulapa ngaringi mungangka?|5994|	
+
+|5995| Ka nyiiṉkangku maḻu tjuṯa katira tjunkunyangka nyaaringangi?|5996|	
+Maḻu tjuṯa uṉaringangi palumpa ngurangka.|5997|
+Ka nyiiṉkangku maḻu tjuṯa katira tjunkunyangka nyaaringangi?|5998|	
+
+|5999| Ka kamingku palunya nyaaku puṯu helpamilaṉu?|6000|	
+Waṟu tjaatjara uṟungka rawa punkanyangka kamingku puṯu helpamilaṉu.|6001|
+Ka kamingku palunya nyaaku puṯu helpamilaṉu?|6002|	
+
+|6003| Palumpa pakaḻi nyaaku waṟuku mukuringu?|6004|	
+Pakaḻi maḻu pauntjikitja waṟuku mukuringu.|6005|
+Palumpa pakaḻi nyaaku waṟuku mukuringu?|6006|	
+
+|6007| Nyaaku nyiiṉkangku wiltja kamikungka waṟu mantjintikitjangku tjarpawiyangku wantingu?|6008|	
+Nyiiṉkangku panya minyma wantipai.|6009|
+Nyaaku nyiiṉkangku wiltja kamikungka waṟu mantjintikitjangku tjarpawiyangku wantingu?|6010|	
+
+|6011|	
+
+|6012|
+
+|6013||6014|
+|6015| 	
+waṉintjakutawara|6016|	
+katintjakutawara|6017|	
+punkantjakutawara|6018|
+mantjintjakutawara|6019|
+pungkuntjakutawara|6020|	
+nyakuntjakutawara|6021|	
+ankuntjakutawara|6022|	
+tjunkuntjakutawara|6023|
+
+ngayuluṉatju|6024|	
+nyuntunku|6025|	
+paluṟunku|6026|	
+ngalinku|6027|	
+nyupalinku|6028|	
+pulanku|6029|
+nganaṉalanku|6030|
+nyuranku|6031|	
+tjananku|6032|	
+|6033| 
+|6034|	
+waṉintjakutawara|6035|   |6036|	
+katintjakutawara|6037|   |6038|	
+punkantjakutawara|6039|   |6040|	
+mantjintjakutawara|6041|   |6042|	
+pungkuntjakutawara|6043|   |6044|	
+nyakuntjakutawara|6045|   |6046|	
+ankuntjakutawara|6047|   |6048|
+tjunkuntjakutawara|6049|   |6050|	
+ngayuluṉatju|6051|   |6052|	
+nyuntunku|6053|   |6054|	
+paluṟunku|6055|   |6056|	
+ngalinku|6057|   |6058|	
+nyupalinku|6059|   |6060|	
+pulanku|6061|   |6062|	
+nganaṉalanku|6063|   |6064|	
+nyuranku|6065|	|6066|	
+tjanayanku|6067|	|6068|	
+|6069|
+|6070|	
+|6071| Piti ilitjara mantjila|6072|	
+Piti ilitjara mantjila waṉintjakutawara|6073|	
+
+|6074| Maḻu puṉu katu tjura|6075|	
+Maḻu puṉu katu tjura papangku ngalkuntjakutawara|6076|
+
+|6077| Mai palatja waringka tjura|6078|	
+Mai palatja waringka tjura uṉaringkuntjakutawara|6079|
+
+|6080| Wiltja unngula nyinanyi|6081|	
+Wiltja unngula nyinanyi puyintjakutawara|6082|
+
+|6083| Paluṟunku ankuku|6084|
+
+|6085| Ngalinku ili uraṉi|6086|
+
+|6087| Ngayuluṉatju waṟu mantjiṉu|6088|
+
+|6089| Nganaṉalanku wiltjaṉi|6090|
+
+|6091| Nyuntunkun papa puwa|6092|
+
+|6093| Tjanayanku nyinara inkanyi|6094|
+
+|6095| Nyuranku ngalya-katingu kaya kurangku mantjiṉu|6096|
+
+|6097| Nyupalinku maiku piti kati|6098|
+
+|6099| Punganyi pulanku|6100|	
+
+|6101| Punguṉatju|6102|
+
+|6103| Nyangamankun|6104|
+
+|6105| Maḻulanku wakaṉu|6106|	
+|6107|	
+|6108| Piti ilitjara mantjila|6109|
+|6110|	
+Piti ilitjara mantjila waṉintjakutawara|6111|		
+|6112|	
+
+|6113| Maḻu puṉu katu tjura|6114|
+|6115|	
+Maḻu puṉu katu tjura papangku ngalkuntjakutawara|6116|	
+|6117|	
+
+|6118| Mai palatja waringka tjura|6119|
+|6120|	
+Mai palatja waringka tjura uṉaringkuntjakutawara|6121|
+|6122|	
+
+|6123| Wiltja unngula nyinanyi|6124|
+|6125|	
+Wiltja unngula nyinanyi puyintjakutawara|6126|	
+|6127|	
+
+|6128| Paluṟunku ankuku|6129|
+|6130|	
+
+|6131| Ngalinku ili uraṉi|6132|
+|6133|	
+
+|6134| Ngayuluṉatju waṟu mantjiṉu|6135|
+|6136|	
+
+|6137| Nganaṉalanku wiltjaṉi|6138|
+|6139|	
+
+|6140| Nyuntunkun papa puwa|6141|
+|6142|	
+
+|6143| Tjanayanku nyinara inkanyi|6144|
+|6145|	
+
+|6146| Nyuranku ngalya-katingu kaya kurangku mantjiṉu|6147|
+|6148|	
+
+|6149| Nyupalinku maiku piti kati|6150|
+|6151|	
+
+|6152| Punganyi pulanku|6153|
+|6154|	
+
+|6155| Punguṉatju|6156|
+|6157|	
+
+|6158| Nyangamankun|6159|
+|6160|	
+
+|6161| Maḻulanku wakaṉu|6162|
+|6163|	
+
+|6164|
+|6165|	
+|6166|	
+Ngalya-kati tjitji wiṟu, papangku mantjintjakutawara|6167|   uwa|6168|	
+Ngalya-uwa tjitji wiṟu, papangku mantjintjakutawara|6169|   tjura|6170|	
+Ngalya-tjura tjitji wiṟu, papangku mantjintjakutawara|6171|   waṉi|6172|	
+Ngalya-waṉi tjitji wiṟu, papangku mantjintjakutawara|6173|   witila|6174|	
+Ngalya-witila tjitji wiṟu, papangku mantjintjakutawara|6175|
+|6176|
+Waḻingkala nyinangi ulpurungkulanya tjutuntjakutawara|6177|   tjarpangi|6178|
+Waḻingkala tjarpangi ulpurungkulanya tjutuntjakutawara|6179|   ngaringi|6180|
+Waḻingkala ngaringi ulpurungkulanya tjutuntjakutawara|6181|   wirkanangi|6182|
+Waḻingkala wirkanangi ulpurungkulanya tjutuntjakutawara|6183|   ngalkuṉingi|6184|
+Waḻingkala ngalkuṉingi ulpurungkulanya tjutuntjakutawara|6185|   inkangi|6186|
+Waḻingkala inkangi ulpurungkulanya tjutuntjakutawara|6187|
+|6188|
+Kuwarilanku maḻu pauṉi uṉaringkuntjakutawara|6189|   kuwariṉatju|6190|
+Kuwariṉatju maḻu pauṉi uṉaringkuntjakutawara|6191|   kuwariyanku|6192|
+Kuwariyanku maḻu pauṉi uṉaringkuntjakutawara|6193|   kuwarinkun|6194|
+Kuwarinkun maḻu pauṉi uṉaringkuntjakutawara|6195|   kuwarilinku|6196|
+Kuwarilinku maḻu pauṉi uṉaringkuntjakutawara|6197|   kuwarinku|6198|
+Kuwarinku maḻu pauṉi uṉaringkuntjakutawara|6199|
+
+|6200|
+	
+Inkawiyangkula wantima tjana kulintjakutawara|6201|   nyakuntjakutawara|6202|	
+Inkawiyangkula wantima tjana nyakuntjakutawara|6203|   pitjantjakutawara|6204|
+Inkawiyangkula wantima tjana pitjantjakutawara|6205|   tjarpantjakutawara|6206|
+Inkawiyangkula wantima tjana tjarpantjakutawara|6207|   ankuntjakutawara|6208|
+Inkawiyangkula wantima tjana ankuntjakutawara|6209|   wirkankuntjakutawara|6210|
+Inkawiyangkula wantima tjana wirkankuntjakutawara|6211|   pungkuntjakutawara|6212|
+Inkawiyangkula wantima tjana pungkuntjakutawara|6213|
+|6214|
+Kanyiṉiṉatju pakaḻi punkantjakutawara|6215|   pungkuntjakutawara|6216|	
+Kanyiṉiṉatju pakaḻi pungkuntjakutawara|6217|   ma-pitjantjakutawara|6218|
+Kanyiṉiṉatju pakaḻi ma-pitjantjakutawara|6219|   ma-wirtjapakantjakutawara|6220|
+Kanyiṉiṉatju pakaḻi ma-wirtjapakantjakutawara|6221|   wakantjakutawara|6222|
+Kanyiṉiṉatju pakaḻi wakantjakutawara|6223|   mantjintjakutawara|6224|	
+Kanyiṉiṉatju pakaḻi mantjintjakutawara|6225|   urintjakutawara|6226|
+Kanyiṉiṉatju pakaḻi urintjakutawara|6227|   tjutuntjakutawara|6228|	
+Kanyiṉiṉatju pakaḻi tjutuntjakutawara|6229|   witintjakutawara|6230|
+Kanyiṉiṉatju pakaḻi witintjakutawara|6231|   puyintjakutawara|6232|	
+Kanyiṉiṉatju pakaḻi puyintjakutawara|6233|	
+|6234|
+Nyiiṉkangku kuka katingu waḻikutu uṉaringkuntjakutawara|6235|   wiyaringkuntjakutawara|6236|
+Nyiiṉkangku kuka katingu waḻikutu wiyaringkuntjakutawara|6237|   kanyintjakutawara|6238|
+Nyiiṉkangku kuka katingu waḻikutu kanyintjakutawara|6239|   pauntjakutawara|6240|
+Nyiiṉkangku kuka katingu waḻikutu pauntjakutawara|6241|   mungaringkuntjakutawara|6242|
+Nyiiṉkangku kuka katingu waḻikutu mungaringkuntjakutawara|6243|   tjunkuntjakutawara|6244|
+Nyiiṉkangku kuka katingu waḻikutu tjunkuntjakutawara|6245|
+|6246|
+|6247| |6248|	
+Kamingku mai ngalkuṉu pakaḻingku waṟungka tjunkuntjakutawara|6249|
+
+|6250| |6251|	
+Wala puḻka pula wirtjapakaṉu ngangkaḻi puḻka pakantjakutawara|6252|
+
+|6253| |6254|	
+Palatja ngaltutjara wiltjangka nyinanyi ulpurungku tjutuntjakutawara|6255|
+
+|6256| |6257|	
+Pampangku papa puḻkaṟa witiṉi wati tjuṯa wanantjukutawara|6258|
+
+|6259| |6260|	
+Tjinguṟu paluṟungku waḻi uwankara patiṉu wati kuwari wirkankuntja tjarpantjakutawara|6261|
+
+|6262| |6263|	
+Minyma tjuṯangku titutjarangku kutju mantjilpai wiyaringkuntjakutawara|6264|	
+	
+|6265| |6266|
+Watingku papa pauntja paṉangka tjutuṉu, apungka kuḻu, uṉaringkuntjakutawara|6267|
+
+|6268| |6269|
+Tjitjingku mai punkantja uraṟa tjunu pitingka, papangku ngalkuntjakutawara|6270|
+
+|6271|
+
+|6272||6273|
+|6274|
+tjulpu|6275|   |6276|
+kuṟu|6277|   |6278|
+mamu|6279|   |6280|	
+parari|6281|   |6282|	
+ila|6283|   |6284|	
+wantikatingu|6285|   |6286|	
+kumpiṟa|6287|   |6288|	
+walkatjunu|6289|   |6290|		
+paṯaṉingi|6291|   |6292|	
+nyirkingi|6293|   |6294|	
+ilaringkula|6295|   |6296|	
+|6297|
+Kamiṟara Pula Iilingka Nyinantja|6298|	
+|6299|	
+Palu ngula kunyu nyiiṉkangku watjaṉu nyaa, ngalta tjukutjuku, munu kunyu kalkuṟa ankula tjuṯa mantjiṉu munu wantikatingu kamingku ngula mai nyara palunya mantjintjaku, munu kunyu pitjala watjaṉu "Kami, ngaltaṉa parari nguwanpa nyakula wantikatingu".|6300| Ka watjaṉu, "Yaaltji?"|6301| Ka watjaṉu "Ila nguwanpa.|6302| Tjinguṟu nyuntu ankula tjawaṟa mai mantjilku paṉangka unngunguṟu".|6303| Ka kunyu kulinu munu watjaṉu, "Mungawinkiṉa ananyi".|6304| Palu mungawinki kami pakaṉu, ka kunyu nyiiṉka anu nguranguṟu munu ankula kumpiṟa ngaṟangi minyma panya ankuntjaku.|6305| Ka minyma anu ka nyiiṉka panya pitjangu ngurakutu munu waṟu puḻkaṟa ngantjiningi munu untjunarira tjulpu tjukutjuku, wiṟatju pungu, munu kuliningi, "Yaaltjingalkuṉa?"|6306| Munu panya kulira kulira tjulpu panya wamulu nyaaṉu mununku uwankara walkatjunu wamulungka munu kunyu kuṟungku puṯu nyangangi, unngu kutju uwankara, munu paṯaṟa nyinangi kamiku, panya kamiku nguranguṟu.|6307| Ka kunyu kami panyangku rawangku tjawaṟa tjawaṟa mai uraṟa uraṟa katingu ngurakutu.|6308| Ka wiltjanguṟu nyirkingi, ka kunyu puḻkaṟa nguḻuringu mamu palku kulira, munu maḻaku anu munu ngaṟala kuliningi "Nyaa panyatja?"|6309| Ka kunyu piṟuku wiltja kutjupanguṟu wirkanu munu kunyu nyangangi, rawangku kunyu nyangangi ka kunyu wirtjapakaṉu munu ngaṟala pitjangu palu ilaringkula kunyu piṟuku nyangangi - kuṟungku nyakuwiya panya wamulu tjuṯatjara munu kunyu rawangku nyangangi ka kunyu nguḻu wirtjapakaṉingi.|6310| Ka kami kunyu minangku puyiṉu ka kunyu puḻkaṟa tjititingangi munu uparingu, minyma panya.|6311| Ka kutjupa, maḻa mulapa para-nyirkingi ka kunyu minyma panya parari punkaṉu munu ilungu.|6312|		
+|6313|
+
+
+|6314|
+
+|6315|
+
+
+|6316|
+
+|6317|	
+|6318| Nyiiṉkangku ankula nyaa nyakula wantikatingu kamiku?|6319|	
+Mai ngalta wantikatingu kamingku ma-pitjala mantjintjaku.|6320|
+Nyiiṉkangku ankula nyaa nyakula wantikatingu kamiku?|6321|
+
+|6322| Nyaaku paluṟu parari nguwanpa wantikatingu?|6323|	
+Parari nguwanpa wantikatingu kami nguranguṟu ankuntjaku.|6324|
+Nyaaku paluṟu parari nguwanpa wantikatingu?|6325|	
+
+|6326| Mungawinki, kami pakanyangka nyiiṉkangunku nyaaṉu?|6327|	
+Paluṟunku walkatjunu wamulungka.|6328|
+Mungawinki, kami pakanyangka nyiiṉkangunku nyaaṉu?|6329|	
+
+|6330| Ka kamingku, maitjara pitjala, nyaa palku nyangu?|6331|	
+Kamingku mamu palku nyangu wiltjanguṟu nyirkinyangka.|6332|
+Ka kamingku, maitjara pitjala, nyaa palku nyangu?|6333|	
+
+|6334| Munu nyaaṉu kami?|6335|
+Nguḻu mulapa ma-wirtjapakaṉu.|6336|
+Munu nyaaṉu kami?|6337|
+
+|6338| Ngaltutjara, nyaaringu uṟilta nguḻu rawa nyinara?|6339|	
+Uparingu paluṟu, munu ilungu.|6340|
+Ngaltutjara, nyaaringu uṟilta nguḻu rawa nyinara?|6341|	
+
+|6342|	
+
+|6343|
+|6344|

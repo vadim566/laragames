@@ -13,13 +13,29 @@ def game9(story_name, file=None):
 
     """get random sentance"""
     size_of_story =  len(sentance)-1
-    rand_index = random.randint(0, size_of_story)
+
 
     """gather 4 random index for 4 wrong answers """
     rand_i = random.sample(range(0, size_of_story), 4)
+    sentence_len_size = 4
+    bad_sent_len_size=2
+    num_bad_answer=4
+    sentence_len = True
+    bad_match=[]
+    while sentence_len:
+        rand_index = random.randint(0, size_of_story)
+        true_match = [sentance[rand_index], sounds[rand_index]]
+        split_setance = true_match[0].split(" ", sentence_len_size)
+        if len(split_setance) >sentence_len_size:
+            sentence_len= False
 
-    true_match = [sentance[rand_index], sounds[rand_index]]
-    bad_match = [sentance[rand_i[0]], sentance[rand_i[1]], sentance[rand_i[2]], sentance[rand_i[3]]]
+
+    while len(bad_match) <= 4:
+        rand_i=random.sample(range(0,size_of_story),1)
+        bad_split=sentance[rand_i[0]].split(" ", bad_sent_len_size)
+        if len(bad_split) >bad_sent_len_size:
+            bad_match.append(sentance[rand_i[0]])
+
 
     true_word = ['', '']
     # count the words in the sentance

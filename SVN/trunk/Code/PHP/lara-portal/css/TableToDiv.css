@@ -1,0 +1,75 @@
+div.table
+{
+    display: table;
+    width: 98%;
+}
+
+div.tr
+{
+    display: table-row;
+    width: 100%;
+}
+
+div.tdHalf
+{
+    display: table-cell;
+    width: 50%;
+}
+
+div.tdTitle
+{
+    display: table-cell;
+    padding: 4px;
+    height: 30px;
+    width: 35%;
+    vertical-align: bottom;
+}
+
+div.tdInput
+{
+    display: table-cell;
+    padding: 4px;
+    height: 30px;
+    width: 60%;
+    vertical-align: bottom;
+}
+
+div.tdTXT
+{
+    display: table-cell;
+    padding: 4px;
+    height: 30px;
+    width: 95%;
+    vertical-align: bottom;
+}
+
+div.trGroup
+{
+    display: table-row-group;
+    padding: 4px;
+    height: 30px;
+    width: 95%;
+    vertical-align: bottom;
+}
+
+div.tableAccordion
+{
+    display: table;
+    width: 90%;
+}
+
+div.tdCollapsible
+{
+    display: table-cell;
+    padding: 4px;
+    height: 30px;
+    width: 85%;
+    vertical-align: bottom;
+}
+
+div.tdButton
+{
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}

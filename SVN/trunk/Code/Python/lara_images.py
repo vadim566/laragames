@@ -27,7 +27,7 @@ def get_downloaded_image_url(FileName, CorpusId):
         if FileName in SubDict:
             return SubDict[FileName]
         else:
-            lara_utils.prettprint(['failed', 'get_downloaded_image_url', FileName, CorpusId, stored_downloaded_image_urls])
+            lara_utils.prettyprint(['failed', 'get_downloaded_image_url', FileName, CorpusId, stored_downloaded_image_urls])
             return False
     else:
         return False
@@ -125,7 +125,7 @@ def img_files_referenced_in_string(Str):
             if not FoundImgFile and lara_parse_utils.substring_found_at_index(Str, Index, img_tag_start) > 0:
                 EndOfTagIndex = Str.find(img_tag_end, Index+len(img_tag_start))
                 if EndOfTagIndex > 0:
-                    ( Components, Errors ) = parse_img_tag(Str[Index+len(img_tag_start):EndOfTagIndex], ImgTagType)
+                    ( Components, Errors ) = parse_img_tag_body(Str[Index+len(img_tag_start):EndOfTagIndex], ImgTagType)
                     Index = EndOfTagIndex + len(img_tag_end)
                     if 'src' in Components:
                         FoundImgFile = True
@@ -190,7 +190,7 @@ def process_css_or_script_img_tag(Pathname, Params, Dir):
         return ( f'"{URL}"', Errors )
 
 def process_img_tag(ImgTagText, ImgTagType, Params, Dir):
-    ( Components, Errors ) = parse_img_tag(ImgTagText, ImgTagType)
+    ( Components, Errors ) = parse_img_tag_body(ImgTagText, ImgTagType)
     if len(Errors) > 0:
         return ( '', Errors )
     elif Params.hide_images == 'yes':
@@ -274,10 +274,15 @@ def img_tag_to_representation(Str):
     if not is_img_tag(Str):
         lara_utils.print_and_flush(f'*** Error: bad call to img_tag_to_representation, "{Str}" is not an img tag')
         return False
-    ( Type, StartIndex ) = ( 'img', len('<img') ) if Str.startswith('<img') else ( 'video', len('<video') )
-    EndIndex = Str.find('/>')
-    Str1 = Str[StartIndex:EndIndex]
-    ( Representation, Errors ) = parse_img_tag(Str1, Type)
+##    ( Type, StartIndex ) = ( 'img', len('<img') ) if Str.startswith('<img') else ( 'video', len('<video') )
+##    EndIndex = Str.find('/>')
+##    Str1 = Str[StartIndex:EndIndex]
+    Str1 = img_tag_to_image_tag_body(Str)
+    if Str1 == False:
+        lara_utils.print_and_flush(f'*** Error: missing closing "/>" in tag "Str"')
+        return False
+    Type = 'img' if Str.startswith('<img') else 'video'
+    ( Representation, Errors ) = parse_img_tag_body(Str1, Type)
     if len(Errors) > 0:
         for Error in Errors:
             lara_utils.print_and_flush(Error)
@@ -288,7 +293,15 @@ def img_tag_to_representation(Str):
         del Representation['src']
         return Representation
 
-def parse_img_tag(Str, ImgTagType):
+def img_tag_to_image_tag_body(Str):
+    ( Type, StartIndex ) = ( 'img', len('<img') ) if Str.startswith('<img') else ( 'video', len('<video') )
+    EndIndex = Str.find('/>')
+    if EndIndex >= StartIndex:
+        return Str[StartIndex:EndIndex]
+    else:
+        return False
+
+def parse_img_tag_body(Str, ImgTagType):
     ( Index, N, OutDict ) = ( 0, len(Str), {} )
     while True:
         Index = lara_parse_utils.skip_spaces(Str, Index)

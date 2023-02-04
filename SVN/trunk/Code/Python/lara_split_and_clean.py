@@ -1,5 +1,6 @@
 
 import lara_forced_alignment
+import lara_top
 import lara_images
 import lara_audio
 import lara_config
@@ -7,7 +8,9 @@ import lara_utils
 import lara_parse_utils
 import lara_replace_chars
 import lara_mwe
+import lara_picturebook
 import copy
+import re
 
 ##Turn a LARA file into internalised form, which can be written out as JSON.
 ##The internalised form consists of a list of triples, one per segment.
@@ -38,10 +41,18 @@ def test_clean_lara_file1(CorpusFile, ConfigFile, SplitFile, FeedbackFile):
     Params = lara_config.read_lara_local_config_file(ConfigFile)
     clean_lara_file(CorpusFile, Params, SplitFile, FeedbackFile)
 
-## Top-level function. Read the split file (output of clean_lara_file).
+## Top-level functions. Read the split file (output of clean_lara_file).
 ## Try to create it if it's not there and the corpus file is defined.
 ## If we are doing distributed, then the corpus file will be null.
-def read_split_file(SplitFile, Params):
+
+def read_split_file_expanding_annotated_images(SplitFile, Params):
+    SplitFileData0 = read_split_file(SplitFile, Params)
+    if SplitFileData0 == False:
+        return False
+    return lara_picturebook.expand_annotated_images_in_split_list(SplitFileData0)
+    
+def read_split_file(SplitFile0, Params):
+    SplitFile = SplitFile0 if SplitFile0 != '' else lara_top.lara_tmp_file('split', Params)
     if Params.corpus != '' and not lara_utils.file_exists(Params.corpus):
         lara_utils.print_and_flush(f'*** Error: unable to find corpus file {Params.corpus}, giving up')
         return False
@@ -101,9 +112,12 @@ def extract_css_img_and_audio_files(InFile, Params):
         if 'css_file' in PageInfo:
             CSSFiles += [ PageInfo['css_file'] ]
         for Unit in Units:
-            RawText = Unit[0]
-            Imgs += lara_images.img_files_referenced_in_string(RawText)
-            Audios += lara_audio.audio_files_referenced_in_string(RawText)
+            if lara_picturebook.is_annotated_image_segment(Unit):
+                Imgs += [ lara_picturebook.annotated_image_image(Unit) ]
+            else:     
+                RawText = Unit[0]
+                Imgs += lara_images.img_files_referenced_in_string(RawText)
+                Audios += lara_audio.audio_files_referenced_in_string(RawText)
     return { 'css_files': lara_utils.remove_duplicates(CSSFiles),
              'img_files': lara_utils.remove_duplicates(Imgs),
              'audio_files': lara_utils.remove_duplicates(Audios) }
@@ -117,7 +131,7 @@ def clean_lara_file_main_minimal(InFile, Params):
 ##    if AudioTrackingData != {}:
 ##        lara_audio.write_audio_tracking_data_to_tmp_resources(AudioTrackingData, Params)
     ( Units, Trace1 ) = split_and_clean_lara_string(InStr, Params) 
-    return ( split_list_to_page_oriented_split_list(Units), AudioTrackingData, Trace0 + Trace1 )
+    return ( split_list_to_page_oriented_split_list(Units, Params), AudioTrackingData, Trace0 + Trace1 )
 
 ## The main processing: create the chunks and the trace output, but don't write things out
 ## Each part returns main output and trace, and we stick all the traces together at the end
@@ -135,25 +149,29 @@ def clean_lara_string_main(InStr0, Params):
     Trace1 = check_image_and_audio_tags_in_lara_string(InStr, Params)
     ( Units, Trace2 ) = split_and_clean_lara_string(InStr, Params)
     NonNullUnits = [ Unit for Unit in Units if len(Unit[0]) > 0 ]
-    PageOrientedSplitList = split_list_to_page_oriented_split_list(NonNullUnits)
+    PageOrientedSplitList = split_list_to_page_oriented_split_list(NonNullUnits, Params)
+    #lara_utils.prettyprint(PageOrientedSplitList)
     ## This produces warnings when the same word has been tagged in different ways
-    Trace3 = inconsistent_tagging_messages(NonNullUnits)
+    NonNullUnits1 = [ Unit for Unit in NonNullUnits if not lara_picturebook.is_annotated_image_marker(Unit) ]
+    Trace3 = inconsistent_tagging_messages(NonNullUnits1)
     FullTrace = Trace0 + Trace1 + Trace2 + Trace3
     lara_utils.print_and_flush('\n'.join(FullTrace))
     return ( PageOrientedSplitList, FullTrace )
 
 ## Group segments by page, using the page tags
-def split_list_to_page_oriented_split_list(SplitList):
+def split_list_to_page_oriented_split_list(SplitList, Params):
     ( OutList, CurrentSplitList, CurrentPageInfo, PageNumber ) = ( [], [], '*start*', 1 )
     for Chunk in SplitList:
         if lara_utils.is_page_tag_chunk(Chunk):
             if CurrentPageInfo == '*start*' and len(CurrentSplitList) > 0:
                 lara_utils.print_and_flush('*** Warning: material found before first <page> tag. Assuming extra <page> at start')
-                OutList = [[{'page': PageNumber}, CurrentSplitList]]
+                CurrentSplitList1 = lara_picturebook.collect_annotated_images_in_split_list(CurrentSplitList, PageNumber, Params)
+                OutList = [[{'page': PageNumber}, CurrentSplitList1]]
                 CurrentSplitList = []
                 PageNumber = 2
             elif not CurrentPageInfo == '*start*':
-                OutList += [[CurrentPageInfo, CurrentSplitList]]
+                CurrentSplitList1 = lara_picturebook.collect_annotated_images_in_split_list(CurrentSplitList, PageNumber, Params)
+                OutList += [[CurrentPageInfo, CurrentSplitList1]]
                 CurrentSplitList = []
             CurrentPageInfo = lara_utils.page_tag_chunk_page_info(Chunk)
             if not 'page' in CurrentPageInfo:
@@ -161,8 +179,10 @@ def split_list_to_page_oriented_split_list(SplitList):
                 PageNumber += 1
         else:
             CurrentSplitList += [Chunk]
-    if len(CurrentSplitList) > 0: 
-        OutList += [[CurrentPageInfo, CurrentSplitList]]
+    # We may have some material left over
+    if len(CurrentSplitList) > 0:
+        CurrentSplitList1 = lara_picturebook.collect_annotated_images_in_split_list(CurrentSplitList, PageNumber, Params)
+        OutList += [[CurrentPageInfo, CurrentSplitList1]]
     return remove_leading_linebreaks_in_pages(OutList)
 
 def remove_leading_linebreaks_in_pages(PageOrientedSplitList):
@@ -175,6 +195,8 @@ def remove_leading_linebreaks_in_page(Chunks):
         return Chunks
 
 def remove_leading_linebreaks_in_chunk(Chunk):
+    if not isinstance(Chunk, ( tuple, list ) ):
+        return Chunk
     if len(Chunk) > 0:
         return [ remove_leading_linebreaks_in_string(Chunk[0]) ] + Chunk[1:]
     else:
@@ -184,13 +206,15 @@ def remove_leading_linebreaks_in_string(Str):
     return remove_leading_linebreaks_in_string(Str[1:]) if Str[0] in "\n" else Str
 
 def is_whitespace_chunk(Chunk):
+    if not isinstance(Chunk, ( tuple, list ) ):
+        return False
     RawString = Chunk[0]
     return len(RawString) == 0 or RawString.isspace() 
 
 ## Split the string for the whole text into segments, process each one separately
 ## into a chunk and a piece of trace, then stick everything together
 def split_and_clean_lara_string(String, Params):
-    Segments = add_segment_marks_around_page_tags(String).split('||')
+    Segments = add_segment_marks_around_page_and_annotated_image_tags(String).split('||')
     ChunksAndTraces = [ string_to_text_chunk(Segment, Params) for Segment in Segments ]
     ( AllChunks, AllTraces ) = ( [], [] )
     for ChunkAndTrace in ChunksAndTraces:
@@ -199,7 +223,11 @@ def split_and_clean_lara_string(String, Params):
         AllTraces = AllTraces + Trace
     return ( AllChunks, AllTraces )
 
-## Add segment marks around page tags, so that each one becomes a separate chunk
+## Add segment marks around page tags and annotated_image tags, so that each one becomes a separate chunk
+
+def add_segment_marks_around_page_and_annotated_image_tags(Str):
+    Str1 = add_segment_marks_around_page_tags(Str)
+    return add_segment_marks_around_annotated_image_tags(Str1)
 
 def add_segment_marks_around_page_tags(Str):
     page_tag_start = '<page'
@@ -225,6 +253,23 @@ def add_segment_marks_around_page_tags(Str):
             i += 1
     return OutStr
 
+def add_segment_marks_around_annotated_image_tags(Str):
+    Pattern = re.compile("<annotated_image>|</annotated_image>")
+    (i, n, OutStr) = (0, len(Str), '')
+    while True:
+        if i >= n:
+            return OutStr
+        Match = Pattern.search(Str[i:])
+        if Match == None:
+            OutStr += Str[i:]
+            return OutStr
+        StartOfMatch = Match.start()
+        WordMatched = Match.group(0)
+        OutStr += Str[i:i+StartOfMatch] + f'||{WordMatched}||'
+        i += StartOfMatch + len(WordMatched)
+    # Shouldn't get here, but just in case
+    return OutStr
+
 # Str = '‘It isn’t,’ said#say# the Caterpillar.'
 # Params = lara_config.read_lara_local_config_file('$LARA/Content/alice_in_wonderland/corpus/local_config.json')
 
@@ -232,8 +277,10 @@ def add_segment_marks_around_page_tags(Str):
 ## and stick them together
 def string_to_text_chunk(String0, Params):
     try:
-        if String0.startswith("<page"):
+        if String0.startswith('<page'):
             return page_tag_string_to_chunk(String0)
+        if String0 in [ '<annotated_image>', '</annotated_image>' ]:
+            return annotated_image_string_to_chunk(String0)
         String05 = lara_parse_utils.remove_weird_characters(String0)
         String = maybe_convert_inverted_comments(String05, Params)
         if String == False:
@@ -252,10 +299,11 @@ def string_to_text_chunk(String0, Params):
                 return ( Chunk, [ Error ] )
         ( MinimalClean, Trace1) = minimal_clean_lara_string(String, Params)
         ( AnnotatedWords, Trace4 ) = string_to_annotated_words(String)
+        Trace5 = check_image_tags_in_annotated_words(AnnotatedWords, Params)
         try_to_balance_html_font_tags_in_annotated_words(AnnotatedWords)
         Chunk = [ String, MinimalClean, AnnotatedWords ]
         #Trace = Trace1 + Trace2 + Trace3 + Trace4
-        Trace = Trace1 + Trace4
+        Trace = Trace1 + Trace4 + Trace5
         return ( Chunk, Trace )
     except Exception as e:
         Error = f'*** Error: unable to internalise segment "{String0[:200]}"'
@@ -263,6 +311,33 @@ def string_to_text_chunk(String0, Params):
         lara_utils.print_and_flush(str(e))
         Chunk = [ String0, '', [] ]
         return ( Chunk, [ Error ] )
+
+def check_image_tags_in_annotated_words(AnnotatedWords, Params):
+    if not isinstance(AnnotatedWords, ( list )):
+        return []
+    Trace = []
+    for Element in AnnotatedWords:
+        if isinstance( Element, ( list, tuple) ) and len(Element) == 2 and \
+           Element[1] == '' and ( Element[0].startswith('<img') or Element[0].startswith('<video') ):
+            ImgStr = Element[0]
+            ImgTagType = 'img' if ImgStr.startswith('<img') else 'video'
+            ImgStrBody = lara_images.img_tag_to_image_tag_body(ImgStr)
+            if ImgStrBody == False:
+                Trace += [ f'*** Error: missing closing "/>" in {ImgTagType} tag "ImgStr"' ]
+            else:
+                ( ImgRepresentation, ParseErrors ) = lara_images.parse_img_tag_body(ImgStrBody, ImgTagType)
+                if ParseErrors != []:
+                    Trace += ParseErrors
+                else:
+                    # Both img and video tags need to specify 'src'
+                    if not 'src' in ImgRepresentation:
+                        Trace += [ f'*** Error: "src" is not specified in "{ImgStr}"' ]
+                    # img tags need to specify 'width' and 'height'
+                    if ImgTagType == 'img' and not 'width' in ImgRepresentation:
+                        Trace += [ f'*** Error: "width" is not specified in "{ImgStr}"' ]
+                    if ImgTagType == 'img' and not 'height' in ImgRepresentation:
+                        Trace += [ f'*** Error: "height" is not specified in "{ImgStr}"' ]
+    return Trace              
 
 # It sometimes happens that a font tag (<b> or <i>) can end up in the preceding word, which can mess up formatting
 # Try to adjust this
@@ -295,6 +370,11 @@ def ends_in_html_open_font_tag(String):
 def page_tag_string_to_chunk(Str):
     ( ParsedTag, Trace ) = parse_page_tag(Str)
     return ( [ '*page_tag*', Str, ParsedTag ], Trace )
+
+def annotated_image_string_to_chunk(Str):
+    Trace = []
+    return ( '*annotated_image_start*' if Str == '<annotated_image>' else '*annotated_image_end*',
+             Trace )
 
 def parse_page_tag(Str):
     ( Index, N, OutDict ) = ( Str.find("<page") + len("<page"), Str.find(">") - 1, {} )
@@ -388,7 +468,7 @@ def string_to_annotated_words(StrIn):
 ##                    OutList += [ [ Filler, '' ] ]
                     FillerPairs = filler_string_to_pairs(FillerStr)
                     OutList += FillerPairs
-                return ( OutList, [] )
+                return ( OutList, warnings_for_word_pairs(OutList) )
             elif Result == 'error':
                 return ( [], [ f'*** Error in string_to_annotated_words: incorrect tagging in "{StrIn}"' ] )
             else:
@@ -406,6 +486,19 @@ def string_to_annotated_words(StrIn):
 ##                    OutList += [ [ Filler, '' ] ]
                 OutList += FillerPairs + NextAnnotatedWordPairs
 
+def warnings_for_word_pairs(Pairs):
+    Warnings = []
+    for Pair in Pairs:
+        Warnings += warnings_for_single_word_pair(Pair)
+    return Warnings
+
+def warnings_for_single_word_pair(Pair):
+    ( Surface, Lemma ) = Pair
+    if Lemma != '' and Surface.count('#') > 1:
+        return [ f'*** Warning: possibly incorrect hashtags in "{Surface}"' ]
+    else:
+        return []
+  
 ## Read one "annotated word" (word plus optional hashtag) from StrIn, starting at position I
 ## N is the length of StrIn.
 ## Return a [ Word, Lemma ] pair plus the new position in StrIn
@@ -689,7 +782,20 @@ def add_tag_to_page_info(PageInfo, Tag):
     return PageInfo1
 
 def add_tags_to_chunks1(Units, Tag):
-    return [ Unit + [ Tag ] for Unit in Units ]
+    return [ add_tag_to_chunk(Unit, Tag) for Unit in Units ]
+
+def add_tag_to_chunk(Unit, Tag):
+    if Unit in ( '*annotated_image_start*', '*annotated_image_end*' ):
+        return Unit
+    if lara_picturebook.is_annotated_image_segment(Unit):
+        ( Image, Segments ) = ( lara_picturebook.annotated_image_image(Unit), lara_picturebook.annotated_image_segments(Unit) )
+        return lara_picturebook.make_annotated_image_segment(Image, add_tags_to_chunks1(Segments, Tag))
+    elif isinstance(Unit, ( list )):
+        return Unit + [ Tag ]
+    else:
+        lara_utils.print_and_flush(f'*** Error: bad call: unable to add tag {Tag} to segment element')
+        lara_utils.prettyprint(Unit)
+        return False
 
 ## Check that the image and audio tags in the string are okay
 def check_image_and_audio_tags_in_lara_string(InStr, Params):
@@ -760,16 +866,16 @@ def print_split_file_statistics(PageOrientedSplitList):
     NPages = Statistics['pages']
     NSegments = Statistics['segments']
     NWords = Statistics['words']
-    NWordsIncludingComments = Statistics['words_including_comments']
+    NTokens = Statistics['tokens']
     NUniqueWords = Statistics['unique_words']
     PagesMessage = f'--- {NPages} pages'
     SegmentsMessage = f'--- {NSegments} segments'
+    TokensMessage = f'--- {NTokens} tokens'
     WordsMessage = f'--- {NWords} words'
-    WordsMessageNWordsIncludingComments = f'--- {NWordsIncludingComments} words including comments'
     UniqueWordsMessage = f'--- {NUniqueWords} different tags'    
     LongestSegments = longest_segments(Units)
     
-    AllMessages = ['\n' + PagesMessage, SegmentsMessage, WordsMessage, WordsMessageNWordsIncludingComments, UniqueWordsMessage] + \
+    AllMessages = ['\n' + PagesMessage, SegmentsMessage, TokensMessage, WordsMessage, UniqueWordsMessage] + \
                   ['\nLongest segments:'] + LongestSegments + [ '\n' ]
     lara_utils.print_and_flush('\n'.join(AllMessages))
     return AllMessages
@@ -781,7 +887,7 @@ def get_statistics_for_page_oriented_split_list(PageOrientedSplitList):
             'pages': count_pages_in_split_file_contents(PageOrientedSplitList),
             'segments': count_segments_in_split_file_contents(Units),
             'words': count_words_in_split_file_contents(Units),
-            'words_including_comments': count_words_including_comments_in_split_file_contents(Units),
+            'tokens': count_tokens_in_split_file_contents(Units),
             'unique_words': count_unique_tags_in_split_file_contents(Units)
             }
     except:
@@ -793,12 +899,12 @@ def count_pages_in_split_file_contents(PageOrientedSplitList):
 def count_segments_in_split_file_contents(Units):
     return len(Units)
 
+def count_tokens_in_split_file_contents(Units):
+    return len([ WordTagPair[0] for Chunk in Units for WordTagPair in Chunk[2] ])
+
 def count_words_in_split_file_contents(Units):
     return len([ WordTagPair[0] for Chunk in Units for WordTagPair in Chunk[2]
-                 if not lara_parse_utils.is_punctuation_string(WordTagPair[0]) ])
-
-def count_words_including_comments_in_split_file_contents(Units):
-    return sum([ len(Chunk[1].split()) for Chunk in Units ])
+                 if not WordTagPair[1] == '' ])
 
 def count_unique_tags_in_split_file_contents(Units):
     Tags = [ WordTagPair[1] for Chunk in Units for WordTagPair in Chunk[2]

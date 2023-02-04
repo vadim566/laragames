@@ -15,8 +15,10 @@ import lara_mwe
 import lara_generic_tts
 import lara_tts
 import lara_crowdsource
+import lara_picturebook
 #import lara_flashcards
 import lara_flashcards_new
+import lara_tts_human_eval
 import lara_polish
 import lara_play_all
 import lara_utils
@@ -29,8 +31,8 @@ def print_usage():
     print(f'                       "resources", "word_pages", "distributed", "mwe_annotate" or "apply_mwe_annotations"')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py extract_css_img_and_audio_files <ConfigFile> <ResultFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py extract_css_img_and_audio_files_basic <CorpusFile> <ResultFile>')
-    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py create_tts_audio <RecordingScript> <ConfigFile> <Zipfile>')
-    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py get_tts_engines <Lang> <ResultFile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py create_tts_audio <RecordingScript> <ConfigFile> <Zipfile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py get_tts_engines <Lang> <ResultFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py install_ldt_zipfile <Zipfile> <RecordingScript> <Type> <ConfigFile> [ <BadMetadataFile> ]')
     print(f'       where <Type> is "words" or "segments"')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py install_non_ldt_audio_zipfile <Zipfile> [ <ConfigFile> ]')
@@ -69,9 +71,12 @@ def print_usage():
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py check_lara_id <IdString> <ReplyFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py download_resource <URL> <Dir>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py make_export_zipfile <SourceConfigFile> <TargetZipfile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py import_zipfile <Zipfile> <CorpusDir> <LanguageRootDir> <ConfigFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py cut_up_project <ConfigFile> <ZipfileForCrowdsourcing>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py stick_together_projects <FileWithListOfConfigFiles> <TargetConfigFile>')
-    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py import_zipfile <Zipfile> <CorpusDir> <LanguageRootDir> <ConfigFile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py make_human_tts_evaluation_forms <MetadataFile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py format_human_tts_data <SegmentFile> <OverallFile> <VoiceRatingFile> <ResultsDir>') 
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py zip <Zipfile> <Target>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py unzip <Zipfile> <Target>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py streamed_download_binary_file <URL> <Target>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py csv_to_json <CSVFile> <JSONFile>')
@@ -82,6 +87,9 @@ def print_usage():
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py diff_tagged_corpus <OldTaggedCorpus> <ConfigFile> <Zipfile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py check_concraft_server_status <ConfigFile> <ReplyFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py copy_audio_dir_with_uniform_sampling_rate <Dir> <Dir1> <ConfigFile>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py upload_picturebook_data <ConfigFile> <Zipfile> <Dir>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py copy_tmp_picturebook_data_into_place <ConfigFile> <TmpWordLocationsFile> <TmpZipfile> <Dir>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py get_and_store_selector_tool_data <ConfigFile>')
     # Operations for reader portal
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py get_page_names_for_resource <ResourceId> <ConfigFile> <ReplyFile>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run_for_portal.py compile_reading_history <ConfigFile> <ReplyFile>')
@@ -197,6 +205,8 @@ if len(full_args) >= 2:
         lara_reading_portal.get_voices_and_l1s_for_resource_file_and_write(Args[0], Args[1])
     elif Mode == 'download_resource' and NArgs == 2:
         lara_download_resource.download_resource(Args[0], Args[1])
+    elif Mode == 'zip' and NArgs == 2:
+        lara_utils.make_zipfile(Args[0], Args[1])
     elif Mode == 'unzip' and NArgs == 2:
         lara_utils.unzip_file(Args[0], Args[1])
     elif Mode == 'streamed_download_binary_file' and NArgs == 2:
@@ -219,12 +229,22 @@ if len(full_args) >= 2:
         lara_crowdsource.cut_up_project(Args[0], Args[1])
     elif Mode == 'stick_together_projects' and NArgs == 2:
         lara_crowdsource.stick_together_projects(Args[0], Args[1])
+    elif Mode == 'make_human_tts_evaluation_forms' and NArgs == 1:
+        lara_tts_human_eval.make_human_tts_evaluation_forms(Args[0])
+    elif Mode == 'format_human_tts_data' and NArgs == 4:
+        lara_tts_human_eval.format_human_tts_data(Args[0], Args[1], Args[2], Args[3])
     elif Mode == 'diff_tagged_corpus' and NArgs == 3:
         lara_top.diff_tagged_corpus(Args[0], Args[1], Args[2])
     elif Mode == 'check_concraft_server_status' and NArgs == 2:
         lara_polish.check_concraft_server_status(Args[0], Args[1])
     elif Mode == 'copy_audio_dir_with_uniform_sampling_rate' and NArgs == 3:
         lara_play_all.make_copy_of_audio_directory_with_uniform_sampling_rate(Args[0], Args[1], Args[2])
+    elif Mode == 'upload_picturebook_data' and NArgs == 3:
+        lara_top.upload_picturebook_data(Args[0], Args[1], Args[2])
+    elif Mode == 'copy_tmp_picturebook_data_into_place' and NArgs == 4:
+        lara_picturebook.copy_tmp_picturebook_data_into_place(Args[0], Args[1], Args[2], Args[3])
+    elif Mode == 'get_and_store_selector_tool_data' and NArgs == 1:
+        lara_picturebook.get_and_store_selector_tool_data_for_config_file(Args[0])
     # Operations for reading portal
     elif Mode == 'get_page_names_for_resource' and NArgs == 3:
         lara_reading_portal.get_page_names_for_resource_and_write(Args[0], Args[1], Args[2])

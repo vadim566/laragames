@@ -1,0 +1,135 @@
+DB changes for Lara-portal DB
+
+0- Create new table named LanguagePairsLemmas:
+
+CREATE TABLE `LanguagePairsLemmas` (
+  `LanguagePairLemmaID` int(11) NOT NULL,
+  `LanguagePairID` int(11) NOT NULL,
+  `EntryInL1` text COLLATE utf8_bin,
+  `EntryInL2` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`LanguagePairLemmaID`),
+  KEY `keyIndex` (`LanguagePairLemmaID`),
+  KEY `langPairIndex` (`LanguagePairID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Dictionary structure for different language pairs lemmas';
+
+1- Create new table named LanguagePairsTypes:
+
+CREATE TABLE `LanguagePairsTypes` (
+  `LanguagePairTypeID` int(11) NOT NULL,
+  `LanguagePairID` int(11) NOT NULL,
+  `EntryInL1` text COLLATE utf8_bin,
+  `EntryInL2` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`LanguagePairTypeID`),
+  KEY `keyIndex` (`LanguagePairTypeID`),
+  KEY `langPairIndex` (`LanguagePairID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Dictionary structure for different language pairs types';
+
+2- Create new table named ContentTypes:
+
+CREATE TABLE `ContentTypes` (
+  `ContentTypeID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `TypeOrder` int(11) NOT NULL,
+  `EntryInL1` text COLLATE utf8_bin,
+  `EntryInL2` text COLLATE utf8_bin NOT NULL,
+  `Frequency` int(11) DEFAULT NULL,
+  `RecordingFileName` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`ContentTypeID`),
+  KEY `contentIDIndex` (`ContentID`)
+) ENGINE=InnoDB AUTO_INCREMENT=21810 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Contains the typesf each content';
+
+3- Create new table named ContentTypeExamples:
+
+CREATE TABLE `ContentTypeExamples` (
+  `ContentTypeExampleID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `TypeOrder` int(11) NOT NULL,
+  `ExampleText` varchar(1000) CHARACTER SET utf32 COLLATE utf32_bin NOT NULL,
+  PRIMARY KEY (`ContentTypeExampleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+4- Create new table named ContentLemmas:
+
+CREATE TABLE `ContentLemmas` (
+  `ContentLemmaID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `LemmaOrder` int(11) NOT NULL,
+  `EntryInL1` text COLLATE utf8_bin,
+  `EntryInL2` text COLLATE utf8_bin NOT NULL,
+  `Frequency` int(11) DEFAULT NULL,
+  `Notes` text COLLATE utf8_bin,
+  PRIMARY KEY (`ContentLemmaID`),
+  KEY `contentIDIndex` (`ContentID`)
+) ENGINE=InnoDB AUTO_INCREMENT=10866 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Contains the Lemmas of each content';
+
+5- Create new table named ContentLemmaExamples:
+
+CREATE TABLE `ContentLemmaExamples` (
+  `ContentLemmaExampleID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `LemmaOrder` int(11) NOT NULL,
+  `ExampleText` varchar(1000) CHARACTER SET utf32 COLLATE utf32_bin NOT NULL,
+  PRIMARY KEY (`ContentLemmaExampleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+6- Create new table named ContentTokens
+
+CREATE TABLE `ContentTokens` (
+  `ContentTokenID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `SegmentOrder` int(11) NOT NULL,
+  `SectionType` enum('token','type','segment') COLLATE utf8_bin NOT NULL,
+  `OrderInSection` int(11) NOT NULL,
+  `EntryText` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`ContentTokenID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+7- Create new table named ContentSegments
+
+CREATE TABLE `ContentSegments` (
+  `ContentSegmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `ContentID` int(11) NOT NULL,
+  `SegmentInL1` text COLLATE utf8_bin,
+  `SegmentInL2` text COLLATE utf8_bin NOT NULL,
+  `SegmentOrder` int(11) NOT NULL,
+  `RecordingFileName` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`ContentSegmentID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Segments of a content';
+*********************************************************************
+8-
+
+DROP TABLE `ContentRecordingMetadata`, `ContentRecordingSegments`;
+*********************************************************************
+ALTER TABLE `ContentConfig`
+ADD COLUMN `translation_spreadsheet_surface` VARCHAR(500) NULL DEFAULT NULL AFTER `translation_spreadsheet`,
+ADD COLUMN `translation_spreadsheet_tokens` VARCHAR(500) NULL DEFAULT NULL AFTER `translation_spreadsheet_surface`;
+
+ALTER TABLE `Contents`
+   ADD COLUMN `LdtDeactivateStatus` ENUM('YES', 'NO') NULL DEFAULT 'NO' AFTER `LangRepType`;
+
+ALTER TABLE `Contents`
+ADD COLUMN `SegmentTranslationCharacter` VARCHAR(1) NULL DEFAULT NULL AFTER `SegmentTranslationMouseOver`;
+
+ALTER TABLE `ContentConfig`
+ADD COLUMN `segment_translation_character` VARCHAR(1) NULL DEFAULT NULL AFTER `segment_translation_mouseover`;
+
+ALTER TABLE `Contents`
+ADD COLUMN `WordsNote` ENUM('YES', 'NO') NULL DEFAULT 'NO' AFTER `SegmentTranslationCharacter`;
+
+ALTER TABLE `Contents`
+ADD COLUMN `HasAudioTracking` ENUM('YES', 'NO') NULL DEFAULT 'NO' AFTER `AudioSegments`;
+
+ALTER TABLE `ContentConfig`
+ADD COLUMN `notes_spreadsheet` VARCHAR(500) NULL DEFAULT NULL AFTER `word_translations_on`;
+
+ALTER TABLE `ContentConfig`
+ADD COLUMN `note_words_in_colour` VARCHAR(20) NULL DEFAULT NULL AFTER `notes_spreadsheet`;
+
+ALTER TABLE `ContentConfig`
+ADD COLUMN `audio_tracking_file` VARCHAR(500) NULL DEFAULT NULL AFTER `note_words_in_colour`;
+
+ALTER TABLE `UserActivitiesLogs`
+ADD COLUMN `IPAddress` VARCHAR(45) NOT NULL DEFAULT '-1' AFTER `RelatedPage`;
+
+ALTER TABLE `UserActivitiesLogs`
+CHANGE COLUMN `UserID` `UserID` INT(11) NOT NULL AFTER `RelatedPage`;

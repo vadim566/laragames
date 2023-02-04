@@ -86,6 +86,17 @@
 						"segment_time": "all"
 					}
 				]
+	},
+	"japanese": { 
+		"file": "$LARA/tmp/lrec_2022_japanese.csv",
+		"data": [ 
+					{   "id": "lpp_japanese",
+						"human": "$LARA/Content/japanese_little_prince/corpus/local_config_lrec_2022.json",
+						"tts": "$LARA/Content/japanese_little_prince/corpus/local_config_lrec_2022_tts.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
 	}
 }
 	  

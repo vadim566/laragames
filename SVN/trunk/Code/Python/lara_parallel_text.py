@@ -34,6 +34,69 @@ def test_lara_parallel_text(Id):
         CSVFile = '$LARA/Content/Lokasenna_English/corpus/lokasenna_parallel_text_instantiated.csv'
         TextFileOut = '$LARA/Content/Lokasenna_English/corpus/Lokasenna_two_column.txt'
         insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'allvísmál1':
+        ConfigFile = '$LARA/Content/alvíssmál_en/corpus/local_config.json'
+        CSVFile = '$LARA/Content/alvíssmál_en/corpus/alvíssmál_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'allvísmál2':
+        ConfigFile = '$LARA/Content/alvíssmál_en/corpus/local_config.json'
+        CSVFile = '$LARA/Content/alvíssmál_en/corpus/alvíssmál_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/alvíssmál_en/corpus/alvíssmál_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Þrymskviða1':
+        ConfigFile = '$LARA/Content/Þrymskviða_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Þrymskviða_English/corpus/Þrymskviða_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Þrymskviða2':
+        ConfigFile = '$LARA/Content/Þrymskviða_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Þrymskviða_English/corpus/Þrymskviða_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Þrymskviða_English/corpus/Þrymskviða_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Skírnismál1':
+        ConfigFile = '$LARA/Content/Skírnismál2/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Skírnismál2/corpus/Skírnismál_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Skírnismál2':
+        ConfigFile = '$LARA/Content/Skírnismál2/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Skírnismál2/corpus/Skírnismál_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Skírnismál2/corpus/Skírnismál_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Vafþrúðnismál1':
+        ConfigFile = '$LARA/Content/Vafþrúðnismál_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Vafþrúðnismál_English/corpus/Vafþrúðnismál_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Vafþrúðnismál2':
+        ConfigFile = '$LARA/Content/Vafþrúðnismál_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Vafþrúðnismál_English/corpus/Vafþrúðnismál_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Vafþrúðnismál_English/corpus/Vafþrúðnismál_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Hárbarðsljóð1':
+        ConfigFile = '$LARA/Content/Hárbarðsljóð_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Hárbarðsljóð_English/corpus/Hárbarðsljóð_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Hárbarðsljóð2':
+        ConfigFile = '$LARA/Content/Hárbarðsljóð_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Hárbarðsljóð_English/corpus/Hárbarðsljóð_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Hárbarðsljóð_English/corpus/Hárbarðsljóð_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Grímnismál1':
+        ConfigFile = '$LARA/Content/Grímnismál_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Grímnismál_English/corpus/Grímnismál_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Grímnismál2':
+        ConfigFile = '$LARA/Content/Grímnismál_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Grímnismál_English/corpus/Grímnismál_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Grímnismál_English/corpus/Grímnismál_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
+    elif Id == 'Hymiskviða1':
+        ConfigFile = '$LARA/Content/Hymiskviða_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Hymiskviða_English/corpus/Hymiskviða_parallel_text.csv'
+        make_parallel_text_spreadsheet(ConfigFile, CSVFile)
+    elif Id == 'Hymiskviða2':
+        ConfigFile = '$LARA/Content/Hymiskviða_English/corpus/local_config.json'
+        CSVFile = '$LARA/Content/Hymiskviða_English/corpus/Hymiskviða_parallel_text_instantiated.csv'
+        TextFileOut = '$LARA/Content/Hymiskviða_English/corpus/Hymiskviða_two_column.txt'
+        insert_parallel_text_and_audio_tracking_in_edda_file(ConfigFile, CSVFile, TextFileOut)
 
 # ----------------------------------
 

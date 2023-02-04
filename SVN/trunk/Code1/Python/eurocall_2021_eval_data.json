@@ -1,0 +1,144 @@
+{ 	
+	"english": { 
+		"file": "$LARA/tmp/eurocall_english.csv",
+		"data": [   
+					{  "id": "peter_rabbit",
+						"human": "$LARA/Content/peter_rabbit/corpus/local_config.json",
+						"tts": "$LARA/Content/peter_rabbit/corpus/local_config_tts.json",
+						"word_time": 0.5,
+						"segment_time": 1.0
+					},
+					{   "id": "alice_in_wonderland",
+						"human": "$LARA/Content/alice_in_wonderland/corpus/local_config.json",
+						"tts": "$LARA/Content/alice_in_wonderland/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 1.0
+					},
+					{	"id": "animal_farm",
+						"human": "$LARA/Content/animal_farm/corpus/local_config.json",
+						"tts": "$LARA/Content/animal_farm/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 1.0
+					}
+				]
+	},
+	"french_le_bonheur": { 
+		"file": "$LARA/tmp/eurocall_french_le_bonheur.csv",
+		"data": [ 
+					{   "id": "le_bonheur",
+						"human": "$LARA/Content/le_bonheur/corpus/local_config.json",
+						"tts": "$LARA/Content/le_bonheur/corpus/local_config_tts.json",
+						"word_time": 0.5,
+						"segment_time": 3.0
+					}
+				]
+	},
+	"french": { 
+		"file": "$LARA/tmp/eurocall_french.csv",
+		"data": [ 
+					{   "id": "le_petit_prince",
+						"human": "$LARA/Content/le_petit_prince/corpus/local_config.json",
+						"tts": "$LARA/Content/le_petit_prince/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"icelandic": { 
+		"file": "$LARA/tmp/eurocall_icelandic.csv",
+		"data": [ 
+					{   "id": "tina_fer_i_fri",
+						"human": "$LARA/Content/tina_fer_i_fri/corpus/local_config.json",
+						"tts": "$LARA/Content/tina_fer_i_fri/corpus/local_config_readspeaker.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"italian": {
+		"file": "$LARA/tmp/eurocall_italian.csv",
+		"data": [ 
+					{   "id": "il_piccolo_principe",
+						"human": "$LARA/Content/il_piccolo_principe/corpus/local_config.json",
+						"tts": "$LARA/Content/il_piccolo_principe/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"spanish": {
+		"file": "$LARA/tmp/eurocall_spanish.csv",
+		"data": [ 
+					{   "id": "pedrito_conejo",
+						"human": "$LARA/Content/pedrito_conejo2/corpus/local_config.json",
+						"tts": "$LARA/Content/pedrito_conejo2/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"mandarin": {
+		"file": "$LARA/tmp/eurocall_mandarin.csv",
+		"data": [ 
+					{   "id": "the_bear_and_the_rabbits", 
+						"human": "$LARA/Content/chinese_test1/corpus/local_config.json",
+						"tts": "$LARA/Content/chinese_test1/corpus/local_config_google_tts.json",
+						"word_time": 0.5,
+						"segment_time": 3.0
+					}
+				]
+	},
+	"danish": {
+		"file": "$LARA/tmp/eurocall_danish.csv",
+		"data": [ 
+					{   "id": "kejsarens_nye_klæder", 
+						"human": "$LARA/Content/kejserens_nye_klæder/corpus/local_config.json",
+						"tts": "$LARA/Content/kejserens_nye_klæder/corpus/local_config_tts.json",
+						"word_time": 0.5,
+						"segment_time": 3.0
+					}
+				]
+	},
+	"irish": {
+		"file": "$LARA/tmp/eurocall_irish.csv",
+		"data": [ 
+					{   "id": "an-t-oileanach", 
+						"human": "$LARA/Content/an-t-oileanach-100short-nnc_recordings/corpus/local_config.json",
+						"tts": "$LARA/Content/an-t-oileanach-100short-cmg_dnn/corpus/local_config.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"swedish": {
+		"file": "$LARA/tmp/eurocall_swedish.csv",
+		"data": [ 
+					{   "id": "kallocain", 
+						"human": "$LARA/Content/kallocain/corpus/local_config.json",
+						"tts": "$LARA/Content/kallocain/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 3.5
+					}
+				]
+	},
+	"farsi": {
+		"file": "$LARA/tmp/eurocall_farsi.csv",
+		"data": [ 
+					{   "id": "farsi_book_3", 
+						"human": "$LARA/Content/novin_farsi_3/corpus/local_config.json",
+						"tts": "$LARA/Content/novin_farsi_3/corpus/local_config_tts.json",
+						"word_time": 0.5,
+						"segment_time": 1.5
+					},
+					{   "id": "farsi_book_4", 
+						"human": "$LARA/Content/novin_farsi_4/corpus/local_config.json",
+						"tts": "$LARA/Content/novin_farsi_4/corpus/local_config_tts.json",
+						"word_time": 0.0,
+						"segment_time": 1.5
+					}
+				]
+	}
+}
+	  
+
+

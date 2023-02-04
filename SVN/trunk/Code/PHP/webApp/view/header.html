@@ -1,0 +1,25 @@
+<header>
+  <nav class="nav-header-main">
+    <a class="header-logo" href="index.php">
+      <img src="../img/logo.ico" alt="mmtuts logo">
+    </a>
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="https://www.unige.ch/callector/" target="_blank">Callector</a></li>
+    </ul>
+  </nav>
+  <div class="header-login">
+
+      <form action="../data/User.data.php" method="post" id="LoginForm" name="LoginForm">
+        <input type="text" name="UserNameEmail" id="UserNameEmail" placeholder="E-mail/Username">
+        <input type="password" name="UserPassword" id="UserPassword" placeholder="Password">
+        <button type="submit" name="LoginSubmit" id="LoginSubmit">Login</button>
+      </form>
+    <p id="ForgetPass" class="header-forgetpass">Forget Password?</p>
+    <p id="SignUpText" class="header-signup">Signup</p>
+  </div>
+
+</header>
+
+<div align="center" class="loginerror" id="loginResponseMsg"></div>
+

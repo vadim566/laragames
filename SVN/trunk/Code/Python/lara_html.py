@@ -1,4 +1,6 @@
 
+import lara_top
+import lara_abstract_html
 import lara_translations
 import lara_audio
 import lara_utils
@@ -28,15 +30,17 @@ def hyperlinked_text_file_header_old(FirstMainFile, Params):
 		f'<title>{hyperlinked_text_title(Params)}</title>',
 	    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">',
 		link_to_css_files(Params),
-		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
+	    #'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
+            link_to_jquery(Params),
 	    '<script language="javascript" type="text/javascript">',
-        hyperlinked_text_file_scriptfunction(Params),
-	    '</script>',
-	    '</head>',
+            hyperlinked_text_file_scriptfunction(Params),
+	    '</script>'] + \
+            maphilight_scripts(Params) + \
+	    ['</head>',
 	    '<body class="noscroll">',
-        f'{aux_frame_div(Params)}',
+            f'{aux_frame_div(Params)}',
 	    '',
-        f'{div_split_main_text_tag(FirstMainFile, Params)}']
+            f'{div_split_main_text_tag(FirstMainFile, Params)}']
 
 def hyperlinked_text_file_header_new(FirstMainFile, Params):
     return [f'{html_tag_for_vocab_pages(Params)}',  
@@ -44,17 +48,41 @@ def hyperlinked_text_file_header_new(FirstMainFile, Params):
 		f'<title>{hyperlinked_text_title(Params)}</title>',
 	    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">',
 		link_to_css_files(Params),
-		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
+		link_to_jquery(Params),
 	    '<script language="javascript" type="text/javascript">',
-        hyperlinked_text_file_scriptfunction(Params),
-	    '</script>',
-	    '</head>',
+            hyperlinked_text_file_scriptfunction(Params),
+	    '</script>'] + \
+            maphilight_scripts(Params) + \
+	    ['</head>',
 	    '<body class="noscroll">',
         #f'{aux_frame_div(Params)}',
 	#    '',
         #f'{div_split_main_text_tag(FirstMainFile, Params)}'
         iframe_main_text_tag(FirstMainFile, Params)
             ]
+            
+##def maphilight_scripts(Params):
+##    if Params.picturebook == 'yes':
+##        return [
+##            #"<script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>",
+##            "<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.2/jquery.maphilight.js'></script>",
+##                '<script type="text/javascript">',
+##                '    $(document).ready(function () {',
+##                "        $('.map').maphilight({ strokeColor: '00ff00' });"
+##                '    });'  
+##                '</script>']
+##    else:
+##        return []
+
+def maphilight_scripts(Params):
+    return [
+        #"<script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>",
+        "<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.2/jquery.maphilight.js'></script>",
+            '<script type="text/javascript">',
+            '    $(document).ready(function () {',
+            "        $('.map').maphilight({ strokeColor: '00ff00' });"
+            '    });'  
+            '</script>']
 
 # Closing
 
@@ -63,42 +91,44 @@ def hyperlinked_text_file_closing(Params):
 
 # ------------------------------------------------
 
-def main_text_file_header(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params):
+def main_text_file_header(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params):
     #lara_utils.print_and_flush(f'--- main_text_file_header: Params.html_style = {Params.html_style}')
     if Params.html_style == 'old':
-        return main_text_file_header_old(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params)
+        return main_text_file_header_old(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params)
     elif Params.html_style == 'new':
-        return main_text_file_header_new(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params)
+        return main_text_file_header_new(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params)
     elif Params.html_style == 'social_network':
-        return main_text_file_header_social_network(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params)
+        return main_text_file_header_social_network(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params)
 
-def main_text_file_header_old(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params):
+def main_text_file_header_old(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params):
     return [f'{html_tag_for_vocab_pages(Params)}',  
 	    '<head>',
 	    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">',
-		link_to_css_files(Params),
-		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
-		link_to_script_files(Params),
+	    link_to_css_files(Params),
+	    link_to_jquery(Params)] + \
+            maphilight_scripts(Params) + \
+	    [link_to_script_files(Params),
 	    '</head>',
 	    '<body>',
 	    #Move to close to stop text jumping when audio is accessed
 	    #'<span id="audio_container" style="visibility: hidden;"></span>',
-	    main_text_toolbar(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params),
+	    main_text_toolbar(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params),
         '<div class="text_content main_text_page">'
 		]
 
-def main_text_file_header_new(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params):
+def main_text_file_header_new(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params):
     return [f'{html_tag_for_vocab_pages(Params)}',  
 	    '<head>',
 	    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">',
-		link_to_css_files(Params),
-		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
-		link_to_script_files(Params),
+	    link_to_css_files(Params),
+	    link_to_jquery(Params)] + \
+            maphilight_scripts(Params) + \
+	    [link_to_script_files(Params),
 	    '</head>',
 	    '<body>',
 	    #Move to close to stop text jumping when audio is accessed
 	    #'<span id="audio_container" style="visibility: hidden;"></span>',
-	    main_text_toolbar(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params),
+	    main_text_toolbar(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params),
         '<div class="split main_frame">',
         '<div class="text_content main_text_page">'
 		]
@@ -109,7 +139,7 @@ def main_text_file_header_new(PrecedingMainFile, FollowingMainFile, FirstMainFil
 ##		f'<title>{hyperlinked_text_title(Params)}</title>',
 ##	    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">',
 ##		link_to_css_files(Params),
-##		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>',
+##		link_to_jquery(Params),
 ##	    '<script language="javascript" type="text/javascript">',
 ##        hyperlinked_text_file_scriptfunction(Params),
 ##	    '</script>',
@@ -121,7 +151,7 @@ def main_text_file_header_new(PrecedingMainFile, FollowingMainFile, FirstMainFil
 ##        iframe_main_text_tag(FirstMainFile, Params)
 ##            ]
 
-def main_text_file_header_social_network(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params):
+def main_text_file_header_social_network(PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params):
     return []
 
 
@@ -164,7 +194,25 @@ def links_to_preceding_and_following_main_files(Preceding, Following, FirstMainF
     return f'{PrecedingLink} {FirstLink} {FollowingLink}'
 
 def link_to_table_of_contents(Params):
-    return f"<button id='button_toc' class='link_as_button' data-target='{lara_utils.split_screen_pane_name_for_word_page_screen(Params)}' data-href='_toc_.html'>{lara_config.get_ui_text('table_of_contents', Params)}</button>"
+    DataTarget = lara_utils.split_screen_pane_name_for_word_page_screen(Params)
+    ButtonText = lara_config.get_ui_text('table_of_contents', Params)
+    return f"<button id='button_toc' class='link_as_button' data-target='{DataTarget}' data-href='_toc_.html'>{ButtonText}</button>"
+
+def link_to_frequency_list(FreqFile, Params):
+    if Params.frequency_lists_in_main_text_page == 'yes':
+        DataTarget = lara_utils.split_screen_pane_name_for_main_text_screen(Params)
+    else:
+        DataTarget = lara_utils.split_screen_pane_name_for_word_page_screen(Params)
+    ButtonText = lara_config.get_ui_text('frequency_index', Params)
+    return f"<button id='button_toc' class='link_as_button' data-target='{DataTarget}' data-href='{FreqFile}'>{ButtonText}</button>"
+    
+def link_to_alphabetical_list(AlphabetFile, Params):
+    if Params.frequency_lists_in_main_text_page == 'yes':
+        DataTarget = lara_utils.split_screen_pane_name_for_main_text_screen(Params)
+    else:
+        DataTarget = lara_utils.split_screen_pane_name_for_word_page_screen(Params)
+    ButtonText = lara_config.get_ui_text('alphabetical_index', Params)
+    return f"<button id='button_toc' class='link_as_button' data-target='{DataTarget}' data-href='{AlphabetFile}'>{ButtonText}</button>"
 
 def hyperlinked_text_file_scriptfunction(Params):
     return """
@@ -258,11 +306,21 @@ def bookmark_scriptfunction(Params):
         });
     """
 
-def main_text_toolbar(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params):
+def main_text_toolbar(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile, CountFile, AlphabeticalFile, Params):
     toolbar_left   = ( '' if Params.toggle_translation_button != 'yes' else f'<button id="button_seg_trans_toggle">{lara_config.get_ui_text("toggle_translation_button", Params)}</button>' )
     toolbar_center = links_to_preceding_and_following_main_files(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params)
     if Params.allow_table_of_contents == 'yes':
-        toolbar_center = toolbar_center + " "+ link_to_table_of_contents( Params )
+        toolbar_center = toolbar_center + " " + link_to_table_of_contents( Params )
+    if Params.frequency_list_link_in_nav_bar == 'yes':
+        toolbar_center = toolbar_center + " " + link_to_frequency_list( CountFile, Params )
+    if Params.alphabetical_list_link_in_nav_bar == 'yes':
+        toolbar_center = toolbar_center + " " + link_to_alphabetical_list( AlphabeticalFile, Params )
+    if Params.parallel_version_id != '' and Params.parallel_version_label != '':
+        toolbar_center = toolbar_center + " " + link_to_parallel_version( PageName, Params )
+    if Params.parallel_version_id2 != '' and Params.parallel_version_label2 != '':
+        toolbar_center = toolbar_center + " " + link_to_parallel_version2( PageName, Params )
+    if Params.parallel_version_id3 != '' and Params.parallel_version_label3 != '':
+        toolbar_center = toolbar_center + " " + link_to_parallel_version3( PageName, Params )
     toolbar_right  = '' if Params.allow_bookmark != 'yes' else f'<button id="button_gotobookmark">{lara_config.get_ui_text("goto_bookmark", Params)}</button> <button id="button_setbookmark">{lara_config.get_ui_text("set_bookmark", Params)}</button>'
     if Params.for_reading_portal == 'yes' or not toolbar_left and not toolbar_center and not toolbar_right:
     #if Params.for_reading_portal == 'yes_but_commented_out_for_now' or not toolbar_left and not toolbar_center and not toolbar_right:
@@ -276,6 +334,23 @@ def main_text_toolbar(PrecedingMainFile, FollowingMainFile, FirstMainFile, Param
 	    <div id="afterToolbar"></div>
         """
         # empty <p> at the end so that the fixed toolbar does not overlap with the actual text!
+
+# <button id='button_toc' class='link_as_button' data-href='../le_petit_prince_abcvocabpages/_main_text_le_petit_prince_abc_2.html'>Semantic version</button>
+
+def link_to_parallel_version(PageName, Params):
+    RelativeDir = f"../{lara_top.lara_short_compiled_dir_for_id('word_pages_directory', Params.parallel_version_id)}"
+    FileName = lara_abstract_html.short_name_of_main_text_file(Params.parallel_version_id, PageName)
+    return f"<button id='button_toc' class='link_as_button' data-href='{RelativeDir}/{FileName}'>{Params.parallel_version_label}</button>"
+
+def link_to_parallel_version2(PageName, Params):
+    RelativeDir = f"../{lara_top.lara_short_compiled_dir_for_id('word_pages_directory', Params.parallel_version_id2)}"
+    FileName = lara_abstract_html.short_name_of_main_text_file(Params.parallel_version_id2, PageName)
+    return f"<button id='button_toc' class='link_as_button' data-href='{RelativeDir}/{FileName}'>{Params.parallel_version_label2}</button>"
+
+def link_to_parallel_version3(PageName, Params):
+    RelativeDir = f"../{lara_top.lara_short_compiled_dir_for_id('word_pages_directory', Params.parallel_version_id3)}"
+    FileName = lara_abstract_html.short_name_of_main_text_file(Params.parallel_version_id3, PageName)
+    return f"<button id='button_toc' class='link_as_button' data-href='{RelativeDir}/{FileName}'>{Params.parallel_version_label3}</button>"
 
 def init_scriptfunction(Params):
     return """
@@ -512,6 +587,20 @@ def hyperlinked_text_title(Params):
         return Params.title # Custom Title from config
     return f'LARA &ndash; {Params.id}' # Default Title "LARA - ID"
 
+def link_to_jquery(Params):
+    jQuerySource = Params.jquery_downloaded_from
+    if not jQuerySource in lara_config._jquery_source_values:
+        lara_utils.print_and_flush(f'*** Error: unknown value "{jQuerySource}" for Params.jquery_downloaded_from. Permitted values: {lara_config._jquery_source_values}')
+        return ''
+    if jQuerySource == 'google':
+        return '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>'
+    elif jQuerySource == 'cloudflare':
+        return '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>'
+    # Shouldn't get here
+    else:
+        lara_utils.print_and_flush(f'*** Error: unknown value "{jQuerySource}" for Params.jquery_downloaded_from. Permitted values: {lara_config._jquery_source_values}')
+        return ''
+
 def link_to_css_files(Params):
     cssFiles = '<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" />'
     if Params.css_file != '':
@@ -592,10 +681,16 @@ def word_page_lines_closing_standalone(CountFile, AlphabeticalFile, NotesFile, P
     if NotesFile == False or not lara_translations.notes_are_defined():
         NotesLine = ''
     else:
-        NotesLine = f'<p><a href="{NotesFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("notes", Params)}</u></i></a></p>'   
+        NotesLine = f'<p><a href="{NotesFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("notes", Params)}</u></i></a></p>'
+    if Params.frequency_lists_hidden == 'no':
+        CountFileLine = f'<p><a href="{CountFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("frequency_index", Params)}</u></i></a></p>'
+        AlphabeticalFileLine = f'<p><a href="{AlphabeticalFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("alphabetical_index", Params)}</u></i></a></p>'
+    else:
+        CountFileLine = ''
+        AlphabeticalFileLine = ''
     return [NotesLine,
-            f'<p><a href="{CountFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("frequency_index", Params)}</u></i></a></p>',
-            f'<p><a href="{AlphabeticalFile}" target="{ScreenName}"><i><u>{lara_config.get_ui_text("alphabetical_index", Params)}</u></i></a></p>',
+            CountFileLine,
+            AlphabeticalFileLine,
             #'<span id="audio_container" style="visibility: hidden;"></span>',
             '<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>',
             '</div>',

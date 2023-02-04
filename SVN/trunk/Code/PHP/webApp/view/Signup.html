@@ -1,0 +1,13 @@
+<h1>Sign Up</h1>
+<form class="form-signup"  method="post" id="SignupForm" name="SignupForm">
+    <input type="text" name="UserName" id="UserName" placeholder="Username" >
+    <input type="text" name="Email" id="Email" placeholder="E-mail">
+    <input type="password" name="Password" id="Password" placeholder="Password">
+    <input type="password" name="PwdRepeat" id="PwdRepeat" placeholder="Repeat password">
+    <br/>
+    <p class="termOfUse">By clicking Sign Up, you agree to our <a href="../SharedModules/TermsOfUse.pdf" target="_blank">Terms of Use</a></p>
+    <br/>
+    <button type="button" name="SignupSubmit" id="SignupSubmit" onclick="SendSignupForm()">Signup</button>
+    <div id="signupResponseMsg"></div>
+</form>
+

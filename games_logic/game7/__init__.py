@@ -14,13 +14,19 @@ def game7(story_name):
 
     """get random sentance"""
     size_of_story =  len(sentance)-1
-    rand_index = random.randint(0, size_of_story)
+    sentence_len_size = 4
+    sentence_len = True
+    while sentence_len:
+        rand_index = random.randint(0, size_of_story)
 
-    """gather 4 random index for 4 wrong answers """
-    rand_i = random.sample(range(0, size_of_story), 4)
 
-    true_match = [sentance[rand_index], sounds[rand_index]]
+        """gather 4 random index for 4 wrong answers """
+        rand_i = random.sample(range(0, size_of_story), 4)
 
+        true_match = [sentance[rand_index], sounds[rand_index]]
+        split_setance = true_match[0].split(" ", sentence_len_size)
+        if len(split_setance) >= sentence_len_size:
+            sentence_len = False
 
     # count the words in the sentance
     words_ct = true_match[0].count(" ")

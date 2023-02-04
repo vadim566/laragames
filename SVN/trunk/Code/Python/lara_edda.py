@@ -7,8 +7,9 @@ import lara_config
 import lara_old_norse
 import lara_utils
 import xml.etree.ElementTree as ET
+import copy
 
-##    import lara_edda
+##       import lara_edda
 ##    lara_edda = importlib.reload(lara_edda)
 ##    poems = lara_edda.get_poems()
 ##    first_poem = poems[0]
@@ -464,4 +465,97 @@ def add_new_onp_entries():
                 ONPData[Lemma] = [ { 'pos': POS } ]
     lara_utils.write_json_to_file(ONPData, extended_onp_index_file)
     lara_utils.print_and_flush(f'--- Written new ONP data, {len(ONPData.keys())} items, to {extended_onp_index_file}')
-        
+
+# ------------------------------------
+
+_master_configs_for_sticking_together = { 'english': '$LARA/Content/edda_combined3/corpus/local_config.json',
+                                          'icelandic': '$LARA/Content/edda_combined3/corpus/local_config_is.json' }
+
+##    Völuspá
+##    Hávamál
+##    Vafþrúðnismál
+##    Grímnismál
+##    Skírnismál 
+##    Hárbarðslióð
+##    Hýmiskviða
+##    Lokasenna
+##    Þrymskviða
+##    Alvíssmál
+
+_list_of_subprojects_dirs = [ '$LARA/Content/völuspá',
+                              '$LARA/Content/hávamál5',
+                              '$LARA/Content/Vafþrúðnismál_English',
+                              '$LARA/Content/Grímnismál_English',
+                              '$LARA/Content/Skírnismál2',
+                              '$LARA/Content/Hárbarðsljóð_English',
+                              '$LARA/Content/Hymiskviða_English',
+                              '$LARA/Content/Lokasenna_English_v2',
+                              '$LARA/Content/Þrymskviða_English',
+                              '$LARA/Content/alvíssmál_en' ]
+
+##   For each directory
+##   - create IS config file
+##   - resources on IS config file
+##   - word_pages on IS config file
+  
+##   Create IS version of combined file
+##   
+##   Combine IS versions using adapted version of EN combination code
+##   Name of config file: add "_isl" to EN name.
+##       
+##   "id": add "_is"
+##   "segment_translation_mouseover": set to "no"
+##   "segment_translation_spreadsheet": change "english.csv" to "icelandic.csv"
+##   "translation_spreadsheet_surface": change "english.csv" to "icelandic.csv"
+##   "translation_spreadsheet_tokens": change "english.csv" to "icelandic.csv"
+
+def create_all_icelandic_config_files():
+    for Dir in _list_of_subprojects_dirs: 
+        create_icelandic_config_file(Dir)
+
+def make_all_icelandic_resources():
+    for Dir in _list_of_subprojects_dirs:
+        perform_resources_step_for_dir(Dir, 'icelandic')
+
+def make_all_icelandic_word_pages():
+    for Dir in _list_of_subprojects_dirs:
+        perform_word_pages_step_for_dir(Dir, 'icelandic')
+
+# - Stick together subprojects into single HTML
+def stick_together_subprojects(Language):
+    import lara_abstract_html
+    MasterConfigFile = _master_configs_for_sticking_together[Language]
+    ComponentDirs = _list_of_subprojects_dirs
+    ComponentConfigFiles = [ config_file_for_dir(Dir, Language) for Dir in ComponentDirs ]
+    lara_abstract_html.abstract_html_to_html_multiple(MasterConfigFile, ComponentConfigFiles)
+
+def create_icelandic_config_file(Dir):
+    ConfigFileEN = config_file_for_dir(Dir, 'english')
+    ConfigFileIS = config_file_for_dir(Dir, 'icelandic')
+    ContentEN = lara_utils.read_json_file(ConfigFileEN)
+    ContentIS = copy.copy(ContentEN)
+    ContentIS['id'] = ContentEN['id'] + '_is'
+    ContentIS['segment_translation_mouseover'] = 'no'
+    ContentIS['segment_translation_spreadsheet'] = ContentEN['segment_translation_spreadsheet'].replace('english.csv', 'icelandic.csv')
+    ContentIS['translation_spreadsheet_surface'] = ContentEN['translation_spreadsheet_surface'].replace('english.csv', 'icelandic.csv')
+    ContentIS['translation_spreadsheet_tokens'] = ContentEN['translation_spreadsheet_tokens'].replace('english.csv', 'icelandic.csv')
+    lara_utils.write_json_to_file(ContentIS, ConfigFileIS)
+    lara_utils.print_and_flush(f'--- Written Iceland config file for {Dir}')
+
+def perform_resources_step_for_dir(Dir, Language):
+    ConfigFile = config_file_for_dir(Dir, Language)
+    lara_top.compile_lara_local_resources(ConfigFile)
+
+def perform_word_pages_step_for_dir(Dir, Language):
+    ConfigFile = config_file_for_dir(Dir, Language)
+    lara_top.compile_lara_local_word_pages(ConfigFile)
+                             
+def config_file_for_dir(Dir, Language):
+    if Language == 'english':
+        return f'{Dir}/corpus/local_config.json'
+    elif Language == 'icelandic':
+        return f'{Dir}/corpus/local_config_is.json'
+    else:
+        lara_utils.print_and_flush(f'*** Error: unknown language "{Language}"')
+        return False
+    

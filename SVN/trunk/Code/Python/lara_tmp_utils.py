@@ -1,8 +1,12 @@
 
 import lara_translations
+import lara_audio
 import lara_config
+import lara_split_and_clean
+import lara_picturebook
 import lara_utils
 import csv
+import os
 
 def convert_csv_from_quotes_to_no_quotes(InFile, OutFile):
     Content = lara_utils.read_lara_csv_specifying_quoting(InFile, 'quotes')
@@ -255,4 +259,186 @@ def read_csv(pathname, encoding, delimiter, Quotes):
         lara_utils.print_and_flush(str(e))
         return False 
 
+def copy_farsi_doc_imgs():
+    ImgList = ["Start.jpg", "Signup.jpg", "LPPortalTopLevel.jpg",
+               "CrowdsourcingDashboard.jpg", "AvailableTasks1.jpg",
+               "AvailableTasks2.jpg", "MyLARATexts.jpg", "LPChapterProject.jpg",
+               "CreateResourcesSucceeded.jpg", "LPFillOutResourcesTranslation.jpg",
+               "LPSegmentTranslation.jpg", "LPSegmentTranslationControls.jpg",
+               "LPFillOutResourcesTranslation.jpg", "LPTokenTranslation.jpg",
+               "AssignRecordingVoice.jpg", "Recording1.jpg", "Recording2.jpg",
+               "LogInToLDT.jpg", "LDT1.jpg", "LDT2.jpg", "LDTRecordingSegments.jpg",
+               "LPCreatePages1.jpg", "LPCreatePages2.jpg", "LPPreview.jpg",
+               "LPPTranslationAudioNoteSettings1.jpg", "LPPTranslationAudioNoteSettings2.jpg",
+               "LPPTranslationAudioNoteSettings3.jpg", "LPReturningTask.jpg"]
+    Dir = '$LARA/Doc/LARAFarsiLPDoc/source/_static'
+    Dir1 = '$LARA/Doc/LARAFarsiLPDoc/source/_static1'
+    for Img in ImgList:
+        lara_utils.copy_file(f'{Dir}/{Img}', f'{Dir1}/{Img}')
+
+def combray_pairs_file_to_text_file():
+    PairsFile = '$LARA/Content/combray/corpus/combray_full_word_pairs.json'
+    TextFile = '$LARA/Content/combray/corpus/combray_for_alignment.txt'
+    pairs_file_to_text_for_alignment(PairsFile, TextFile)
+    
+        
+def pairs_file_to_text_for_alignment(PairsFile, TextFile):
+    PairsData = lara_utils.read_json_file(PairsFile)
+    Text = ''
+    for ( PageInfo, Pairs ) in PairsData:
+        #Text += '<page>'
+        Text += ''.join([ Pair[1] for Pair in Pairs ])
+    lara_utils.write_lara_text_file(Text, TextFile)
+
+def remove_ch1_from_pitj_audio():
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help.json'
+    FileNoCh1 = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help_no_ch1.json'
+    Metadata = lara_utils.read_json_file(File)
+    MetadataNoCh1 = [ Item for Item in Metadata if not '_ch1_' in Item['file'] ]
+    lara_utils.write_json_to_file_plain_utf8(MetadataNoCh1, FileNoCh1)
+    
+def remove_ch14_from_pitj_audio():
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help.json'
+    FileNoCh14 = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help_no_ch14.json'
+    Metadata = lara_utils.read_json_file(File)
+    MetadataNoCh14 = [ Item for Item in Metadata if not 'ch14' in Item['file'] ]
+    lara_utils.write_json_to_file_plain_utf8(MetadataNoCh14, FileNoCh14)
+
+def remove_ch12_from_pitj_audio():
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help.json'
+    FileNoCh12 = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help_no_ch12.json'
+    Metadata = lara_utils.read_json_file(File)
+    MetadataNoCh12 = [ Item for Item in Metadata if not 'ch12' in Item['file'] ]
+    lara_utils.write_json_to_file_plain_utf8(MetadataNoCh12, FileNoCh12)
+
+def plain_utf8_pitj_metadata():
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice/metadata_help.json'
+    Metadata = lara_utils.read_json_file(File)
+    lara_utils.write_json_to_file_plain_utf8(Metadata, File)
+        
+def make_pitj_only_audio_dir():
+    ConfigFile = '$LARA/Content/pitjantjatjara_course/corpus/local_config_cover.json'
+    Params = lara_config.read_lara_local_config_file(ConfigFile)
+    CleanedSegments = get_cleaned_segments(Params)
+    lara_utils.print_and_flush(f'--- Found {len(CleanedSegments)} segments')
+    CleanedWords = get_cleaned_words(Params)
+    lara_utils.print_and_flush(f'--- Found {len(CleanedWords)} surface words')
+    CleanedSegmentsAndWordsDict = { Item:True for Item in CleanedSegments + CleanedWords }
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed/metadata_help.json'
+    Metadata = lara_utils.read_json_file(File)
+    lara_utils.print_and_flush(f'--- Found {len(Metadata)} items of metadata')
+    RelevantMetadata = [ Item for Item in Metadata
+                         if Item['text'] in CleanedSegmentsAndWordsDict ]
+    lara_utils.print_and_flush(f'--- Found {len(RelevantMetadata)} relevant items of metadata')
+    AudioDir = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed'
+    AudioDirFiltered = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed_filtered'
+    lara_utils.create_directory_if_it_doesnt_exist(AudioDirFiltered)
+    for Item in RelevantMetadata:
+        File = Item['file']
+        lara_utils.copy_file(f'{AudioDir}/{File}', f'{AudioDirFiltered}/{File}')
+    lara_audio.write_ldt_metadata_file(RelevantMetadata, AudioDirFiltered)
+
+def total_audio_length_pitj():
+    File = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed_filtered/metadata_help.json'
+    Metadata = lara_utils.read_json_file(File)
+    Dir = '$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed_filtered'
+    TotalLength = sum([ lara_utils.length_of_mp3(f'{Dir}/{Item["file"]}') for Item in Metadata ]) / 3600
+    lara_utils.print_and_flush(f'--- Total length of audio: {TotalLength:.2f} hours')
+
+def get_cleaned_segments(Params):
+    SplitFileData = lara_split_and_clean.read_split_file('', Params)
+    CleanedSegments = []
+    for ( PageInfo, Segments ) in SplitFileData:
+        for Chunk in Segments:
+            if lara_picturebook.is_annotated_image_segment(Chunk):
+                InnerChunks = lara_picturebook.annotated_image_segments(Chunk)
+                for Chunk in InnerChunks:
+                    CleanedSegments += [ Chunk[1] ]
+            else:
+                CleanedSegments += [ Chunk[1] ]
+    return lara_utils.remove_duplicates(CleanedSegments)
+
+def get_cleaned_words(Params):
+    SplitFileData = lara_split_and_clean.read_split_file('', Params)
+    CleanedWords = []
+    for ( PageInfo, Segments ) in SplitFileData:
+        for Chunk in Segments:
+            if lara_picturebook.is_annotated_image_segment(Chunk):
+                InnerChunks = lara_picturebook.annotated_image_segments(Chunk)
+                for Chunk in InnerChunks:
+                    CleanedWords += [ lara_audio.make_word_canonical_for_word_recording(Pair[0])
+                                      for Pair in Chunk[2] if Pair[1] != '' ] 
+            else:
+                CleanedWords += [ lara_audio.make_word_canonical_for_word_recording(Pair[0])
+                                  for Pair in Chunk[2] if Pair[1] != '' ] 
+    return lara_utils.remove_duplicates(CleanedWords)
+  
+def rename_mp3s_in_dir_to_include_artist_name(Dir):
+    import eyed3
+    if not lara_utils.directory_exists(Dir):
+        lara_utils.print_and_flush(f'*** Error: unable to find directory {Dir}')
+        return
+    convert_wmas_to_mp3s(Dir)
+    AbsDir = lara_utils.absolute_file_name(Dir)
+    Files = lara_utils.file_members_of_directory(Dir)
+    N = 0
+    for File in Files:
+        FullFile = f'{Dir}/{File}'
+        if lara_utils.extension_for_file(File) == 'mp3':
+            Audiofile = eyed3.load(FullFile)
+            ArtistName = Audiofile.tag.artist if Audiofile.tag != None else None
+            if ArtistName != None and File.startswith(ArtistName):
+                lara_utils.print_and_flush(f'*** Warning "{File}" already starts with "{ArtistName}", not renaming')
+            else:
+                File1 = f'{ArtistName} {File}'
+                FullFile1 = f'{Dir}/{File1}'
+                os.rename(FullFile, FullFile1)
+                lara_utils.print_and_flush(f'--- Renamed "{File}" to "{File1}"')
+                N += 1
+    lara_utils.print_and_flush(f'--- Renamed {N} files')
+
+def convert_wmas_to_mp3s(Dir):
+    AbsDir = lara_utils.absolute_file_name(Dir)
+    Files = lara_utils.file_members_of_directory(Dir)
+    N = 0
+    for File in Files:
+        if lara_utils.extension_for_file(File) == 'wma':
+            if convert_wma_to_mp3(Dir, File):
+                N += 1
+    lara_utils.print_and_flush(f'--- Converted {N} files')
+    
+def convert_wma_to_mp3(Dir, File):
+    ( BaseFile, OldExtension ) = split_pathname_into_base_file_and_extension(File)
+    FullFile = f'{Dir}/{File}'
+    FullFileTo = f'{Dir}/{BaseFile}.mp3'
+    if lara_utils.file_exists(FullFileTo):
+        lara_utils.print_and_flush(f'*** Warning: "{FullFile}" already converted to "{FullFileTo}"')
+        return True
+    Command = f'ffmpeg -i "{FullFile}" -b:a 50k -ar 48000 "{FullFileTo}"'
+    Result = execute_ffmpeg_command(Command, FullFileTo, lara_config.default_params())
+    if Result:
+        lara_utils.print_and_flush(f'--- Converted "{FullFile}" to "{FullFileTo}"')
+        return True
+    else:
+        lara_utils.print_and_flush(f'\n*** Warning: unable to convert {FullFile}')
+        lara_utils.print_and_flush(f'*** with command {Command}')
+        return False
+
+def execute_ffmpeg_command(Command, OutFile, Params):
+    lara_utils.delete_file_if_it_exists(OutFile)
+    Status = lara_utils.execute_lara_os_call(Command, Params)
+    if Status == 0:
+        return True
+    else:
+        return False
+
+def split_pathname_into_base_file_and_extension(File):
+    Components = File.split('.')
+    if len(Components) == 1:
+        return ( File, '')
+    else:
+        return ( '.'.join(Components[:-1]), Components[-1] )
+
+            
+    
 

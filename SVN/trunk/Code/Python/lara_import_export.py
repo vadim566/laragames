@@ -102,6 +102,8 @@ def process_config_element_for_export(Key, Params, TmpDir):
         return process_mwe_defs_file_for_export(Value, TmpDir)
     elif Key == 'mwe_annotations_file':
         return process_mwe_annotations_file_for_export(Value, TmpDir)
+    elif Key == 'picturebook_word_locations_file':
+        return process_word_locations_file_for_export(Value, TmpDir)
     else:
         return Value
 
@@ -207,6 +209,15 @@ def process_mwe_annotations_file_for_export(AnnotationsFile, TmpDir):
         return '*irrelevant*'
     BaseName = lara_utils.base_name_for_pathname(AnnotationsFile)
     copy_file_and_trace(AnnotationsFile, f'{TmpDir}/corpus/{BaseName}')
+    return f'*CORPUS_DIR*/corpus/{BaseName}'
+
+def process_word_locations_file_for_export(WordLocationsFile, TmpDir):
+    print_and_trace(f'--- Copying word locations file: {WordLocationsFile}')
+    if WordLocationsFile == '':
+        print_and_trace(f'--- Not processing because null value')
+        return '*irrelevant*'
+    BaseName = lara_utils.base_name_for_pathname(WordLocationsFile)
+    copy_file_and_trace(WordLocationsFile, f'{TmpDir}/corpus/{BaseName}')
     return f'*CORPUS_DIR*/corpus/{BaseName}'
 
 # ----------------------------------------------

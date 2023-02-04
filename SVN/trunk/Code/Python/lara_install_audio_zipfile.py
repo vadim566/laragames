@@ -213,7 +213,10 @@ def clean_audio_metadata(Metadata):
             NKept += 1
         # else replace the old one, since the later entries take precedence
         else:
+            #OldMetadataItem = LinesOutDict[Key]
+            #lara_utils.print_and_flush(f"--- Removing metadata for key '{Key}': {OldMetadataItem}")
             LinesOutDict[Key] = MetadataItem
+            #lara_utils.print_and_flush(f"---      New metadata for key '{Key}': {MetadataItem}")
             NRemoved += 1
         # If we have an item with a context, and we previously had the same item with no context, remove the old item
         if Context != '' and Text in LinesOutDict:
@@ -342,10 +345,10 @@ def convert_lara_audio_directory_file_to_mp3(File, Dir, Dir1, Params):
     # If it's already an mp3, just copy it
     if OldExtension.lower() == 'mp3':
         return lara_utils.copy_file(FullFile, FullFileTo)
-    # If it's a wav file, convert it
+    # If it's a wav or an m4a file, convert it
     # Set sampling rate to a uniform 48000 so that we can concatenate mp3s if necessary
-    elif OldExtension.lower() == 'wav':
-        Command = f'ffmpeg -i {FullFile} -b:a 50k -ar 48000 {FullFileTo}'
+    elif OldExtension.lower() in ( 'wav', 'm4a' ):
+        Command = f'ffmpeg -i "{FullFile}" -b:a 50k -ar 48000 "{FullFileTo}"'
         Result = execute_ffmpeg_command(Command, FullFileTo, Params)
         if Result:
             return True

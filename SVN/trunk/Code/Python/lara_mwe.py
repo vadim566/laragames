@@ -1,11 +1,13 @@
 
 import lara_top
+import lara_picturebook
 import lara_transform_tagged_file
 import lara_config
 import lara_split_and_clean
 import lara_parse_utils
 import lara_utils
 import copy
+import re
 
 # TODO:
 # (interesting part) develop methods for filtering false positives - ML?
@@ -173,6 +175,18 @@ def test_mwe(Id):
         OutFile = '$LARA/tmp_resources/the_little_prince_mwe_annotated.docx'
         HTMLTraceFile = '$LARA/tmp_resources/the_little_prince_mwe_trace.html'
         apply_marked_mwes_in_split_file(InFile, JSONTraceFile, OutFile, HTMLTraceFile, Params)
+    elif Id == 'convert_combray_mwes':
+        JSONFileIn = '$LARA/tmp_resources/combray_double_align_tmp_mwe_annotations.json'
+        TextFile = '$LARA/tmp_resources/combray_double_align_tmp_mwe_annotations_summary_edited.txt'
+        JSONFileOut = '$LARA/Content/combray/corpus/mwe_annotations_double_align.json'
+        N = 1000000
+        update_mwe_json_file_from_mwe_text_file(JSONFileIn, TextFile, JSONFileOut, N)
+    elif Id == 'convert_combray_mwes_small':
+        JSONFileIn = '$LARA/tmp_resources/combray_segmented_by_audio_small_tmp_mwe_annotations.json'
+        TextFile = '$LARA/tmp_resources/combray_segmented_by_audio_small_tmp_mwe_annotations_summary.txt'
+        JSONFileOut = '$LARA/Content/combray/corpus/mwe_annotations_small.json'
+        N = 1000000
+        update_mwe_json_file_from_mwe_text_file(JSONFileIn, TextFile, JSONFileOut, N)
 
 # Internalise and store MWE file.
 def load_mwe_file(File):
@@ -269,8 +283,16 @@ def mwe_matches_file_to_summary(JSONTraceFile, SummaryFile):
 def summarise_mwe_match_record_as_html_para(Record):
     MatchText = Record['match']
     MWE = Record['mwe']
+    OK = Record['ok']
     HighlightedMWE = emphasize_for_trace(MWE, 'html')
-    return f'<p>{MatchText} [{HighlightedMWE}]</p>'
+    #return f'<p>{MatchText} [{HighlightedMWE}]</p>'
+    return f'<p>{OK} | {HighlightedMWE} | {MatchText}</p>'
+
+def read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params):
+    SplitFileData0 = read_split_file_applying_mwes_if_possible(Params)
+    if SplitFileData0 == False:
+        return False
+    return lara_picturebook.expand_annotated_images_in_split_list(SplitFileData0)
 
 def read_split_file_applying_mwes_if_possible(Params):
     CorpusFile = Params.corpus
@@ -372,11 +394,15 @@ def apply_marked_mwes_in_page_oriented_split_list(InList, Assoc, Params):
     return ( OutPages, AllTraces )
 
 def mark_mwes_in_page(InPage, PreviousJudgementsAssoc, Params):
+    #lara_utils.print_and_flush(f'--- mark_mwes_in_page({InPage}, {PreviousJudgementsAssoc}, Params)')
     ( PageInfo, InSegments ) = InPage
     TracesList = [ mark_mwes_in_segment(Segment, PreviousJudgementsAssoc, Params) for Segment in InSegments ]
-    if TracesList == False:
+    #lara_utils.print_and_flush(f'--- TracesList = {TracesList}')
+    if TracesList == False or False in TracesList:
+        #lara_utils.print_and_flush(f'--- Return False')
         return False
     AllTraces = [ TraceElement for Trace in TracesList for TraceElement in Trace ]
+    #lara_utils.print_and_flush(f'--- Return {AllTraces}')
     return AllTraces
 
 def apply_marked_mwes_in_page(InPage, Assoc, Params):
@@ -389,18 +415,30 @@ def apply_marked_mwes_in_page(InPage, Assoc, Params):
     return ( OutPage, AllTraces )
 
 def mark_mwes_in_segment(InSegment, PreviousJudgementsAssoc, Params):
+    #lara_utils.print_and_flush(f'--- mark_mwes_in_segment({InSegment}, {PreviousJudgementsAssoc}, Params)')
+    MaxGaps = Params.mwe_max_gaps
+    if lara_picturebook.is_annotated_image_segment(InSegment):
+        InSegments = lara_picturebook.annotated_image_segments(InSegment)
+        TracesList = [ mark_mwes_in_segment(InSegment, PreviousJudgementsAssoc, Params)
+                       for InSegment in InSegments ]
+        if False in TracesList:
+            #lara_utils.print_and_flush(f'--- Return False')
+            return False
+        AllTraces = [ TraceElement for Trace in TracesList for TraceElement in Trace ]
+        return AllTraces
     ( Raw, Clean, Words, Tag ) = InSegment
     WordsWithPOS = [ word_lemma_pair_to_triple(Item) for Item in Words ]
     RegularisedWordsWithPOS = [ regularise_word_lemma_pair(Item) for Item in Words ]
     if Words == False:
         lara_utils.print_and_flush(f'*** Error: bad surface/lemma list: {Words}')
+        #lara_utils.print_and_flush(f'--- Return False')
         return False
     AllTraces = []
     for I in range(0, len(RegularisedWordsWithPOS)):
         ( Surface0, Lemma0, POSTag ) = RegularisedWordsWithPOS[I]
         Surface = regularise_surface_word(Surface0)
         Lemma = regularise_lemma(Lemma0)
-        PossibleMatches = mwe_matches(Surface, Lemma, RegularisedWordsWithPOS, I)
+        PossibleMatches = mwe_matches(Surface, Lemma, RegularisedWordsWithPOS, I, MaxGaps)
         for Match in PossibleMatches:
             TraceElement = trace_line_for_match(Match, WordsWithPOS, Clean, 'json')
             #lara_utils.prettyprint(TraceElement)
@@ -415,6 +453,7 @@ def mark_mwes_in_segment(InSegment, PreviousJudgementsAssoc, Params):
                 AllTraces += [ change_judgement_in_trace(TraceElement, PreviousJudgement) ]
             else:
                 AllTraces += [ TraceElement ]
+    #lara_utils.print_and_flush(f'--- Return {AllTraces}')
     return AllTraces
 
 def word_lemma_pair_to_triple(Item):
@@ -441,6 +480,15 @@ def change_judgement_in_trace(TraceElement, Judgement):
     return TraceElement
 
 def apply_marked_mwes_in_segment(InSegment, Assoc, Params):
+    if lara_picturebook.is_annotated_image_segment(InSegment):
+        Image = lara_picturebook.annotated_image_image(InSegment)
+        InSegments = lara_picturebook.annotated_image_segments(InSegment)
+        OutSegmentsAndTraces = [ apply_marked_mwes_in_segment(InSegment, Assoc, Params)
+                                 for InSegment in InSegments ]
+        OutSegments = [ Item[0] for Item in OutSegmentsAndTraces ]
+        Traces = [ Item[1] for Item in OutSegmentsAndTraces ]
+        AllTraces = [ TraceElement for Trace in Traces for TraceElement in Trace ]
+        return ( lara_picturebook.make_annotated_image_segment(Image, OutSegments), AllTraces )
     ( Raw0, Clean0, Words0, Tag0 ) = InSegment
     Key = tuple( [ clean_word_for_mwe_record(Pair[0]) for Pair in Words0 ] )
     if Key not in Assoc:
@@ -536,7 +584,7 @@ def is_mwe_word_lemma_pair(Pair):
 def is_mwe_lemma(LemmaName):
     return LemmaName.startswith('mwe_part_')
  
-def mwe_matches(Surface, Lemma, Words, I):
+def mwe_matches(Surface, Lemma, Words, I, MaxGaps):
     # Allow overlapping matches in order to get negative training examples
     # If the current word is already part of an MWE, give up
     #if is_mwe_lemma(Lemma):
@@ -547,7 +595,7 @@ def mwe_matches(Surface, Lemma, Words, I):
     AllMWEDefs = SurfaceMWEDefs + LemmaMWEDefs + VirtualMWEDefs
     Matches = []
     for ( DefWords, Name, POS ) in AllMWEDefs:
-        Match = match_mwe_def(DefWords, Words, I, Name, POS)
+        Match = match_mwe_def(DefWords, Words, I, Name, POS, MaxGaps)
         if Match != False:
             Matches += [ Match ]
     return Matches
@@ -570,24 +618,28 @@ def beginning_of_mwe(Words, I, Lemma):
             return False
     return True
 
-def match_mwe_def(DefWords, Words, I, Name, POS):
-    IndexListRest = index_sequence(DefWords, Words, I, [])
+def match_mwe_def(DefWords, Words, I, Name, POS, MaxGaps):
+    IndexListRest = index_sequence(DefWords, Words, I, [], 0, MaxGaps)
     return [ [ I ] + IndexListRest, Name, POS ] if IndexListRest else False
 
-def index_sequence(DefWords, Words, I, IndicesSoFar):
+def index_sequence(DefWords, Words, I, IndicesSoFar, GapsSoFar, MaxGaps):
+    if GapsSoFar > MaxGaps:
+        return False
     if len(DefWords) == 0:
         return IndicesSoFar
     ( DefWordsF, DefWordsR) = ( DefWords[0], DefWords[1:] )
     ( SurfaceOrLemma, SearchWord ) = DefWordsF
-    NextI = mwe_index(SurfaceOrLemma, SearchWord, I + 1, Words)
+    NextI = mwe_index(SurfaceOrLemma, SearchWord, I + 1, Words, GapsSoFar, MaxGaps)
     # Allow overlapping matches in order to get negative training examples
     #if NextI == False or is_mwe_word_lemma_pair(Words[NextI]):
     if NextI == False:
         return False
     else:
-        return index_sequence(DefWordsR, Words, NextI, IndicesSoFar + [ NextI ])
+        NewGaps = NextI - ( I + 1 )
+        GapsSoFar1 = GapsSoFar + NewGaps
+        return index_sequence(DefWordsR, Words, NextI, IndicesSoFar + [ NextI ], GapsSoFar1, MaxGaps)
 
-def mwe_index(SurfaceOrLemma, SearchWord, I, Words):
+def mwe_index(SurfaceOrLemma, SearchWord, I, Words, GapsSoFar, MaxGaps):
     for Index in range(I, len(Words)):
         ( Surface, Lemma, POSTag ) = Words[Index]
         # If lemmas contain lexical casing, we need to regularise them
@@ -1232,7 +1284,84 @@ def find_rest_of_mwe_in_pairs(PairsWithMarkers, Pairs, MWELemma, I, N, NumberLef
             ( RestSurface, RestI ) =  find_rest_of_mwe_in_pairs(PairsWithMarkers, Pairs, MWELemma, I+1, N, NumberLeft-1)
             return ( [ SurfaceClean ] + RestSurface, [ I ] + RestI )
         
-        
+# ---------------------------------------------
+
+def update_mwes_from_text_file(ConfigFile):
+    Params = lara_config.read_lara_local_config_file(ConfigFile)
+    if Params == False:
+        return
+    JSONFileIn = lara_top.lara_tmp_file('tmp_mwe_annotations', Params)
+    HTMLFile = lara_top.lara_tmp_file('tmp_mwe_annotations_summary', Params)
+    TextFile = lara_utils.change_extension(HTMLFile, 'txt')
+    JSONFileOut = Params.mwe_annotations_file
+    N = 1000000
+    update_mwe_json_file_from_mwe_text_file(JSONFileIn, TextFile, JSONFileOut, N)
+
+def update_mwe_json_file_from_mwe_text_file(JSONFileIn, TextFile, JSONFileOut, N):
+    JSONDataIn0 = lara_utils.read_json_file(JSONFileIn)
+    if JSONDataIn0 == False:
+        return
+    lara_utils.print_and_flush(f'--- Read JSON MWE file ({len(JSONDataIn0)} records), {JSONFileIn}')
+    JSONDataIn = JSONDataIn0[:N]
+    TextData0 = lara_utils.read_lara_text_file(TextFile)
+    if TextData0 == False:
+        return
+    TextData1 = TextData0.split('\n')
+    lara_utils.print_and_flush(f'--- Read text MWE file ({len(TextData1)} records), {TextFile}')
+    TextData = TextData1[:N]
+    TextDataParsed = [ parse_mwe_annotated_text_line(Line) for Line in TextData ]
+    JSONTextPairs = zip(JSONDataIn, TextDataParsed)
+    JSONDataOut = [ update_json_data_from_parsed_text_data(JSONItem, ParsedTextItem)
+                    for (JSONItem, ParsedTextItem) in JSONTextPairs ]
+    lara_utils.write_json_to_file(JSONDataOut, JSONFileOut)
+
+def parse_mwe_annotated_text_line(Line):
+    #return parse_mwe_annotated_text_line_old_format(Line)
+    return parse_mwe_annotated_text_line_new_format(Line)
+
+# Old format
+# Longtemps, je me suis couché de bonne heure. [de bonne heure] GOOD
+
+##_convert_mwe_judgements = { 'GOOD': 'mwe_okay', 'BAD': 'mwe_not_okay', 'UNDEFINED': 'mwe_status_unknown' }
+##
+##def parse_mwe_annotated_text_line_old_format(Line):
+##    Components = re.split('\[|\]', Line)
+##    if len(Components) != 3:
+##        return False
+##    ( Text, MWE, Judgement0 ) = Components
+##    Judgement1 = Judgement0.strip()
+##    Judgement = _convert_mwe_judgements[Judgement1] if Judgement1 in _convert_mwe_judgements else 'mwe_status_unknown'
+##    return { 'text': Text, 'mwe': MWE, 'ok': Judgement }
+
+# mwe_ok | de bonne heure | Longtemps, je me suis couché de bonne heure.
+
+_valid_mwe_judgements = [ 'mwe_okay', 'mwe_not_okay', 'mwe_status_unknown' ]
+
+def parse_mwe_annotated_text_line_new_format(Line):
+    Components = Line.split(' | ')
+    if len(Components) != 3:
+        return False
+    ( Judgement0, MWE, Text ) = Components
+    if Judgement0 in _valid_mwe_judgements:
+        Judgement = Judgement0
+    else:
+        lara_utils.print_and_flush(f'*** Warning: unknown MWE status "{Judgement0}" in "{Line}" discarded. Must be in {_valid_mwe_judgements}')
+        Judgement = 'mwe_status_unknown'
+    return { 'text': Text, 'mwe': MWE, 'ok': Judgement }
+
+def update_json_data_from_parsed_text_data(JSONItem, ParsedTextItem):
+    JSONItem1 = copy.copy(JSONItem)
+    if ParsedTextItem == False:
+        return JSONItem
+    ( Text, MWE, OK ) = ( ParsedTextItem['text'], ParsedTextItem['mwe'], ParsedTextItem['ok'] )
+    if JSONItem['mwe'] != MWE:
+        lara_utils.print_and_flush(f"*** Warning: MWE in JSON is {JSONItem['mwe']}, MWE in annotated text is {MWE}")
+    JSONItem1['ok'] = OK
+    return JSONItem1
+
+
+                                   
+                                   
         
             
                    

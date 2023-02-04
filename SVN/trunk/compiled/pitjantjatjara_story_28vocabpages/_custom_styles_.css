@@ -1,0 +1,7 @@
+area:hover {
+	cursor: pointer;
+        }
+a:hover {
+            color: red;
+			border:1px solid red;
+        }

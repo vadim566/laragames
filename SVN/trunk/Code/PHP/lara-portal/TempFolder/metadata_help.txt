@@ -1,0 +1,10 @@
+AudioOutput help any_speaker help/150605_190806_162018248.mp3 Fourscore and seven years ago our fathers brought forth, on this continent, a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.# | 
+AudioOutput help any_speaker help/150606_190806_162045607.mp3 Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived, and so dedicated, can long endure.# | 
+AudioOutput help any_speaker help/150607_190806_162056879.mp3 We are met on a great battle-field of that war.# | 
+AudioOutput help any_speaker help/150608_190806_162109615.mp3 We have come to dedicate a portion of that field, as a final resting-place for those who here gave their lives, that that nation might live.# | 
+AudioOutput help any_speaker help/150609_190806_162117194.mp3 It is altogether fitting and proper that we should do this.# | 
+AudioOutput help any_speaker help/150610_190806_162135003.mp3 But, in a larger sense, we cannot dedicate, we cannot consecrate—we cannot hallow—this ground.# | 
+AudioOutput help any_speaker help/150611_190806_162208211.mp3 The brave men, living and dead, who struggled here, have consecrated it far above our poor power to add or detract.# | 
+AudioOutput help any_speaker help/150612_190806_162219465.mp3 The world will little note, nor long remember what we say here, but it can never forget what they did here.# | 
+AudioOutput help any_speaker help/150613_190806_162245750.mp3 It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced.# | 
+AudioOutput help any_speaker help/150614_190806_162457385.mp3 It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.# | 

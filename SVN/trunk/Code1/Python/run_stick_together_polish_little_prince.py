@@ -1,0 +1,3 @@
+import lara_polish_little_prince
+
+lara_polish_little_prince.stick_together_polish_little_prince()

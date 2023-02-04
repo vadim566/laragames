@@ -23,11 +23,17 @@ def is_escaped_reserved_char_sequence(Str):
     return Str in _inverse_replacements
 
 def replace_reserved_chars(Str):
+    if not isinstance(Str, str):
+        lara_utils.print_and_flush(f'*** Error: bad call: replace_reserved_chars({Str})')
+        return False
     if not _replace_chars_enabled:
         return Str
     return lara_utils.apply_multiple_replacement_regex(_replacements, _replacement_regex, Str)
 
 def restore_reserved_chars(Str):
+    if not isinstance(Str, str):
+        lara_utils.print_and_flush(f'*** Error: bad call: restore_reserved_chars({Str})')
+        return False
     if not _replace_chars_enabled:
         return Str
     return lara_utils.apply_multiple_replacement_regex(_inverse_replacements, _restore_regex, Str)

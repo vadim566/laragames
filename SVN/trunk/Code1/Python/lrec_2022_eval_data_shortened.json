@@ -1,0 +1,93 @@
+{ 	
+	"english": { 
+		"file": "$LARA/tmp/lrec_2022_english_shortened.csv",
+		"data": [   
+					{  "id": "lpp_english",
+						"human": "$LARA/Content/the_little_prince_lrec2022/corpus/local_config_shortened.json",
+						"tts": "$LARA/Content/the_little_prince_lrec2022/corpus/local_config_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"french": { 
+		"file": "$LARA/tmp/lrec_2022_french_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_french",
+						"human": "$LARA/Content/le_petit_prince_lrec2022/corpus/local_config_shortened.json",
+						"tts": "$LARA/Content/le_petit_prince_lrec2022/corpus/local_config_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"italian": { 
+		"file": "$LARA/tmp/lrec_2022_italian_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_italian",
+						"human": "$LARA/Content/il_piccolo_principe/corpus/local_config_lrec_2022_shortened.json",
+						"tts": "$LARA/Content/il_piccolo_principe/corpus/local_config_tts_lrec_2022_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"polish": { 
+		"file": "$LARA/tmp/lrec_2022_polish_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_polish",
+						"human": "$LARA/Content/Mały_Książe/corpus/local_config_lrec_2022_shortened.json",
+						"tts": "$LARA/Content/Mały_Książe/corpus/local_config_lrec_2022_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"slovak": { 
+		"file": "$LARA/tmp/lrec_2022_slovak_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_slovak",
+						"human": "$LARA/Content/maly_princ/corpus/local_config_lrec_2022_shortened.json",
+						"tts": "$LARA/Content/maly_princ/corpus/local_config_lrec_2022_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"farsi": { 
+		"file": "$LARA/tmp/lrec_2022_farsi_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_farsi",
+						"human": "$LARA/Content/farsi_lpp/corpus/local_config_lrec_2022_shortened.json",
+						"tts": "$LARA/Content/farsi_lpp/corpus/local_config_lrec_2022_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"icelandic": { 
+		"file": "$LARA/tmp/lrec_2022_icelandic_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_icelandic",
+						"human": "$LARA/Content/litli_prinsinn/corpus/local_config_lrec_2022_shortened.json",
+						"tts": "$LARA/Content/litli_prinsinn/corpus/local_config_lrec_2022_tts_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	},
+	"irish": { 
+		"file": "$LARA/tmp/lrec_2022_irish_shortened.csv",
+		"data": [ 
+					{   "id": "lpp_irish",
+						"human": "$LARA/Content/an-prionsa-beag-lrec2022/corpus/local_config_human_shortened.json",
+						"tts": "$LARA/Content/an-prionsa-beag-lrec2022/corpus/local_config_nnc_shortened.json",
+						"word_time": 0.0,
+						"segment_time": "all"
+					}
+				]
+	}
+}
+	  
+
+

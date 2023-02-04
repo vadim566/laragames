@@ -50,7 +50,7 @@ def make_translation_spreadsheet_tokens(SplitFile, Spreadsheet, Params):
     if not process_word_spreadsheet_files('local_files', all_word_translation_surface_spreadsheets(Params1), Params1):
         return False
     #InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(SplitFile, Params1) for Chunk in Chunks ]
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible(Params1) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params1) for Chunk in Chunks ]
     Triples = [ token_spreadsheet_triple_for_chunk(Chunk, Params1) for Chunk in InList
                 if not (Chunk[1]).isspace() and not Chunk[1] == '' ]
     NMissing = missing_translations_in_tokens_triples(Triples)
@@ -214,7 +214,8 @@ def token_triples_to_csv_lines(Triples, Params):
         if TranslationForSourceSurfaceWords == '':
             NEmpty += 1
             LanguageId = lara_utils.get_l1_from_params(Params)
-            IndexTranslationPairs = { Index: type_translation_for_word_or_null(Word, LanguageId, Params) for
+            #IndexTranslationPairs = { Index: type_translation_for_word_or_null(Word, LanguageId, Params) for
+            IndexTranslationPairs = { Index: type_translation_for_word_and_lemma_or_null(Word, Lemma, LanguageId, Params) for
                                       ( Word, Indices, Lemma, MWE ) in WordsAndIndices for Index in Indices }
             TranslationForSourceSurfaceWords1 = [ IndexTranslationPairs[Index] for Index in range(0, len(SourceSurfaceWords)) ]
         else:
@@ -227,7 +228,7 @@ def token_triples_to_csv_lines(Triples, Params):
 
 def warn_if_mwes_inconsistent_with_translations(WordsAndIndices, SourceSurfaceWords, TranslationForSourceSurfaceWords):
     for ( Word, Indices, Lemma, MWE ) in WordsAndIndices:
-        Translations = [ TranslationForSourceSurfaceWords[I] for I in Indices ]
+        Translations = [ TranslationForSourceSurfaceWords[I] for I in Indices if I < len(TranslationForSourceSurfaceWords)]
         if len(lara_utils.remove_duplicates(Translations)) > 1:
             lara_utils.print_and_flush(f'*** Warning: components of MWE "{Word}" translated differently ({Translations}) in')
             print_parallel_source_and_target(SourceSurfaceWords, TranslationForSourceSurfaceWords)
@@ -305,7 +306,7 @@ def add_word_token_translations_to_params(Params, AnnotatedWords):
     else:
         Params.word_token_translations = [ '' for Word in TargetSurfaceWords ]
         if Params.translation_mouseover == 'yes':
-            lara_utils.print_and_flush(f'*** Warning: no token translation found for {SourceSurfaceWords}')
+            lara_utils.print_and_flush_warning(f'*** Warning: no token translation found for {SourceSurfaceWords}')
 
 def token_spreadsheet_triple_for_chunk(Chunk, Params):
     SourceSegment = Chunk[1]
@@ -344,7 +345,7 @@ def make_translation_spreadsheet_types(SplitFile, Spreadsheet, Params):
 
 def make_translation_spreadsheet_types1(SplitFile, Spreadsheet, Params):
     #InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(SplitFile, Params) for Chunk in Chunks ]
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible(Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params) for Chunk in Chunks ]
     # Assoc should associate each surface word with a structure of the form ( Freq, [ (Score1, Example1), ... ] )
     Assoc = lara.collect_word_page_info_simple(InList, Params)
     Tuples = [ [ Word,
@@ -394,7 +395,7 @@ def count_word_translations(Params):
     if not process_word_spreadsheet_files('local_files', all_word_translation_spreadsheets(Params), Params):
         ( NEmpty, NFilled ) = ( 0, 0 )
     #InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(Params.split_file, Params) for Chunk in Chunks ]
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible(Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_mwe.read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params) for Chunk in Chunks ]
     AllCurrent = all_translation_words_in_segments(InList, Params)
     CurrentPairs = [ [Word, 'current'] for Word in AllCurrent ]
     Triples = [ (Word, translation_for_word_or_null(Word, 'local_files', Params), Current) for ( Word, Current ) in CurrentPairs ]
@@ -407,7 +408,7 @@ def count_word_token_translations(Params):
     translations_for_word_tokens = {}
     if not process_word_token_spreadsheet_files('local_files', all_word_token_translation_spreadsheets(Params)):
         return { 'translated': 0, 'not_translated': 0 }
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(Params.split_file, Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(Params.split_file, Params) for Chunk in Chunks ]
     ( NFilled, NEmpty ) = ( 0, 0 )
     for Chunk in InList:
         SurfaceWords = [ regularise_word_for_word_token_translation(WordPair[0]) for WordPair in Chunk[2] if WordPair[1] != '' ]
@@ -452,7 +453,7 @@ def make_segment_translation_spreadsheet(SplitFile, Spreadsheet, Params):
     translations_for_segments = {}
     if not process_segment_spreadsheet_files('local_files', all_segment_translation_spreadsheets(Params)):
         return False
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(SplitFile, Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(SplitFile, Params) for Chunk in Chunks ]
     Tuples = [ ( Chunk[1], translation_for_segment_or_null(Chunk[1], 'local_files') ) for Chunk in InList
                 if not (Chunk[1]).isspace() and not Chunk[1] == '' ]
     Header = ['Segment', 'Translation']
@@ -469,7 +470,7 @@ def count_segment_translations(Params):
     translations_for_segments = {}
     if not process_segment_spreadsheet_files('local_files', all_segment_translation_spreadsheets(Params)):
         ( NEmpty, NFilled ) = ( 0, 0 )
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(Params.split_file, Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(Params.split_file, Params) for Chunk in Chunks ]
     Tuples = [ ( Chunk[1], translation_for_segment_or_null(Chunk[1], 'local_files') ) for Chunk in InList
                 if not (Chunk[1]).isspace() and not Chunk[1] == '' ]
     NEmpty = count_empty_translations_in_vocab_spreadsheet_list(Tuples)
@@ -532,6 +533,16 @@ def translation_for_word_or_null(Word, LanguageId, Params):
     Translation = translation_for_word(Word, LanguageId, Params)
     return Translation if Translation else ''
 
+def type_translation_for_word_and_lemma_or_null(Word, Lemma, LanguageId, Params):
+    Word1 = regularise_word(Word)
+    TranslationUsingLemma = type_translation_for_word_no_regularise(f'{Word1}|{Lemma}', LanguageId, Params)
+    #if Word == 'wati-':
+    #    lara_utils.print_and_flush(f'--- Word = {Word}, Word1 = {Word1}, Lemma = {Lemma}, TranslationUsingLemma = {TranslationUsingLemma}')
+    if TranslationUsingLemma:
+        return TranslationUsingLemma
+    Translation = type_translation_for_word(Word, LanguageId, Params)
+    return Translation if Translation else ''
+
 def type_translation_for_word_or_null(Word, LanguageId, Params):
     Translation = type_translation_for_word(Word, LanguageId, Params)
     return Translation if Translation else ''
@@ -546,7 +557,8 @@ def word_has_translation(Word, Lemma, Params):
 
 def translation_for_word(Word, LanguageId, Params):
     Translation = translation_for_word1(Word, LanguageId, Params)
-    return lara_chinese.maybe_add_pinyin_to_translation(Word, Translation, Params)
+    Translation1 = f'{Word}; {Translation}' if Params.translation_includes_transcription == 'yes' else Translation
+    return lara_chinese.maybe_add_pinyin_to_translation(Word, Translation1, Params)
 
 def translation_for_word1(Word, LanguageId, Params):
     if Params.word_translations_on == 'surface_word_token':
@@ -557,6 +569,9 @@ def translation_for_word1(Word, LanguageId, Params):
 
 def type_translation_for_word(Word0, LanguageId, Params):
     Word = regularise_word(Word0) if Params.word_translations_on == 'surface_word_type' else Word0
+    return type_translation_for_word_no_regularise(Word, LanguageId, Params)
+
+def type_translation_for_word_no_regularise(Word, LanguageId, Params):
     translation_dict = get_word_translations_dict(Params)
     if LanguageId in translation_dict:
         SubDict = translation_dict[LanguageId]
@@ -659,6 +674,7 @@ def store_word_translation_file(File, LemmaOrSurface, L1Key):
         lara_utils.print_and_flush(f'*** Warning: word translation spreadsheet not found: {File}')
         return True
 
+# For surface/lemma change
 def store_word_spreadsheet_data(Records, LemmaOrSurface, L1Key):
     translations_dict = get_word_translations_dict_for_word_translation_type(LemmaOrSurface)
     SubDict = translations_dict[L1Key] if L1Key in translations_dict else {}

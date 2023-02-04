@@ -16,8 +16,8 @@ import pprint
 from datetime import datetime
 import re
 import random
-#import wagnerfischer
-
+import SVN.trunk.Code.Python.wagnerfischer as wagnerfischer
+#import  wagnerfischer
 ## Simple utility functions etc
 
 # ----------------------------------
@@ -75,19 +75,29 @@ def cleanup_temp_files_and_directories():
 
 _encodingError = '(... something in an encoding that can\'t be written out ...)'
 
+def report_encoding_error(Str):
+    try:
+        import unidecode
+        Str1 = unidecode.unidecode(str(Str))
+        print(f'{Str1} [some characters changed, encoding problems]')
+    except:
+        print(_encodingError)
+
 ## Print, flushing output
 def print_and_flush(Object):
     try:
         print(Object, flush=True)
     except:
-        print(_encodingError)
+        #print(_encodingError)
+        report_encoding_error(Object)
 
 ## Print, flushing output, no newline
 def print_and_flush_no_newline(Object):
     try:
         print(Object, end='', flush=True)
     except:
-        print(_encodingError)
+        #print(_encodingError)
+        report_encoding_error(Object)
 
 stored_timing_messages = []
 
@@ -110,7 +120,8 @@ def print_and_flush_with_elapsed_time(Message, StartTime):
         print(MessageWithTiming, flush=True)
         stored_timing_messages += [ MessageWithTiming ]
     except:
-        print(_encodingError)
+        #print(_encodingError)
+        report_encoding_error(MessageWithTiming)
 
 all_warnings = {}
 
@@ -121,17 +132,26 @@ def init_warnings():
 ## Print warning if it hasn't already appeared, flushing output 
 def print_and_flush_warning(Object):
     global all_warnings
-    if not isinstance(Object, str) or not Object in all_warnings:
-        if isinstance(Object, str):
-            all_warnings[Object] = 'presented'
-        try:
-            print(Object, flush=True)
-        except:
-            print(_encodingError)
+    if not isinstance(Object, str) or Object in all_warnings:
+        return
+    all_warnings[Object] = 'presented'
+    try:
+        print(Object, flush=True)
+    except:
+        #print(_encodingError)
+        report_encoding_error(Object)
 
 ## Check if file exists
 def file_exists(pathname):
     return os.path.isfile(absolute_file_name(pathname))
+
+def check_files_exist(Files):
+    AllExist = True
+    for File in Files:
+        if not file_exists(File):
+            print_and_flush(f'*** Error: file not found: {File}')
+            AllExist = False
+    return AllExist
 
 ## Check if directory exists
 def directory_exists(pathname):
@@ -698,6 +718,11 @@ def write_json_to_file_plain_utf8(data, pathname):
         print_and_flush(str(e))
         return False
 
+def prettyprint_json_file(infile, outfile):
+    Data = read_json_file(infile)
+    if not Data == False:
+        write_json_to_file_plain_utf8(Data, outfile)
+
 ## Read a file from a URL, put it in a local file and return the name of that
 ## file or False if it didn't work
 def read_file_from_url(url, pathname):
@@ -803,11 +828,12 @@ def unzip_file(pathname, dir):
 
 ## Zip up a directory
 def make_zipfile(directory, zipfile):
+    absdirectory = absolute_file_name(directory)
     abszipfile = absolute_file_name(zipfile)
     # shutil.make_archive adds a .zip extension even if you already have one
     base = file_to_base_file_and_extension(abszipfile)[0]
     try:
-        shutil.make_archive(base, 'zip', directory)
+        shutil.make_archive(base, 'zip', absdirectory)
         print_and_flush(f'--- Zipped up {directory} as {zipfile}')
         return True
     except Exception as e:
@@ -920,6 +946,12 @@ def non_false_members(List):
 def is_n_item_list(List, N):
     return isinstance(List, list) and len(List) == N
 
+def is_null_string_or_spaces(Str):
+    if not isinstance(Str, ( str )):
+        print_and_flush(f'*** Warning: argument {Str} to is_null_string_or_spaces is not string')
+        return False
+    return Str == '' or Str.isspace()
+
 ## Is a list of strings
 def is_list_of_strings(List):
     if not isinstance(List, list):
@@ -1010,6 +1042,9 @@ def json_element_to_csv_element(Element):
 def str_to_html_str(Str):
     return Str.encode('ascii', 'xmlcharrefreplace').decode('utf-8')
 
+def looks_like_a_url(Str):
+    return isinstance(Str, str) and ( Str.startswith('https://') or Str.startswith('http://') )
+
 # ----------------------------------
 
 def random_choose_from_list(List):
@@ -1052,8 +1087,20 @@ def size_of_image(File):
 
 # ----------------------------------
 
+def length_of_mp3(File):
+    try:
+        from mutagen.mp3 import MP3
+        audio = MP3(absolute_file_name(File))
+        return audio.info.length
+    except Exception as e:
+        print_and_flush(f'*** Error: something went wrong when trying to get length of mp3 file {File}')
+        print_and_flush(str(e))
+        return False
+
+# ----------------------------------
+
 def is_page_tag_chunk(Chunk):
-    return Chunk[0] == '*page_tag*'
+    return isinstance(Chunk, (list, tuple)) and len(Chunk) != 0 and Chunk[0] == '*page_tag*'
         
 def page_tag_chunk_page_info(Chunk):
     if is_page_tag_chunk(Chunk):

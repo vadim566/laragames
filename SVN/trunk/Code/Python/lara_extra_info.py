@@ -27,6 +27,8 @@ def get_audio_url_for_line_or_add_to_errors(MinimallyCleaned, Context, Params):
     elif Params.audio_segments == 'no' or lara_audio.no_audio('segments', Params):
         return ( '*no_audio_url*', [] )
     else:
+        if Params.phonetic_text == 'yes':
+            MinimallyCleaned = MinimallyCleaned.lower()
         AudioURL = lara_audio.get_audio_url_for_chunk_or_word(MinimallyCleaned, Context, 'segments', Params)
         if AudioURL and Params.video_annotations == 'yes':
             PopupURL = create_signed_video_popup_page(AudioURL, Params)
@@ -64,7 +66,7 @@ def audio_and_translation_control_for_line(LoudspeakerIcon, TranslationIcon, Aud
         return ''
     # No audio, translation
     if lara_audio.null_audio_url(AudioURL):
-        if Params.segment_translation_as_popup == 'no':
+        if Params.segment_translation_as_popup != 'yes':
             Page = page_for_non_popup_segment_translation_create_if_necessary(QuotLine, QuotTranslation, Params)
             LinkTag = link_tag_for_non_popup_segment_translation(Page, Params)
             return f'{LinkTag}{LoudspeakerIcon}</a>'
@@ -81,7 +83,7 @@ def audio_and_translation_control_for_line(LoudspeakerIcon, TranslationIcon, Aud
         return f"<span style=\"cursor: pointer;\" title=\"{QuotTranslation}\" onclick=\"window.open('{AudioURL}','newWin','width=640,height=480')\">{LoudspeakerIcon}</span>"
     # Audio and translation
     else:
-        if Params.segment_translation_as_popup == 'no':
+        if Params.segment_translation_as_popup != 'yes':
             Page = page_for_non_popup_segment_translation_create_if_necessary(QuotLine, QuotTranslation, Params)
             LinkTag = link_tag_for_non_popup_segment_translation(Page, Params)
             return f'{LinkTag}<span class="sound" onclick="playSound(\'{AudioURL}\');">{LoudspeakerIcon}</span></a>'
@@ -97,7 +99,7 @@ def separate_audio_and_translation_controls_for_line(LoudspeakerIcon, Translatio
         AudioControl= f"<span onclick=\"window.open('{AudioURL}','newWin','width=640,height=480')\" style=\"cursor: pointer;\">{LoudspeakerIcon}</span>"
     if Translation == '*no_translation*' or Params.segment_translation_mouseover == 'no':
         TranslationControl = ''
-    elif Params.segment_translation_as_popup == 'no':
+    elif Params.segment_translation_as_popup != 'yes':
         Page = page_for_non_popup_segment_translation_create_if_necessary(Line, Translation, Params)
         LinkTag = link_tag_for_non_popup_segment_translation(Page, Params)
         TranslationControl = f'{LinkTag}{TranslationIcon}</a>'
@@ -109,9 +111,11 @@ def separate_audio_and_translation_controls_for_line(LoudspeakerIcon, Translatio
 non_popup_segment_translations = {}
 
 def init_pages_for_non_popup_segment_translations():
+    global non_popup_segment_translations
     non_popup_segment_translations = {}
 
 def page_for_non_popup_segment_translation_create_if_necessary(Line, Translation, Params):
+    global non_popup_segment_translations
     # Remove punctuation marks and take first five words
     Translation1 = ' '.join(lara_parse_utils.remove_punctuation_marks(Translation).split()[:5])
     Index = 0
@@ -129,10 +133,16 @@ def page_for_non_popup_segment_translation_create_if_necessary(Line, Translation
             Index += 1
 
 def write_out_non_popup_segment_translation_file(Line, Translation, FullFile, Params):
+    if lara_utils.file_exists(FullFile):
+        return
     Header = lara_html.segment_translation_lines_header(Params)
     Arrow = translation_arrow_html_code(Params)
-    Body = [ f'{Line} {Arrow} <br>',
-             f'{Translation}</p>' ]
+    Line1 = lara_parse_utils.remove_html_annotations_from_string(Line)[0]
+    if Params.segment_translation_as_popup == 'not_popup_translation_only':
+        Body = [ f'<p>{Translation}</p>' ]
+    else:
+        Body = [ f'<p>{Line1} {Arrow} <br>',
+                 f'{Translation}</p>' ]
     Closing = lara_html.segment_translation_lines_closing(Params)
     AllLines = Header + Body + Closing
     lara_utils.write_lara_text_file('\n'.join(AllLines), FullFile)
@@ -233,11 +243,16 @@ def translation_arrow_html_code(Params):
 # --------------------------------------
                         
 def maybe_add_translation_and_or_audio_mouseovers_to_word(Word, Lemma, Translation, WordContext, Params):
-    AudioURL = audio_url_for_word_and_word_context(Word, WordContext, Params)
+    if Params.phonetic_text == 'yes':
+        AudioURL = audio_url_for_word_and_word_context(Lemma, WordContext, Params)
+    else:
+        AudioURL = audio_url_for_word_and_word_context(Word, WordContext, Params)
     if Params.translation_mouseover == 'yes' and Params.audio_mouseover != 'no' and Translation and AudioURL != '*no_audio_url*':
         return add_translation_and_audio_mouseovers_to_word(Word, Translation, AudioURL, Params)
     elif Params.translation_mouseover == 'yes' and Translation:
         return add_translation_mouseover_to_word(Word, Translation)
+    elif Params.audio_mouseover != 'no' and Params.phonetic_text == 'yes': 
+        return lara_audio.add_audio_mouseover_to_word(Word, Lemma, Params)
     elif Params.audio_mouseover != 'no':
         return lara_audio.add_audio_mouseover_to_word(Word, Word, Params)
     else:
@@ -298,6 +313,15 @@ def sign_language_video_lines_for_word(Word, Params):
     SignLanguageVideoForWord = lara_audio.sign_language_video_for_word(Word, Params)
     if not SignLanguageVideoForWord:
         return []
+    if lara_utils.looks_like_a_url(SignLanguageVideoForWord):
+        if Params.external_sign_video_width != '' and Params.external_sign_video_height != '':
+            WidthAndHeight = f' width={Params.external_sign_video_width} height={Params.external_sign_video_height}'
+        else:
+            WidthAndHeight = ''
+        return [ f'<iframe src="{SignLanguageVideoForWord}?autoplay=1&mute=1"{WidthAndHeight}>',
+                 f'</iframe>',
+                 ''
+                 ]
     else:
         Extension = lara_utils.extension_for_file(SignLanguageVideoForWord)
         return [ f'<video width="640" height="480" controls muted/>',
@@ -325,6 +349,10 @@ def word_page_lines_language_specific_extra_info(Word, Params):
         return polish_extra_info(Word1)
     if Params.extra_page_info == 'yes' and Params.language == 'german':
         return german_extra_info(Word1)
+    if Params.extra_page_info == 'yes' and Params.language == 'french':
+        return french_extra_info(Word1)
+    if Params.extra_page_info == 'yes' and Params.language == 'english':
+        return english_extra_info(Word1)
     else:
         return []
 
@@ -491,19 +519,28 @@ def german_extra_info(Word):
 def german_lookup_word_for_word(Word):
     return Word
 
+# -----------------------------------------------
+
+# https://www.linternaute.fr/dictionnaire/fr/definition/ecrire/#conjugaison
+
+def french_extra_info(Word):
+    LookupWord = french_lookup_word_for_word(Word)
+    Action = f'window.open(\'https://www.linternaute.fr/dictionnaire/fr/definition/{LookupWord}/#conjugaison\', \'newWin\', \'width=1200, height=800\')'
+    return [f'<a href="javascript:void(0)" onclick="{Action}"><b><u>www.linternaute.fr</u></b></a>']
+
+def french_lookup_word_for_word(Word):
+    return Word
 
 # -----------------------------------------------
-#
-# French
-#
-# Example for écrire: http://www.french-linguistics.co.uk/verbs/table/%E9crire.html
-#
-#
-# -----------------------------------------------
-#
-#
-# English
-# 
-# Example for go: http://www.french-linguistics.co.uk/verbs/table/%E9crire.html
+
+# https://www.merriam-webster.com/dictionary/green
+
+def english_extra_info(Word):
+    LookupWord = english_lookup_word_for_word(Word)
+    Action = f'window.open(\'https://www.merriam-webster.com/dictionary/{LookupWord}\', \'newWin\', \'width=1200, height=800\')'
+    return [f'<a href="javascript:void(0)" onclick="{Action}"><b><u>www.merriam-webster.com</u></b></a>']
+
+def english_lookup_word_for_word(Word):
+    return Word
 
 

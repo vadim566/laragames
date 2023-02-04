@@ -14,6 +14,9 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
+from datetime import datetime
+
+
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -143,5 +146,4 @@ class tbl_game12(db.Model):
 
     def __repr__(self):
         return f"game 11('{self.score}', '{self.date_created}')"
-
 

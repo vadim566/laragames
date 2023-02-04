@@ -93,7 +93,151 @@ lara_html_colours = [
     'black'
     ]
 
+# Needed for LARA questionnaires, lara_tts_human_eval
+_corpus_id_to_number = { 'french': 11,
+                         'english': 12,
+                         'italian': 13,
+                         'polish': 14,
+                         'japanese': 15,
+                         'farsi': 16,
+                         'icelandic': 17,
+                         'slovak': 18,
+                         'irish': 19,
+                         'mandarin': 20
+                         }
+
+
 _explanations = { '[A-Za-z\u00C0-\u017F][A-Za-z\u00C0-\u017F0-9_-]*': 'A LARA ID can only include letters, numbers, - and _, and must start with a letter' }
+
+# Relevant to conversion to phonetic text
+_phonetically_spelled_languages = { 'barngarla': [ 'a', 'ai', 'aw',
+                                                   'b', 'd',
+                                                   'dy', 'dh', 'g', 'i',
+                                                   'ii', 'l', 'ly', 'm',
+                                                   'n', 'ng', 'nh', 'ny',
+                                                   'oo', 'r', 'rr', 'rd',
+                                                   'rl', 'rn', 'w', 'y'
+                                                   ],
+                                    'hebrew': [ 'א',
+                                                'ב',
+                                                'ג',
+                                                'ד',
+                                                'ה',
+                                                'ו',
+                                                'ז',
+                                                'ח',
+                                                'ט',
+                                                'י',
+                                                [ 'כ', 'ך' ],
+                                                'ל',
+                                                [ 'מ', 'ם' ],
+                                                [ 'נ', 'ן' ],
+                                                'ס',
+                                                'ע',
+                                                [ 'פ', 'ף' ],
+                                                [ 'צ', 'ץ' ],
+                                                'ק',
+                                                'ר',
+                                                'ש',
+                                                'ת'
+                                                ],
+                                    'arabic': [ [ 'ا', 'ﺍ', 'ﺎ',
+                                                  'آ', 'ﺁ', 'ﺂ',
+                                                  'أ', 'إ' ],
+                                                [ 'ب', 'ﺏ', 'ﺐ', 'ﺒ', 'ﺑ' ],
+                                                [ 'ت', 'ﺕ', 'ﺖ', 'ﺘ', 'ﺗ' ],
+                                                [ 'ث', 'ﺙ', 'ﺚ', 'ﺜ', 'ﺛ' ],
+                                                [ 'ج', 'ﺝ', 'ﺞ', 'ﺠ', 'ﺟ' ],
+                                                [ 'ح', 'ﺡ', 'ﺢ', 'ﺤ', 'ﺣ' ],
+                                                [ 'خ', 'ﺥ', 'ﺦ', 'ﺨ', 'ﺧ' ],
+                                                [ 'د', 'ﺩ', 'ﺪ' ],
+                                                [ 'ذ', 'ﺫ', 'ﺬ' ],
+                                                [ 'ر', 'ﺭ', 'ﺮ' ],
+                                                [ 'ز', 'ﺯ', 'ﺰ' ],
+                                                [ 'س', 'ﺱ', 'ﺲ', 'ﺴ', 'ﺳ' ],
+                                                [ 'ش', 'ﺵ', 'ﺶ', 'ﺸ', 'ﺷ' ],
+                                                [ 'ص', 'ﺹ', 'ﺺ', 'ﺼ', 'ﺻ' ],
+                                                [ 'ض', 'ﺽ', 'ﺾ', 'ﻀ', 'ﺿ' ],
+                                                [ 'ط', 'ﻁ', 'ﻂ', 'ﻄ', 'ﻃ' ],
+                                                [ 'ظ', 'ﻅ', 'ﻆ', 'ﻈ', 'ﻇ' ],
+                                                [ 'ع', 'ﻉ', 'ﻊ', 'ﻌ', 'ﻋ' ],
+                                                [ 'غ', 'ﻍ', 'ﻎ', 'ﻐ', 'ﻏ' ],
+                                                [ 'ف', 'ﻑ', 'ﻒ', 'ﻔ', 'ﻓ' ],
+                                                [ 'ق', 'ﻕ', 'ﻖ', 'ﻘ', 'ﻗ' ],
+                                                [ 'ك', 'ﻙ', 'ﻚ', 'ﻜ', 'ﻛ' ],
+                                                [ 'ل', 'ﻝ', 'ﻞ', 'ﻠ', 'ﻟ' ],
+                                                [ 'م', 'م', 'ﻢ', 'ﻤ', 'ﻣ' ],
+                                                [ 'ن', 'ﻥ', 'ﻦ', 'ﻨ', 'ﻧ' ],
+                                                [ 'ه', 'ﻩ', 'ﻪ', 'ﻬ', 'ﻫ' ],
+                                                [ 'و', 'ﻭ', 'ﻮ' ],
+                                                [ 'ي', 'ﻱ', 'ﻲ', 'ﻴ', 'ﻳ' ],
+                                                [ 'ة', 'ﺓ', 'ﺔ' ],
+                                                [ 'ى', 'ﻯ', 'ﻰ', 'ئ' ],
+                                                [ 'ء' ]
+                                                ],
+                                    'farsi':  [ [ 'ا', 'ﺍ', 'ﺎ',
+                                                  'آ', 'ﺁ', 'ﺂ',
+                                                  'أ', 'إ' ],
+                                                [ 'ب', 'ﺏ', 'ﺐ', 'ﺒ', 'ﺑ' ],
+                                                [ 'پ' ],
+                                                [ 'ت', 'ﺕ', 'ﺖ', 'ﺘ', 'ﺗ' ],
+                                                [ 'ث', 'ﺙ', 'ﺚ', 'ﺜ', 'ﺛ' ],
+                                                [ 'ج', 'ﺝ', 'ﺞ', 'ﺠ', 'ﺟ' ],
+                                                [ 'چ' ],
+                                                [ 'ح', 'ﺡ', 'ﺢ', 'ﺤ', 'ﺣ' ],
+                                                [ 'خ', 'ﺥ', 'ﺦ', 'ﺨ', 'ﺧ' ],
+                                                [ 'د', 'ﺩ', 'ﺪ' ],
+                                                [ 'ذ', 'ﺫ', 'ﺬ' ],
+                                                [ 'ر', 'ﺭ', 'ﺮ' ],
+                                                [ 'ز', 'ﺯ', 'ﺰ' ],
+                                                [ 'س', 'ﺱ', 'ﺲ', 'ﺴ', 'ﺳ' ],
+                                                [ 'ش', 'ﺵ', 'ﺶ', 'ﺸ', 'ﺷ' ],
+                                                [ 'ص', 'ﺹ', 'ﺺ', 'ﺼ', 'ﺻ' ],
+                                                [ 'ض', 'ﺽ', 'ﺾ', 'ﻀ', 'ﺿ' ],
+                                                [ 'ط', 'ﻁ', 'ﻂ', 'ﻄ', 'ﻃ' ],
+                                                [ 'ظ', 'ﻅ', 'ﻆ', 'ﻈ', 'ﻇ' ],
+                                                [ 'ع', 'ﻉ', 'ﻊ', 'ﻌ', 'ﻋ' ],
+                                                [ 'غ', 'ﻍ', 'ﻎ', 'ﻐ', 'ﻏ' ],
+                                                [ 'ف', 'ﻑ', 'ﻒ', 'ﻔ', 'ﻓ' ],
+                                                [ 'ق', 'ﻕ', 'ﻖ', 'ﻘ', 'ﻗ' ],
+                                                [ 'ك', 'ﻙ', 'ﻚ', 'ﻜ', 'ﻛ', 'ک' ],
+                                                [ 'گ' ],
+                                                [ 'ژ' ],
+                                                [ 'ل', 'ﻝ', 'ﻞ', 'ﻠ', 'ﻟ' ],
+                                                [ 'م', 'م', 'ﻢ', 'ﻤ', 'ﻣ' ],
+                                                [ 'ن', 'ﻥ', 'ﻦ', 'ﻨ', 'ﻧ' ],
+                                                [ 'ه', 'ﻩ', 'ﻪ', 'ﻬ', 'ﻫ' ],
+                                                [ 'و', 'ﻭ', 'ﻮ' ],
+                                                [ 'ي', 'ﻱ', 'ﻲ', 'ﻴ', 'ﻳ', 'ی' ],
+                                                [ 'ة', 'ﺓ', 'ﺔ' ],
+                                                [ 'ى', 'ﻯ', 'ﻰ', 'ئ' ],
+                                                [ 'ء' ]
+                                                ]
+                                    }
+
+_accent_chars = { 'arabic': [ chr(0x064B),
+                              chr(0x064C),
+                              chr(0x064D),
+                              chr(0x064E),
+                              chr(0x064F),
+                              chr(0x0650),
+                              chr(0x0651),
+                              chr(0x0652),
+                              chr(0x0653),
+                              chr(0x0654),
+                              chr(0x0655) ],
+                  'farsi': [ chr(0x064B),
+                              chr(0x064C),
+                              chr(0x064D),
+                              chr(0x064E),
+                              chr(0x064F),
+                              chr(0x0650),
+                              chr(0x0651),
+                              chr(0x0652),
+                              chr(0x0653),
+                              chr(0x0654),
+                              chr(0x0655) ]
+                  }
 
 _tts_info = { 'readspeaker':
               {   'url': 'https://tts.readspeaker.com/a/speak',
@@ -129,6 +273,30 @@ _tts_info = { 'readspeaker':
                     'swedish':
                     {  'language_id': 'sv_se',
                        'voices': [ 'Maja-DNN' ]
+                       },
+                    'farsi':
+                    {  'language_id': 'fa_ir',
+                       'voices': [ 'Female01' ]
+                       },
+                    'mandarin':
+                    {  'language_id': 'zh_cn',
+                       'voices': [ 'Hui' ]
+                       },
+                    'dutch':
+                    {  'language_id': 'nl_nl',
+                       'voices': [ 'Ilse-DNN' ]
+                       },
+                    'japanese':
+                    {  'language_id': 'ja_jp',
+                       'voices': [ 'Sayaka-DNN' ]
+                       },
+                    'polish':
+                    {  'language_id': 'pl_pl',
+                       'voices': [ 'Aneta-DNN' ]
+                       },
+                    'slovak':
+                    {  'language_id': 'sk_sk',
+                       'voices': [ 'Jakub' ]
                        }
                   }
                 },
@@ -223,6 +391,8 @@ _abstract_html_values = [ 'plain_html_only', 'abstract_html_only', 'plain_and_ab
 
 _abstract_html_format_values = [ 'pickle_only', 'json_only', 'pickle_and_json' ]
 
+_jquery_source_values = [ 'google', 'cloudflare' ]
+
 def tts_engines_for_language(Lang):
     return [ { 'engine': Engine, 'voices':_tts_info[Engine]['languages'][Lang]['voices'] }
                for Engine in _tts_info
@@ -243,9 +413,20 @@ items_in_lara_local_config_data = {
                 'abstract_html'                     : { 'required' : False, 'default' : 'plain_via_abstract_html',  'permitted' : _abstract_html_values },
                 'abstract_html_file'                : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 #'abstract_html_format'              : { 'required' : False, 'default' : 'pickle_and_json',  'permitted' : _abstract_html_format_values },
-                'abstract_html_format'              : { 'required' : False, 'default' : 'pickle_only',  'permitted' : _abstract_html_format_values },
+                'abstract_html_format'              : { 'required' : False, 'default' : 'json_only',  'permitted' : _abstract_html_format_values },
+                'alphabetical_list_link_in_nav_bar' : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'alphabetical_list_only_pictures'   : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'aligned_phonetic_annotations_file' : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'aligned_segments_file'             : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'aligned_segments_file_evaluate'    : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'alignment_postprocessing'          : { 'required' : False, 'default' : 'yes',  'permitted' : _permitted_bool_values },
+                'alignment_postediting_file'        : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'allow_bookmark'                    : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'allow_table_of_contents'           : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'audio_alignment_beam_width'        : { 'required' : False, 'default' : 40,    'integer' : True },
+                'audio_alignment_corpus'            : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'audio_alignment_match_function'    : { 'required' : False, 'default' : 'binary'},
+                'audio_cutting_up_parameters'       : { 'required' : False, 'default' : None    }, 
 		'audio_mouseover'                   : { 'required' : False, 'default' : 'no',  'permitted' : [ 'yes', 'both', 'no'] },
                 'audio_on_click'                    : { 'required' : False, 'default' : 'yes',  'permitted' : _permitted_bool_values },
                 'audio_segments'                    : { 'required' : False, 'default' : 'yes',  'permitted' : [ 'yes', 'no'] },
@@ -261,11 +442,18 @@ items_in_lara_local_config_data = {
 		'comments_by_default'               : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
 		'css_file'                          : { 'required' : False, 'default' : '',    'file_or_directory': True },
 		'script_file'                       : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'double_segmented_corpus'           : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'external_sign_video_height'        : { 'required' : False, 'default' : ''      },
+                'external_sign_video_width'         : { 'required' : False, 'default' : ''      },
 		'extra_page_info'                   : { 'required' : False, 'default' : 'yes'      },
                 'flashcard_type'                    : { 'required' : False, 'default' : '', 'permitted' : _known_flashcard_types },
 		'font'                              : { 'required' : False, 'default' : 'serif', 'permitted' : ['serif', 'sans-serif', 'monospace'] },
                 'font_size'                         : { 'required' : False, 'default' : 'medium',  'permitted' : _permitted_font_size_values  },
+                'frequency_list_link_in_nav_bar'    : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'frequency_lists_hidden'            : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
 		'frequency_lists_in_main_text_page' : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'frequency_list_only_images'        : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'google_asr_language_code'          : { 'required' : False, 'default' : ''      },
 		'hide_images'                       : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'html_style'                        : { 'required' : False, 'default' : 'old',  'permitted' : _html_styles },
                 'id_on_examples'                    : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
@@ -273,8 +461,12 @@ items_in_lara_local_config_data = {
                 'image_dict_spreadsheet'            : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'image_dict_words_in_colour'        : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
 		'image_directory'                   : { 'required' : False, 'default' : '',    'file_or_directory': True},
+                'image_width_in_concordance_pages'  : { 'required' : False, 'default' : 400,   'integer' : True},
+                'jquery_downloaded_from'            : { 'required' : False, 'default' : 'google',  'permitted' : _jquery_source_values},
 		'keep_comments'                     : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'l1'                                : { 'required' : False, 'default' : ''     },
+                'labelled_source_corpus'            : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'labelled_target_corpus'            : { 'required' : False, 'default' : '',    'file_or_directory': True },
 		'language'                          : { 'required' : False, 'default' : ''     },
 		'language_ui'                       : { 'required' : False, 'default' : _language_ui_fallback },
                 'lara_tmp_directory'                : { 'required' : False, 'default' : '$LARA/tmp_resources' },
@@ -284,15 +476,30 @@ items_in_lara_local_config_data = {
                 'mt_engine'                         : { 'required' : False, 'default' : 'google',  'permitted' : _supported_mt_engines },
                 'mwe_annotations_file'              : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'mwe_file'                          : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'mwe_max_gaps'                      : { 'required' : False, 'default' : 4,   'integer' : True},
                 'mwe_words_in_colour'               : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'notes_spreadsheet'                 : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'note_words_in_colour'              : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'parallel_version_id'               : { 'required' : False,  'default' : '',    'pattern': _lara_id_pattern    },
+                'parallel_version_id2'              : { 'required' : False,  'default' : '',    'pattern': _lara_id_pattern    },
+                'parallel_version_id3'              : { 'required' : False,  'default' : '',    'pattern': _lara_id_pattern    },
+                'parallel_version_label'            : { 'required' : False,  'default' : '' },
+                'parallel_version_label2'           : { 'required' : False,  'default' : '' },
+                'parallel_version_label3'           : { 'required' : False,  'default' : '' },
+                'phonetic_headings_are_comments'    : { 'required' : False, 'default' : 'yes',  'permitted' : _permitted_bool_values },
+                'phonetic_lexicon_aligned'          : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'phonetic_lexicon_plain'            : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'phonetic_text'                     : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'picturebook'                       : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'picturebook_word_locations_file'   : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'picture_words'                     : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'pinyin_corpus'                     : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'plain_text'                        : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'play_combine_parts'                : { 'required' : False, 'default' : False, 'dict' : True },
                 'play_parts'                        : { 'required' : False, 'default' : [],    'list_of_strings' : True },
  		'postags_file'                      : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'postags_colours_file'              : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'preceding_context_window'          : { 'required' : False, 'default' : 10,   'integer' : True},
                 'preferred_translator'              : { 'required' : False, 'default' : '',    },
                 'preferred_voice'                   : { 'required' : False, 'default' : '',    },
                 'relative_compiled_directory'       : { 'required' : False, 'default' : '.',    },
@@ -306,28 +513,42 @@ items_in_lara_local_config_data = {
                 'segment_audio_word_offset'         : { 'required' : False, 'default' : 0.0,   'number': True },
                 'segment_audio_word_window_left'    : { 'required' : False, 'default' : 0,     'integer_or_prosodic_phrase': True },
                 'segment_audio_word_window_right'   : { 'required' : False, 'default' : 0,     'integer_or_prosodic_phrase': True },
-                'segment_translation_as_popup'      : { 'required' : False, 'default' : 'yes', 'permitted' : _permitted_bool_values },
+                'segment_translation_as_popup'      : { 'required' : False, 'default' : 'yes', 'permitted' : _permitted_bool_values + ['not_popup_translation_only'] },
                 'segment_translation_character'     : { 'required' : False, 'default' : '✎',    'character' : True },
                 'segment_translation_mouseover'     : { 'required' : False, 'default' : 'yes', 'permitted' : _permitted_bool_values },
 		'segment_translation_spreadsheet'   : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'source_file'                       : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'tagged_corpus'                     : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'tag_using_google_cloud'            : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'target_file'                       : { 'required' : False, 'default' : '',    'file_or_directory': True },
 		'text_direction'                    : { 'required' : False, 'default' : 'ltr', 'permitted': ['rtl', 'ltr'] },
 		'title'                             : { 'required' : False, 'default' : ''     },
+                'tmx_files'                         : { 'required' : False, 'default' : False, 'dict' : True },
+                'tmx_source_lang'                   : { 'required' : False, 'default' : ''     },
+                'tmx_target_lang'                   : { 'required' : False, 'default' : ''     },
 		'toggle_translation_button'         : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
                 'translated_words_in_colour'        : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'translated_words_not_in_colour'    : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
+                'translation_alignment_corpus'      : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'translation_includes_transcription': { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
 		'translation_mouseover'             : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
 		'translation_spreadsheet'           : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'translation_spreadsheet_surface'   : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'translation_spreadsheet_tokens'    : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'trimming_db_threshold'             : { 'required' : False, 'default' : 25,   'number': True },
+                'trimming_start_offset'             : { 'required' : False, 'default' : 0.0,   'number': True },
                 'tts_engine'                        : { 'required' : False, 'default' : 'None','permitted': [ 'None', None ] + _supported_tts_engines },
                 'tts_voice'                         : { 'required' : False, 'default' : '' },
                 'tts_url'                           : { 'required' : False, 'default' : '' },
                 'tts_word_substitution_spreadsheet' : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'ui_texts'                          : { 'required' : False,  'default' : {} },
                 'unsegmented_corpus'                : { 'required' : False, 'default' : '',    'file_or_directory': True },
 		'untagged_corpus'                   : { 'required' : False, 'default' : '',    'file_or_directory': True },
+                'untagged_raw_corpus'               : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 'video_annotations'                 : { 'required' : False, 'default' : '',    'permitted' : _permitted_bool_values },
                 'video_annotations_from_translation': { 'required' : False, 'default' : '',    'permitted' : _permitted_bool_values },
+                'web_multimedia_url'                : { 'required' : False, 'default' : '' },
+                'word_alignment_file'               : { 'required' : False, 'default' : '',    'file_or_directory': True },
 		'word_audio_directory'              : { 'required' : False, 'default' : '',    'file_or_directory': True },
                 #'word_audio_voice'                 : { 'required' : False, 'default' : '' },
                 'word_translation_file_in_json'     : { 'required' : False, 'default' : 'no',  'permitted' : _permitted_bool_values },
@@ -362,6 +583,7 @@ items_in_lara_local_config_data = {
                 'recompile'                         : { 'required' : False, 'default' : '', 'internal': True     },
                 'write_word_pages_to_file'          : { 'required' : False, 'default' : 'yes', 'permitted' : _permitted_bool_values, 'internal': True },
                 'switch_off_caching'                : { 'required' : False, 'default' : 'no', 'permitted' : _permitted_bool_values, 'internal': True },
+                'selector_tool_id'                  : { 'required' : False, 'default' : '', 'integer' : True, 'internal': True },
         }
 
 right_to_left_languages = ['arabic',
@@ -603,16 +825,28 @@ def check_lara_id_and_print(Id, ReplyFile):
         Data = 'internal_error'
     lara_utils.write_json_to_file(Data, ReplyFile)
 
+# Need to omit default values in general otherwise checking doesn't work
+def save_params_as_config_file(Params, ConfigFile):
+    Dict = dict(Params)
+    Dict1 = {}
+    for Key in Dict:
+        if Dict[Key] != default_value_for_config_file_key(Key):
+            Dict1[Key] = Dict[Key]
+    lara_utils.write_json_to_file_plain_utf8(Dict1, ConfigFile)
+
+def default_value_for_config_file_key(Key):
+    Data = items_in_lara_local_config_data[Key]
+    return Data['default'] if 'default' in Data else None
                   
 # --------------------------------------------------------
-
-# Create config data for "distributed LARA" from reader data file and other sources
 
 def right_to_left_language(L2):
     global right_to_left_languages
     return L2 in right_to_left_languages
 
 def get_ui_text( id, Params ):
+    if id in Params.ui_texts:
+        return Params.ui_texts[id]
     Language = Params.language_ui
     if Language not in ui_texts or id not in ui_texts[Language]:
         Language = _language_ui_fallback

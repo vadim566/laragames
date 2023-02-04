@@ -7,8 +7,10 @@ import lara_translations
 import lara_audio
 import lara_extra_info
 import lara_play_all
+import lara_picturebook
 import lara_split_and_clean
 import lara_config
+import lara_replace_chars
 import lara_parse_utils
 import lara_utils
 import re
@@ -194,14 +196,26 @@ def combine_abstract_html_word_pages(AbstractHTMLList):
                     Dict[Key] = NewWordPage
                 else:
                     OldWordPage = Dict[Key]
-                    OldWordPage['examples'] += NewWordPage['examples']
-                    OldWordPage['extra_info'] += NewWordPage['extra_info']
-                    OldWordPage['images'] += NewWordPage['images']
+                    if 'examples' in OldWordPage and 'examples' in NewWordPage:
+                        OldWordPage['examples'] += NewWordPage['examples']
+                    elif 'examples' in NewWordPage:
+                        OldWordPage['examples'] = NewWordPage['examples']
+                        
+                    if 'extra_info' in OldWordPage and 'extra_info' in NewWordPage:    
+                        OldWordPage['extra_info'] += NewWordPage['extra_info']
+                    elif 'extra_info' in NewWordPage:    
+                        OldWordPage['extra_info'] = NewWordPage['extra_info']
+                        
+                    if 'images' in OldWordPage and 'images' in NewWordPage:  
+                        OldWordPage['images'] += NewWordPage['images'] 
+                    elif 'images' in NewWordPage:  
+                        OldWordPage['images'] = NewWordPage['images'] 
     for Key in Dict:
         WordPage = Dict[Key]
         if 'extra_info' in WordPage and isinstance(WordPage['extra_info'], list) and len(WordPage['extra_info']) != 0:
             WordPage['extra_info'] = lara_utils.remove_duplicates_general(WordPage['extra_info'])
     return Dict
+
 
 ##        {
 ##            "count": 3,
@@ -450,6 +464,8 @@ def copy_segment_audio(SegmentAudioDict, Params):
     lara_utils.print_and_flush(f'--- files copied')
 
 def copy_images(ImagesDict, Params):
+    if Params.hide_images == 'yes':
+        return
     Files = ImagesDict.keys()
     NFiles = len(Files)
     lara_utils.print_and_flush(f'--- {NFiles} image files to copy')
@@ -574,25 +590,39 @@ def make_main_text_pages(AbstractHTML, LemmaFreqDict, NotesDict, AllPageNames, P
 def make_main_text_page(Page, SegmentRepresentationDict, LemmaFreqDict, NotesDict, AllPageNames, Params):
     CorpusId = Page['corpus_name']
     PageName = Page['page_name']
-    SegmentNames = Page['segments']
+    SegmentNamesOrImages = Page['segments']
     CustomCSSFileInfo = Page['custom_css_file'] if 'custom_css_file' in Page else False
     CustomScriptFileInfo = Page['custom_script_file'] if 'custom_script_file' in Page else False
-    Segments = [ make_segment(SegmentRepresentationDict[SegmentName], LemmaFreqDict, NotesDict, 'main_text', Params) for SegmentName in SegmentNames ]
-    make_main_text_page1(CorpusId, PageName, Segments, LemmaFreqDict, NotesDict, AllPageNames, CustomCSSFileInfo, CustomScriptFileInfo, Params)
+    if Params.picturebook == 'yes' and Params.picturebook_word_locations_file != '':
+        Segments = make_picturebook_segments_for_page(PageName, SegmentNamesOrImages, SegmentRepresentationDict, Params)
+    else:
+        ( Segments, MapLines ) = ( [], [] )
+        for SegmentNameOrImage in SegmentNamesOrImages:
+            if lara_picturebook.is_annotated_image_representation(SegmentNameOrImage):
+                ( Segment, Map ) = make_annotated_image(SegmentNameOrImage, SegmentRepresentationDict, Params)
+                MapLines += [ Map ]
+            else:
+                Segment = make_segment(SegmentRepresentationDict[SegmentNameOrImage], LemmaFreqDict, NotesDict, 'main_text', Params)
+            Segments += [ Segment ]
+    make_main_text_page1(CorpusId, PageName, Segments, MapLines, LemmaFreqDict, NotesDict, AllPageNames, CustomCSSFileInfo, CustomScriptFileInfo, Params)
 
-def make_main_text_page1(CorpusId, PageName, Segments, LemmaFreqDict, NotesDict, AllPageNames, CustomCSSFileInfo, CustomScriptFileInfo, Params):
+def make_main_text_page1(CorpusId, PageName, Segments, MapLines, LemmaFreqDict, NotesDict, AllPageNames, CustomCSSFileInfo, CustomScriptFileInfo, Params):
     CurrentFile = full_name_of_main_text_file(CorpusId, PageName, Params)
     PrecedingMainFile = short_name_of_preceding_main_text_file(CorpusId, PageName, AllPageNames)
     FollowingMainFile = short_name_of_following_main_text_file(CorpusId, PageName, AllPageNames)
     FirstMainFile = short_name_of_first_main_text_file(AllPageNames)
     ParamsForHeader = handle_custom_css_and_script_files_for_main_text_page(Params, CustomCSSFileInfo, CustomScriptFileInfo)
-    HeaderLines = lara_html.main_text_file_header(PrecedingMainFile, FollowingMainFile, FirstMainFile, ParamsForHeader)
+    CountFile = formatted_count_file_for_word_pages_short()
+    AlphabeticalFile = formatted_alphabetical_file_for_word_pages_short(),
+    HeaderLines = lara_html.main_text_file_header(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile,
+                                                  CountFile, AlphabeticalFile, ParamsForHeader)
     AllSegments = ''.join(Segments)
+    #lara_utils.print_and_flush(f'--- Segments: "{Segments}"')
     SegmentLines = AllSegments.split('\n')
-    HTMLLines = hyperlinked_lines_to_html_lines(SegmentLines)
+    MainHTMLLines = hyperlinked_lines_to_html_lines(SegmentLines)
     ClosingLines = lara_html.main_text_file_closing(PrecedingMainFile, FollowingMainFile, Params)
     File = full_name_of_main_text_file(CorpusId, PageName, Params)
-    lara_utils.write_unicode_text_file('\n'.join(HeaderLines + HTMLLines + ClosingLines), File)
+    lara_utils.write_unicode_text_file('\n'.join(HeaderLines + MainHTMLLines + MapLines + ClosingLines), File)
     lara_utils.print_and_flush(f'--- Written main text file {File}')
 
 ##            "custom_css_file": {
@@ -690,15 +720,27 @@ def make_concordance_page1(Lemma, Examples, ExtraInfo, Images, NotesAreDefined, 
     FileName = full_file_name_for_word(Lemma, Params.word_pages_directory)
     lara_utils.write_unicode_text_file('\n'.join(HTMLLines), FileName)
 
-_width_of_image_in_extra_info = 400
+#_width_of_image_in_extra_info = 400
 
 def format_image_for_extra_info(Image, Params):
+    ImageSize = lara_utils.size_of_image(f'{Params.word_pages_directory}/multimedia/{Image}')
+    width_of_image_in_extra_info = Params.image_width_in_concordance_pages
+    if ImageSize == False:
+        return f'<p>(Unable to format image {Image})</p>'
+    else:
+        ( Width, Height ) = ImageSize
+        ( Width1, Height1 ) = ( width_of_image_in_extra_info, int( Height * width_of_image_in_extra_info / Width ) )
+        return f'<img src="multimedia/{Image}" width="{Width1}" height="{Height1}" />'
+
+_height_of_image_in_thumbnail = 80
+
+def format_image_for_thumbnail(Image, Params):
     ImageSize = lara_utils.size_of_image(f'{Params.word_pages_directory}/multimedia/{Image}')
     if ImageSize == False:
         return f'<p>(Unable to format image {Image})</p>'
     else:
         ( Width, Height ) = ImageSize
-        ( Width1, Height1 ) = ( _width_of_image_in_extra_info, int( Height * _width_of_image_in_extra_info / Width ) )
+        ( Width1, Height1 ) = ( int( Width * _height_of_image_in_thumbnail / Height ), _height_of_image_in_thumbnail )
         return f'<img src="multimedia/{Image}" width="{Width1}" height="{Height1}" />'
 
 def make_concordance_page_example(SegmentRepresentation, LemmaFreqDict, NotesDict, Lemma, Params):
@@ -769,7 +811,7 @@ def make_segment1(Words, Anchor, PlainText, CorpusId, Page, Translation, Audio, 
         TranslationControl1 = '' if Params.segment_translation_mouseover == 'no' else TranslationControl
         Controls = f'{AudioControl1}{TranslationControl1}'
     IdTag = segment_id_tag(SegmentContext, CorpusId, Params)
-    SegmentText1 = SegmentText if PlainText == '' or PlainText.isspace() else f'{SegmentText} {IdTag}{Controls}' 
+    SegmentText1 = SegmentText if PlainText == '' or PlainText.isspace() or IdTag == '' and Controls == '' else f'{SegmentText} {IdTag}{Controls}' 
     if SegmentContext == 'main_text':
         return insert_before_first_real_text(f'<a id="{Anchor}"></a>', SegmentText1)
     else:
@@ -821,6 +863,228 @@ def print_form_for_corpus_id(CorpusId, Params):
 
 # ----------------------------------------------------------------
 
+# For a picturebook, we add content to pictures using the <map> tag. The result looks like the following:
+
+##    <img src="./multimedia/hello_world.jpg" width="480" usemap="#hello_world_map" height="404"/> <a id="page_1_segment_1"></a>
+##    <map name="hello_world_map">
+##      <area shape="rect" coords="92,80,351,188" href="word_hello.html" target="aux_frame" title="góðan daginn" onclick="playSound('./multimedia/1765174_210520_072441339.mp3');">
+##      <area shape="rect" coords="82,205,384,311" href="word_world.html" target="aux_frame" title="heimur" onclick="playSound('./multimedia/150603_190806_163115365.mp3');">
+##    </map>
+
+def make_picturebook_segments_for_page(PageName, SegmentNames, SegmentRepresentationDict, Params):
+    SegmentRepresentations = [SegmentRepresentationDict[SegmentName] for SegmentName in SegmentNames ]
+    MapName = f'page_{PageName}_map'
+    AnchorElements = make_picturebook_anchor_elements_for_page(SegmentNames)
+    ( ImageElements, AreaElements ) = make_picturebook_segments_for_page1(SegmentRepresentations, MapName, Params)
+    MapTagLines = make_picturebook_map_tag(AreaElements, MapName)
+    return ImageElements + AnchorElements + MapTagLines
+
+##                {
+##                    "annotated_image": "yes",
+##                    "image": "restaurant_date.jpg",
+##                    "page": 1,
+##                    "segments": [
+##                        "picturebook_examples_mixed_toy_page_1_segment_1_1",
+##                        "picturebook_examples_mixed_toy_page_1_segment_1_2",
+##                        "picturebook_examples_mixed_toy_page_1_segment_1_3",
+##                        "picturebook_examples_mixed_toy_page_1_segment_1_4"
+##                    ]
+##                }
+
+def make_annotated_image(ImageRepresentation, SegmentRepresentationDict, Params):
+    SegmentNames = ImageRepresentation['segments']
+    ImageName = ImageRepresentation['image']
+    MapName = f'{ImageName}_map'
+    SegmentRepresentations = [SegmentRepresentationDict[SegmentName] for SegmentName in SegmentNames ]
+    AnchorElements = make_picturebook_anchor_elements_for_page(SegmentNames)
+    ( ImageElements, AreaElements ) = make_picturebook_segments_for_page1(SegmentRepresentations, MapName, Params)
+    MapTagLines = make_picturebook_map_tag(AreaElements, MapName)
+    #return ''.join(ImageElements + AnchorElements + MapTag)
+    return ( ''.join(ImageElements + AnchorElements), '\n'.join(MapTagLines) )
+
+def make_picturebook_anchor_elements_for_page(SegmentNames):
+    return [ f'<a id="{SegmentName}"></a>' for SegmentName in SegmentNames ]
+
+# Return ( ImageElements, AreaElements ) 
+def make_picturebook_segments_for_page1(SegmentRepresentations, MapName, Params):
+    Pairs = [ make_picturebook_segment(SegmentRepresentation, MapName, Params) for SegmentRepresentation in SegmentRepresentations ]
+    #lara_utils.print_and_flush(Pairs)
+    ImageElements = lara_utils.concatenate_lists([ Pair[0] for Pair in Pairs ])
+    AreaElements = lara_utils.concatenate_lists([ Pair[1] for Pair in Pairs ])
+    return ( ImageElements, AreaElements )
+
+def make_picturebook_segment(SegmentRepresentation, MapName, Params):
+    ComponentRepresentations = SegmentRepresentation['words']
+    AudioControlElements = make_picturebook_segment_audio_control_elements(SegmentRepresentation, Params)
+    TranslationControlElements = make_picturebook_segment_translation_control_elements(SegmentRepresentation, Params)
+    Pairs = [ make_picturebook_word_or_image(ComponentRepresentation, MapName, Params) for ComponentRepresentation in ComponentRepresentations ]
+    #lara_utils.print_and_flush(Pairs)
+    ImageElements = lara_utils.concatenate_lists([ Pair[0] for Pair in Pairs ])
+    WordAreaElements = lara_utils.concatenate_lists([ Pair[1] for Pair in Pairs ])
+    AreaElements = AudioControlElements + TranslationControlElements + WordAreaElements
+    return ( ImageElements, AreaElements )
+
+def make_picturebook_segment_audio_control_elements(SegmentRepresentation, Params):
+    if not 'audio' in SegmentRepresentation or not 'speaker_control_location' in SegmentRepresentation:
+        return []
+    Coords = SegmentRepresentation['speaker_control_location']
+    Shape = 'rect' if len(Coords) == 2 else 'poly'
+    Intro = f'<area shape="{Shape}" '
+    CoordsNumbersStr = location_to_coords_string(Coords)
+    if CoordsNumbersStr == False:
+        return []
+    CoordsStr = f'coords="{CoordsNumbersStr}" '
+    AudioFile = SegmentRepresentation['audio']['file']
+    RelativeAudioFile = f'{Params.relative_compiled_directory}/multimedia/{AudioFile}'
+    PlaySoundCall = lara_audio.construct_play_sound_call_for_word(RelativeAudioFile, Params)
+    Trigger = 'onclick' 
+    AudioStr = f'{Trigger}="{PlaySoundCall}" '
+    Coda = f'>'
+    return [ Intro + CoordsStr + AudioStr + Coda ]
+
+def make_picturebook_segment_translation_control_elements(SegmentRepresentation, Params):
+    if not 'translation' in SegmentRepresentation or not 'translation_control_location' in SegmentRepresentation:
+        return []
+    Coords = SegmentRepresentation['translation_control_location']
+    Shape = 'rect' if len(Coords) == 2 else 'poly'
+    Intro = f'<area shape="{Shape}" '
+    CoordsNumbersStr = location_to_coords_string(Coords)
+    if CoordsNumbersStr == False:
+        return []
+    CoordsStr = f'coords="{CoordsNumbersStr}" '
+    QuotTranslation = SegmentRepresentation['translation'].replace("'", "&apos;")
+    TranslationStr = f'title="{QuotTranslation}" '
+    Coda = f'>'
+    return [ Intro + CoordsStr + TranslationStr + Coda ]
+
+##    <img src="./multimedia/hello_world.jpg" width="480" usemap="#hello_world_map" height="404"/> <a id="page_1_segment_1"></a>
+##    <map name="hello_world_map">
+##      <area shape="rect" coords="92,80,351,188" href="word_hello.html" target="aux_frame" title="góðan daginn" onclick="playSound('./multimedia/1765174_210520_072441339.mp3');">
+##      <area shape="rect" coords="82,205,384,311" href="word_world.html" target="aux_frame" title="heimur" onclick="playSound('./multimedia/150603_190806_163115365.mp3');">
+##    </map>
+
+
+def make_picturebook_word_or_image(ComponentRepresentation, MapName, Params):
+    if isinstance(ComponentRepresentation, dict) and 'multimedia' in ComponentRepresentation and ComponentRepresentation['multimedia'] == 'img':
+        return make_picturebook_image(ComponentRepresentation, MapName, Params)
+    elif isinstance(ComponentRepresentation, dict) and 'location' in ComponentRepresentation and 'word' in ComponentRepresentation:
+        return make_picturebook_word(ComponentRepresentation, Params)
+    else:
+        return ( [], [] )
+
+##                {
+##                    "corpus_name": "mary_manuscript",
+##                    "file": "page1.jpg",
+##                    "height": 791,
+##                    "multimedia": "img",
+##                    "width": 717
+##                },
+
+##    <img src="./multimedia/hello_world.jpg" width="480" usemap="#hello_world_map" height="404"/>
+
+def make_picturebook_image(Representation, MapName, Params):
+    if not ( 'file' in Representation and 'width' in Representation and 'height' in Representation ):
+        lara_utils.print_and_flush(f'*** Error: bad img representation: {Representation}')
+        return False
+    File = Representation['file']
+    URL = f'{lara_utils.relative_multimedia_dir(Params)}/{File}'
+    Width = Representation['width']
+    Height = Representation['height']
+    ImageElements = [ f'<img class="map" src="{URL}" usemap="#{MapName}" width="{Width}" height="{Height}" />' ]
+    AreaElements = []
+    return ( ImageElements, AreaElements )
+
+##                {
+##                    "audio": {
+##                        "corpus_name": "mary_manuscript",
+##                        "file": "118812_190719_183034441.mp3"
+##                    },
+##                    "lemma": "Mary",
+##                    "location": [ [ 32, 101 ], [ 215, 217 ] ],
+##                    "translation": "Mary",
+##                    "word": "Mary"
+##                },
+##
+##  <area shape="rect" coords="92,80,351,188" href="word_hello.html" target="aux_frame"
+##        title="góðan daginn" onclick="playSound('./multimedia/1765174_210520_072441339.mp3');">
+
+##    FileName = file_name_for_word(Lemma)
+##    ScreenName = lara_utils.split_screen_pane_name_for_word_page_screen(Params)
+##    if WordContext == '*current_word_on_word_page*' and Params.html_style != 'social_network':
+##        Result = ColouredWord
+##    elif Params.html_style != 'social_network':
+##        Result = f'<a href="{FileName}" target="{ScreenName}"><span id={WordId}>{ColouredWord}</span></a>'
+
+def make_picturebook_word(Representation, Params):
+    Coords = Representation['location']
+    Shape = 'rect' if len(Coords) == 2 else 'poly'
+    Intro = f'<area shape="{Shape}" '
+    CoordsNumbersStr = location_to_coords_string(Coords)
+    if CoordsNumbersStr == False:
+        #lara_utils.print_and_flush(f'--- No location for coords {Coords}')
+        return ( [], [] )
+    CoordsStr = f'coords="{CoordsNumbersStr}" '
+    FileName = file_name_for_word(Representation['lemma'])
+    ScreenName = lara_utils.split_screen_pane_name_for_word_page_screen(Params)
+    ConcordanceStr = f'href="{FileName}" target="{ScreenName}" '
+    if 'translation' in Representation:
+        QuotTranslation = Representation['translation'].replace("'", "&apos;")
+        TranslationStr = f'title="{QuotTranslation}" '
+    else:
+        TranslationStr = ''
+    if 'audio' in Representation:
+        AudioFile = Representation['audio']['file']
+        RelativeAudioFile = f'{Params.relative_compiled_directory}/multimedia/{AudioFile}'
+        PlaySoundCall = lara_audio.construct_play_sound_call_for_word(RelativeAudioFile, Params)
+        Trigger = 'onclick' if Params.audio_on_click == 'yes' else 'onmouseover'
+        AudioStr = f'{Trigger}="{PlaySoundCall}" '
+    else:
+        AudioStr = ''
+    Coda = f'>'
+    ImageElements = []
+    AreaElements = [ Intro + CoordsStr + ConcordanceStr + TranslationStr + AudioStr + Coda ]
+    return ( ImageElements, AreaElements )
+
+def location_to_coords_string(Coords):
+    if not valid_coords_list(Coords):
+        return False
+    CoordsNumbers = lara_utils.concatenate_lists(Coords)
+    return ','.join( [ str(X) for X in CoordsNumbers ] ) if not '' in CoordsNumbers else False
+
+def valid_coords_list(CoordsList):
+    if not isinstance(CoordsList, ( list, tuple )) or len(CoordsList) < 2:
+        lara_utils.print_and_flush(f'*** Error: invalid coordinates list {CoordsList}')
+        return False
+    for Coords in CoordsList:
+        if not isinstance(Coords, ( list, tuple )) or len(Coords) != 2:
+            lara_utils.print_and_flush(f'*** Error: invalid coordinate {Coords} in list {CoordsList}')
+            return False
+        for Coord in Coords:
+            if not isinstance(Coord, int) and not Coord == '':
+                lara_utils.print_and_flush(f'*** Error: invalid coordinate {Coords} in list {CoordsList}')
+                return False
+    return True
+
+##def bounding_box_coords_to_four_coords_string(BoundingBoxCoords):
+##    if not isinstance(BoundingBoxCoords, ( list, tuple )) or not len(BoundingBoxCoords) == 2 or \
+##       not isinstance(BoundingBoxCoords[0], ( list, tuple )) or not len(BoundingBoxCoords[0]) == 2 or \
+##       not isinstance(BoundingBoxCoords[1], ( list, tuple )) or not len(BoundingBoxCoords[1]) == 2:
+##        lara_utils.print_and_flush(f'*** Error: invalid bounding box "{BoundingBoxCoords}", should be pair of pairs of numbers')
+##        return False
+##    CoordsNumbers = BoundingBoxCoords[0] + BoundingBoxCoords[1]
+##    if not is_list_of_ints(CoordsNumbers):
+##        return False
+##    else:
+##        return ','.join( [ str(X) for X in CoordsNumbers ] )
+
+def is_list_of_ints(List):
+    return False if len([ X for X in List if not isinstance(X, int ) ]) != 0 else True
+
+def make_picturebook_map_tag(AreaElements, MapName):
+    return [ f'<map name="{MapName}">' ] + AreaElements + [ f'</map>' ]
+
+# ----------------------------------------------------------------
+
 # Make the elements in a segment's 'words' component.
 
 def make_word_or_embedded_multimedia(Index, WordRepresentation, SegmentAnchor, LemmaFreqDict, NotesDict, SegmentContext, Params):
@@ -831,7 +1095,7 @@ def make_word_or_embedded_multimedia(Index, WordRepresentation, SegmentAnchor, L
     elif is_annotated_word(WordRepresentation):
         return make_annotated_word(Index, WordRepresentation, SegmentAnchor, LemmaFreqDict, NotesDict, SegmentContext, Params)
     else:
-        return format_plain_text(WordRepresentation['word'], SegmentContext)
+        return format_plain_text(WordRepresentation['word'], SegmentContext, Params)
 
 def is_embedded_img_multimedia(WordRepresentation):
     return 'multimedia' in WordRepresentation and WordRepresentation['multimedia'] == 'img'
@@ -843,11 +1107,13 @@ def is_embedded_audio_multimedia(WordRepresentation):
 def is_annotated_word(WordRepresentation):
     return 'lemma' in WordRepresentation and WordRepresentation['lemma'] != ''
 
-def format_plain_text(Str, SegmentContext):
+def format_plain_text(Str0, SegmentContext, Params):
+    Str = lara_replace_chars.restore_reserved_chars(Str0)
     if SegmentContext == 'main_text':
         return remove_comment_markers(Str)
     else:
-        Str1 = lara_parse_utils.remove_hashtag_comment_and_html_annotations1(Str, 'delete_comments')[0]
+        KeepComments = 'delete_comments' if Params.keep_comments == 'no' else 'keep_comments'
+        Str1 = lara_parse_utils.remove_hashtag_comment_and_html_annotations1(Str, KeepComments)[0]
         # replace sequence of white space with single blank
         return re.sub(r"\s+", " ", Str1)
 
@@ -864,6 +1130,8 @@ def remove_comment_markers(Str):
     
 def make_embedded_img_multimedia(Representation, SegmentContext, Params):
     if SegmentContext != 'main_text':
+        return ''
+    if Params.hide_images == 'yes':
         return ''
     if not 'file' in Representation and 'width' in Representation and 'height' in Representation:
         lara_utils.print_and_flush(f'*** Error: bad img representation: {Representation}')
@@ -904,15 +1172,25 @@ def make_embedded_audio_multimedia(Representation, SegmentContext, Params):
 ##                    "word": "little"
 ##                },
 def make_annotated_word(Index, WordRepresentation, SegmentAnchor, LemmaFreqDict, NotesDict, SegmentContext, Params):
-    Word = WordRepresentation['word']
+    Word0 = WordRepresentation['word']
+    Word = lara_replace_chars.restore_reserved_chars(Word0)
     Lemma = WordRepresentation['lemma']
     WordId = f'{SegmentAnchor}_word_{Index}'
     Count = LemmaFreqDict[Lemma] if isinstance(LemmaFreqDict, dict) and Lemma in LemmaFreqDict else 1
     Translation = WordRepresentation['translation'] if 'translation' in WordRepresentation else ''
     Audio = get_audio_reference_from_representation(WordRepresentation, Params)
+    Images = WordRepresentation['images'] if 'images' in WordRepresentation else ''
     WordContext = segment_context_to_word_context(SegmentContext, Lemma)
-    Colour = colour_for_word(Word, Lemma, Count, WordContext, NotesDict, Audio, Params)
-    return add_translation_audio_and_colour_annotations_to_word(Word, WordId, Lemma, Translation, Audio, Colour, WordContext, Params)
+    if Params.picture_words and isinstance(Images, (list, tuple)) and len(Images) != 0:
+        ( Word1, Colour ) = ( format_image_for_thumbnail(Images[0], Params), 'black' )
+    else:
+        #( Word1, Colour ) = ( Word, colour_for_word(Word, Lemma, Count, WordContext, NotesDict, Audio, Translation, Params) )
+        Word1 = lara_parse_utils.remove_disambiguation_annotation_from_word(Word)
+        Colour = colour_for_word(Word, Lemma, Count, WordContext, NotesDict, Audio, Translation, Params)
+    return add_translation_audio_and_colour_annotations_to_word(Word1, WordId, Lemma, Translation, Audio, Colour, WordContext, Params)
+
+def thumbnail_for_word(Word, Params):
+    return
 
 ##                    "audio": {
 ##                        "corpus": "Mary_had_a_little_lamb_abstract_html",
@@ -988,25 +1266,26 @@ def internalise_pos_colours_if_necessary(Params):
                 Dict[POS] = Colour
     Params.postag_colours = Dict
                                                                      
-def colour_for_word(Word, Lemma, Count, WordContext, NotesDict, Audio, Params):
+def colour_for_word(Word, Lemma, Count, WordContext, NotesDict, Audio, Translation, Params):
     if WordContext == '*current_word_on_word_page*':
         return 'red'
     elif WordContext == '*non_current_word_on_word_page*':
         return colour_for_pos_tag_in_lemma(Lemma, Params)
     else:
-        return colour_for_main_text_word(Word, Lemma, Count, NotesDict, Audio, Params)
+        return colour_for_main_text_word(Word, Lemma, Count, NotesDict, Audio, Translation, Params)
 
 ## If we aren't using colour for frequencies, we might want to use it to mark audio words or notes or MWEs
-def colour_for_main_text_word(Word, Lemma, Count, NotesDict, Audio, Params):
+def colour_for_main_text_word(Word, Lemma, Count, NotesDict, Audio, Translation, Params):
     if Params.audio_words_in_colour != 'no' and Params.audio_mouseover != 'no' and Params.coloured_words == 'no' and Audio != '*no_audio_url*':
         return Params.audio_words_in_colour
     elif Params.note_words_in_colour != 'no' and Params.coloured_words == 'no' and Lemma in NotesDict:
         return 'red'
     elif Params.image_dict_words_in_colour != 'no' and Params.coloured_words == 'no' and len(lara_translations.all_images_for_word(Lemma)) > 0:
         return 'red'
-##    elif Params.translated_words_in_colour != 'no' and Params.coloured_words == 'no' and \
-##         lara_translations.word_has_translation(Word, Lemma, Params) != False:
-##        return 'red'
+    elif Params.translated_words_in_colour != 'no' and Params.coloured_words == 'no' and Translation != '':
+        return 'red'
+    elif Params.translated_words_not_in_colour != 'no' and Params.coloured_words == 'no' and ( Translation == '' or Translation.isspace() ):
+        return 'red'
     elif Params.mwe_words_in_colour != 'no' and Params.coloured_words == 'no' and lemma_looks_like_multiword(Lemma, Params):
         return 'red'
     elif Params.postags_colours_file != '':
@@ -1115,6 +1394,8 @@ def alphabetically_ordered_index_file_item_to_html_line(Item, NotesDict, Params)
 def make_frequency_ordered_index_file(AbstractHTML, NotesDict, Params):
     Params1 = adapt_params_for_count_and_alphabetical_files(Params)
     Items = AbstractHTML['frequency_index']
+    if Params.frequency_list_only_images == 'yes':
+        Items = frequency_list_items_with_images(Items)
     HTMLList = []
     for Index in range(0, len(Items)):
         HTMLList += [ frequency_ordered_index_file_item_to_html_line(Items[Index], Index + 1, NotesDict, Params1) ]
@@ -1122,8 +1403,16 @@ def make_frequency_ordered_index_file(AbstractHTML, NotesDict, Params):
               lara_config.get_ui_text('index_heading_word', Params),
               lara_config.get_ui_text('index_heading_freq', Params),
               lara_config.get_ui_text('index_heading_cumul', Params)]
+    # Don't show percentages if we've taken out items
+    if Params.frequency_list_only_images == 'yes':
+        Header = Header[:3]
     OutFile = f'{Params.word_pages_directory}/{formatted_count_file_for_word_pages_short()}'
     lara_html.print_lara_html_table(lara_config.get_ui_text('frequency_index', Params), Header, HTMLList, OutFile, Params)
+
+def frequency_list_items_with_images(Items):
+    return [ Item for Item in Items
+             if 'word' in Item and isinstance(Item['word'], ( list, tuple )) and len(Item['word']) != 0 and
+             'images' in Item['word'][0] and len(Item['word'][0]['images']) != 0 ]
 
 def frequency_ordered_index_file_item_to_html_line(Item, Rank, NotesDict, Params):
     WordRepresentation = Item['word'][0]
@@ -1134,7 +1423,7 @@ def frequency_ordered_index_file_item_to_html_line(Item, Rank, NotesDict, Params
     SegmentContext = '*index_page*'
     Word = WordRepresentation['word']
     AnnotatedWord = make_annotated_word(0, WordRepresentation, f'frequency_index_{Word}', LemmaFreqDict, NotesDict, SegmentContext, Params)
-    return ( Rank, AnnotatedWord, Count, CumulativePercentage )
+    return ( Rank, AnnotatedWord, Count ) if Params.frequency_list_only_images == 'yes' else ( Rank, AnnotatedWord, Count, CumulativePercentage )
 
 # We can't have audio mouseovers in these files, because they are lemmas rather than surface words
 # Also, we can't use a surface_word_token model here
@@ -1288,8 +1577,10 @@ def word_page_line_to_html_line(HyperlinkedLine):
     else:
         HyperlinkedLine1 = HyperlinkedLine
     if line_starts_with_tag_not_needing_paragraph(HyperlinkedLine1):
+        #lara_utils.print_and_flush(f'--- Does not require paragraph: "{HyperlinkedLine1}"')
         return HyperlinkedLine1
     else:
+        #lara_utils.print_and_flush(f'--- Requires paragraph: "{HyperlinkedLine1}"')
         return f'<p>{HyperlinkedLine1}</p>'
 
 tags_not_needing_paragraph = ['<h1', '<h2',
@@ -1299,11 +1590,14 @@ tags_not_needing_paragraph = ['<h1', '<h2',
 
 # Don't wrap a <p> around headers, images, embedded audio and table elements
 def line_starts_with_tag_not_needing_paragraph(Line):
-    Line1 = Line.lstrip().lower()
+    Line1 = remove_anchor_tags(Line.lstrip().lower())
     for Tag in tags_not_needing_paragraph:
         if Line1.startswith(Tag):
             return True
     return False
+
+def remove_anchor_tags(Str):
+    return re.sub(r'<a[^>]*>|</a>', '', Str)
 
 # ----------------------------------------------------------------
  

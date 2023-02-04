@@ -16,13 +16,14 @@ def game12(story_name, file=None):
 
     """get random sentance"""
     size_of_story =  len(sentance)-1
-    rand_index = random.randint(0, size_of_story)
+    #rand_index = random.randint(0, size_of_story)
 
     """gather 4 random index for 4 wrong answers """
     rand_i = random.sample(range(0, size_of_story), 4)
 
     true_match=['tmp','tmp']
     while len(true_match[0].split()) <5 :
+        rand_index = random.randint(0, size_of_story)
         true_match = [sentance[rand_index], sounds[rand_index]]
 
     true_word = ['', '']

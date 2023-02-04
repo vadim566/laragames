@@ -2,6 +2,7 @@
 import lara_top
 import lara_abstract_html
 import lara_treetagger
+import lara_mwe
 import lara_add_metadata
 import lara_audio
 import lara_install_audio_zipfile
@@ -16,16 +17,43 @@ import lara_generic_tts
 import lara_tts
 import lara_tts_human_eval
 import lara_drama
+import lara_split_audio_on_silence
+# Import following on demand
+#import lara_align_adjust
+#import lara_align_postedit
+#import lara_align_eval
+import lara_partitioned_text_files
+import lara_correct_accents
 import sys
 import time
 
 def print_usage():
     print(f'Usage: {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py <Mode> [ <ConfigFile> ]')
     print(f'       where <Mode> is "segment", "treetagger", "treetagger_add_pos", "treetagger_remove_mwe", "minimaltagger", "minimaltagger_spreadsheet"')
-    print(f'                       "resources", "word_pages", "distributed", "mwe_annotate", "apply_mwe_annotations", "mwe_ml_data"')
+    print(f'                       "resources", "word_pages", "distributed",')
+    print(f'                       "mwe_annotate", "mwe_judgements_from_text", "apply_mwe_annotations", "mwe_ml_data"')
     print(f'                       "abstract_html", "word_pages_from_abstract_html",')
     print(f'                       "combine_play_segment_audio", "list_unrecorded_play_lines" "make_language_reversed_version"')
-    print(f'                       "format_word_token_spreadsheet"')
+    print(f'                       "make_phonetic_corpus", "correct_accents", "correct_accents_and_hashtags"')
+    print(f'                       "cut_up_audio", "cut_up_audio_without_text", "trim_sentence_audio"')
+    print(f'                       "expand_source_and_target_files", "merge_double_alignment",')
+    print(f'                       "align_postediting_files", "align_statistics"')
+    print(f'                       "word_alignment_file", "align_word_audio"')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py silences_label_file <ConfigFile> <Id>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py cut_up_audio <ConfigFile> <Id>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py cut_up_audio_without_text <ConfigFile> <Id>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py recognise_segment_audio <ConfigFile> <NFiles>')
+    print(f'       where <NFiles> is a positive integer or "all"')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py add_tmx_segmentation <ConfigFile> <Id>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py align_segment_audio <ConfigFile> <Id> <MatchFunction> <Mode>')
+    print(f'       where <Id> is a partitioned file Id')
+    print(f'       and <MatchFunction> is match function Id')
+    print(f'       and <Mode> is "create" or "evaluate"')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py merge_double_alignment <ConfigFile> <Id>')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py update_from_align_postediting_file <ConfigFile> <Id>')
+    print(f'       where <Id> is an annotator Id')
+    print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py update_from_aligned_file <ConfigFile> <Id>')
+    print(f'       where <Id> is is a partitioned file Id')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py word_pages_from_abstract_html_multiple <MasterConfigFile> <ConfigFile1> <ConfigFile2> ...')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py change_volume_for_play_part <ConfigFile> <PartName> <Factor>')
     print(f'or     {lara_utils.python_executable()} $LARA/Code/Python/lara_run.py create_tts_audio <RecordingScript> <ConfigFile> <Zipfile>')
@@ -59,7 +87,9 @@ try:
         lara_utils.init_stored_timings()
         ( Mode, Args, NArgs ) = ( full_args[1], full_args[2:], len(full_args[2:]) )
 
-        if Mode == 'treetagger' and NArgs <= 1:
+        if Mode == 'help' and NArgs == 1:
+            print_usage()
+        elif Mode == 'treetagger' and NArgs <= 1:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_top.treetag_untagged_corpus(configFile)
         elif Mode == 'treetagger_add_pos' and NArgs <= 1:
@@ -86,6 +116,65 @@ try:
         elif Mode == 'abstract_html' and NArgs <= 1:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_top.compile_lara_local_abstract_html(configFile)
+        elif Mode == 'make_labelled_corpus' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_top.make_labelled_corpus_file(configFile)
+        elif Mode == 'silences_label_file' and NArgs == 2:
+            lara_split_audio_on_silence.make_silence_label_file_from_config(Args[0], Args[1])
+        elif Mode == 'add_tmx_segmentation' and NArgs == 2:
+            import lara_align_adjust
+            lara_align_adjust.add_tmx_segmentation_from_config_file(Args[0], Args[1])
+        elif Mode == 'expand_source_and_target_files' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_partitioned_text_files.expand_source_and_target_files(configFile)
+        elif Mode == 'cut_up_audio' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_top.cut_up_audio(configFile, '')
+        elif Mode == 'cut_up_audio' and NArgs == 2:
+            lara_top.cut_up_audio(Args[0], Args[1])
+        elif Mode == 'cut_up_audio_without_text' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_top.cut_up_audio_without_text(configFile, '')
+        elif Mode == 'cut_up_audio_without_text' and NArgs == 2:
+            lara_top.cut_up_audio_without_text(Args[0], Args[1])
+        elif Mode == 'trim_sentence_audio' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_split_audio_on_silence.trim_all_sentence_audio(configFile)
+        elif Mode == 'recognise_segment_audio' and NArgs <= 1:
+            import lara_asr
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_asr.recognise_and_store_in_segment_audio_dir(configFile, 'all')
+        elif Mode == 'merge_double_alignment' and NArgs == 2:
+            import lara_align_adjust
+            lara_align_adjust.make_corpus_audio_and_translations_for_double_aligned_file_from_config(Args[0], Args[1])
+        elif Mode == 'recognise_segment_audio' and NArgs == 2:
+            import lara_asr
+            lara_asr.recognise_and_store_in_segment_audio_dir(Args[0], Args[1])
+        elif Mode == 'align_segment_audio' and NArgs == 4:
+            import lara_align_from_audio
+            lara_align_from_audio.align_rec_results_to_text_from_config(Args[0], Args[1], Args[2], Args[3])
+        elif Mode == 'update_from_aligned_file' and NArgs == 2:
+            import lara_align_from_audio
+            lara_align_from_audio.update_segmented_text_and_metadata_from_aligned_file(Args[0], Args[1])
+        elif Mode == 'align_postediting_files' and NArgs <= 1:
+            import lara_align_postedit
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_align_postedit.make_align_postediting_files(configFile)
+        elif Mode == 'align_statistics' and NArgs <= 1:
+            import lara_align_eval
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_align_eval.print_alignment_statistics(configFile)
+        elif Mode == 'word_alignment_file' and NArgs <= 1:
+            import lara_align_words
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_align_words.make_manual_word_alignment_file(configFile)
+        elif Mode == 'align_word_audio' and NArgs <= 1:
+            import lara_align_words
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_align_words.extract_word_audio(configFile)
+        elif Mode == 'update_from_align_postediting_file' and NArgs == 2:
+            import lara_align_postedit
+            lara_align_postedit.update_from_postediting_file(Args[0], Args[1])
         elif Mode == 'abstract_html_zipfile' and NArgs == 3:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_top.compile_lara_local_abstract_html_zipfile(configFile, Args[1], Args[2])
@@ -105,6 +194,9 @@ try:
         elif Mode == 'mwe_annotate' and NArgs <= 1:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_top.mwe_annotate_file(configFile)
+        elif Mode == 'mwe_judgements_from_text' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_mwe.update_mwes_from_text_file(configFile)
         elif Mode == 'apply_mwe_annotations' and NArgs <= 1:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_top.apply_mwe_annotations(configFile)
@@ -125,6 +217,15 @@ try:
         elif Mode == 'make_language_reversed_version' and NArgs <= 1:
             configFile = get_config_file_from_args(Args)
             if configFile: lara_reverse_language.reverse_language_from_config_file(configFile)
+        elif Mode == 'make_phonetic_corpus' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_top.make_phonetic_version_of_corpus(configFile)
+        elif Mode == 'correct_accents' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_correct_accents.try_to_correct_accents(configFile)
+        elif Mode == 'correct_accents_and_hashtags' and NArgs <= 1:
+            configFile = get_config_file_from_args(Args)
+            if configFile: lara_correct_accents.try_to_correct_accents_and_hashtags(configFile)
         elif Mode == 'add_metadata' and NArgs == 2:
             lara_add_metadata.add_metadata_to_lara_resource_directory(Args[0], Args[1])
         elif Mode == 'distributed' and NArgs == 1:

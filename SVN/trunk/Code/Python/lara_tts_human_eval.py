@@ -7,150 +7,149 @@ import lara_html
 import lara_utils
 import random
 
-def test(Id):
-    if Id == 'peter_rabbit':
-        HumanConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'html'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_peter_rabbit_1'
-    elif Id == 'peter_rabbit_json':
-        HumanConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'json'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_peter_rabbit_1.json'
-    elif Id == 'peter_rabbit_csv':
-        HumanConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'csv'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_peter_rabbit_1.csv'
-    elif Id == 'peter_rabbit_csv_time':
-        HumanConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/peter_rabbit/corpus/local_config_tts.json'
-        NWordItems = 1.0     # Actually time in minutes
-        NSegmentItems = 3.0  # Actually time in minutes
-        Mode = 'csv'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_peter_rabbit_time.csv'
-    elif Id == 'le_petit_prince':
-        HumanConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'html'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_le_petit_prince_1'
-    elif Id == 'le_petit_prince_json':
-        HumanConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'json'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_le_petit_prince_1.json'
-    elif Id == 'le_petit_prince_csv':
-        HumanConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/le_petit_prince/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'csv'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_le_petit_prince_1.csv'
-    elif Id == 'le_bonheur_json':
-        HumanConfigFile = '$LARA/Content/le_bonheur/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/le_bonheur/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'json'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_le_bonheur_1.json'
-    elif Id == 'le_bonheur_csv':
-        HumanConfigFile = '$LARA/Content/le_bonheur/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/le_bonheur/corpus/local_config_tts.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'csv'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_le_bonheur_1.csv'
-    elif Id == 'tina':
-        HumanConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config_readspeaker.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'html'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_tina_1'
-    elif Id == 'tina_json':
-        HumanConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config_readspeaker.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'json'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_tina_1.json'
-    elif Id == 'tina_csv':
-        HumanConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config.json'
-        TTSConfigFile = '$LARA/Content/tina_fer_i_fri/corpus/local_config_readspeaker.json'
-        NWordItems = 6
-        NSegmentItems = 6
-        Mode = 'csv'
-        OutFileOrDir = '$LARA/tmp/tts_evaluation_tina_1.csv'
-    else:
-        lara_utils.print_and_flush(f'*** Error: unknown ID {Id}')
-        return False
-    make_random_evaluation_form(HumanConfigFile, TTSConfigFile, NWordItems, NSegmentItems, Mode, OutFileOrDir)
-
-##    "icelandic": { 
-##		"file": "$LARA/tmp/eurocall_icelandic.csv",
+## External top-level call for creating the CSV files used to initialise the questionnaire database
+##
+##     make_human_tts_evaluation_forms(<MetadataFile>)
+##
+## where
+##   
+##   <MetadataFile> is a JSON-formatted file where the items are of the form
+##
+##    "<Language>": { 
+##		"file": "<OutputFile>",
 ##		"data": [ 
-##					{   "id": "tina_fer_i_fri",
-##						"human": "$LARA/Content/tina_fer_i_fri/corpus/local_config.json",
-##						"tts": "$LARA/Content/tina_fer_i_fri/corpus/local_config_readspeaker.json",
-##						"word_time": 1.0,
-##						"segment_time": 6.0
+##			    {   "id": "<Id>",
+##				"human": "<HumanAudioConfigFile>",
+##				"tts": "<TTSAudioConfigFile>",
+##				"word_time": <MinutesOfWordAudio>,
+##				"segment_time": <MinutesOfSegmentAudio>
+##			    }
+##			]
+##	},
+##
+## where
+##
+## <Language> is the name of the language  
+## <Id> is an ID
+## <HumanAudioConfigFile> is the LARA config file for the human audio project
+## <TTSAudioConfigFile> is the LARA config file for the TTS audio project, which must have the same text as the human audio config file    
+## <MinutesOfWordAudio> is the approximate total number of minutes of word audio to select
+## <MinutesOfSegmentAudio> is the approximate total number of minutes of segment audio to select, or "all" to use all segment audio
+##
+## Typical example:
+##
+##	"english": { 
+##		"file": "$LARA/tmp/lrec_2022_english_shortened.csv",
+##		"data": [   
+##					{  "id": "lpp_english",
+##						"human": "$LARA/Content/the_little_prince_lrec2022/corpus/local_config_shortened.json",
+##						"tts": "$LARA/Content/the_little_prince_lrec2022/corpus/local_config_tts_shortened.json",
+##						"word_time": 0.0,
+##						"segment_time": "all"
 ##					}
 ##				]
 ##	},
+    
+def make_human_tts_evaluation_forms(MetadataFile):
+    Metadata = lara_utils.read_json_file(MetadataFile)
+    if Metadata == False:
+        return
+    if not isinstance(Metadata, dict):
+        lara_utils.print_and_flush(f'*** Error: metadata file {MetadataFile} does not contain a dict')
+    CorpusIds = Metadata.keys()
+    Format = 'default'
+    Mode = 'csv'
+    DirOrId = 'dir_lrec_2022'
+    make_eurocall_evaluation_forms1(Format, MetadataFile, CorpusIds, Mode, DirOrId)
 
+## External top-level call for formatting questionnaire data downloaded from database:
+##
+##     format_human_tts_data(<SegmentFile>, <OverallFile>, <VoiceRatingFile>, <ResultsDir>)
+##
+## where
+##
+##   <SegmentFile> is a CSV file with format and example
+##
+##   Lang    UserID Sex  DoB  Education    Level      Teacher Hearing  Reading V1  Text     Score
+##   English 26     male 1997 postgraduate nearNative yes     no       no      tts lettuces 4																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+##
+##   <VoiceRatingFile> is a CSV file with format and example
+##
+##   Lang    UserID    Version  Question  Score
+##   English 19        1        6         5
+##
+##   <OverallFile> is a CSV file with format and example
+##
+##   Lang    UserID Sex  DoB  Education    Level  T  H  R  VersionFirst V1Comment            V2Comment                              Comment StartTime             EndTime
+##   English 45     male 1959 postgraduate native no no no tts	        "cold and monotone." "more natural, clearer pronunciation"  "NULL"  "2021-05-24 02:48:03" "2021-05-24 02:57:28"
+##
+##   <ResultsDir> is the directory in which to place results
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																   
+def format_human_tts_data(SegmentFile, OverallFile, VoiceRatingFile, ResultsDir):
+    JSONFile = f'{ResultsDir}/Data.json'
+    SentenceSummaryFile = f'{ResultsDir}/SentenceSummary.txt'
+    VoiceSummaryFile = f'{ResultsDir}/VoiceSummary.txt'
+    LanguageTableFile = f'{ResultsDir}/LanguageTable.html'
+    VoiceTableFile = f'{ResultsDir}/VoiceTable.html'
+    LanguageAndVoiceTableFile = f'{ResultsDir}/LanguageAndVoiceTable.html'
+    FreeformCommentFile = f'{ResultsDir}/FreeformComments.html'
+    lara_utils.create_directory_if_it_doesnt_exist(ResultsDir)
+    lara_utils.delete_file_if_it_exists(JSONFile)
+    organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile)
+    if not lara_utils.file_exists(JSONFile):
+        return
+    Format = 'default'
+    summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+                            LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile)
+ 
 def make_all_eurocall_evaluation_forms():
     _all_corpus_ids = [ 'danish', 'english', 'farsi', 'french', 'icelandic',
                         'irish', 'italian', 'mandarin', 'spanish', 'swedish' ]
     make_eurocall_evaluation_forms(_all_corpus_ids, 'csv', 'id')
 
-def make_all_lrc_2022_evaluation_forms():
-##    _all_corpus_ids = [ 'english', 'farsi', 'french', 'icelandic',
-##                        'italian', 'irish', 'japanese', 'slovak', 'polish' ]
+def make_all_lrec_2022_evaluation_forms():
     _all_corpus_ids = [ 'english', 'french', 'italian', 'polish',
-                        'farsi', 'slovak', 'icelandic', 'irish' ]
+                        'farsi', 'slovak', 'icelandic', 'irish',
+                        'japanese' ]
     make_lrec_2022_evaluation_forms(_all_corpus_ids, 'csv', 'dir_lrec_2022')
 
-def make_all_lrc_2022_evaluation_forms_shortened():
-    _all_corpus_ids = [ 'english', 'french', 'italian', 'polish',
-                        'farsi', 'slovak', 'icelandic', 'irish' ]
-    make_lrec_2022_evaluation_forms_shortened(_all_corpus_ids, 'csv', 'dir_lrec_2022')
+def make_all_lrec_2022_evaluation_forms_shortened():
+    _all_corpus_ids_shortened = [ 'english', 'french', 'italian', 'polish',
+                                  'farsi', 'slovak', 'icelandic', 'irish',
+                                  'japanese', 'mandarin' ]
+    make_lrec_2022_evaluation_forms_shortened(_all_corpus_ids_shortened, 'csv', 'dir_lrec_2022')
 
-def make_eurocall_evaluation_form(MetadataFile, LanguageId):
-    make_eurocall_evaluation_forms1(MetadataFile, [ LanguageId ], 'csv', 'id')
+##def make_eurocall_evaluation_form(MetadataFile, LanguageId):
+##    make_eurocall_evaluation_forms1(MetadataFile, [ LanguageId ], 'csv', 'id')
 
 def make_eurocall_evaluation_forms(CorpusIds, Mode, DirOrId):
     MetadataFile = '$LARA/Code/Python/eurocall_2021_eval_data.json'
-    make_eurocall_evaluation_forms1(MetadataFile, CorpusIds, Mode, DirOrId)
+    make_eurocall_evaluation_forms1('eurocall_2021', MetadataFile, CorpusIds, Mode, DirOrId)
 
 def make_lrec_2022_evaluation_forms(CorpusIds, Mode, DirOrId):
     MetadataFile = '$LARA/Code/Python/lrec_2022_eval_data.json'
-    make_eurocall_evaluation_forms1(MetadataFile, CorpusIds, Mode, DirOrId)
+    make_eurocall_evaluation_forms1('lrec_2022', MetadataFile, CorpusIds, Mode, DirOrId)
 
 def make_lrec_2022_evaluation_forms_shortened(CorpusIds, Mode, DirOrId):
     MetadataFile = '$LARA/Code/Python/lrec_2022_eval_data_shortened.json'
-    make_eurocall_evaluation_forms1(MetadataFile, CorpusIds, Mode, DirOrId)
+    make_eurocall_evaluation_forms1('lrec_2022', MetadataFile, CorpusIds, Mode, DirOrId)
 
-def make_eurocall_evaluation_forms1(MetadataFile, CorpusIds, Mode, DirOrId):
+_known_formats = ( 'default', 'eurocall_2021', 'lrec_2022' )
+
+def make_eurocall_evaluation_forms1(Format, MetadataFile, CorpusIds, Mode, DirOrId):
+    if not Format in _known_formats:
+        lara_utils.print_and_flush(f'*** Error: bad 1st argument {Format} to make_eurocall_evaluation_forms1, needs to be in {_known_formats}')
+        return False
     if not DirOrId in ( 'id', 'dir', 'dir_lrec_2022' ):
-        lara_utils.print_and_flush(f'*** Error: bad argument {DirOrId}, needs to be "id", "dir" or "dir_lrec_2022"')
+        lara_utils.print_and_flush(f'*** Error: bad 5th argument {DirOrId} to make_eurocall_evaluation_forms1, needs to be "id", "dir" or "dir_lrec_2022"')
         return False
     Metadata = lara_utils.read_json_file(MetadataFile)
+    lara_utils.print_and_flush(f'Creating data for {CorpusIds}')
     for CorpusId in CorpusIds:
+        lara_utils.print_and_flush(f'----------------- {CorpusId} --------------------------')
         if not CorpusId in Metadata:
             lara_utils.print_and_flush(f'*** Error: item "{CorpusId}" is not defined in {MetadataFile}')
             return False
-        lara_utils.print_and_flush(f'-------------------------------------------')
         lara_utils.print_and_flush(f'--- CREATING DATA FOR "{CorpusId}"')
         Metadata1 = Metadata[CorpusId]
         Metadata2 = Metadata1['data']
@@ -158,7 +157,7 @@ def make_eurocall_evaluation_forms1(MetadataFile, CorpusIds, Mode, DirOrId):
         File = File0.replace('csv', 'json') if Mode == 'json' else File0
         Data = make_eurocall_evaluation_form_data(Metadata2, DirOrId)
         if Data != False:
-            write_out_evaluation_form_data(Data, Mode, DirOrId, CorpusId, File)
+            write_out_evaluation_form_data(Format, Data, Mode, DirOrId, CorpusId, File)
 
 def make_eurocall_evaluation_form_data(MetadataList, DirOrId):
     Data = []
@@ -177,11 +176,11 @@ def make_eurocall_evaluation_form_data(MetadataList, DirOrId):
             Data += NewData
     return Data
 
-def make_random_evaluation_form(HumanConfigFile, TTSConfigFile, NWordItems, NSegmentItems, DirOrId, Mode, OutFileOrDir):
-    Data = make_random_evaluation_form_data(HumanConfigFile, TTSConfigFile, NWordItems, NSegmentItems)
-    write_out_evaluation_form_data(Data, Mode, DirOrId, OutFileOrDir)
+##def make_random_evaluation_form(HumanConfigFile, TTSConfigFile, NWordItems, NSegmentItems, DirOrId, Mode, OutFileOrDir):
+##    Data = make_random_evaluation_form_data(HumanConfigFile, TTSConfigFile, NWordItems, NSegmentItems)
+##    write_out_evaluation_form_data(Data, Mode, DirOrId, OutFileOrDir)
 
-def write_out_evaluation_form_data(Data, Mode, DirOrId, CorpusId, OutFileOrDir):
+def write_out_evaluation_form_data(Format, Data, Mode, DirOrId, CorpusId, OutFileOrDir):
     if not Mode in ( 'html', 'json', 'csv' ):
         lara_utils.print_and_flush(f'*** Error: unknown mode {Mode}')
         return
@@ -191,7 +190,7 @@ def write_out_evaluation_form_data(Data, Mode, DirOrId, CorpusId, OutFileOrDir):
         #lara_utils.write_json_to_file(Data, OutFileOrDir)
         lara_utils.write_json_to_file_plain_utf8(Data, OutFileOrDir)
     elif Mode == 'csv':
-        CSVData = evaluation_data_to_csv_form(Data, DirOrId, CorpusId)
+        CSVData = evaluation_data_to_csv_form(Format, Data, DirOrId, CorpusId)
         if DirOrId == 'dir_lrec_2022':
             lara_utils.write_lara_comma_csv(CSVData, OutFileOrDir)
         else:
@@ -227,6 +226,8 @@ def make_random_evaluation_form_data_words(HumanConfigFile, TTSConfigFile, NItem
     OrderedWords = get_words_from_config(HumanConfigFile)
     ( HumanId, HumanWordDir, HumanMetadataDict ) = get_word_audio_data_from_config(HumanConfigFile)
     ( TTSId, TTSWordDir, TTSMetadataDict ) = get_word_audio_data_from_config(TTSConfigFile)
+    if HumanMetadataDict == False or TTSMetadataDict == False:
+        return []
     return make_random_evaluation_form_data1(OrderedWords, HumanId, HumanWordDir, HumanMetadataDict, TTSId, TTSWordDir, TTSMetadataDict, NItems, 'words')
 
 def make_random_evaluation_form_data_segments(HumanConfigFile, TTSConfigFile, NItems):
@@ -235,6 +236,8 @@ def make_random_evaluation_form_data_segments(HumanConfigFile, TTSConfigFile, NI
     OrderedSegments = get_segments_from_config(HumanConfigFile)
     ( HumanId, HumanSegmentDir, HumanMetadataDict ) = get_segment_audio_data_from_config(HumanConfigFile)
     ( TTSId, TTSSegmentDir, TTSMetadataDict ) = get_segment_audio_data_from_config(TTSConfigFile)
+    if HumanMetadataDict == False or TTSMetadataDict == False:
+        return []
     return make_random_evaluation_form_data1(OrderedSegments, HumanId, HumanSegmentDir, HumanMetadataDict, TTSId, TTSSegmentDir, TTSMetadataDict, NItems, 'segments')
 
 def get_words_from_config(ConfigFile):
@@ -262,7 +265,7 @@ def get_word_audio_data_from_config(ConfigFile):
         lara_utils.print_and_flush(f'*** Error: word audio directory not defined for {ConfigFile}')
         return ( False, False, False )
     if not lara_utils.directory_exists(WordDir):
-        lara_utils.print_and_flush(f'*** Error: word audio directory not found for {ConfigFile}')
+        lara_utils.print_and_flush(f'*** Error: word audio directory {WordDir} not found for {ConfigFile}')
         return ( False, False, False )
     Metadata = lara_audio.read_ldt_metadata_file(WordDir)
     MetadataDict = { Item['text'] : Item['file'] for Item in Metadata }
@@ -276,7 +279,7 @@ def get_segment_audio_data_from_config(ConfigFile):
         lara_utils.print_and_flush(f'*** Error: segment audio directory not defined for {ConfigFile}')
         return ( False, False, False )
     if not lara_utils.directory_exists(SegmentDir):
-        lara_utils.print_and_flush(f'*** Error: segment audio directory not found for {ConfigFile}')
+        lara_utils.print_and_flush(f'*** Error: segment audio directory {SegmentDir} not found for {ConfigFile}')
         return ( False, False, False )
     Metadata = lara_audio.read_ldt_metadata_file(SegmentDir)
     MetadataDict = { Item['text'] : Item['file'] for Item in Metadata }
@@ -372,36 +375,25 @@ def annotate_segment(Segment, HumanId, HumanSegmentDir, HumanMetadataDict, TTSId
     else:
         return False
 
-def evaluation_data_to_csv_form(Data, DirOrId, CorpusId):
+def evaluation_data_to_csv_form(Format, Data, DirOrId, CorpusId):
     if DirOrId == 'dir':
         Header = [ 'text', 'human_audio_file', 'human_audio_dir', 'tts_audio_file', 'tts_audio_dir' ]
     elif DirOrId == 'dir_lrec_2022':
-        if not CorpusId in _corpus_id_to_number:
+        if not CorpusId in lara_config._corpus_id_to_number:
             lara_utils.print_and_flush(f'*** Error: unknown corpus id "{CorpusId}"')
             return []
         else:
-            CorpusNumber = _corpus_id_to_number[CorpusId]
+            CorpusNumber = lara_config._corpus_id_to_number[CorpusId]
         Header = [ 'QuestionnaireID', 'SegmentNumber', 'SegmentText', 'HumanAudioDir', 'HumanAudioFile', 'TtsAudioDir', 'TtsAudioFile' ]
     else:
         Header = [ 'text', 'human_audio_file', 'human_id', 'tts_audio_file', 'tts_id' ]
     return [ Header ] + [ evaluation_item_to_csv_line(Data[I], I, CorpusNumber, DirOrId) for I in range(0, len(Data))
-                          if not fake_text_item(Data[I]['text'], DirOrId) ]
+                          if not fake_text_item(Data[I]['text'], Format) ]
 
-_corpus_id_to_number = { 'french': 11,
-                         'english': 12,
-                         'italian': 13,
-                         'polish': 14,
-                         'japanese': 15,
-                         'farsi': 16,
-                         'icelandic': 17,
-                         'slovak': 18,
-                         'irish': 19
-                         }
-
-# We aren't interested in the chapter titles
-def fake_text_item(Text, DirOrId):
+# For LREC 2022, we aren't interested in the chapter titles
+def fake_text_item(Text, Format):
     _chapter_titles = ( '2', '4', '8', '9' )
-    return DirOrId == 'dir_lrec_2022' and Text.strip() in _chapter_titles
+    return Format == 'lrec_2022' and Text.strip() in _chapter_titles
 
 # QuestionnaireID   SegmentNumber   SegmentText	HumanAudioDir	            HumanAudioFile	    TtsAudioDir	                    TtsAudioFile
 # 2	            3	            lettuces	prvocabpages/multimedia/    52275_190309121428.mp3  pr_ttsvocabpages/multimedia/    tts_2021-03-02_15-39-43_6208830123.mp3
@@ -539,13 +531,14 @@ def metadata_file_to_tts_form(FileIn, FileOut):
 # ----------------------------------
 
 def process_data(Operation):
-    if Operation == 'convert_to_json':
+    if Operation == 'convert_to_json_eurocall_2021':
         SegmentFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallSegmentFinal.csv'
         VoiceRatingFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallVoiceRatings.csv'
         OverallFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallOverallFinal.csv'
         JSONFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallFinal.json'
         organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile)
-    if Operation == 'summarise':
+    if Operation == 'summarise_eurocall_2021':
+        Format = 'eurocall_2021'
         JSONFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallFinal.json'
         SentenceSummaryFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallSummary.txt'
         VoiceSummaryFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallVoiceSummary.txt'
@@ -553,20 +546,134 @@ def process_data(Operation):
         VoiceTableFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallVoiceTable.html'
         LanguageAndVoiceTableFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallLanguageAndVoiceTable.html'
         FreeformCommentFile = '$LARA/Doc/EuroCALLTTSResults/EuroCallFreeformComments.html'
-        summarise_eurocall_data(JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+        summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
                                 LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile)
-
+    if Operation == 'convert_to_json_lrec_2022':
+        SegmentFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/EuroCallSegmentResponses.csv'
+        VoiceRatingFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/EuroCallVersionResponses.csv'
+        OverallFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/EuroCallVersionOverallResponses.csv'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECData.json'
+        organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile)
+    if Operation == 'summarise_lrec_2022':
+        Format = 'lrec_2022'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECData.json'
+        SentenceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECCallSummary.txt'
+        VoiceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECVoiceSummary.txt'
+        LanguageTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECLanguageTable.html'
+        VoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECVoiceTable.html'
+        LanguageAndVoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECLanguageAndVoiceTable.html'
+        FreeformCommentFile = '$LARA/Doc/LREC2022TTS/Data/report_v2/LRECFreeformComments.html'
+        classify_lrec_2022_sentences_by_dialogue_and_humour()
+        summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+                                LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile)
+    if Operation == 'convert_to_json_lrec_2022_v4':
+        SegmentFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/VQ_SegmentResponses_20220111_223428.csv'
+        VoiceRatingFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/VQ_VersionResponses_20220111_223512.csv'
+        OverallFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/VQ_VersionOverallResponses_20220111_223505.csv'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECData.json'
+        organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile)
+    if Operation == 'summarise_lrec_2022_v4':
+        Format = 'lrec_2022'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECData.json'
+        SentenceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECCallSummary.txt'
+        VoiceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECVoiceSummary.txt'
+        LanguageTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECLanguageTable.html'
+        VoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECVoiceTable.html'
+        LanguageAndVoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECLanguageAndVoiceTable.html'
+        FreeformCommentFile = '$LARA/Doc/LREC2022TTS/Data/report_v4/LRECFreeformComments.html'
+        classify_lrec_2022_sentences_by_dialogue_and_humour()
+        summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+                                LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile)
+    if Operation == 'convert_to_json_lrec_2022_final':
+        SegmentFile = '$LARA/Doc/LREC2022TTS/Data/report_final/VQ_SegmentResponses_20220113_074508.csv'
+        VoiceRatingFile = '$LARA/Doc/LREC2022TTS/Data/report_final/VQ_VersionResponses_20220113_074601.csv'
+        OverallFile = '$LARA/Doc/LREC2022TTS/Data/report_final/VQ_VersionOverallResponses_20220113_074552.csv'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECData.json'
+        organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile)
+    if Operation == 'summarise_lrec_2022_final':
+        Format = 'lrec_2022'
+        JSONFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECData.json'
+        SentenceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECCallSummary.txt'
+        VoiceSummaryFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECVoiceSummary.txt'
+        LanguageTableFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECLanguageTable.html'
+        VoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECVoiceTable.html'
+        LanguageAndVoiceTableFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECLanguageAndVoiceTable.html'
+        FreeformCommentFile = '$LARA/Doc/LREC2022TTS/Data/report_final/LRECFreeformComments.html'
+        classify_lrec_2022_sentences_by_dialogue_and_humour()
+        summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+                                LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile)
+     
 def organise_eurocall_data(SegmentFile, OverallFile, VoiceRatingFile, JSONFile):
     Dict = {}
-    SegmentData = lara_utils.read_lara_csv(SegmentFile)
-    VoiceRatingData = lara_utils.read_lara_csv(VoiceRatingFile)
-    OverallData = lara_utils.read_lara_csv(OverallFile)
+    SegmentData = read_segment_data(SegmentFile)
+    VoiceRatingData = read_voice_rating_data(VoiceRatingFile)
+    OverallData = read_overall_data(OverallFile)
     internalise_segment_data(SegmentData, Dict)
     internalise_voice_rating_data(VoiceRatingData, Dict)
     internalise_overall_data(OverallData, Dict)
     lara_utils.write_json_to_file_plain_utf8(Dict, JSONFile)
     lara_utils.print_and_flush(f'--- Data for {len(Dict.keys())} subjects converted to JSON form')
 
+def read_segment_data(File):
+    return read_downloaded_questionnaire_data(File)
+
+def read_voice_rating_data(File):
+    return read_downloaded_questionnaire_data(File)
+
+def read_overall_data(File):
+    return read_downloaded_questionnaire_data(File)
+
+def read_downloaded_questionnaire_data(File):
+    Lines = read_lara_csv_comma_separated(File)
+    #return maybe_remove_duplicate_columns(Lines)
+    return Lines
+
+##def maybe_remove_duplicate_columns(Lines):
+##    if columns_appear_to_be_duplicated(Lines):
+##        return remove_odd_numbered_columns(Lines)
+##    else:
+##        return Lines
+##
+##def columns_appear_to_be_duplicated(Lines):
+##    if len(Lines) == 0:
+##        return False
+##    Len = len(FirstLine)
+##    if Len % 2 != 0:
+##        return False
+##    for Line in Lines
+##        for I in range(0, Len / 2):
+##            if Line[ 2 * I ] != Line[ 2 * I + 1 ]:
+##                return False
+##    return True
+##
+##def remove_odd_numbered_columns(Lines):
+##    LinesOut = []
+##    for Line in Lines:
+##        LinesOut += [ [ Line[ 2 * I ] for I in range(0, len(Line) / 2) ] ]
+##    return LinesOut
+
+def read_lara_csv_comma_separated(pathname):
+    return read_lara_csv_custom_delimiter(pathname, ',')
+
+def read_lara_csv_semicolon_separated(pathname):
+    return read_lara_csv_custom_delimiter(pathname, ';')
+
+def read_lara_csv_custom_delimiter(pathname, Delimiter):
+    import csv
+    abspathname = lara_utils.absolute_file_name(pathname)
+    this_encoding = 'utf-8'
+    try:
+        with open(abspathname, 'r', encoding=this_encoding) as f:
+            reader = csv.reader(f, delimiter=Delimiter, quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            List = list(reader)
+        f.close()
+        lara_utils.print_and_flush(f'--- Read CSV spreadsheet as {this_encoding} ({len(List)} lines) {abspathname}')
+        return List
+    except Exception as e:
+        lara_utils.print_and_flush(f'*** Error: when trying to read CSV {abspathname} as {this_encoding}')
+        lara_utils.print_and_flush(str(e))
+        return False   
+    
 def internalise_segment_data(SegmentData, Dict):
     for Line in SegmentData:
         internalise_segment_data_line(Line, Dict)
@@ -712,36 +819,87 @@ def interpret_voice_response_question_number(QuestionNumber):
 
 # ----------------------------------
 
-def summarise_eurocall_data(JSONFile, SentenceSummaryFile, VoiceSummaryFile,
+def summarise_eurocall_data(Format, JSONFile, SentenceSummaryFile, VoiceSummaryFile,
                             LanguageTableFile, VoiceTableFile, LanguageAndVoiceTableFile, FreeformCommentFile):
-    ResultDict = summarise_eurocall_sentence_data(JSONFile, SentenceSummaryFile)
-    VoiceDict = summarise_eurocall_voice_data(JSONFile, VoiceSummaryFile)
-    make_language_table_file(JSONFile, ResultDict, LanguageTableFile)
-    make_language_table_file_csv(JSONFile, ResultDict, LanguageTableFile.replace('html', 'csv'))
-    make_voice_table_file(JSONFile, VoiceDict, VoiceTableFile)
-    make_language_and_voice_table_file(JSONFile, ResultDict, VoiceDict, LanguageAndVoiceTableFile)
-    make_voice_table_file_csv(JSONFile, VoiceDict, VoiceTableFile.replace('html', 'csv'))
-    make_freeform_comment_file(JSONFile, FreeformCommentFile)
+    if check_for_known_format(Format) == False:
+        return 
+    ResultDict = summarise_eurocall_sentence_data(Format, JSONFile, SentenceSummaryFile)
+    VoiceDict = summarise_eurocall_voice_data(Format, JSONFile, VoiceSummaryFile)
+    make_language_table_file(Format, JSONFile, ResultDict, LanguageTableFile)
+    make_language_table_file_csv(Format, JSONFile, ResultDict, LanguageTableFile.replace('html', 'csv'))
+    make_voice_table_file(Format, JSONFile, VoiceDict, VoiceTableFile)
+    make_language_and_voice_table_file(Format, JSONFile, ResultDict, VoiceDict, LanguageAndVoiceTableFile)
+    make_voice_table_file_csv(Format, JSONFile, VoiceDict, VoiceTableFile.replace('html', 'csv'))
+    make_freeform_comment_file(Format, JSONFile, FreeformCommentFile)
+
+def check_for_known_format(Format):
+    if not Format in _known_formats:
+        lara_utils.print_and_flush(f'*** Unknown format "{Format}. Must be in {_known_formats}"')
+        return False
+    else:
+        return True                
     
-def summarise_eurocall_sentence_data(JSONFile, SummaryFile):
+def summarise_eurocall_sentence_data(Format, JSONFile, SummaryFile):
     Content = lara_utils.read_json_file(JSONFile)
-    SummaryConditions = get_summary_conditions(Content)
+    SummaryConditions = get_summary_conditions(Format, Content)
     ResultDict = {}
     SummaryTexts = [ make_summary_text_for_condition(Condition, Content, ResultDict) for Condition in SummaryConditions ]
     AllSummaryText = '\n----------------------\n'.join(SummaryTexts)
     lara_utils.write_lara_text_file(AllSummaryText, SummaryFile)
     return ResultDict
 
-def summarise_eurocall_voice_data(JSONFile, SummaryFile):
+def summarise_eurocall_voice_data(Format, JSONFile, SummaryFile):
     Content = lara_utils.read_json_file(JSONFile)
-    SummaryConditions = get_voice_summary_conditions(Content)
+    SummaryConditions = get_voice_summary_conditions(Format, Content)
     VoiceDict = {}
     SummaryTexts = [ make_voice_summary_text_for_condition(Condition, Content, VoiceDict) for Condition in SummaryConditions ]
     AllSummaryText = '\n----------------------\n'.join(SummaryTexts)
     lara_utils.write_lara_text_file(AllSummaryText, SummaryFile)
     return VoiceDict
 
-def get_summary_conditions(Content):
+def get_summary_conditions(Format, Content):
+    if Format == 'default':
+        return get_default_summary_conditions(Content)
+    elif Format == 'eurocall_2021':
+        return get_eurocall_2021_summary_conditions(Content)
+    elif Format == 'lrec_2022':
+        return get_lrec_2022_summary_conditions(Content)
+
+def get_default_summary_conditions(Content):
+    Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
+    SentencesAndLanguages = lara_utils.remove_duplicates([ ( Sentence, Lang )
+                                                           for Lang in Languages
+                                                           for Id in Content
+                                                           for Sentence in Content[Id]['scores']
+                                                           if Lang == Content[Id]['lang']
+                                                           ])
+                                             
+    Everything = [ 'Everything',
+                   'Only sentences', 'Only words',
+                   'Teacher', 'Not teacher',
+                   ( 'Teacher', 'Only sentences' ), ( 'Teacher', 'Only words' ),
+                   ( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
+                   'Native/near-native', 'Not native/near-native',
+                   ( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
+                   ( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )
+                   ]
+    LangConditions = [ ( 'Language:', Lang ) + Condition 
+                       for Lang in Languages
+                       for Condition in ( ( 'Everything', ),
+                                          ( 'Teacher', ), ( 'Not teacher', ),
+                                          ( 'Native/near-native', ), ( 'Not native/near-native', ),
+                                          ( 'Only sentences', ), ( 'Only words', ),
+                                          ( 'Teacher', 'Only sentences' ), ( 'Teacher', 'Only words' ),
+                                          ( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
+                                          ( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
+                                          ( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )
+                                          )
+                       ]
+    SentConditions = [ ( 'Sentence:', Lang, Sent ) for ( Sent, Lang ) in SentencesAndLanguages ]
+
+    return Everything + LangConditions + SentConditions
+
+def get_eurocall_2021_summary_conditions(Content):
     Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
     SentencesAndLanguages = lara_utils.remove_duplicates([ ( Sentence, Lang )
                                                            for Lang in Languages
@@ -760,7 +918,8 @@ def get_summary_conditions(Content):
                    ( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
                    'Native/near-native', 'Not native/near-native',
                    ( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
-                   ( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )]
+                   ( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )
+                   ]
     LangConditions = [ ( 'Language:', Lang ) + Condition 
                        for Lang in Languages
                        for Condition in ( ( 'Everything', ),
@@ -771,15 +930,94 @@ def get_summary_conditions(Content):
                                           ( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
                                           ( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
                                           ( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )
-                                          ) ]
+                                          )
+                       ]
     SentConditions = [ ( 'Sentence:', Lang, Sent ) for ( Sent, Lang ) in SentencesAndLanguages ]
 
     return Everything + LangConditions + SentConditions
 
-def get_voice_summary_conditions(Content):
+def get_lrec_2022_summary_conditions(Content):
+    Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
+    SentencesAndLanguages = lara_utils.remove_duplicates([ ( Sentence, Lang )
+                                                           for Lang in Languages
+                                                           for Id in Content
+                                                           for Sentence in Content[Id]['scores']
+                                                           if Lang == Content[Id]['lang']
+                                                           ])
+                                             
+    Everything = [ 'Everything',
+                   #'Only sentences', 'Only words',
+                   'Humour', 'Not humour', 'Dialogue', 'Not dialogue',
+                   'ReadSpeaker', 'not ReadSpeaker',
+                   #( 'ReadSpeaker', 'Only sentences' ), ( 'ReadSpeaker', 'Only words' ),
+                   #( 'not ReadSpeaker', 'Only sentences' ), ( 'not ReadSpeaker', 'Only words' ),
+                   'Teacher', 'Not teacher',
+                   #( 'Teacher', 'Only sentences' ), ( 'Teacher', 'Only words' ),
+                   #( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
+                   'Native/near-native', 'Not native/near-native',
+                   ( 'Native/near-native', 'Humour' ), ( 'Native/near-native', 'Not humour' ),
+                   ( 'Native/near-native', 'Dialogue' ), ( 'Native/near-native', 'Not dialogue' )
+                   #( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
+                   #( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words' )
+                   ]
+    LangConditions = [ ( 'Language:', Lang ) + Condition 
+                       for Lang in Languages
+                       for Condition in ( ( 'Everything', ),
+                                          ( 'Teacher', ), ( 'Not teacher', ),
+                                          ( 'Native/near-native', ), ( 'Not native/near-native', ),
+                                          #( 'Only sentences', ), ( 'Only words', ),
+                                          ( 'Humour', ), ( 'Not humour', ), ( 'Dialogue', ), ( 'Not dialogue', ),
+                                          #( 'Teacher', 'Only sentences' ), ( 'Teacher', 'Only words' ),
+                                          #( 'Not teacher', 'Only sentences' ), ( 'Not teacher', 'Only words' ),
+                                          #( 'Native/near-native', 'Only sentences' ), ( 'Native/near-native', 'Only words' ),
+                                          #( 'Not native/near-native', 'Only sentences' ), ( 'Not native/near-native', 'Only words'
+                                          ( 'Native/near-native', 'Humour' ), ( 'Native/near-native', 'Not humour' ),
+                                          ( 'Native/near-native', 'Dialogue' ), ( 'Native/near-native', 'Not dialogue' ) )
+                       ]
+    SentConditions = [ ( 'Sentence:', Lang, Sent ) for ( Sent, Lang ) in SentencesAndLanguages ]
+
+    return Everything + LangConditions + SentConditions
+
+def get_voice_summary_conditions(Format, Content):
+    if Format == 'default':
+        return get_voice_summary_conditions_default(Content)
+    elif Format == 'eurocall_2021':
+        return get_voice_summary_conditions_eurocall_2021(Content)
+    elif Format == 'lrec_2022':
+        return get_voice_summary_conditions_lrec_2022(Content)
+    else:
+        return []
+
+def get_voice_summary_conditions_default(Content):
     Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
     
-    Everything = [ 'Everything', 'ReadSpeaker', 'not ReadSpeaker',
+    Everything = [ 'Everything', 
+                   'Teacher', 'Not teacher',
+                   'Native/near-native', 'Not native/near-native']
+    LangConditions = [ ( 'Language:', Lang, SubCondition )
+                       for Lang in Languages
+                       for SubCondition in ( 'Everything', 'Teacher', 'Not teacher', 'Native/near-native', 'Not native/near-native') ]
+
+    return Everything + LangConditions 
+                                                
+def get_voice_summary_conditions_eurocall_2021(Content):
+    Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
+    
+    Everything = [ 'Everything',
+                   'ReadSpeaker', 'not ReadSpeaker',
+                   'Teacher', 'Not teacher',
+                   'Native/near-native', 'Not native/near-native']
+    LangConditions = [ ( 'Language:', Lang, SubCondition )
+                       for Lang in Languages
+                       for SubCondition in ( 'Everything', 'Teacher', 'Not teacher', 'Native/near-native', 'Not native/near-native') ]
+
+    return Everything + LangConditions 
+
+def get_voice_summary_conditions_lrec_2022(Content):
+    Languages = lara_utils.remove_duplicates([ Content[Id]['lang'] for Id in Content ])
+    
+    Everything = [ 'Everything',
+                   'ReadSpeaker', 'not ReadSpeaker',
                    'Teacher', 'Not teacher',
                    'Native/near-native', 'Not native/near-native']
     LangConditions = [ ( 'Language:', Lang, SubCondition )
@@ -889,6 +1127,18 @@ def matches_condition(Condition, RecordAndSentence):
         return not looks_like_a_single_word(Sentence, Words, Language) or Sentence == 'any_sentence'
     elif Condition == 'Only words':
         return looks_like_a_single_word(Sentence, Words, Language) or Sentence == 'any_sentence'
+    elif Condition == 'Humour':
+        HumourAndDialogue = language_and_sentence_to_humour_and_dialogue(Language, Sentence)
+        return HumourAndDialogue != False and HumourAndDialogue[0] == 'humour' or Sentence == 'any_sentence'
+    elif Condition == 'Not humour':
+        HumourAndDialogue = language_and_sentence_to_humour_and_dialogue(Language, Sentence)
+        return HumourAndDialogue != False and HumourAndDialogue[0] == 'not_humour' or Sentence == 'any_sentence'
+    elif Condition == 'Dialogue':
+        HumourAndDialogue = language_and_sentence_to_humour_and_dialogue(Language, Sentence)
+        return HumourAndDialogue != False and HumourAndDialogue[1] == 'dialogue' or Sentence == 'any_sentence'
+    elif Condition == 'Not dialogue':
+        HumourAndDialogue = language_and_sentence_to_humour_and_dialogue(Language, Sentence)
+        return HumourAndDialogue != False and HumourAndDialogue[1] == 'not_dialogue' or Sentence == 'any_sentence'
     elif isinstance(Condition, tuple) and len(Condition) == 2 and not Condition[0] in ( 'Language:', 'Sentence:' ):
         return matches_condition(Condition[0], RecordAndSentence) and matches_condition(Condition[1], RecordAndSentence)
     elif isinstance(Condition, tuple) and len(Condition) == 2 and Condition[0] == 'Language:':
@@ -904,7 +1154,7 @@ def matches_condition(Condition, RecordAndSentence):
         return False
 
 def looks_like_a_single_word(Sentence, Words, Language):
-    if Language == 'Mandarin':
+    if Language == 'Mandarin' or Language == 'Japanese':
         return len(Sentence) <= 4
     else:
         return len(Words) == 1
@@ -916,9 +1166,9 @@ def proportion_of_scores_with_value_for_feature(Scores, Key, Value):
 
 # --------------------------------
 
-def make_language_and_voice_table_file(JSONFile, ResultDict, VoiceDict, LanguageAndVoiceTableFile):
-    LanguageTableLines = make_all_language_table_lines(JSONFile, ResultDict)
-    VoiceTableLines = make_all_voice_table_lines(JSONFile, VoiceDict)
+def make_language_and_voice_table_file(Format, JSONFile, ResultDict, VoiceDict, LanguageAndVoiceTableFile):
+    LanguageTableLines = make_all_language_table_lines(Format, JSONFile, ResultDict)
+    VoiceTableLines = make_all_voice_table_lines(Format, JSONFile, VoiceDict)
     AllLines = [ [ '<b>Results for individual utterances' ] ] + \
                LanguageTableLines + \
                [ [ '<b>Overall impressions of voices' ] ] + \
@@ -927,19 +1177,19 @@ def make_language_and_voice_table_file(JSONFile, ResultDict, VoiceDict, Language
 
 def write_out_language_and_voice_table(Lines, File):
     Header = [ 'Condition' ] 
-    Caption = 'EUROCALL 2021 combined human/TTS results. Yellow = TTS not worse, orange = TTS within 10%.'
+    Caption = 'LREC 2022 combined human/TTS results. Yellow = TTS not worse, orange = TTS within 10%.'
     Params = lara_config.default_params()
     print_html_table(Caption, Header, Lines, File, Params)
 
 # --------------------------------
 
-def make_language_table_file(JSONFile, ResultDict, LanguageTableFile):
-    LanguageTableLines = make_all_language_table_lines(JSONFile, ResultDict)
+def make_language_table_file(Format, JSONFile, ResultDict, LanguageTableFile):
+    LanguageTableLines = make_all_language_table_lines(Format, JSONFile, ResultDict)
     write_out_language_table(LanguageTableLines, LanguageTableFile)
 
-def make_all_language_table_lines(JSONFile, ResultDict):
+def make_all_language_table_lines(Format, JSONFile, ResultDict):
     Content = lara_utils.read_json_file(JSONFile)
-    AllConditions = get_summary_conditions(Content)
+    AllConditions = get_summary_conditions(Format, Content)
     LangConditions = [ Condition for Condition in AllConditions
                        if isinstance(Condition, tuple) and Condition[0] == 'Language:' ]
     Languages = sorted(lara_utils.remove_duplicates([ Condition[1] for Condition in LangConditions ]))
@@ -1052,15 +1302,15 @@ def make_language_table_element_part(Language, LangConditionType, ResultDict, In
 
 def write_out_language_table(Lines, File):
     Header = [ 'Condition' ] 
-    Caption = 'EUROCALL 2021 human/TTS results by language and condition. Yellow = TTS not worse, orange = TTS within 10%.'
+    Caption = 'LREC 2022 human/TTS results by language and condition. Yellow = TTS not worse, orange = TTS within 10%.'
     Params = lara_config.default_params()
     print_html_table(Caption, Header, Lines, File, Params)
 
 # --------------------------------
 
-def make_language_table_file_csv(JSONFile, ResultDict, LanguageTableFile):
+def make_language_table_file_csv(Format, JSONFile, ResultDict, LanguageTableFile):
     Content = lara_utils.read_json_file(JSONFile)
-    AllConditions = get_summary_conditions(Content)
+    AllConditions = get_summary_conditions(Format, Content)
     LangConditions = [ Condition for Condition in AllConditions
                        if isinstance(Condition, tuple) and Condition[0] == 'Language:' ]
     Languages = sorted(lara_utils.remove_duplicates([ Condition[1] for Condition in LangConditions ]))
@@ -1097,13 +1347,13 @@ def write_out_language_table_csv(Languages, Lines, File):
 
 # --------------------------------
 
-def make_voice_table_file(JSONFile, VoiceDict, VoiceTableFile):
-    VoiceTableLines = make_all_voice_table_lines(JSONFile, VoiceDict)
+def make_voice_table_file(Format, JSONFile, VoiceDict, VoiceTableFile):
+    VoiceTableLines = make_all_voice_table_lines(Format, JSONFile, VoiceDict)
     write_out_voice_table(VoiceTableLines, VoiceTableFile)
 
-def make_all_voice_table_lines(JSONFile, VoiceDict):
+def make_all_voice_table_lines(Format, JSONFile, VoiceDict):
     Content = lara_utils.read_json_file(JSONFile)
-    AllConditions = get_voice_summary_conditions(Content)
+    AllConditions = get_voice_summary_conditions(Format, Content)
     LangConditions = [ Condition for Condition in AllConditions
                        if isinstance(Condition, tuple) and Condition[0] == 'Language:' ]
     Languages = sorted(lara_utils.remove_duplicates([ Condition[1] for Condition in LangConditions ]))
@@ -1198,15 +1448,15 @@ def make_voice_table_element_part(Language, LangConditionType, VoiceDict, InfoTy
 
 def write_out_voice_table(Lines, File):
     Header = [ 'Condition' ] 
-    Caption = 'EUROCALL 2021 human/TTS voice ratings by language and condition. Entries in form (average human rating/average TTS rating). Yellow = TTS not worse, orange = TTS within 0.5.'
+    Caption = 'LREC 2022 human/TTS voice ratings by language and condition. Entries in form (average human rating/average TTS rating). Yellow = TTS not worse, orange = TTS within 0.5.'
     Params = lara_config.default_params()
     print_html_table(Caption, Header, Lines, File, Params)
 
 # --------------------------------
 
-def make_voice_table_file_csv(JSONFile, VoiceDict, VoiceTableFile):
+def make_voice_table_file_csv(Format, JSONFile, VoiceDict, VoiceTableFile):
     Content = lara_utils.read_json_file(JSONFile)
-    AllConditions = get_voice_summary_conditions(Content)
+    AllConditions = get_voice_summary_conditions(Format, Content)
     LangConditions = [ Condition for Condition in AllConditions
                        if isinstance(Condition, tuple) and Condition[0] == 'Language:' ]
     Languages = sorted(lara_utils.remove_duplicates([ Condition[1] for Condition in LangConditions ]))
@@ -1262,9 +1512,9 @@ def write_out_voice_table_csv(Languages, Lines, File):
 
 # --------------------------------
 
-def make_freeform_comment_file(JSONFile, FreeformCommentFile):
+def make_freeform_comment_file(Format, JSONFile, FreeformCommentFile):
     Content = lara_utils.read_json_file(JSONFile)
-    AllConditions = get_voice_summary_conditions(Content)
+    AllConditions = get_voice_summary_conditions(Format, Content)
     LangConditions = [ Condition for Condition in AllConditions
                        if isinstance(Condition, tuple) and Condition[0] == 'Language:' ]
     Languages = sorted(lara_utils.remove_duplicates([ Condition[1] for Condition in LangConditions ]))
@@ -1277,33 +1527,54 @@ def make_freeform_comment_file(JSONFile, FreeformCommentFile):
 
 def extract_freeform_comments_from_record(Record, CommentDict):
     Lang = Record['lang']
-    if 'voice_ratings_human' in Record and 'comment' in Record['voice_ratings_human']:
+    if 'voice_ratings_human' in Record and 'comment' in Record['voice_ratings_human'] and non_null_comment(Record['voice_ratings_human']['comment']):
         HumanComment = Record['voice_ratings_human']['comment']
         HumanKey = ( Lang, 'human' )
-        HumanList = CommentDict[HumanKey] if HumanKey in CommentDict else []
-        HumanList += [ HumanComment ]
-        CommentDict[HumanKey] = HumanList
-    if 'voice_ratings_tts' in Record and 'comment' in Record['voice_ratings_tts']:
+        HumanData = CommentDict[HumanKey] if HumanKey in CommentDict else { 'list': [], 'total': 0, 'native': 0, 'teacher': 0 }
+        HumanData['total'] += 1
+        HumanAnnotation = []
+        if Record['level'] in ( 'native', 'nearNative' ):
+            HumanData['native'] += 1
+            HumanAnnotation += [ f'native/near-native' ]
+        if Record['teacher'] in ( 'yes' ):
+            HumanData['teacher'] += 1
+            HumanAnnotation += [ f'teacher' ]
+        HumanComment1 = HumanComment if len(HumanAnnotation) == 0 else f'{HumanComment} <b>[{", ".join(HumanAnnotation)}]</b>'
+        HumanData['list'] += [ HumanComment1 ]
+        CommentDict[HumanKey] = HumanData
+    if 'voice_ratings_tts' in Record and 'comment' in Record['voice_ratings_tts'] and non_null_comment(Record['voice_ratings_tts']['comment']):
         TTSComment = Record['voice_ratings_tts']['comment']
         TTSKey = ( Lang, 'tts' )
-        TTSList = CommentDict[TTSKey] if TTSKey in CommentDict else []
-        TTSList += [ TTSComment ]
-        CommentDict[TTSKey] = TTSList
+        TTSData = CommentDict[TTSKey] if TTSKey in CommentDict else { 'list': [], 'total': 0, 'native': 0, 'teacher': 0 }
+        TTSAnnotation = []
+        TTSData['total'] += 1
+        if Record['level'] in ( 'native', 'nearNative' ):
+            TTSData['native'] += 1
+            TTSAnnotation += [ f'native/near-native' ]
+        if Record['teacher'] in ( 'yes' ):
+            TTSData['teacher'] += 1
+            TTSAnnotation += [ f'teacher' ]
+        TTSComment1 = TTSComment if len(TTSAnnotation) == 0 else f'{TTSComment} <b>[{", ".join(TTSAnnotation)}]</b>'
+        TTSData['list'] += [ TTSComment1 ]
+        CommentDict[TTSKey] = TTSData
+
+def non_null_comment(Str):
+    return Str != '' and not Str.isspace()
 
 def freeform_comment_lines_for_lang(Lang, CommentDict):
     HumanKey = ( Lang, 'human' )
-    HumanList = CommentDict[HumanKey] if HumanKey in CommentDict else []
+    HumanData = CommentDict[HumanKey] if HumanKey in CommentDict else { 'list': [], 'total': 0, 'native': 0, 'teacher': 0 }
     TTSKey = ( Lang, 'tts' )
-    TTSList = CommentDict[TTSKey] if TTSKey in CommentDict else []
+    TTSData = CommentDict[TTSKey] if TTSKey in CommentDict else { 'list': [], 'total': 0, 'native': 0, 'teacher': 0 }
     MainHeading = f'<h2>{Lang}</h2>'
-    HumanHeading = f'<h3>Comments for human voice</h3>'
-    TTSHeading = f'<h3>Comments for TTS voice</h3>'
-    HumanLines = [ f'<p>{Comment}</p>' for Comment in HumanList ]
-    TTSLines = [ f'<p>{Comment}</p>' for Comment in TTSList ]
+    HumanHeading = f"<h3>Comments for human voice ({HumanData['total']} comments, {HumanData['native']} native/near-native, {HumanData['teacher']} teachers)</h3>"
+    TTSHeading = f"<h3>Comments for TTS voice ({TTSData['total']} comments, {TTSData['native']} native/near-native, {TTSData['teacher']} teachers)</h3>"
+    HumanLines = [ f'<p>{Comment}</p>' for Comment in HumanData['list'] ]
+    TTSLines = [ f'<p>{Comment}</p>' for Comment in TTSData['list'] ]
     return [ MainHeading ] + [ HumanHeading ] + HumanLines + [ TTSHeading ] + TTSLines
 
 def write_out_freeform_comment_file(CommentLines, File):
-    Caption = 'EUROCALL 2021 human/TTS freeform comments by language and type.'
+    Caption = 'LREC 2022 human/TTS freeform comments by language and type.'
     Intro = freeform_comment_file_intro(Caption)
     Closing = freeform_comment_file_closing()
     AllLines = Intro + CommentLines + Closing
@@ -1325,9 +1596,25 @@ def freeform_comment_file_closing():
 
 # --------------------------------
 
+_language_and_sentence_to_humour_and_dialogue = {}
+
+def language_and_sentence_to_humour_and_dialogue(Language0, Sentence):
+    Language = Language0.strip().lower()
+    if not Language in _language_and_sentence_to_humour_and_dialogue:
+        #lara_utils.print_and_flush(f'--- No data for "{Language}"')
+        return False
+    LanguageDict = _language_and_sentence_to_humour_and_dialogue[Language]
+    if not Sentence in LanguageDict:
+        #lara_utils.print_and_flush(f'--- No data for "{Sentence}"')
+        return False
+    return LanguageDict[Sentence]
+
 def classify_lrec_2022_sentences_by_dialogue_and_humour():
+    global _language_and_sentence_to_humour_and_dialogue
     classify_sentences_by_dialogue_and_humour('$LARA/Code/Python/lrec_2022_eval_data_shortened.json',
                                               _lrec_2022_sentence_classification_file)
+    _language_and_sentence_to_humour_and_dialogue = lara_utils.read_json_file(_lrec_2022_sentence_classification_file)
+    lara_utils.print_and_flush(f'--- Stored dialogue and humour classification')
 
 def classify_sentences_by_dialogue_and_humour(MetadataFile, ClassificationFile):
     Dict = {}

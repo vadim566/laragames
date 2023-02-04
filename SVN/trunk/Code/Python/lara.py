@@ -15,6 +15,7 @@ import lara_mwe
 import lara_forced_alignment
 import lara_postags
 import lara_play_all
+import lara_picturebook
 import time
 import math
 import statistics
@@ -24,7 +25,7 @@ import re
 # Make the internal json-formatted frequency count file
 def count_file(SplitFile, CountFile, Params):
     #InList = lara_split_and_clean.read_split_file(SplitFile, Params)
-    InList = lara_mwe.read_split_file_applying_mwes_if_possible(Params)
+    InList = lara_mwe.read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params)
     if not InList:
         lara_utils.print_and_flush(f'*** Error: unable to find {SplitFile} so unable to create count file')
         return False
@@ -35,7 +36,7 @@ def count_file(SplitFile, CountFile, Params):
 
 def surface_count_file(SplitFile, CountFile, Params):
     #InList = lara_split_and_clean.read_split_file(SplitFile, Params)
-    InList = lara_mwe.read_split_file_applying_mwes_if_possible(Params)
+    InList = lara_mwe.read_split_file_applying_mwes_if_possible_and_expanding_annotated_images(Params)
     if not InList:
         lara_utils.print_and_flush(f'*** Error: unable to read MWE split list so unable to create surface count file')
         return False
@@ -214,15 +215,15 @@ def make_word_pages_main(PageOrientedSplitList, Params):
     make_representation_file(FrequencyIndexFileRepresentation, AlphabeticalIndexFileRepresentation,
                              NotesFileRepresentation, LemmaImageListRepresentation,
                              TOCFileRepresentation, CSSFile, CustomCSSFile, ScriptFile, CustomScriptFile, AudioTrackingData,
-                             PageRepresentations, WordPagesRepresentation,
-                             Params)     
+                             PageRepresentations, WordPagesRepresentation, 
+                             PageOrientedSplitList, Params)     
     return { 'top_file': TopFile, 'text_files': TextFiles }
 
 def make_representation_file(FrequencyIndexFileRepresentation, AlphabeticalIndexFileRepresentation,
                              NotesFileRepresentation, LemmaImageListRepresentation,
                              TOCFileRepresentation, CSSFile, CustomCSSFile, ScriptFile, CustomScriptFile, AudioTrackingData,
                              PagesRepresentation, WordPagesRepresentation,
-                             Params):
+                             PageOrientedSplitList, Params):
     if Params.abstract_html == 'plain_html_only':
         return
     Representation = { 'frequency_index': FrequencyIndexFileRepresentation,
@@ -238,7 +239,8 @@ def make_representation_file(FrequencyIndexFileRepresentation, AlphabeticalIndex
                        'pages': PagesRepresentation,
                        'word_pages': WordPagesRepresentation }
     Representation1 = remove_null_items_from_representation(Representation)
-    RepresentationFinal = replace_segments_by_anchors(Representation1)
+    Representation2 = replace_segments_by_anchors(Representation1)
+    RepresentationFinal = lara_picturebook.maybe_add_locations_to_representation(Representation2, PageOrientedSplitList, Params)
     if Params.abstract_html_format != 'plain_html_only':
         #RepresentationFile = lara_top.lara_tmp_file('abstract_html_file', Params)
         RepresentationFile = get_abstract_html_file(Params)
@@ -286,9 +288,18 @@ def replace_segments_by_anchors(Representation):
         if 'segments' in Page:
             Anchors = []
             for Segment in Page['segments']:
-                Anchor = Segment['anchor']
-                Anchors += [ Anchor ]
-                SegmentDict[Anchor] = Segment
+                if lara_picturebook.is_annotated_image_segment(Segment):
+                    InnerAnchors = []
+                    for InnerSegment in Segment['segments']:
+                        Anchor = InnerSegment['anchor']
+                        InnerAnchors += [ Anchor ]
+                        SegmentDict[Anchor] = InnerSegment
+                    Segment['segments'] = InnerAnchors
+                    Anchors += [ Segment ]
+                else:
+                    Anchor = Segment['anchor']
+                    Anchors += [ Anchor ]
+                    SegmentDict[Anchor] = Segment
             Page['segments'] = Anchors
     Representation['segments'] = SegmentDict
     return Representation
@@ -715,37 +726,51 @@ def initial_assoc_for_word_page_info(Params):
 # Collect the word page info for a chunk
 # Create the example words and calculate the score
 def collect_word_page_info1(Chunk, Params0, Limit, Assoc, ChangedWordsAssoc):
-    ( Raw, MinimallyCleaned, AnnotatedWords0, CorpusIdTag ) = Chunk
-    Params = lara_utils.add_corpus_id_tag_to_params(Params0, CorpusIdTag)
-    AnnotatedWords = regularise_html_tags_and_spaces_in_annotated_words(AnnotatedWords0, Params)
-    Score = score_for_example(AnnotatedWords)
-    collect_word_page_info2(Raw, MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, Limit, Assoc, ChangedWordsAssoc)
+    if lara_picturebook.is_annotated_image_segment(Chunk):
+        InnerChunks = lara_picturebook.annotated_image_segments(Chunk)
+        for Chunk in InnerChunks:
+            collect_word_page_info1(Chunk, Params0, Limit, Assoc, ChangedWordsAssoc)
+    else:
+        ( Raw, MinimallyCleaned, AnnotatedWords0, CorpusIdTag ) = Chunk
+        Params = lara_utils.add_corpus_id_tag_to_params(Params0, CorpusIdTag)
+        AnnotatedWords = regularise_html_tags_and_spaces_in_annotated_words(AnnotatedWords0, Params)
+        Score = score_for_example(AnnotatedWords)
+        #lara_utils.print_and_flush(f'--- Collecting examples for {AnnotatedWords}')
+        collect_word_page_info2(Raw, MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, Limit, Assoc, ChangedWordsAssoc)
 
 def collect_word_page_info_simple1(Chunk, Params0, LemmaOrSurface, Limit, Assoc):
-    ( Raw, MinimallyCleaned, AnnotatedWords0, CorpusIdTag ) = Chunk
-    Params = lara_utils.add_corpus_id_tag_to_params(Params0, CorpusIdTag)
-    AnnotatedWords = regularise_html_tags_and_spaces_in_annotated_words(AnnotatedWords0, Params)
-    Score = score_for_example(AnnotatedWords) if LemmaOrSurface == 'lemma' else surface_score_for_example(AnnotatedWords)
-    collect_word_page_info_simple2(MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, LemmaOrSurface, Limit, Assoc)
+    if lara_picturebook.is_annotated_image_segment(Chunk):
+        InnerChunks = lara_picturebook.annotated_image_segments(Chunk)
+        for Chunk in InnerChunks:
+            collect_word_page_info_simple1(Chunk, Params0, LemmaOrSurface, Limit, Assoc)
+    else:
+        ( Raw, MinimallyCleaned, AnnotatedWords0, CorpusIdTag ) = Chunk
+        Params = lara_utils.add_corpus_id_tag_to_params(Params0, CorpusIdTag)
+        AnnotatedWords = regularise_html_tags_and_spaces_in_annotated_words(AnnotatedWords0, Params)
+        Score = score_for_example(AnnotatedWords) if LemmaOrSurface == 'lemma' else surface_score_for_example(AnnotatedWords)
+        collect_word_page_info_simple2(MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, LemmaOrSurface, Limit, Assoc)
 
 # Iterate down the list of words
 def collect_word_page_info2(Raw, MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, Limit, Assoc, ChangedWordsAssoc):
     for ( Word, Lemma0 ) in AnnotatedWords:
         Lemma = lara_translations.regularise_lemma(Lemma0)
         if Lemma != '':
+            #lara_utils.print_and_flush(f'--- Looking at "{Lemma}"')
             if get_word_count_info(Lemma) and not lara_parse_utils.is_punctuation_string(Lemma):
                 ( FormattedLine, LineRepresentation ) = format_line_for_word_page(Raw, MinimallyCleaned, AnnotatedWords, Lemma, Params)
                 Examples = Assoc[Lemma] if Lemma in Assoc else []
-                if len([ Example for Example in Examples if Example[1] == FormattedLine and Example[2] == MinimallyCleaned ]) == 0:
+                if len([ Example for Example in Examples if Example[1] == FormattedLine and Example[3] == MinimallyCleaned ]) == 0:
                     PossibleNewExample = ( Score, FormattedLine, LineRepresentation, MinimallyCleaned, CorpusIdTag )
                     if len(Examples) < Limit:
                         Assoc[Lemma] = Examples + [ PossibleNewExample ]
+                        #lara_utils.print_and_flush(f'--- Added example "{FormattedLine}" for "{Lemma}"')
                         ChangedWordsAssoc[Lemma] = 'changed'
                     else:
                         LowestScoringExample = lowest_scoring_example(Examples)
                         if PossibleNewExample[0] > LowestScoringExample[0]:
                             Examples.remove(LowestScoringExample)
                             Assoc[Lemma] = Examples + [ PossibleNewExample ]
+                            #lara_utils.print_and_flush(f'--- Added example "{FormattedLine}" for "{Lemma}"')
                             ChangedWordsAssoc[Lemma] = 'changed'
 
 def collect_word_page_info_simple2(MinimallyCleaned, AnnotatedWords, CorpusIdTag, Score, Params, LemmaOrSurface, Limit, Assoc):
@@ -944,6 +969,11 @@ def store_toc_for_html( Index, Anchor, HtmlText, Params ):
         PlainText = re.sub( r"\s+", " ", PlainText)
         toc_for_html.append( ( PlainText, Match.group(1), Index[0], Index[1], Anchor ) )
 
+##def store_toc_for_html(Index, Anchor, Raw, PlainText, Params):
+##    Match = re.search("<(h[12])>(.*)", Raw, flags=re.DOTALL)
+##    if Match is not None:
+##        toc_for_html.append( ( PlainText, Match.group(1), Index[0], Index[1], Anchor ) )
+
 # Make the top-level file
 def format_hyperlinked_text_file(File, Params):
     if Params.abstract_html in ( 'abstract_html_only', 'plain_via_abstract_html' ):
@@ -980,7 +1010,10 @@ def format_main_text_file(SplitList, File, PageName, Params):
     PrecedingMainFile = short_name_of_preceding_main_file(PageName)
     FollowingMainFile = short_name_of_following_main_file(PageName)
     FirstMainFile = short_name_of_first_main_file()
-    HeaderLines = lara_html.main_text_file_header(PrecedingMainFile, FollowingMainFile, FirstMainFile, Params)
+    CountFile = formatted_count_file_for_word_pages_short()
+    AlphabeticalFile = formatted_alphabetical_file_for_word_pages_short(),
+    HeaderLines = lara_html.main_text_file_header(PageName, PrecedingMainFile, FollowingMainFile, FirstMainFile,
+                                                  CountFile, AlphabeticalFile, Params)
     ( BodyLines, LineRepresentations, Errors, AllSentAudioFiles ) = format_hyperlinked_text_file_lines(SplitList, PageName, Params)
     ClosingLines = lara_html.main_text_file_closing(PrecedingMainFile, FollowingMainFile, Params)
     if not Params.abstract_html in ( 'abstract_html_only', 'plain_via_abstract_html' ):
@@ -990,9 +1023,23 @@ def format_main_text_file(SplitList, File, PageName, Params):
     return ( True, PageRepresentation, Errors, AllSentAudioFiles )
 
 def make_page_representation(PageName, SegmentRepresentations, Params):
+    if Params.picturebook == 'yes':
+        add_version_in_page_numbers_to_segment_representations(SegmentRepresentations)
     return { 'page_name': PageName,
              'corpus_name': Params.id,
              'segments': SegmentRepresentations }
+
+# For picturebooks, we need to distinguish repeated lines in a page/image, since they will have different locations.
+def add_version_in_page_numbers_to_segment_representations(SegmentRepresentations):
+    Dict = {}
+    for SegmentRepresentation in SegmentRepresentations:
+        WordRepresentations = SegmentRepresentation['words']
+        WordsWithLemmas = [ Item['word'] for Item in WordRepresentations if 'word' in Item and 'lemma' in Item ]
+        if len(WordsWithLemmas) != 0:
+            Key = tuple(WordsWithLemmas)
+            VersionNumber = Dict[Key] + 1 if Key in Dict else 1
+            SegmentRepresentation['version_in_page'] = VersionNumber
+            Dict[Key] = VersionNumber
 
 # Write out the default css file
 def format_default_css_file(File, Params):
@@ -1114,15 +1161,16 @@ def format_hyperlinked_text_file_lines(SplitList, PageName, Params):
 def format_hyperlinked_text_file_lines1(SplitList, PageName, Params):
     ( N, TextSoFar, AllStrings, AllRepresentations, AllErrors, AllSentAudioFiles, ThisPageAudioFileUsedAll ) = ( 1, [], [], [], [], [], False )
     for Chunk in SplitList:
-        Context = lara_audio.text_so_far_to_context(TextSoFar)
-        ( String, Representation, Errors, SentAudioFile, ThisPageAudioFileUsed ) = format_hyperlinked_text_file_line(Chunk, Context, Params, PageName, N)
+        Context = lara_audio.text_so_far_to_context(TextSoFar, Params)
+        Image = False
+        ( String, Representation, Errors, SentAudioFiles, ThisPageAudioFileUsed ) = format_hyperlinked_text_file_line(Chunk, Context, Params, PageName, N, Image)
         #lara_utils.print_and_flush(f'--- ( {String}, {Representation}, {Errors}, {SentAudioFile}, {ThisPageAudioFileUsed} ) = format_hyperlinked_text_file_line({Chunk}, {Context}, Params, {PageName}, {N})')
-        TextSoFar += Chunk[1].split()
+        if not lara_picturebook.is_annotated_image_segment(Chunk):
+            TextSoFar += Chunk[1].split()
         AllStrings += [String]
         AllRepresentations += [Representation]
         AllErrors += Errors
-        if SentAudioFile != False:
-            AllSentAudioFiles += [ SentAudioFile ]
+        AllSentAudioFiles += SentAudioFiles
         if ThisPageAudioFileUsed != False:
             ThisPageAudioFileUsedAll = True
         N += 1
@@ -1130,9 +1178,40 @@ def format_hyperlinked_text_file_lines1(SplitList, PageName, Params):
         AllSentAudioFiles = False
     return ( AllStrings, AllRepresentations, AllErrors, AllSentAudioFiles )
 
+def format_hyperlinked_text_file_annotated_image(AnnotatedImage, Context, Params, PageName, N):
+    ( Image, Chunks ) = ( lara_picturebook.annotated_image_image(AnnotatedImage), lara_picturebook.annotated_image_segments(AnnotatedImage) )
+    ( N1, TextSoFar, AllStrings, AllRepresentations, AllErrors, AllSentAudioFiles, ThisImageAudioFileUsedAll ) = ( 1, [], [], [], [], [], False )
+    for Chunk in Chunks:
+        Context = lara_audio.text_so_far_to_context(TextSoFar, Params)
+        N_N1 = f'{N}_{N1}'
+        ( String, Representation, Errors, SentAudioFiles, ThisPageAudioFileUsed ) = format_hyperlinked_text_file_line(Chunk, Context, Params, PageName, N_N1, Image)
+        #lara_utils.print_and_flush(f'--- ( {String}, {Representation}, {Errors}, {SentAudioFile}, {ThisPageAudioFileUsed} ) = format_hyperlinked_text_file_line({Chunk}, {Context}, Params, {PageName}, {N})')
+        TextSoFar += Chunk[1].split()
+        AllStrings += [String]
+        AllRepresentations += [Representation]
+        AllErrors += Errors
+        AllSentAudioFiles += SentAudioFiles
+        if ThisPageAudioFileUsed != False:
+            ThisImageAudioFileUsedAll = True
+        N1 += 1
+##    if ThisImageAudioFileUsedAll == False:
+##        AllSentAudioFiles = []
+    FullRepresentation = make_annotated_image_representation(Image, AllRepresentations, PageName)
+    FullString = ''.join(AllStrings)
+    return ( FullString, FullRepresentation, AllErrors, AllSentAudioFiles, ThisImageAudioFileUsedAll )
+
+def make_annotated_image_representation(Image, SegmentRepresentations, PageName):
+    add_version_in_page_numbers_to_segment_representations(SegmentRepresentations)
+    return { 'annotated_image': 'yes',
+             'image': Image,
+             'segments': SegmentRepresentations,
+             'page': PageName }
+    
 # Format a single chunk
 # Format the words, then insert the formatted versions into the raw text.
-def format_hyperlinked_text_file_line(Chunk, Context, Params0, PageName, N):
+def format_hyperlinked_text_file_line(Chunk, Context, Params0, PageName, N, Image):
+    if lara_picturebook.is_annotated_image_segment(Chunk):
+        return format_hyperlinked_text_file_annotated_image(Chunk, Context, Params0, PageName, N)
     (Raw, MinimallyCleaned, AnnotatedWords0, CorpusIdTag) = Chunk
     AnnotatedWords = [ (Surface, Lemma) for (Surface, Lemma) in AnnotatedWords0 if Lemma != '' ]
     Params = lara_utils.add_corpus_id_tag_to_params(Params0, CorpusIdTag)
@@ -1157,13 +1236,16 @@ def format_hyperlinked_text_file_line(Chunk, Context, Params0, PageName, N):
     ( HyperlinkedRawWithAudio, Errors ) = lara_extra_info.add_audio_and_translation_to_line(HyperlinkedRaw, MinimallyCleaned, Context, Params)
     HyperlinkedText = add_anchor_to_line(HyperlinkedRawWithAudio, Index, Params)
     store_toc_for_html( Index, Anchor, HyperlinkedRawWithAudio, Params )
+    #store_toc_for_html( Index, Anchor, Raw, MinimallyCleaned, Params )
     store_index_for_chunk(Index, MinimallyCleaned)
-    SentAudioFile0 = lara_audio.get_audio_url_for_chunk_or_word(MinimallyCleaned, Context, 'segments', Params)
+    SegmentAudioText = MinimallyCleaned if Params.phonetic_text != 'yes' else MinimallyCleaned.lower()
+    SentAudioFile0 = lara_audio.get_audio_url_for_chunk_or_word(SegmentAudioText, Context, 'segments', Params)
     SentAudioFile = lara_utils.base_name_for_pathname(SentAudioFile0) if SentAudioFile0 != False else False
-    SegmentRepresentation = make_segment_representation(MinimallyCleaned, WordRepresentations, Translation, SentAudioFile, Anchor, PageName, Params)
-    return ( HyperlinkedText, SegmentRepresentation, Errors, SentAudioFile, ThisPageAudioFileUsed )
+    SegmentRepresentation = make_segment_representation(MinimallyCleaned, WordRepresentations, Translation, SentAudioFile, Anchor, PageName, Image, Params)
+    SentAudioFiles = [ SentAudioFile ] if SentAudioFile != False else []
+    return ( HyperlinkedText, SegmentRepresentation, Errors, SentAudioFiles, ThisPageAudioFileUsed )
 
-def make_segment_representation(MinimallyCleaned, WordRepresentations, Translation, AudioFile, Anchor, PageName, Params):
+def make_segment_representation(MinimallyCleaned, WordRepresentations, Translation, AudioFile, Anchor, PageName, Image, Params):
     if Params.abstract_html == 'plain_html_only':
         return False
     return { 'plain_text': MinimallyCleaned,
@@ -1172,7 +1254,8 @@ def make_segment_representation(MinimallyCleaned, WordRepresentations, Translati
              'audio': { 'file':AudioFile, 'corpus_name': Params.id },
              'anchor': Anchor,
              'corpus_name': Params.id,
-             'page': PageName }
+             'page': PageName,
+             'for_annotated_image': Image}
         
 
 # Format examples for the word pages: use code for formatting main text, slightly customised
@@ -1244,8 +1327,9 @@ def format_hyperlinked_text_file_line_word(Word, Lemma0, MinimallyCleaned, Index
     Params.word_token_index = Index
     Translation = lara_translations.translation_for_word_or_lemma(Word, Lemma, Params)
     Colour = colour_for_main_text_word(Word, Lemma, Count, Params)
+    Images = lara_translations.all_images_for_word(Lemma)
     WordContext = '*main_text_word*'
-    WordRepresentation = word_to_word_representation(Word, Lemma, Translation, WordContext, Params)
+    WordRepresentation = word_to_word_representation(Word, Lemma, Translation, Images, WordContext, Params)
     AnnotatedWord = add_translation_audio_and_colour_annotations_to_word(Word, Lemma, Translation, Colour, WordContext, Params)
     ThisPageAudioFileUsed = False
     return ( AnnotatedWord, WordRepresentation, ThisPageAudioFileUsed )
@@ -1262,24 +1346,29 @@ def format_hyperlinked_text_file_line_word_for_word_page(Word, Lemma0, Index, Cu
     Lemma = lara_translations.regularise_lemma(Lemma0)
     Params.word_token_index = Index
     Translation = lara_translations.translation_for_word_or_lemma(Word, Lemma, Params)
+    Images = lara_translations.all_images_for_word(Lemma)
     ( Colour, WordContext ) = ( 'red', '*current_word_on_word_page*' ) if Lemma == CurrentWord else ( 'black', '*non_current_word_on_word_page*' )
-    WordRepresentation = word_to_word_representation(Word, Lemma, Translation, WordContext, Params)
+    WordRepresentation = word_to_word_representation(Word, Lemma, Translation, Images, WordContext, Params)
     AnnotatedWord =  add_translation_audio_and_colour_annotations_to_word(Word, Lemma, Translation, Colour, WordContext, Params)
     return ( AnnotatedWord, WordRepresentation )
 
-def word_to_word_representation(Word, Lemma, Translation, WordContext, Params):
+def word_to_word_representation(Word, Lemma, Translation, Images, WordContext, Params):
     if Params.abstract_html == 'plain_html_only':
         return False
-    AudioFile0 = lara_extra_info.audio_url_for_word_and_word_context(Word, WordContext, Params)
-    AudioFile = lara_utils.base_name_for_pathname(AudioFile0) if AudioFile0 != False else False
+    WordForAudio = Word if Params.phonetic_text != 'yes' else Lemma
+    AudioFile0 = lara_extra_info.audio_url_for_word_and_word_context(WordForAudio, WordContext, Params)
+    AudioFile = lara_utils.base_name_for_pathname(AudioFile0) if AudioFile0 != False and not lara_utils.looks_like_a_url(AudioFile0) else False
     CleanedUpWord = clean_up_string_for_word_representation(Word)
     return { 'word': CleanedUpWord,
              'lemma': Lemma,
              'translation': Translation,
-             'audio': { 'file':AudioFile, 'corpus_name': Params.id } }
+             'audio': { 'file':AudioFile, 'corpus_name': Params.id },
+             'images': Images
+             }
 
 def clean_up_string_for_word_representation(Str):
-    Str1 = lara_replace_chars.restore_reserved_chars(Str)
+    #Str1 = lara_replace_chars.restore_reserved_chars(Str)
+    Str1 = Str
     Str2 = lara_forced_alignment.remove_prosodic_phrase_boundaries_from_string(Str1)
     #Str3 = remove_comment_markers(Str2)
     Str3 = Str2

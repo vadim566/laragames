@@ -1,5 +1,6 @@
 
 import lara_top
+import lara_picturebook
 import lara_translations
 import lara_split_and_clean
 import lara_config
@@ -21,16 +22,16 @@ def make_recording_file(SplitFile, RecordingFile, NewOrFull, Params):
         return False
     load_segment_translation_file_if_doing_sign_language(Params)
     read_and_store_ldt_metadata_files(all_segment_audio_dirs(Params), 'segments', Params)
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(SplitFile, Params) for Chunk in Chunks ]
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(SplitFile, Params) for Chunk in Chunks ]
     for FileType in [ 'txt', 'json' ]:
         OutList = make_recording_file1(InList, NewOrFull, FileType, Params)
-        OutList1 = lara_utils.remove_duplicates_general(OutList) if Params.segment_audio_keep_duplicates != 'yes' else OutList
+        OutList1 = lara_utils.remove_duplicates_general(OutList) if Params.segment_audio_keep_duplicates == 'no' else OutList
         write_recording_file(OutList1, FileType, RecordingFile)
 
 def count_recorded_segments(Params):
     read_and_store_ldt_metadata_files(all_segment_audio_dirs(Params), 'segments', Params)
-    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(Params.split_file, Params) for Chunk in Chunks ]
-    OutList = make_recording_file1(InList, 'full', 'txt', Params)
+    InList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(Params.split_file, Params) for Chunk in Chunks ]
+    OutList = make_recording_file1(InList, 'full', 'json', Params)
     return count_recorded_and_missing_lines(OutList)
 
 def make_word_recording_file(SplitFile, RecordingFile, NewOrFull, Params):
@@ -38,7 +39,7 @@ def make_word_recording_file(SplitFile, RecordingFile, NewOrFull, Params):
         return False
     load_lemma_translation_file_if_doing_sign_language(Params)
     read_and_store_ldt_metadata_files(all_word_audio_dirs(Params), 'word', Params)
-    Words = get_words_from_page_oriented_split_list(lara_split_and_clean.read_split_file(SplitFile, Params), Params)
+    Words = get_words_from_page_oriented_split_list(lara_split_and_clean.read_split_file_expanding_annotated_images(SplitFile, Params), Params)
     for FileType in [ 'txt', 'json' ]:
         OutList = make_word_recording_file1(Words, NewOrFull, FileType, Params)
         write_recording_file(OutList, FileType, RecordingFile)
@@ -54,8 +55,8 @@ def load_lemma_translation_file_if_doing_sign_language(Params):
 
 def count_recorded_words(Params):
     read_and_store_ldt_metadata_files(all_word_audio_dirs(Params), 'word', Params)
-    Words = get_words_from_page_oriented_split_list(lara_split_and_clean.read_split_file(Params.split_file, Params), Params)
-    OutList = make_word_recording_file1(Words, 'full', 'txt', Params)
+    Words = get_words_from_page_oriented_split_list(lara_split_and_clean.read_split_file_expanding_annotated_images(Params.split_file, Params), Params)
+    OutList = make_word_recording_file1(Words, 'full', 'json', Params)
     return count_recorded_and_missing_lines(OutList)
 
 def check_new_or_full_arg(NewOrFull):
@@ -120,7 +121,7 @@ def relevant_files_in_audio_directory(AudioDir, WordsOrSegments, WordsDict, Exte
 # --------------------------------------
 
 def make_recording_file1(Chunks, NewOrFull, FileType, Params):
-    lara_utils.print_and_flush(f'make_recording_file1(<{len(Chunks)} chunks>, {NewOrFull}, {FileType}, Params)')
+    #lara_utils.print_and_flush(f'make_recording_file1(<{len(Chunks)} chunks>, {NewOrFull}, {FileType}, Params)')
     if NewOrFull == 'full' and ( FileType == 'txt' or FileType == 'json' and Params.segment_audio_keep_duplicates != 'yes' ):
         return [ recording_file_line_for_chunk(Chunk, [], FileType, Params) for Chunk in Chunks if not null_chunk(Chunk) ]
     elif NewOrFull == 'full' and FileType == 'json' and Params.segment_audio_keep_duplicates == 'yes':
@@ -132,7 +133,7 @@ def make_recording_file1(Chunks, NewOrFull, FileType, Params):
         return Out
     else:
         return [ recording_file_line_for_chunk(Chunk, [], FileType, Params) for Chunk in Chunks
-                 if not audio_for_chunk_exists(Chunk) and not null_chunk(Chunk) ]
+                 if not audio_for_chunk_exists(Chunk, Params) and not null_chunk(Chunk) ]
 
 # --------------------------------------
 
@@ -157,7 +158,7 @@ def make_segment_audio_to_clean_dict(Params):
     return Dict
 
 def make_clean_to_words_dict(SplitFile, Params):
-    ChunkList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file(SplitFile, Params) for Chunk in Chunks ]
+    ChunkList = [ Chunk for ( PageInfo, Chunks ) in lara_split_and_clean.read_split_file_expanding_annotated_images(SplitFile, Params) for Chunk in Chunks ]
     Dict = {}
     for Chunk in ChunkList:
         ( Raw, Cleaned, Pairs ) = Chunk[:3]
@@ -331,15 +332,37 @@ def get_words_from_page_oriented_split_list(SplitList, Params):
     AllChunks = [ Chunk for ( PageInfo, Chunks ) in SplitList for Chunk in Chunks ]
     return get_words_from_split_file_contents(AllChunks, Params)
 
-def get_words_from_split_file_contents(ChunksList, Params):
-    if Params.video_annotations != 'yes':
-        Words = [ make_word_canonical_for_word_recording_dont_restore_chars(Word) for Chunk in ChunksList for ( Word, Tag ) in Chunk[2] if
-                  not Tag == '' and not lara_parse_utils.is_punctuation_string(Word) ]
-    else:
-        # If we're doing video recording, we record the lemmas rather than the words
-        # This depends on sign languages not being inflected
-        Words = [ make_word_canonical_for_word_recording_dont_restore_chars(Tag) for Chunk in ChunksList for ( Word, Tag ) in Chunk[2] if
-                  not Tag == '' and not lara_parse_utils.is_punctuation_string(Tag) ]
+##def get_words_from_split_file_contents(ChunksList, Params):
+##    if Params.video_annotations != 'yes' and Params.phonetic_text != 'yes':
+##        Words = [ make_word_canonical_for_word_recording_dont_restore_chars(Word)
+##                  for Chunk in ChunksList if not lara_picturebook.is_annotated_image_segment(Chunk)
+##                  for ( Word, Tag ) in Chunk[2]
+##                  if not Tag == '' and not lara_parse_utils.is_punctuation_string(Word) ]
+##    else:
+##        # If we're doing video recording, we record the lemmas rather than the words
+##        # This depends on sign languages not being inflected.
+##        # Similarly, in a phonetic text we record the lemmas, which are the phonetic content.
+##        Words = [ make_word_canonical_for_word_recording_dont_restore_chars(Tag)
+##                  for Chunk in ChunksList if not lara_picturebook.is_annotated_image_segment(Chunk)
+##                  for ( Word, Tag ) in Chunk[2]
+##                  if not Tag == '' and not lara_parse_utils.is_punctuation_string(Tag) ]
+##    return sorted(lara_utils.remove_duplicates(Words))
+
+# If we're doing video recording, we record the lemmas rather than the words
+# This depends on sign languages not being inflected.
+# Similarly, in a phonetic text we record the lemmas, which are the phonetic content.
+def get_words_from_split_file_contents(SegmentList, Params):
+    Words = []
+    for Segment in SegmentList:
+        if lara_picturebook.is_annotated_image_segment(Segment):
+            InnerSegmentList = lara_picturebook.annotated_image_segments(Segment)
+            Words += get_words_from_split_file_contents(InnerSegmentList, Params)
+        else:
+            Pairs = Segment[2]
+            for ( Word, Tag ) in Pairs:
+                if not Tag == '' and not lara_parse_utils.is_punctuation_string(Word):
+                    Element = Word if Params.video_annotations != 'yes' and Params.phonetic_text != 'yes' else Tag
+                    Words += [ make_word_canonical_for_word_recording_dont_restore_chars(Element) ]
     return sorted(lara_utils.remove_duplicates(Words))
 
 def make_word_canonical_for_word_recording(Word):
@@ -382,20 +405,23 @@ def ldt_wavfile_for_word(Word, Params):
     return cached_ldt_file_to_base_ldt_file(ldt_files_for_words[Word], Params) if Word in ldt_files_for_words else 'MISSING_FILE'
 
 def cached_ldt_file_to_base_ldt_file(File, Params):
+    if lara_utils.looks_like_a_url(File):
+        return File
     # The raw LDT files are .webm for signed video annotation, otherwise .wav
     LDTExtension = 'webm' if Params.video_annotations == 'yes' else 'wav'
     return f"help/{lara_utils.change_extension(File.split('/')[-1], LDTExtension)}"
 
 def maybe_add_contexts_to_metadata(Metadata, WordsOrSegments, Params):
-    if WordsOrSegments != 'segments' or Params.segment_audio_keep_duplicates != 'yes':
+    lara_utils.print_and_flush(f'--- Audio: Params.segment_audio_keep_duplicates = {Params.segment_audio_keep_duplicates}')
+    if WordsOrSegments != 'segments' or Params.segment_audio_keep_duplicates == 'no':
         return Metadata
-    ( Out, TextSoFar ) = ( [], [] )
+    ( Out, TextSoFar ) = ( [], ['*start*'] )
     for Record in Metadata:
         if 'context' in Record:
             Record1 = Record
         else:
             Record1 = copy.copy(Record)
-            Record1['context'] = text_so_far_to_context(TextSoFar)
+            Record1['context'] = text_so_far_to_context(TextSoFar, Params)
         TextSoFar += Record['text'].split()
         Out += [ Record1 ]
     return Out    
@@ -404,7 +430,9 @@ def maybe_add_contexts_to_metadata(Metadata, WordsOrSegments, Params):
 ## AudioOutput help any_speaker help/190284_190926_163736873.wav rabbit# (no trace info)
 def recording_file_line_for_chunk(Chunk, TextSoFar, FileType, Params):
     Text = make_segment_canonical_for_recording(Chunk[1])
-    Context = text_so_far_to_context(TextSoFar) if Params.segment_audio_keep_duplicates == 'yes' else ''
+    if Params.phonetic_text == 'yes':
+        Text = Text.lower()
+    Context = text_so_far_to_context(TextSoFar, Params) if Params.segment_audio_keep_duplicates == 'yes' else ''
     FileOrMissing = ldt_wavfile_for_chunk(Chunk, Context, Params)
     if FileType == 'txt':
         return f'AudioOutput help any_speaker {FileOrMissing} {Text}# (no trace info)'
@@ -418,12 +446,13 @@ def recording_file_line_for_chunk(Chunk, TextSoFar, FileType, Params):
         return { 'text': Text,
                  'file': '' if FileOrMissing == 'MISSING_FILE' else maybe_remove_help_prefix(FileOrMissing) }
 
-def text_so_far_to_context(TextSoFar):
+def text_so_far_to_context(TextSoFar, Params):
     if not isinstance(TextSoFar, list):
         lara_utils.print_and_flush(f'*** Error when creating segment recording file: value of TextSoFar, "{str(TextSoFar)[200:]}", is not a list')
         return ''
     else:
-        PrecedingContent = ' '.join(TextSoFar[-10:])
+        ContextWindow = Params.preceding_context_window
+        PrecedingContent = ' '.join(TextSoFar[-1 * ContextWindow:])
         return f'{PrecedingContent}'
  
 def recording_file_line_for_word(Word0, FileType, Params):
@@ -445,9 +474,15 @@ def maybe_remove_help_prefix(File):
     return File[len('help/'):] if File.startswith('help/') else File
 
 def count_recorded_and_missing_lines(List):
-    NMissing = len([ Line for Line in List if Line.find('MISSING_FILE') > 0 ])
+    NMissing = len([ Item for Item in List if is_recording_item_with_missing_file(Item) ])
     NRecorded = len(List) - NMissing
     return { 'recorded': NRecorded, 'not_recorded': NMissing }
+
+def is_recording_item_with_missing_file(Item):
+    if not isinstance(Item, dict) or not 'file' in Item:
+        lara_utils.print_and_flush(f'*** Error: bad item in recording file list {Item}')
+        return True
+    return Item['file'] == ''
 
 # -----------------------------------------------
 
@@ -543,18 +578,22 @@ def ldt_file_for_word(Word):
         lara_utils.print_and_flush_warning(Error)
         return False
 
-def audio_for_chunk_exists(Chunk):
+def audio_for_chunk_exists(Chunk, Params):
     global ldt_files_for_segments
-    return True if Chunk[1] in ldt_files_for_segments else False
+    Text = audio_text_for_chunk(Chunk, Params)
+    return True if Text in ldt_files_for_segments else False
 
 def ldt_wavfile_for_chunk(Chunk, Context, Params):
     global ldt_files_for_segments
-    Text = Chunk[1]
+    Text = audio_text_for_chunk(Chunk, Params)
     if not Text in ldt_files_for_segments:
         return 'MISSING_FILE'
     AudioRecords = ldt_files_for_segments[Text] 
     File0 = best_segment_file_for_context(AudioRecords, Context, Params)
     return cached_ldt_file_to_base_ldt_file(File0, Params) if File0 != False else 'MISSING_FILE'
+
+def audio_text_for_chunk(Chunk, Params):
+    return Chunk[1] if Params.phonetic_text != 'yes' else Chunk[1].lower()
 
 # -----------------------------------------------
 
@@ -640,8 +679,7 @@ def store_ldt_metadata_file_parsed_line(ParsedLine, WordsOrSegments, Params):
         else:
             SegmentOrWord = ParsedLine['text']
         Context = ParsedLine['context'] if 'context' in ParsedLine else ''
-        #File1 = f'multimedia/{File}'
-        File1 = f'{lara_utils.relative_multimedia_dir(Params)}/{File}'
+        File1 = File if lara_utils.looks_like_a_url(File) else f'{lara_utils.relative_multimedia_dir(Params)}/{File}'
         SegmentOrWord1 = internalise_text_from_audio_metadata_file(SegmentOrWord)
         if WordsOrSegments == 'segments':
             #ldt_files_for_segments[make_segment_canonical_for_recording(SegmentOrWord)] = File1
@@ -655,6 +693,7 @@ def store_ldt_metadata_file_parsed_line(ParsedLine, WordsOrSegments, Params):
 
 def store_downloaded_audio_metadata(WordsOrSegments, Voice, CorpusId, URL, File):
     global ldt_urls_for_segment_and_corpus
+    Params = lara_config.default_params()
     if not lara_utils.file_exists(File):
         lara_utils.print_and_flush(f'*** Warning: LDT metadata file {File} not found.')
         List = []
@@ -677,7 +716,7 @@ def store_downloaded_audio_metadata(WordsOrSegments, Voice, CorpusId, URL, File)
     else:
         TextSoFar = []
         for Line in ParsedLines:
-            Context = text_so_far_to_context(TextSoFar)
+            Context = text_so_far_to_context(TextSoFar, Params)
             store_downloaded_audio_metadata_line(Line, Context, WordsOrSegments, Voice, CorpusId, URL)
             TextSoFar += Line['text'].split()
 
@@ -826,7 +865,7 @@ def add_audio_mouseover_to_word(AnnotatedWord, Word, Params):
            #return f'<span class="sound" {Trigger}="{PlaySoundCall}" ontouchstart="{PlaySoundCall}">{AnnotatedWord}</span>'
             return f'<span class="sound" {Trigger}="{PlaySoundCall}">{AnnotatedWord}</span>'
         else:
-            lara_utils.print_and_flush(f'*** Warning: unable to find audio for "{Word}"')
+            lara_utils.print_and_flush_warning(f'*** Warning: unable to find audio for "{Word}"')
             return AnnotatedWord
 
 def null_audio_url(AudioURL):
@@ -842,7 +881,7 @@ def get_audio_url_for_word(Word, Params):
         return AudioURL
     else:
         if not no_audio('words', Params):
-            lara_utils.print_and_flush(f'*** Warning: unable to find audio for "{Word}"')
+            lara_utils.print_and_flush_warning(f'*** Warning: unable to find audio for "{Word}"')
         return False
 
 def get_audio_url_for_chunk_or_word(MinimallyCleaned, Context, WordsOrSegments, Params):
@@ -1071,6 +1110,8 @@ def url_for_audio_file_in_tag(Src, Params, Dir):
             return ( f'{lara_utils.relative_multimedia_dir(Params)}/{Src}', [] )
                         
 def check_if_audio_file_exists(Dir, Src):
+    if lara_utils.looks_like_a_url(Src):
+        return []
     File = f'{Dir}/{Src}'
     if lara_utils.file_exists(File):
         return []

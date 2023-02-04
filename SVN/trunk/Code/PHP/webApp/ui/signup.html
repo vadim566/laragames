@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>LARA Portal</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="LARA Portal">
+    <meta name="author" content="Hanieh Habibi">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="../assets/plugins/fontawesome/js/all.min.js"></script>
+
+	<!-- App CSS -->
+    <link id="theme-style" rel="stylesheet" href="../assets/css/portal.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/signup.css">
+
+</head> 
+
+<body class="app app-signup p-0">    	
+    <div class="row g-0 app-auth-wrapper">
+	    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
+		    <div class="d-flex flex-column align-content-end">
+			    <div class="app-auth-body mx-auto">	
+				    <div class="app-auth-branding mb-4">
+						<a class="app-logo" href="index.php">
+							<img class="logo-icon mr-2" src="../assets/images/lara-logo.png" alt="logo">
+						</a>
+					</div>
+					<h2 class="auth-heading text-center mb-4">Sign up to LARA</h2>
+	
+					<div class="auth-form-container text-left mx-auto">
+						<form class="auth-form auth-signup-form" method="post" id="SignupForm" name="SignupForm"
+							  oninput='PwdRepeat.setCustomValidity(PwdRepeat.value != Password.value ? "Passwords do not match." : "")'>
+							<div class="mb-3">
+								<label class="sr-only" for="UserName">Your User Name</label>
+								<input id="UserName" name="UserName" type="text"
+									   class="form-control" placeholder="User Name" required="required">
+							</div>
+							<div class="mb-3">
+								<label class="sr-only" for="Email">Your Email</label>
+								<input id="Email" name="Email" type="email"
+									   class="form-control" placeholder="Email" required="required">
+							</div>
+							<div class="mb-3">
+								<label class="sr-only" for="Password">Your Password</label>
+								<input id="Password" name="Password" type="password"
+									   pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+									   title="Must contain at least one number and one letter, and at least 8 characters"
+									   class="form-control signup-password" placeholder="Password" required="required">
+							</div>
+							<div class="mb-3">
+								<label class="sr-only" for="PwdRepeat">Password Repeat</label>
+								<input id="PwdRepeat" name="PwdRepeat" type="password"
+									   pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+									   class="form-control signup-password" placeholder="Repeat password" required="required">
+							</div>
+							<div class="extra mb-3">
+								<div class="form-check">
+									By clicking Sign Up, you agree to  <a target="_blank" href="../SharedModules/TermsOfUse.pdf" class="app-link">our Terms of Use</a>.
+								</div>
+							</div><!--//extra-->
+							
+							<div class="text-center">
+								<button type="submit" class="btn app-btn-primary btn-block theme-btn mx-auto">Sign Up</button>
+							</div>
+						</form><!--//auth-form-->
+
+						<div class="alert alert-danger  alert-dismissible show fade in mt-3" role="alert" id="dangerDiv" style="display:none;">
+							<strong>Error!</strong> <div id="dangerText"></div>
+						</div>
+						<div class="alert alert-success  alert-dismissible show fade in mt-3" role="alert" id="successDiv" style="display:none;">
+							<strong>Perfect! </strong> <div id="successText"></div>
+						</div>
+
+						<div id="message" class="alert alert-info" role="alert">
+							<h6 class="alert-heading">Password must contain the following:</h6>
+							<p id="letter" class="invalid">A <b>letter</b>
+							<p id="number" class="invalid">A <b>number</b></p>
+							<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+						</div>
+
+						<div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="index.php" >Log in</a></div>
+					</div><!--//auth-form-container-->
+			    </div><!--//auth-body-->
+
+				<footer class="app-auth-footer">
+					<div class="container text-center py-3">
+						<small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> for language geeks</small>
+					</div>
+				</footer><!--//app-auth-footer-->
+		    </div><!--//flex-column-->   
+	    </div><!--//auth-main-col-->
+	    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+		    <div class="auth-background-holder">			    
+		    </div>
+		    <div class="auth-background-mask"></div>
+		    <div class="auth-background-overlay p-3 p-lg-5">
+			    <div class="d-flex flex-column align-content-end h-100">
+				    <div class="h-100"></div>
+				    <div class="overlay-content p-3 p-lg-4 rounded">
+					    <h5 class="mb-3 overlay-title">Welcome to LARA portal</h5>
+						<div>A collaborative open source project, whose goal is to support development of L2 language skills by reading.</div>
+				    </div>
+				</div>
+		    </div><!--//auth-background-overlay-->
+	    </div><!--//auth-background-col-->
+    
+    </div><!--//row-->
+
+	<script src="../js/signup.js"></script>
+
+</body>
+</html> 
+

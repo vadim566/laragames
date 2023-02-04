@@ -14,11 +14,13 @@ import lara_images
 import lara_audio
 import lara_translations
 import lara_drama
+import lara_picturebook
 import lara_chinese
 import lara_japanese
 import lara_utils
 import lara_parse_utils
 import lara_format_word_token_file
+#import lara_align_from_audio
 import time
 import copy
 
@@ -78,6 +80,9 @@ config_files = {'minimal': '$LARA/Content/minimal/corpus/local_config.json',
                 'antigone': '$LARA/Content/antigone/corpus/local_config.json',
                 'le_bonheur_prosodic_small': '$LARA/Content/le_bonheur/corpus/local_config_audio_extraction_prosodic_groups_small.json',
                 'japanese_little_prince': '$LARA/Content/japanese_little_prince/corpus/local_config.json',
+                'picturebook_toy_mixed': '$LARA/Content/picturebook_examples/corpus/local_config_mixed_toy.json',
+                'arabic_alphabet': '$LARA/Content/arabic_alphabet_book/corpus/local_config.json',
+                'arabic_alphabet_phonetic': '$LARA/Content/arabic_alphabet_book/corpus/local_config_phonetic.json',
                 # Distributed
                 'reader1_english': '$LARA/Content/reader1_english/distributed_config.json',
                 'reader1_english_small': '$LARA/Content/reader1_english/distributed_config_small.json',
@@ -206,6 +211,7 @@ def make_word_pos_file(ConfigFile):
 def compile_lara_local_resources(ConfigFile):
     ConfigData = lara_config.read_lara_local_config_file(ConfigFile)
     if ConfigData:
+        lara_utils.init_warnings()
         ConfigData.local_files = 'yes'
         return compile_lara_local_resources1(ConfigData)
 
@@ -267,6 +273,9 @@ def copy_local_resources(ConfigFile, BaseFile):
                                    'tmp_image_dict_spreadsheet': f'{BaseFile}image_dict.csv',
                                    'tmp_image_dict_spreadsheet_json': f'{BaseFile}image_dict.json',
 
+                                   'tmp_word_locations_file': f'{BaseFile}word_locations.json',
+                                   'tmp_word_locations_zipfile': f'{BaseFile}word_locations_zipfile.zip',
+
                                    'tmp_segment_audio_word_breakpoint_file': f'{BaseFile}tmp_segment_audio_word_breakpoints.csv'
                                    })
     FullWordCSVLemma = lara_utils.get_tmp_csv_file(Params)
@@ -316,6 +325,13 @@ def compile_lara_local_resources_and_copy_just_tokens_from_types(ConfigFile, Bas
                                 {'tmp_translation_spreadsheet_token': f'{BaseFile}word_translations_tokens.csv',
                                  'tmp_translation_spreadsheet_token_json': f'{BaseFile}word_translations_tokens.json'
                                  })
+    return True
+
+def upload_picturebook_data(ConfigFile, TmpZipfile, Dir):
+    Params = lara_config.read_lara_local_config_file(ConfigFile)
+    if Params == False:
+        return False
+    lara_picturebook.copy_picturebook_data_to_selector_tool_directory(TmpZipfile, Dir, Params)
     return True
 
 def check_mwe_defs_file(File):
@@ -441,6 +457,7 @@ def find_css_img_and_audio_files_explicit(CorpusFile, DataFile):
 def compile_lara_local_word_pages(ConfigFile):
     ConfigData = lara_config.read_lara_local_config_file(ConfigFile)
     if ConfigData:
+        lara_utils.init_warnings()
         compile_lara_local_word_pages1(ConfigData)
     if ConfigData.abstract_html == 'plain_via_abstract_html':
         lara_utils.print_and_flush(f'--- CREATING HTML PAGES FROM ABSTRACT HTML FILE')
@@ -707,6 +724,7 @@ def compile_lara_local_resources1(ConfigData):
         compile_lara_local_make_segment_translation_spreadsheet(ConfigData)
         compile_lara_local_make_note_spreadsheet(ConfigData)
         compile_lara_local_make_image_dict_spreadsheet(ConfigData)
+        compile_lara_local_make_word_locations_file(ConfigData)
         return True
     else:
         lara_utils.print_and_flush('*** Error: something went wrong when reading corpus file')
@@ -975,6 +993,52 @@ def compile_lara_local_make_image_dict_spreadsheet(ConfigData):
 
 # --------------------------------------------------------
 
+def compile_lara_local_make_word_locations_file(ConfigData):
+    SplitFile = lara_tmp_file('split', ConfigData)
+    TmpWordLocationFile = lara_tmp_file('tmp_word_locations_file', ConfigData)
+    TmpZipfile = lara_tmp_file('tmp_word_locations_zipfile', ConfigData)
+    lara_utils.print_and_flush(f'--- MAKING WORD LOCATIONS FILE AND WORD LOCATIONS ZIPFILE')
+    lara_picturebook.make_tmp_picturebook_word_location_file_and_word_location_zipfile(SplitFile, TmpWordLocationFile, TmpZipfile, ConfigData)
+
+# --------------------------------------------------------
+
+def make_phonetic_version_of_corpus(ConfigFile):
+    import lara_phonetic
+    ConfigData = lara_config.read_lara_local_config_file(ConfigFile)
+    if ConfigData == False:
+        return
+    if ConfigData.phonetic_text == 'yes':
+        lara_utils.print_and_flush(f'*** Error: already marked as a phonetic corpus, nothing to do')
+    TmpPhoneticCorpusFile = lara_tmp_file('tmp_phonetic_corpus', ConfigData)
+    TmpPhoneticAlignedTextFile = lara_tmp_file('tmp_phonetic_aligned_text', ConfigData)
+    TmpPhoneticAlignedLexiconFile = lara_tmp_file('tmp_phonetic_aligned_lexicon', ConfigData)
+    lara_phonetic.make_phonetic_version_of_corpus_file_and_tmp_files(TmpPhoneticCorpusFile, TmpPhoneticAlignedTextFile,
+                                                                     TmpPhoneticAlignedLexiconFile, ConfigFile)
+
+# --------------------------------------------------------
+
+def make_labelled_corpus_file(ConfigFile):
+    import lara_align_from_audio
+    ConfigData = lara_config.read_lara_local_config_file(ConfigFile)
+    if ConfigData == False:
+        return
+    LabelledFile = ConfigData.labelled_source_corpus
+    if LabelledFile == '':
+        lara_utils.print_and_flush(f'*** Error: "labelled_corpus_source" not defined in config file')
+    lara_align_from_audio.create_corpus_with_numbered_labels(ConfigFile, LabelledFile)
+
+# --------------------------------------------------------
+
+def cut_up_audio(ConfigFile, AudioId):
+    import lara_align_from_audio
+    lara_align_from_audio.create_aligned_files_from_config_file(ConfigFile, AudioId)
+
+def cut_up_audio_without_text(ConfigFile, AudioId):
+    import lara_align_from_audio
+    lara_align_from_audio.cut_up_audio_without_text_from_config_file(ConfigFile, AudioId)
+
+# --------------------------------------------------------
+
 def compile_lara_local_make_word_pages(ConfigData):
     SplitFile = lara_tmp_file('split', ConfigData)
     CountFile = lara_tmp_file('count', ConfigData)
@@ -1143,11 +1207,18 @@ base_names_for_lara_tmp_file = {'lemma_dictionary_file': 'tmp_lemma_dictionary.c
                                 'tmp_image_dict_spreadsheet': 'tmp_image_dict.csv',
                                 'tmp_image_dict_spreadsheet_json': 'tmp_image_dict.json',
 
+                                'tmp_word_locations_file': 'tmp_word_locations.json',
+                                'tmp_word_locations_zipfile': 'tmp_word_locations_zipfile.zip',
+
                                 'tmp_mwe_annotations': 'tmp_mwe_annotations.json',
                                 'tmp_mwe_annotations_summary': 'tmp_mwe_annotations_summary.html',
                                 'mwe_processed_corpus': 'mwe_processed_corpus.txt',
                                 'mwe_trace': 'mwe_trace.html',
                                 'mwe_ml_data': 'mwe_ml_data.json',
+
+                                'tmp_phonetic_corpus': 'phonetic_corpus.txt',
+                                'tmp_phonetic_aligned_text': 'tmp_phonetic_aligned_text.json',
+                                'tmp_phonetic_aligned_lexicon': 'tmp_phonetic_aligned_lexicon.json',
 
                                 'word_pos_file': 'word_pos.json',
                                 'tag_tuples_file': 'tag_tuples.json',
@@ -1161,7 +1232,10 @@ base_names_for_lara_tmp_file = {'lemma_dictionary_file': 'tmp_lemma_dictionary.c
 
                                 'bad_ldt_files': 'bad_ldt_files.json',
 
-                                'all_audio_segments_file': 'all_audio_segments.json'
+                                'all_audio_segments_file': 'all_audio_segments.json',
+                                'aligned_file': 'aligned.json',
+
+                                'word_alignment_file': 'word_alignment_data.json',
                                 }
 
 # If a file is a processed version of the corpus file, it needs to have the same extension.
@@ -1217,3 +1291,5 @@ def find_config_file( filename ):
     configFile = lara_utils.absolute_file_name( filename )
     lara_utils.print_and_flush( f'--- using config file: {configFile}')
     return configFile
+
+ 

@@ -32,8 +32,8 @@ def game10(story_name, file=None):
         true_match[0] = sentance[rand_index]
         words_ct = true_match[0].count(" ")
 
-        if (tries > max_tries):
-            generate_game10(story_name, file)
+        # if (tries > max_tries):
+        #     generate_game10(story_name, file)
 
     # pick random word between word set
     rand_ct = random.sample(range(0, words_ct), 2)

@@ -1,0 +1,2838 @@
+<h1>/*Pitjantjatjara Elementary Course*/||</h1>
+
+<i>/*Developed 1966-68 at the University of Adelaide by Jim Downing, Ken Hale and Gordon Ingkatji.*/||</i> 
+<i>/*Audio recorded by Gordon Ingkatji, Henk Siliakus and an unidentified female speaker of Pitjantjatjara.*/||</i> 
+<i>/*Gordon Ingkatji's name and voice appear with permission of his family. All efforts have been made to identify and contact the family of the female speaker, but these have so far been unsuccessful.*/||</i> 
+<i>/*Multimedia edition formatted by Manny Rayner using the LARA toolkit and corrected by Sasha Wilmoth. View in Chrome or Firefox.*/||</i> 
+<b>/*THE PITJANTJATJARA LANGUAGE IS THE PROPERTY OF THE PITJANTJATJARA PEOPLE. ABORIGINAL AND TORRES STRAIT ISLANDER PEOPLE ARE ADVISED THAT THIS SITE CONTAINS VOICES OF DECEASED PERSONS.*/||</n> 
+
+<page><h1>/*Unit 1*/||</h1> 
+
+<h2>/*A. Vocabulary. Listen and repeat.*/||</h2>
+nyangatja||
+palatja||
+nyaratja||
+wati||
+minyma||
+tjitji||
+puḻka||
+tjukutjuku||
+palya||
+pikatjara||
+
+<h2>/*B. Now repeat the words and fix the English meanings in your mind.*/||</h2>
+nyangatja|| /*<i>this one</i>*/||
+palatja|| /*<i>that one near</i>*/||
+nyaratja|| /*<i>that one far (or) over there</i>*/||
+wati|| /*<i>man</i>*/||
+minyma|| /*<i>woman</i>*/||
+tjitji|| /*<i>child</i>*/||
+puḻka|| /*<i>big</i>*/||
+tjukutjuku|| /*<i>small</i>*/||
+palya|| /*<i>good or well</i>*/||
+pikatjara|| /*<i>sick</i>*/||
+
+<h2>/*C. Listen and repeat the sentences.*/||</h2>
+nyangatja palya||
+palatja palya||
+nyaratja palya||
+wati palya||
+minyma palya||
+tjitji palya||
+
+<h2>/*D. Repeat the sentences and fix the English meanings in your mind.*/||</h2>
+nyangatja palya|| /*<i>This one is good (well).</i>*/||
+palatja palya|| /*<i>That one near is good (well).</i>*/||
+nyaratja palya|| /*<i>That one far is good (well).</i>*/||
+wati palya|| /*<i>The man is good (well).</i>*/||
+minyma palya|| /*<i>The woman is good (well).</i>*/||
+tjitji palya|| /*<i>The child is good (well).</i>*/||
+
+<h2>/*E. Substitution.*/||</h2>
+/*<i>You will now·hear a model sentence followed by a cue
+Use this cue to make your new sentence. Like this:</i>*/||
+
+/*<i>You will hear:</i>*/|| nyangatja palya|/|palatja||
+/*<i>You will say:</i>*/|| palatja palya.||
+
+/*<i>Then you listen for the correct response and repeat
+it. This is called a four phase drill, because of
+the four items:</i>*/||
+
+/*<i>1. The model:</i>*/|| nyangatja palya|/|palatja||
+/*<i>2. Your attempt:</i>*/|| palatja palya||
+/*<i>3. The confirmation:</i>*/|| palatja palya||
+/*<i>4. Your repetition:</i>*/|| palatja palya||
+
+/*<i>Join in as soon as you understand.</i>*/||
+
+/*<b>First model.</b>*/||
+nyangatja palya|/|palatja||
+palatja palya|/|nyaratja||
+nyaratja palya|/|wati||
+wati palya|/|minyma||
+minyma palya|/|tjitji||
+tjitji palya||
+
+/*<b>Second model.</b>*/||
+nyangatja pikatjara|| /*<i>= This one is sick.</i>*/||
+nyangatja pikatjara|/|nyaratja||
+nyaratja pikatjara|/|palatja||
+palatja pikatjara|/|tjitji||
+tjitji pikatjara|/|wati||
+wati pikatjara|/|minyma||
+minyma pikatjara||
+
+/*<b>Third model.</b>*/||
+nyangatja tjukutjuku|| /*<i>= This one is small.</i>*/||
+nyangatja tjukutjuku|/|palatja||
+palatja tjukutjuku|/|nyaratja||
+nyaratja tjukutjuku|/|tjitji||
+tjitji tjukutjuku|/|minyma||
+minyma tjukutjuku|/|wati||
+wati tjukutjuku||
+
+/*<b>Fourth model.</b>*/||
+nyangatja puḻka|| /*<i>= This one is big.</i>*/||
+nyangatja puḻka|/|palatja||
+palatja puḻka|/|wati||
+wati puḻka|/|minyma||
+minyma puḻka|/|tjitji||
+tjitji puḻka|/|nyaratja||
+nyaratja puḻka||
+
+<h2>/*F. Translation into the language.*/||</h2>
+/*<i>You will hear an English statement. Put it into the native language
+and listen out for the correct response. Then repeat the correct response.
+Off you go.</i>*/||
+
+/*<i>The man is sick.</i>*/|| wati pikatjara.||
+/*<i>The child is sick.</i>*/|| tjitji pikatjara.||
+/*<i>The child is well.</i>*/|| tjitji palya.||
+/*<i>The woman is well.</i>*/|| minyma palya.||
+/*<i>The woman is small.</i>*/|| minyma tjukutjuku.||
+/*<i>This one is small.</i>*/|| nyangatja tjukutjuku.||
+/*<i>This one is big.</i>*/|| nyangatja puḻka.||
+/*<i>That one near is big.</i>*/|| palatja puḻka.||
+/*<i>That one distant is sick.</i>*/|| nyaratja pikatjara.||
+/*<i>That one distant is well.</i>*/|| nyaratja palya.||
+
+/*<b>End of Unit 1</b>*/||
+
+||<page><h1>/*Unit 2*/||</h1>
+
+<h2>/*A. Listen and repeat the following*/||</h2>
+wati nyanga||
+wati pala||
+wati nyara||
+minyma nyanga||
+minyma pala||
+minyma nyara||
+tjitji nyanga||
+tjitji pala||
+tjitji nyara||
+
+<h2>/*B. Now repeat these phrases once again and fix the English meanings in your mind*/||</h2>
+wati nyanga|| <i>/*this man*/</i>||
+wati pala|| <i>/*that man near*/</i>||
+wati nyara|| <i>/*that man far*/</i>||
+minyma nyanga|| <i>/*this woman*/</i>||
+minyma pala|| <i>/*that woman near*/</i>||
+minyma nyara|| <i>/*that woman far*/</i>||
+tjitji nyanga|| <i>/*this child*/</i>||
+tjitji pala|| <i>/*that child near*/</i>||
+tjitji nyara|| <i>/*that child far*/</i>||
+
+<h2>/*C. Listen and repeat the following sentences:*/||</h2>
+wati nyanga pikatjara||
+wati pala pikatjara||
+wati nyara pikatjara||
+minyma nyanga palya||
+minyma pala palya||
+minyma nyara palya||
+tjitji nyanga tjukutjuku||
+tjitji pala tjukutjuku||
+tjitji nyara tjukutjuku||
+
+<h2>/*D. Listen to these sentences once again and fix their English meanings in your mind.*/||</h2>
+wati nyanga pikatjara|| <i>/*This man is sick.*/</i>||
+wati pala pikatjara|| <i>/*That man near is sick.*/</i>||
+wati nyara pikatjara|| <i>/*That man far is sick.*/</i>||
+minyma nyanga palya|| <i>/*This woman is well.*/</i>||
+minyma pala palya|| <i>/*That woman near is well.*/</i>||
+minyma nyara palya|| <i>/*That woman far is well.*/</i>||
+tjitji nyanga tjukutjuku|| <i>/*This child is small.*/</i>||
+tjitji pala tjukutjuku|| <i>/*That child near is small.*/</i>||
+tjitji nyara tjukutjuku|| <i>/*That child far is small.*/</i>||
+
+<h2>/*E.l. Structural Drills. Four phase drill, as you did previously.*/||</h2>
+<b>/*First model.*/</b>||
+wati nyanga pikatjara|/|wati pala||
+wati pala pikatjara|/|wati nyara||
+wati nyara pikatjara|/|minyma nyanga||
+minyma nyanga pikatjara|/|minyma pala||
+minyma pala pikatjara|/|tjitji nyanga||
+tjitji nyanga pikatjara|/|tjitji pala||
+tjitji pala pikatjara|/|tjitji nyara||
+tjitji nyara pikatjara||
+
+<b>/*Second model.*/</b>||
+wati nyanga puḻka|/|wati pala||
+wati pala puḻka|/|wati nyara||
+wati nyara puḻka|/|minyma nyanga||
+minyma nyanga puḻka|/|minyma pala||
+minyma pala puḻka|/|tjitji nyanga||
+tjitji nyanga puḻka|/|tjitji pala||
+tjitji pala puḻka|/|tjitji nyara||
+tjitji nyara puḻka||
+
+<h2>/*E.2. You are now going to hear a sentence followed by a cue*/||</h2>
+<i>/*e.g. well, sick, small, or big. Make up your own statements like this:*/</i>
+<i>/*You'll hear:*/</i>|| wati nyanga pikatjara|/|puḻka||
+<i>/*You respond:*/</i>|| wati nyanga puḻka||
+
+<i>/*Listen to the correct response, and repeat, etc. Off you go.*/</i>||
+
+<b>/*First model.*/</b>|| 
+wati nyanga pikatjara|/|puḻka||
+wati nyanga puḻka|/|palya||
+wati nyanga palya|/|tjukutjuku||
+wati nyanga tjukutjuku||
+
+<b>/*Second model.*/</b>||
+minyma pala puḻka|/|pikatjara||
+minyma pala pikatjara|/|palya||
+minyma pala palya|/|tjukutjuku||
+minyma pala tjukutjuku||
+
+<b>/*Third model.*/</b>||
+tjitji nyara tjukutjuku|/|pikatjara||
+tjitji nyara pikatjara|/|palya||
+tjitji nyara palya|/|puḻka||
+tjitji nyara puḻka||
+
+<h2>/*E. 3. Mixed Drills*/||</h2>
+<i>/*We shall now give you a model, and a cue that may be either
+this man, that near child, or the child and so on, or it
+can be a word such as well, or sick, or big, or small. It
+is up to you to put them in their appropriate place. We'll
+start off simply. The confirmation will be given as usual,
+please repeat it. Join in as you understand:</i>
+
+<b>Model.</b>*/||
+wati puḻka|/|minyma:||
+minyma puḻka|/|pikatjara||
+minyma pikatjara|/|tjitji pala||
+tjitji pala pikatjara|/|tjitji nyanga||
+tjitji nyanga pikatjara|/|wati||
+wati pikatjara|/|wati nyanga||
+wati nyanga pikatjara|/|palya||
+wati nyanga palya|/|minyma nyanga||
+minyma nyanga palya|/|tjukutjuku||
+minyma nyanga tjukutjuku|/|tjitji||
+tjitji tjukutjuku|/|palya||
+tjitji palya|/|tjitji nyanga||
+tjitji nyanga palya|/|puḻka||
+tjitji nyanga puḻka||
+
+
+<h2>/*F. Translate into the language. Four phase drill as before.*/||</h2>
+<i>/*The man is sick.*/</i>||  wati pikatjara||
+<i>/*This man is sick.*/</i>|| wati nyanga pikatjara||
+<i>/*This woman is sick.*/</i>|| minyma nyanga pikatjara||
+<i>/*This woman is well.*/</i>|| minyma nyanga palya||
+<i>/*The child is well.*/</i>|| tjitji palya||
+<i>/*The child is small.*/</i>|| tjitji tjukutjuku||
+<i>/*This child is small.*/</i>|| tjitji nyanga tjukutjuku||
+<i>/*This child is big.*/</i>|| tjitji nyanga puḻka||
+<i>/*That distant man is big.*/</i>|| wati nyara puḻka||
+<i>/*That distant woman is big.*/</i>|| minyma nyara puḻka||
+
+/*<b>End of Unit 2</b>*/|| 
+
+||<page><h1>/*Unit 3*/||</h1>
+
+<h2>/*A. Listen and repeat the following pronouns:*/||</h2>
+ngayulu||
+nyuntu|| 
+paluṟu|| 
+ngali|| 
+nyupali|| 
+pula|| 
+nganaṉa|| 
+nyura|| 
+tjana|| 
+
+<h2>/*B. Listen to these words again and fix the English meaning in your mind:*/||</h2>
+ngayulu||<i>/* I*/</i>||
+nyuntu||<i>/* you*/</i>||
+paluṟu||<i>/* he/she/it*/</i>||
+ngali||<i>/* we two*/</i>||
+nyupali||<i>/* you two*/</i>||
+pula||<i>/* they two*/</i>||
+nganaṉa||<i>/* we (more than two)*/</i>||
+nyura||<i>/* you (more than two)*/</i>||
+tjana||<i>/* they (more than two)*/</i>||
+
+<h2>/*C. Listen to the following sentences:*/||</h2>
+ngayulu palya||
+nyuntu palya||
+paluṟu palya||
+ngali palya||
+nyupali palya||
+pula palya||
+nganaṉa palya||
+nyura palya||
+tjana palya||
+ngayulu pikatjara||
+nyuntu pikatjara||
+paluṟu pikatjara||
+ngali pikatjara||
+nyupali pikatjara||
+pula pikatjara||
+nganaṉa pikatjara||
+nyura pikatjara||
+tjana pikatjara||
+ngayulu puḻka||
+nyuntu puḻka||
+paluṟu puḻka||
+ngali puḻka||
+pula puḻka||
+nganaṉa puḻka||
+nyura puḻka||
+tjana puḻka||
+ngayulu tjukutjuku||
+nyuntu tjukutjuku||
+paluṟu tjukutjuku||
+ngali tjukutjuku||
+nyupali tjukutjuku||
+pula tjukutjuku||
+nganaṉa tjukutjuku||
+nyura tjukutjuku||
+tjana tjukutjuku||
+
+<h2>/*D. Listen to the following sentences, repeat them and
+fix the English in your mind.*/||</h2>
+ngayulu palya||<i>/* I am well.*/</i>||
+nyuntu pikatjara||<i>/* You are sick.*/</i>||
+paluṟu pikatjara||<i>/* He/she, it is sick.*/</i>||
+ngali palya||<i>/* We two are well.*/</i>||
+nyupali pikatjara||<i>/* You two are sick.*/</i>||
+pula puḻka||<i>/* They two are big.*/</i>||
+nganaṉa puḻka||<i>/* We are big.*/</i>||
+nyura tjukutjuku||<i>/* You are small. (more than two)*/</i>||
+tjana tjukutjuku||<i>/* They are small. (more than two)*/</i>||
+
+<h2>/*E. Drills. Substitutions. You'll hear a model followed by a cue. Use the cue to make a new sentence. For instance:*/||</h2>
+<i>/*You'll hear:*/</i>|| ngayulu palya|/|pikatjara||
+<i>/*You say:*/</i>|| ngayulu pikatjara||
+<i>/*Join in as soon as you understand.</i>
+<b>First model.</b>*/||
+ngayulu palya|/|pikatjara||
+ngayulu pikatjara|/|puḻka||
+ngayulu puḻka|/|tjukutjuku||
+ngayulu tjukutjuku|/|nyuntu||
+nyuntu tjukutjuku|/|paluṟu||
+paluṟu tjukutjuku|/|ngali||
+ngali tjukutjuku|/|nyupali||
+nyupali tjukutjuku|/|puḻka||
+nyupali puḻka|/|pikatjara||
+nyupali pikatjara|/|palya||
+nyupali palya|/|pula||
+pula palya|/|nganaṉa||
+nganaṉa palya|/|nyura||
+nyura palya|/|tjana||
+tjana palya||
+
+/*<b>Drill 2.</b><i> You'll now hear a sentence in the "I" form</i>*/|| (ngayulu).||
+<i>/*Change these to the "you" form</i>*/|| (nyuntu);||/*<i> listen for
+the correct response and repeat it.</i>*/||
+
+/*<b>First model.</b>*/||
+ngayulu palya|/|nyuntu palya||
+ngayulu pikatjara|/|nyuntu pikatjara||
+ngayulu puḻka|/|nyuntu puḻka||
+ngayulu tjukutjuku|/|nyuntu tjukutjuku||
+
+/*<b>Second model.</b>*/||
+/*<i>Now change to the "he" form (the</i>*/|| paluṟu||/*<i> form).</i>*/||
+ngayulu puḻka|/|paluṟu puḻka||
+ngayulu pikatjara|/|paluṟu pikatjara||
+ngayulu palya|/|paluṟu palya||
+ngayulu tjukutjuku|/|paluṟu tjukutjuku||
+
+/*<b>Third model.</b>*/||
+/*<i>Now change from the "he" form</i>*//|| (paluṟu)||/*<i> to the
+"dual we" form (the</i>*/|| ngali||/*<i> form).*/||/* Off you go.</i>*/||
+paluṟu puḻka|/|ngali puḻka||
+paluṟu tjukutjuku|/|ngali tjukutjuku||
+paluṟu palya|/|ngali palya||
+paluṟu pikatjara|/|ngali pikatjara||
+
+/*<b>Fourth model.</b><i> Now change from the "we" form (the</i>*/|| ngali||/*<i> form) to the
+dual "you two" form</i>*/|| (nyupali).||/*<i> Off you go.</i>*/||
+ngali puḻka|/|nyupali puḻka||
+ngali palya|/|nyupali palya||
+ngali tjukutjuku|/|nyupali tjukutjuku||
+ngali pikatjara|/|nyupali pikatjara||
+
+/*<b>Fifth model.</b> <i>Now change from the "I" form (the</i>*/|| ngayulu)||/*<i> to the
+"we" form</i>*/|| (nganaṉa).||/*<i> Off you go.</i>*/||
+ngayulu tjukutjuku|/|nganaṉa tjukutjuku||
+ngayulu palya|/|nganaṉa palya||
+ngayulu pikatjara|/|nganaṉa pikatjara||
+ngayulu puḻka|/|nganaṉa puḻka||
+
+<h2>/*F. Translation into the language. Four phase drill as usual.*/||</h2>
+/*<i>I am well.</i>*/|| ngayulu palya||
+/*<i>He is well.</i>*/|| paluṟu palya||
+/*<i>The man is well.</i>*/|| wati palya||
+/*<i>The child is well.</i>*/|| tjitji palya||
+/*<i>The child is sick.</i>*/|| tjitji pikatjara||
+/*<i>It is sick.</i>*/|| paluṟu pikatjara||
+/*<i>You (singular) are sick.</i>*/|| nyuntu pikatjara||
+/*<i>You (plural) are sick.</i>*/|| nyura pikatjara||
+/*<i>You (plural) are big.</i>*/|| nyura puḻka||
+/*<i>I am big.</i>*/|| ngayulu puḻka||
+/*<i>This one is big.</i>*/|| nyangatja puḻka||
+/*<i>We two are big.</i>*/|| ngali puḻka||
+/*<i>We two are small.</i>*/|| ngali tjukutjuku||
+/*<i>They two are small.</i>*/|| pula tjukutjuku||
+/*<i>We are small.</i>*/|| nganaṉa tjukutjuku||
+/*<i>You two are small.</i>*/|| nyupali tjukutjuku||
+/*<i>They (plural) are small.</i>*/|| tjana tjukutjuku||
+<b>/*End of Unit 3*/</b>||
+
+||<page><h1>/*Unit 4*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat*/||</h2>
+nyanganpa||
+palanpa||
+nyaranpa||
+paku||
+pukuḻpa||
+waṟa||
+muṯumuṯu||
+aṉangu||
+papa||
+maḻu||
+
+<h2>/*B. Repeat and fix the English meanings in your mind*/||</h2>
+nyanganpa||<i>/*  these*/</i>||
+palanpa||<i>/* those near, more than two*/</i>||
+nyaranpa||<i>/* those far, more than two*/</i>||
+paku||<i>/* tired*/</i>||
+pukuḻpa||<i>/* happy*/</i>||
+waṟa||<i>/* tall or long*/</i>||
+muṯumuṯu||<i>/*  short*/</i>||
+aṉangu||<i>/* person*/</i>||
+papa||<i>/* dog*/</i>||
+maḻu||<i>/* kangaroo*/</i>||
+
+<h2>/*C. Repeat the following phrases*/||</h2>
+wati nyanganpa||
+minyma nyanganpa||
+tjitji nyanganpa||
+aṉangu nyanganpa||
+papa nyanganpa||
+maḻu nyanganpa||
+tjitji palanpa||
+wati palanpa||
+minyma nyaranpa||
+aṉangu nyaranpa||
+wati paku||
+tjitji pukuḻpa||
+aṉangu waṟa||
+minyma muṯumuṯu||
+minyma paku||
+wati pukuḻpa||
+papa tjukutjuku||
+maḻu puḻka||
+wati nyanga pukuḻpa||
+wati nyanganpa pukuḻpa||
+maḻu pala puḻka||
+maḻu palanpa puḻka||
+minyma nyara pikatjara||
+minyma nyaranpa pikatjara||
+ngayulu paku||
+nyuntu paku||
+paluṟu paku||
+ngayulu pukuḻpa||
+nyuntu pukuḻpa||
+paluṟu pukuḻpa||
+ngali waṟa||
+nyupali waṟa||
+pula waṟa||
+nganaṉa paku||
+nyura paku||
+tjana paku||
+ngayulu muṯumuṯu||
+nyuntu muṯumuṯu||
+paluṟu muṯumuṯu||
+nyangatja paku||
+nyanganpa paku||
+palatja waṟa||
+palanpa waṟa||
+nyaratja pukuḻpa||
+nyaranpa pukuḻpa||
+
+<h2>/*D. English meanings*/||</h2>
+wati nyanganpa||<i>/*  these men*/</i>||
+minyma nyanganpa||<i>/*  these women*/</i>||
+tjitji nyanganpa||<i>/*  these children*/</i>||
+aṉangu nyanganpa||<i>/*  these persons (people)*/</i>||
+papa nyanganpa||<i>/*  these dogs*/</i>||
+maḻu nyanganpa||<i>/*  these kangaroos*/</i>||
+tjitji palanpa||<i>/*  those near children*/</i>||
+wati palanpa||<i>/*  those near men*/</i>||
+minyma nyaranpa||<i>/*  those distant women*/</i>||
+aṉangu nyaranpa||<i>/*  those distant people*/</i>||
+wati paku||<i>/*  the man is tired*/</i>||
+tjitji pukuḻpa||<i>/*  the child is happy*/</i>||
+aṉangu waṟa||<i>/*  the person is tall*/</i>||
+minyma muṯumuṯu||<i>/*  the woman is short*/</i>||
+minyma paku||<i>/*  the woman is tired*/</i>||
+wati pukuḻpa||<i>/*  the man is happy*/</i>||
+papa tjukutjuku||<i>/*  the dog is small*/</i>||
+maḻu puḻka||<i>/*  the kangaroo is big*/</i>||
+wati nyanga pukuḻpa||<i>/*  this man is happy*/</i>||
+maḻu pala puḻka||<i>/*  that near kangaroo is big*/</i>||
+maḻu palanpa puḻka||<i>/*  those near kangaroos are big*/</i>||
+minyma nyara pikatjara||<i>/*  that far woman is sick*/</i>||
+minyma nyaranpa pikatjara||<i>/*  those far women are sick*/</i>||
+ngayulu paku||<i>/*  I am tired*/</i>||
+nyuntu paku||<i>/*  you are tired*/</i>||
+paluṟu paku||<i>/*  he/she/it is tired*/</i>||
+ngayulu pukuḻpa||<i>/*  I am happy*/</i>||
+nyuntu pukuḻpa||<i>/*  you are happy ·*/</i>||
+paluṟu pukuḻpa||<i>/*  he/she/it is happy*/</i>||
+ngali waṟa||<i>/*  we two are tall*/</i>||
+nyupali waṟa||<i>/*  you two are tall*/</i>||
+pula waṟa||<i>/*  they two are tall*/</i>||
+nganaṉa paku||<i>/*  we are tired*/</i>||
+nyura paku||<i>/*  you are tired*/</i>||
+tjana paku||<i>/*  they are tired*/</i>||
+ngayulu muṯumuṯu||<i>/*  I am short*/</i>||
+nyuntu muṯumuṯu||<i>/*  you are short*/</i>||
+paluṟu muṯumuṯu||<i>/*  he/she/it is short*/</i>||
+nyangatja paku||<i>/*  this one is tired*/</i>||
+nyanganpa paku||<i>/*  these ones are tired*/</i>||
+palatja waṟa||<i>/*  that near one is tall*/</i>||
+palanpa waṟa||<i>/*  those near ones are tall*/</i>||
+nyaratja pukuḻpa||<i>/*  that far one is happy*/</i>||
+nyaranpa pukuḻpa||<i>/*  those far ones are happy*/</i>||
+
+<h2>/*E. Substitutions: Four phase drill*/||</h2>
+<b>/*First model.*/</b>||
+wati puḻka|/|paku||
+wati paku|/|pukuḻpa||
+wati pukuḻpa|/|waṟa||
+wati waṟa|/|muṯumuṯu||
+wati muṯumuṯu|/|minyma||
+minyma muṯumuṯu|/|tjitji||
+tjitji muṯumuṯu|/|aṉangu||
+aṉangu muṯumuṯu|/|puḻka||
+aṉangu puḻka|/|papa||
+papa puḻka|/|maḻu||
+maḻu puḻka|/|paku||
+maḻu paku|/|papa||
+papa paku||
+
+<b>/*Second model.*/</b>||
+<i>/*Conversion from singular to plural, demonstrative,
+You are asked to change from "this" to "these".
+Like this:*/</i>||
+<i>/*You hear:*/</i>|| nyangatja puḻka|/|nyanganpa|| 
+<i>/*You'll say:*/</i>|| nyanganpa puḻka||
+<i>/*Listen for the correct response and repeat it.
+Off you go.*/</i>||
+
+nyangatja puḻka|/|nyanganpa||
+nyanganpa puḻka||
+palatja puḻka|/|palanpa||
+palanpa puḻka||
+nyaratja puḻka|/|nyaranpa||
+nyaranpa puḻka||
+wati nyanga puḻka|/|wati nyanganpa||
+wati nyanganpa puḻka||
+tjitji pala tjukutjuku|/|tjitji palanpa||
+
+tjitji palanpa tjukutjuku||
+maḻu nyara puḻka|/|maḻu nyaranpa||
+maḻu nyaranpa puḻka||
+minyma nyanga pikatjara|/|minyma nyanganpa||
+minyma nyanganpa pikatjara||
+aṉangu pala pukuḻpa|/|aṉangu palanpa||
+aṉangu palanpa pukuḻpa||
+papa nyara paku|/|papa nyaranpa||
+papa nyaranpa paku||
+
+<b>/*Third model.*/</b>||
+<i>/*This is a drill in which you will be given a
+cue that may be either "this", "this man", "I",
+"those men" , "the man", and so on; or it may be
+a change from "is tired" to "is tall" and so on.
+Have fun!*/</i>||
+wati puḻka|/|ngayulu||
+ngayulu puḻka|/|pikatjara||
+ngayulu pikatjara|/|minyma pala||
+minyma pala pikatjara|/|minyma palanpa||
+minyma palanpa pikatjara|/|paku||
+minyma palanpa paku|/|maḻu||
+maḻu paku|/|papa||
+papa paku|/|tjukutjuku||
+papa tjukutjuku|/|aṉangu||
+aṉangu tjukutjuku|/|muṯumuṯu||
+aṉangu muṯumuṯu|/|aṉangu nyara||
+aṉangu nyara muṯumuṯu|/|nyuntu||
+nyuntu muṯumuṯu|/|waṟa||
+nyuntu waṟa|/|nganaṉa||
+nganaṉa waṟa|/|pukuḻpa||
+nganaṉa pukuḻpa||
+
+<h2>/*F. Translate into the language*/||</h2>
+<i>/*The man is sick.*/</i>||  wati pikatjara||
+<i>/*The child is happy.*/</i>||  tjitji pukuḻpa||
+<i>/*The person is tall.*/</i>||  aṉangu waṟa||
+<i>/*The woman is short.*/</i>||  minyma muṯumuṯu||
+<i>/*The dog is small.*/</i>||  papa tjukutjuku||
+<i>/*The kangaroo is big.*/</i>||  maḻu puḻka||
+<i>/*This person is tired.*/</i>||  aṉangu nyanga paku||
+<i>/*These women are happy.*/</i>||  minyma nyanganpa pukuḻpa||
+<i>/*I am tired.*/</i>||  ngayulu paku||
+<i>/*We are happy.*/</i>||  nganaṉa pukuḻpa||
+<i>/*That near dog is big.*/</i>||  papa pala puḻka||
+<i>/*That far kangaroo is tired.*/</i>||  maḻu nyara paku||
+<i>/*Those far children are happy.*/</i>||  tjitji nyaranpa tjukutjuku||
+<i>/*You two are happy.*/</i>||  nyupali pukuḻpa||
+<i>/*We two are well.*/</i>||  ngali palya||
+/*<b>End of Unit 4</b>*/||
+
+||<page><h1>/*Unit 5*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat:*/||</h2>
+uwa||
+wiya||
+
+<h2>/*B. With English meanings:*/||</h2>
+uwa|| <i>/* yes*/</i>||
+wiya|| <i>/* no*/</i>||
+
+<h2>/*C. Repeat the following phrases and sentences:*/||</h2>
+nyuntu palya?|| uwa, ngayulu palya.||
+nyuntu paku?|| uwa, ngayulu paku.||
+nyuntu pukuḻpa?|| uwa, ngayulu pukuḻpa.||
+nyupali palya?|| uwa, ngali palya.||
+nyupali paku?|| uwa, ngali paku.||
+nyupali pukuḻpa?|| uwa, ngali pukuḻpa.||
+nyura palya?|| uwa, nganaṉa palya.||
+nyura paku?|| uwa, nganaṉa paku.||
+nyura pukuḻpa?|| uwa, nganaṉa pukuḻpa.||
+tjitji nyanga palya?|| uwa, paluṟu palya.||
+tjitji nyanga paku?|| uwa, paluṟu paku.||
+tjitji nyanga pukuḻpa?|| uwa, paluṟu pukuḻpa.||
+nyuntu pikatjara?|| wiya, ngayulu palya.||
+nyuntu pikatjara?|| wiya, ngayulu pikatjara|wiya.||
+nyuntu paku?|| wiya, ngayulu paku|wiya.||
+nyuntu pukuḻpa?|| wiya, ngayulu pukuḻpa|wiya.||
+nyupali pikatjara?|| wiya, ngali palya.||
+nyupali pikatjara?|| wiya, ngali pikatjara|wiya.||
+nyupali paku?|| wiya, ngali paku|wiya.||
+nyupali pukuḻpa?|| wiya, ngali pukuḻpa|wiya.||
+tjitji pikatjara?|| wiya, tjitji palya.||
+tjitji pikatjara?|| wiya, tjitji pikatjara|wiya.||
+wati paku?|| wiya, wati paku|wiya.||
+minyma pukuḻpa?|| wiya, minyma pukuḻpa|wiya.||
+wati nyanga pikatjara?|| wiya, paluṟu palya.||
+wati nyanga pikatjara?|| wiya, paluṟu pikatjara|wiya.||
+tjitji pala paku?|| wiya, paluṟu paku|wiya.||
+minyma nyara pukuḻpa?|| wiya, paluṟu pukuḻpa|wiya.||
+
+<h2>/*D. Repeat and fix the English meanings in your mind*/||</h2>
+nyuntu palya?|| uwa, ngayulu palya.|| <i>/*Are you well? Yes. I am well.*/</i>||
+nyuntu paku?|| uwa, ngayulu paku.|| <i>/*Are you tired? Yes, I am tired.*/</i>||
+nyuntu pukuḻpa?|| uwa, ngayulu pukuḻpa.|| <i>/*Are you happy? Yes, I am happy.*/</i>||
+nyupali palya?|| uwa, ngali palya.|| <i>/*Are you two well? Yes, we are well.*/</i>||
+nyupali paku?|| uwa, ngali paku.|| <i>/*Are you two tired? Yes, we are tired.*/</i>||
+nyupali pukuḻpa?|| uwa, ngali pukuḻpa.|| <i>/*Are you two happy? Yes we are happy.*/</i>||
+nyura palya?|| uwa, nganaṉa palya.|| <i>/*Are you well? Yes, we are well.*/</i>||
+nyura paku?|| uwa, nganaṉa paku.|| <i>/*Are you tired? Yes, we are tired.*/</i>||
+nyura pukuḻpa?|| uwa, nganaṉa pukuḻpa.|| <i>/*Are you happy? Yes, we are happy.*/</i>||
+tjitji nyanga palya?|| uwa, paluṟu palya.|| <i>/*Is this child well? Yes, it is well.*/</i>||
+tjitji nyanga paku?|| uwa, paluṟu paku.|| <i>/*Is this child tired? Yes, it is tired.*/</i>||
+tjitji nyanga pukuḻpa?|| uwa, paluṟu pukuḻpa.|| <i>/*Is this child happy? Yes, it is happy.*/</i>||
+nyuntu pikatjara?|| wiya, ngayulu palya.|| <i>/*Are you sick? No, I am well.*/</i>||
+nyuntu pikatjara?|| wiya, ngayulu pikatjara|wiya.|| <i>/*Are you sick? No, I am not sick.*/</i>||
+nyuntu paku?|| wiya, ngayulu paku|wiya.|| <i>/*Are you tired? No, I am not tired.*/</i>||
+nyuntu pukuḻpa?|| wiya, ngayulu pukuḻpa|wiya.|| <i>/*Are you happy? No, I am not happy.*/</i>||
+nyupali pikatjara?|| wiya, ngali palya.|| <i>/*Are you two sick? No, we are well.*/</i>||
+nyupali pikatjara?|| wiya, ngali pikatjara|wiya.|| <i>/*Are you two sick? No, we are not sick.*/</i>||
+nyupali paku?|| wiya, ngali paku|wiya.|| <i>/*Are you two tired? No, we are not tired.*/</i>||
+nyupali pukuḻpa?|| wiya, ngali pukuḻpa|wiya.|| <i>/*Are you two happy? No, we are not happy.*/</i>||
+tjitji pikatjara?|| wiya, tjitji palya.|| <i>/*Is the child sick? No, the child is well.*/</i>||
+tjitji pikatjara?|| wiya, tjitji pikatjara|wiya.|| <i>/*Is the child sick? No, the child is not sick.*/</i>||
+wati paku?|| wiya, wati paku|wiya.|| <i>/*Is the man tired? No, the man is not tired.*/</i>||
+minyma pukuḻpa?|| wiya, minyma pukuḻpa|wiya.|| <i>/*Is the woman happy? No, the woman is not happy.*/</i>||
+wati nyanga pikatjara?|| wiya, paluṟu palya.|| <i>/*Is this man sick? No, he is well.*/</i>||
+wati nyanga pikatjara?|| wiya, paluṟu pikatjara|wiya.|| <i>/*Is this man sick? No, he is not sick.*/</i>||
+tjitji pala paku?|| wiya, paluṟu paku|wiya.|| <i>/*Is that (near) child tired? No, it is not tired.*/</i>||
+minyma nyara pukuḻpa?|| wiya, paluṟu pukuḻpa|wiya.|| <i>/*Is that (far) woman happy? No, she is not happy.*/</i>|| 
+
+<h2>/*E. Drills You will hear a question in the language. Answer in the affirmative, like this:*/||</h2>
+<i>/*You hear:*/</i>|| nyuntu palya?||
+<i>/*You answer:*/</i>|| uwa, ngayulu palya||
+<i>/*Four phase drill as usual.*/</i>||
+nyuntu palya?|| uwa, ngayulu palya.||
+nyuntu pikatjara?|| uwa, ngayulu pikatjara.||
+nyuntu pukuḻpa?|| uwa, ngayulu pukuḻpa.||
+nyuntu paku?|| uwa, ngayulu paku.||
+nyupali pikatjara?|| uwa, ngali pikatjara.||
+nyupali pukuḻpa?|| uwa, ngali pukuḻpa.||
+nyura palya?|| uwa, nganaṉa palya.||
+nyura pikatjara?|| uwa, nganaṉa pikatjara.||
+tjitji nyanga pikatjara?|| uwa, paluṟu pikatjara.||
+wati nyanga paku?|| uwa, paluṟu paku.||
+
+<i>/*Now answer similar questions in the negative, using wiya.*/</i>||
+nyuntu pikatjara?|| wiya, ngayulu pikatjara|wiya|| <i>/*or*/</i> ||wiya, ngayulu palya.||
+nyupali pikatjara?|| wiya, ngali pikatjara|wiya|| <i>/*or*/</i>|| wiya, ngali palya.||
+nyupali paku?|| wiya, ngali paku|wiya.||
+nyura paku?|| wiya, nganaṉa paku|wiya.||
+tjitji nyara paku?|| wiya, paluṟu paku|wiya.||
+minyma nyara paku?|| wiya, paluṟu paku|wiya.||
+maḻu nyara puḻka?|| wiya, paluṟu tjukutjuku.||
+tjitji nyara waṟa?|| wiya, paluṟu muṯumuṯu.||
+
+<h2>/*F. Translate into the Language. Four phase drill.*/||</h2>
+<i>/*Are you (singular) well?*/</i>|| nyuntu palya?||
+<i>/*Yes, I am well.*/</i>|| uwa, ngayulu palya.||
+<i>/*Are you two tired?*/</i>|| nyupali paku?||
+<i>/*No, we are not tired.*/</i>|| wiya, ngali paku|wiya.||
+<i>/*Is the child tall?*/</i>|| tjitji waṟa?||
+<i>/*No, the child is short.*/</i>|| wiya, tjitji muṯumuṯu.||
+<i>/*Are they (plural) sick?*/</i>|| tjana pikatjara?||
+<i>/*Yes, they are sick.*/</i>|| uwa, tjana pikatjara.||
+<i>/*Is the kangaroo sick?*/</i>|| maḻu pikatjara?||
+<i>/*No, the kangaroo is well.*/</i>|| wiya, maḻu palya.||
+<i>/*Are you all tired?*/</i>|| nyura paku?||
+<i>/*Yes, we are all tired.*/</i>|| uwa, nganaṉa paku.||
+<i>/*End of Unit 5*/</i>||
+
+||<page><h1>/*Unit 6*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat:*/||</h2>
+palya|ṉa#ngayulu#||
+palya|n#nyuntu#||
+palya||
+palya|li#ngali#||
+palya|la#nganaṉa#||
+palya|ya#tjana#||
+paku|ṉa#ngayulu#||
+paku|n#nyuntu#||
+paku||
+paku|li#ngali#||
+paku|la#nganaṉa#||
+paku|ya#tjana#||
+
+<h2>/*B. Now repeat these again and learn their English meanings:*/||</h2>
+palya|ṉa#ngayulu#|| <i>/*I am well*/</i>||
+palya|n#nyuntu#|| <i>/*you (singular) are well*/</i>||
+palya|| <i>/*he, she, it is well*/</i>||
+palya|li#ngali#|| <i>/*we (two) are well*/</i>||
+palya|la#nganaṉa#|| <i>/*we (plural) are well*/</i>||
+palya|ya#tjana#|| <i>/*they (plural) are well*/</i>||
+paku|ṉa#ngayulu#|| <i>/*I am tired*/</i>||
+paku|n#nyuntu#|| <i>/*you are tired*/</i>||
+paku|| <i>/*he, she, it is tired*/</i>||
+paku|li#ngali#|| <i>/*we two are tired*/</i>||
+paku|la#nganaṉa#|| <i>/*we all are tired*/</i>||
+paku|ya#tjana#|| <i>/*they all are tired*/</i>||
+
+<h2>/*C. What you have just heard are the so-called short forms of sentences such as:*/||</h2>
+ngayulu palya|| <i>/*meaning I am well*/</i>||
+ngayulu paku|| <i>/*meaning I am tired and so on*/</i>||
+<i>/*You will have noticed there are no forms of sentences such as:*/</i>||
+nyupali palya|| <i>/*you two are well*/</i>||
+pula palya|| <i>/*they two are well*/</i>||
+nyura palya|| <i>/*you (plural) are well*/</i>||
+<i>/*In other words, these are suffixed forms of the pronouns:*/</i>||
+ngayulu|| <i>/*I*/</i>||
+nyuntu|| <i>/*you*/</i>||
+paluṟu|| <i>/*he, she, it*/</i>||
+ngali|| <i>/*we two*/</i>||
+nganaṉa|| <i>/*we all*/</i>||
+tjana|| <i>/*they all*/</i>||
+<i>/*But there are no such forms for:*/</i>||
+nyupali|| <i>/*you two*/</i>||
+pula|| <i>/*they two*/</i>||
+nyura|| <i>/*you all*/</i>||
+
+<i>/*You will have noticed that the ending corresponding
+to*/</i>|| paluṟu|| <i>/*is a zero*/</i>|| paluṟu palya|| <i>/*simply
+corresponds to short form*/</i>|| palya.||
+<i>/*Now listen to the following sentences and repeat them:*/</i>||
+palya|ṉa#ngayulu#||
+paku|ṉa#ngayulu#||
+pukuḻpa|ṉa#ngayulu#||
+pikatjara|ṉa#ngayulu#||
+waṟa|ṉa#ngayulu#||
+muṯumuṯu|ṉa#ngayulu#||
+tjukutjuku|ṉa#ngayulu#||
+puḻka|ṉa#ngayulu#||
+palya|n#nyuntu#||
+pikatjara|n#nyuntu#||
+paku||
+pukuḻpa||
+pikatjara|li#ngali#||
+paku|li#ngali#||
+pikatjara|la#nganaṉa#||
+paku|la#nganaṉa#||
+pikatjara|ya#tjana#||
+pukuḻpa|ya#tjana#||
+
+<h2>/*D. Repeat the sentences you've just heard, and fix the English meanings in your mind.*/||</h2>
+palya|ṉa#ngayulu#|| <i>/*I am well*/</i>||
+paku|ṉa#ngayulu#|| <i>/*I am tired*/</i>||
+pukuḻpa|ṉa#ngayulu#|| <i>/*I am happy*/</i>||
+pikatjara|ṉa#ngayulu#|| <i>/*I am sick*/</i>||
+waṟa|ṉa#ngayulu#|| <i>/*I am tall*/</i>||
+muṯumuṯu|ṉa#ngayulu#|| <i>/*I am short*/</i>||
+tjukutjuku|ṉa#ngayulu#|| <i>/*I am small*/</i>||
+puḻka|ṉa#ngayulu#|| <i>/*I am big*/</i>||
+palya|n#nyuntu#|| <i>/*you are well*/</i>||
+pikatjara|n#nyuntu#|| <i>/*you are sick*/</i>||
+paku|| <i>/*he is tired*/</i>||
+pukuḻpa|| <i>/*he is happy*/</i>||
+pikatjara|li#ngali# ||<i>/*we two are sick*/</i>||
+paku|li#ngali#|| <i>/*we two are tired*/</i>||
+pikatjara|la#nganaṉa#|| <i>/*we all are sick*/</i>||
+paku|la#nganaṉa#|| <i>/*we all are tired*/</i>||
+pikatjara|ya#tjana#|| <i>/*they all are sick*/</i>||
+pukuḻpa|ya#tjana#|| <i>/*they all are happy*/</i>||
+
+<h2>/*E. Drills*/||</h2>
+<i>/*Model 1. Change to the appropriate short forms.*/</i>||
+<i>/*You'll hear:*/</i>|| ngayulu palya||
+<i>/*You say:*/</i>|| palya|ṉa#ngayulu#||
+<i>/*Join in when you understand.*/</i>||
+ngayulu palya|| palya|ṉa#ngayulu#||
+ngayulu pukuḻpa||  pukuḻpa|ṉa#ngayulu#||
+ngayulu paku|| paku|ṉa#ngayulu#||
+nyuntu pikatjara|| pikatjara|n#nyuntu#||
+nyuntu pukuḻpa|| pukuḻpa|n#nyuntu#||
+paluṟu paku|| paku||
+paluṟu muṯumuṯu|| muṯumuṯu||
+paluṟu waṟa|| waṟa||
+ngali pikatjara|| pikatjara|li#ngali#||
+ngali tjukutjuku|| tjukutjuku|li#ngali#||
+nganaṉa paku|| paku|la#nganaṉa#||
+nganaṉa palya|| palya|la#nganaṉa#||
+tjana paku|| paku|ya#tjana#||
+tjana pikatjara|| pikatjara|ya#tjana#||
+<i>/*Model 2. We shall now ask you a question in the long form.
+Reply in the affirmative, using the short form. Like this:*/</i>||
+<i>/*You hear:*/</i>|| nyuntu palya?||
+<i>/*You will say:*/</i>|| uwa, palya|ṉa#ngayulu#.||
+<i>/*Off you go.*/</i>||
+nyuntu palya?|| uwa, palya|ṉa#ngayulu#||
+nyuntu paku?|| uwa, paku|ṉa#ngayulu#||
+nyuntu pikatjara?|| uwa, pikatjara|ṉa#ngayulu#||
+nyupali pikatjara?||  uwa, pikatjara|li#ngali#||
+nyupali paku?|| uwa, paku|li#ngali#||
+nyupali pukuḻpa?|| uwa, pukuḻpa|li#ngali#||
+nyura pukuḻpa?||  uwa, pukuḻpa|la#nganaṉa#||
+nyura paku?|| uwa, paku|la#nganaṉa#||
+nyura pikatjara?|| uwa, pikatjara|la#nganaṉa#||
+paluṟu pikatjara?|| uwa, pikatjara||
+paluṟu paku?|| uwa, paku||
+paluṟu muṯumuṯu?|| uwa, muṯumuṯu||
+paluṟu pukuḻpa?|| uwa, pukuḻpa||
+tjana pukuḻpa?||  uwa, pukuḻpa|ya#tjana#||
+tjana paku?|| uwa, paku|ya#tjana#||
+tjana tjukutjuku|| uwa, tjukutjuku|ya#tjana#||
+
+<h2>/*F. Translate into Pitjantjatjara using short forms where possible.
+Four phase drill, as usual.*/||</h1>
+<i>/*I am well*/</i>|| palya|ṉa#ngayulu#||
+<i>/*you are sick*/</i>|| pikatjara|n#nyuntu#||
+<i>/*you two are tired*/</i>|| nyupali paku||
+<i>/*you all are big*/</i>|| nyura puḻka||
+<i>/*he is small*/</i>|| tjukutjuku||
+<i>/*they are short*/</i>|| muṯumuṯu|ya#tjana#||
+<i>/*we two are small*/</i>|| tjukutjuku|li#ngali#||
+<i>/*they are tired*/</i>|| paku|ya#tjana#||
+<i>/*we all are happy*/</i>|| pukuḻpa|la#nganaṉa#||
+<i>/*I am big*/</i>|| puḻka|ṉa#ngayulu#||
+<i>/*she is sick*/</i>|| pikatjara||
+<i>/*I am happy*/</i>|| pukuḻpa|ṉa#ngayulu#||
+
+<i>/*End of Unit 6*/</i>|| 
+
+||<page><h1>/*Unit 7*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat:*/||</h2>
+nguḻu||
+rapa||
+ngananya||
+nyaa||
+
+<h2>/*B. Vocabulary and English meanings. Learn them side by side.*/||</h2>
+nguḻu||  <i>/*afraid, frightened*/</i>||
+rapa||  <i>/*unafraid, confident*/</i>||
+ngananya||  <i>/*who?*/</i>||
+nyaa||  <i>/*what?*/</i>||
+
+<h2>/*C. Listen to these sentences and repeat them.*/||</h2>
+ngananya paku?||   ngayulu|ṉa#ngayulu# paku||
+ngananya pikatjara?||  ngayulu|ṉa#ngayulu# pikatjara||
+ngananya nguḻu?||  ngayulu|ṉa#ngayulu# nguḻu||
+ngananya rapa?||  ngayulu|ṉa#ngayulu# rapa||
+ngananya paku?||  tjitji nyanga paku||
+ngananya pikatjara?||  tjitji nyara pikatjara||
+ngananya nguḻu?||  ngali|li#ngali# nguḻu||
+ngananya paku?||  nganaṉa|la#nganaṉa# paku||
+nyuntu|n#nyuntu# paku?||  uwa, paku|ṉa#ngayulu#||
+nyuntu|n#nyuntu# pikatjara?||  uwa, pikatjara|ṉa#ngayulu#||
+nyuntu|n#nyuntu# nguḻu?||  uwa, nguḻu|ṉa#ngayulu#||
+nyaa puḻka?||  maḻu puḻka||
+nyaa tjukutjuku?||  papa tjukutjuku||
+nyaa nyangatja?||  nyangatja maḻu||
+nyaa palatja?||  palatja papa||
+
+<h2>/*D. Listen once more to these dialogue sentences.*/||</h2>
+<i>/*Repeat them and fix their English meanings in your mind.*/</i>||
+
+ngananya paku?||   <i>/*Who is tired?*/</i>||
+ngayulu|ṉa#ngayulu# paku||   <i>/*I am tired.*/</i>||
+ngananya pikatjara?||   <i>/*Who is sick?*/</i>||
+ngayulu|ṉa#ngayulu# pikatjara||   <i>/*I am sick.*/</i> ||
+ngananya nguḻu?||   <i>/*Who is afraid?*/</i>||
+ngayulu|ṉa#ngayulu# nguḻu||  <i>/*I am afraid.*/</i>||
+ngananya rapa?||   <i>/*Who is unafraid?*/</i>||
+ngayulu|ṉa#ngayulu# rapa||   <i>/*I am unafraid.*/</i>||
+ngananya paku?||   <i>/*Who is tired?*/</i>||
+tjitji nyanga paku||   <i>/*This child is tired.*/</i>||
+ngananya pikatjara?||   <i>/*Who is sick?*/</i>||
+tjitji nyara pikatjara||   <i>/*That far child is sick.*/</i>||
+ngananya nguḻu?||   <i>/*Who is afraid?*/</i>||
+ngali|li#ngali# nguḻu||  <i>/*We two are afraid.*/</i>||
+ngananya paku?||  <i>/*Who is tired?*/</i>||
+nganaṉa|la#nganaṉa# paku||   <i>/*We all are tired.*/</i>||
+nyuntu|n#nyuntu# paku?||   <i>/*Are you tired?*/</i>||
+uwa, paku|ṉa#ngayulu#||   <i>/*Yes, I am tired.*/</i>||
+nyuntu|n#nyuntu# pikatjara?||   <i>/*Are you sick?*/</i>||
+uwa, pikatjara|ṉa#ngayulu#||   <i>/*Yes, I am sick.*/</i>||
+nyuntu|n#nyuntu# nguḻu?||   <i>/*Are you afraid?*/</i>||
+uwa, nguḻu|ṉa#ngayulu#||   <i>/*Yes, I am afraid.*/</i>||
+nyaa puḻka?||   <i>/*What is big?*/</i>||
+maḻu puḻka||   <i>/*The kangaroo is big.*/</i>||
+nyaa tjukutjuku?||  <i>/*What is small?*/</i>||
+papa tjukutjuku||   <i>/*The dog is small.*/</i>||
+nyaa nyangatja?||  <i>/*What is this?*/</i>||
+nyangatja maḻu||   <i>/*This is a kangaroo.*/</i>||
+nyaa palatja?||  <i>/*What is that near?*/</i>||
+palatja papa||   <i>/*That near is a dog.*/</i>||
+
+<h2>/*E. Drills.*/||</h2>
+
+<i>/*Model 1. Substitution. Use the cue to make a new sentence.*/</i>||
+<i>/*Four phase drill. Off you go.*/</i>||
+
+wati puḻka||  nguḻu||
+wati nguḻu||  paku||
+wati paku||  rapa||
+wati rapa||  tjitji||
+tjitji rapa||  minyma||
+minyma rapa||  pikatjara||
+minyma pikatjara||  nguḻu||
+minyma nguḻu||  maḻu||
+maḻu nguḻu||  ngayulu||
+ngayulu nguḻu|| rapa||
+ngayulu rapa||  nyuntu||
+nyuntu rapa||  paluṟu||
+paluṟu rapa||  paku||
+paluṟu paku||  ngali||
+ngali paku||  tjana||
+tjana paku||  puḻka||
+tjana puḻka||  nganaṉa||
+nganaṉa puḻka||
+
+<i>/*Model 2.*/</i>||
+
+<i>/*You'll hear a sentence in the pronoun form:*/</i>||
+<i>/*restate it using the pronoun together with the personal ending.*/</i>||
+<i>/*Like this:*/</i>||
+
+<i>/*You hear:*/</i>|| ngayulu palya||
+<i>/*You say:*/</i>|| ngayulu|ṉa#ngayulu# palya||
+
+<i>/*another example:*/</i>||
+<i>/*You hear:*/</i>|| nyuntu paku||
+<i>/*You say:*/</i>|| nyuntu|n#nyuntu# paku||
+<i>/*Listen for the correct response and repeat it. Off you go.*/</i>||
+
+ngayulu palya||  ngayulu|ṉa#ngayulu# palya||
+nyuntu paku||  nyuntu|n#nyuntu# paku||
+paluṟu paku||  paluṟu paku||
+ngali pikatjara||  ngali|li#ngali# pikatjara||
+nganaṉa tjukutjuku||  nganaṉa|la#nganaṉa# tjukutjuku||
+tjana puḻka||  tjana|ya#tjana# puḻka||
+ngayulu pukuḻpa||  ngayulu|ṉa#ngayulu# pukuḻpa||
+paluṟu muṯumuṯu||  paluṟu muṯumuṯu||
+nganaṉa waṟa||  nganaṉa|la#nganaṉa# waṟa||
+nyuntu rapa||  nyuntu|n#nyuntu# rapa||
+ngali nguḻu||  ngali|li#ngali# nguḻu||
+nyuntu pikatjara||  nyuntu|n#nyuntu# pikatjara||
+
+<i>/*You have now learned three ways of saying "I am tired"
+and such sentences.*/</i>||
+
+<i>/*First single pronoun form:*/</i>||  ngayulu paku||
+<i>/*Second short form:*/</i>||  paku|ṉa#ngayulu#||
+<i>/*Third empatic form:*/</i>||  ngayulu|ṉa#ngayulu# paku||
+
+<h2>/*F. Translate into the language. Four phase drill as usual.*/||</h2>
+
+/*</i>The child is afraid.*/</i>||  tjitji nguḻu||
+/*</i>The kangaroo is big.*/</i>||  maḻu puḻka||
+/*</i>The man is unafraid.*/</i>||  wati rapa||
+/*</i>The woman is tall.*/</i>||   minyma waṟa||
+/*</i>Who is sick?*/</i>||   ngananya pikatjara||
+/*</i>I am sick. (use single pronoun form)*/</i>||  ngayulu pikatjara||
+/*</i>I am sick. (use short form)*/</i>||  pikatjara|ṉa#ngayulu#||
+/*</i>I am sick. (emphatic form)*/</i>||  ngayulu|ṉa#ngayulu# pikatjara||
+/*</i>Who is happy?*/</i>||  ngananya pukuḻpa||
+/*</i>This child is happy.*/</i>||  tjitji nyanga pukuḻpa||
+/*</i>We all are tired. (short form)*/</i>||  paku|la#nganaṉa#||
+/*</i>This kangaroo is big.*/</i>||  maḻu nyanga puḻka||
+/*</i>They two are happy.*/</i>||  pula pukuḻpa||
+/*</i>They all are happy.  (emphatic form)*/</i>||  tjana|ya#tjana# palya||
+/*</i>They all are well. (short form)*/</i>||   palya|ya#tjana#||
+/*</i>That far child is short.*/</i>||  tjitji nyara muṯumuṯu||
+/*</i>These dogs are afraid.*/</i>||  papa nyanganpa nguḻu||
+/*</i>This person is sick.*/</i>||  aṉangu nyanga pikatjara||
+/*</i>These persons are well.*/</i>||  aṉangu nyanganpa palya||
+/*</i>I am tired. (use shortest possible form)*/</i>||  paku|ṉa#ngayulu#||
+
+/*</i>End of Unit 7*/</i>||
+
+||<page><h1>/*Unit 8*/||</h1>
+<h2>/*A. Vocabulary items. Listen and repeat the following words:*/||</h2> 
+wangkanyi#wangkanyi#|| 
+nyinanyi#nyinanyi#|| 
+ngaṟanyi#ngaṟanyi#|| 
+ngarinyi#ngarinyi#|| 
+pitjanyi#pitjanyi#|| 
+wangkangu#wangkanyi#|| 
+nyinangu#nyinanyi#|| 
+ngaṟangu#ngaṟanyi#|| 
+ngaringu#ngarinyi#|| 
+pitjangu#pitjanyi#|| 
+Ingkatjinya#Ingkatji#||
+Tinimayinya#Tinimayi#||
+Wintjinnga#Wintjin#||
+Waṯulyanya#Waṯulya#||
+
+<h2>/*B. Listen to these words again, this time with their English meanings:*/||</h2>  
+wangkanyi#wangkanyi#||  <i>/*is speaking, am speaking, are speaking.*/</i>||  
+nyinanyi#nyinanyi#||  <i>/*is sitting, am sitting, are sitting.*/</i>||  
+ngaṟanyi#ngaṟanyi#||  <i>/*is standing, am standing, are standing.*/</i>||  
+ngarinyi#ngarinyi#||  <i>/*is lying, am lying, are lying.*/</i>||  
+pitjanyi#pitjanyi#||  <i>/*is coming, am coming, are coming.*/</i>||  
+wangkangu#wangkanyi#||  <i>/*spoke*/</i>||  
+nyinangu#nyinanyi#||  <i>/*sat*/</i>||  
+ngaṟangu#ngaṟanyi#||  <i>/*stood*/</i>||  
+ngaringu#ngarinyi#||  <i>/*lay*/</i>||  
+pitjangu#pitjanyi#||  <i>/*came*/</i>||  
+Ingkatjinya#Ingkatji#||  <i>/*Inkatji (man's name)*/</i>||  
+Tinimayinya#Tinimayi#||  <i>/*Tinimayi(woman's name)*/</i>||  
+Wintjinnga#Wintjin#||  <i>/*Wintjin (man's name)*/</i>||  
+Waṯulyanya#Waṯulya#||  <i>/*Waṯulya (woman's name)*/</i>||
+
+<h2>/*C. Listen and repeat the following sentences:*/||</h2> 
+wati wangkanyi#wangkanyi#||  
+minyma wangkanyi#wangkanyi#||  
+tjitji wangkanyi#wangkanyi#||  
+aṉangu wangkanyi#wangkanyi#||  
+ngayulu wangkanyi#wangkanyi#||  
+ngali wangkanyi#wangkanyi#||  
+nganaṉa wangkanyi#wangkanyi#||  
+maḻu nyinanyi#nyinanyi#||  
+papa nyinanyi#nyinanyi#||  
+tjitji nyinanyi#nyinanyi#||  
+ngayulu nyinanyi#nyinanyi#||  
+paluṟu nyinanyi#nyinanyi#||  
+tjana nyinanyi#nyinanyi#||  
+ngali nyinanyi#nyinanyi#||  
+minyma ngaṟanyi#ngaṟanyi#||  
+wati ngaṟanyi#ngaṟanyi#||  
+Ingkatjinya#Ingkatji# ngaṟanyi#ngaṟanyi#||  
+Wintjinnga#Wintjin# ngaṟanyi#ngaṟanyi#||  
+nyuntu ngaṟanyi#ngaṟanyi#||  
+nyupali ngaṟanyi#ngaṟanyi#||  
+ngayulu ngaṟanyi#ngaṟanyi#||  
+tjitji ngarinyi#ngarinyi#||  
+maḻu ngarinyi#ngarinyi#||  
+papa ngarinyi#ngarinyi#||  
+aṉangu ngarinyi#ngarinyi#||  
+ngali ngarinyi#ngarinyi#||  
+wati pitjanyi#pitjanyi#||  
+Waṯulyanya#Waṯulya# pitjanyi#pitjanyi#||  
+nyuntu pitjanyi#pitjanyi#||  
+ngananya pitjanyi#pitjanyi#?||  
+Tinimayinya#Tinimayi# pitjanyi#pitjanyi#||  
+wati wangkangu#wangkanyi#||  
+ngayulu wangkangu#wangkanyi#||  
+ngananya wangkangu#wangkanyi#?||  
+Ingkatjinya#Ingkatji# wangkangu#wangkanyi#||  
+tjitji pitjangu#pitjanyi#||  
+ngayulu pitjangu#pitjanyi#||  
+nyuntu pitjangu#pitjanyi#||  
+paluṟu ngaṟangu#ngaṟanyi#||  
+tjana ngaṟangu#ngaṟanyi#||
+
+<h2>/*D. Now repeat these sentences again and listen to their English meanings:*/||</h2>  
+wati wangkanyi#wangkanyi#||    <i>/*The man is speaking.*/</i>||  
+minyma wangkanyi#wangkanyi#||  <i>/*The woman is speaking.*/</i>||  
+tjitji wangkanyi#wangkanyi#||    <i>/*The child is speaking.*/</i>||  
+aṉangu wangkanyi#wangkanyi#||  <i>/*The person is speaking.*/</i>||  
+ngayulu wangkanyi#wangkanyi#||  <i>/*I am speaking.*/</i>||  
+ngali wangkanyi#wangkanyi#||    <i>/*We two are speaking.*/</i>||  
+nganaṉa wangkanyi#wangkanyi#||  <i>/*We all are speaking.*/</i>||  
+maḻu nyinanyi#nyinanyi#||    <i>/*The kangaroo is sitting.*/</i>||  
+papa nyinanyi#nyinanyi#||    <i>/*The dog is sitting.*/</i>||  
+tjitji nyinanyi#nyinanyi#||    <i>/*The child is sitting.*/</i>||  
+ngayulu nyinanyi#nyinanyi#||  <i>/*I am sitting.*/</i>||  
+paluṟu nyinanyi#nyinanyi#||    <i>/*he/she/it is sitting.*/</i>||  
+tjana nyinanyi#nyinanyi#||    <i>/*They all are sitting.*/</i>||  
+ngali nyinanyi#nyinanyi#||    <i>/*We two are sitting.*/</i>||  
+minyma ngaṟanyi#ngaṟanyi#||    <i>/*The woman is standing.*/</i>||  
+wati ngaṟanyi#ngaṟanyi#||    <i>/*The man is standing.*/</i>||  
+Ingkatjinya#Ingkatji# ngaṟanyi#ngaṟanyi#||  <i>/*Ingkatji is standing.*/</i>||  
+Wintjinnga#Wintjin# ngaṟanyi#ngaṟanyi#||  <i>/*Wintjin is standing.*/</i>||  
+nyuntu ngaṟanyi#ngaṟanyi#||    <i>/*You are standing.*/</i>||  
+nyupali ngaṟanyi#ngaṟanyi#||  <i>/*You two are standing.*/</i>||  
+ngayulu ngaṟanyi#ngaṟanyi#||  <i>/*I am standing.*/</i>||  
+tjitji ngarinyi#ngarinyi#||    <i>/*The child is lying.*/</i>||  
+maḻu ngarinyi#ngarinyi#||    <i>/*The kangaroo is lying.*/</i>||  
+papa ngarinyi#ngarinyi#||    <i>/*The dog is lying.*/</i>||  
+aṉangu ngarinyi#ngarinyi#||    <i>/*The person is lying.*/</i>||  
+ngali ngarinyi#ngarinyi#||    <i>/*We two are lying.*/</i>||  
+wati pitjanyi#pitjanyi#||    <i>/*The man is coming.*/</i>||  
+Waṯulyanya#Waṯulya# pitjanyi#pitjanyi#||  <i>/*Waṯulya is coming.*/</i>||  
+nyuntu pitjanyi#pitjanyi#||    <i>/*You are coming.*/</i>||  
+ngananya pitjanyi#pitjanyi#?||  <i>/*Who is coming?*/</i>||  
+Tinimayinya#Tinimayi# pitjanyi#pitjanyi#||  <i>/*Tinimayi is coming.*/</i>||  
+wati wangkangu#wangkanyi#||    <i>/*The man spoke.*/</i>||  
+ngayulu wangkangu#wangkanyi#||  <i>/*I spoke.*/</i>||  
+ngananya wangkangu#wangkanyi#?||  <i>/*Who spoke?*/</i>||  
+Ingkatjinya#Ingkatji# wangkangu#wangkanyi#||  <i>/*Ingkatji spoke.*/</i>||  
+tjitji pitjangu#pitjanyi#||    <i>/*The child came.*/</i>||  
+ngayulu pitjangu#pitjanyi#||  <i>/*I came.*/</i>||  
+nyuntu pitjangu#pitjanyi#||    <i>/*You came.*/</i>||  
+paluṟu ngaṟangu#ngaṟanyi#||    <i>/*He/she/it stood.*/</i>||  
+tjana ngaṟangu#ngaṟanyi#||    <i>/*They all stood.*/</i>||
+
+<h2>/*E. Drills.*/||</h2>
+<i>/*Substitutions. You will hear a model followed by a cue.  
+Use the cue to make your new sentence. Four phase drill as usual.*/</i>||  
+<i>/*Model 1.*/</i>||
+wati wangkanyi#wangkanyi#||  tjitji||  
+tjitji wangkanyi#wangkanyi#||  minyma||  
+minyma wangkanyi#wangkanyi#||  ngayulu||  
+ngayulu wangkanyi#wangkanyi#||  nyuntu||  
+nyuntu wangkanyi#wangkanyi#|| Ingkatjinya#Ingkatji#||  
+Ingkatjinya#Ingkatji# wangkanyi#wangkanyi#|| paluṟu||  
+paluṟu wangkanyi#wangkanyi#||  
+<i>/*Model 2.*/</i>||
+wati nyinanyi#nyinanyi#||  paluṟu||  
+paluṟu nyinanyi#nyinanyi#||  ngayulu||  
+ngayulu nyinanyi#nyinanyi#||  minyma||  
+minyma nyinanyi#nyinanyi#||  pitjanyi#pitjanyi#||  
+minyma pitjanyi#pitjanyi#||  aṉangu||  
+aṉangu pitjanyi#pitjanyi#||  wangkanyi#wangkanyi#||  
+aṉangu wangkanyi#wangkanyi#||  ngananya||  
+ngananya wangkanyi#wangkanyi#||  Ingkatjinya#Ingkatji#||  
+Ingkatjinya#Ingkatji# wangkanyi#wangkanyi#||  
+<i>/*Model 3.*/</i>||
+wati wangkangu#wangkanyi#||  tjitji||  
+tjitji wangkangu#wangkanyi#||  minyma||  
+minyma wangkangu#wangkanyi#||  nyinangu#nyinanyi#||  
+minyma nyinangu#nyinanyi#||  aṉangu||  
+aṉangu nyinangu#nyinanyi#||  ngayulu||  
+ngayulu nyinangu#nyinanyi#||  pitjangu#pitjanyi#||  
+ngayulu pitjangu#pitjanyi#||  paluṟu||  
+paluṟu pitjangu#pitjanyi#||  ngananya||  
+ngananya pitjangu#pitjanyi#||  Wintjinnga#Wintjin#||  
+Wintjinnga#Wintjin# pitjangu#pitjanyi#||  
+<i>/*Model 4.*/</i>||
+<i>/*Conversions from present to past tense. You'll hear  
+a statement in the present tense. Answer in the past  
+tense and listen for the correct response. Repeat the  
+correct response.*/</i>||  
+wati wangkanyi#wangkanyi#||  wati wangkangu#wangkanyi#||  
+minyma wangkanyi#wangkanyi#||  minyma wangkangu#wangkanyi#||  
+minyma ngarinyi#ngarinyi#||  minyma ngaringu#ngarinyi#||  
+tjitji ngarinyi#ngarinyi#||  tjitji ngaringu#ngarinyi#||  
+wati pitjanyi#pitjanyi#||  wati pitjangu#pitjanyi#||  
+papa pitjanyi#pitjanyi#||  papa pitjangu#pitjanyi#||  
+aṉangu pitjanyi#pitjanyi#||  aṉangu pitjangu#pitjanyi#||  
+aṉangu ngaṟanyi#ngaṟanyi#||  aṉangu ngaṟangu#ngaṟanyi#||  
+ngananya ngaṟanyi#ngaṟanyi#?||  ngananya ngaṟangu#ngaṟanyi#?||  
+ngananya wangkanyi#wangkanyi#?||  ngananya wangkangu#wangkanyi#?||  
+ngayulu wangkanyi#wangkanyi#||  ngayulu wangkangu#wangkanyi#||  
+Waṯulyanya#Waṯulya# wangkanyi#wangkanyi#||  Waṯulyanya#Waṯulya# wangkangu#wangkanyi#||  
+Waṯulyanya#Waṯulya# pitjanyi#pitjanyi#||  Waṯulyanya#Waṯulya# pitjangu#pitjanyi#||  
+nyuntu pitjanyi#pitjanyi#||  nyuntu pitjangu#pitjanyi#||  
+<i>/*Model 5.*/</i>||
+<i>/*Short forms of personal pronouns in connection with  
+the intransitive verbs. You will hear a single  
+pronoun form; change this to the short pronoun form  
+like this:*/</i>||  
+<i>/*You hear:*/</i>|| ngayulu wangkanyi#wangkanyi#||  
+<i>/*You say:*/</i>|| wangkanyi#wangkanyi#|ṉa#ngayulu#||
+<i>/*Off you go.*/</i>||  
+ngayulu wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#|ṉa#ngayulu#||  
+ngayulu nyinanyi#nyinanyi#||  nyinanyi#nyinanyi#|ṉa#ngayulu#||  
+ngayulu pitjanyi#pitjanyi#||  pitjanyi#pitjanyi#|ṉa#ngayulu#||  
+ngayulu wangkangu#wangkanyi#||  wangkangu#wangkanyi#|ṉa#ngayulu#||  
+ngayulu nyinangu#nyinanyi#||  nyinangu#nyinanyi#|ṉa#ngayulu#||  
+ngayulu pitjangu#pitjanyi#||  pitjangu#pitjanyi#|ṉa#ngayulu#||  
+nyuntu wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#|n#nyuntu#||  
+nyuntu nyinanyi#nyinanyi#||  nyinanyi#nyinanyi#|n#nyuntu#||  
+ngayulu pitjangu#pitjanyi#||  pitjangu#pitjanyi#|ṉa#ngayulu#||  
+paluṟu wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#||  
+paluṟu wangkangu#wangkanyi#||  wangkangu#wangkanyi#||  
+paluṟu ngaṟanyi#ngaṟanyi#||  ngaṟanyi#ngaṟanyi#||  
+paluṟu pitjangu#pitjanyi#||  pitjangu#pitjanyi#||  
+ngali wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#|li#ngali#||  
+ngali pitjanyi#pitjanyi#||  pitjanyi#pitjanyi#|li#ngali#||  
+nganaṉa wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#|la#nganaṉa#||  
+nganaṉa pitjangu#pitjanyi#||  pitjangu#pitjanyi#|la#nganaṉa#||  
+tjana wangkanyi#wangkanyi#||  wangkanyi#wangkanyi#|ya#tjana#||  
+tjana pitjangu#pitjanyi#||  pitjangu#pitjanyi#|ya#tjana#||
+
+<h2>/*F. Translation into the language.*/||</h2>
+<i>/*(Unless told otherwise please use the single pronoun form when
+"I", "you", etc. occurs in the English cue).*/</i>||  
+<i>/*The man is speaking.*/</i>||  wati wangkanyi#wangkanyi#||  
+<i>/*I am speaking.*/</i>||    ngayulu wangkanyi#wangkanyi#||  
+<i>/*We all are speaking.*/</i>||  nganaṉa wangkanyi#wangkanyi#||  
+<i>/*The woman is sitting.*/</i>||  minyma nyinanyi#nyinanyi#||  
+<i>/*The kangaroo is sitting.*/</i>||  maḻu nyinanyi#nyinanyi#||  
+<i>/*You are standing.*/</i>||  nyuntu ngaṟanyi#ngaṟanyi#||  
+<i>/*The child is coming.*/</i>||  tjitji pitjanyi#pitjanyi#||  
+<i>/*The child came.*/</i>||    tjitji pitjangu#pitjanyi#||  
+<i>/*The dog came.*/</i>||    papa pitjangu#pitjanyi#||  
+<i>/*The person spoke.*/</i>||  aṉangu wangkangu#wangkanyi#||  
+<i>/*The man stood.*/</i>||    wati ngaṟangu#ngaṟanyi#||  
+<i>/*She stood.*/</i>||    paluṟu ngaṟangu#ngaṟanyi#||  
+<i>/*The person come.*/</i>||  aṉangu pitjangu#pitjanyi#||  
+<i>/*He is coming.*/</i>||    paluṟu pitjanyi#pitjanyi#||  
+<i>/*That far man coming.*/</i>||  wati nyara pitjanyi#pitjanyi#||  
+<i>/*Who is coming?*/</i>||    ngananya pitjanyi#pitjanyi#?||  
+<i>/*Ingkatji is coming.*/</i>||  Ingkatjinya#Ingkatji# pitjanyi#pitjanyi#.||  
+<i>/*This one is speaking.*/</i>||  nyangatja wangkanyi#wangkanyi#.||  
+<i>/*End of Unit 8*/</i>||  
+
+||<page><h1>/*Unit 9*/||</h1> 
+<h2>/*A. Vocabulary. Listen and repeat:*/||</h2> 
+wangkaku#wangkanyi#|| 
+nyinaku#nyinanyi#|| 
+ngaṟaku#ngaṟanyi#|| 
+ngariku#ngarinyi#|| 
+pitjaku#pitjanyi#|| 
+<h2>/*B. Listen to these forms again and fix the English in your mind:*/||</h2> 
+wangkaku#wangkanyi#|| /*<i>will speak</i>*/|| 
+nyinaku#nyinanyi#||  /*<i>will sit</i>*/||  
+ngaṟaku#ngaṟanyi#||  /*<i>will stand</i>*/||  
+ngariku#ngarinyi#||  /*<i>will lie</i>*/||  
+pitjaku#pitjanyi#||  /*<i>will come</i>*/||  
+<h2>/*C. Now listen to these sentences and repeat them:*/||</h2>  
+wati wangkanyi#wangkanyi#||  
+wati nyanga wangkanyi#wangkanyi#||  
+wati pala wangkanyi#wangkanyi#||  
+nyangatja wangkanyi#wangkanyi#||  
+minyma pitjanyi#pitjanyi#||  
+minyma nyara pitjanyi#pitjanyi#||  
+nyaratja pitjanyi#pitjanyi#||  
+palanpa pitjanyi#pitjanyi#||  
+nyanganpa ngarinyi#ngarinyi#||  
+tjitji nyanganpa wangkanyi#wangkanyi#||  
+wati wangkangu#wangkanyi#||  
+wati pala wangkangu#wangkanyi#||  
+wati nyanga pitjangu#pitjanyi#||  
+minyma nyanganpa pitjangu#pitjanyi#||  
+nyangatja pitjangu#pitjanyi#||  
+pitjangu#pitjanyi#|ṉa#ngayulu#||  
+pitjangu#pitjanyi#|ya#tjana#||  
+pitjangu#pitjanyi#|la#nganaṉa#||  
+wati wangkaku#wangkanyi#||  
+ngayulu wangkaku#wangkanyi#||  
+wangkaku#wangkanyi#|ṉa#ngayulu#||  
+minyma pitjaku#pitjanyi#||  
+paluṟu pitjaku#pitjanyi#||  
+tjana pitjaku#pitjanyi#||  
+ngananya pitjaku#pitjanyi#?||  
+Ingkatjinya#Ingkatji# pitjaku#pitjanyi#||  
+nyangatja wangkaku#wangkanyi#||  
+tjitji nyanga ngariku#ngarinyi#||  
+<h2>/*D. Listen to the following sentences again, and fix the English  meanings in your mind:*/||</h2>
+wati wangkanyi#wangkanyi#||  /*<i>The man is speaking.</i>*/||
+wati nyanga wangkanyi#wangkanyi#||  /*<i>This man is speaking.</i>*/||
+wati pala wangkanyi#wangkanyi#||  /*<i>That near man is speaking.</i>*/||
+nyangatja wangkanyi#wangkanyi#||  /*<i>This one near is speaking.</i>*/||
+minyma pitjanyi#pitjanyi#||  /*<i>  The woman is coming.</i>*/||
+minyma nyara pitjanyi#pitjanyi#||  /*<i>That far woman is coming.</i>*/||
+nyaratja pitjanyi#pitjanyi#||  /*<i>That far one is coming.</i>*/||
+palanpa pitjanyi#pitjanyi#||  /*<i>Those near are coming.</i>*/||
+tjitji nyanganpa wangkanyi#wangkanyi#||  /*<i>These children are speaking.</i>*/||
+wati wangkangu#wangkanyi#|| /*<i>The man spoke.</i>*/||
+wati pala wangkangu#wangkanyi#||  /*<i>That near man spoke</i>*/||
+wati nyanga pitjangu#pitjanyi#||  /*<i>This man came.</i>*/||
+minyma nyanganpa pitjangu#pitjanyi#||  /*<i>These women came.</i>*/||
+nyangatja pitjangu#pitjanyi#||  /*<i>This one came.</i>*/||
+pitjangu#pitjanyi#|ṉa#ngayulu#||  /*<i>I came.</i>*/||
+pitjangu#pitjanyi#|ya#tjana#||  /*<i>They all came.</i>*/||
+pitjangu#pitjanyi#|la#nganaṉa#||  /*<i>We all came.</i>*/||
+wati wangkaku#wangkanyi#||  /*<i>The man will speak.</i>*/||
+ngayulu wangkaku#wangkanyi#||  /*<i>I will speak.</i>*/||
+wangkaku#wangkanyi#|ṉa#ngayulu#||  /*<i>I will speak.</i>*/||
+minyma pitjaku#pitjanyi#||  /*<i>The woman will come.</i>*/||
+paluṟu pitjaku#pitjanyi#||  /*<i>He/she/it will come.</i>*/||
+tjana pitjaku#pitjanyi#||  /*<i>They will come.</i>*/||
+ngananya pitjaku#pitjanyi#?||  /*<i>Who will come?</i>*/||
+Ingkatjinya#Ingkatji# pitjaku#pitjanyi#||  /*<i>Ingkatji will come.</i>*/||
+nyangatja wangkaku#wangkanyi#||  /*<i>This one will speak.</i>*/||
+tjitji nyanga ngariku#ngarinyi#||  /*<i>This child will lie.</i>*/||
+
+<h2>/*E. Drills.*/||</h2>
+/*<i>In this exercise you are asked to convert a statement  
+from the present tense to the future tense, e.g. from</i>*/||
+pitjanyi#pitjanyi#||/*<i> to</i>*/|| pitjaku#pitjanyi#.||/*<i> Four phase drill as usual.</i>*/||
+/*<i>Model 1.</i>*/||
+wati wangkanyi#wangkanyi#|| wati wangkaku#wangkanyi#||
+minyma wangkanyi#wangkanyi#|| minyma wangkaku#wangkanyi#||
+minyma nyinanyi#nyinanyi#|| minyma nyinaku#nyinanyi#||
+maḻu nyinanyi#nyinanyi#|| maḻu nyinaku#nyinanyi#||
+maḻu pitjanyi#pitjanyi#|| maḻu pitjaku#pitjanyi#||
+ngayulu pitjanyi#pitjanyi#|| ngayulu pitjaku#pitjanyi#||
+ngayulu ngaṟanyi#ngaṟanyi#|| ngayulu ngaṟaku#ngaṟanyi#||
+tjitji ngaṟanyi#ngaṟanyi#|| tjitji ngaṟaku#ngaṟanyi#||
+tjitji ngarinyi#ngarinyi#|| tjitji ngariku#ngarinyi#||
+nyuntu ngarinyi#ngarinyi#|| nyuntu ngariku#ngarinyi#||
+paluṟu wangkanyi#wangkanyi#|| paluṟu wangkaku#wangkanyi#||
+/*<i>Model 2.</i>*/||
+/*<i>These drills use short forms of the personal
+pronouns. Change from present to future as you did before.</i>*/||
+wangkanyi#wangkanyi#|ṉa#ngayulu#|| wangkaku#wangkanyi#|ṉa#ngayulu#||
+pitjanyi#pitjanyi#|ṉa#ngayulu#|| pitjaku#pitjanyi#|ṉa#ngayulu#||
+ngarinyi#ngarinyi#|ṉa#ngayulu#|| ngariku#ngarinyi#|ṉa#ngayulu#||
+wangkanyi#wangkanyi#|n#nyuntu#|| wangkaku#wangkanyi#|n#nyuntu#||
+pitjanyi#pitjanyi#|n#nyuntu#|| pitjaku#pitjanyi#|n#nyuntu#||
+nyinanyi#nyinanyi#|n#nyuntu#|| nyinaku#nyinanyi#|n#nyuntu#||
+pitjanyi#pitjanyi#|| pitjaku#pitjanyi#||
+wangkanyi#wangkanyi#|| wangkaku#wangkanyi#||
+wangkanyi#wangkanyi#|li#ngali#|| wangkaku#wangkanyi#|li#ngali#||
+wangkanyi#wangkanyi#|la#nganaṉa#|| wangkaku#wangkanyi#|la#nganaṉa#||
+wangkanyi#wangkanyi#|ya#tjana#|| wangkaku#wangkanyi#|ya#tjana#||
+/*<i>Model 3.</i>*/||
+/*<i>Future tense. This time you are asked to change
+the subject of the sentence. Like this:</i>*/||
+/*<i>You hear:</i>*/|| wati wangkaku#wangkanyi#|| tjitji||
+/*<i>You say:</i>*/|| tjitji wangkaku#wangkanyi#||
+/*<i>Off you go.</i>*/||
+wati wangkaku#wangkanyi#|| tjitji||
+tjitji wangkaku#wangkanyi#|| ngayulu||
+ngayulu wangkaku#wangkanyi#|| minyma||
+minyma wangkaku#wangkanyi#|| nyangatja||
+nyangatja wangkaku#wangkanyi#|| aṉangu nyanga||
+aṉangu nyanga wangkaku#wangkanyi#||
+/*<i>The same with pitjaku#pitjanyi#</i>*/||
+wati pitjaku#pitjanyi#|| tjitji||
+tjitji pitjaku#pitjanyi#|| ngayulu||
+ngayulu pitjaku#pitjanyi#|| nganaṉa||
+nganaṉa pitjaku#pitjanyi#|| papa nyara||
+papa nyara pitjaku#pitjanyi#|| minyma nyaranpa||
+minyma nyaranpa pitjaku#pitjanyi#||
+/*<i>Model 4.</i>*/||
+/*<i>Transformations. You are now asked to combine two statements into one. Like this:</i>*/||
+/*<i>You'll hear:</i>*/|| wati puḻka||/*<i> (the man is big) and also</i>*/||
+wati wangkanyi#wangkanyi#||/*<i> (the man is speaking).</i>*/||
+/*<i>You'll say:</i>*/|| wati puḻka wangkanyi#wangkanyi#||
+/*<i>(the big man is speaking.)</i>*/||
+/*<i>Confirmation and repeats as usual. Off you go.</i>*/||
+wati puḻka|| wati wangkanyi#wangkanyi#||
+wati puḻka wangkanyi#wangkanyi#||
+tjitji tjukutjuku|| tjitji pitjanyi#pitjanyi#||
+tjitji tjukutjuku pitjanyi#pitjanyi#||
+maḻu puḻka|| maḻu ngarinyi#ngarinyi#||
+maḻu puḻka ngarinyi#ngarinyi#||
+minyma waṟa|| minyma wangkanyi#wangkanyi#||
+minyma waṟa wangkanyi#wangkanyi#||
+wati muṯumuṯu|| wati pitjanyi#pitjanyi#||
+wati muṯumuṯu pitjanyi#pitjanyi#||
+aṉangu pukuḻpa|| aṉangu wangkanyi#wangkanyi#||
+aṉangu pukuḻpa wangkanyi#wangkanyi#||
+wati waṟa|| wati pitjaku#pitjanyi#||
+wati waṟa pitjaku#pitjanyi#||
+papa tjukutjuku|| papa ngariku#ngarinyi#||
+papa tjukutjuku ngariku#ngarinyi#||
+minyma palya|| minyma pitjaku#pitjanyi#||
+minyma palya pitjaku#pitjanyi#||
+wati pikatjara|| wati ngariku#ngarinyi#||
+wati pikatjara ngariku#ngarinyi#||
+
+/*<i>Model 5.</i>*/||
+/*<i>As before, only that this time the subjects in the
+two sentences to be combined will be complex, like this:</i>*/||
+/*<i>You hear:</i>*/|| wati nyanga puḻka||/*<i> (this man is big)</i>*/||
+/*<i>and also</i>*/|| wati nyanga wangkanyi#wangkanyi#||
+/*<i>You say:</i>*/|| wati nyanga puḻka wangkanyi#wangkanyi#||
+/*<i>(this big man is speaking).</i>*/||
+/*<i>Off you go.</i>*/||
+wati nyanga puḻka|| wati nyanga wangkanyi#wangkanyi#||
+wati nyanga puḻka wangkanyi#wangkanyi#||
+tjitji pala tjukutjuku|| tjitji pala wangkanyi#wangkanyi#||
+tjitji pala tjukutjuku wangkanyi#wangkanyi#||
+minyma nyara waṟa|| minyma nyara pitjaku#pitjanyi#||
+minyma nyara waṟa pitjaku#pitjanyi#||
+maḻu nyara puḻka|| maḻu nyara pitjaku#pitjanyi#||
+maḻu nyara puḻka pitjaku#pitjanyi#||
+wati nyanganpa pikatjara|| wati nyanganpa wangkanyi#wangkanyi#||
+wati nyanganpa pikatjara wangkanyi#wangkanyi#||
+
+<h2>/*F. Translation into the language.*/||</h1>
+/*<i>Four phase drill as usual.</i>*/||
+/*<i>The man will come.</i>*/||  wati pitjaku#pitjanyi#||
+/*<i>The child will speak.</i>*/||  tjitji wangkaku#wangkanyi#||
+/*<i>The woman will sit.</i>*/||  minyma nyinaku#nyinanyi#||
+/*<i>The kangaroo will come.</i>*/||  maḻu pitjaku#pitjanyi#||
+/*<i>The dog will lie.</i>*/||  papa ngariku#ngarinyi#||
+/*<i>I will speak.</i>*/||  ngayulu wangkaku#wangkanyi#||
+/*<i>We all will come.</i>*/||  nganaṉa pitjaku#pitjanyi#||
+/*<i>Ingkatji will come.</i>*/||  Ingkatjinya#Ingkatji# pitjaku#pitjanyi#||
+/*<i>Wintjin will speak.</i>*/||  Wintjinnga#Wintjin# wangkaku#wangkanyi#||
+/*<i>Who will come?</i>*/||  ngananya pitjaku#pitjanyi#?||
+/*<i>Watulya will come.</i>*/||  Waṯulyanya#Waṯulya# pitjaku#pitjanyi#||
+/*<i>What is lying?</i>*/||  nyaa ngarinyi#ngarinyi#?||
+/*<i>A kangaroo is lying.</i>*/||  maḻu ngarinyi#ngarinyi#||
+/*<i>What is standing?</i>*/||  nyaa ngaṟanyi#ngaṟanyi#?||
+/*<i>A dog is standing.</i>*/||  papa ngaṟanyi#ngaṟanyi#||
+/*<i>This one will talk.</i>*/||  nyangatja wangkaku#wangkanyi#||
+/*<i>That far one will come.</i>*/||  nyaratja pitjaku#pitjanyi#||
+/*<i>This big man will speak.</i>*/||  wati nyanga puḻka wangkaku#wangkanyi#||
+/*<i>The small child will speak.</i>*/||  tjitji tjukutjuku wangkaku#wangkanyi#||
+/*<i>That far big kangaroo will come.</i>*/||  maḻu nyara puḻka pitjaku#pitjanyi#||
+/*<i>End of Unit 9</i>*/||
+
+||<page><h1>/*Unit 10*/||</h1> 
+<i>/*This is a lesson of practice and consolidation. It does not 
+follow the pattern of the previous lessons. First we hear the 
+English version of a dialogue, which you then hear in 
+Pitjantjatjara. Listen carefully.*/</i>||
+<h2>/*1. Dialogue*/||</h2>  
+<i>/*A. What is your name?*/</i>|| 
+<i>/*B. My name is Ingkatji.*/</i>|| 
+<i>/*A. Do you speak Pitjantjatjara?*/</i>|| 
+<i>/*B. Yes, I speak Pitjantjatjara. What about you?*/</i>|| 
+<i>/*A. Yes, I speak Pitjantjatjaraa little. Later on I'll speak a lot.*/</i>|| 
+<i>/*B. Are you well?*/</i>|| 
+<i>/*A. Yes, I am well. What about you?*/</i>|| 
+<i>/*B. I'm sick and I'm tired.*/</i>|| 
+<i>/*A. Oh, sorry.*/</i>|| 
+<i>/*Now listen to the same dialogue in Pitjantjatjara. Do not repeat.*/</i>|| 
+/*A.*/ nyuntu ini ngananya? || 
+/*B.*/ ngayulu ini Ingkatjinya#Ingkatji#|| 
+/*A.*/ nyuntu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| 
+/*B.*/ uwa, Pitjantjatjara#Pitjantjatjara#|ṉa#ngayulu# wangkanyi#wangkanyi#|| palu nyuntu?|| 
+/*A.*/ uwa, ngayulu tjukutjuku wangkanyi#wangkanyi#|| ngula|ṉa#ngayulu# puḻka wangkaku#wangkanyi#|| 
+/*B.*/ nyuntu palya?|| 
+/*A.*/ uwa, ngayulu palya|| palu nyuntu?|| 
+/*B.*/ ngayulu pikatjara,|| munu|ṉa#ngayulu# paku|| 
+/*A.*/ munta || 
+<i>/*Now repeat the utterances of this dialogue one by one. Be careful 
+to imitate the pronunciation and intonation exactly as the reader 
+does it. Please listen to the dialogue once again. Do not repeat.*/</i>||
+/*A.*/ nyuntu ini ngananya? || 
+/*B.*/ ngayulu ini Ingkatjinya#Ingkatji#|| 
+/*A.*/ nyuntu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| 
+/*B.*/ uwa, Pitjantjatjara#Pitjantjatjara#|ṉa#ngayulu# wangkanyi#wangkanyi#|| palu nyuntu?|| 
+/*A.*/ uwa, ngayulu tjukutjuku wangkanyi#wangkanyi#|| ngula|ṉa#ngayulu# puḻka wangkaku#wangkanyi#|| 
+/*B.*/ nyuntu palya?|| 
+/*A.*/ uwa, ngayulu palya|| palu nyuntu?|| 
+/*B.*/ ngayulu pikatjara,|| munu|ṉa#ngayulu# paku|| 
+/*A.*/ munta ||
+<i>/*Now please listen to the dialogue once again. Do not repeat.*/</i>||
+/*A.*/ nyuntu ini ngananya? || 
+/*B.*/ ngayulu ini Ingkatjinya#Ingkatji#|| 
+/*A.*/ nyuntu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| 
+/*B.*/ uwa, Pitjantjatjara#Pitjantjatjara#|ṉa#ngayulu# wangkanyi#wangkanyi#|| palu nyuntu?|| 
+/*A.*/ uwa, ngayulu tjukutjuku wangkanyi#wangkanyi#|| ngula|ṉa#ngayulu# puḻka wangkaku#wangkanyi#|| 
+/*B.*/ nyuntu palya?|| 
+/*A.*/ uwa, ngayulu palya|| palu nyuntu?|| 
+/*B.*/ ngayulu pikatjara,|| munu|ṉa#ngayulu# paku|| 
+/*A.*/ munta || 
+<h2>/*2. Structural drills.*/||</h2>|| 
+<i>/*Model 1.*/</i>
+<i>/*You hear:*/</i>|| nyuntu ini ngananya?|| <i>/*(what is your name?)*/</i>||
+<i>/*Your cue is:*/</i>|| paluṟu|| <i>/*(he)*/</i>|| 
+<i>/*You say:*/</i>|| paluṟu ini ngananya?|| <i>/*(What is his name?)*/</i>|| 
+<i>/*Join in as soon as you understand.*/</i>|| 
+nyuntu ini ngananya?|| paluṟu||
+paluṟu ini ngananya?|| nyangatja|| 
+nyangatja ini ngananya?|| wati nyanga|| 
+wati nyanga ini ngananya?|| minyma pala|| 
+minyma pala ini ngananya|| tjitji nyara|| 
+tjitji nyara ini ngananya?|| 
+<i>/*Model 2.*/</i>||
+ngayulu ini Ingkatjinya#Ingkatji#|| paluṟu|| 
+paluṟu ini Ingkatjinya#Ingkatji#|| wati|| 
+wati ini Ingkatjinya#Ingkatji#|| tjitji pala|| 
+tjitji pala ini Ingkatjinya#Ingkatji#|| nyangatja|| 
+nyangatja ini Ingkatjinya#Ingkatji#|| 
+<i>/*Model 3.*/</i>||
+nyuntu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| paluṟu|| 
+paluṟu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| nyupali|| 
+nyupali Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| nyura|| 
+nyura Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| tjana|| 
+tjana Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| pula|| 
+pula Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| wati nyanga|| 
+wati nyanga Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| 
+<i>/*Model 4.*/</i>||
+palu nyuntu|| paluṟu||  
+palu paluṟu?|| tjana|| 
+palu tjana?|| nyura|| 
+palu nyura?|| ngali|| 
+palu ngali?|| nyangatja|| 
+palu nyangatja?|| wati pala|| 
+palu wati pala?|| 
+<i>/*Model 5.*/</i>||
+ngula|ṉa#ngayulu# wangkaku#wangkanyi#|| pitjaku#pitjanyi#|| 
+ngula|ṉa#ngayulu# pitjaku#pitjanyi#|| nyinaku#nyinanyi#|| 
+ngula|ṉa#ngayulu# nyinaku#nyinanyi#|| ngaṟaku#ngaṟanyi#|| 
+ngula|ṉa#ngayulu# ngaṟaku#ngaṟanyi#|| pitjaku#pitjanyi#|| 
+ngula|ṉa#ngayulu# pitjaku#pitjanyi#|| ngula|n#nyuntu#|| 
+ngula|n#nyuntu# pitjaku#pitjanyi#|| wangkaku#wangkanyi#|| 
+ngula|n#nyuntu# wangkaku#wangkanyi#|| ngula|li#ngali#|| 
+ngula|li#ngali# wangkaku#wangkanyi#|| ngula|la#nganaṉa#|| 
+ngula|la#nganaṉa# wangkaku#wangkanyi#|| ngula|ya#tjana#|| 
+ngula|ya#tjana# wangkaku#wangkanyi#|| pitjaku#pitjanyi#|| 
+ngula|ya#tjana# pitjaku#pitjanyi#|| ngula|ṉa#ngayulu#|| 
+ngula|ṉa#ngayulu# pitjaku#pitjanyi#|| 
+<i>/*Model 6.*/</i>||
+<i>/*In this drill you will hear two sentences. Link them 
+together like this: 
+You'll hear:*/</i>|| ngayulu pikatjara|| <i>/*(I am sick) and also*/</i>|| 
+ngayulu paku|| <i>/*(I am tired) 
+You say:*/</i>|| ngayulu pikatjara munu|ṉa#ngayulu# paku||
+<i>/*meaning I am sick and I am tired.*/</i>|| 
+<i>/*"munu" is the equivalent of "and" in sentences of this 
+type. Note that it takes the short form of the personal pronoun.*/</i>|| 
+ngayulu pikatjara|| ngayulu paku|| 
+ngayulu pikatjara munu|ṉa#ngayulu# paku|| 
+ngayulu palya|| ngayulu pukuḻpa|| 
+ngayulu palya munu|ṉa#ngayulu# pukuḻpa|| 
+ngayulu waṟa|| ngayulu puḻka||
+ngayulu waṟa munu|ṉa#ngayulu# puḻka|| 
+ngayulu nyinanyi#nyinanyi#|| ngayulu wangkanyi#wangkanyi#|| 
+ngayulu nyinanyi#nyinanyi#|| munu|ṉa#ngayulu# wangkanyi#wangkanyi#|| 
+ngayulu pitjaku#pitjanyi#|| ngayulu wangkaku#wangkanyi#|| 
+ngayulu pitjaku#pitjanyi# munu|ṉa#ngayulu# wangkaku#wangkanyi#|| 
+<i>/*Model 7.*/</i>||
+ngayulu pikatjara munu|ṉa#ngayulu# paku.|| <i>/*This sentence, meaning 
+I am sick and I am tired, is to be converted into the 
+you form (nyuntu) like this:*/</i>|| nyuntu pikatjara munu|n#nyuntu# paku|| 
+<i>/*Off you go.*/</i>|| 
+ngayulu pikatjara munu|ṉa#ngayulu# paku|| nyuntu|| 
+nyuntu pikatjara munu|n#nyuntu# paku|| paluṟu|| 
+paluṟu pikatjara munu paku|| ngali|| 
+ngali pikatjara munu|li#ngali# paku|| nganaṉa|| 
+nganaṉa pikatjara munu|la#nganaṉa# paku|| tjana|| 
+tjana pikatjara munu|ya#tjana# paku|| 
+<i>/*Model 8.*/</i>||
+ngayulu nyinanyi#nyinanyi# munu|ṉa#ngayulu# wangkanyi#wangkanyi#|| nyuntu|| 
+nyuntu nyinanyi#nyinanyi# munu|n#nyuntu# wangkanyi#wangkanyi#|| paluṟu|| 
+paluṟu nyinanyi#nyinanyi# munu wangkanyi#wangkanyi#|| ngali|| 
+ngali nyinanyi#nyinanyi# munu|li#ngali# wangkanyi#wangkanyi#|| nganaṉa|| 
+nganaṉa nyinanyi#nyinanyi# munu|la#nganaṉa# wangkanyi#wangkanyi#|| tjana|| 
+tjana nyinanyi#nyinanyi# munu|ya#tjana# wangkanyi#wangkanyi#|| 
+<i>/*Model 9.*/</i>||
+ngayulu pitjaku#pitjanyi# munu|ṉa#ngayulu# nyinaku#nyinanyi#|| nyuntu|| 
+nyuntu pitjaku#pitjanyi# munu|n#nyuntu# nyinaku#nyinanyi#|| paluṟu|| 
+paluṟu pitjaku#pitjanyi# munu nyinaku#nyinanyi#|| ngali|| 
+ngali pitjaku#pitjanyi# munu|li#ngali# nyinaku#nyinanyi#|| nganaṉa|| 
+nganaṉa pitjaku#pitjanyi# munu|la#nganaṉa# nyinaku#nyinanyi#|| tjana|| 
+tjana pitjaku#pitjanyi# munu|ya#tjana# nyinaku#nyinanyi#|| 
+<i>/*Model 10.*/</i>||
+wati nyanga pikatjara munu paku|| minyma pala|| 
+minyma pala pikatjara munu paku|| wati nyanganpa|| 
+wati nyanganpa pikatjara munu|ya#tjana# paku|| tjitji palanpa|| 
+tjitji palanpa pikatjara munu|ya#tjana# paku|| maḻu|| 
+maḻu pikatjara munu paku|| papa nyaranpa|| 
+papa nyaranpa pikatjara munu|ya#tjana# paku|| ngayulu|| 
+ngayulu pikatjara munu|ṉa#ngayulu# paku|| 
+<h2>/*3. Translate into the language.*/||</h2>
+<i>/*This child is sick.*/</i>|| tjitji nyanga pikatjara|| 
+<i>/*My name is Ingkatji*/</i>|| ngayulu ini Ingkatjinya#Ingkatji#|| 
+<i>/*Do you speak Pitjantjatjara?*/</i>|| nyuntu Pitjantjatjara#Pitjantjatjara# wangkanyi#wangkanyi#?|| 
+<i>/*This dog is sick and tired*/</i>|| papa nyanga pikatjara munu paku|| 
+<i>/*What is your name?*/</i>|| nyuntu ini ngananya?|| 
+<i>/*What is her name?*/</i>|| paluṟu ini ngananya?|| 
+<i>/*What is this child's name?*/</i>|| tjitji nyanga ini ngananya?|| 
+<i>/*Use single pronoun form:*/</i>|| 
+<i>/*Later on I'll speak a lot.*/</i>|| ngayulu ngula puḻka wangkaku#wangkanyi#|| 
+<i>/*What about you?*/</i>|| palu nyuntu?|| 
+<i>/*What about him?*/</i>|| palu paluṟu?||
+<i>/*No, I am sick and I am tired.*/</i>|| wiya, ngayulu pikatjara munu|ṉa#ngayulu# paku|| 
+<i>/*These men are well and happy.*/</i>|| wati nyanganpa palya munu|ya#tjana# pukuḻpa.|| 
+<i>/*We all will come and talk.*/</i>|| nganaṉa pitjaku#pitjanyi# munu|la#nganaṉa# wangkaku#wangkanyi#|| 
+<i>/*They are all short and small.*/</i>|| tjana munu|ya#tjana# tjukutjuku|| 
+<i>/*Are you all tired? Yes!!*/</i>|| nyura paku? uwa!!||  
+<i>/*End of Unit 10*/</i>|| 
+
+||<page><h1>/*Unit 11*/||</h1> 
+<h2>/*A. Vocabulary. Listen and repeat.*/||</h2>
+wirtjapakaṉi#wirtjapakaṉi#|| 
+wirtjapakaṉu#wirtjapakaṉi#|| 
+wirtjapakalku#wirtjapakaṉi#|| 
+punkaṉi#punkaṉi#|| 
+punkaṉu#punkaṉi#|| 
+punkalku#punkaṉi#|| 
+wangka#wangkanyi#|| 
+pitja#pitjanyi#|| 
+wirtjapakala#wirtjapakaṉi#|| 
+punkala#punkaṉi#|| 
+<h2>/*B. Now listen again and fix the English meanings in your mind.*/||</h2> 
+wirtjapakaṉi#wirtjapakaṉi#|| <i>/*is, am, are running*/</i>|| 
+wirtjapakaṉu#wirtjapakaṉi#|| <i>/*ran*/</i>|| 
+wirtjapakalku#wirtjapakaṉi#|| <i>/*will run*/</i>|| 
+punkaṉi#punkaṉi#||   <i>/*is, am, are falling*/</i>|| 
+punkaṉu#punkaṉi#||   <i>/*fell*/</i>|| 
+punkalku#punkaṉi#||   <i>/*will fall*/</i>|| 
+wangka#wangkanyi#||   <i>/*talk*/</i>|| 
+pitja#pitjanyi#||   <i>/*come*/</i>|| 
+wirtjapakala#wirtjapakaṉi#||   <i>/*run*/</i>|| 
+punkala#punkaṉi#||   <i>/*fall*/</i>|| 
+<h2>/*C. Sentences. Listen and repeat.*/||</h2> 
+nyuntu wangka#wangkanyi#!|| 
+nyupali wangka#wangkanyi#!|| 
+nyuntu pitja#pitjanyi#!|| 
+nyupali pitja#pitjanyi#!|| 
+nyura pitja#pitjanyi#!||
+nyuntu wirtjapakala#wirtjapakaṉi#!|| 
+nyupali wirtjapakala#wirtjapakaṉi#!|| 
+nyura wirtjapakala#wirtjapakaṉi#!|| 
+nyuntu punkala#punkaṉi#!||
+nyupali punkala#punkaṉi#!||
+nyura punkala#punkaṉi#!|| 
+wangka#wangkanyi#!|| 
+wangka#wangkanyi#|pula!|| 
+wangka#wangkanyi#|ya#tjana#!|| 
+pitja#pitjanyi#!|| 
+pitja#pitjanyi#|pula!|| 
+pitja#pitjanyi#|ya#tjana#!|| 
+wirtjapakala#wirtjapakaṉi#!|| 
+wirtjapakala#wirtjapakaṉi#|pula!|| 
+wirtjapakala#wirtjapakaṉi#|ya#tjana#!|| 
+maḻu wirtjapakaṉi#wirtjapakaṉi#!|| 
+ngayulu wirtjapakaṉi#wirtjapakaṉi#!|| 
+paluṟu wirtjapakaṉi#wirtjapakaṉi#!|| 
+wirtjapakaṉi#wirtjapakaṉi#|ya#tjana#||
+maḻu wirtjapakaṉu#wirtjapakaṉi#|| 
+maḻu wirtjapakalku#wirtjapakaṉi#|| 
+tjitji punkaṉi#punkaṉi#|| 
+tjitji punkaṉu#punkaṉi#|| 
+tjitji nyara punkalku#punkaṉi#|| 
+punkaṉu#punkaṉi#|li#ngali#|| 
+tjitji wirtjapakaṉu#wirtjapakaṉi# munu punkaṉu#punkaṉi#|| 
+tjitji punkaṉu#punkaṉi# munu ulangu#ulanyi#|| 
+<h2>/*D. Now repeat and listen to the English meanings of the previous sentences.*/||</h2> 
+nyuntu wangka#wangkanyi#!|| <i>/*You talk!*/</i>|| 
+nyupali wangka#wangkanyi#!|| <i>/*You two talk! (speak)*/</i>|| 
+nyura wangka#wangkanyi#!|| <i>/*You all talk!*/</i>|| 
+nyuntu pitja#pitjanyi#!|| <i>/*You come!*/</i>|| 
+nyupali pitja#pitjanyi#!|| <i>/*You two come!*/</i>|| 
+nyura pitja#pitjanyi#!|| <i>/*You all come!*/</i>|| 
+nyuntu wirtjapakala#wirtjapakaṉi#!||  <i>/*You run!*/</i>|| 
+nyupali wirtjapakala#wirtjapakaṉi#!||  <i>/*You two run!*/</i>|| 
+nyura wirtjapakala#wirtjapakaṉi#!||  <i>/*You all run!*/</i>|| 
+nyuntu punkala#punkaṉi#!||  <i>/*You fall!*/</i>|| 
+nyupali punkala#punkaṉi#!||  <i>/*You two fall!*/</i>|| 
+nyura punkala#punkaṉi#!|| <i>/*You all fall!*/</i>|| 
+wangka#wangkanyi#!||  <i>/*You speak!*/</i>|| 
+<i>/*The following are short forms of commands:*/</i>|| 
+wangka#wangkanyi#|pula!|| <i>/*You two talk!*/</i>|| 
+wangka#wangkanyi#|ya#tjana#!|| <i>/*You all speak!*/</i>|| 
+pitja#pitjanyi#!|| <i>/*You come!*/</i>|| 
+pitja#pitjanyi#|pula!|| <i>/*You two come!*/</i>|| 
+pitja#pitjanyi#|ya#tjana#!|| <i>/*You all come!*/</i>|| 
+wirtjapakala#wirtjapakaṉi#!|| <i>/*You run!*/</i>|| 
+wirtjapakala#wirtjapakaṉi#|pula!|| <i>/*You two run!*/</i>|| 
+wirtjapakala#wirtjapakaṉi#|ya#tjana#!|| <i>/*You all run!*/</i>||
+<i>/*Now reverting to ordinary sentences:*/</i>||
+maḻu wirtjapakaṉi#wirtjapakaṉi#|| <i>/*The kangaroo is running.*/</i>|| 
+ngayulu wirtjapakaṉi#wirtjapakaṉi#|| <i>/*I am running.*/</i>|| 
+paluṟu wirtjapakaṉi#wirtjapakaṉi#|| <i>/*He is running. (also she/it)*/</i>|| 
+wirtjapakaṉi#wirtjapakaṉi#|ya#tjana#|| <i>/*They are running. ( short form)*/</i>|| 
+maḻu wirtjapakaṉu#wirtjapakaṉi#|| <i>/*The kangaroo ran.*/</i>|| 
+maḻu wirtjapakalku#wirtjapakaṉi#|| <i>/*The kangaroo will run*/</i>|| 
+tjitji punkaṉi#punkaṉi#|| <i>/*The child is falling.*/</i>|| 
+tjitji punkaṉu#punkaṉi#|| <i>/*The child fell.*/</i>||
+tjitji nyara punkalku#punkaṉi#|| <i>/*That far child will fall*/</i>|| 
+punkaṉu#punkaṉi#|li#ngali#|| <i>/*We two fell. (short form)*/</i>|| 
+tjitji wirtjapakaṉu#wirtjapakaṉi# munu punkaṉu#punkaṉi#|| <i>/*The child ran and fell.*/</i>|| 
+tjitji punkaṉu#punkaṉi# munu ulangu#ulanyi#|| <i>/*The child fell and cried.*/</i>||
+
+<h2>/*E. Drills*/||</h2>
+<i>/*In the first drill please convert from the present 
+tense to the imperative or command form. Like this:*/</i>|| 
+<i>/*You will hear:*/</i>|| nyuntu wangkanyi#wangkanyi#|| <i>/*(you are talking)*/</i>|| 
+<i>/*You say:*/</i>|| nyuntu wangka#wangkanyi#|| <i>/*(you talk)*/</i>||
+<i>/*Off you go. 
+Model 1.*/</i>||
+nyuntu wangkanyi#wangkanyi#||   nyuntu wangka#wangkanyi#!|| 
+nyuntu pitjanyi#pitjanyi#||    nyuntu pitja#pitjanyi#!|| 
+nyuntu wirtjapakaṉi#wirtjapakaṉi#||   nyuntu wirtjapakala#wirtjapakaṉi#!|| 
+nyuntu punkaṉi#punkaṉi#||   nyuntu punkala#punkaṉi#!|| 
+nyuntu nyinanyi#nyinanyi#||   nyuntu nyina!|| 
+<i>/*Model 2.*/</i>||
+nyupali wangkanyi#wangkanyi#||   nyupali wangka#wangkanyi#!|| 
+nyupali pitjanyi#pitjanyi#||   nyupali pitja#pitjanyi#!|| 
+nyura wangkanyi#wangkanyi#||   nyura wangka#wangkanyi#!||
+nyupali wirtjapakaṉi#wirtjapakaṉi#||   nyupali wirtjapakala#wirtjapakaṉi#!|| 
+nyura punkaṉi#punkaṉi#||   nyura punkala#punkaṉi#!|| 
+<i>/*Model 3.*/</i>||
+<i>/*Convert from the long fom of the command to the short form, like this:*/</i>|| 
+<i>/*You hear:*/</i>|| nyuntu wangka#wangkanyi#|| 
+<i>/*You say:*/</i>|| wangka#wangkanyi#!||
+<i>/*Off you go.*/</i>|| 
+nyuntu wangka#wangkanyi#!||  wangka#wangkanyi#!|| 
+nyuntu pitja#pitjanyi#!||  pitja#pitjanyi#!||
+nyuntu wirtjapakala#wirtjapakaṉi#!||   wirtjapakala#wirtjapakaṉi#!|| 
+nyupali wangka#wangkanyi#||  wangka#wangkanyi#|pula!|| 
+nyupali wirtjapakala#wirtjapakaṉi#!||   wirtjapakala#wirtjapakaṉi#|pula!|| 
+nyura pitja#pitjanyi#||   pitja#pitjanyi#|ya#tjana#!|| 
+nyura wirtjapakala#wirtjapakaṉi#!||   wirtjapakala#wirtjapakaṉi#|ya#tjana#!||
+nyura nyina!||   nyina|ya#tjana#!||
+<i>/*Model 4.*/</i>||
+<i>/*Tenses. Hear a statement and a cue.
+Use the cue to form your new sentence.
+Off you go.*/</i>|| 
+wati wangkanyi#wangkanyi#||   wangkangu#wangkanyi#|| 
+wati wangkangu#wangkanyi#||   minyma|| 
+minyma wangkangu#wangkanyi#||   tjitji pala|| 
+tjitji pala wangkangu#wangkanyi#||   wangkaku#wangkanyi#|| 
+tjitji pala wangkaku#wangkanyi#||   pitjaku#pitjanyi#|| 
+tjitji pala pitjaku#pitjanyi#||   pitjangu#pitjanyi#|| 
+tjitji pala pitjangu#pitjanyi#||  maḻu|| 
+maḻu pitjangu#pitjanyi#||   nyinanyi#nyinanyi#|| 
+maḻu nyinanyi#nyinanyi#||   wirtjapakaṉi#wirtjapakaṉi#|| 
+maḻu wirtjapakaṉi#wirtjapakaṉi#||   wirtjapakaṉu#wirtjapakaṉi#|| 
+maḻu wirtjapakaṉu#wirtjapakaṉi#||   tjitji|| 
+tjitji wirtjapakaṉu#wirtjapakaṉi#||   punkaṉu#punkaṉi#|| 
+tjitji punkaṉu#punkaṉi#||   punkalku#punkaṉi#|| 
+tjitji punkalku#punkaṉi#||   wangkaku#wangkanyi#|| 
+tjitji wangkaku#wangkanyi#||   ulaku#ulanyi#|| 
+tjitji ulaku#ulanyi#||   minyma|| 
+minyma ulaku#ulanyi#||   pitjaku#pitjanyi#|| 
+minyma pitjaku#pitjanyi#||   pitjanyi#pitjanyi#|| 
+minyma pitjanyi#pitjanyi#||   wangkanyi#wangkanyi#|| 
+minyma wangkanyi#wangkanyi#||   wati|| 
+wati wangkanyi#wangkanyi#|| 
+<i>/*Model 5*/</i>||.
+<i>/*Conversion from present to past tense. Off you go.*/</i>|| 
+ngayulu pitjanyi#pitjanyi#||   ngayulu pitjangu#pitjanyi#|| 
+pitjanyi#pitjanyi#|ṉa#ngayulu#||   pitjangu#pitjanyi#|ṉa#ngayulu#|| 
+ngayulu wangkanyi#wangkanyi#||   ngayulu wangkangu#wangkanyi#|| 
+wangkanyi#wangkanyi#|ṉa#ngayulu#||   wangkangu#wangkanyi#|ṉa#ngayulu#|| 
+ngayulu wirtjapakaṉi#wirtjapakaṉi#||   ngayulu wirtjapakaṉu#wirtjapakaṉi#|| 
+wirtjapakaṉi#wirtjapakaṉi#|ṉa#ngayulu#||    wirtjapakaṉu#wirtjapakaṉi#|ṉa#ngayulu#||
+ngayulu punkaṉi#punkaṉi#||   ngayulu punkaṉu#punkaṉi#|| 
+punkaṉi#punkaṉi#|ṉa#ngayulu#||   punkaṉu#punkaṉi#|ṉa#ngayulu#|| 
+<i>/*Now a few with nyuntu and paluṟu*/</i>|| 
+nyuntu pitjanyi#pitjanyi#||   nyuntu pitjangu#pitjanyi#|| 
+pitjanyi#pitjanyi#|n#nyuntu#||   pitjangu#pitjanyi#|n#nyuntu#|| 
+nyuntu wirtjapakaṉi#wirtjapakaṉi#||   nyuntu wirtjapakaṉu#wirtjapakaṉi#|| 
+wirtjapakaṉi#wirtjapakaṉi#|n#nyuntu#||   wirtjapakaṉu#wirtjapakaṉi#|n#nyuntu#|| 
+paluṟu wangkanyi#wangkanyi#||   paluṟu wangkangu#wangkanyi#|| 
+wangkanyi#wangkanyi#||   wangkangu#wangkanyi#|| 
+paluṟu  punkaṉi#punkaṉi#||   paluṟu punkaṉu#punkaṉi#|| 
+punkaṉi#punkaṉi#||   punkaṉu#punkaṉi#||
+
+<h2>/*F. Translate into the language.*/||</h2>
+<i>/*The man is running.*/</i>|| wati wirtjapakaṉi#wirtjapakaṉi#|| 
+<i>/*The kangaroo ran.*/</i>|| maḻu wirtjapakaṉu#wirtjapakaṉi#|| 
+<i>/*This child ran.*/</i>||  tjitji nyanga wirtjapakaṉu#wirtjapakaṉi#|| 
+<i>/*The small child fell.*/</i>|| tjitji tjukutjuku punkaṉu#punkaṉi#|| 
+<i>/*You speak!*/</i>|| nyuntu wangka#wangkanyi#!|| 
+<i>/*You two come!*/</i>|| nyupali pitja#pitjanyi#!|| 
+<i>/*You all run!*/</i>||   nyura wirtjapakala#wirtjapakaṉi#!|| 
+<i>/*You come! (short form)*/</i>||  pitja#pitjanyi#!|| 
+<i>/*You two speak! (short form)*/</i>||  wangka#wangkanyi#|pula!|| 
+<i>/*You all run! (short form)*/</i>||   wirtjapakala#wirtjapakaṉi#|ya#tjana#!|| 
+<i>/*He is running. (short form)*/</i>||   wirtjapakaṉi#wirtjapakaṉi#|| 
+<i>/*The child ran and fell.*/</i>||   tjitji wirtjapakaṉu#wirtjapakaṉi# munu punkaṉu#punkaṉi#|| 
+<i>/*I will run.*/</i>|| ngayulu wirtjapakalku#wirtjapakaṉi#|| 
+<i>/*I will run. ( short form)*/</i>||   wirtjapakalku#wirtjapakaṉi#|ṉa#ngayulu#|| 
+<i>/*We all will speak.*/</i>|| nganaṉa wangkaku#wangkanyi#|| 
+<i>/*We all will speak. ( short form)*/</i>||  wangkaku#wangkanyi#|la#nganaṉa#|| 
+<i>/*You all come!*/</i>|| nyura pitja#pitjanyi#!|| 
+<i>/*You all come! (short form)*/</i>||   pitja#pitjanyi#|ya#tjana#!|| 
+<i>/*You two run!*/</i>|| nyupali wirtjapakala#wirtjapakaṉi#!|| 
+<i>/*You two run! ( short form)*/</i>|| wirtjapakala#wirtjapakaṉi#|pula!|| 
+<i>/*End of Unit 11*/</i>
+
+||<page><h1>/*Unit 12*/||</h1> 
+<h2>/*A. Vocabulary.*/||</h2>
+kaḻaya|| 
+kanyaḻa||
+kanyaḻa|| 
+wakaṉi#wakaṉi#|| 
+wakaṉu#wakaṉi#|| 
+wakalku#wakaṉi#|| 
+wakala#wakaṉi#!|| 
+nyanganyi#nyanganyi#|| 
+nyangu#nyanganyi#||
+nyakuku#nyanganyi#|| 
+nyawa#nyanganyi#!|| 
+<h2>/*B. Listen once again.*/||</h2>
+<i>/*Repeat the Pitjantjatjara and fix the English meanings in your mind.*/</i>|| 
+kaḻaya||   <i>/*emu*/</i>||
+kanyaḻa||   <i>/*euro*/</i>||
+wakaṉi#wakaṉi#||   <i>/*is, am, are spearing*/</i>|| 
+wakaṉu#wakaṉi#||   <i>/*speared*/</i>|| 
+wakalku#wakaṉi#||   <i>/*will spear*/</i>|| 
+wakala#wakaṉi#!||   <i>/*spear!*/</i>|| 
+nyanganyi#nyanganyi#||   <i>/*is, am, are seeing (or see)*/</i>|| 
+nyangu#nyanganyi#||   <i>/*saw*/</i>|| 
+nyakuku#nyanganyi#||   <i>/*will see*/</i>|| 
+nyawa#nyanganyi#||!   <i>/*see! look!*/</i>|| 
+<h2>/*C. Listen to the following items and repeat them:*/||</h2> 
+wati|ngku#-ngku# maḻu wakaṉi#wakaṉi#|| 
+wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#|| 
+aṉangu|ngku#-ngku# maḻu wakaṉi#wakaṉi#||
+aṉangu|ngku#-ngku# maḻu nyanganyi#nyanganyi#||
+wati|ngku#-ngku# maḻu wakaṉu#wakaṉi#||
+wati|ngku#-ngku# maḻu nyangu#nyanganyi#||
+tjitji|ngku#-ngku# maḻu nyangu#nyanganyi#||
+minyma|ngku#-ngku# maḻu nyangu#nyanganyi#||
+Ingkatji#Ingkatji#|lu#-lu# maḻu wakaṉu#wakaṉi#||
+Ingkatji#Ingkatji#|lu#-lu# kaḻaya nyangu#nyanganyi#||
+Waṯulya#Waṯulya#|lu#-lu# kaḻaya nyangu#nyanganyi#||
+Waṯulya#Waṯulya#|lu#-lu# kanyaḻa nyangu#nyanganyi#||
+ngayulu kaḻaya wakaṉu#wakaṉi#||
+ngayulu maḻu nyangu#nyanganyi#||
+kaḻaya|ṉa#ngayulu# wakaṉu#wakaṉi#||
+maḻu|ṉa#ngayulu# nyangu#nyanganyi#||
+nyuntu maḻu wakaṉu#wakaṉi#||
+maḻu|n#nyuntu# wakaṉu#wakaṉi#||
+paluṟu maḻu wakaṉu#wakaṉi#||
+maḻu wakaṉu#wakaṉi#||
+ngali maḻu wakaṉu#wakaṉi#||
+maḻu|li#ngali# wakaṉu#wakaṉi#||
+nganaṉa maḻu wakaṉu#wakaṉi#||
+maḻu|la#nganaṉa# wakaṉu#wakaṉi#||
+tjana maḻu wakaṉu#wakaṉi#||
+maḻu|ya#tjana# wakaṉu#wakaṉi#||
+nyupali maḻu wakaṉu#wakaṉi#||
+nyura maḻu wakaṉu#wakaṉi#||
+pula maḻu wakaṉu#wakaṉi#||
+<h2>/*D. Now listen once again and fix the English meanings in your mind.*/||</h2> 
+wati|ngku#-ngku# maḻu wakaṉi#wakaṉi#||   <i>/*The man is spearing a kangaroo.*/</i>||
+wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#||   <i>/*The man sees a kangaroo.*/</i>||
+aṉangu|ngku#-ngku# maḻu wakaṉi#wakaṉi#||   <i>/*The person is spearing the kangaroo.*/</i>||
+aṉangu|ngku#-ngku# maḻu nyanganyi#nyanganyi#||   <i>/*The person sees the kangaroo.*/</i>||
+wati|ngku#-ngku# maḻu wakaṉu#wakaṉi#||   <i>/*The man speared a kangaroo.*/</i>||
+wati|ngku#-ngku# maḻu nyangu#nyanganyi#||  <i>/*The man saw a kangaroo.*/</i>||
+tjitji|ngku#-ngku# maḻu nyangu#nyanganyi#||   <i>/*The child saw a kangaroo.*/</i>||
+minyma|ngku#-ngku# maḻu nyangu#nyanganyi#||   <i>/*The woman saw a kangaroo.*/</i>||
+Ingkatji#Ingkatji#|lu#-lu# maḻu wakaṉu#wakaṉi#||   <i>/*Ingkatji speared a kangaroo.*/</i>||
+Ingkatji#Ingkatji#|lu#-lu# kaḻaya nyangu#nyanganyi#||   <i>/*Ingkatji saw an emu*/</i>||
+Waṯulya#Waṯulya#|lu#-lu# kaḻaya nyangu#nyanganyi#||   <i>/*Watulya saw an emu.*/</i>||
+Waṯulya#Waṯulya#|lu#-lu# kanyaḻa nyangu#nyanganyi#||   <i>/*Watulya saw a euro.*/</i>||
+ngayulu kaḻaya wakaṉu#wakaṉi#||   <i>/*I speared an emu.*/</i>||
+ngayulu maḻu nyangu#nyanganyi#||   <i>/*I saw a kangaroo.*/</i>||
+kaḻaya|ṉa#ngayulu# wakaṉu#wakaṉi#||   <i>/*I speared an emus (short form)*/</i>||
+maḻu|ṉa#ngayulu# nyangu#nyanganyi#||   <i>/*I saw a kangaroo. (short form)*/</i>||
+nyuntu maḻu wakaṉu#wakaṉi#||   <i>/*You speared a kangaroo*/</i>||
+maḻu|n#nyuntu# wakaṉu#wakaṉi#||   <i>/*You speared a kangaroo. (short form)*/</i>||
+paluṟu maḻu wakaṉu#wakaṉi#||   <i>/*He speared a kangaroo.*/</i>||
+maḻu wakaṉu#wakaṉi#||   <i>/*He speared a kangaroo. (short form)*/</i>||
+ngali maḻu wakaṉu#wakaṉi#||   <i>/*We two speared a kangaroo.*/</i>||
+maḻu|li#ngali# wakaṉu#wakaṉi#||   <i>/*We two speared a 'roo. (short form)*/</i>||
+nganaṉa maḻu wakaṉu#wakaṉi#||   <i>/*We all speared a kangaroo.*/</i>||
+maḻu|la#nganaṉa# wakaṉu#wakaṉi#||   <i>/*We all speared a roo.(short form)*/</i>||
+tjana maḻu wakaṉu#wakaṉi#||   <i>/*They all speared a 'roo.*/</i>||
+maḻu|ya#tjana# wakaṉu#wakaṉi#||   <i>/*They all speared a 'roo. (short form)*/</i>||
+nyupali maḻu wakaṉu#wakaṉi#||   <i>/*You two speared a 'roo. (No short form)*/</i>||
+nyura maḻu wakaṉu#wakaṉi#||   <i>/*You all speared a 'roo. (No short form)*/</i>||
+pula maḻu wakaṉu#wakaṉi#||   <i>/*They two speared a 'roo. (No short form)*/</i>||
+<h2>/*E. Drills.*/||</h2>
+<i>/*Model 1.*/</i>||
+<i>/*Substitution of subjects in transitive sentences.*/</i>|| 
+<i>/*You'll hear:*/</i>|| wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#|| <i>/*(the man sees the 'roo)*/</i>|| tjitji|| 
+<i>/*You say:*/</i>|| tjitji|ngku#-ngku# maḻu nyanganyi#nyanganyi#||  <i>/*(the child sees the kangaroo)*/</i>|| 
+<i>/*You are to substitute the new cue only in the subject 
+slot. You will note in transitive sentences the 
+subject has a special suffix. This suffix is "ngku" 
+on common nouns ending in a vowel; it is "lu" on 
+proper nouns. Off you go.*/</i>|| 
+<i>/*Model 1.*/</i>||
+wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#||    tjitji|| 
+tjitji|ngku#-ngku# maḻu nyanganyi#nyanganyi#||   minyma|| 
+minyma|ngku#-ngku# maḻu nyanganyi#nyanganyi#||   aṉangu|| 
+aṉangu|ngku#-ngku# maḻu nyanganyi#nyanganyi#||   papa|| 
+papa|ngku#-ngku# maḻu nyanganyi#nyanganyi#||
+<i>/*Now the model is changed. Listen again.*/</i>||
+wati|ngku#-ngku# minyma nyanganyi#nyanganyi#||   tjitji|| 
+tjitji|ngku#-ngku# minyma nyanganyi#nyanganyi#||   maḻu|| 
+maḻu|ngku#-ngku# minyma nyanganyi#nyanganyi#||   papa|| 
+papa|ngku#-ngku# minyma nyanganyi#nyanganyi#||   kaḻaya|| 
+kaḻaya#kaḻaya#|ngku#-ngku# minyma nyanganyi#nyanganyi#||   kanyaḻa|| 
+kanyaḻa#kanyaḻa#|ngku#-ngku# minyma nyanganyi#nyanganyi#|| 
+<i>/*Model 2.*/</i>||
+<i>/*Now with proper nouns. Remember -the ending is "lu". 
+Off you go.*/</i>|| 
+Ingkatji#Ingkatji#|lu#-lu# maḻu nyanganyi#nyanganyi#||   Tinimayi#Tinimayi#|| 
+Tinimayi#Tinimayi#|lu#-lu# maḻu nyanganyi#nyanganyi#||   Waṯulya#Waṯulya#|lu#-lu#|| 
+Waṯulya#Waṯulya#|lu#-lu# maḻu nyanganyi#nyanganyi#||   Wangilyi#Wangilyi#|| 
+Wangilyi#Wangilyi#|lu#-lu# maḻu nyanganyi#nyanganyi#|| 
+<i>/*Model 3.*/</i>||
+<i>/*Now with common nouns as subject and proper nouns as 
+object. The subject will be the cue.*/</i>|| 
+wati|ngku#-ngku# Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   tjitji|| 
+tjitji|ngku#-ngku# Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   minyma|| 
+minyma|ngku#-ngku# Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   maḻu|| 
+maḻu|ngku#-ngku# Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#|| 
+<i>/*Model 4.*/</i>||
+<i>/*Now with a pronoun as subject (nonsuffix) and a 
+common noun as object.*/</i>|| 
+<i>/*You hear:*/</i>|| ngayulu maḻu wakalku#wakaṉi#|| <i>/*(I will spear a 'roo)*/</i>||   nyuntu||  
+<i>/*You say:*/</i>|| nyuntu maḻu wakalku#wakaṉi#|| <i>/*(You will spear a 'roo).*/</i>||
+<i>/*Off you go.*/</i>|| 
+ngayulu maḻu wakalku#wakaṉi#||   nyuntu||
+nyuntu maḻu wakalku#wakaṉi#||   paluṟu|| 
+paluṟu maḻu wakalku#wakaṉi#||   ngali|| 
+ngali maḻu wakalku#wakaṉi#||   tjana|| 
+tjana maḻu wakalku#wakaṉi#|| 
+<i>/*New model with the verb nyanganyi.*/</i>||
+<i>/*Off you go.*/</i>|| 
+ngayulu papa nyanganyi#nyanganyi#||   nyuntu|| 
+nyuntu papa nyanganyi#nyanganyi#||   paluṟu|| 
+paluṟu papa nyanganyi#nyanganyi#||   nganaṉa|| 
+nganaṉa papa nyanganyi#nyanganyi#||   nyura|| 
+nyura papa nyanganyi#nyanganyi#|| 
+<i>/*Model 5.*/</i>||
+<i>/*Now we shall present a sentence in which the subject 
+continues to be a personal pronoun and the object 
+will be a proper noun. Substitution in the subject 
+slot. Off you go.*/</i>|| 
+ngayulu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   paluṟu||
+paluṟu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   ngali|| 
+ngali Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   nyuntu|| 
+nyuntu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   tjana|| 
+tjana Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#|| 
+<i>/*Model 6.*/</i>||
+<i>/*You are now asked to convert from the single pronoun 
+form to the short form. Like this:*/</i>|| 
+<i>/*You will hear:*/</i>|| ngayulu maḻu nyanganyi#nyanganyi#|| <i>/*(I see a 'roo)*/</i>|| 
+<i>/*You will say:*/</i>|| maḻu|ṉa#ngayulu# nyanganyi#nyanganyi#|| <i>/*(I see a 'roo) short form.*/</i>||
+<i>/*Off you go.*/</i>|| 
+ngayulu maḻu nyanganyi#nyanganyi#||   maḻu|ṉa#ngayulu# nyanganyi#nyanganyi#|| 
+nyuntu maḻu nyanganyi#nyanganyi#||   maḻu|n#nyuntu# nyanganyi#nyanganyi#|| 
+paluṟu maḻu nyanganyi#nyanganyi#||   maḻu nyanganyi#nyanganyi#|| 
+ngali maḻu nyanganyi#nyanganyi#||   maḻu|li#ngali# nyanganyi#nyanganyi#|| 
+tjana maḻu nyanganyi#nyanganyi#||   maḻu|ya#tjana# nyanganyi#nyanganyi#|| 
+<i>/*Now with "papa" instead of "maḻu".*/</i>|| 
+ngayulu papa nyanganyi#nyanganyi#||   papa|ṉa#ngayulu# nyanganyi#nyanganyi#|| 
+nyuntu papa nyanganyi#nyanganyi#||   papa|n#nyuntu# nyanganyi#nyanganyi#|| 
+paluṟu papa nyanganyi#nyanganyi#||   papa nyanganyi#nyanganyi#|| 
+nganaṉa papa nyanganyi#nyanganyi#||   papa|la#nganaṉa# nyanganyi#nyanganyi#|| 
+ngali papa nyanganyi#nyanganyi#||   papa|li#ngali# nyanganyi#nyanganyi#|| 
+tjana papa nyanganyi#nyanganyi#||   papa|ya#tjana# nyanganyi#nyanganyi#|| 
+<i>/*Now with a proper noun as object.*/</i>|| 
+ngayulu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||  Ingkatjinya#Ingkatji#|ṉa#ngayulu# nyanganyi#nyanganyi#|| 
+nyuntu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   Ingkatjinya#Ingkatji#|n#nyuntu# nyanganyi#nyanganyi#|| 
+paluṟu Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#|| 
+ngali Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   Ingkatjinya#Ingkatji#|li#ngali# nyanganyi#nyanganyi#|| 
+nganaṉa Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   Ingkatjinya#Ingkatji#|la#nganaṉa# nyanganyi#nyanganyi#|| 
+tjana Ingkatjinya#Ingkatji# nyanganyi#nyanganyi#||   Ingkatjinya#Ingkatji#|ya#tjana# nyanganyi#nyanganyi#|| 
+<h2>/*F. Translation into the language.*/||</h2> 
+<i>/*The man sees a 'roo.</i>*/||   wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#|| 
+<i>/*The child sees a 'roo.</i>*/||   tjitji|ngku#-ngku# maḻu nyanganyi#nyanganyi#|| 
+<i>/*I see a 'roo.</i>*/||   ngayulu maḻu nyanganyi#nyanganyi#|| 
+<i>/*We all see a 'roo.</i>*/||   nganaṉa maḻu nyanganyi#nyanganyi#|| 
+<i>/*Ingkatji sees an emu.</i>*/|| Ingkatji#Ingkatji#|lu#-lu# kaḻaya nyanganyi#nyanganyi#|| 
+<i>/*Watulya sees an emu.</i>*/|| Waṯulya#Waṯulya#|lu#-lu# kaḻaya nyangu#nyanganyi#|| 
+<i>/*The man saw an emu.</i>*/||   wati|ngku#-ngku# kaḻaya nyangu#nyanganyi#|| 
+<i>/*The man speared a 'roo.</i>*/||   wati|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| 
+<i>/*I saw an emu.</i>*/||  ngayulu kaḻaya nyangu#nyanganyi#|| 
+<i>/*I saw an emu and speared it.</i>*/||  ngayulu kaḻaya nyangu#nyanganyi# munu|ṉa#ngayulu# wakaṉu#wakaṉi#|| 
+<i>/*In the following five translations use short forms only:</i>*/|| 
+<i>/*I see a woman.</i>*/||   minyma|ṉa#ngayulu# nyanganyi#nyanganyi#|| 
+<i>/*We two saw a woman.</i>*/||   minyma|li#ngali# nyangu#nyanganyi#|| 
+<i>/*We all will spear an emu.</i>*/||   kaḻaya|la#nganaṉa# wakalku#wakaṉi#|| 
+<i>/*They all saw the child.</i>*/||   tjitji|ya#tjana# nyangu#nyanganyi#|| 
+<i>/*Did you spear a 'roo?</i>*/||   maḻu|n#nyuntu# wakaṉu#wakaṉi#?|| 
+<i>/*You spear the roo!</i>*/||   nyuntu maḻu wakala#wakaṉi#!|| 
+<i>/*You spear the emu!</i>*/||   nyuntu kaḻaya wakala#wakaṉi#!|| 
+<i>/*You look at that far woman.</i>*/||   nyuntu minyma nyara nyawa#nyanganyi#|| 
+<i>/*You look at the big man.</i>*/||   nyuntu wati puḻka nyawa#nyanganyi#|| 
+<i>/*You speak Pitjantjatjara!</i>*/||   nyuntu Pitjantjatjara#Pitjantjatjara# wangka#wangkanyi#!|| 
+<i>/*End of Unit 12</i>*/||
+
+
+||<page><h1>/*Unit 13*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat.*/||</h2>
+kuka|| 
+mai|| 
+mina|| 
+unganyi#unganyi#|| 
+ungu#unganyi#|| 
+ungkuku#unganyi#|| 
+uwa#unganyi#!|| 
+punganyi#punganyi#|| 
+pungu#punganyi#||
+pungkuku#punganyi#|| 
+puwa#punganyi#!|| 
+ngayunya#ngayulu#|| 
+nyuntunya#nyuntu#|| 
+palunya#paluṟu#|| 
+ngalinya#ngali#|| 
+nyupalinya#nyupali#|| 
+pulanya#pula#|| 
+nganaṉanya#nganaṉa#|| 
+nyuranya#nyura#|| 
+tjananya#tjana#|| 
+<h2>/*B. Listen and repeat the following and fix the English meanings in your mind.*/||</h2>
+<i>/*Off you go.*/</i>|| 
+kuka|| <i>/*meat, animal*/</i>|| 
+mai|| <i>/*(vegetable) food*/</i>|| 
+mina|| <i>/*water*/</i>|| 
+unganyi#unganyi#|| <i>/*is, am, are giving*/</i>|| 
+ungu#unganyi#|| <i>/*gave*/</i>|| 
+ungkuku#unganyi#|| <i>/*will give*/</i>|| 
+uwa#unganyi#!|| <i>/*give*/</i>|| 
+punganyi#punganyi#|| <i>/*is, am, are hitting, killing*/</i>|| 
+pungu#punganyi#|| <i>/*hit, killed*/</i>|| 
+pungkuku#punganyi#|| <i>/*will hit, will kill*/</i>|| 
+puwa#punganyi#!|| <i>/*hit! kill!*/</i>|| 
+ngayunya#ngayulu#|| <i>/*me*/</i>|| 
+nyuntunya#nyuntu#|| <i>/*you (object)*/</i>|| 
+palunya#paluṟu#|| <i>/*him/her/it*/</i>|| 
+ngalinya#ngali#|| <i>/*us two*/</i>|| 
+nyupalinya#nyupali#|| <i>/*you two (object)*/</i>|| 
+pulanya#pula#|| <i>/*them two*/</i>|| 
+nganaṉanya#nganaṉa#|| <i>/*us all*/</i>|| 
+nyuranya#nyura#|| <i>/*you all (object)*/</i>|| 
+tjananya#tjana#|| <i>/*them all*/</i>|| 
+
+<h2>/*C. Listen to the following items and repeat them.*/||</h2> 
+<i>/*Off you go.*/</i>|| 
+wati|ngku#-ngku# ngayunya#ngayulu# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# nyuntunya#nyuntu# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# palunya#paluṟu# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# ngalinya#ngali# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# nyupalinya#nyupali# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# pulanya#pula# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# nganaṉanya#nganaṉa# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# nyuranya#nyura# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# tjananya#tjana# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku#|ṉi#ngayulu# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku#|nta#nyuntu# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku#|linya#ngali# nyanganyi#nyanganyi#|| 
+wati|ngku#-ngku#|lanya#nganaṉa# nyanganyi#nyanganyi#|| 
+nganalu maḻu wakaṉu#wakaṉi#?|| 
+Ingkatji#Ingkatji#|lu#-lu# maḻu wakaṉu#wakaṉi#|| 
+ngayulu nyuntunya#nyuntu# pungu#punganyi#?|| 
+Waṯulya#Waṯulya#|lu#-lu# ngayunya#ngayulu# pungu#punganyi#|| 
+minyma|ngku#-ngku# tjitji mai unganyi#unganyi#|| 
+minyma|ngku#-ngku# tjitji kuka unganyi#unganyi#|| 
+minyma|ngku#-ngku# tjitji mina unganyi#unganyi#|| 
+minyma|ngku#-ngku# wati mina unganyi#unganyi#|| 
+minyma|ngku#-ngku# wati mai unganyi#unganyi#|| 
+minyma|ngku#-ngku# wati kuka unganyi#unganyi#|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# kuka unganyi#unganyi#|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# mina unganyi#unganyi#|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# mai unganyi#unganyi#||
+minyma|ngku#-ngku# ngalinya#ngali# mai unganyi#unganyi#|| 
+minyma|ngku#-ngku# ngalinya#ngali# kuka unganyi#unganyi#|| 
+minyma|ngku#-ngku# nganaṉanya#nganaṉa# kuka unganyi#unganyi#|| 
+minyma|ngku#-ngku# tjananya#tjana# kuka unganyi#unganyi#|| 
+<i>/*The following are all short forms:*/</i>|| 
+wati|ngku#-ngku#|ṉi#ngayulu# kuka ungu#unganyi#|| 
+tjitji|ngku#-ngku#|nta#nyuntu# kuka ungu#unganyi#|| 
+minyma|ngku#-ngku#|ṉi#ngayulu# mai ungu#unganyi#|| 
+minyma|ngku#-ngku#|nta#nyuntu# mai ungu#unganyi#|| 
+minyma|ngku#-ngku# mai ungu#unganyi#|| 
+minyma|ngku#-ngku#|linya#ngali# mai ungu#unganyi#|| 
+minyma|ngku#-ngku#|lanya#nganaṉa# mai ungu#unganyi#|| 
+<i>/*Questions and answers.*/</i>|| 
+nganalu nyuntunya#nyuntu# mai ungu#unganyi#?|| 
+minyma|ngku#-ngku#|ṉi#ngayulu# ungu#unganyi#|| 
+nganalu nyupalinya#nyupali# mai ungu#unganyi#?|| 
+minyma|ngku#-ngku#|linya#ngali# ungu#unganyi#|| 
+nganalu ngayunya#ngayulu# mai ungkuku#unganyi#?|| 
+tjitji|ngku#-ngku#|nta#nyuntu# ungkuku#unganyi#|| 
+nganalu nyuntunya#nyuntu# mina ungkuku#unganyi#?|| 
+Ingkatji#Ingkatji#|lu#-lu#|ṉi#ngayulu# ungkuku#unganyi#|| 
+<i>/*Commands — first long and then short forms:*/</i>|| 
+nyuntu ngayunya#ngayulu# mina uwa#unganyi#!|| 
+mina|ṉi#ngayulu# uwa#unganyi#!|| 
+nyuntu ngayunya#ngayulu# kuka uwa#unganyi#!|| 
+kuka|ṉi#ngayulu# uwa#unganyi#!|| 
+nyuntu ngayunya#ngayulu# mai uwa#unganyi#!|| 
+mai|ṉi#ngayulu# uwa#unganyi#!|| 
+nyuntu ngayunya#ngayulu# uwa#unganyi#!|| 
+uwa#unganyi#|ṉi#ngayulu#||! 
+<h2>/*D. Repeat these sentences again and fix the English in your mind.*/||</h2> 
+wati|ngku#-ngku# ngayunya#ngayulu# nyanganyi#nyanganyi#|| <i>/*The man sees me.*/</i>|| 
+wati|ngku#-ngku# nyuntunya#nyuntu# nyanganyi#nyanganyi#|| <i>/*The man sees you.*/</i>|| 
+wati|ngku#-ngku# palunya#paluṟu# nyanganyi#nyanganyi#|| <i>/*The man sees him/her/it.*/</i>|| 
+wati|ngku#-ngku# ngalinya#ngali# nyanganyi#nyanganyi#|| <i>/*The man sees us two.*/</i>|| 
+wati|ngku#-ngku# nyupalinya#nyupali# nyanganyi#nyanganyi#|| <i>/*The man sees you two.*/</i>|| 
+wati|ngku#-ngku# pulanya#pula# nyanganyi#nyanganyi#|| <i>/*The man sees them two.*/</i>|| 
+wati|ngku#-ngku# nganaṉanya#nganaṉa# nyanganyi#nyanganyi#|| <i>/*The man sees us all.*/</i>|| 
+wati|ngku#-ngku# nyuranya#nyura# nyanganyi#nyanganyi#|| <i>/*The man sees you all.*/</i>|| 
+wati|ngku#-ngku# tjananya#tjana# nyanganyi#nyanganyi#|| <i>/*The man sees them all.*/</i>|| 
+<i>/*Short forms:*/</i>|| 
+wati|ngku#-ngku#|ṉi#ngayulu# nyanganyi#nyanganyi#|| <i>/*The man sees me.*/</i>|| 
+wati|ngku#-ngku#|nta#nyuntu# nyanganyi#nyanganyi#|| <i>/*The men sees you.*/</i>|| 
+wati|ngku#-ngku# nyanganyi#nyanganyi#|| <i>/*The man sees him.*/</i>|| 
+wati|ngku#-ngku#|linya#ngali# nyanganyi#nyanganyi#|| <i>/*The man sees us two.*/</i>|| 
+wati|ngku#-ngku#|lanya#nganaṉa# nyanganyi#nyanganyi#|| <i>/*The man sees us all.*/</i>|| 
+nganalu maḻu wakaṉu#wakaṉi#?|| <i>/*Who speared the 'roo?*/</i>|| 
+Ingkatji#Ingkatji#|lu#-lu# maḻu wakaṉu#wakaṉi#|| <i>/*Ingkatji speared a roo.*/</i>|| 
+nganalu nyuntunya#nyuntu# pungu#punganyi#?|| <i>/*Who hit you?*/</i>|| 
+Waṯulya#Waṯulya#|lu#-lu# ngayunya#ngayulu# pungu#punganyi#|| <i>/*Watu1ya hit me.*/</i>|| 
+minyma|ngku#-ngku# tjitji mai unganyi#unganyi#|| <i>/*The woman is giving the child food.*/</i>|| 
+minyma|ngku#-ngku# tjitji kuka unganyi#unganyi#|| <i>/*The woman is giving the child meat.*/</i>|| 
+minyma|ngku#-ngku# tjitji mina unganyi#unganyi#|| <i>/*The woman is giving the child water.*/</i>|| 
+minyma|ngku#-ngku# wati mina unganyi#unganyi#|| <i>/*The woman is giving the man water.*/</i>|| 
+minyma|ngku#-ngku# wati mai unganyi#unganyi#|| <i>/*The woman is giving the man food.*/</i>|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# kuka unganyi#unganyi#|| <i>/*The woman is giving me meat.*/</i>|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# mina unganyi#unganyi#|| <i>/*The woman is giving me water.*/</i>|| 
+minyma|ngku#-ngku# ngayunya#ngayulu# mai unganyi#unganyi#|| <i>/*The woman is giving me food.*/</i>|| 
+minyma|ngku#-ngku# ngalinya#ngali# mai unganyi#unganyi#|| <i>/*The woman is giving us two food.*/</i>|| 
+minyma|ngku#-ngku# ngalinya#ngali# kuka unganyi#unganyi#|| <i>/*The woman is giving us two meat.*/</i>|| 
+minyma|ngku#-ngku# nganaṉanya#nganaṉa# kuka unganyi#unganyi#|| <i>/*The woman is giving us all meat.*/</i>|| 
+minyma|ngku#-ngku# tjananya#tjana# kuka unganyi#unganyi#|| <i>/*The woman is giving them all meat.*/</i>|| 
+<i>/*The following are all short forms*/</i>|| 
+wati|ngku#-ngku#|ṉi#ngayulu# kuka ungu#unganyi#|| <i>/*The man gave me meat.*/</i>|| 
+tjitji|ngku#-ngku#|nta#nyuntu# kuka ungu#unganyi#||    <i>/*The child gave you meat.*/</i>|| 
+minyma|ngku#-ngku#|ṉi#ngayulu# mai ungu#unganyi#|| <i>/*The woman gave me food.*/</i>|| 
+minyma|ngku#-ngku# mai ungu#unganyi#|| <i>/*The woman gave him food.*/</i>|| 
+minyma|ngku#-ngku#|linya#ngali# mai ungu#unganyi#|| <i>/*The woman gave us two food.*/</i>|| 
+minyma|ngku#-ngku#|lanya#nganaṉa# mai ungu#unganyi#|| <i>/*The woman gave us all food.*/</i>|| 
+<i>/*Questions and answers:*/</i>|| 
+nganalu nyuntunya#nyuntu# mai ungu#unganyi#?|| <i>/*Who gave you food?*/</i>|| 
+minyma|ngku#-ngku#|ṉi#ngayulu# ungu#unganyi#|| <i>/*The woman gave it to me*/</i>|| 
+nganalu nyupalinya#nyupali# mai ungu#unganyi#?|| <i>/*Who gave you two food?*/</i>|| 
+minyma|ngku#-ngku#|linya#ngali# ungu#unganyi#|| <i>/*The woman gave it to us two.*/</i>|| 
+nganalu ngayunya#ngayulu# mai ungkuku#unganyi#?|| <i>/*Who will give me food?*/</i>|| 
+tjitji|ngku#-ngku#|nta#nyuntu# ungkuku#unganyi#|| <i>/*The child will give it to you.*/</i>|| 
+nganalu nyuntunya#nyuntu# mina ungkuku#unganyi#?|| <i>/*Who will give you water?*/</i>|| 
+Ingkatji#Ingkatji#|lu#-lu#|ṉi#ngayulu# ungkuku#unganyi#|| <i>/*Ingkatji will give it to me.*/</i>|| 
+<i>/*Commands — First long and then short.*/</i>|| 
+nyuntu ngayunya#ngayulu# mina uwa#unganyi#!|| <i>/*Give me water!*/</i>|| 
+mina|ṉi#ngayulu# uwa#unganyi#!|| <i>/*Give me water! (short form)*/</i>|| 
+nyuntu ngayunya#ngayulu# kuka uwa#unganyi#||  <i>/*Give me meat*/</i>|| 
+kuka|ṉi#ngayulu# uwa#unganyi#!|| <i>/*Give me meat (short form)*/</i>|| 
+nyuntu ngayunya#ngayulu# mai uwa#unganyi#||  <i>/*Give me food*/</i>|| 
+mai|ṉi#ngayulu# uwa#unganyi#||  <i>/*Give me food (short form)*/</i>||  
+nyuntu ngayunya#ngayulu# uwa#unganyi#||  <i>/*Give it to me*/</i>|| 
+uwa#unganyi#|ṉi#ngayulu#|| <i>/*Give it to me (short form)*/</i>||  
+<h2>/*E. Substitutions.*/||</h2>
+<i>/*You hear a sentence followed by a cue. Please use the cue to make your new sentence. 
+You hear:*/</i>|| wati|ngku#-ngku# ngayunya#ngayulu# pungkuku#punganyi#||  <i>/*The man will hit me*/</i>||   nyuntunya#nyuntu#|| <i>/*you*/</i>|| 
+<i>/*You say*/</i>||: wati|ngku#-ngku# nyuntunya#nyuntu# pungkuku#punganyi#|| 
+<i>/*Four phase drill, as usual. Off you go.*/</i>|| 
+wati|ngku#-ngku# ngayunya#ngayulu# pungkuku#punganyi#||   nyuntunya#nyuntu#|| 
+wati|ngku#-ngku# nyuntunya#nyuntu# pungkuku#punganyi#|| palunya#paluṟu#|| 
+wati|ngku#-ngku# palunya#paluṟu# pungkuku#punganyi#|| ngalinya#ngali#|| 
+wati|ngku#-ngku# ngalinya#ngali# pungkuku#punganyi#|| nyupalinya#nyupali#|| 
+wati|ngku#-ngku# nyupalinya#nyupali# pungkuku#punganyi#|| pulanya#pula#|| 
+wati|ngku#-ngku# pulanya#pula# pungkuku#punganyi#|| nganaṉanya#nganaṉa#|| 
+wati|ngku#-ngku# nganaṉanya#nganaṉa# pungkuku#punganyi#|| nyuranya#nyura#|| 
+wati|ngku#-ngku# nyuranya#nyura# pungkuku#punganyi#|| tjananya#tjana#|| 
+wati|ngku#-ngku# tjananya#tjana# pungkuku#punganyi#|| 
+<i>/*Now you will hear some of the above sentences again. 
+Convert them into short forms, like this: 
+You'll hear:*/</i>|| wati|ngku#-ngku# ngayunya#ngayulu# pungkuku#punganyi#|| 
+<i>/*You'll say:*/</i>|| wati|ngku#-ngku#|ṉi#ngayulu# pungkuku#punganyi#||
+<i>/*Off you go.*/</i>|| 
+wati|ngku#-ngku# ngayunya#ngayulu# pungkuku#punganyi#|| wati|ngku#-ngku#|ṉi#ngayulu# pungkuku#punganyi#|| 
+wati|ngku#-ngku# nyuntunya#nyuntu# pungkuku#punganyi#|| wati|ngku#-ngku#|nta#nyuntu# pungkuku#punganyi#|| 
+wati|ngku#-ngku# palunya#paluṟu# pungkuku#punganyi#|| wati|ngku#-ngku# pungkuku#punganyi#|| 
+wati|ngku#-ngku# ngalinya#ngali# pungkuku#punganyi#|| wati|ngku#-ngku#|linya#ngali# pungkuku#punganyi#|| 
+wati|ngku#-ngku# nganaṉanya#nganaṉa# pungkuku#punganyi#|| wati|ngku#-ngku#|lanya#nganaṉa# pungkuku#punganyi#|| 
+
+<h2>/*F. Translate into the language (use short forms):*/||</h2> 
+<i>/*The woman gave me food.*/</i>|| minyma|ngku#-ngku#|ṉi#ngayulu# mai ungu#unganyi#|| 
+<i>/*The man gave me food.*/</i>|| wati|ngku#-ngku#|ṉi#ngayulu# mai ungu#unganyi#|| 
+<i>/*The man will give me food.*/</i>||  wati|ngku#-ngku#|ṉi#ngayulu# mai ungkuku#unganyi#|| 
+<i>/*The man will give me water.*/</i>||  wati|ngku#-ngku#|ṉi#ngayulu# mina ungkuku#unganyi#|| 
+<i>/*The woman is giving you water.*/</i>|| minyma|ngku#-ngku#|nta#nyuntu# mina unganyi#unganyi#|| 
+<i>/*The woman gave you water.*/</i>|| minyma|ngku#-ngku#|nta#nyuntu# mina ungu#unganyi#|| 
+<i>/*The child will give you water.*/</i>|| tjitji|ngku#-ngku#|nta#nyuntu# mina ungkuku#unganyi#|| 
+<i>/*The woman will see Ingkatji.*/</i>|| minyma|ngku#-ngku# Ingkatjinya#Ingkatji# nyakuku#nyanganyi#|| 
+<i>/*The woman saw a kangaroo.*/</i>|| minyma|ngku#-ngku# maḻu nyangu#nyanganyi#|| 
+<i>/*The man saw and hit me.*/</i>||  wati|ngku#-ngku#|ṉi#ngayulu# nyangu#nyanganyi# munu|ṉi#ngayulu# pungu#punganyi#|| 
+
+||<page><h1>/*Unit 14*/||</h1>
+<h2>/*A. Vocabulary. Listen and repeat.*/||</h2> 
+ngura|| 
+wiltja|| 
+paṉa||
+apu||
+yaaltji|ngka#-ngka#|| 
+yaaltji|kutu#-kutu#||
+yaaltji|nguṟu#-nguṟu#||
+Aṉapala#Aṉapala#|| 
+Amaṯa#Amaṯa#|| 
+ananyi#ananyi#|| 
+anu#ananyi#|| 
+ankuku#ananyi#||
+ara#ananyi#!||
+<h2>/*B. Listen and repeat these items and fix the English meanings in your mind*/||</h2> 
+ngura|| <i>/*camp, home*/</i>|| 
+wiltja|| <i>/*shade, hut*/</i>|| 
+paṉa|| <i>/*ground*/</i>|| 
+apu|| <i>/*stone, mountains*/</i>|| 
+yaaltji|ngka#-ngka#||    <i>/*where at?*/</i>|| 
+yaaltji|kutu#-kutu#||     <i>/*where to?*/</i>|| 
+yaaltji|nguṟu#-nguṟu#||    <i>/*where from?*/</i>|| 
+Aṉapala#Aṉapala#|| <i>/*Ernabella*/</i>|| 
+Amaṯa#Amaṯa#|| <i>/*Musgrave Park*/</i>|| 
+ananyi#ananyi#|| <i>/*is, am, are going*/</i>|| 
+anu#ananyi#|| <i>/*went*/</i>|| 
+ankuku#ananyi#|| <i>/*will go*/</i>|| 
+ara#ananyi#!|| <i>/*go!*/</i>|| 
+<h2>/*C. Listen to the following sentences and repeat them.*/||</h2> 
+wati paṉa|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati wiltja|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati apu|ngka#-ngka# nyinanyi#nyinanyi#|| 
+minyma ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+minyma wiltja|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngayulu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngayulu paṉa|ngka#-ngka# nyinanyi#nyinanyi#|| 
+nyuntu yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?|| 
+ngayulu Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| 
+nyupali yaaltji|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngali Amaṯa#Amaṯa#|la#-la# nyinanyi#nyinanyi#|| 
+wati ngura|kutu#-kutu# ananyi#ananyi#|| 
+wati apu|kutu#-kutu# ananyi#ananyi#|| 
+wati wiltja|kutu#-kutu# ananyi#ananyi#|| 
+tjitji ngura|kutu#-kutu# ananyi#ananyi#|| 
+tjitji ngura|kutu#-kutu# anu#ananyi#|| 
+tjitji ngura|kutu#-kutu# ankuku#ananyi#|| 
+nyuntu yaaltji|kutu#-kutu# ananyi#ananyi#?|| 
+ngayulu ngura|kutu#-kutu# ananyi#ananyi#|| 
+nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?|| 
+ngali Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ananyi#ananyi#|| 
+wati ngura|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+wati apu|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+minyma wiltja|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjaku#pitjanyi#|| 
+nyuntu yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| 
+ngayulu Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| 
+nyura yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| 
+nganaṉa Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| 
+<h2>/*D. Listen to the sentences again and repeat them.*/||</h2>
+<i>/*At the same time fix the English in your mind.*/</i>|| 
+wati paṉa|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The man is sitting on the ground.*/</i>|| 
+wati wiltja|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The man is sitting in the shade.*/</i>|| 
+wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The man is sitting in camp.*/</i>|| 
+wati apu|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The man is sitting on the stone.*/</i>|| 
+minyma ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The woman ig sitting in camp.*/</i>|| 
+minyma wiltja|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The woman is sitting in the shade.*/</i>|| 
+ngayulu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*I an sitting in camp.*/</i>|| 
+ngayulu paṉa|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*I am sitting on the ground.*/</i>|| 
+nyuntu yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?|| <i>/*Where do you live?*/</i>|| 
+ngayulu Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| <i>/*I live at Ernabella.*/</i>|| 
+nyupali yaaltji|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*Where do you two live?*/</i>|| 
+ngali Amaṯa#Amaṯa#|la#-la# nyinanyi#nyinanyi#|| <i>/*We two live at Musgrave Park.*/</i>|| 
+wati ngura|kutu#-kutu# ananyi#ananyi#|| <i>/*The man is going to camp.*/</i>|| 
+wati apu|kutu#-kutu# ananyi#ananyi#|| <i>/*The man is going to the mountain.*/</i>|| 
+wati wiltja|kutu#-kutu# ananyi#ananyi#|| <i>/*The man is going to the shade.*/</i>|| 
+tjitji ngura|kutu#-kutu# ananyi#ananyi#|| <i>/*The child is going to camp.*/</i>|| 
+tjitji ngura|kutu#-kutu# anu#ananyi#|| <i>/*The child went to camp.*/</i>|| 
+tjitji ngura|kutu#-kutu# ankuku#ananyi#|| <i>/*The child will go to camp.*/</i>|| 
+nyuntu yaaltji|kutu#-kutu# ananyi#ananyi#?|| <i>/*Where are you going?*/</i>|| 
+ngayulu ngura|kutu#-kutu# ananyi#ananyi#|| <i>/*I am going to camp.*/</i>|| 
+nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?|| <i>/*Where are you two going?*/</i>|| 
+ngali Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ananyi#ananyi#|| <i>/*We two are going to Ernabella.*/</i>||
+wati ngura|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| <i>/*The man is coming from camp.*/</i>|| 
+wati apu|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| <i>/*The man is coming from the mountain.*/</i>|| 
+minyma wiltja|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| <i>/*The women is coming from the shade.*/</i>|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| <i>/*Ingkatji is coming from Ernabella.*/</i>|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| <i>/*Ingkatji came from Ernabella.*/</i>|| 
+Ingkatjinya#Ingkatji# Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjaku#pitjanyi#|| <i>/*Ingkatji will come from Ernabellae.*/</i>|| 
+nyuntu yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| <i>/*Where did you come from?*/</i>|| 
+ngayulu Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| <i>/*I came from Musgrave Park.*/</i>|| 
+nyura yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| <i>/*Where did you all come from?*/</i>|| 
+nganaṉa Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjangu#pitjanyi#|| <i>/*We came from Musgrave Park.*/</i>|| 
+
+<h2>/*E. Substitutions.*/||</h2>
+<i>/*Model 1. You hear a model and a cue. Use the cue to construct your sentence, like this:*/</i>|| 
+<i>/*You hear:*/</i>|| wati yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?|| <i>/*(Where is the man?)*/</i>|| ngura|ngka#-ngka#|| <i>/*(in camp) 
+You say:*/</i>|| wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*(The man is in camp).*/</i>|| 
+<i>/*Off you go.*/</i>|| 
+wati yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||   ngura|ngka#-ngka#|| 
+wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||  wiltja|ngka#-ngka#|| 
+wati wiltja|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||  apu|ngka#-ngka#|| 
+wati apu|ngka#-ngka# nyinanyi#nyinanyi#|| 
+wati yaaltji|kutu#-kutu# ananyi#ananyi#?||   ngura|kutu#-kutu#||
+wati ngura|kutu#-kutu# ananyi#ananyi#|| 
+wati yaaltji|kutu#-kutu# ananyi#ananyi#?||   wiltja|kutu#-kutu#|| 
+wati wiltja|kutu#-kutu# ananyi#ananyi#|| 
+wati yaaltji|kutu#-kutu# ananyi#ananyi#?||   apu|kutu#-kutu#|| 
+wati apu|kutu#-kutu# ananyi#ananyi#|| 
+wati yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#?||   ngura|nguṟu#-nguṟu#|| 
+wati ngura|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+wati yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#||   wiltja|nguṟu#-nguṟu#|| 
+wati wiltja|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+wati yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#||   apu|nguṟu#-nguṟu#|| 
+wati apu|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+<i>/*Model 2*/</i>.||
+<i>/*You will hear a question in the you form followed by a cue 
+which will be a place name. Use the cue to answer in the 
+first person (I or me). Like this:*/</i>||
+<i>/*You hear:*/</i>|| nyuntu yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||  <i>/*(Where do you live?)*/</i>||  Aṉapala#Aṉapala#|la#-la#|| <i>/*(Erabella)*/</i>||
+<i>/*You say:*/</i>|| ngayulu Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| <i>/*(I live at Ernabella)*/</i>||
+<i>/*Off you go.*/</i>|| 
+nyuntu yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||   Aṉapala#Aṉapala#|la#-la#|| 
+ngayulu Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| 
+nyuntu yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||  Amaṯa#Amaṯa#|la#-la#|| 
+ngayulu Amaṯa#Amaṯa#|la#-la# nyinanyi#nyinanyi#|| 
+nyupali yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||   Aṉapala#Aṉapala#|la#-la#||
+ngali Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| 
+nyupali yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||  Amaṯa#Amaṯa#|la#-la#|| 
+ngali Amaṯa#Amaṯa#|la#-la# nyinanyi#nyinanyi#|| 
+nyura yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||   Aṉapala#Aṉapala#|la#-la#|| 
+nganaṉa Aṉapala#Aṉapala#|la#-la# nyinanyi#nyinanyi#|| 
+nyura yaaltji|ngka#-ngka# nyinanyi#nyinanyi#?||   Amaṯa#Amaṯa#|la#-la#||  
+nganaṉa Amaṯa#Amaṯa#|la#-la# nyinanyi#nyinanyi#||   
+nyuntu yaaltji|kutu#-kutu# ananyi#ananyi#?||   Aṉapala#Aṉapala#|la#-la#|kutu#-kutu#||
+ngayulu Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ananyi#ananyi#|| 
+nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?||  Aṉapala#Aṉapala#|la#-la#|kutu#-kutu#|| 
+ngali Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ananyi#ananyi#|| 
+nyura yaaltji|kutu#-kutu# ananyi#ananyi#||   Aṉapala#Aṉapala#|la#-la#|kutu#-kutu#|| 
+nganaṉa Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ananyi#ananyi#|| 
+nyuntu yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#?||   Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu#||
+ngayulu Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#||  
+nyupali yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#?||   Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu#||  
+ngali Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+nyura yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#?||   Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu#||   
+nganaṉa Amaṯa#Amaṯa#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+<i>/*Model 3*/</i>||
+<i>/*You will hear a statement using the single pronoun 
+form. You are to change this to the short form. 
+Like this:*/</i>||
+<i>/*You hear:*/</i>|| ngayulu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+<i>/*You say:*/</i>|| ngura|ngka#-ngka#|ṉa#ngayulu# nyinanyi#nyinanyi#|| 
+<i>/*Off you go.*/</i>|| 
+ngayulu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka#|ṉa#ngayulu# nyinanyi#nyinanyi#||
+nyuntu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka#|n#nyuntu# nyinanyi#nyinanyi#|| 
+paluṟu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngali ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka#|li#ngali# nyinanyi#nyinanyi#|| 
+nganaṉa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka#|la#nganaṉa# nyinanyi#nyinanyi#|| 
+tjana ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+ngura|ngka#-ngka#|ya#tjana# nyinanyi#nyinanyi#|| 
+ngayulu ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngura|kutu#-kutu#|ṉa#ngayulu# ananyi#ananyi#|| 
+nyuntu ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngura|kutu#-kutu#|n#nyuntu# ananyi#ananyi#|| 
+paluṟu ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngali ngura|kutu#-kutu# ananyi#ananyi#||
+ngura|kutu#-kutu#|li#ngali# ananyi#ananyi#|| 
+nganaṉa ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngura|kutu#-kutu#|la#nganaṉa# ananyi#ananyi#|| 
+tjana ngura|kutu#-kutu# ananyi#ananyi#|| 
+ngura|kutu#-kutu#|ya#tjana# ananyi#ananyi#|| 
+ngayulu Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu#|ṉa#ngayulu# pitjanyi#pitjanyi#|| 
+nyuntu Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu#|n#nyuntu# pitjanyi#pitjanyi#||
+paluṟu Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#||
+ngali Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#||
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu#|li#ngali# pitjanyi#pitjanyi#|| 
+nganaṉa Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu#|la#nganaṉa# pitjanyi#pitjanyi#|| 
+tjana Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu# pitjanyi#pitjanyi#|| 
+Aṉapala#Aṉapala#|la#-la#|nguṟu#-nguṟu#|ya#tjana# pitjanyi#pitjanyi#|| 
+<h2>/*F. Translation into the language.*/||</h2> 
+<i>/*The man is going to camp.*/</i>|| wati ngura|kutu#-kutu# ananyi#ananyi#|| 
+<i>/*The man went to the shade.*/</i>|| wati wiltja|kutu#-kutu# anu#ananyi#|| 
+<i>/*The woman will go to the mountain.*/</i>||  minyma apu|kutu#-kutu# ankuku#ananyi#|| 
+<i>/*The man is coming to camp.*/</i>|| wati ngura|kutu#-kutu# pitjanyi#pitjanyi#|| 
+<i>/*The child comes to the shade.*/</i>|| tjitji wiltja|kutu#-kutu# pitjangu#pitjanyi#|| 
+<i>/*The woman will go to Ernabella.*/</i>|| minyma Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# ankuku#ananyi#|| 
+<i>/*Where is the man coming from?*/</i>|| wati yaaltji|nguṟu#-nguṟu# pitjanyi#pitjanyi#?|| 
+<i>/*Where the woman come from?*/</i>|| minyma yaaltji|nguṟu#-nguṟu# pitjaku#pitjanyi#?|| 
+<i>/*Where did the roo come from?*/</i>|| maḻu yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| 
+<i>/*For the next sentences use short forms:*/</i>|| 
+<i>/*Where are you going?*/</i>|| yaaltji|kutu#-kutu#|n#nyuntu# ananyi#ananyi#|| 
+<i>/*Where did she come from?*/</i>|| yaaltji|nguṟu#-nguṟu# pitjangu#pitjanyi#?|| 
+<i>/*Where will we two go?*/</i>|| yaaltji|kutu#-kutu#|li#ngali# ankuku#ananyi#?|| 
+<i>/*End of Unit 14*/</i>|| 
+
+
+||<page><h1>/*Unit 15*/||</h1>	
+<h2>/*A. Vocabulary. Listen and repeat.*/||</h2> 	
+kuri||	
+mama||	
+ngunytju||	
+kuṯa||	
+kangkuṟu||	
+maḻanypa||	
+katja||	
+uṉṯalpa||	
+kamuṟu||	
+kaḻi||	
+kuḻaṯa||	
+piti||	
+wana||	
+palyaṉi#palyaṉi#||	
+palyaṉu#palyaṉi#||	
+palyalku#palyaṉi#||	
+palyala#palyaṉi#!||	
+rungkaṉi#rungkaṉi#||	
+rungkaṉu#rungkaṉi#||	
+rungkalku#rungkaṉi#||	
+rungkala#rungkaṉi#!||	
+ngayuku#ngayulu#||	
+nyuntumpa#nyuntu#||	
+palumpa#paluṟu#||	
+ngalimpa||	
+nyupalimpa#nyupali#||	
+pulampa#pula#||	
+nganampa#nganaṉa#||	
+nyurampa#nyura#||	
+tjanampa#tjana#|| 
+<h2>/*B. Now repeat these once again and listen to the English equivalents.*/||</h2>
+kuri|| <i>/*spouse*/</i>|| 
+mama|| <i>/*father*/</i>|| 
+ngunytju|| <i>/*mother*/</i>|| 
+kuṯa|| <i>/*older brother*/</i>|| 
+kangkuṟu|| <i>/*older sister*/</i>|| 
+maḻanypa|| <i>/*younger sibling*/</i>|| 
+katja|| <i>/*son*/</i>|| 
+uṉṯalpa|| <i>/*daughter*/</i>|| 
+kamuṟu|| <i>/*uncle (mother's brother)*/</i>|| 
+kaḻi|| <i>/*boomerang*/</i>|| 
+kuḻaṯa|| <i>/*spear*/</i>|| 
+piti|| <i>/*carrying dish (coolimon)*/</i>|| 
+wana|| <i>/*digging stick*/</i>|| 
+palyaṉi#palyaṉi#|| <i>/*is/am/are making*/</i>|| 
+palyaṉu#palyaṉi#|| <i>/*made*/</i>|| 
+palyalku#palyaṉi#|| <i>/*will make*/</i>|| 
+palyala#palyaṉi#!|| <i>/*make!*/</i>|| 
+rungkaṉi#rungkaṉi#|| <i>/*is/am/are hitting (with boomerang)*/</i>|| 
+rungkaṉu#rungkaṉi#|| <i>/*hit (with boomerang)*/</i>|| 
+rungkalku#rungkaṉi#|| <i>/*will hit (with boomerang)*/</i>|| 
+rungkala#rungkaṉi#!|| <i>/*hit! (with boomerang)*/</i>|| 
+ngayuku#ngayulu#|| <i>/*my, for me*/</i>|| 
+nyuntumpa#nyuntu#|| <i>/*your, for you*/</i>|| 
+palumpa#paluṟu#|| <i>/*his/her/its, for him/her/it*/</i>||
+ngalimpa|| <i>/*our, for us two*/</i>|| 
+nyupalimpa#nyupali#|| <i>/*your, for you two*/</i>|| 
+pulampa#pula#|| <i>/*their, for them two*/</i>|| 
+nganampa#nganaṉa#|| <i>/*our, for us all*/</i>|| 
+nyurampa#nyura#|| <i>/*your, for you ail*/</i>|| 
+tjanampa#tjana#|| <i>/*their, for them all*/</i>||	
+<h2>/*C. Listen to the following sentences*/||</h2> 	
+wati|ku#-ku# katja pikatjara||	
+tjitji|ku#-ku# mama pitjanyi#pitjanyi#||	
+minyma|ku#-ku# ngunytju ngura|ngka#-ngka# nyinanyi#nyinanyi#||	
+ngayuku#ngayulu# kuṯa pikatjara||	
+nyuntumpa#nyuntu# maḻanypa palya||	
+nganampa#nganaṉa# mama pukuḻpa||	
+wati|ngku#-ngku# kaḻi palyaṉi#palyaṉi#||	
+nyuntu kaḻi palyaṉi#palyaṉi#?||	
+wiya, ngayulu kuḻaṯa palyaṉi#palyaṉi#||	
+ngayulu kuḻaṯa palyaṉu#palyaṉi#||	
+paluṟu kaḻi palyalku#palyaṉi#||	
+ngayulu maḻu rungkaṉu#rungkaṉi#||	
+nyuntu kanyaḻa rungkala#rungkaṉi#!||	
+wati pala|ngku#-ngku# kaḻaya rungkalku#rungkaṉi#||	
+wati|ngku#-ngku# minyma|ku#-ku# piti palyaṉi#palyaṉi#||	
+ngayuku#ngayulu# maḻany#maḻanypa#|tju#-tju# tjitji|ku#-ku# kaḻi palyaṉi#palyaṉi#||
+ngayulu nyuntumpa#nyuntu# kuḻaṯa palyalku#palyaṉi#||
+<h2>/*D. Listen to the sentences again and repeat them.*/||</h2> 
+<i>/*At the same time fix the English meanings in your mind. Off you go.*/</i>|| 
+wati|ku#-ku# katja pikatjara|| <i>/*The man's son is sick.*/</i>|| 
+tjitji|ku#-ku# mama pitjanyi#pitjanyi#|| <i>/*The child's father is coming.*/</i>|| 
+minyma|ku#-ku# ngunytju ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The woman's mother is sitting in camp.*/</i>|| 
+ngayuku#ngayulu# kuṯa pikatjara|| <i>/*My older brother is sick.*/</i>|| 
+nyuntumpa#nyuntu# maḻanypa palya|| <i>/*Your younger sibling is well.*/</i>|| 
+nganampa#nganaṉa# mama pukuḻpa|| <i>/*Our father is happy.*/</i>|| 
+wati|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| <i>/*The man is making a boomerang.*/</i>|| 
+nyuntu kaḻi palyaṉi#palyaṉi#?|| <i>/*Are you making a boomerang?*/</i>|| 
+wiya, ngayulu kuḻaṯa palyaṉi#palyaṉi#|| <i>/*No, I'm making a spear.*/</i>||
+ngayulu kuḻaṯa palyaṉu#palyaṉi#|| <i>/*I made a spear.*/</i>|| 
+paluṟu kaḻi palyalku#palyaṉi#|| <i>/*He will make a boomerang.*/</i>|| 
+nyuntu kanyaḻa rungkala#rungkaṉi#!|| <i>/*You hit the euro!*/</i>|| 
+wati pala|ngku#-ngku# kaḻaya rungkalku#rungkaṉi#|| <i>/*That man will hit the emu (with the boomerang)*/</i>|| 
+wati|ngku#-ngku# minyma|ku#-ku# piti palyaṉi#palyaṉi#|| <i>/*The man is making a carrying dish for the woman.*/</i>|| 
+ngayuku#ngayulu# maḻany#maḻanypa#|tju#-tju# tjitji|ku#-ku# kaḻi palyaṉi#palyaṉi#|| <i>/*My younger brother is making a boomerang for the child.*/</i>|| 
+ngayulu nyuntumpa#nyuntu# kuḻaṯa palyalku#palyaṉi#|| <i>/*I shall make a spear for you.*/</i>|| 
+
+<i>/*Now you'll hear a sentence of the type "the man made a boomerang for me",
+first in the long form, followed by the short form.*/</i>||	
+wati|ngku#-ngku# ngayuku#ngayulu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|tju#ngayulu# kaḻi palyaṉu#palyaṉi#||
+wati|ngku#-ngku# nyuntumpa#nyuntu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|nku#nyuntu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# palumpa#paluṟu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|ra#-ra# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# ngalimpa kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|limpa#ngali# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# nganampa#nganaṉa# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|lampa#nganaṉa# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# maḻu kuḻaṯa|ngka#-ngka# wakaṉu#wakaṉi#||
+wati|ngku#-ngku# kaḻaya kaḻi|ngka#-ngka# rungkaṉu#rungkaṉi#||	
+nyuntu maḻu nyaa|ngka#-ngka# wakaṉu#wakaṉi#?||	
+kuḻaṯa|ngka#-ngka#|ṉa#ngayulu# wakaṉu#wakaṉi#||	
+<i>/*Now listen and repeat again and fix the English in your mind.*/</i>||	
+wati|ngku#-ngku# ngayuku#ngayulu# kaḻi palyaṉu#palyaṉi#|| <i>/*The man made a boomerang for me.*/</i>||	
+wati|ngku#-ngku#|tju#ngayulu# kaḻi palyaṉu#palyaṉi#||
+<i>/*Next example:*/</i>||	
+wati|ngku#-ngku# nyuntumpa#nyuntu# kaḻi palyaṉu#palyaṉi#|| <i>/*The man made a boomerang for you.*/</i>||	
+wati|ngku#-ngku#|nku#nyuntu# kaḻi palyaṉu#palyaṉi#||
+<i>/*Next example:*/</i>||
+wati|ngku#-ngku# palumpa#paluṟu# kaḻi palyaṉu#palyaṉi#|| <i>/*The man made a boomerang for him.*/</i>||	
+wati|ngku#-ngku#|ra#-ra# kaḻi palyaṉu#palyaṉi#||
+<i>/*Next example:*/</i>||
+wati|ngku#-ngku# ngalimpa kaḻi palyaṉu#palyaṉi#|| <i>/*The man made a boomerang for us two.*/</i>|| 
+wati|ngku#-ngku#|limpa#ngali# kaḻi palyaṉu#palyaṉi#||
+<i>/*Next example:*/</i>||
+wati|ngku#-ngku# nganampa#nganaṉa# kaḻi palyaṉu#palyaṉi#|| <i>/*The man made a boomerang for us all.*/</i>|| 
+wati|ngku#-ngku#|lampa#nganaṉa# kaḻi palyaṉu#palyaṉi#||
+<i>/*Next example:*/</i>||
+wati|ngku#-ngku# maḻu kuḻaṯa|ngka#-ngka# wakaṉu#wakaṉi#|| <i>/*The man speared a kangaroo with a spear.*/</i>|| 
+wati|ngku#-ngku# kaḻaya kaḻi|ngka#-ngka# rungkaṉu#rungkaṉi#|| <i>/*The man hit an emu with a boomerang.*/</i>|| 
+nyuntu maḻu nyaa|ngka#-ngka# wakaṉu#wakaṉi#?|| <i>/*What did you spear the 'roo with?*/</i>||	
+kuḻaṯa|ngka#-ngka#|ṉa#ngayulu# wakaṉu#wakaṉi#|| <i>/*I speared it with a spear.*/</i>||	
+<h2>/*E. Substitutions.*/||</h2>
+<i>/*You'll hear a sentence, followed by a cue.	
+Please use the cue to make a new sentence.	
+Off you go.*/</i>||	
+wati|ku#-ku# katja pikatjara||  palya||
+wati|ku#-ku# katja palya||  uṉṯalpa||	
+wati|ku#-ku# uṉṯalpa palya||  minyma|ku#-ku#||	
+minyma|ku#-ku# uṉṯalpa palya|| ngayuku#ngayulu#||	
+ngayuku#ngayulu# uṉṯalpa palya|| pikatjara||	
+ngayuku#ngayulu# uṉṯalpa pikatjara|| kuṯa||	
+ngayuku#ngayulu# kuṯa pikatjara|| nyuntumpa#nyuntu#||
+nyuntumpa#nyuntu# kuṯa pikatjara|| pukuḻpa||
+nyuntumpa#nyuntu# kuṯa pukuḻpa|| mama||	
+nyuntumpa#nyuntu# mama pukuḻpa|| paku|wiya||	
+nyuntumpa#nyuntu# mama paku|wiya|| palumpa#paluṟu#||	
+palumpa#paluṟu# mama paku|wiya|| kamuṟu||	
+palumpa#paluṟu# kamuṟu paku|wiya|| kangkuṟu||	
+palumpa#paluṟu# kangkuṟu paku|wiya|| waṟa||	
+palumpa#paluṟu# kangkuṟu waṟa|| ngalimpa||	
+ngalimpa kangkuṟu waṟa|| maḻanypa||	
+ngalimpa maḻanypa waṟa|| pikatjara||	
+ngalimpa maḻanypa pikatjara|| ngura|ngka#-ngka# nyinanyi#nyinanyi#||	
+ngalimpa maḻanypa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| ngayuku#ngayulu#||	
+ngayuku#ngayulu# maḻanypa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| nyuntumpa#nyuntu#||	
+nyuntumpa#nyuntu# maḻanypa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| palumpa#paluṟu#||	
+palumpa#paluṟu# maḻanypa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| ngura|kutu#-kutu# ananyi#ananyi#||	
+palumpa#paluṟu# maḻanypa ngura|kutu#-kutu# ananyi#ananyi#|| kuri||	
+palumpa#paluṟu# kuri ngura|kutu#-kutu# ananyi#ananyi#|| nyuntumpa#nyuntu#||	
+nyuntumpa#nyuntu# kuri ngura|kutu#-kutu# ananyi#ananyi#|| palumpa#paluṟu#||	
+palumpa#paluṟu# kuri ngura|kutu#-kutu# ananyi#ananyi#|| wati|ku#-ku#||	
+wati|ku#-ku# kuri ngura|kutu#-kutu# ananyi#ananyi#|| pikatjara||	
+wati|ku#-ku# kuri pikatjara|| katja||	
+wati|ku#-ku# katja pikatjara||	
+<i>/*Model 2*/</i>||
+<i>/*Four phase drill as usual:*/</i>||	
+wati|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati nyanga|ngku#-ngku#||	
+wati nyanga|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati pala|ngku#-ngku#||
+wati pala|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati nyara|ngku#-ngku#||	
+wati nyara|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati puḻka|ngku#-ngku#||	
+wati puḻka|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati waṟa|ngku#-ngku#||	
+wati waṟa|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati muṯumuṯu|ngku#-ngku#||
+wati muṯumuṯu|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati nyanga puḻka|ngku#-ngku#||	
+wati nyanga puḻka|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati pala puḻka|ngku#-ngku#||	
+wati pala puḻka|ngku#-ngku# maḻu wakaṉu#wakaṉi#|| wati nyara puḻka|ngku#-ngku#||	
+wati nyara puḻka|ngku#-ngku# maḻu wakaṉu#wakaṉi#||	
+<i>/*Model 3*/</i>||
+<i>/*Four Phase drill.*/</i>||	
+wati|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| ngayuku#ngayulu# kuṯa|ngku#-ngku#||	
+ngayuku#ngayulu# kuṯa|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| nyuntumpa#nyuntu# kuṯa|ngku#-ngku#||	
+nyuntumpa#nyuntu# kuṯa|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| palumpa#paluṟu# kuṯa|ngku#-ngku#||	
+palumpa#paluṟu# kuṯa|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| palumpa#paluṟu# mama|ngku#-ngku#||	
+palumpa#paluṟu# mama|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| ngalimpa mama|ngku#-ngku#||	
+ngalimpa mama|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| tjanampa#tjana# mama|ngku#-ngku#||	
+tjanampa#tjana# mama|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| nyurampa#nyura# mama|ngku#-ngku#||	
+nyurampa#nyura# mama|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| nyurampa#nyura# katja|ngku#-ngku#||	
+nyurampa#nyura# katja|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| ngayuku#ngayulu# katja|ngku#-ngku#||	
+ngayuku#ngayulu# katja|ngku#-ngku# kaḻi palyaṉi#palyaṉi#|| nyuntumpa#nyuntu# katja|ngku#-ngku#||	
+nyuntumpa#nyuntu# katja|ngku#-ngku# kaḻi palyaṉi#palyaṉi#||	
+<i>/*Model 4*/</i>||
+<i>/*Four phase drill. You will hear a sentence like:*/</i>||	
+wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| <i>/*The man is sitting in camp.*/</i>||	
+<i>/*You are asked to replace*/</i>|| "ngura|ngka#-ngka# nyinanyi#nyinanyi#"|| <i>/*with*/</i>||	
+maḻu nyanganyi#nyanganyi#|| <i>/*and make the appropriate change in	
+the subject, like this:*/</i>||	
+"wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#."||
+<i>/*Off you go.*/</i>||	
+wati ngura|ngka#-ngka# nyinanyi#nyinanyi#|| wati|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+minyma ngura|ngka#-ngka# nyinanyi#nyinanyi#|| minyma|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+tjitji ngura|ngka#-ngka# nyinanyi#nyinanyi#|| tjitji|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+aṉangu ngura|ngka#-ngka# nyinanyi#nyinanyi#|| aṉangu|ngku#-ngku# maḻu nyanganyi#nyanganyi#||
+papa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| papa|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+Ingkatjinya#Ingkatji# ngura|ngka#-ngka# nyinanyi#nyinanyi#|| Ingkatji#Ingkatji#|lu#-lu# maḻu nyanganyi#nyanganyi#||	
+ngayuku#ngayulu# kuṯa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| ngayuku#ngayulu# kuṯa|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+wati nyanga ngura|ngka#-ngka# nyinanyi#nyinanyi#|| wati nyanga|ngku#-ngku# maḻu nyanganyi#nyanganyi#||	
+<i>/*Now we give you a few examples of similar sentences in which	
+the subject phrase ends in a consonant. Just listen and	
+repeat.*/</i>||	
+Wintjinnga#Wintjin# ngura|ngka#-ngka# nyinanyi#nyinanyi#||	
+Wintjin#Wintjin#|tu#-tu# maḻu nyanganyi#nyanganyi#||	
+ngayuku#ngayulu# uṉṯalpa ngura|ngka#-ngka# nyinanyi#nyinanyi#||	
+ngayuku#ngayulu# uṉṯal#uṉṯalpa#|tu#-tu# maḻu nyanganyi#nyanganyi#||	
+ngayuku#ngayulu# maḻanypa ngura|ngka#-ngka# nyinanyi#nyinanyi#||	
+ngayuku#ngayulu# maḻany#maḻanypa#|tju#-tju# maḻu nyanganyi#nyanganyi#||	
+tjitji nyanganpa ngura|ngka#-ngka# nyinanyi#nyinanyi#|| 
+tjitji nyangan#nyanganpa#|tu#-tu# maḻu nyanganyi#nyanganyi#|| 
+<h2>/*F. Translate into the language.*/||</h2>
+<i>/*My wife is happy.*/</i>|| ngayuku#ngayulu# kuri pukuḻpa|| 
+<i>/*My father saw a roo.*/</i>|| ngayuku#ngayulu# mama|ngku#-ngku# maḻu nyangu#nyanganyi#|| 
+<i>/*My older brother saw an emu.*/</i>|| ngayuku#ngayulu# kuṯa|ngku#-ngku# kaḻaya nyangu#nyanganyi#|| 
+<i>/*My mother will sit in camp.*/</i>|| ngayuku#ngayulu# ngunytju ngura|ngka#-ngka# nyinaku#nyinanyi#|| 
+<i>/*My uncle hit an emu with a boomerang.*/</i>|| ngayuku#ngayulu# kamuṟu|ngku#-ngku# kaḻaya kaḻi|ngka#-ngka# rungkaṉu#rungkaṉi#|| 
+<i>/*My father is tall.*/</i>|| ngayuku#ngayulu# mama waṟa|| 
+<i>/*Is your mother sick?*/</i>|| nyuntumpa#nyuntu# ngunytju pikatjara?|| 
+<i>/*Their dog is small.*/</i>|| tjanampa#tjana# papa tjukutjuku|| 
+<i>/*The man made a boomerang for me.*/</i>|| wati|ngku#-ngku# ngayuku#ngayulu# kaḻi palyaṉu#palyaṉi#|| 
+<i>/*I made a boomerang for this child*/</i>|| ngayulu tjitji nyanga|ku#-ku# kaḻi palyaṉu#palyaṉi#|| 
+<i>/*The child's father is coming.*/</i>|| tjitji|ku#-ku# mama pitjanyi#pitjanyi#|| 
+<i>/*My older brother is sick.*/</i>|| ngayuku#ngayulu# kuṯa pikatjara|| 
+<i>/*You hit the euro with a boomerang!*/</i>|| nyuntu kanyaḻa kaḻi|ngka#-ngka# rungkala#rungkaṉi#!|| 
+<i>/*The man speared a roo with a spear.*/</i>|| wati|ngku#-ngku# maḻu kuḻaṯa|ngka#-ngka# wakaṉu#wakaṉi#||
+<i>/*(Short form)*/</i>|| 
+<i>/*I speared it with a spear.*/</i>|| kuḻaṯa|ngka#-ngka#|ṉa#ngayulu# wakaṉu#wakaṉi#|| 
+<i>/*(Short form)*/</i>|| 
+<i>/*The man made a boomerang for me.*/</i>|| wati|ngku#-ngku#|tju#ngayulu# kaḻi palyaṉu#palyaṉi#|| 
+<i>/*The man will make a carrying dish for the woman.*/</i>|| wati|ngku#-ngku# minyma|ku#-ku# piti palyalku#palyaṉi#|| 
+<i>/*(Short form)*/</i>|| 
+<i>/*The man will make a carrying dish for her.*/</i>|| wati|ngku#-ngku#|ra#-ra# piti palyalku#palyaṉi#|| 
+<i>/*End of Unit 15*/</i>||
+
+||<page><h1>/*Unit 16*/||</h1>
+<h2>/*1. Dialogue*/||</h2> 
+<i>/*You will now hear the English version of a dialogue, which you will	
+later hear in Pitjantjatjara.*/</i>||	
+<i>/*A.*/</i>|| <i>/*What are you two making?*/</i>||	
+<i>/*B.*/</i>|| <i>/*I am making a boomerang and my older brother is making a spear.*/</i>|| <i>/*And where are you two going?*/</i>||	
+<i>/*A.*/</i>|| <i>/*I am going to the mountain for meat, and my wife is going to the creek for vegetable food.*/</i>||	
+<i>/*B.*/</i>|| <i>/*When will you two come back?*/</i>||	
+<i>/*A.*/</i>|| <i>/*We'll come back today.*/</i>||	
+<i>/*Now listen to the same dialogue in Pitjantjatjara. Do not repeat.*/</i>||	
+<i>/*A.*/</i>|| nyupali nyaa palyaṉi#palyaṉi#?||	
+<i>/*B.*/</i>|| ngayulu kaḻi palyaṉi#palyaṉi#|| ka ngayuku#ngayulu# kuṯa|ngku#-ngku# kuḻaṯa palyaṉi#palyaṉi#||	
+palu nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?||	
+<i>/*A.*/</i>|| ngayulu apu|kutu#-kutu# ananyi#ananyi# kuka|ku#-ku#|| ka ngayuku#ngayulu# kuri karu|kutu#-kutu# ananyi#ananyi# mai|ku#-ku#.||
+<i>/*B.*/</i>|| nyupali yaalaṟa ngalya pitjaku#pitjanyi#?||
+<i>/*A.*/</i>|| kuwari|li#ngali# pitjanyi#pitjanyi#.||	
+<i>/*Now repeat the utterances of the dialogue one by one. Be careful	
+to imitate the pronuciation and the intonation exactly as the	
+speaker does it.*/</i>||
+<i>/*A.*/</i>|| nyupali nyaa palyaṉi#palyaṉi#?||	
+<i>/*B.*/</i>|| ngayulu kaḻi palyaṉi#palyaṉi#|| ka ngayuku#ngayulu# kuṯa|ngku#-ngku# kuḻaṯa palyaṉi#palyaṉi#||	
+palu nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?||	
+<i>/*A.*/</i>|| ngayulu apu|kutu#-kutu# ananyi#ananyi# kuka|ku#-ku#|| ka ngayuku#ngayulu# kuri karu|kutu#-kutu# ananyi#ananyi# mai|ku#-ku#.||
+<i>/*B.*/</i>|| nyupali yaalaṟa ngalya pitjaku#pitjanyi#?||
+<i>/*A.*/</i>|| kuwari|li#ngali# pitjanyi#pitjanyi#.||
+<i>/*Please listen to the dialogue once again. Do not repeat.*/</i>||
+<i>/*A.*/</i>|| nyupali nyaa palyaṉi#palyaṉi#?||	
+<i>/*B.*/</i>|| ngayulu kaḻi palyaṉi#palyaṉi#|| ka ngayuku#ngayulu# kuṯa|ngku#-ngku# kuḻaṯa palyaṉi#palyaṉi#||	
+palu nyupali yaaltji|kutu#-kutu# ananyi#ananyi#?||	
+<i>/*A.*/</i>|| ngayulu apu|kutu#-kutu# ananyi#ananyi# kuka|ku#-ku#|| ka ngayuku#ngayulu# kuri karu|kutu#-kutu# ananyi#ananyi# mai|ku#-ku#.||
+<i>/*B.*/</i>|| nyupali yaalaṟa ngalya pitjaku#pitjanyi#?||
+<i>/*A.*/</i>|| kuwari|li#ngali# pitjanyi#pitjanyi#.||
+<h2>/*2. Structural Drills*/||</h2> 	
+<i>/*Model 1.*/</i>||
+<i>/*Conjoined sentences. You will hear two sentences.	
+You are asked to join them, like this:*/</i>||	
+<i>/*You hear:*/</i>|| wati nyinanyi#nyinanyi#|| <i>/*and also*/</i>|| wati wangkanyi#wangkanyi#||	
+<i>/*You say:*/</i>|| wati nyinanyi#nyinanyi# munta wangkanyi#wangkanyi#.|| <i>/*Off you go.*/</i>||	
+wati nyinanyi#nyinanyi#|| wati wangkanyi#wangkanyi#||	
+wati nyinanyi#nyinanyi# munu wangkanyi#wangkanyi#||	
+tjitji pitjanyi#pitjanyi#|| tjitji ulanyi#ulanyi#||	
+tjitji pitjanyi#pitjanyi# munu ulanyi#ulanyi#.||	
+tjitji wirtjapakaṉu#wirtjapakaṉi#|| tjitji punkaṉu#punkaṉi#||	
+tjitji wirtjapakaṉu#wirtjapakaṉi# munu punkaṉu#punkaṉi#.||	
+ngayulu kuḻaṯa palyaṉu#palyaṉi#|| ngayulu maḻu wakaṉu#wakaṉi#||	
+ngayulu kuḻaṯa palyaṉu#palyaṉi# munu|ṉa#ngayulu# maḻu wakaṉu#wakaṉi#||
+wati Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# anu#ananyi#|| wati|ngku#-ngku# Ingkatjinya#Ingkatji# nyangu#nyanganyi#||	
+wati Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# anu#ananyi# munu Ingkatjinya#Ingkatji# nyangu#nyanganyi#||
+ngali Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# anu#ananyi#|| ngali Pitjantjatjara#Pitjantjatjara# wangkangu#wangkanyi#||	
+ngali Aṉapala#Aṉapala#|la#-la#|kutu#-kutu# anu#ananyi# munu|li#ngali# Pitjantjatjara#Pitjantjatjara# wangkangu#wangkanyi#.||	
+<i>/*Model 2*/</i>||
+<i>/*In the last drill you were asked to join sentences	
+having the same subject. In this drill you will hear	
+two sentences with different subjects. Join them	
+together, like this:*/</i>||	
+<i>/*You'll hear:*/</i>|| wati nyinanyi#nyinanyi#|| <i>/*and also:*/</i>|| minyma ngaṟanyi#ngaṟanyi#||	
+<i>/*You say:*/</i>|| wati nyinanyi#nyinanyi# ka minyma ngaṟanyi#ngaṟanyi#.||	
+<i>/*Off you go.*/</i>||	
+wati nyinanyi#nyinanyi#|| minyma ngaṟanyi#ngaṟanyi#||	
+wati nyinanyi#nyinanyi# ka minyma ngaṟanyi#ngaṟanyi#.||	
+minyma wangkanyi#wangkanyi#|| tjitji ulanyi#ulanyi#||	
+minyma wangkanyi#wangkanyi# ka tjitji ulanyi#ulanyi#||	
+wati kuka|ku#-ku# anu#ananyi#|| minyma mai|ku#-ku# anu#ananyi#||	
+wati kuka|ku#-ku# anu#ananyi# ka minyma mai|ku#-ku# anu#ananyi#.||	
+ngayulu maḻu wakaṉu#wakaṉi#|| ngayuku#ngayulu# maḻany#maḻanypa#tju kanyaḻa	wakaṉu#wakaṉi#||	
+ngayulu maḻu wakaṉu#wakaṉi# ka ngayuku#ngayulu# maḻany#maḻanypa#tju kanyaḻa wakaṉu#wakaṉi#.||	
+ngayulu ngura|ngka#-ngka# nyinaku#nyinanyi#|| ngayuku#ngayulu# kuri mai|ku#-ku# ankuku#ananyi#||
+ngayulu ngura|ngka#-ngka# nyinaku#nyinanyi# ka ngayuku#ngayulu# kuri mai|ku#-ku# ankuku#ananyi#||	
+<i>/*Model 3*/</i>||
+<i>/*In the following you will hear two sentences	
+having different subjects. The object of the	
+first sentence will be the same as the subject	
+of the second. Join them using short forms of	
+the pronouns, like this:*/</i>||	
+<i>/*You'll hear:*/</i>|| wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi#|| <i>/*(the man hit me)*/</i>|| <i>/*and also*/</i>|| ngayulu punkaṉu#punkaṉi#|| <i>/*(I fell over)*/</i>||
+<i>/*You say:*/</i>|| wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi# ka|ṉa#ngayulu# punkaṉu#punkaṉi#|| <i>/*(the man hit me and I fell over)*/</i>||	
+<i>/*Off you go:*/</i>||	
+wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi#|| ngayulu punkaṉu#punkaṉi#||	
+wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi# ka|ṉa#ngayulu# punkaṉu#punkaṉi#||
+wati|ngku#-ngku# nyuntunya#nyuntu# pungu#punganyi#|| nyuntu ulangu#ulanyi#||	
+wati|ngku#-ngku# nyuntunya#nyuntu# pungu#punganyi# ka|n#nyuntu# ulangu#ulanyi#.||	
+wati|ngku#-ngku# tjitji pungu#punganyi#|| tjitji ulangu#ulanyi#||
+wati|ngku#-ngku# tjitji pungu#punganyi# ka ulangu#ulanyi#.||	
+ngayulu maḻu nyangu#nyanganyi#|| maḻu wirtjapakaṉu#wirtjapakaṉi#||
+ngayulu maḻu nyangu#nyanganyi# ka wirtjapakaṉu#wirtjapakaṉi#.||	
+tjana ngalinya#ngali# pungu#punganyi#|| ngali punkaṉu#punkaṉi#||	
+tjana ngalinya#ngali# pungu#punganyi# ka|li#ngali# punkaṉu#punkaṉi#.||	
+tjana nganaṉanya#nganaṉa# pungu#punganyi#|| nganaṉa punkaṉu#punkaṉi#||	
+tjana nganaṉanya#nganaṉa# pungu#punganyi# ka|la#nganaṉa# punkaṉu#punkaṉi#.||	
+<i>/*Model 4.*/</i>||
+<i>/*You will hear a question, give an appropriate answer	
+using the short forms of the pronouns. Like this:*/</i>||	
+<i>/*You hear:*/</i>|| nyuntu yaalaṟa pitjangu#pitjanyi#?||	
+<i>/*(When did you come?)*/</i>||	
+<i>/*You say:*/</i>|| kuwari|ṉa#ngayulu# pitjangu#pitjanyi#.|| <i>/*(I came today.)*/</i>||	
+<i>/*Off you go:*/</i>||	
+nyuntu yaalaṟa pitjangu#pitjanyi#?||	
+kuwari|ṉa#ngayulu# pitjangu#pitjanyi#||	
+nyupali yaalaṟa pitjangu#pitjanyi#?||	
+kuwari|li#ngali# pitjangu#pitjanyi#.||	
+nyura yaalaṟa pitjangu#pitjanyi#?||	
+kuwari|la#nganaṉa# pitjangu#pitjanyi#.||	
+tjana yaalaṟa pitjangu#pitjanyi#?||	
+kuwari|ya#tjana# pitjangu#pitjanyi#.||	
+paluṟu yaalaṟa pitjangu#pitjanyi#?||	
+kuwari pitjangu#pitjanyi#.||	
+<i>/*Model 5.*/</i>||
+<i>/*Random substitutions. You will hear a sentence and a	
+cue. Use the cue to form a new sentence. Four phase	
+drill as usual. Off you go.*/</i>||	
+ngayulu kaḻi palyaṉi#palyaṉi#|| kuḻaṯa||	
+ngayulu kuḻaṯa palyaṉi#palyaṉi#|| piti||	
+ngayulu piti palyaṉi#palyaṉi#|| wati|ngku#-ngku#||	
+wati|ngku#-ngku# piti palyaṉi#palyaṉi#|| ngayuku#ngayulu# maḻany#maḻanypa#tju||	
+ngayuku#ngayulu# maḻany#maḻanypa#tju piti palyaṉi#palyaṉi#|| nyuntumpa#nyuntu# kuṯa|ngku#-ngku#||	
+nyuntumpa#nyuntu# kuṯa|ngku#-ngku# piti palyaṉi#palyaṉi#|| nganampa#nganaṉa# mama|ngku#-ngku#||	
+nganampa#nganaṉa# mama|ngku#-ngku# piti palyaṉi#palyaṉi#|| wiltja||	
+nganampa#nganaṉa# mama|ngku#-ngku# wiltja palyaṉi#palyaṉi#|| ngayulu||	
+ngayulu wiltja palyaṉi#palyaṉi#|| nyanganyi#nyanganyi#||	
+ngayulu wiltja nyanganyi#nyanganyi#|| maḻu||	
+ngayulu maḻu nyanganyi#nyanganyi#|| kanyaḻa||	
+ngayulu kanyaḻa nyanganyi#nyanganyi#|| wati|ngku#-ngku#||	
+wati|ngku#-ngku# kanyaḻa nyanganyi#nyanganyi#|| nyangu#nyanganyi#||	
+wati|ngku#-ngku# kanyaḻa nyangu#nyanganyi#|| wakaṉu#wakaṉi#||	
+wati|ngku#-ngku# kanyaḻa wakaṉu#wakaṉi#|| aṉangu|ngku#-ngku#||	
+aṉangu|ngku#-ngku# kanyaḻa wakaṉu#wakaṉi#|| paluṟu||	
+paluṟu kanyaḻa wakaṉu#wakaṉi#|| tjana||	
+tjana kanyaḻa wakaṉu#wakaṉi#|| pula||	
+pula kanyaḻa wakaṉu#wakaṉi#|| nyangu#nyanganyi#||	
+pula kanyaḻa nyangu#nyanganyi#|| wati|ngku#-ngku#||
+wati|ngku#-ngku# kanyaḻa nyangu#nyanganyi#|| Ingkatji#Ingkatji#|lu#-lu#||	
+Ingkatji#Ingkatji#|lu#-lu# kanyaḻa nyangu#nyanganyi#|| Wintjinnga#Wintjin#||	
+Ingkatji#Ingkatji#|lu#-lu# Wintjinnga#Wintjin# nyangu#nyanganyi#|| tjitji|ngku#-ngku#||	
+tjitji|ngku#-ngku# Wintjinnga#Wintjin# nyangu#nyanganyi#|| Ingkatjinya#Ingkatji#||	
+tjitji|ngku#-ngku# Ingkatjinya#Ingkatji# nyangu#nyanganyi#||
+<i>/*Model 6.*/</i>||
+<i>/*Review of short forms — subject. You will hear a	
+sentence using the single pronoun subject form.	
+Convert this to the short form, like this:*/</i>||	
+<i>/*You will hear:*/</i>|| ngayulu maḻu nyangu#nyanganyi#||	
+<i>/*You say:*/</i>|| maḻu|ṉa#ngayulu# nyangu#nyanganyi#||
+<i>/*Off you go.*/</i>||	
+ngayulu maḻu nyangu#nyanganyi#||	
+maḻu|ṉa#ngayulu# nyangu#nyanganyi#.||
+nyuntu kaḻi palyaṉu#palyaṉi#||
+kaḻi|n#nyuntu# palyaṉu#palyaṉi#.||	
+paluṟu kanyaḻa wakaṉu#wakaṉi#||
+kanyaḻa wakaṉu#wakaṉi#.||	
+ngali kuka|ku#-ku# ananyi#ananyi#||	
+kuka|ku#-ku#|li#ngali# ananyi#ananyi#||	
+nganaṉa kuka|ku#-ku# ananyi#ananyi#||
+kuka|ku#-ku#|la#nganaṉa# ananyi#ananyi#.||	
+tjana ngura|kutu#-kutu# ananyi#ananyi#||	
+ngura|kutu#-kutu#|ya#tjana# ananyi#ananyi#.||
+<i>/*Model 7.*/</i>||
+<i>/*Review of short forms - object. You will hear a	
+sentence using the single pronoun object form.	
+Convert this to the short form. Like this:*/</i>||	
+<i>/*You will hear:*/</i>|| wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi#||	
+<i>/*You say:*/</i>|| wati|ngku#-ngku#|ṉi#ngayulu# pungu#punganyi#||	
+<i>/*Off you go.*/</i>||	
+wati|ngku#-ngku# ngayunya#ngayulu# pungu#punganyi#||	
+wati|ngku#-ngku#|ṉi#ngayulu# pungu#punganyi#||	
+wati|ngku#-ngku# nyuntunya#nyuntu# nyanganyi#nyanganyi#||
+wati|ngku#-ngku#|nta#nyuntu# nyanganyi#nyanganyi#||	
+wati|ngku#-ngku# palunya#paluṟu# wakaṉu#wakaṉi#||	
+wati|ngku#-ngku# wakaṉu#wakaṉi#||	
+minyma|ngku#-ngku# ngalinya#ngali# nyanganyi#nyanganyi#||
+minyma|ngku#-ngku#|linya#ngali# nyanganyi#nyanganyi#||	
+minyma|ngku#-ngku# nganaṉanya#nganaṉa# nyanganyi#nyanganyi#||	
+minyma|ngku#-ngku#|lanya#nganaṉa# nyanganyi#nyanganyi#||
+<i>/*Model 8.*/</i>||
+<i>/*Review of short forms — dative. You will hear a	
+sentence using the single pronoun dative form.	
+Convert to the short form like this:*/</i>||	
+<i>/*You will hear:*/</i>|| wati|ngku#-ngku# ngayuku#ngayulu# kaḻi palyaṉu#palyaṉi#||	
+<i>/*You say:*/</i>|| wati|ngku#-ngku#|tju#ngayulu# kaḻi palyaṉu#palyaṉi#||	
+<i>/*Off you go.*/</i>||	
+wati|ngku#-ngku# ngayuku#ngayulu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|tju#ngayulu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# nyuntumpa#nyuntu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|nku#nyuntu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# palumpa#paluṟu# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|ra#-ra# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# ngalimpa kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|limpa#ngali# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku# nganampa#nganaṉa# kaḻi palyaṉu#palyaṉi#||	
+wati|ngku#-ngku#|lampa#nganaṉa# kaḻi palyaṉu#palyaṉi#||
+
+<h2>/*3. Translate into the language.*/||</h2> 	
+<i>/*The man is making a boomerang for the child.*/</i>|| wati|ngku#-ngku# tjitji|ku#-ku# kaḻi palyaṉi#palyaṉi#||
+<i>/*Wintjin is making a spear for my younger brother.*/</i>|| Wintjin#Wintjin#|tu#-tu# ngayuku#ngayulu# maḻany#maḻanypa#|ku#-ku# kuḻaṯa palyaṉi#palyaṉi#||
+<i>/*My younger brother is sick and tired*/</i>|| ngayuku#ngayulu# maḻanypa pikatjara munu paku.||	
+<i>/*My younger brother is sick and my older brother is well*/</i>|| ngayuku#ngayulu# maḻanypa pikatjara ka ngayuku#ngayulu# kuṯa palya||	
+<i>/*My father made a spear and speared a 'roo.*/</i>|| ngayuku#ngayulu# mama|ngku#-ngku# kuḻaṯa palyaṉu#palyaṉi# munu maḻu wakaṉu#wakaṉi#||	
+<i>/*My father speared a 'roo and my son speared an emu.*/</i>|| ngayuku#ngayulu# mama|ngku#-ngku# maḻu wakaṉu#wakaṉi# ka ngayuku#ngayulu# katja|ngku#-ngku# kaḻaya wakaṉu#wakaṉi#||	
+<i>/*In the following sentences, use short forms:*/</i>||	
+<i>/*We two are going to camp.*/</i>|| ngura|kutu#-kutu#|li#ngali# ananyi#ananyi#||	
+<i>/*My younger brother hit me.*/</i>|| ngayuku#ngayulu# maḻany#maḻanypa#|tju#-tju#|ṉi#ngayulu# pungu#punganyi#||	
+<i>/*The kangaroo sees you.*/</i>|| maḻu|ngku#-ngku#|nta#nyuntu# nyanganyi#nyanganyi#||	
+<i>/*My father made a spear for me.*/</i>|| ngayuku#ngayulu# mama|ngku#-ngku#|tju#ngayulu# kuḻaṯa palyaṉu#palyaṉi#||	
+<i>/*THE END*/</i>||
+

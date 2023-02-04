@@ -40,7 +40,7 @@ def make_play_part_file(SplitFile, CharacterNames, RecordingStringPartFile, Para
         ( Raw, Cleaned ) = Chunk[:2]
         Type = segment_type(Raw, Cleaned, CharacterNames)
         #lara_utils.print_and_flush(f'--- "{Type}" = segment_type("{Raw}", "{Cleaned}", CharacterNames)')
-        Context = lara_audio.text_so_far_to_context(TextSoFar)
+        Context = lara_audio.text_so_far_to_context(TextSoFar, Params)
         if not Type:
             lara_utils.print_and_flush(f'*** Error: unable to identify type of segment: "{Raw}"')
             return False
