@@ -346,33 +346,40 @@ def submit_g4(option=0, answer=0, default_value=0,g_number=0,wins=0):
 
 To run this project, you will need to install the requirement file as it describe in install section
 
+## gifs
 
+* Story Selecting Page
+![App Screenshot](https://i.imgur.com/9HbKrbL.gif)
+
+
+* Story Selecting Page
+![App Screenshot](https://i.imgur.com/O4cN7Ed.gif)
 ## Screenshots
 
 * Story Selecting Page
-* ![App Screenshot](https://i.ibb.co/sFdyKJQ/1.jpg)
+![App Screenshot](https://i.imgur.com/9HbKrbL.gif)
 
 * Matching word to voice game
-* ![App Screenshot](https://i.ibb.co/fxghDxJ/2.jpg)
+![App Screenshot](https://i.ibb.co/fxghDxJ/2.jpg)
 
 
 * Filling 2 word to voice game
-* ![App Screenshot](https://i.ibb.co/7VQMxS0/3.jpg)
+![App Screenshot](https://i.ibb.co/7VQMxS0/3.jpg)
 
 * login page
-* ![App Screenshot](https://i.ibb.co/wSYjwHy/4.jpg)
+![App Screenshot](https://i.ibb.co/wSYjwHy/4.jpg)
 
 * Registeration
-* ![App Screenshot](https://i.ibb.co/xJJ84J3/5.jpg)
+![App Screenshot](https://i.ibb.co/xJJ84J3/5.jpg)
 
 * Bad answer reaction inside games
-* ![App Screenshot](https://i.ibb.co/zPkzsdm/6.jpg)
+![App Screenshot](https://i.ibb.co/zPkzsdm/6.jpg)
 
 * Right answer reaction inside games
-* ![App Screenshot](https://i.ibb.co/tJfnRnV/7.jpg)
+![App Screenshot](https://i.ibb.co/tJfnRnV/7.jpg)
 
 * Dashboard and level progression with badges
-* ![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
+![App Screenshot](https://i.ibb.co/V9L3KSL/8.jpg)
 
 ## Lara Game tree files project
 ```bash
