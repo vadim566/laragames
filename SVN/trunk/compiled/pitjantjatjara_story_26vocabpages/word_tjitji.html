@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>tjitji</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_26_1.html#pitjantjatjara_story_26_page_1_segment_3" target="main_frame"><b>&larr;</b></a>  <a href="word_minyma.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_1><span class="sound" title="woman" onmouseover="playSound('./multimedia/extracted_file_ch19_4844.mp3');">Minyma</span></span></a> <a href="word_pampa.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_3><span class="sound" title="old woman" onmouseover="playSound('./multimedia/extracted_file_ch26_5936.mp3');">pampa</span></span></a> <a href="word_kunyu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_5><span class="sound" title="it is said (reported speech)" onmouseover="playSound('./multimedia/extracted_file_ch20_4902.mp3');">kunyu</span></span></a> <a href="word_nyinanyi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_7><span class="sound" title="was sitting" onmouseover="playSound('./multimedia/extracted_file_ch17_4185.mp3');">nyinangi</span></span></a> <a href="word_kami.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_9><span class="sound" title="grandmother" onmouseover="playSound('./multimedia/extracted_file_ch26_5928.mp3');">kami</span></span></a>, <a href="word_ka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_11><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4486.mp3');">ka</span></span></a> <span class="red"><span class="sound" title="child " onmouseover="playSound('./multimedia/extracted_file_ch19_4840.mp3');">tjitji</span></span> <a href="word_nyiiṉka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_15><span class="sound" title="adolescent boy" onmouseover="playSound('./multimedia/extracted_file_ch26_5930.mp3');">nyiiṉka</span></span></a> <a href="word_patu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_17><span class="sound" title="separate, apart" onmouseover="playSound('./multimedia/extracted_file_word_patu.mp3');">patu</span></span></a> <a href="word_nyinanyi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_19><span class="sound" title="was sitting" onmouseover="playSound('./multimedia/extracted_file_ch17_4185.mp3');">nyinangi</span></span></a>, <a href="word_paluṟu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_21><span class="sound" title="his/hers/its, for him/her/it" onmouseover="playSound('./multimedia/extracted_file_ch15_3736.mp3');">palumpa</span></span></a> <a href="word_pakaḻi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_3_word_23><span class="sound" title="grandson" onmouseover="playSound('./multimedia/extracted_file_ch26_5932.mp3');">pakaḻi</span></span></a>. <span onclick="playSound('./multimedia/extracted_file_ch26_5961.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

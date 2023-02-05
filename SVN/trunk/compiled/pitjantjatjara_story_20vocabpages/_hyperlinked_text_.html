@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>LARA &ndash; pitjantjatjara_story_20</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+        function jumpToHash() {
+            var mainHash = window.location.hash ;
+            // Format of the main hash: "#<pageno>[/<segmentno>]"
+            var match = mainHash && mainHash.match( "^#([1-9][0-9]*)(/([1-9][0-9]*))?$" ) ;
+            if ( match ) {
+                var newFrameSrc = "_main_text_" + match[1] + "_.html" ;
+                if ( match[3] ) newFrameSrc = newFrameSrc + "#page_" + match[1] + "_segment_" + match[3] ;
+                $("#main_frame").attr( "src", newFrameSrc ) ;
+            }
+        }
+	    $(document).ready(function() {
+            var thediv = document.getElementById( "aux_frame_div" ) ; // Find the div
+            document.body.appendChild(thediv); // Move it to the end of the body
+            thediv.style.display = "block"; // and make it visible
+            $(window).on( 'hashchange', function( e ) {
+                jumpToHash() ;
+            });
+            jumpToHash() ;
+        });
+    
+</script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.2/jquery.maphilight.js'></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.map').maphilight({ strokeColor: '00ff00' });    });</script>
+</head>
+<body class="noscroll">
+<div id="aux_frame_div" style="display:none" class="split aux_frame"><iframe id="aux_frame" name="aux_frame" frameborder="0" width="100%" height="100%"></iframe></div>
+
+<div class="split main_frame"><iframe id="main_frame" src="_main_text_pitjantjatjara_story_20_1.html" id="main_frame" name="main_frame" frameborder="0" width="100%" height="100%"></iframe></div>
+</body>
+</html>

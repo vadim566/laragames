@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>Tjalyiritja</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_18_1.html#pitjantjatjara_story_18_page_1_segment_5" target="main_frame"><b>&larr;</b></a>  <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_1><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">Munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_2><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_ngula.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_4><span class="sound" title="later" onmouseover="playSound('./multimedia/extracted_file_ch18_4478.mp3');">ngula</span></span></a> <a href="word_pakaṉi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_6><span class="sound" title="rose, got up" onmouseover="playSound('./multimedia/extracted_file_ch18_4473.mp3');">pakaṉu</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_8><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_9><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_tangkiyi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_11><span class="sound" title="donkey" onmouseover="playSound('./multimedia/extracted_file_word_tangkiyi.mp3');">tangkiyi</span></span></a><a href="word_-ngka.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_12><span class="sound" title="LOC" onmouseover="playSound('./multimedia/extracted_file_word_ngka.mp3');">ngka</span></span></a> <a href="word_piṟuku.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_14><span class="sound" title="again" onmouseover="playSound('./multimedia/extracted_file_ch18_4459.mp3');">piṟuku</span></span></a> <a href="word_tatiṉi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_16><span class="sound" title="climbed, rode, mounted" onmouseover="playSound('./multimedia/extracted_file_ch18_4471.mp3');">tatiṉu</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_18><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_19><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_ananyi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_21><span class="sound" title="went" onmouseover="playSound('./multimedia/extracted_file_ch18_4480.mp3');">anu</span></span></a> <a href="word_ngura.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_23><span class="sound" title="camp,home" onmouseover="playSound('./multimedia/extracted_file_ch25_5849.mp3');">ngura</span></span></a> <span class="red"><span class="sound" title="Tjalyiritja" onmouseover="playSound('./multimedia/extracted_file_word_tjalyiritja.mp3');">Tjalyiritja</span></span><a href="word_-la.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_26><span class="sound" title="LOC" onmouseover="playSound('./multimedia/extracted_file_ch6_1102_la.mp3');">la</span></span></a><a href="word_-kutu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_27><span class="sound" title="TO" onmouseover="playSound('./multimedia/extracted_file_word_kutu.mp3');">kutu</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_29><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_30><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_rapita.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_32><span class="sound" title="rabbit" onmouseover="playSound('./multimedia/extracted_file_word_rapita.mp3');">rapita</span></span></a> <a href="word_tjawaṉi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_5_word_34><span class="sound" title="dug" onmouseover="playSound('./multimedia/extracted_file_ch18_4467.mp3');">tjawaṉu</span></span></a>. <span onclick="playSound('./multimedia/extracted_file_ch18_4503.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>ikaringanyi</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_18_1.html#pitjantjatjara_story_18_page_1_segment_4" target="main_frame"><b>&larr;</b></a>  <a href="word_panya.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_1><span class="sound" title="the one previously referred to" onmouseover="playSound('./multimedia/extracted_file_ch18_4455.mp3');">Panya</span></span></a> <a href="word_nyara.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_3><span class="sound" title="that (far)" onmouseover="playSound('./multimedia/extracted_file_ch18_4476.mp3');">nyara</span></span></a> <a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_5><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch18_4488.mp3');">tjana</span></span></a> <a href="word_uṟu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_7><span class="sound" title="ground water" onmouseover="playSound('./multimedia/extracted_file_ch25_5851.mp3');">uṟu</span></span></a><a href="word_-ku.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_8><span class="sound" title="POSS/FOR" onmouseover="playSound('./multimedia/extracted_file_word_ku.mp3');">ku</span></span></a> <a href="word_mukuringanyi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_10><span class="sound" title="like, want, enjoy, love" onmouseover="playSound('./multimedia/extracted_file_ch18_4465.mp3');">mukuringkupai</span></span></a>, <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_12><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_13><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_inkanyi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_15><span class="sound" title="was singing/dancing/playing" onmouseover="playSound('./multimedia/extracted_file_ch27_6186.mp3');">inkangi</span></span></a> <a href="word_uṟu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_17><span class="sound" title="ground water" onmouseover="playSound('./multimedia/extracted_file_ch25_5851.mp3');">uṟu</span></span></a> <a href="word_wiṟu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_19><span class="sound" title="good, nice" onmouseover="playSound('./multimedia/extracted_file_ch18_4451.mp3');">wiṟu</span></span></a><a href="word_-ngka.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_20><span class="sound" title="LOC" onmouseover="playSound('./multimedia/extracted_file_word_ngka.mp3');">ngka</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_22><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_23><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_wararakatinyi.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_25><span class="sound" title="jumped" onmouseover="playSound('./multimedia/extracted_file_word_wararakatingi.mp3');">wararakatingi</span></span></a> <a href="word_apu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_27><span class="sound" title="stone, mountain" onmouseover="playSound('./multimedia/extracted_file_ch14_3222.mp3');">apu</span></span></a> <a href="word_katu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_29><span class="sound" title="top, high, loud" onmouseover="playSound('./multimedia/extracted_file_ch18_4457.mp3');">katu</span></span></a><a href="word_-nguṟu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_30><span class="sound" title="FROM" onmouseover="playSound('./multimedia/extracted_file_word_nguṟu.mp3');">nguṟu</span></span></a>, <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_32><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_18_page_1_segment_4_word_33><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <span class="red"><span class="sound" title="laughed" onmouseover="playSound('./multimedia/extracted_file_word_ikaringangi.mp3');">ikaringangi</span></span>. <span onclick="playSound('./multimedia/extracted_file_ch18_4502.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

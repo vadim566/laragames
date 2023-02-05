@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>wankaṯu</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_24_1.html#pitjantjatjara_story_24_page_1_segment_8" target="main_frame"><b>&larr;</b></a>  <a href="word_ka.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_1><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4486.mp3');">Ka</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_2><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_kunyu.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_4><span class="sound" title="it is said (reported speech)" onmouseover="playSound('./multimedia/extracted_file_ch20_4902.mp3');">kunyu</span></span></a> <a href="word_puḻiri.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_6><span class="sound" title="granddaughter" onmouseover="playSound('./multimedia/extracted_file_word_puḻiri.mp3');">puḻiri</span></span></a> <a href="word_maṉkur.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_8><span class="sound" title="three" onmouseover="playSound('./multimedia/extracted_file_ch24_5560.mp3');">maṉkurpa</span></span></a> <a href="word_pakaṉi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_10><span class="sound" title="having got up, while getting up" onmouseover="playSound('./multimedia/extracted_file_ch19_4589.mp3');">pakaṟa</span></span></a> <a href="word_wirtjapakaṉi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_12><span class="sound" title="ran" onmouseover="playSound('./multimedia/extracted_file_ch17_4401.mp3');">wirtjapakaṉu</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_14><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_15><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_kunyu.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_17><span class="sound" title="it is said (reported speech)" onmouseover="playSound('./multimedia/extracted_file_ch20_4902.mp3');">kunyu</span></span></a> <a href="word_manyirka.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_19><span class="sound" title="hand" onmouseover="playSound('./multimedia/extracted_file_word_manyirka.mp3');">manyirka</span></span></a> <a href="word_ananyi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_21><span class="sound" title="having gone, while going" onmouseover="playSound('./multimedia/extracted_file_ch19_4776.mp3');">ankula</span></span></a> <a href="word_kutju.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_23><span class="sound" title="one, only" onmouseover="playSound('./multimedia/extracted_file_ch24_5558.mp3');">kutju</span></span></a> <a href="word_puḻkaṟa.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_25><span class="sound" title="a lot" onmouseover="playSound('./multimedia/extracted_file_word_puḻkaṟa.mp3');">puḻkaṟa</span></span></a> <a href="word_urinyi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_27><span class="sound" title="having moved" onmouseover="playSound('./multimedia/extracted_file_ch22_5289.mp3');">urinyangka</span></span></a> <a href="word_nyanganyi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_29><span class="sound" title="saw" onmouseover="playSound('./multimedia/extracted_file_ch19_4804.mp3');">nyangu</span></span></a> <a href="word_munu.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_31><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4484.mp3');">munu</span></span></a><a href="word_tjana.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_32><span class="sound" title="they (more than two)" onmouseover="playSound('./multimedia/extracted_file_ch7_1393_ya.mp3');">ya</span></span></a> <a href="word_puṉu.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_34><span class="sound" title="stick, tree, wood" onmouseover="playSound('./multimedia/extracted_file_ch19_4808.mp3');">puṉu</span></span></a> <a href="word_mantjiṉi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_36><span class="sound" title="having got " onmouseover="playSound('./multimedia/extracted_file_word_mantjira.mp3');">mantjira</span></span></a> <a href="word_waṉinyi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_38><span class="sound" title="threw away" onmouseover="playSound('./multimedia/extracted_file_word_waṉi-waṉingu.mp3');">waṉi-waṉingu</span></span></a> <a href="word_ka.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_40><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4486.mp3');">ka</span></span></a> <span class="red"><span class="sound" title="(?)" onmouseover="playSound('./multimedia/extracted_file_word_wankaṯu.mp3');">wankaṯu</span></span> <a href="word_pupanyi.html" target="aux_frame"><span id=pitjantjatjara_story_24_page_1_segment_8_word_44><span class="sound" title="was leaning down or bending" onmouseover="playSound('./multimedia/extracted_file_ch24_5586.mp3');">pupangi</span></span></a>. <span onclick="playSound('./multimedia/extracted_file_ch24_5598.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

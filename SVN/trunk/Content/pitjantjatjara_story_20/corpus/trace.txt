@@ -1,0 +1,13 @@
+--- Making export zipfile for local_config_story_20.json
+--- Copying corpus file: $LARA/Content/pitjantjatjara_course/corpus/story_20.txt
+--- File copied to C:/cygwin64/home/sf/callector-lara-svn/trunk/tmp/lara_tmp_dir_8272108198118129/pitjantjatjara_story_20/corpus/story_20.txt
+--- Copying segment translation spreadsheet: "$LARA/Content/pitjantjatjara_course/translations/pitjantjatjara_english.csv"
+*** Warning: file not found: $LARA/Content/pitjantjatjara_course/translations/pitjantjatjara_english.csv
+--- Processing word translation spreadsheet "$LARA/Content/pitjantjatjara_course/translations/type_pitjantjatjara_english.csv"
+--- Copying word token translation spreadsheet: "$LARA/Content/pitjantjatjara_course/translations/pitjantjatjara_english_word_translations_tokens.csv"
+--- File copied to C:/cygwin64/home/sf/callector-lara-svn/trunk/tmp/lara_tmp_dir_8272108198118129/pitjantjatjara_story_20/translations/pitjantjatjara_english_word_translations_tokens.csv
+--- Processing word audio directory "$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed"
+--- Copying segment audio directory (5475 files) "$LARA/Content/pitjantjatjara_course/audio/pitjantjatjara_voice_trimmed"
+--- Copying image directory (0 files) "$LARA/Content/pitjantjatjara_course/images"
+--- Creating config file
+--- Copying CSS and JS files (1 files)

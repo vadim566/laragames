@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>wiyarinyi</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_26_1.html#pitjantjatjara_story_26_page_1_segment_5" target="main_frame"><b>&larr;</b></a>  <a href="word_ka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_1><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4486.mp3');">Ka</span></span></a> <a href="word_kunyu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_3><span class="sound" title="it is said (reported speech)" onmouseover="playSound('./multimedia/extracted_file_ch20_4902.mp3');">kunyu</span></span></a> <a href="word_kami.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_5><span class="sound" title="grandmother" onmouseover="playSound('./multimedia/extracted_file_ch26_5928.mp3');">kami</span></span></a><a href="word_-ngku.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_6><span class="sound" title="ERG" onmouseover="playSound('./multimedia/extracted_file_word_ngku.mp3');">ngku</span></span></a> <a href="word_waṟu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_8><span class="sound" title="fire, wood, hot" onmouseover="playSound('./multimedia/extracted_file_ch23_5476.mp3');">waṟu</span></span></a> <a href="word_waṉinyi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_10><span class="sound" title="threw away" onmouseover="playSound('./multimedia/extracted_file_ch24_5584.mp3');">waṉingu</span></span></a> <a href="word_uṟu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_12><span class="sound" title="ground water" onmouseover="playSound('./multimedia/extracted_file_ch25_5851.mp3');">uṟu</span></span></a><a href="word_-ngka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_13><span class="sound" title="LOC" onmouseover="playSound('./multimedia/extracted_file_word_ngka.mp3');">ngka</span></span></a> <a href="word_ka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_15><span class="sound" title="and" onmouseover="playSound('./multimedia/extracted_file_ch18_4486.mp3');">ka</span></span></a> <a href="word_waṟu.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_17><span class="sound" title="fire, wood, hot" onmouseover="playSound('./multimedia/extracted_file_ch23_5476.mp3');">waṟu</span></span></a> <a href="word_ilunyi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_5_word_19><span class="sound" title="having died (of fire) having gone out" onmouseover="playSound('./multimedia/extracted_file_word_ilura.mp3');">ilura</span></span></a> <span class="red"><span class="sound" title="became finished, ended, died" onmouseover="playSound('./multimedia/extracted_file_ch22_5277.mp3');">wiyaringu</span></span>. <span onclick="playSound('./multimedia/extracted_file_ch26_5963.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="_styles_.css" media="screen" /><link rel="stylesheet" type="text/css" href="_custom_styles_.css" media="screen" />
+<script language="javascript" type="text/javascript">
+
+    function playSound(soundfile) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+        audio.play();
+    }
+    
+
+    function playSoundPart(soundfile, fromTime, toTime) {
+        document.getElementById("audio_container").innerHTML=
+            "<audio id='audioFile' src='" + soundfile +"'></audio>";
+		var audio = document.getElementById("audioFile");
+		audio.currentTime=fromTime;
+        audio.play();
+		var i = setInterval(function(){
+			if(audio.currentTime>toTime){
+				audio.pause();
+				clearInterval(i)
+				}
+				},5);
+    }
+    
+</script>
+</head>
+<body>
+<div class="text_content word_page">
+<h1>pula</h1>
+
+<p><a href="_main_text_pitjantjatjara_story_26_1.html#pitjantjatjara_story_26_page_1_segment_1" target="main_frame"><b>&larr;</b></a> <a href="word_kami.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_1_word_1><span class="sound" title="grandmother" onmouseover="playSound('./multimedia/extracted_file_ch26_5928.mp3');">Kami</span></span></a><a href="word_-ṟara.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_1_word_2><span class="sound" title="two together, more than one" onmouseover="playSound('./multimedia/extracted_file_word_ṟara.mp3');">ṟara</span></span></a> <span class="red"><span class="sound" title="they two" onmouseover="playSound('./multimedia/extracted_file_ch16_4060.mp3');">Pula</span></span> <a href="word_iili.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_1_word_6><span class="sound" title="light rain" onmouseover="playSound('./multimedia/extracted_file_ch24_5548.mp3');">Iili</span></span></a><a href="word_-ngka.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_1_word_7><span class="sound" title="LOC" onmouseover="playSound('./multimedia/extracted_file_word_ngka.mp3');">ngka</span></span></a> <a href="word_nyinanyi.html" target="aux_frame"><span id=pitjantjatjara_story_26_page_1_segment_1_word_9><span class="sound" title="the one who is sitting" onmouseover="playSound('./multimedia/extracted_file_ch25_5717.mp3');">Nyinantja</span></span></a> <span onclick="playSound('./multimedia/extracted_file_ch26_5959.mp3');" onmouseover="" style="cursor: pointer;">&#x1f50a;</span></p>
+
+<p><a href="_index_.html" target="aux_frame"><i><u>Frequency index</u></i></a></p>
+<p><a href="_alphabetical_index_.html" target="aux_frame"><i><u>Alphabetical index</u></i></a></p>
+<div id="audio_container" style="width:0;height:0;overflow:hidden"></div>
+</div>
+</body>

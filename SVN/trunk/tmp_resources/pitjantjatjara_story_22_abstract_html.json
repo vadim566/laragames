@@ -1,0 +1,5930 @@
+{
+    "alphabetical_index": [
+        {
+            "count": 4,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ku",
+                    "word": "-ku"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-lu",
+                    "word": "-lu"
+                }
+            ]
+        },
+        {
+            "count": 8,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ngka",
+                    "word": "-ngka"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-nku",
+                    "word": "-nku"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-nya",
+                    "word": "-nya"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-tjara",
+                    "word": "-tjara"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ṟara",
+                    "word": "-ṟara"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ala",
+                    "word": "ala"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "alatjiṯu",
+                    "word": "alatjiṯu"
+                }
+            ]
+        },
+        {
+            "count": 5,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ananyi",
+                    "word": "ananyi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "apu",
+                    "word": "apu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "awari",
+                    "word": "awari"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ili",
+                    "word": "ili"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ilunyi",
+                    "word": "ilunyi"
+                }
+            ]
+        },
+        {
+            "count": 17,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ka",
+                    "word": "ka"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kulini",
+                    "word": "kulini"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kungka",
+                    "word": "kungka"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kurunpa",
+                    "word": "kurunpa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kutjupa",
+                    "word": "kutjupa"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kuḻu",
+                    "word": "kuḻu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "l",
+                    "word": "l"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "langka",
+                    "word": "langka"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ma-",
+                    "word": "ma-"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mai",
+                    "word": "mai"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mantu",
+                    "word": "mantu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "maḻaku",
+                    "word": "maḻaku"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mina",
+                    "word": "mina"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "miranyi",
+                    "word": "miranyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mpalal",
+                    "word": "mpalal"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mulapa",
+                    "word": "mulapa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "munga",
+                    "word": "munga"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mungarinyi",
+                    "word": "mungarinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mungaṯu",
+                    "word": "mungaṯu"
+                }
+            ]
+        },
+        {
+            "count": 9,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "munu",
+                    "word": "munu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "Mutjawani",
+                    "word": "Mutjawani"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngalkuṉi",
+                    "word": "ngalkuṉi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngalya",
+                    "word": "ngalya"
+                }
+            ]
+        },
+        {
+            "count": 18,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "word": "nganaṉa"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngangkaḻi",
+                    "word": "ngangkaḻi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngaṟanyi",
+                    "word": "ngaṟanyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngura",
+                    "word": "ngura"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nguwanpa",
+                    "word": "nguwanpa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nguḻu",
+                    "word": "nguḻu"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyanganyi",
+                    "word": "nyanganyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyinanyi",
+                    "word": "nyinanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyura",
+                    "word": "nyura"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pakaṉi",
+                    "word": "pakaṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "palku",
+                    "word": "palku"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "palu",
+                    "word": "palu"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "panya",
+                    "word": "panya"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "patiṉi",
+                    "word": "patiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pika",
+                    "word": "pika"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "word": "pitjanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "piḻti",
+                    "word": "piḻti"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "piṟuku",
+                    "word": "piṟuku"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pukularinyi",
+                    "word": "pukularinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pula",
+                    "word": "pula"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "punganyi",
+                    "word": "punganyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "punkaṉi",
+                    "word": "punkaṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puyiṉi",
+                    "word": "puyiṉi"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puḻka",
+                    "word": "puḻka"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puṉu",
+                    "word": "puṉu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puṯu",
+                    "word": "puṯu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tangkiyi",
+                    "word": "tangkiyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tatiṉi",
+                    "word": "tatiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "titutjara",
+                    "word": "titutjara"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjarpanyi",
+                    "word": "tjarpanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjaṉaḻkira",
+                    "word": "tjaṉaḻkira"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjaṟu",
+                    "word": "tjaṟu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjina",
+                    "word": "tjina"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjinguṟu",
+                    "word": "tjinguṟu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjitji",
+                    "word": "tjitji"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjitularinyi",
+                    "word": "tjitularinyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjuku",
+                    "word": "tjuku"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjutuṉi",
+                    "word": "tjutuṉi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjuṯa",
+                    "word": "tjuṯa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ulkaṟurinyi",
+                    "word": "ulkaṟurinyi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ulpuru",
+                    "word": "ulpuru"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "uraṉi",
+                    "word": "uraṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "urinyi",
+                    "word": "urinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "utjuringanyi",
+                    "word": "utjuringanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "uwankara",
+                    "word": "uwankara"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wala",
+                    "word": "wala"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wanaṉi",
+                    "word": "wanaṉi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wati-",
+                    "word": "wati-"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "Watjutja",
+                    "word": "Watjutja"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "waḻi",
+                    "word": "waḻi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiltja",
+                    "word": "wiltja"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wirkananyi",
+                    "word": "wirkananyi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wirtjapakaṉi",
+                    "word": "wirtjapakaṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "witiṉi",
+                    "word": "witiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiya",
+                    "word": "wiya"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiyarinyi",
+                    "word": "wiyarinyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiṟu",
+                    "word": "wiṟu"
+                }
+            ]
+        }
+    ],
+    "audio_tracking_data": false,
+    "css": [
+        "",
+        "        .disabled {",
+        "            color: #AAA",
+        "        }",
+        "        .hashhighlight {",
+        "            background: #FFE0FF;",
+        "        }",
+        "        .hidden {",
+        "            display: none;",
+        "        }",
+        "        .seg_trans {",
+        "            background: #E0FFE0;",
+        "            margin-top: -1em;",
+        "            padding-top: 0;",
+        "        }",
+        "        a {",
+        "            text-decoration: none;",
+        "        }",
+        "        a:link, a:visited {",
+        "            color: black;",
+        "        }",
+        "        a.bookmarklink {",
+        "            display:none;",
+        "            cursor:pointer;",
+        "            color: #AAA;",
+        "            font-weight:bold;",
+        "            height: 20px;",
+        "            width: 20px;",
+        "            background-image: url(data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIElEQVQ4y82U32tSYRjHv+/xaEwy7RclbjEhitWJCIPNLqTA3QRdxDiDEe0vCNqOdRXRVRCEWhF0YUSjXelFN9IWbVCL1IUyJgoWkZGDWBd2dKMDvsfzdDOXDKkjjOiBBx4eXj487/t9vi8jImxniNjm+DdAIpJbNWMs0RWRiNqzT2/U4/mpeZqamKXp+8tUbeiRLWf+mKxdlCb/EX9/NyUXCwKcQzug5TQ0vG6M3DgZ3W21KF1NaBhN5dOzFxQbn6WZpVqFc+6vF1OV6fEkxW7lqMabipkJNwtdV+NvbyYp9rhEnHM/EYFzrtSzb+jJWJJmljmZAW6KIgiOhPuIIJdefcGczx0PStX0wkRR/u7t6UqTzm/4QUTvFQkHl/LIvjaAPftwLiyt7K+tKyq3weN2wSJ0Vp9tdcpvYTYaDgFYM2BxAM21jZ7kwcj1Ex2FYp2sR4Yuq99W5VXNikN9P+VMqIjPVcAW6EfAp2LhoYrG0c5Q9jcv6/l39PROHU6fiFp5F4L3fKG9hcXJ51G1F8MDuHzJO9q+/KatZz87iItX7VFRFCO6NJg4HXj5NfVRxToRHIyZ9zIbOBY6LqXCxQdpzE365aBkj2qFxXB2HrCdd2FnG8zUlVtCpW+n5FJZhNNnhZbR0JA8uHBNWjlgE88AqHQFbEFzj7JyqWyg51Q/hscOZ1xWy2g7rCsgABiGoRDREGMsIwhCxNQe/ncf7C/NzHVp+0tYVAAAAABJRU5ErkJggg==);",
+        "            background-repeat: no-repeat;",
+        "            background-position: center center;",
+        "        }",
+        "    \tbody { ",
+        "\t    \tpadding:0; ",
+        "\t\t    margin: 0; ",
+        "    \t\tcolor: black; ",
+        "\t    \tbackground: white; ",
+        "\t\t    font-family: serif;",
+        "\t\t    font-size: x-large; ",
+        "            overflow-y: scroll;",
+        "            overflow-x: hidden;",
+        "\t    }",
+        "\tth, td {  ",
+        "\t\t    font-family: serif;",
+        "\t\t    font-size: x-large; ",
+        "\t    }",
+        "        body.noscroll { ",
+        "            overflow: hidden;",
+        "        }",
+        "        button {",
+        "            cursor: pointer;",
+        "            font-family: sans-serif;",
+        "        }",
+        "        div.split { ",
+        "            padding:0; ",
+        "            margin: 0; ",
+        "            overflow-x: hidden; ",
+        "        }",
+        "        @media (orientation:landscape) {",
+        "            div.split { ",
+        "                height: 100%; ",
+        "                width: 50%; ",
+        "                float: left;",
+        "            }",
+        "        }",
+        "        @media (orientation:portrait) {",
+        "            div.split { ",
+        "                border-top: 1px solid #AAA;",
+        "                width: 100%; ",
+        "                height: 50%; ",
+        "            }",
+        "        }",
+        "        div.text_content {",
+        "            padding: 1em;",
+        "        }",
+        "        div#toolbar {",
+        "            position: fixed;",
+        "            top:0; /* needed for FF */",
+        "            display: flex;",
+        "            flex-direction: row;",
+        "            justify-content: space-between;",
+        "            align-items: center;",
+        "            height: 56px;",
+        "            width: 100%;",
+        "            overflow-y: auto;",
+        "            background: #F8F8F8;",
+        "        }",
+        "        div#aftertoolbar {",
+        "            height: 56px;",
+        "        }",
+        "        div#toolbar > div {",
+        "            padding-left: .5em;",
+        "            padding-right: .5em;",
+        "        }",
+        "        div#toolbar button {",
+        "            font-size: 11pt;",
+        "            border: none;",
+        "            border-radius: .5em;",
+        "            padding: .5em;",
+        "            background: none;",
+        "        }",
+        "        div#toolbar button:hover {",
+        "            background: #E8E8E8;",
+        "        }",
+        "        h1.toc {",
+        "            text-align: left;",
+        "        }",
+        "        h2.toc {",
+        "            text-align: left;",
+        "            margin-left: 2em;",
+        "        }",
+        "        iframe {",
+        "            padding: 0;",
+        "            margin: 0;",
+        "            overflow-y: scroll;",
+        "        }",
+        "        p {",
+        "            word-wrap: break-word;",
+        "            white-space: pre-wrap;",
+        "        }",
+        "        .audio_playing {",
+        "            font-weight: bold;",
+        "            background: #FFFFA0;",
+        "        }",
+        "        span.red  {",
+        "            color: #ff0033;",
+        "        }",
+        "        span.light_red {",
+        "            color: #ff6666;",
+        "        }",
+        "        span.pink {",
+        "            color: #FFC0CB;",
+        "        }",
+        "        span.green {",
+        "            color: #00cc44;",
+        "        }",
+        "        span.light_green {",
+        "            color: #90EE90;",
+        "        }",
+        "        span.blue {",
+        "            color: #0000FF;",
+        "        }",
+        "        span.light_blue {",
+        "            color: #ADD8E6;",
+        "        }",
+        "        span.burgundy {",
+        "            color: #800020;",
+        "        }",
+        "        span.yellow {",
+        "            color: #FFFF00;",
+        "        }",
+        "        span.orange {",
+        "            color: #FFA500;",
+        "        }",
+        "        span.purple {",
+        "            color: #800080;",
+        "        }",
+        "        span.violet {",
+        "            color: #EE82EE;",
+        "        }",
+        "        span.gray {",
+        "            color: #808080;",
+        "        }",
+        "        span.brown {",
+        "            color: #A52A2A;",
+        "        }",
+        "        span.black {",
+        "            color: #000000;",
+        "        }",
+        "        span.sound {",
+        "            cursor: pointer;",
+        "        }",
+        "        span.pos_tag {",
+        "            font-size: 50%;",
+        "            color: #AAA;",
+        "            font-weight: normal;",
+        "        }",
+        "        table.indexpage {",
+        "            border-collapse: collapse;",
+        "        }",
+        "        table.indexpage td {",
+        "            padding: .3em;",
+        "        }",
+        "        table.indexpage tr:nth-child(1) {",
+        "            font-weight: bold;",
+        "        }",
+        "        table.indexpage tr:nth-child(even) {",
+        "            background: #EEE;",
+        "        }",
+        "        "
+    ],
+    "custom_css": [
+        "area:hover {",
+        "\tcursor: pointer;",
+        "        }",
+        "a:hover {",
+        "            color: red;",
+        "\t\t\tborder:1px solid red;",
+        "        }",
+        ""
+    ],
+    "custom_script": null,
+    "frequency_index": [
+        {
+            "count": 18,
+            "cumulative_percentage": "8.96%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "word": "nganaṉa"
+                }
+            ]
+        },
+        {
+            "count": 17,
+            "cumulative_percentage": "17.41%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ka",
+                    "word": "ka"
+                }
+            ]
+        },
+        {
+            "count": 9,
+            "cumulative_percentage": "21.89%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "munu",
+                    "word": "munu"
+                }
+            ]
+        },
+        {
+            "count": 8,
+            "cumulative_percentage": "25.87%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ngka",
+                    "word": "-ngka"
+                }
+            ]
+        },
+        {
+            "count": 5,
+            "cumulative_percentage": "28.36%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ananyi",
+                    "word": "ananyi"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "cumulative_percentage": "30.35%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puḻka",
+                    "word": "puḻka"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "cumulative_percentage": "32.34%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ku",
+                    "word": "-ku"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "cumulative_percentage": "34.33%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ma-",
+                    "word": "ma-"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "cumulative_percentage": "36.32%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "word": "pitjanyi"
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "cumulative_percentage": "38.31%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "panya",
+                    "word": "panya"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "39.80%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ulpuru",
+                    "word": "ulpuru"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "41.29%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pakaṉi",
+                    "word": "pakaṉi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "42.79%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ili",
+                    "word": "ili"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "44.28%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyanganyi",
+                    "word": "nyanganyi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "45.77%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "apu",
+                    "word": "apu"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "47.26%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wirtjapakaṉi",
+                    "word": "wirtjapakaṉi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "48.76%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "piṟuku",
+                    "word": "piṟuku"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "50.25%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjutuṉi",
+                    "word": "tjutuṉi"
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "cumulative_percentage": "51.74%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mina",
+                    "word": "mina"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "52.74%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjuṯa",
+                    "word": "tjuṯa"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "53.73%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tangkiyi",
+                    "word": "tangkiyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "54.73%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-tjara",
+                    "word": "-tjara"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "55.72%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-lu",
+                    "word": "-lu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "56.72%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wati-",
+                    "word": "wati-"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "57.71%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "langka",
+                    "word": "langka"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "58.71%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "Watjutja",
+                    "word": "Watjutja"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "59.70%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kuḻu",
+                    "word": "kuḻu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "60.70%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wirkananyi",
+                    "word": "wirkananyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "61.69%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pukularinyi",
+                    "word": "pukularinyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "62.69%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiṟu",
+                    "word": "wiṟu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "63.68%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngaṟanyi",
+                    "word": "ngaṟanyi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "64.68%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "uraṉi",
+                    "word": "uraṉi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "65.67%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngangkaḻi",
+                    "word": "ngangkaḻi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "66.67%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngalya",
+                    "word": "ngalya"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "67.66%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "awari",
+                    "word": "awari"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "68.66%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-ṟara",
+                    "word": "-ṟara"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "69.65%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngura",
+                    "word": "ngura"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "70.65%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjuku",
+                    "word": "tjuku"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "71.64%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "palu",
+                    "word": "palu"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "72.64%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "patiṉi",
+                    "word": "patiṉi"
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "cumulative_percentage": "73.63%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "waḻi",
+                    "word": "waḻi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "74.13%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mungaṯu",
+                    "word": "mungaṯu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "74.63%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kungka",
+                    "word": "kungka"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "75.12%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjaṟu",
+                    "word": "tjaṟu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "75.62%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "urinyi",
+                    "word": "urinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "76.12%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjitji",
+                    "word": "tjitji"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "76.62%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "Mutjawani",
+                    "word": "Mutjawani"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "77.11%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjina",
+                    "word": "tjina"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "77.61%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wanaṉi",
+                    "word": "wanaṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "78.11%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-nya",
+                    "word": "-nya"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "78.61%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pula",
+                    "word": "pula"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "79.10%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "witiṉi",
+                    "word": "witiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "79.60%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "punganyi",
+                    "word": "punganyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "80.10%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mai",
+                    "word": "mai"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "80.60%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ngalkuṉi",
+                    "word": "ngalkuṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "81.09%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tatiṉi",
+                    "word": "tatiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "81.59%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "maḻaku",
+                    "word": "maḻaku"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "82.09%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mantu",
+                    "word": "mantu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "82.59%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "l",
+                    "word": "l"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "83.08%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "pika",
+                    "word": "pika"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "83.58%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjaṉaḻkira",
+                    "word": "tjaṉaḻkira"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "84.08%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "alatjiṯu",
+                    "word": "alatjiṯu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "84.58%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wala",
+                    "word": "wala"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "85.07%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nguḻu",
+                    "word": "nguḻu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "85.57%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mulapa",
+                    "word": "mulapa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "86.07%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiya",
+                    "word": "wiya"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "86.57%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjinguṟu",
+                    "word": "tjinguṟu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "87.06%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyura",
+                    "word": "nyura"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "87.56%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "palku",
+                    "word": "palku"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "88.06%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kulini",
+                    "word": "kulini"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "88.56%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nguwanpa",
+                    "word": "nguwanpa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "89.05%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ilunyi",
+                    "word": "ilunyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "89.55%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "-nku",
+                    "word": "-nku"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "90.05%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kurunpa",
+                    "word": "kurunpa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "90.55%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ulkaṟurinyi",
+                    "word": "ulkaṟurinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "91.04%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "utjuringanyi",
+                    "word": "utjuringanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "91.54%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puṯu",
+                    "word": "puṯu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "92.04%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mpalal",
+                    "word": "mpalal"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "92.54%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "ala",
+                    "word": "ala"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "93.03%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "miranyi",
+                    "word": "miranyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "93.53%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puṉu",
+                    "word": "puṉu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "94.03%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiltja",
+                    "word": "wiltja"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "94.53%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjarpanyi",
+                    "word": "tjarpanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "95.02%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "wiyarinyi",
+                    "word": "wiyarinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "95.52%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "kutjupa",
+                    "word": "kutjupa"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "96.02%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "uwankara",
+                    "word": "uwankara"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "96.52%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "mungarinyi",
+                    "word": "mungarinyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "97.01%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "munga",
+                    "word": "munga"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "97.51%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "punkaṉi",
+                    "word": "punkaṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "98.01%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "puyiṉi",
+                    "word": "puyiṉi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "98.51%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "titutjara",
+                    "word": "titutjara"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "99.00%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "piḻti",
+                    "word": "piḻti"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "99.50%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "nyinanyi",
+                    "word": "nyinanyi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "cumulative_percentage": "100.00%",
+            "word": [
+                {
+                    "images": [],
+                    "lemma": "tjitularinyi",
+                    "word": "tjitularinyi"
+                }
+            ]
+        }
+    ],
+    "image_lexicon": [],
+    "notes": false,
+    "pages": [
+        {
+            "corpus_name": "pitjantjatjara_story_22",
+            "custom_css_file": null,
+            "custom_script_file": null,
+            "page_name": 1,
+            "play_all": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file_name": "play_all_pitjantjatjara_story_22_1.mp3",
+                "page_name": 1,
+                "segment_audio_files": false
+            },
+            "segments": [
+                "pitjantjatjara_story_22_page_1_segment_1",
+                "pitjantjatjara_story_22_page_1_segment_2",
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_8",
+                "pitjantjatjara_story_22_page_1_segment_9",
+                "pitjantjatjara_story_22_page_1_segment_10"
+            ]
+        }
+    ],
+    "script": [
+        "",
+        "    !localStorage && (l = location, p = l.pathname.replace(/(^..)(:)/, \"$1$$\"), (l.href = l.protocol + \"//127.0.0.1\" + p)); /* SOME STRANGE IE HACK! */",
+        "    var mySettings = {};",
+        "    function myPath() {",
+        "        return window.location.href.substring( 0, window.location.href.lastIndexOf('/') );",
+        "    }",
+        "    function myFile() {",
+        "        return window.location.href.substring( window.location.href.lastIndexOf('/') ) ;",
+        "    }",
+        "    function myBaseFile() {",
+        "        return window.location.href.substring( window.location.href.lastIndexOf('/') ).split('#')[0] ;",
+        "    }",
+        "    function myHash() {",
+        "        return window.location.hash;",
+        "    }",
+        "    function scrollToHash() {",
+        "        var hash = myHash() ;",
+        "        if ( !hash || hash.length < 2 ) return ;",
+        "        var toolbarHeight = 0;",
+        "        $('#toolbar').each(function() { toolbarHeight = $(this).height(); } )",
+        "        $(document.body).animate( { 'scrollTop': $(myHash()).offset().top - toolbarHeight - 32}, 500 );",
+        "        var firstParent = $(hash).parents(\"p,h1,h2,td\").first();",
+        "        if ( firstParent ) {",
+        "            firstParent.addClass(\"hashhighlight\");",
+        "            window.setTimeout(function() { firstParent.removeClass(\"hashhighlight\"); }, 2000 );",
+        "        }",
+        "    }",
+        "    function defaultSettings() {",
+        "        return { bookmark: '', show_translation: false } ;",
+        "    }",
+        "    function loadSettings() {",
+        "        try {",
+        "            mySettings = JSON.parse( localStorage.getItem( myPath() ) ) ;",
+        "        }",
+        "        catch(e) {",
+        "            // ignore error from corrupted local storage",
+        "        }",
+        "        if ( ! mySettings || typeof mySettings != 'object' ) {",
+        "            mySettings = defaultSettings();",
+        "        }",
+        "    }",
+        "    function saveSettings() {",
+        "        localStorage.setItem( myPath(), JSON.stringify( mySettings ) ) ;",
+        "    }",
+        "    $(document).ready(function() {",
+        "        loadSettings() ;",
+        "        $('.link_as_button').click(function() {",
+        "            var target = $(this).data('target');",
+        "            var href   = $(this).data('href');",
+        "            if ( ! href ) return ;",
+        "            if ( ! target ) target = \"_self\" ;",
+        "            if ( target == \"_self\" && window.hasOwnProperty( \"leavePageFunction\" ) ) {",
+        "                leavePageFunction( function() { window.open( href, target ); } );",
+        "            }",
+        "            else {",
+        "                window.open( href, target );",
+        "            }",
+        "        });",
+        "        $(window).on( 'hashchange', function( e ) {",
+        "            scrollToHash();",
+        "        });",
+        "        scrollToHash() ;",
+        "    });",
+        "    ",
+        "    function playSound(soundfile) {",
+        "        document.getElementById(\"audio_container\").innerHTML=",
+        "            \"<audio id='audioFile' src='\" + soundfile +\"'></audio>\";",
+        "\t\tvar audio = document.getElementById(\"audioFile\");",
+        "        audio.play();",
+        "    }",
+        "    ",
+        "    function playSoundPart(soundfile, fromTime, toTime) {",
+        "        document.getElementById(\"audio_container\").innerHTML=",
+        "            \"<audio id='audioFile' src='\" + soundfile +\"'></audio>\";",
+        "\t\tvar audio = document.getElementById(\"audioFile\");",
+        "\t\taudio.currentTime=fromTime;",
+        "        audio.play();",
+        "\t\tvar i = setInterval(function(){",
+        "\t\t\tif(audio.currentTime>toTime){",
+        "\t\t\t\taudio.pause();",
+        "\t\t\t\tclearInterval(i)",
+        "\t\t\t\t}",
+        "\t\t\t\t},5);",
+        "    }",
+        "    "
+    ],
+    "segments": {
+        "pitjantjatjara_story_22_page_1_segment_1": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_1",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5298.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Ulpuru Puḻka Pakantja",
+            "words": [
+                {
+                    "word": "<b>"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5257.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ulpuru",
+                    "translation": "dust",
+                    "word": "Ulpuru"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5033.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puḻka",
+                    "translation": "big ",
+                    "word": "Puḻka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_pakantja.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pakaṉi",
+                    "translation": "that which is getting up",
+                    "word": "Pakantja"
+                },
+                {
+                    "word": "</b>"
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_10": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_10",
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "",
+            "words": [
+                {
+                    "word": "\n"
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_2": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_2",
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "",
+            "words": [
+                {
+                    "word": "\t\n<i>/*When the Big Duststorm Came Up*/</i>"
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_3": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_3",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5300.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Mungaṯula kungka tjuṯa iliku anu tangkiyitjarala tjaṟu anu iliku, munula ma-pitjala nyangu apungka urinyangka, ka tjitji panya, Mutjawanilu, wati-wirtjapakara langka tjina nyangu, munu ma-wanaṉu.",
+            "words": [
+                {
+                    "word": "\t\n"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4453.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mungaṯu",
+                    "translation": "the other day",
+                    "word": "Mungaṯu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch25_5833.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kungka",
+                    "translation": "girl",
+                    "word": "kungka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4233.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjuṯa",
+                    "translation": "many",
+                    "word": "tjuṯa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4872.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ili",
+                    "translation": "wild fig",
+                    "word": "ili"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ku",
+                    "translation": "POSS/FOR",
+                    "word": "ku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4480.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ananyi",
+                    "translation": "went",
+                    "word": "anu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tangkiyi.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tangkiyi",
+                    "translation": "donkey",
+                    "word": "tangkiyi"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjara.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-tjara",
+                    "translation": "with, having",
+                    "word": "tjara"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjaṟu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjaṟu",
+                    "translation": "low, down, south",
+                    "word": "tjaṟu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4480.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ananyi",
+                    "translation": "went",
+                    "word": "anu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4872.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ili",
+                    "translation": "wild fig",
+                    "word": "ili"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ku",
+                    "translation": "POSS/FOR",
+                    "word": "ku"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ma.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ma-",
+                    "translation": "away from the speaker",
+                    "word": "ma-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4575.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "translation": "having come, while coming",
+                    "word": "pitjala"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4804.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nyanganyi",
+                    "translation": "saw",
+                    "word": "nyangu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch14_3222.mp3"
+                    },
+                    "images": [],
+                    "lemma": "apu",
+                    "translation": "stone, mountain",
+                    "word": "apu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5289.mp3"
+                    },
+                    "images": [],
+                    "lemma": "urinyi",
+                    "translation": "having moved",
+                    "word": "urinyangka"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4840.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjitji",
+                    "translation": "child ",
+                    "word": "tjitji"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4455.mp3"
+                    },
+                    "images": [],
+                    "lemma": "panya",
+                    "translation": "the one previously referred to",
+                    "word": "panya"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_mutjawani.mp3"
+                    },
+                    "images": [],
+                    "lemma": "Mutjawani",
+                    "translation": "Mutjawani",
+                    "word": "Mutjawani"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-lu",
+                    "translation": "ERG",
+                    "word": "lu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4728.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wati-",
+                    "translation": "across from the speaker",
+                    "word": "wati-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_wirtjapakara.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wirtjapakaṉi",
+                    "translation": "having run, while running",
+                    "word": "wirtjapakara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5281.mp3"
+                    },
+                    "images": [],
+                    "lemma": "langka",
+                    "translation": "blue-tongue lizard",
+                    "word": "langka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjina.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjina",
+                    "translation": "foot, track",
+                    "word": "tjina"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4804.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nyanganyi",
+                    "translation": "saw",
+                    "word": "nyangu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ma.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ma-",
+                    "translation": "away from the speaker",
+                    "word": "ma-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5267.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wanaṉi",
+                    "translation": "followed",
+                    "word": "wanaṉu"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_4": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_4",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5301.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Ka Watjutjanya kuḻu wati-wirtjapakaṉu, ka pula apungka nyangu, langka puḻka, ka witiṉu Watjutjalu, munu pungu.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "Ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_watjutja.mp3"
+                    },
+                    "images": [],
+                    "lemma": "Watjutja",
+                    "translation": "Watjutja",
+                    "word": "Watjutja"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_nya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-nya",
+                    "translation": "SUBJ",
+                    "word": "nya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5283.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kuḻu",
+                    "translation": "also, as well",
+                    "word": "kuḻu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4728.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wati-",
+                    "translation": "across from the speaker",
+                    "word": "wati-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4401.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wirtjapakaṉi",
+                    "translation": "ran",
+                    "word": "wirtjapakaṉu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch16_4060.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pula",
+                    "translation": "they two",
+                    "word": "pula"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch14_3222.mp3"
+                    },
+                    "images": [],
+                    "lemma": "apu",
+                    "translation": "stone, mountain",
+                    "word": "apu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4804.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nyanganyi",
+                    "translation": "saw",
+                    "word": "nyangu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5281.mp3"
+                    },
+                    "images": [],
+                    "lemma": "langka",
+                    "translation": "blue-tongue lizard",
+                    "word": "langka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5033.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puḻka",
+                    "translation": "big ",
+                    "word": "puḻka"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5269.mp3"
+                    },
+                    "images": [],
+                    "lemma": "witiṉi",
+                    "translation": "held, caught, grabbed",
+                    "word": "witiṉu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_watjutja.mp3"
+                    },
+                    "images": [],
+                    "lemma": "Watjutja",
+                    "translation": "Watjutja",
+                    "word": "Watjutja"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-lu",
+                    "translation": "ERG",
+                    "word": "lu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4375.mp3"
+                    },
+                    "images": [],
+                    "lemma": "punganyi",
+                    "translation": "hit/killed",
+                    "word": "pungu"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_5": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_5",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5302.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Kala piṟuku ma-pitjangi munula ankula ankula ilingka ma-wirkanu munula pukularingu mai wiṟu ngaṟanyangka, munula uraṟa uraṟa ngalkuṉingi.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "Ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4459.mp3"
+                    },
+                    "images": [],
+                    "lemma": "piṟuku",
+                    "translation": "again",
+                    "word": "piṟuku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ma.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ma-",
+                    "translation": "away from the speaker",
+                    "word": "ma-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4189.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "translation": "was coming",
+                    "word": "pitjangi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4776.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ananyi",
+                    "translation": "having gone, while going",
+                    "word": "ankula"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4776.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ananyi",
+                    "translation": "having gone, while going",
+                    "word": "ankula"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4872.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ili",
+                    "translation": "wild fig",
+                    "word": "ili"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ma.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ma-",
+                    "translation": "away from the speaker",
+                    "word": "ma-"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5271.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wirkananyi",
+                    "translation": "arrived",
+                    "word": "wirkanu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5273.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pukularinyi",
+                    "translation": "became happy, was happy",
+                    "word": "pukularingu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4724.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mai",
+                    "translation": "food",
+                    "word": "mai"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4451.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wiṟu",
+                    "translation": "good, nice",
+                    "word": "wiṟu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4597.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngaṟanyi",
+                    "translation": "having stood, while standing",
+                    "word": "ngaṟanyangka"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5291.mp3"
+                    },
+                    "images": [],
+                    "lemma": "uraṉi",
+                    "translation": "having collected",
+                    "word": "uraṟa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5291.mp3"
+                    },
+                    "images": [],
+                    "lemma": "uraṉi",
+                    "translation": "having collected",
+                    "word": "uraṟa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch27_6184.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngalkuṉi",
+                    "translation": "was eating",
+                    "word": "ngalkuṉingi"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_6": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_6",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5303.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Ka ngangkaḻi ngalya pakaṉingi kala piṟuku tatiṟa maḻaku pitjangi ka mantul awari pika ulpuruṟara ngangkaḻiṟara tjaṉaḻkira alatjiṯu ngalya pakaṉingi kala wala puḻka wirtjapakaṉingi tangkiyitjara panya, munula nguḻu mulapa wirkanu ngurangka.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "Ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5255.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngangkaḻi",
+                    "translation": "cloud",
+                    "word": "ngangkaḻi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngalya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngalya",
+                    "translation": "to here",
+                    "word": "ngalya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_pakaṉingi.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pakaṉi",
+                    "translation": "was getting up, was rising",
+                    "word": "pakaṉingi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4459.mp3"
+                    },
+                    "images": [],
+                    "lemma": "piṟuku",
+                    "translation": "again",
+                    "word": "piṟuku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4591.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tatiṉi",
+                    "translation": "having climbed, while climbing",
+                    "word": "tatiṟa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4461.mp3"
+                    },
+                    "images": [],
+                    "lemma": "maḻaku",
+                    "translation": "(to come) back",
+                    "word": "maḻaku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4189.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "translation": "was coming",
+                    "word": "pitjangi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_mantu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mantu",
+                    "translation": "indeed, certainly",
+                    "word": "mantu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_l.mp3"
+                    },
+                    "images": [],
+                    "lemma": "l",
+                    "translation": "EMPH",
+                    "word": "l"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4904.mp3"
+                    },
+                    "images": [],
+                    "lemma": "awari",
+                    "translation": "oh",
+                    "word": "awari"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_pika.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pika",
+                    "translation": "sick ",
+                    "word": "pika"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5257.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ulpuru",
+                    "translation": "dust",
+                    "word": "ulpuru"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ṟara.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ṟara",
+                    "translation": "two together, more than one",
+                    "word": "ṟara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5255.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngangkaḻi",
+                    "translation": "cloud",
+                    "word": "ngangkaḻi"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ṟara.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ṟara",
+                    "translation": "two together, more than one",
+                    "word": "ṟara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjaṉaḻkira.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjaṉaḻkira",
+                    "translation": "on the back of",
+                    "word": "tjaṉaḻkira"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4908.mp3"
+                    },
+                    "images": [],
+                    "lemma": "alatjiṯu",
+                    "translation": "absolutely, enough, complete",
+                    "word": "alatjiṯu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngalya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngalya",
+                    "translation": "to here",
+                    "word": "ngalya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_pakaṉingi.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pakaṉi",
+                    "translation": "was getting up, was rising",
+                    "word": "pakaṉingi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4886.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wala",
+                    "translation": "quickly",
+                    "word": "wala"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5033.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puḻka",
+                    "translation": "big ",
+                    "word": "puḻka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4403.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wirtjapakaṉi",
+                    "translation": "was running",
+                    "word": "wirtjapakaṉingi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tangkiyi.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tangkiyi",
+                    "translation": "donkey",
+                    "word": "tangkiyi"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjara.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-tjara",
+                    "translation": "with, having",
+                    "word": "tjara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4455.mp3"
+                    },
+                    "images": [],
+                    "lemma": "panya",
+                    "translation": "the one previously referred to",
+                    "word": "panya"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5037.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nguḻu",
+                    "translation": "afraid",
+                    "word": "nguḻu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5259.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mulapa",
+                    "translation": "truly, very",
+                    "word": "mulapa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5271.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wirkananyi",
+                    "translation": "arrived",
+                    "word": "wirkanu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch25_5849.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngura",
+                    "translation": "camp,home",
+                    "word": "ngura"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_7": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_7",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5304.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Awari, panya ulpuru tjuku wiya, tjinguṟu nyura tjuku palku kulini, palu nguwanpalanya iluntanu, munulanya tjutura patiṉu, kalanku kurunpa ulkaṟurira utjuringu palu puṯumpalal ala mirantjikitja ngaṟangu, ka apu, puṉu, waḻi kuḻu tjutura patiṉu kala wiltjangka tjarpara wiyaringu, ka kutjupa tjuṯa waḻingka, ka uwankara mungaringu.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4904.mp3"
+                    },
+                    "images": [],
+                    "lemma": "awari",
+                    "translation": "oh",
+                    "word": "Awari"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4455.mp3"
+                    },
+                    "images": [],
+                    "lemma": "panya",
+                    "translation": "the one previously referred to",
+                    "word": "panya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5257.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ulpuru",
+                    "translation": "dust",
+                    "word": "ulpuru"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjuku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjuku",
+                    "translation": "(?)",
+                    "word": "tjuku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5039.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wiya",
+                    "translation": "no or not",
+                    "word": "wiya"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5293.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjinguṟu",
+                    "translation": "perhaps, maybe",
+                    "word": "tjinguṟu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch12f_2803.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nyura",
+                    "translation": "you (more than two)",
+                    "word": "nyura"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjuku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjuku",
+                    "translation": "(?)",
+                    "word": "tjuku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_palku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "palku",
+                    "translation": "as if it were",
+                    "word": "palku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5275.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kulini",
+                    "translation": "is listing, thinking, understanding",
+                    "word": "kulini"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4912.mp3"
+                    },
+                    "images": [],
+                    "lemma": "palu",
+                    "translation": "how about, but of course",
+                    "word": "palu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5263.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nguwanpa",
+                    "translation": "almost, nearly, fairly, more or less",
+                    "word": "nguwanpa"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lanya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "us (more than two)",
+                    "word": "lanya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_iluntanu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ilunyi",
+                    "translation": "killed",
+                    "word": "iluntanu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lanya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "us (more than two)",
+                    "word": "lanya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5285.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjutuṉi",
+                    "translation": "having covered",
+                    "word": "tjutura"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5287.mp3"
+                    },
+                    "images": [],
+                    "lemma": "patiṉi",
+                    "translation": "closed, shut",
+                    "word": "patiṉu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_nku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-nku",
+                    "translation": "REFL",
+                    "word": "nku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_kurunpa.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kurunpa",
+                    "translation": "spirit, breath",
+                    "word": "kurunpa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ulkaṟurira.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ulkaṟurinyi",
+                    "translation": "having panicked",
+                    "word": "ulkaṟurira"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_utjuringu.mp3"
+                    },
+                    "images": [],
+                    "lemma": "utjuringanyi",
+                    "translation": "narrowed",
+                    "word": "utjuringu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4912.mp3"
+                    },
+                    "images": [],
+                    "lemma": "palu",
+                    "translation": "how about, but of course",
+                    "word": "palu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5265.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puṯu",
+                    "translation": "can’t",
+                    "word": "puṯu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_mpalal.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mpalal",
+                    "translation": "EMPH",
+                    "word": "mpalal"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ala.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ala",
+                    "translation": "hole",
+                    "word": "ala"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_mirantjikitja.mp3"
+                    },
+                    "images": [],
+                    "lemma": "miranyi",
+                    "translation": "to shout",
+                    "word": "mirantjikitja"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch8_1437.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngaṟanyi",
+                    "translation": "stood",
+                    "word": "ngaṟangu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch14_3222.mp3"
+                    },
+                    "images": [],
+                    "lemma": "apu",
+                    "translation": "stone, mountain",
+                    "word": "apu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4808.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puṉu",
+                    "translation": "stick, tree, wood",
+                    "word": "puṉu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch25_5845.mp3"
+                    },
+                    "images": [],
+                    "lemma": "waḻi",
+                    "translation": "house",
+                    "word": "waḻi"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5283.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kuḻu",
+                    "translation": "also, as well",
+                    "word": "kuḻu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5285.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjutuṉi",
+                    "translation": "having covered",
+                    "word": "tjutura"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5287.mp3"
+                    },
+                    "images": [],
+                    "lemma": "patiṉi",
+                    "translation": "closed, shut",
+                    "word": "patiṉu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4720.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wiltja",
+                    "translation": "wurlie, shade",
+                    "word": "wiltja"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4768.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjarpanyi",
+                    "translation": "having entered, while entering",
+                    "word": "tjarpara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5277.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wiyarinyi",
+                    "translation": "became finished, ended, died",
+                    "word": "wiyaringu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5169.mp3"
+                    },
+                    "images": [],
+                    "lemma": "kutjupa",
+                    "translation": "another",
+                    "word": "kutjupa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch17_4233.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjuṯa",
+                    "translation": "many",
+                    "word": "tjuṯa"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch25_5845.mp3"
+                    },
+                    "images": [],
+                    "lemma": "waḻi",
+                    "translation": "house",
+                    "word": "waḻi"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5247.mp3"
+                    },
+                    "images": [],
+                    "lemma": "uwankara",
+                    "translation": "all, every, everything",
+                    "word": "uwankara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5279.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mungarinyi",
+                    "translation": "became night",
+                    "word": "mungaringu"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_8": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_8",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5305.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Kalanya tjutura pitjala anu.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "Ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lanya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "us (more than two)",
+                    "word": "lanya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5285.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjutuṉi",
+                    "translation": "having covered",
+                    "word": "tjutura"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4575.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pitjanyi",
+                    "translation": "having come, while coming",
+                    "word": "pitjala"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4480.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ananyi",
+                    "translation": "went",
+                    "word": "anu"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        },
+        "pitjantjatjara_story_22_page_1_segment_9": {
+            "anchor": "pitjantjatjara_story_22_page_1_segment_9",
+            "audio": {
+                "corpus_name": "pitjantjatjara_story_22",
+                "file": "extracted_file_ch22_5306.mp3"
+            },
+            "corpus_name": "pitjantjatjara_story_22",
+            "for_annotated_image": false,
+            "page": 1,
+            "plain_text": "Ka piṟuku mungangka mina puḻka punkaṉu munulanya puyiṉu, kala pukularingu, mina wiṟuku, panya titutjarala ngura piḻtingka nyinara minaku tjitularingi.",
+            "words": [
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "Ka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4459.mp3"
+                    },
+                    "images": [],
+                    "lemma": "piṟuku",
+                    "translation": "again",
+                    "word": "piṟuku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5251.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munga",
+                    "translation": "night",
+                    "word": "munga"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4874.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mina",
+                    "translation": "water",
+                    "word": "mina"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch21_5033.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puḻka",
+                    "translation": "big ",
+                    "word": "puḻka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch11_2556.mp3"
+                    },
+                    "images": [],
+                    "lemma": "punkaṉi",
+                    "translation": "fell",
+                    "word": "punkaṉu"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4484.mp3"
+                    },
+                    "images": [],
+                    "lemma": "munu",
+                    "translation": "and",
+                    "word": "munu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_lanya.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "us (more than two)",
+                    "word": "lanya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4896.mp3"
+                    },
+                    "images": [],
+                    "lemma": "puyiṉi",
+                    "translation": "chilled, rained",
+                    "word": "puyiṉu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4486.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ka",
+                    "translation": "and",
+                    "word": "ka"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5273.mp3"
+                    },
+                    "images": [],
+                    "lemma": "pukularinyi",
+                    "translation": "became happy, was happy",
+                    "word": "pukularingu"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4874.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mina",
+                    "translation": "water",
+                    "word": "mina"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4451.mp3"
+                    },
+                    "images": [],
+                    "lemma": "wiṟu",
+                    "translation": "good, nice",
+                    "word": "wiṟu"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ku",
+                    "translation": "POSS/FOR",
+                    "word": "ku"
+                },
+                {
+                    "word": ", "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch18_4455.mp3"
+                    },
+                    "images": [],
+                    "lemma": "panya",
+                    "translation": "the one previously referred to",
+                    "word": "panya"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch22_5261.mp3"
+                    },
+                    "images": [],
+                    "lemma": "titutjara",
+                    "translation": "forever, always",
+                    "word": "titutjara"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch6_1102_la.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nganaṉa",
+                    "translation": "we (more than two)",
+                    "word": "la"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch25_5849.mp3"
+                    },
+                    "images": [],
+                    "lemma": "ngura",
+                    "translation": "camp,home",
+                    "word": "ngura"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_piḻti.mp3"
+                    },
+                    "images": [],
+                    "lemma": "piḻti",
+                    "translation": "dry",
+                    "word": "piḻti"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ngka.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ngka",
+                    "translation": "LOC",
+                    "word": "ngka"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch19_4577.mp3"
+                    },
+                    "images": [],
+                    "lemma": "nyinanyi",
+                    "translation": "having sat, while sitting",
+                    "word": "nyinara"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_ch20_4874.mp3"
+                    },
+                    "images": [],
+                    "lemma": "mina",
+                    "translation": "water",
+                    "word": "mina"
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_ku.mp3"
+                    },
+                    "images": [],
+                    "lemma": "-ku",
+                    "translation": "POSS/FOR",
+                    "word": "ku"
+                },
+                {
+                    "word": " "
+                },
+                {
+                    "audio": {
+                        "corpus_name": "pitjantjatjara_story_22",
+                        "file": "extracted_file_word_tjitularingi.mp3"
+                    },
+                    "images": [],
+                    "lemma": "tjitularinyi",
+                    "translation": "was looking for",
+                    "word": "tjitularingi"
+                },
+                {
+                    "word": "."
+                }
+            ]
+        }
+    },
+    "toc": [],
+    "word_pages": {
+        "-ku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-ku"
+        },
+        "-lu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-lu"
+        },
+        "-ngka": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-ngka"
+        },
+        "-nku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-nku"
+        },
+        "-nya": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-nya"
+        },
+        "-tjara": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-tjara"
+        },
+        "-ṟara": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "-ṟara"
+        },
+        "Mutjawani": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "Mutjawani"
+        },
+        "Watjutja": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "Watjutja"
+        },
+        "ala": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ala"
+        },
+        "alatjiṯu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "alatjiṯu"
+        },
+        "ananyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_8"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ananyi"
+        },
+        "apu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "apu"
+        },
+        "awari": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "awari"
+        },
+        "ili": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_5"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ili"
+        },
+        "ilunyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ilunyi"
+        },
+        "ka": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_8",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ka"
+        },
+        "kulini": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "kulini"
+        },
+        "kungka": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "kungka"
+        },
+        "kurunpa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "kurunpa"
+        },
+        "kutjupa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "kutjupa"
+        },
+        "kuḻu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "kuḻu"
+        },
+        "l": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "l"
+        },
+        "langka": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "langka"
+        },
+        "ma-": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_5"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ma-"
+        },
+        "mai": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mai"
+        },
+        "mantu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mantu"
+        },
+        "maḻaku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "maḻaku"
+        },
+        "mina": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mina"
+        },
+        "miranyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "miranyi"
+        },
+        "mpalal": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mpalal"
+        },
+        "mulapa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mulapa"
+        },
+        "munga": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "munga"
+        },
+        "mungarinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mungarinyi"
+        },
+        "mungaṯu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "mungaṯu"
+        },
+        "munu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "munu"
+        },
+        "ngalkuṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ngalkuṉi"
+        },
+        "ngalya": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ngalya"
+        },
+        "nganaṉa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_8",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nganaṉa"
+        },
+        "ngangkaḻi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ngangkaḻi"
+        },
+        "ngaṟanyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ngaṟanyi"
+        },
+        "ngura": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ngura"
+        },
+        "nguwanpa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nguwanpa"
+        },
+        "nguḻu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nguḻu"
+        },
+        "nyanganyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nyanganyi"
+        },
+        "nyinanyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nyinanyi"
+        },
+        "nyura": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "nyura"
+        },
+        "pakaṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_1",
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "pakaṉi"
+        },
+        "palku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "palku"
+        },
+        "palu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "palu"
+        },
+        "panya": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "panya"
+        },
+        "patiṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "patiṉi"
+        },
+        "pika": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "pika"
+        },
+        "pitjanyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_8"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "pitjanyi"
+        },
+        "piḻti": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "piḻti"
+        },
+        "piṟuku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "piṟuku"
+        },
+        "pukularinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "pukularinyi"
+        },
+        "pula": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "pula"
+        },
+        "punganyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "punganyi"
+        },
+        "punkaṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "punkaṉi"
+        },
+        "puyiṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "puyiṉi"
+        },
+        "puḻka": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_1",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "puḻka"
+        },
+        "puṉu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "puṉu"
+        },
+        "puṯu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "puṯu"
+        },
+        "tangkiyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tangkiyi"
+        },
+        "tatiṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tatiṉi"
+        },
+        "titutjara": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "titutjara"
+        },
+        "tjarpanyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjarpanyi"
+        },
+        "tjaṉaḻkira": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjaṉaḻkira"
+        },
+        "tjaṟu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjaṟu"
+        },
+        "tjina": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjina"
+        },
+        "tjinguṟu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjinguṟu"
+        },
+        "tjitji": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjitji"
+        },
+        "tjitularinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjitularinyi"
+        },
+        "tjuku": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjuku"
+        },
+        "tjutuṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7",
+                "pitjantjatjara_story_22_page_1_segment_8"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjutuṉi"
+        },
+        "tjuṯa": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "tjuṯa"
+        },
+        "ulkaṟurinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ulkaṟurinyi"
+        },
+        "ulpuru": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_1",
+                "pitjantjatjara_story_22_page_1_segment_6",
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "ulpuru"
+        },
+        "uraṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "uraṉi"
+        },
+        "urinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "urinyi"
+        },
+        "utjuringanyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "utjuringanyi"
+        },
+        "uwankara": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "uwankara"
+        },
+        "wala": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wala"
+        },
+        "wanaṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wanaṉi"
+        },
+        "wati-": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wati-"
+        },
+        "waḻi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "waḻi"
+        },
+        "wiltja": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wiltja"
+        },
+        "wirkananyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wirkananyi"
+        },
+        "wirtjapakaṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_3",
+                "pitjantjatjara_story_22_page_1_segment_4",
+                "pitjantjatjara_story_22_page_1_segment_6"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wirtjapakaṉi"
+        },
+        "witiṉi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_4"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "witiṉi"
+        },
+        "wiya": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wiya"
+        },
+        "wiyarinyi": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_7"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wiyarinyi"
+        },
+        "wiṟu": {
+            "examples": [
+                "pitjantjatjara_story_22_page_1_segment_5",
+                "pitjantjatjara_story_22_page_1_segment_9"
+            ],
+            "extra_info": [
+                ""
+            ],
+            "images": [],
+            "lemma": "wiṟu"
+        }
+    }
+}

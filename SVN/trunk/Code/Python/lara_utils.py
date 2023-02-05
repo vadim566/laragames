@@ -16,8 +16,11 @@ import pprint
 from datetime import datetime
 import re
 import random
-import SVN.trunk.Code.Python.wagnerfischer as wagnerfischer
-#import  wagnerfischer
+try:
+    import SVN.trunk.Code.Python.wagnerfischer as wagnerfischer
+except Exception as e:
+    print(format({e}))
+    import  wagnerfischer
 ## Simple utility functions etc
 
 # ----------------------------------
