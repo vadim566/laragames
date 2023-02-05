@@ -1,7 +1,7 @@
 #ignore all media
 #SVN/*
 #dont upload db
-site.db
+#site.db
 #secret file
 secret/*
 HA_python3.sh
