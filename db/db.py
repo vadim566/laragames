@@ -6,7 +6,7 @@ from datetime import datetime
 from flask_login import UserMixin
 
 from functions.functions import get_language
-from app import login_manager, db
+from app import login_manager, db,app
 
 
 @login_manager.user_loader
@@ -147,3 +147,6 @@ class tbl_game12(db.Model):
     def __repr__(self):
         return f"game 11('{self.score}', '{self.date_created}')"
 
+@app.before_first_request
+def create_tables():
+    db.create_all()

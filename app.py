@@ -12,13 +12,13 @@ from secret.secret import secret_db_key
 
 db=SQLAlchemy()
 bcrypt = Bcrypt()
-
+app = Flask(__name__)
 login_manager = LoginManager()
 login_manager.login_view = 'app.login'
 login_manager.login_message_category = 'info'
 
 def init_app():
-    app = Flask(__name__)
+
     app.config['SECRET_KEY'] = secret_db_key
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
     db.init_app(app)
